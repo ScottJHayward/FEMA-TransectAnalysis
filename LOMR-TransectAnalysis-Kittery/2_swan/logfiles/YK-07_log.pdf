@@ -1,0 +1,94 @@
+%PDF-1.1
+1 0 obj
+<<
+/CreationDate (D:20200206170809)
+/Producer (text2pdf v1.1 (\251 Phil Smith, 1996))
+/Title (../2_swan/logfiles/YK-07_log.txt)
+>>
+endobj
+2 0 obj
+<<
+/Type /Catalog
+/Pages 3 0 R
+>>
+endobj
+4 0 obj
+<<
+/Type /Font
+/Subtype /Type1
+/Name /F1
+/BaseFont /Courier
+>>
+endobj
+5 0 obj
+<<
+  /Font << /F1 4 0 R >>
+  /ProcSet [ /PDF /Text ]
+>>
+endobj
+6 0 obj
+<<
+/Type /Page
+/Parent 3 0 R
+/Resources 5 0 R
+/Contents 7 0 R
+>>
+endobj
+7 0 obj
+<<
+/Length 8 0 R
+>>
+stream
+BT
+/F1 10 Tf
+1 0 0 1 50 802 Tm
+10 TL
+(_______________________________________________________)'
+(PART 2: SWAN 1-D)'
+()'
+(swan input grid name: 2_swan/gridfiles/YK-07zmeters_xmeters.grd)'
+(swan file name:       2_swan/swanfiles/YK-07.swn)'
+(swan output name:     2_swan/swanfiles/YK-07.dat)'
+()'
+(Boundary Conditions:)'
+(    TWL- 2.7515 meters)'
+(    HS-  0.89523 meters)'
+(    PER- 6.937 seconds)'
+()'
+(Batch File: 2_swan/swanfiles/runswan.dat)'
+()'
+(SWAN maximum additional wave setup: 0 feet)'
+(SWAN output at toe:)'
+(    SETUP- -0.02211 feet)'
+(    HS-    3.4318 feet)'
+(    PER-   6.9867 seconds)'
+()'
+(PART 2 COMPLETE________________________________________)'
+()'
+()'
+()'
+ET
+endstream
+endobj
+8 0 obj
+709
+endobj
+3 0 obj
+<<
+/Type /Pages
+/Count 1
+/MediaBox [ 0 0 595 842 ]
+/Kids [ 6 0 R ]
+>>
+endobj
+xref
+0 9
+0000000000 65535 f 0000000010 00000 n 0000000163 00000 n 0000001259 00000 n 0000000218 00000 n 0000000304 00000 n 0000000381 00000 n 0000000469 00000 n 0000001237 00000 n trailer
+<<
+/Size 9
+/Root 2 0 R
+/Info 1 0 R
+>>
+startxref
+1352
+%%EOF

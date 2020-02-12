@@ -1,0 +1,1 @@
+The perl script in this directory interpolates the fort.63-type adcirc results onto each of the transects, and writes them into CSV files to be used for transect based analysis.

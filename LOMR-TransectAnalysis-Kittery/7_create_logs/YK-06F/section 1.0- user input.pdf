@@ -1,0 +1,103 @@
+%PDF-1.1
+1 0 obj
+<<
+/CreationDate (D:20200206170809)
+/Producer (text2pdf v1.1 (\251 Phil Smith, 1996))
+/Title (../1_input/logfiles/YK-06F_log.txt)
+>>
+endobj
+2 0 obj
+<<
+/Type /Catalog
+/Pages 3 0 R
+>>
+endobj
+4 0 obj
+<<
+/Type /Font
+/Subtype /Type1
+/Name /F1
+/BaseFont /Courier
+>>
+endobj
+5 0 obj
+<<
+  /Font << /F1 4 0 R >>
+  /ProcSet [ /PDF /Text ]
+>>
+endobj
+6 0 obj
+<<
+/Type /Page
+/Parent 3 0 R
+/Resources 5 0 R
+/Contents 7 0 R
+>>
+endobj
+7 0 obj
+<<
+/Length 8 0 R
+>>
+stream
+BT
+/F1 10 Tf
+1 0 0 1 50 802 Tm
+10 TL
+(_______________________________________________________)'
+(DATA LOG FOR TRANSECT ID: YK-06F)'
+(_______________________________________________________)'
+()'
+()'
+(_______________________________________________________)'
+(PART 1: USER INPUT)'
+()'
+()'
+(SWAN 1-D / WHAFIS input)'
+(_______________________)'
+(station:    -400 ft)'
+(LON:        -70.7052 deg E)'
+(LAT:        43.0815 deg N)'
+(Bottom ELEV:       -16.992 ft-NAVD88)'
+(TWL:        9.0235 ft-NAVD88)'
+(HS:         5.8565 ft)'
+(TP:         9.6134 sec)'
+(Wave Direction bin: 90 deg CCW from East \(90 deg sector\))'
+(Transect Direction:   81.199 deg CCW from East)'
+()'
+()'
+(TAW/RUNUP input)'
+(_______________)'
+(toe sta:     27 ft)'
+(toe elev:    2.8452 ft-NAVD88)'
+(top sta:     53 ft)'
+(top elev:    11.9795 ft-NAVD88)'
+(*Wave and water level conditions at toe to be calculated in SWAN 1-D*)'
+()'
+(PART 1 COMPLETE________________________________________)'
+()'
+()'
+ET
+endstream
+endobj
+8 0 obj
+1001
+endobj
+3 0 obj
+<<
+/Type /Pages
+/Count 1
+/MediaBox [ 0 0 595 842 ]
+/Kids [ 6 0 R ]
+>>
+endobj
+xref
+0 9
+0000000000 65535 f 0000000010 00000 n 0000000165 00000 n 0000001554 00000 n 0000000220 00000 n 0000000306 00000 n 0000000383 00000 n 0000000471 00000 n 0000001531 00000 n trailer
+<<
+/Size 9
+/Root 2 0 R
+/Info 1 0 R
+>>
+startxref
+1647
+%%EOF
