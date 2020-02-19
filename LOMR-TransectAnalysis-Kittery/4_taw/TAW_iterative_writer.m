@@ -4,15 +4,15 @@ clc;clear all;close all
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% config %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 datafile='../data/transectdata.xls'; 
 tDIR='../ADCIRC_returns/'; %location of transects
-imgfile='tpng'; runupname='CM-runup';
+imgfile='tpng'; runupname='YK-runup';
 L_append=2;
 csvoutpre='inpfiles/';
 templatefile='TAW_template.txt';
 templatelines=401;
 
 %config
-CITYNAME='The Town of Harpswell';
-COUNTY='Cumberland';
+CITYNAME='The Town of Kittery';
+COUNTY='York';
 ENGINEER='SJH';
 DATE=date;
 tawfilename='TAW_iterative.m'

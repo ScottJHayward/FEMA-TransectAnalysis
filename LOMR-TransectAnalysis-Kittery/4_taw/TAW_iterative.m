@@ -5,7 +5,7 @@ format long g
 diary logfiles/YK-05-DIARY.txt  % open a diary file to record calculations
 diary on         % begin recording
 
-% FEMA appeal for The Town of Harpswell, Cumberland county, Maine
+% FEMA appeal for The Town of Kittery, York county, Maine
 % TRANSECT ID: YK-05
 % calculation by SJH, Ransom Consulting, Inc. 19-Feb-2020
 % 100-year wave runup using TAW methodology
@@ -44,7 +44,7 @@ H0=3.5425;    % significant wave height at toe of structure
 Tp=6.337;    % peak period, 1/fma, 
 T0=Tp/1.1;   
 
-gamma_berm=0.98563;   % this may get changed automatically below
+gamma_berm=0.98564;   % this may get changed automatically below
 gamma_rough=0.75;  
 gamma_beta=1;  
 gamma_perm=1;
@@ -409,7 +409,7 @@ format long g
 diary logfiles/YK-06F-DIARY.txt  % open a diary file to record calculations
 diary on         % begin recording
 
-% FEMA appeal for The Town of Harpswell, Cumberland county, Maine
+% FEMA appeal for The Town of Kittery, York county, Maine
 % TRANSECT ID: YK-06F
 % calculation by SJH, Ransom Consulting, Inc. 19-Feb-2020
 % 100-year wave runup using TAW methodology
@@ -448,7 +448,7 @@ H0=5.4882;    % significant wave height at toe of structure
 Tp=9.7138;    % peak period, 1/fma, 
 T0=Tp/1.1;   
 
-gamma_berm=0.96447;   % this may get changed automatically below
+gamma_berm=0.9548;   % this may get changed automatically below
 gamma_rough=0.6;  
 gamma_beta=1;  
 gamma_perm=1;
@@ -813,7 +813,7 @@ format long g
 diary logfiles/YK-06-DIARY.txt  % open a diary file to record calculations
 diary on         % begin recording
 
-% FEMA appeal for The Town of Harpswell, Cumberland county, Maine
+% FEMA appeal for The Town of Kittery, York county, Maine
 % TRANSECT ID: YK-06
 % calculation by SJH, Ransom Consulting, Inc. 19-Feb-2020
 % 100-year wave runup using TAW methodology
@@ -1217,7 +1217,7 @@ format long g
 diary logfiles/YK-07-DIARY.txt  % open a diary file to record calculations
 diary on         % begin recording
 
-% FEMA appeal for The Town of Harpswell, Cumberland county, Maine
+% FEMA appeal for The Town of Kittery, York county, Maine
 % TRANSECT ID: YK-07
 % calculation by SJH, Ransom Consulting, Inc. 19-Feb-2020
 % 100-year wave runup using TAW methodology
@@ -1621,7 +1621,7 @@ format long g
 diary logfiles/YK-14-DIARY.txt  % open a diary file to record calculations
 diary on         % begin recording
 
-% FEMA appeal for The Town of Harpswell, Cumberland county, Maine
+% FEMA appeal for The Town of Kittery, York county, Maine
 % TRANSECT ID: YK-14
 % calculation by SJH, Ransom Consulting, Inc. 19-Feb-2020
 % 100-year wave runup using TAW methodology
@@ -2025,7 +2025,7 @@ format long g
 diary logfiles/YK-15-DIARY.txt  % open a diary file to record calculations
 diary on         % begin recording
 
-% FEMA appeal for The Town of Harpswell, Cumberland county, Maine
+% FEMA appeal for The Town of Kittery, York county, Maine
 % TRANSECT ID: YK-15
 % calculation by SJH, Ransom Consulting, Inc. 19-Feb-2020
 % 100-year wave runup using TAW methodology
@@ -2064,7 +2064,7 @@ H0=6.2414;    % significant wave height at toe of structure
 Tp=12.7769;    % peak period, 1/fma, 
 T0=Tp/1.1;   
 
-gamma_berm=0.97227;   % this may get changed automatically below
+gamma_berm=0.97226;   % this may get changed automatically below
 gamma_rough=1;  
 gamma_beta=1;  
 gamma_perm=1;

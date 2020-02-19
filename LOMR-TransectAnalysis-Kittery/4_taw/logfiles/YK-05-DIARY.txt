@@ -1,12 +1,12 @@
 diary on         % begin recording
 
-% FEMA appeal for The Town of Harpswell, Cumberland county, Maine
+% FEMA appeal for The Town of Kittery, York county, Maine
 % TRANSECT ID: YK-05
-% calculation by SJH, Ransom Consulting, Inc. 06-Feb-2020
+% calculation by SJH, Ransom Consulting, Inc. 19-Feb-2020
 % 100-year wave runup using TAW methodology
 % including berm and weighted average with foreshore if necessary
 %
-% chk nld 20181015
+% chk nld 20200220
 %
 % This script assumes that the incident wave conditions provided
 % as input in the configuration section below are the 
@@ -17,7 +17,6 @@ diary on         % begin recording
 % conversion of the peak wave period to the spectral mean wave 
 % as recommended in the references below
 % 
-%
 % references:
 %
 % Van der Meer, J.W., 2002. Technical Report Wave Run-up and 
@@ -40,7 +39,7 @@ H0=3.5425;    % significant wave height at toe of structure
 Tp=6.337;    % peak period, 1/fma, 
 T0=Tp/1.1;   
 
-gamma_berm=0.98213;   % this may get changed automatically below
+gamma_berm=0.98564;   % this may get changed automatically below
 gamma_rough=0.75;  
 gamma_beta=1;  
 gamma_perm=1;
@@ -221,7 +220,7 @@ k =
 
 
 % now iterate converge on a runup elevation
-tol=0.001;  % convergence criteria
+tol=0.01;  % convergence criteria
 R2del=999;
 R2_new=3*H0; %initial guess
 R2=R2_new;
@@ -687,83 +686,13 @@ R2del =
        0.00357449912737451
 Z2 =
           17.4336251568618
-ans =
-!----------------- STARTING ITERATION 5 -----------------!
-Ztoe =
-                  3.672948
-toe_sta =
-          11.6106776745786
-top_sta =
-          56.8026163499189
-Z2 =
-          17.4336251568618
-H0 =
-                    3.5425
-Tp =
-                     6.337
-T0 =
-          5.76090909090909
-R2 =
-          8.43969329239713
-Z2 =
-          17.4336251568618
-top_sta =
-          56.8026163499189
-Lslope =
-          45.1919386753402
-ans =
-Berm Factor Calculation: Iteration 5, Profile Segment: 24
-dh =
-         -5.14946813553532
-rdh_sum =
-         0.669587991433597
-ans =
-Berm Factor Calculation: Iteration 5, Profile Segment: 25
-dh =
-         -5.21381813553532
-rdh_sum =
-          1.35039312106405
-ans =
-!------- End Berm Factor Calculation, Iter: 5 ---------!
-berm_width =
-     2
-rB =
-        0.0442556805178914
-rdh_mean =
-         0.675196560532024
-gamma_berm =
-         0.985625602751793
-slope =
-          0.31859364452928
-Irb =
-          2.20583871581072
-gamma_berm =
-         0.985625602751793
-gamma_perm =
-     1
-gamma_beta =
-     1
-gamma_rough =
-                      0.75
-gamma =
-         0.739219202063845
-ans =
-!!! - - Iribaren number:   2.17 is in the valid range (0.5-10), TAW RECOMMENDED - - !!!
-ans =
-!!! - - slope: 1:3.1 V:H is in the valid range (1:8 - 1:1), TAW RECOMMENDED - - !!!
-R2_new =
-          8.43925609246532
-R2del =
-      0.000437199931813126
-Z2 =
-            17.43318795693
 % final 2% runup elevation
 Z2=R2_new+SWEL
 Z2 =
-            17.43318795693
+          17.4336251568618
 diary off
 diary on         % begin recording
-% FEMA appeal for The Town of Harpswell, Cumberland county, Maine
+% FEMA appeal for The Town of Kittery, York county, Maine
 % TRANSECT ID: YK-05
 % calculation by SJH, Ransom Consulting, Inc. 19-Feb-2020
 % 100-year wave runup using TAW methodology
@@ -800,7 +729,7 @@ SWEL=9.0268;  % 100-yr still water level including wave setup.
 H0=3.5425;    % significant wave height at toe of structure 
 Tp=6.337;    % peak period, 1/fma, 
 T0=Tp/1.1;   
-gamma_berm=0.98563;   % this may get changed automatically below
+gamma_berm=0.98564;   % this may get changed automatically below
 gamma_rough=0.75;  
 gamma_beta=1;  
 gamma_perm=1;
