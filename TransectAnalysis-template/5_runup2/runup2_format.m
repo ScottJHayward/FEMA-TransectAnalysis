@@ -390,7 +390,7 @@ fclose(fid);
         HuntStr{si}=sprintf('    Depth, D = %.2f\n',D);si=si+1;
         HuntStr{si}=sprintf('    Period, T = %.2f\n',T);si=si+1;
         HuntStr{si}=sprintf('    Waveheight, H = %.2f\n',H);si=si+1;
-        HuntStr{si}='Deep water wavelength, L0 (m)\n';si=si+1;
+        HuntStr{si}='Deep water wavelength, L0 (ft)\n';si=si+1;
         HuntStr{si}='    L0 = g*T*T/twopi\n';si=si+1;
         HuntStr{si}=sprintf('    L0 = %.2f*%.2f*%.2f/%.2f = %.2f\n',g,T,T,twopi,L0);si=si+1;
         HuntStr{si}='Deep water wave celerity, C0 (ft/s)\n';si=si+1;

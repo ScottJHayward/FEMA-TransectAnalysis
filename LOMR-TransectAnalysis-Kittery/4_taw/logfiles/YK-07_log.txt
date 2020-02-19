@@ -20,6 +20,6 @@ CHECKING VALIDITY:
 ...
 TAW method is valid!
 Using TAW runup to detemine runup elevation
-TAW 2% runup: 19.2924 feet
+TAW 2% runup: 19.2929 feet
 
 PART 4 COMPLETE________________________________________

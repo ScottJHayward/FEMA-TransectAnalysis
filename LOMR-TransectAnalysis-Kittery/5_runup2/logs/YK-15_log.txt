@@ -34,7 +34,10 @@ celerity assuming constant wave energy flux.
              also see Coastal Engineering Manual Part II-3
              for discussion of shoaling coefficient
 
-Deep water wavelength, L0 (m)
+    Depth, D = 13.70
+    Period, T = 11.10
+    Waveheight, H = 5.12
+Deep water wavelength, L0 (ft)
     L0 = g*T*T/twopi
     L0 = 32.17*11.10*11.10/6.28 = 631.24
 Deep water wave celerity, C0 (ft/s)

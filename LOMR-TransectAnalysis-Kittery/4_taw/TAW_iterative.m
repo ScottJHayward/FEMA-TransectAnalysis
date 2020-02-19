@@ -7,11 +7,11 @@ diary on         % begin recording
 
 % FEMA appeal for The Town of Harpswell, Cumberland county, Maine
 % TRANSECT ID: YK-05
-% calculation by SJH, Ransom Consulting, Inc. 06-Feb-2020
+% calculation by SJH, Ransom Consulting, Inc. 19-Feb-2020
 % 100-year wave runup using TAW methodology
 % including berm and weighted average with foreshore if necessary
 %
-% chk nld 20181015
+% chk nld 20200220
 %
 % This script assumes that the incident wave conditions provided
 % as input in the configuration section below are the 
@@ -22,7 +22,6 @@ diary on         % begin recording
 % conversion of the peak wave period to the spectral mean wave 
 % as recommended in the references below
 % 
-%
 % references:
 %
 % Van der Meer, J.W., 2002. Technical Report Wave Run-up and 
@@ -45,7 +44,7 @@ H0=3.5425;    % significant wave height at toe of structure
 Tp=6.337;    % peak period, 1/fma, 
 T0=Tp/1.1;   
 
-gamma_berm=0.98213;   % this may get changed automatically below
+gamma_berm=0.98563;   % this may get changed automatically below
 gamma_rough=0.75;  
 gamma_beta=1;  
 gamma_perm=1;
@@ -150,7 +149,7 @@ end
 
 
 % now iterate converge on a runup elevation
-tol=0.001;  % convergence criteria
+tol=0.01;  % convergence criteria
 R2del=999;
 R2_new=3*H0; %initial guess
 R2=R2_new;
@@ -399,6 +398,7 @@ title (plotTitle);
 set(gcf,'color','w');
 print('-r450','-dpdf',imgname);
 
+-1.000000e+00
 xlswrite('../data/transectdata.xls',Z2,'Sheet1','S2');
 xlswrite('../data/transectdata.xls',TAW_ALWAYS_VALID,'Sheet1','U2');
 xlswrite('../data/transectdata.xls',gamma_berm,'Sheet1','O2');
@@ -411,11 +411,11 @@ diary on         % begin recording
 
 % FEMA appeal for The Town of Harpswell, Cumberland county, Maine
 % TRANSECT ID: YK-06F
-% calculation by SJH, Ransom Consulting, Inc. 06-Feb-2020
+% calculation by SJH, Ransom Consulting, Inc. 19-Feb-2020
 % 100-year wave runup using TAW methodology
 % including berm and weighted average with foreshore if necessary
 %
-% chk nld 20181015
+% chk nld 20200220
 %
 % This script assumes that the incident wave conditions provided
 % as input in the configuration section below are the 
@@ -426,7 +426,6 @@ diary on         % begin recording
 % conversion of the peak wave period to the spectral mean wave 
 % as recommended in the references below
 % 
-%
 % references:
 %
 % Van der Meer, J.W., 2002. Technical Report Wave Run-up and 
@@ -449,8 +448,8 @@ H0=5.4882;    % significant wave height at toe of structure
 Tp=9.7138;    % peak period, 1/fma, 
 T0=Tp/1.1;   
 
-gamma_berm=0.96835;   % this may get changed automatically below
-gamma_rough=0.85;  
+gamma_berm=0.96447;   % this may get changed automatically below
+gamma_rough=0.6;  
 gamma_beta=1;  
 gamma_perm=1;
 
@@ -554,7 +553,7 @@ end
 
 
 % now iterate converge on a runup elevation
-tol=0.001;  % convergence criteria
+tol=0.01;  % convergence criteria
 R2del=999;
 R2_new=3*H0; %initial guess
 R2=R2_new;
@@ -803,6 +802,7 @@ title (plotTitle);
 set(gcf,'color','w');
 print('-r450','-dpdf',imgname);
 
+-1.000000e+00
 xlswrite('../data/transectdata.xls',Z2,'Sheet1','S3');
 xlswrite('../data/transectdata.xls',TAW_ALWAYS_VALID,'Sheet1','U3');
 xlswrite('../data/transectdata.xls',gamma_berm,'Sheet1','O3');
@@ -815,11 +815,11 @@ diary on         % begin recording
 
 % FEMA appeal for The Town of Harpswell, Cumberland county, Maine
 % TRANSECT ID: YK-06
-% calculation by SJH, Ransom Consulting, Inc. 06-Feb-2020
+% calculation by SJH, Ransom Consulting, Inc. 19-Feb-2020
 % 100-year wave runup using TAW methodology
 % including berm and weighted average with foreshore if necessary
 %
-% chk nld 20181015
+% chk nld 20200220
 %
 % This script assumes that the incident wave conditions provided
 % as input in the configuration section below are the 
@@ -830,7 +830,6 @@ diary on         % begin recording
 % conversion of the peak wave period to the spectral mean wave 
 % as recommended in the references below
 % 
-%
 % references:
 %
 % Van der Meer, J.W., 2002. Technical Report Wave Run-up and 
@@ -854,7 +853,7 @@ Tp=9.7161;    % peak period, 1/fma,
 T0=Tp/1.1;   
 
 gamma_berm=1;   % this may get changed automatically below
-gamma_rough=0.75;  
+gamma_rough=0.6;  
 gamma_beta=1;  
 gamma_perm=1;
 
@@ -958,7 +957,7 @@ end
 
 
 % now iterate converge on a runup elevation
-tol=0.001;  % convergence criteria
+tol=0.01;  % convergence criteria
 R2del=999;
 R2_new=3*H0; %initial guess
 R2=R2_new;
@@ -1207,6 +1206,7 @@ title (plotTitle);
 set(gcf,'color','w');
 print('-r450','-dpdf',imgname);
 
+-1.000000e+00
 xlswrite('../data/transectdata.xls',Z2,'Sheet1','S4');
 xlswrite('../data/transectdata.xls',TAW_ALWAYS_VALID,'Sheet1','U4');
 xlswrite('../data/transectdata.xls',gamma_berm,'Sheet1','O4');
@@ -1219,11 +1219,11 @@ diary on         % begin recording
 
 % FEMA appeal for The Town of Harpswell, Cumberland county, Maine
 % TRANSECT ID: YK-07
-% calculation by SJH, Ransom Consulting, Inc. 06-Feb-2020
+% calculation by SJH, Ransom Consulting, Inc. 19-Feb-2020
 % 100-year wave runup using TAW methodology
 % including berm and weighted average with foreshore if necessary
 %
-% chk nld 20181015
+% chk nld 20200220
 %
 % This script assumes that the incident wave conditions provided
 % as input in the configuration section below are the 
@@ -1234,7 +1234,6 @@ diary on         % begin recording
 % conversion of the peak wave period to the spectral mean wave 
 % as recommended in the references below
 % 
-%
 % references:
 %
 % Van der Meer, J.W., 2002. Technical Report Wave Run-up and 
@@ -1362,7 +1361,7 @@ end
 
 
 % now iterate converge on a runup elevation
-tol=0.001;  % convergence criteria
+tol=0.01;  % convergence criteria
 R2del=999;
 R2_new=3*H0; %initial guess
 R2=R2_new;
@@ -1611,6 +1610,7 @@ title (plotTitle);
 set(gcf,'color','w');
 print('-r450','-dpdf',imgname);
 
+-1.000000e+00
 xlswrite('../data/transectdata.xls',Z2,'Sheet1','S5');
 xlswrite('../data/transectdata.xls',TAW_ALWAYS_VALID,'Sheet1','U5');
 xlswrite('../data/transectdata.xls',gamma_berm,'Sheet1','O5');
@@ -1623,11 +1623,11 @@ diary on         % begin recording
 
 % FEMA appeal for The Town of Harpswell, Cumberland county, Maine
 % TRANSECT ID: YK-14
-% calculation by SJH, Ransom Consulting, Inc. 06-Feb-2020
+% calculation by SJH, Ransom Consulting, Inc. 19-Feb-2020
 % 100-year wave runup using TAW methodology
 % including berm and weighted average with foreshore if necessary
 %
-% chk nld 20181015
+% chk nld 20200220
 %
 % This script assumes that the incident wave conditions provided
 % as input in the configuration section below are the 
@@ -1638,7 +1638,6 @@ diary on         % begin recording
 % conversion of the peak wave period to the spectral mean wave 
 % as recommended in the references below
 % 
-%
 % references:
 %
 % Van der Meer, J.W., 2002. Technical Report Wave Run-up and 
@@ -1661,7 +1660,7 @@ H0=4.9688;    % significant wave height at toe of structure
 Tp=13.8709;    % peak period, 1/fma, 
 T0=Tp/1.1;   
 
-gamma_berm=0.94964;   % this may get changed automatically below
+gamma_berm=0.93233;   % this may get changed automatically below
 gamma_rough=0.8;  
 gamma_beta=1;  
 gamma_perm=1;
@@ -1766,7 +1765,7 @@ end
 
 
 % now iterate converge on a runup elevation
-tol=0.001;  % convergence criteria
+tol=0.01;  % convergence criteria
 R2del=999;
 R2_new=3*H0; %initial guess
 R2=R2_new;
@@ -2015,6 +2014,7 @@ title (plotTitle);
 set(gcf,'color','w');
 print('-r450','-dpdf',imgname);
 
+-1.000000e+00
 xlswrite('../data/transectdata.xls',Z2,'Sheet1','S6');
 xlswrite('../data/transectdata.xls',TAW_ALWAYS_VALID,'Sheet1','U6');
 xlswrite('../data/transectdata.xls',gamma_berm,'Sheet1','O6');
@@ -2027,11 +2027,11 @@ diary on         % begin recording
 
 % FEMA appeal for The Town of Harpswell, Cumberland county, Maine
 % TRANSECT ID: YK-15
-% calculation by SJH, Ransom Consulting, Inc. 06-Feb-2020
+% calculation by SJH, Ransom Consulting, Inc. 19-Feb-2020
 % 100-year wave runup using TAW methodology
 % including berm and weighted average with foreshore if necessary
 %
-% chk nld 20181015
+% chk nld 20200220
 %
 % This script assumes that the incident wave conditions provided
 % as input in the configuration section below are the 
@@ -2042,7 +2042,6 @@ diary on         % begin recording
 % conversion of the peak wave period to the spectral mean wave 
 % as recommended in the references below
 % 
-%
 % references:
 %
 % Van der Meer, J.W., 2002. Technical Report Wave Run-up and 
@@ -2170,7 +2169,7 @@ end
 
 
 % now iterate converge on a runup elevation
-tol=0.001;  % convergence criteria
+tol=0.01;  % convergence criteria
 R2del=999;
 R2_new=3*H0; %initial guess
 R2=R2_new;
@@ -2419,6 +2418,7 @@ title (plotTitle);
 set(gcf,'color','w');
 print('-r450','-dpdf',imgname);
 
+-1.000000e+00
 xlswrite('../data/transectdata.xls',Z2,'Sheet1','S7');
 xlswrite('../data/transectdata.xls',TAW_ALWAYS_VALID,'Sheet1','U7');
 xlswrite('../data/transectdata.xls',gamma_berm,'Sheet1','O7');

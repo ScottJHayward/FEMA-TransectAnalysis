@@ -7,7 +7,7 @@ Input Paramters:
     PER- 12.7769 seconds
     TOE- x: -8 , z: -1.1131 feet
     TOP- x: 88 , z: 15.5799 feet
-    GBERM-   0.97227
+    GBERM-   0.97226
     GGROUGH- 1
     GBETA-   1
     GPERM-   1

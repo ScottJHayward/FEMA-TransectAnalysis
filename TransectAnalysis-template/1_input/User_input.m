@@ -80,7 +80,7 @@ for i=1:length(tnums)
         first_cross=sta(cp);
         %         dep=max(wlev)-z_fema; dep(dep<0)=NaN; bwh=dep*.78;
         grid minor
-        title(['transect CM-' tnums{i} ': Pick SWAN-1D/WHAFIS start']);
+        title(['transect' tname tnums{i} ': Pick SWAN-1D/WHAFIS start']);
         xlabel('Cross-shore Distance (feet)');
         ylabel('Elevation (ft), Significant Wave Height (ft), Period (sec)');
         legend('Transect Profile','ADCIRC Profile','TWL','HS','TP','location','best');
@@ -101,7 +101,7 @@ for i=1:length(tnums)
         
         
         
-        title(['transect CM-' tnums{i} ': Pick Toe/Top Stations for TAW and Runup2'])
+        title(['transect' tname tnums{i} ': Pick Toe/Top Stations for TAW and Runup2'])
         axis([first_cross-500 first_cross+80 -20 40])
         
         if pickSTA(i)==1
@@ -141,7 +141,7 @@ for i=1:length(tnums)
         fprintf(fid,'%s\n\n\n',['Transect Direction:   ' num2str(heading(1)) ' deg CCW from East']);
         
         %re-set axes, plot all selected points, save a fig
-        title(['transect CM-' tnums{i} ': User-Selected inputs'])
+        title(['transect' tname tnums{i} ': User-Selected inputs'])
         axis([wha_start(i)-100 topx(i)+500 -20 40])
         plot([wha_start(i) wha_start(i)],[-100 100],'c')
         scatter([toex(i) topx(i)],[toez(i) topz(i)],'md')

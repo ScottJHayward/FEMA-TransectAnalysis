@@ -1,7 +1,7 @@
 %PDF-1.1
 1 0 obj
 <<
-/CreationDate (D:20200206170809)
+/CreationDate (D:20200219114129)
 /Producer (text2pdf v1.1 (\251 Phil Smith, 1996))
 /Title (../5_runup2/logs/YK-07_log.txt)
 >>
@@ -79,7 +79,10 @@ BT
 (             also see Coastal Engineering Manual Part II-3)'
 (             for discussion of shoaling coefficient)'
 ()'
-(Deep water wavelength, L0 \(m\))'
+(    Depth, D = 25.38)'
+(    Period, T = 5.90)'
+(    Waveheight, H = 1.84)'
+(Deep water wavelength, L0 \(ft\))'
 (    L0 = g*T*T/twopi)'
 (    L0 = 32.17*5.90*5.90/6.28 = 178.04)'
 (Deep water wave celerity, C0 \(ft/s\))'
@@ -117,14 +120,11 @@ BT
 (9.00)'
 (9.00)'
 (9.00)'
-()'
-(RUNUP2 deepwater mean wave heights:)'
-(1.57)'
 ET
 endstream
 endobj
 8 0 obj
-2373
+2399
 endobj
 9 0 obj
 <<
@@ -143,6 +143,9 @@ BT
 /F1 10 Tf
 1 0 0 1 50 802 Tm
 10 TL
+()'
+(RUNUP2 deepwater mean wave heights:)'
+(1.57)'
 (1.57)'
 (1.57)'
 (1.65)'
@@ -215,7 +218,7 @@ ET
 endstream
 endobj
 11 0 obj
-1323
+1377
 endobj
 3 0 obj
 <<
@@ -227,12 +230,12 @@ endobj
 endobj
 xref
 0 12
-0000000000 65535 f 0000000010 00000 n 0000000161 00000 n 0000004419 00000 n 0000000216 00000 n 0000000302 00000 n 0000000379 00000 n 0000000467 00000 n 0000002899 00000 n 0000002922 00000 n 0000003011 00000 n 0000004395 00000 n trailer
+0000000000 65535 f 0000000010 00000 n 0000000161 00000 n 0000004499 00000 n 0000000216 00000 n 0000000302 00000 n 0000000379 00000 n 0000000467 00000 n 0000002925 00000 n 0000002948 00000 n 0000003037 00000 n 0000004475 00000 n trailer
 <<
 /Size 12
 /Root 2 0 R
 /Info 1 0 R
 >>
 startxref
-4518
+4598
 %%EOF

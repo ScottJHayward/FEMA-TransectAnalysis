@@ -21,12 +21,3 @@ SWAN output at toe:
 PART 2 COMPLETE________________________________________
 
 
-SWAN maximum additional wave setup: 0 feet
-SWAN output at toe:
-    SETUP- -0.02211 feet
-    HS-    3.4318 feet
-    PER-   6.9867 seconds
-
-PART 2 COMPLETE________________________________________
-
-

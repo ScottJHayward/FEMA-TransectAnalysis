@@ -11,7 +11,7 @@ diary on         % begin recording
 % 100-year wave runup using TAW methodology
 % including berm and weighted average with foreshore if necessary
 %
-% chk nld 20181015
+% chk nld 20200220
 %
 % This script assumes that the incident wave conditions provided
 % as input in the configuration section below are the 
@@ -22,7 +22,6 @@ diary on         % begin recording
 % conversion of the peak wave period to the spectral mean wave 
 % as recommended in the references below
 % 
-%
 % references:
 %
 % Van der Meer, J.W., 2002. Technical Report Wave Run-up and 
@@ -150,7 +149,7 @@ end
 
 
 % now iterate converge on a runup elevation
-tol=0.001;  % convergence criteria
+tol=0.01;  % convergence criteria
 R2del=999;
 R2_new=3*H0; %initial guess
 R2=R2_new;

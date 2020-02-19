@@ -1,7 +1,7 @@
 %PDF-1.1
 1 0 obj
 <<
-/CreationDate (D:20200206170809)
+/CreationDate (D:20200219114129)
 /Producer (text2pdf v1.1 (\251 Phil Smith, 1996))
 /Title (../4_taw/logfiles/YK-15_log.txt)
 >>
@@ -52,7 +52,7 @@ BT
 (    PER- 12.7769 seconds)'
 (    TOE- x: -8 , z: -1.1131 feet)'
 (    TOP- x: 88 , z: 15.5799 feet)'
-(    GBERM-   0.97227)'
+(    GBERM-   0.97226)'
 (    GGROUGH- 1)'
 (    GBETA-   1)'
 (    GPERM-   1)'

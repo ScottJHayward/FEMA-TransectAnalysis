@@ -7,7 +7,7 @@ Input Paramters:
     PER- 6.337 seconds
     TOE- x: 10 , z: 2.774 feet
     TOP- x: 42 , z: 15.0282 feet
-    GBERM-   0.98563
+    GBERM-   0.98564
     GGROUGH- 0.75
     GBETA-   1
     GPERM-   1
@@ -20,6 +20,6 @@ CHECKING VALIDITY:
 ...
 TAW method is valid!
 Using TAW runup to detemine runup elevation
-TAW 2% runup: 17.4332 feet
+TAW 2% runup: 17.4336 feet
 
 PART 4 COMPLETE________________________________________
