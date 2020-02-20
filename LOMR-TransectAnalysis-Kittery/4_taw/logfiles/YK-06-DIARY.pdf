@@ -1,7 +1,7 @@
 %PDF-1.1
 1 0 obj
 <<
-/CreationDate (D:20200219151532)
+/CreationDate (D:20200220122446)
 /Producer (text2pdf v1.1 (\251 Phil Smith, 1996))
 /Title (../4_taw/logfiles/YK-06-DIARY.txt)
 >>
@@ -41,7 +41,7 @@ endobj
 stream
 BT
 /F1 8 Tf
-1 0 0 1 50 802 Tm
+1 0 0 1 50 752 Tm
 8 TL
 (diary on         % begin recording)'
 ()'
@@ -133,17 +133,11 @@ BT
 (% The toe elevation here is only used to determine the average )'
 (% structure slope, it is not used to depth limit the wave height.)'
 (% Any depth limiting or other modification of the wave height )'
-(% to make it consitent with TAW guidance should be performed )'
-(% prior to the input of the significant wave height given above. )'
-(Ztoe=SWEL-1.5*H0)'
-()'
-(Ztoe =)'
-()'
 ET
 endstream
 endobj
 8 0 obj
-3079
+2901
 endobj
 9 0 obj
 <<
@@ -160,8 +154,14 @@ endobj
 stream
 BT
 /F1 8 Tf
-1 0 0 1 50 802 Tm
+1 0 0 1 50 752 Tm
 8 TL
+(% to make it consitent with TAW guidance should be performed )'
+(% prior to the input of the significant wave height given above. )'
+(Ztoe=SWEL-1.5*H0)'
+()'
+(Ztoe =)'
+()'
 (         0.863334999999999)'
 ()'
 ()'
@@ -246,23 +246,11 @@ BT
 (   setup=setupAtToe+dsetdsta*\(toe_sta-sta\(1\)\);)'
 (   sprintf\('-!!- Location of SWEL-1.5*H0 is %4.1f ft landward of toe of slope',dsta\))'
 (   sprintf\('-!!- Setup is interpolated between setup at toe of slope and max setup'\))'
-(   sprintf\('-!!-       setup is adjusted to %4.2f feet',setup\))'
-(   SWEL=SWEL-setupAtToe+setup;)'
-(   sprintf\('-!!-       SWEL is adjusted to %4.2f feet',SWEL\))'
-(   k=find\(dep < SWEL-1.5*H0\))'
-(   sta\(k\)=[];)'
-(   dep\(k\)=[];)'
-(else)'
-(   sprintf\('-!!- The User has selected a starting point that is %4.2f feet above the elevation of SWEL-1.5H0\\n',dep\(1\)-Ztoe\))'
-(   sprintf\('-!!- This may be reasonable for some cases.  However the user may want to consider:\\n'\))'
-(   sprintf\('-!!-   1\) Selecting a starting point that is at or below %4.2f feet elevation, or\\n', Ztoe\))'
-(   sprintf\('-!!-   2\) Reducing the incident wave height to a depth limited condition.\\n'\))'
-(end)'
 ET
 endstream
 endobj
 11 0 obj
-3107
+2571
 endobj
 12 0 obj
 <<
@@ -279,8 +267,20 @@ endobj
 stream
 BT
 /F1 8 Tf
-1 0 0 1 50 802 Tm
+1 0 0 1 50 752 Tm
 8 TL
+(   sprintf\('-!!-       setup is adjusted to %4.2f feet',setup\))'
+(   SWEL=SWEL-setupAtToe+setup;)'
+(   sprintf\('-!!-       SWEL is adjusted to %4.2f feet',SWEL\))'
+(   k=find\(dep < SWEL-1.5*H0\))'
+(   sta\(k\)=[];)'
+(   dep\(k\)=[];)'
+(else)'
+(   sprintf\('-!!- The User has selected a starting point that is %4.2f feet above the elevation of SWEL-1.5H0\\n',dep\(1\)-Ztoe\))'
+(   sprintf\('-!!- This may be reasonable for some cases.  However the user may want to consider:\\n'\))'
+(   sprintf\('-!!-   1\) Selecting a starting point that is at or below %4.2f feet elevation, or\\n', Ztoe\))'
+(   sprintf\('-!!-   2\) Reducing the incident wave height to a depth limited condition.\\n'\))'
+(end)'
 ()'
 (ans =)'
 ()'
@@ -359,6 +359,29 @@ BT
 (    % check for berm, berm width, berm height)'
 (    berm_width=0;)'
 (    rdh_sum=0;)'
+ET
+endstream
+endobj
+14 0 obj
+2897
+endobj
+15 0 obj
+<<
+/Type /Page
+/Parent 3 0 R
+/Resources 5 0 R
+/Contents 16 0 R
+>>
+endobj
+16 0 obj
+<<
+/Length 17 0 R
+>>
+stream
+BT
+/F1 8 Tf
+1 0 0 1 50 752 Tm
+8 TL
 (    Berm_Segs=[];)'
 (    Berm_Heights=[];)'
 (    for kk=1:length\(sta\)-1)'
@@ -377,29 +400,6 @@ BT
 (          end)'
 (          if \(dh <= R2 & dh >=-2*H0\))'
 (             rdh=\(0.5-0.5*cos\(3.14159*dh/chi\)\) ;)'
-ET
-endstream
-endobj
-14 0 obj
-3001
-endobj
-15 0 obj
-<<
-/Type /Page
-/Parent 3 0 R
-/Resources 5 0 R
-/Contents 16 0 R
->>
-endobj
-16 0 obj
-<<
-/Length 17 0 R
->>
-stream
-BT
-/F1 8 Tf
-1 0 0 1 50 802 Tm
-8 TL
 (          else)'
 (             rdh=1;)'
 (          end)'
@@ -472,6 +472,29 @@ BT
 (       fore_toe_sta=-999;)'
 (       fore_toe_dep=-999;)'
 (       for kk=length\(dep\)-1:-1:1)'
+ET
+endstream
+endobj
+17 0 obj
+3497
+endobj
+18 0 obj
+<<
+/Type /Page
+/Parent 3 0 R
+/Resources 5 0 R
+/Contents 19 0 R
+>>
+endobj
+19 0 obj
+<<
+/Length 20 0 R
+>>
+stream
+BT
+/F1 8 Tf
+1 0 0 1 50 752 Tm
+8 TL
 (          ddep=dep\(kk+1\)-dep\(kk\);)'
 (          dsta=sta\(kk+1\)-sta\(kk\);)'
 (          s=ddep/dsta;)'
@@ -496,29 +519,6 @@ BT
 (          w2=\(berm_width-0.25*L0\)/\(0.75*L0\))'
 (          w1=1-w2)'
 (          R2_new=w2*fore_R2 + w1*R2_new)'
-ET
-endstream
-endobj
-17 0 obj
-3619
-endobj
-18 0 obj
-<<
-/Type /Page
-/Parent 3 0 R
-/Resources 5 0 R
-/Contents 19 0 R
->>
-endobj
-19 0 obj
-<<
-/Length 20 0 R
->>
-stream
-BT
-/F1 8 Tf
-1 0 0 1 50 802 Tm
-8 TL
 (       end)'
 (    end % end berm width check)'
 ()'
@@ -585,6 +585,29 @@ BT
 (     1)'
 (gamma_beta =)'
 (     1)'
+ET
+endstream
+endobj
+20 0 obj
+2522
+endobj
+21 0 obj
+<<
+/Type /Page
+/Parent 3 0 R
+/Resources 5 0 R
+/Contents 22 0 R
+>>
+endobj
+22 0 obj
+<<
+/Length 23 0 R
+>>
+stream
+BT
+/F1 8 Tf
+1 0 0 1 50 752 Tm
+8 TL
 (gamma_rough =)'
 (                       0.6)'
 (gamma =)'
@@ -615,29 +638,6 @@ BT
 (                    9.7161)'
 (T0 =)'
 (          8.83281818181818)'
-ET
-endstream
-endobj
-20 0 obj
-2370
-endobj
-21 0 obj
-<<
-/Type /Page
-/Parent 3 0 R
-/Resources 5 0 R
-/Contents 22 0 R
->>
-endobj
-22 0 obj
-<<
-/Length 23 0 R
->>
-stream
-BT
-/F1 8 Tf
-1 0 0 1 50 802 Tm
-8 TL
 (R2 =)'
 (          8.16379329723001)'
 (Z2 =)'
@@ -698,6 +698,29 @@ BT
 (          8.83281818181818)'
 (R2 =)'
 (           10.327531428157)'
+ET
+endstream
+endobj
+23 0 obj
+2169
+endobj
+24 0 obj
+<<
+/Type /Page
+/Parent 3 0 R
+/Resources 5 0 R
+/Contents 25 0 R
+>>
+endobj
+25 0 obj
+<<
+/Length 26 0 R
+>>
+stream
+BT
+/F1 8 Tf
+1 0 0 1 50 752 Tm
+8 TL
 (Z2 =)'
 (           19.379066428157)'
 (top_sta =)'
@@ -734,29 +757,6 @@ BT
 (!!! - - slope: 1:5.0 V:H is in the valid range \(1:8 - 1:1\), TAW RECOMMENDED - - !!!)'
 (R2_new =)'
 (          9.95424707799081)'
-ET
-endstream
-endobj
-23 0 obj
-2191
-endobj
-24 0 obj
-<<
-/Type /Page
-/Parent 3 0 R
-/Resources 5 0 R
-/Contents 25 0 R
->>
-endobj
-25 0 obj
-<<
-/Length 26 0 R
->>
-stream
-BT
-/F1 8 Tf
-1 0 0 1 50 802 Tm
-8 TL
 (R2del =)'
 (         0.373284350166184)'
 (Z2 =)'
@@ -811,6 +811,29 @@ BT
 (                       0.6)'
 (ans =)'
 (!!! - - Iribaren number:   1.75 is in the valid range \(0.5-10\), TAW RECOMMENDED - - !!!)'
+ET
+endstream
+endobj
+26 0 obj
+2007
+endobj
+27 0 obj
+<<
+/Type /Page
+/Parent 3 0 R
+/Resources 5 0 R
+/Contents 28 0 R
+>>
+endobj
+28 0 obj
+<<
+/Length 29 0 R
+>>
+stream
+BT
+/F1 8 Tf
+1 0 0 1 50 752 Tm
+8 TL
 (ans =)'
 (!!! - - slope: 1:4.9 V:H is in the valid range \(1:8 - 1:1\), TAW RECOMMENDED - - !!!)'
 (R2_new =)'
@@ -853,29 +876,6 @@ BT
 (     1)'
 (gamma_berm =)'
 (     1)'
-ET
-endstream
-endobj
-26 0 obj
-2131
-endobj
-27 0 obj
-<<
-/Type /Page
-/Parent 3 0 R
-/Resources 5 0 R
-/Contents 28 0 R
->>
-endobj
-28 0 obj
-<<
-/Length 29 0 R
->>
-stream
-BT
-/F1 8 Tf
-1 0 0 1 50 802 Tm
-8 TL
 (slope =)'
 (         0.202632869457516)'
 (Irb =)'
@@ -924,6 +924,29 @@ BT
 (          109.984897804292)'
 (Lslope =)'
 (          89.5626110469072)'
+ET
+endstream
+endobj
+29 0 obj
+2102
+endobj
+30 0 obj
+<<
+/Type /Page
+/Parent 3 0 R
+/Resources 5 0 R
+/Contents 31 0 R
+>>
+endobj
+31 0 obj
+<<
+/Length 32 0 R
+>>
+stream
+BT
+/F1 8 Tf
+1 0 0 1 50 752 Tm
+8 TL
 (ans =)'
 (!------- End Berm Factor Calculation, Iter: 6 ---------!)'
 (berm_width =)'
@@ -972,29 +995,6 @@ BT
 (                    5.4588)'
 (Tp =)'
 (                    9.7161)'
-ET
-endstream
-endobj
-29 0 obj
-2257
-endobj
-30 0 obj
-<<
-/Type /Page
-/Parent 3 0 R
-/Resources 5 0 R
-/Contents 31 0 R
->>
-endobj
-31 0 obj
-<<
-/Length 32 0 R
->>
-stream
-BT
-/F1 8 Tf
-1 0 0 1 50 802 Tm
-8 TL
 (T0 =)'
 (          8.83281818181818)'
 (R2 =)'
@@ -1037,6 +1037,29 @@ BT
 (          10.0692199576797)'
 (R2del =)'
 (        0.0239417723992492)'
+ET
+endstream
+endobj
+32 0 obj
+2065
+endobj
+33 0 obj
+<<
+/Type /Page
+/Parent 3 0 R
+/Resources 5 0 R
+/Contents 34 0 R
+>>
+endobj
+34 0 obj
+<<
+/Length 35 0 R
+>>
+stream
+BT
+/F1 8 Tf
+1 0 0 1 50 752 Tm
+8 TL
 (Z2 =)'
 (          19.1207549576797)'
 (ans =)'
@@ -1091,29 +1114,6 @@ BT
 (!!! - - Iribaren number:   1.74 is in the valid range \(0.5-10\), TAW RECOMMENDED - - !!!)'
 (ans =)'
 (!!! - - slope: 1:4.9 V:H is in the valid range \(1:8 - 1:1\), TAW RECOMMENDED - - !!!)'
-ET
-endstream
-endobj
-32 0 obj
-2187
-endobj
-33 0 obj
-<<
-/Type /Page
-/Parent 3 0 R
-/Resources 5 0 R
-/Contents 34 0 R
->>
-endobj
-34 0 obj
-<<
-/Length 35 0 R
->>
-stream
-BT
-/F1 8 Tf
-1 0 0 1 50 802 Tm
-8 TL
 (R2_new =)'
 (          10.0812830626387)'
 (R2del =)'
@@ -1150,6 +1150,29 @@ BT
 (     0)'
 (rB =)'
 (     0)'
+ET
+endstream
+endobj
+35 0 obj
+2034
+endobj
+36 0 obj
+<<
+/Type /Page
+/Parent 3 0 R
+/Resources 5 0 R
+/Contents 37 0 R
+>>
+endobj
+37 0 obj
+<<
+/Length 38 0 R
+>>
+stream
+BT
+/F1 8 Tf
+1 0 0 1 50 752 Tm
+8 TL
 (rdh_mean =)'
 (     1)'
 (gamma_berm =)'
@@ -1188,25 +1211,25 @@ BT
 ET
 endstream
 endobj
-35 0 obj
-1595
+38 0 obj
+815
 endobj
 3 0 obj
 <<
 /Type /Pages
-/Count 10
-/MediaBox [ 0 0 595 842 ]
-/Kids [ 6 0 R 9 0 R 12 0 R 15 0 R 18 0 R 21 0 R 24 0 R 27 0 R 30 0 R 33 0 R ]
+/Count 11
+/MediaBox [ 0 0 612 792 ]
+/Kids [ 6 0 R 9 0 R 12 0 R 15 0 R 18 0 R 21 0 R 24 0 R 27 0 R 30 0 R 33 0 R 36 0 R ]
 >>
 endobj
 xref
-0 36
-0000000000 65535 f 0000000010 00000 n 0000000164 00000 n 0000027663 00000 n 0000000219 00000 n 0000000305 00000 n 0000000382 00000 n 0000000470 00000 n 0000003608 00000 n 0000003631 00000 n 0000003720 00000 n 0000006888 00000 n 0000006912 00000 n 0000007002 00000 n 0000010064 00000 n 0000010088 00000 n 0000010178 00000 n 0000013858 00000 n 0000013882 00000 n 0000013972 00000 n 0000016403 00000 n 0000016427 00000 n 0000016517 00000 n 0000018769 00000 n 0000018793 00000 n 0000018883 00000 n 0000021075 00000 n 0000021099 00000 n 0000021189 00000 n 0000023507 00000 n 0000023531 00000 n 0000023621 00000 n 0000025869 00000 n 0000025893 00000 n 0000025983 00000 n 0000027639 00000 n trailer
+0 39
+0000000000 65535 f 0000000010 00000 n 0000000164 00000 n 0000027880 00000 n 0000000219 00000 n 0000000305 00000 n 0000000382 00000 n 0000000470 00000 n 0000003430 00000 n 0000003453 00000 n 0000003542 00000 n 0000006174 00000 n 0000006198 00000 n 0000006288 00000 n 0000009246 00000 n 0000009270 00000 n 0000009360 00000 n 0000012918 00000 n 0000012942 00000 n 0000013032 00000 n 0000015615 00000 n 0000015639 00000 n 0000015729 00000 n 0000017959 00000 n 0000017983 00000 n 0000018073 00000 n 0000020141 00000 n 0000020165 00000 n 0000020255 00000 n 0000022418 00000 n 0000022442 00000 n 0000022532 00000 n 0000024658 00000 n 0000024682 00000 n 0000024772 00000 n 0000026867 00000 n 0000026891 00000 n 0000026981 00000 n 0000027857 00000 n trailer
 <<
-/Size 36
+/Size 39
 /Root 2 0 R
 /Info 1 0 R
 >>
 startxref
-27819
+28043
 %%EOF

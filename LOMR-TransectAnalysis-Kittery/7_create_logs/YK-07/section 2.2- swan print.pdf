@@ -1,7 +1,7 @@
 %PDF-1.1
 1 0 obj
 <<
-/CreationDate (D:20200219151532)
+/CreationDate (D:20200220122446)
 /Producer (text2pdf v1.1 (\251 Phil Smith, 1996))
 /Title (../2_swan/swanfiles/YK-07.prt)
 >>
@@ -41,7 +41,7 @@ endobj
 stream
 BT
 /F1 8 Tf
-1 0 0 1 50 802 Tm
+1 0 0 1 50 752 Tm
 8 TL
 (1)'
 ()'
@@ -133,17 +133,11 @@ BT
 (    )'
 ( !)'
 (    )'
-( !---------------- P H Y S I C S -------------------------)'
-(    )'
-( !-- GEN1 [cf10] [cf20] [cf30] [cf40] [edm1pm] [cdrag] [umin] [cfpm])'
-(    )'
-( !-- GEN2 [cf10] [cf20] [cf30] [cf40] [cf50] [cf60] [edm1pm] [cdrag] [umin] [cfpm])'
-(    )'
 ET
 endstream
 endobj
 8 0 obj
-3090
+2840
 endobj
 9 0 obj
 <<
@@ -160,8 +154,14 @@ endobj
 stream
 BT
 /F1 8 Tf
-1 0 0 1 50 802 Tm
+1 0 0 1 50 752 Tm
 8 TL
+( !---------------- P H Y S I C S -------------------------)'
+(    )'
+( !-- GEN1 [cf10] [cf20] [cf30] [cf40] [edm1pm] [cdrag] [umin] [cfpm])'
+(    )'
+( !-- GEN2 [cf10] [cf20] [cf30] [cf40] [cf50] [cf60] [edm1pm] [cdrag] [umin] [cfpm])'
+(    )'
 (     GEN3 KOMEN)'
 (    )'
 ( !   whitecapping \( on by default\))'
@@ -246,23 +246,11 @@ BT
 (----------------------------------------------------------------)'
 (                  COMPUTATIONAL PART OF SWAN)'
 (----------------------------------------------------------------)'
-()'
-( One-dimensional mode of SWAN is activated)'
-( Gridresolution       : MXC             252 MYC              1)'
-(                      : MCGRD           253)'
-(                      : MSC              31 MDC             36)'
-(                      : MTC               1)'
-(                      : NSTATC            0 ITERMX          50)'
-( Propagation flags    : ITFRE             1 IREFR            1)'
-( Source term flags    : IBOT              1 ISURF            1)'
-(                      : IWCAP             1 IWIND            3)'
-(                      : ITRIAD            1 IQUAD            2)'
-(                      : IVEG              0 ITURBV           0)'
 ET
 endstream
 endobj
 11 0 obj
-2957
+2523
 endobj
 12 0 obj
 <<
@@ -279,8 +267,20 @@ endobj
 stream
 BT
 /F1 8 Tf
-1 0 0 1 50 802 Tm
+1 0 0 1 50 752 Tm
 8 TL
+()'
+( One-dimensional mode of SWAN is activated)'
+( Gridresolution       : MXC             252 MYC              1)'
+(                      : MCGRD           253)'
+(                      : MSC              31 MDC             36)'
+(                      : MTC               1)'
+(                      : NSTATC            0 ITERMX          50)'
+( Propagation flags    : ITFRE             1 IREFR            1)'
+( Source term flags    : IBOT              1 ISURF            1)'
+(                      : IWCAP             1 IWIND            3)'
+(                      : ITRIAD            1 IQUAD            2)'
+(                      : IVEG              0 ITURBV           0)'
 (                      : IMUD              0)'
 ( Spatial step         : DX       0.1000E+01 DY      0.1000E+01)'
 ( Spectral bin         : df/f     0.1157E+00 DDIR    0.1000E+02)'
@@ -359,6 +359,29 @@ BT
 ( iteration    3; sweep 1)'
 ( iteration    3; sweep 2)'
 ( iteration    3; sweep 3)'
+ET
+endstream
+endobj
+14 0 obj
+4628
+endobj
+15 0 obj
+<<
+/Type /Page
+/Parent 3 0 R
+/Resources 5 0 R
+/Contents 16 0 R
+>>
+endobj
+16 0 obj
+<<
+/Length 17 0 R
+>>
+stream
+BT
+/F1 8 Tf
+1 0 0 1 50 752 Tm
+8 TL
 ( iteration    3; sweep 4)'
 ( accuracy OK in   0.41 % of wet grid points \( 99.50 % required\))'
 ()'
@@ -377,29 +400,6 @@ BT
 ( iteration    6; sweep 1)'
 ( iteration    6; sweep 2)'
 ( iteration    6; sweep 3)'
-ET
-endstream
-endobj
-14 0 obj
-4517
-endobj
-15 0 obj
-<<
-/Type /Page
-/Parent 3 0 R
-/Resources 5 0 R
-/Contents 16 0 R
->>
-endobj
-16 0 obj
-<<
-/Length 17 0 R
->>
-stream
-BT
-/F1 8 Tf
-1 0 0 1 50 802 Tm
-8 TL
 ( iteration    6; sweep 4)'
 ( accuracy OK in 100.00 % of wet grid points \( 99.50 % required\))'
 ()'
@@ -411,19 +411,19 @@ ET
 endstream
 endobj
 17 0 obj
-177
+750
 endobj
 3 0 obj
 <<
 /Type /Pages
 /Count 4
-/MediaBox [ 0 0 595 842 ]
+/MediaBox [ 0 0 612 792 ]
 /Kids [ 6 0 R 9 0 R 12 0 R 15 0 R ]
 >>
 endobj
 xref
 0 18
-0000000000 65535 f 0000000010 00000 n 0000000160 00000 n 0000011812 00000 n 0000000215 00000 n 0000000301 00000 n 0000000378 00000 n 0000000466 00000 n 0000003615 00000 n 0000003638 00000 n 0000003727 00000 n 0000006745 00000 n 0000006769 00000 n 0000006859 00000 n 0000011437 00000 n 0000011461 00000 n 0000011551 00000 n 0000011789 00000 n trailer
+0000000000 65535 f 0000000010 00000 n 0000000160 00000 n 0000011812 00000 n 0000000215 00000 n 0000000301 00000 n 0000000378 00000 n 0000000466 00000 n 0000003365 00000 n 0000003388 00000 n 0000003477 00000 n 0000006061 00000 n 0000006085 00000 n 0000006175 00000 n 0000010864 00000 n 0000010888 00000 n 0000010978 00000 n 0000011789 00000 n trailer
 <<
 /Size 18
 /Root 2 0 R

@@ -1,7 +1,7 @@
 %PDF-1.1
 1 0 obj
 <<
-/CreationDate (D:20200219151532)
+/CreationDate (D:20200220122445)
 /Producer (text2pdf v1.1 (\251 Phil Smith, 1996))
 /Title (../3_whafis/logfiles/YK-05_short.out)
 >>
@@ -41,7 +41,7 @@ endobj
 stream
 BT
 /F1 7 Tf
-1 0 0 1 50 802 Tm
+1 0 0 1 50 752 Tm
 7 TL
 ( WAVE HEIGHT COMPUTATIONS FOR FLOOD INSURANCE STUDIES \(WHAFIS VERSION 4.0G, 08_2007\))'
 ( Executed on: Thu Feb  6 16:14:34 2020)'
@@ -145,19 +145,11 @@ BT
 (  OF     10.000    -26.378      0.000      9.027      0.000      0.000      0.000      0.000      0.245      0.000)'
 (            END        END  NEW SURGE  NEW SURGE                                                 BOTTOM    AVERAGE)'
 (        STATION  ELEVATION    10-YEAR   100-YEAR                                                  SLOPE    A-ZONES)'
-(  OF     11.000    -26.132      0.000      9.027      0.000      0.000      0.000      0.000      0.245      0.000)'
-(            END        END  NEW SURGE  NEW SURGE                                                 BOTTOM    AVERAGE)'
-(        STATION  ELEVATION    10-YEAR   100-YEAR                                                  SLOPE    A-ZONES)'
-(  OF     12.000    -25.887      0.000      9.027      0.000      0.000      0.000      0.000      0.245      0.000)'
-(            END        END  NEW SURGE  NEW SURGE                                                 BOTTOM    AVERAGE)'
-(        STATION  ELEVATION    10-YEAR   100-YEAR                                                  SLOPE    A-ZONES)'
-(  OF     13.000    -25.642      0.000      9.027      0.000      0.000      0.000      0.000      0.245      0.000)'
-(            END        END  NEW SURGE  NEW SURGE                                                 BOTTOM    AVERAGE)'
 ET
 endstream
 endobj
 8 0 obj
-13332
+12380
 endobj
 9 0 obj
 <<
@@ -174,8 +166,16 @@ endobj
 stream
 BT
 /F1 7 Tf
-1 0 0 1 50 802 Tm
+1 0 0 1 50 752 Tm
 7 TL
+(  OF     11.000    -26.132      0.000      9.027      0.000      0.000      0.000      0.000      0.245      0.000)'
+(            END        END  NEW SURGE  NEW SURGE                                                 BOTTOM    AVERAGE)'
+(        STATION  ELEVATION    10-YEAR   100-YEAR                                                  SLOPE    A-ZONES)'
+(  OF     12.000    -25.887      0.000      9.027      0.000      0.000      0.000      0.000      0.245      0.000)'
+(            END        END  NEW SURGE  NEW SURGE                                                 BOTTOM    AVERAGE)'
+(        STATION  ELEVATION    10-YEAR   100-YEAR                                                  SLOPE    A-ZONES)'
+(  OF     13.000    -25.642      0.000      9.027      0.000      0.000      0.000      0.000      0.245      0.000)'
+(            END        END  NEW SURGE  NEW SURGE                                                 BOTTOM    AVERAGE)'
 (        STATION  ELEVATION    10-YEAR   100-YEAR                                                  SLOPE    A-ZONES)'
 (  OF     14.000    -25.397      0.000      9.027      0.000      0.000      0.000      0.000      0.245      0.000)'
 (            END        END  NEW SURGE  NEW SURGE                                                 BOTTOM    AVERAGE)'
@@ -270,27 +270,11 @@ BT
 (  OF     50.000    -15.340      0.000      9.030      0.000      0.000      0.000      0.000      0.316      0.000)'
 (            END        END  NEW SURGE  NEW SURGE                                                 BOTTOM    AVERAGE)'
 (        STATION  ELEVATION    10-YEAR   100-YEAR                                                  SLOPE    A-ZONES)'
-(  OF     51.000    -15.024      0.000      9.030      0.000      0.000      0.000      0.000      0.316      0.000)'
-(            END        END  NEW SURGE  NEW SURGE                                                 BOTTOM    AVERAGE)'
-(        STATION  ELEVATION    10-YEAR   100-YEAR                                                  SLOPE    A-ZONES)'
-(  OF     54.000    -14.076      0.000      9.030      0.000      0.000      0.000      0.000      0.316      0.000)'
-(            END        END  NEW SURGE  NEW SURGE                                                 BOTTOM    AVERAGE)'
-(        STATION  ELEVATION    10-YEAR   100-YEAR                                                  SLOPE    A-ZONES)'
-(  OF     56.000    -13.443      0.000      9.030      0.000      0.000      0.000      0.000      0.316      0.000)'
-(            END        END  NEW SURGE  NEW SURGE                                                 BOTTOM    AVERAGE)'
-(        STATION  ELEVATION    10-YEAR   100-YEAR                                                  SLOPE    A-ZONES)'
-(  OF     57.000    -13.127      0.000      9.030      0.000      0.000      0.000      0.000      0.236      0.000)'
-(            END        END  NEW SURGE  NEW SURGE                                                 BOTTOM    AVERAGE)'
-(        STATION  ELEVATION    10-YEAR   100-YEAR                                                  SLOPE    A-ZONES)'
-(  OF     62.000    -12.029      0.000      9.031      0.000      0.000      0.000      0.000      0.150      0.000)'
-(            END        END  NEW SURGE  NEW SURGE                                                 BOTTOM    AVERAGE)'
-(        STATION  ELEVATION    10-YEAR   100-YEAR                                                  SLOPE    A-ZONES)'
-(  OF     65.000    -11.928      0.000      9.031      0.000      0.000      0.000      0.000      0.024      0.000)'
 ET
 endstream
 endobj
 11 0 obj
-13133
+12181
 endobj
 12 0 obj
 <<
@@ -307,8 +291,24 @@ endobj
 stream
 BT
 /F1 7 Tf
-1 0 0 1 50 802 Tm
+1 0 0 1 50 752 Tm
 7 TL
+(  OF     51.000    -15.024      0.000      9.030      0.000      0.000      0.000      0.000      0.316      0.000)'
+(            END        END  NEW SURGE  NEW SURGE                                                 BOTTOM    AVERAGE)'
+(        STATION  ELEVATION    10-YEAR   100-YEAR                                                  SLOPE    A-ZONES)'
+(  OF     54.000    -14.076      0.000      9.030      0.000      0.000      0.000      0.000      0.316      0.000)'
+(            END        END  NEW SURGE  NEW SURGE                                                 BOTTOM    AVERAGE)'
+(        STATION  ELEVATION    10-YEAR   100-YEAR                                                  SLOPE    A-ZONES)'
+(  OF     56.000    -13.443      0.000      9.030      0.000      0.000      0.000      0.000      0.316      0.000)'
+(            END        END  NEW SURGE  NEW SURGE                                                 BOTTOM    AVERAGE)'
+(        STATION  ELEVATION    10-YEAR   100-YEAR                                                  SLOPE    A-ZONES)'
+(  OF     57.000    -13.127      0.000      9.030      0.000      0.000      0.000      0.000      0.236      0.000)'
+(            END        END  NEW SURGE  NEW SURGE                                                 BOTTOM    AVERAGE)'
+(        STATION  ELEVATION    10-YEAR   100-YEAR                                                  SLOPE    A-ZONES)'
+(  OF     62.000    -12.029      0.000      9.031      0.000      0.000      0.000      0.000      0.150      0.000)'
+(            END        END  NEW SURGE  NEW SURGE                                                 BOTTOM    AVERAGE)'
+(        STATION  ELEVATION    10-YEAR   100-YEAR                                                  SLOPE    A-ZONES)'
+(  OF     65.000    -11.928      0.000      9.031      0.000      0.000      0.000      0.000      0.024      0.000)'
 (            END        END  NEW SURGE  NEW SURGE                                                 BOTTOM    AVERAGE)'
 (        STATION  ELEVATION    10-YEAR   100-YEAR                                                  SLOPE    A-ZONES)'
 (  OF     67.000    -11.909      0.000      9.031      0.000      0.000      0.000      0.000      0.009      0.000)'
@@ -395,6 +395,29 @@ BT
 (                                         15.00                 1.00                 9.03)'
 (                                         31.00                 1.00                 9.03)'
 (                                         45.00                 1.00                 9.03)'
+ET
+endstream
+endobj
+14 0 obj
+10427
+endobj
+15 0 obj
+<<
+/Type /Page
+/Parent 3 0 R
+/Resources 5 0 R
+/Contents 16 0 R
+>>
+endobj
+16 0 obj
+<<
+/Length 17 0 R
+>>
+stream
+BT
+/F1 7 Tf
+1 0 0 1 50 752 Tm
+7 TL
 (                                         62.00                 1.00                 9.03)'
 (                                        167.30                 1.00                 9.03)'
 (                                                       PART5  LOCATION OF V ZONES)'
@@ -419,29 +442,6 @@ BT
 (                                              57.00          12.77)'
 (                                                                          V22  EL=13     120)'
 (                                              62.00          12.80)'
-ET
-endstream
-endobj
-14 0 obj
-10578
-endobj
-15 0 obj
-<<
-/Type /Page
-/Parent 3 0 R
-/Resources 5 0 R
-/Contents 16 0 R
->>
-endobj
-16 0 obj
-<<
-/Length 17 0 R
->>
-stream
-BT
-/F1 7 Tf
-1 0 0 1 50 802 Tm
-7 TL
 (                                                                          V22  EL=13     120)'
 (                                             148.23          12.50)'
 (                                                                          V22  EL=12     120)'
@@ -468,19 +468,19 @@ ET
 endstream
 endobj
 17 0 obj
-1815
+3870
 endobj
 3 0 obj
 <<
 /Type /Pages
 /Count 4
-/MediaBox [ 0 0 595 842 ]
+/MediaBox [ 0 0 612 792 ]
 /Kids [ 6 0 R 9 0 R 12 0 R 15 0 R ]
 >>
 endobj
 xref
 0 18
-0000000000 65535 f 0000000010 00000 n 0000000167 00000 n 0000039940 00000 n 0000000222 00000 n 0000000308 00000 n 0000000385 00000 n 0000000473 00000 n 0000013864 00000 n 0000013888 00000 n 0000013977 00000 n 0000027171 00000 n 0000027196 00000 n 0000027286 00000 n 0000037925 00000 n 0000037950 00000 n 0000038040 00000 n 0000039916 00000 n trailer
+0000000000 65535 f 0000000010 00000 n 0000000167 00000 n 0000039940 00000 n 0000000222 00000 n 0000000308 00000 n 0000000385 00000 n 0000000473 00000 n 0000012912 00000 n 0000012936 00000 n 0000013025 00000 n 0000025267 00000 n 0000025292 00000 n 0000025382 00000 n 0000035870 00000 n 0000035895 00000 n 0000035985 00000 n 0000039916 00000 n trailer
 <<
 /Size 18
 /Root 2 0 R

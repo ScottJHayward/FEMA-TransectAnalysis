@@ -1,0 +1,6 @@
+RUNUP2 YK-05.in YK-05.out
+RUNUP2 YK-06F.in YK-06F.out
+RUNUP2 YK-06.in YK-06.out
+RUNUP2 YK-07.in YK-07.out
+RUNUP2 YK-14.in YK-14.out
+RUNUP2 YK-15.in YK-15.out

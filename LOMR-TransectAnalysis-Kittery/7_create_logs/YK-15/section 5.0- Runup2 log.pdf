@@ -1,7 +1,7 @@
 %PDF-1.1
 1 0 obj
 <<
-/CreationDate (D:20200219151532)
+/CreationDate (D:20200220122447)
 /Producer (text2pdf v1.1 (\251 Phil Smith, 1996))
 /Title (../5_runup2/logs/YK-15_log.txt)
 >>
@@ -41,7 +41,7 @@ endobj
 stream
 BT
 /F1 10 Tf
-1 0 0 1 50 802 Tm
+1 0 0 1 50 752 Tm
 10 TL
 ()'
 (_______________________________________________________)'
@@ -115,16 +115,11 @@ BT
 (9.30)'
 (9.30)'
 (9.30)'
-(9.30)'
-(9.30)'
-(9.30)'
-(9.30)'
-(9.30)'
 ET
 endstream
 endobj
 8 0 obj
-2405
+2360
 endobj
 9 0 obj
 <<
@@ -141,8 +136,13 @@ endobj
 stream
 BT
 /F1 10 Tf
-1 0 0 1 50 802 Tm
+1 0 0 1 50 752 Tm
 10 TL
+(9.30)'
+(9.30)'
+(9.30)'
+(9.30)'
+(9.30)'
 ()'
 (RUNUP2 deepwater mean wave heights:)'
 (2.92)'
@@ -210,6 +210,29 @@ BT
 ()'
 (ACES BEACH RUNUP is valid)'
 ()'
+ET
+endstream
+endobj
+11 0 obj
+1303
+endobj
+12 0 obj
+<<
+/Type /Page
+/Parent 3 0 R
+/Resources 5 0 R
+/Contents 13 0 R
+>>
+endobj
+13 0 obj
+<<
+/Length 14 0 R
+>>
+stream
+BT
+/F1 10 Tf
+1 0 0 1 50 752 Tm
+10 TL
 (_____________END ACES BEACH RESULTS____________________)'
 ()'
 (PART 5 COMPLETE________________________________________)'
@@ -217,25 +240,25 @@ BT
 ET
 endstream
 endobj
-11 0 obj
-1388
+14 0 obj
+175
 endobj
 3 0 obj
 <<
 /Type /Pages
-/Count 2
-/MediaBox [ 0 0 595 842 ]
-/Kids [ 6 0 R 9 0 R ]
+/Count 3
+/MediaBox [ 0 0 612 792 ]
+/Kids [ 6 0 R 9 0 R 12 0 R ]
 >>
 endobj
 xref
-0 12
-0000000000 65535 f 0000000010 00000 n 0000000161 00000 n 0000004516 00000 n 0000000216 00000 n 0000000302 00000 n 0000000379 00000 n 0000000467 00000 n 0000002931 00000 n 0000002954 00000 n 0000003043 00000 n 0000004492 00000 n trailer
+0 15
+0000000000 65535 f 0000000010 00000 n 0000000161 00000 n 0000004735 00000 n 0000000216 00000 n 0000000302 00000 n 0000000379 00000 n 0000000467 00000 n 0000002886 00000 n 0000002909 00000 n 0000002998 00000 n 0000004362 00000 n 0000004386 00000 n 0000004476 00000 n 0000004712 00000 n trailer
 <<
-/Size 12
+/Size 15
 /Root 2 0 R
 /Info 1 0 R
 >>
 startxref
-4615
+4841
 %%EOF
