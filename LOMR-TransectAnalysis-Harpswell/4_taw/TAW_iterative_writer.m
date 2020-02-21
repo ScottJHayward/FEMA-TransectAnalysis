@@ -36,7 +36,7 @@ grough=num(:,15);
 gbeta=num(:,16);
 gperm=num(:,17);
 
-for i=1:length(fnames)
+for i=[1:17 19:32 34:length(fnames)]
 
 fname=[tDIR fnames{i} 'XYZSTA_RETURNS.csv'];
 file=xlsread(fname);
@@ -47,7 +47,7 @@ end
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %add output to excel file
-for i=1:length(fnames)
+for i=[1:17 19:32 34:length(fnames)]
     
     
     %write a transect file for each run
@@ -90,7 +90,7 @@ for i=1:templatelines
 end
 
 fid2=fopen(tawfilename,'w')
-for i=1:length(fnames)
+for i=[1:17 19:32 34:length(fnames)]
 for li=1:length(template)
     tawfile{li}=template{li}; %read each line of template
     tawfile{li}=strrep(tawfile{li},'$DIARYFILE$',['logfiles/' fnames{i} '-DIARY.txt']);

@@ -1,0 +1,32 @@
+_______________________________________________________
+DATA LOG FOR TRANSECT ID: CM-151-1
+_______________________________________________________
+
+
+_______________________________________________________
+PART 1: USER INPUT
+
+
+SWAN 1-D / WHAFIS input
+_______________________
+station:    -477 ft
+LON:        -69.9033 deg E
+LAT:        43.8227 deg N
+Bottom ELEV:       -14.5324 ft-NAVD88
+TWL:        8.9177 ft-NAVD88
+HS:         1.4461 ft
+TP:         2.3 sec
+Wave Direction bin: 45 deg CCW from East (90 deg sector)
+Transect Direction:   36.2752 deg CCW from East
+
+
+TAW/RUNUP input
+_______________
+toe sta:     -69 ft
+toe elev:    -11.402 ft-NAVD88
+top sta:     88.5 ft
+top elev:    18.6089 ft-NAVD88
+*Wave and water level conditions at toe to be calculated in SWAN 1-D*
+
+PART 1 COMPLETE________________________________________
+

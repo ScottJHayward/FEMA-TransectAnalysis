@@ -22,10 +22,9 @@
 clc;clear all;close all
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% config %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 tDIR='../ADCIRC_returns/'; %location of transects
-tname= %e.g. 'YK-'; %for York County
-tnums = % e.g. {'05','06','06F','07','14','15'};
-pickSTA=ones(size(tnums)); %by default. can be array of 0's and 1's [0 1 1]
-% pickSTA= [ 0,   0,   0,     0,   0,   0];
+tname='CM-';
+tnums = {'122-1','123','123-1','124','124-1','124-2','126-1','127','127-1','129-1','130','131-1','133-1','132','133','134','134-1','135-1','135-2','136','137','138','139','139-1','139-2','140','141','142','145','149','149-1','150','151','150-1','150-2','151-1','158-1','159','159-1','161-1'};   % e.g. {'05','06','06F','07','14','15'};
+pickSTA=zeros(size(tnums)); %by default. can be array of 0's and 1's [0 1 1]
 savefile='../data/transectdata.xls'; imgfile='tpng';
 logpre=['logfiles/' tname];
 L_append=2; %line to append to... this will overwrite previous data
