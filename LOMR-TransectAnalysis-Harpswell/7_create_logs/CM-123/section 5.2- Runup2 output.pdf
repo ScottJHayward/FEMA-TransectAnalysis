@@ -1,0 +1,190 @@
+%PDF-1.1
+1 0 obj
+<<
+/CreationDate (D:20200221103515)
+/Producer (text2pdf v1.1 (\251 Phil Smith, 1996))
+/Title (../5_runup2/RUNUP2_files/CM-123.OUT)
+>>
+endobj
+2 0 obj
+<<
+/Type /Catalog
+/Pages 3 0 R
+>>
+endobj
+4 0 obj
+<<
+/Type /Font
+/Subtype /Type1
+/Name /F1
+/BaseFont /Courier
+>>
+endobj
+5 0 obj
+<<
+  /Font << /F1 4 0 R >>
+  /ProcSet [ /PDF /Text ]
+>>
+endobj
+6 0 obj
+<<
+/Type /Page
+/Parent 3 0 R
+/Resources 5 0 R
+/Contents 7 0 R
+>>
+endobj
+7 0 obj
+<<
+/Length 8 0 R
+>>
+stream
+BT
+/F1 8 Tf
+1 0 0 1 50 572 Tm
+8 TL
+()'
+ET
+endstream
+endobj
+8 0 obj
+48
+endobj
+9 0 obj
+<<
+/Type /Page
+/Parent 3 0 R
+/Resources 5 0 R
+/Contents 10 0 R
+>>
+endobj
+10 0 obj
+<<
+/Length 11 0 R
+>>
+stream
+BT
+/F1 8 Tf
+1 0 0 1 50 572 Tm
+8 TL
+( CLIENT- FEMA                      \000\000\000\000\000\000** WAVE RUNUP-VERSION 2.0  ** \000\000\000\000\000\000\000\000ENGINEERED BY sjh       \000\000JOB      job 2)'
+( PROJECT-RUNUP2 transect: CM-123                                                   \000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000RUN    1\000\000 PAGE \000 1)'
+()'
+(************************************************************************************************************************)'
+()'
+()'
+()'
+(                      CROSS SECTION PROFILE)'
+()'
+(                    LENGTH   ELEV.    SLOPE     ROUGHNESS)'
+()'
+(          1         -504.0   -19.2)'
+(                                         .00        .90)'
+(          2         -458.0   -18.1)'
+(                                        FLAT        .90)'
+(          3         -394.0   -18.1)'
+(                                       23.33        .90)'
+(          4         -366.0   -16.9)'
+(                                       11.72        .90)'
+(          5         -332.0   -14.0)'
+(                                         .18        .90)'
+(          6         -330.5    -5.6)'
+(                                        FLAT        .90)'
+(          7         -106.5    -5.6)'
+(                                       33.33        .90)'
+(          8          -96.5    -5.3)'
+(                                        FLAT        .90)'
+(          9          -32.5    -5.3)'
+(                                        8.14        .90)'
+(         10          -18.5    -3.6)'
+(                                        3.57        .90)'
+(         11           -8.5     -.8)'
+(                                       11.27        .90)'
+(         12            -.5     -.1)'
+(                                        8.28        .90)'
+(         13           13.5     1.6)'
+(                                        5.33        .90)'
+(         14           17.5     2.4)'
+(                                      400.00        .90)'
+(         15           29.5     2.4)'
+(                                       12.17        .90)'
+(         16           43.5     3.6)'
+(                                        6.25        .90)'
+(         17           51.5     4.8)'
+(                                        2.11        .90)'
+(         18           55.5     6.7)'
+(                                        3.25        .90)'
+(         19           73.5    12.3)'
+(                                        4.04        .90)'
+(         20           77.5    13.3)'
+(                                                      )'
+(                         LAST SLOPE   5.00     LAST ROUGHNESS    .90)'
+()'
+ET
+endstream
+endobj
+11 0 obj
+2725
+endobj
+12 0 obj
+<<
+/Type /Page
+/Parent 3 0 R
+/Resources 5 0 R
+/Contents 13 0 R
+>>
+endobj
+13 0 obj
+<<
+/Length 14 0 R
+>>
+stream
+BT
+/F1 8 Tf
+1 0 0 1 50 572 Tm
+8 TL
+( CLIENT- FEMA                      \000\000\000\000\000\000** WAVE RUNUP-VERSION 2.0  ** \000\000\000\000\000\000\000\000ENGINEERED BY sjh       \000\000JOB      job 2)'
+( PROJECT-RUNUP2 transect: CM-123                                                   \000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000RUN    1\000\000 PAGE \000 2)'
+()'
+(************************************************************************************************************************)'
+()'
+()'
+()'
+(                                            OUTPUT TABLE)'
+(                                            ------------)'
+()'
+()'
+()'
+(                   INPUT PARAMETERS                                 RUNUP RESULTS)'
+(                   ----------------                                 -------------)'
+()'
+(        WATER LEVEL    DEEP WATER                        BREAKING SLOPE    RUNUP SLOPE    RUNUP ABOVE        BREAKER)'
+(        ABOVE DATUM    WAVE HEIGHT    WAVE PERIOD            NUMBER           NUMBER      WATER LEVEL        DEPTH)'
+(           \(FT.\)          \(FT.\)          \(SEC.\)                                              \(FT.\)            \(FT.\))'
+()'
+()'
+ET
+endstream
+endobj
+14 0 obj
+1242
+endobj
+3 0 obj
+<<
+/Type /Pages
+/Count 3
+/MediaBox [ 0 0 792 612 ]
+/Kids [ 6 0 R 9 0 R 12 0 R ]
+>>
+endobj
+xref
+0 15
+0000000000 65535 f 0000000010 00000 n 0000000166 00000 n 0000004916 00000 n 0000000221 00000 n 0000000307 00000 n 0000000384 00000 n 0000000472 00000 n 0000000579 00000 n 0000000600 00000 n 0000000689 00000 n 0000003475 00000 n 0000003499 00000 n 0000003589 00000 n 0000004892 00000 n trailer
+<<
+/Size 15
+/Root 2 0 R
+/Info 1 0 R
+>>
+startxref
+5022
+%%EOF

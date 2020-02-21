@@ -431,11 +431,9 @@ while(abs(R2del) > tol && iter <= 25)
           R2_new=w2*fore_R2 + w1*R2_new
        end
     end % end berm width check
-
     % convergence criterion
     R2del=abs(R2-R2_new)
     R2_all(iter)=R2_new;
-
     % get the new top station (for plot purposes)
     Z2=R2_new+SWEL
     top_sta=-999;
@@ -450,8452 +448,3382 @@ while(abs(R2del) > tol && iter <= 25)
        top_sta=sta(end)+dy/S(end);
     end
     topStaAll(iter)=top_sta;
-
 end
-
 ans =
-
 !----------------- STARTING ITERATION 1 -----------------!
-
-
 Ztoe =
-
                  -0.559889
-
-
 toe_sta =
-
          -4.37839811542992
-
-
 top_sta =
-
            196.59710472875
-
-
 Z2 =
-
                  18.120211
-
-
 H0 =
-
                     6.2267
-
-
 Tp =
-
                    10.2103
-
-
 T0 =
-
           9.28209090909091
-
-
 R2 =
-
                    18.6801
-
-
 Z2 =
-
           27.7920895455134
-
-
 top_sta =
-
            313.97001027602
-
-
 Lslope =
-
            318.34840839145
-
-
 ans =
-
 Berm Factor Calculation: Iteration 1, Profile Segment: 20
-
-
 dh =
-
           7.01733954551342
-
-
 rdh_sum =
-
          0.599065845823981
-
-
 ans =
-
 Berm Factor Calculation: Iteration 1, Profile Segment: 21
-
-
 dh =
-
           6.95683954551342
-
-
 rdh_sum =
-
           1.19064063116286
-
-
 ans =
-
 Berm Factor Calculation: Iteration 1, Profile Segment: 28
-
-
 dh =
-
           5.84106454551342
-
-
 rdh_sum =
-
            1.6420749834842
-
-
 ans =
-
 Berm Factor Calculation: Iteration 1, Profile Segment: 29
-
-
 dh =
-
           5.82241454551342
-
-
 rdh_sum =
-
           2.09116860919536
-
-
 ans =
-
 Berm Factor Calculation: Iteration 1, Profile Segment: 30
-
-
 dh =
-
           5.79601454551342
-
-
 rdh_sum =
-
           2.53695075903407
-
-
 ans =
-
 Berm Factor Calculation: Iteration 1, Profile Segment: 31
-
-
 dh =
-
           5.76186454551342
-
-
 rdh_sum =
-
           2.97845290273617
-
-
 ans =
-
 Berm Factor Calculation: Iteration 1, Profile Segment: 32
-
-
 dh =
-
           5.71803954551342
-
-
 rdh_sum =
-
           3.41446888099168
-
-
 ans =
-
 Berm Factor Calculation: Iteration 1, Profile Segment: 33
-
-
 dh =
-
           5.66453954551342
-
-
 rdh_sum =
-
           3.84379821136296
-
-
 ans =
-
 Berm Factor Calculation: Iteration 1, Profile Segment: 44
-
-
 dh =
-
           4.10266454551342
-
-
 rdh_sum =
-
           4.08852215773557
-
-
 ans =
-
 Berm Factor Calculation: Iteration 1, Profile Segment: 45
-
-
 dh =
-
           4.03861454551342
-
-
 rdh_sum =
-
           4.32633313641215
-
-
 ans =
-
 Berm Factor Calculation: Iteration 1, Profile Segment: 60
-
-
 dh =
-
          0.716464545513425
-
-
 rdh_sum =
-
           4.33447774023632
-
-
 ans =
-
 Berm Factor Calculation: Iteration 1, Profile Segment: 61
-
-
 dh =
-
          0.718214545513424
-
-
 rdh_sum =
-
           4.34266207081192
-
-
 ans =
-
 Berm Factor Calculation: Iteration 1, Profile Segment: 62
-
-
 dh =
-
          0.719939545513425
-
-
 rdh_sum =
-
           4.35088565442187
-
-
 ans =
-
 Berm Factor Calculation: Iteration 1, Profile Segment: 63
-
-
 dh =
-
          0.721639545513424
-
-
 rdh_sum =
-
           4.35914801329253
-
-
 ans =
-
 Berm Factor Calculation: Iteration 1, Profile Segment: 72
-
-
 dh =
-
         -0.569610454486575
-
-
 rdh_sum =
-
           4.36144048709367
-
-
 ans =
-
 Berm Factor Calculation: Iteration 1, Profile Segment: 73
-
-
 dh =
-
         -0.597610454486576
-
-
 rdh_sum =
-
           4.36396368543612
-
-
 ans =
-
 Berm Factor Calculation: Iteration 1, Profile Segment: 74
-
-
 dh =
-
         -0.605235454486575
-
-
 rdh_sum =
-
           4.36655162630951
-
-
 ans =
-
 Berm Factor Calculation: Iteration 1, Profile Segment: 75
-
-
 dh =
-
         -0.592485454486576
-
-
 rdh_sum =
-
           4.36903176888756
-
-
 ans =
-
 Berm Factor Calculation: Iteration 1, Profile Segment: 76
-
-
 dh =
-
         -0.584710454486576
-
-
 rdh_sum =
-
            4.3714472984164
-
-
 ans =
-
 Berm Factor Calculation: Iteration 1, Profile Segment: 77
-
-
 dh =
-
         -0.581910454486575
-
-
 rdh_sum =
-
           4.37383976729215
-
-
 ans =
-
 Berm Factor Calculation: Iteration 1, Profile Segment: 82
-
-
 dh =
-
          -1.05048545448658
-
-
 rdh_sum =
-
           4.38162247682359
-
-
 ans =
-
 Berm Factor Calculation: Iteration 1, Profile Segment: 83
-
-
 dh =
-
          -1.10383545448657
-
-
 rdh_sum =
-
           4.39021343688658
-
-
 ans =
-
 Berm Factor Calculation: Iteration 1, Profile Segment: 88
-
-
 dh =
-
          -1.89333545448658
-
-
 rdh_sum =
-
           4.41534753029256
-
-
 ans =
-
 Berm Factor Calculation: Iteration 1, Profile Segment: 89
-
-
 dh =
-
          -1.93178545448658
-
-
 rdh_sum =
-
           4.44150375509001
-
-
 ans =
-
 Berm Factor Calculation: Iteration 1, Profile Segment: 94
-
-
 dh =
-
          -2.39768545448658
-
-
 rdh_sum =
-
            4.4816063336612
-
-
 ans =
-
 Berm Factor Calculation: Iteration 1, Profile Segment: 95
-
-
 dh =
-
          -2.45383545448658
-
-
 rdh_sum =
-
           4.52358214779857
-
-
 ans =
-
 Berm Factor Calculation: Iteration 1, Profile Segment: 96
-
-
 dh =
-
          -2.48993545448658
-
-
 rdh_sum =
-
           4.56678388555495
-
-
 ans =
-
 Berm Factor Calculation: Iteration 1, Profile Segment: 97
-
-
 dh =
-
          -2.50598545448658
-
-
 rdh_sum =
-
           4.61053607670744
-
-
 ans =
-
 Berm Factor Calculation: Iteration 1, Profile Segment: 98
-
-
 dh =
-
          -2.54166045448657
-
-
 rdh_sum =
-
           4.65552368380569
-
-
 ans =
-
 Berm Factor Calculation: Iteration 1, Profile Segment: 99
-
-
 dh =
-
          -2.59696045448658
-
-
 rdh_sum =
-
           4.70245867193533
-
-
 ans =
-
 Berm Factor Calculation: Iteration 1, Profile Segment: 100
-
-
 dh =
-
          -2.65703545448658
-
-
 rdh_sum =
-
           4.75155359566805
-
-
 ans =
-
 Berm Factor Calculation: Iteration 1, Profile Segment: 101
-
-
 dh =
-
          -2.72188545448658
-
-
 rdh_sum =
-
           4.80303178825642
-
-
 ans =
-
 Berm Factor Calculation: Iteration 1, Profile Segment: 102
-
-
 dh =
-
          -2.78673545448658
-
-
 rdh_sum =
-
            4.8569466003655
-
-
 ans =
-
 Berm Factor Calculation: Iteration 1, Profile Segment: 103
-
-
 dh =
-
          -2.85158545448658
-
-
 rdh_sum =
-
            4.9133510928299
-
-
 ans =
-
 Berm Factor Calculation: Iteration 1, Profile Segment: 104
-
-
 dh =
-
          -2.91396045448658
-
-
 rdh_sum =
-
           4.97220003309272
-
-
 ans =
-
 Berm Factor Calculation: Iteration 1, Profile Segment: 105
-
-
 dh =
-
          -2.97386045448658
-
-
 rdh_sum =
-
           5.03344212435562
-
-
 ans =
-
 Berm Factor Calculation: Iteration 1, Profile Segment: 106
-
-
 dh =
-
          -3.03341045448658
-
-
 rdh_sum =
-
           5.09710752043771
-
-
 ans =
-
 Berm Factor Calculation: Iteration 1, Profile Segment: 107
-
-
 dh =
-
          -3.09261045448658
-
-
 rdh_sum =
-
           5.16322535829537
-
-
 ans =
-
 Berm Factor Calculation: Iteration 1, Profile Segment: 108
-
-
 dh =
-
          -3.14551045448658
-
-
 rdh_sum =
-
            5.2315710456004
-
-
 ans =
-
 Berm Factor Calculation: Iteration 1, Profile Segment: 109
-
-
 dh =
-
          -3.19211045448658
-
-
 rdh_sum =
-
           5.30190757209896
-
-
 ans =
-
 Berm Factor Calculation: Iteration 1, Profile Segment: 110
-
-
 dh =
-
          -3.23113545448658
-
-
 rdh_sum =
-
           5.37393162870342
-
-
 ans =
-
 Berm Factor Calculation: Iteration 1, Profile Segment: 111
-
-
 dh =
-
          -3.26258545448658
-
-
 rdh_sum =
-
           5.44732907336501
-
-
 ans =
-
 Berm Factor Calculation: Iteration 1, Profile Segment: 112
-
-
 dh =
-
          -3.29383545448658
-
-
 rdh_sum =
-
           5.52210299327982
-
-
 ans =
-
 Berm Factor Calculation: Iteration 1, Profile Segment: 113
-
-
 dh =
-
          -3.32488545448658
-
-
 rdh_sum =
-
           5.59825621175062
-
-
 ans =
-
 Berm Factor Calculation: Iteration 1, Profile Segment: 114
-
-
 dh =
-
          -3.36333545448658
-
-
 rdh_sum =
-
           5.67613346400767
-
-
 ans =
-
 Berm Factor Calculation: Iteration 1, Profile Segment: 115
-
-
 dh =
-
          -3.40918545448658
-
-
 rdh_sum =
-
           5.75608962116676
-
-
 ans =
-
 Berm Factor Calculation: Iteration 1, Profile Segment: 118
-
-
 dh =
-
          -3.60403545448658
-
-
 rdh_sum =
-
           5.84515763480688
-
-
 ans =
-
 Berm Factor Calculation: Iteration 1, Profile Segment: 119
-
-
 dh =
-
          -3.62728545448658
-
-
 rdh_sum =
-
           5.93534256115743
-
-
 ans =
-
 Berm Factor Calculation: Iteration 1, Profile Segment: 120
-
-
 dh =
-
          -3.64426045448658
-
-
 rdh_sum =
-
           6.02634691220303
-
-
 ans =
-
 Berm Factor Calculation: Iteration 1, Profile Segment: 121
-
-
 dh =
-
          -3.65496045448658
-
-
 rdh_sum =
-
           6.11786949157243
-
-
 ans =
-
 Berm Factor Calculation: Iteration 1, Profile Segment: 126
-
-
 dh =
-
          -4.12838545448658
-
-
 rdh_sum =
-
           6.23362033016775
-
-
 ans =
-
 Berm Factor Calculation: Iteration 1, Profile Segment: 127
-
-
 dh =
-
          -4.18293545448658
-
-
 rdh_sum =
-
           6.35232234057193
-
-
 ans =
-
 Berm Factor Calculation: Iteration 1, Profile Segment: 128
-
-
 dh =
-
          -4.21903545448658
-
-
 rdh_sum =
-
           6.47299503364288
-
-
 ans =
-
 Berm Factor Calculation: Iteration 1, Profile Segment: 129
-
-
 dh =
-
          -4.23668545448658
-
-
 rdh_sum =
-
           6.59463632591779
-
-
 ans =
-
 Berm Factor Calculation: Iteration 1, Profile Segment: 130
-
-
 dh =
-
          -4.25831045448658
-
-
 rdh_sum =
-
            6.7174689016373
-
-
 ans =
-
 Berm Factor Calculation: Iteration 1, Profile Segment: 131
-
-
 dh =
-
          -4.28391045448658
-
-
 rdh_sum =
-
           6.84171818381369
-
-
 ans =
-
 Berm Factor Calculation: Iteration 1, Profile Segment: 132
-
-
 dh =
-
          -4.31266045448658
-
-
 rdh_sum =
-
            6.9675667956922
-
-
 ans =
-
 Berm Factor Calculation: Iteration 1, Profile Segment: 133
-
-
 dh =
-
          -4.34456045448658
-
-
 rdh_sum =
-
           7.09520020371398
-
-
 ans =
-
 Berm Factor Calculation: Iteration 1, Profile Segment: 138
-
-
 dh =
-
          -4.79738545448658
-
-
 rdh_sum =
-
           7.24929995385892
-
-
 ans =
-
 Berm Factor Calculation: Iteration 1, Profile Segment: 139
-
-
 dh =
-
          -4.84253545448658
-
-
 rdh_sum =
-
           7.40615115174649
-
-
 ans =
-
 Berm Factor Calculation: Iteration 1, Profile Segment: 140
-
-
 dh =
-
          -4.86608545448658
-
-
 rdh_sum =
-
           7.56444535148319
-
-
 ans =
-
 Berm Factor Calculation: Iteration 1, Profile Segment: 141
-
-
 dh =
-
          -4.86803545448658
-
-
 rdh_sum =
-
           7.72285927605111
-
-
 ans =
-
 Berm Factor Calculation: Iteration 1, Profile Segment: 142
-
-
 dh =
-
          -4.89063545448658
-
-
 rdh_sum =
-
            7.8826634576163
-
-
 ans =
-
 Berm Factor Calculation: Iteration 1, Profile Segment: 143
-
-
 dh =
-
          -4.93388545448658
-
-
 rdh_sum =
-
           8.04514188216504
-
-
 ans =
-
 Berm Factor Calculation: Iteration 1, Profile Segment: 146
-
-
 dh =
-
          -5.13698545448658
-
-
 rdh_sum =
-
           8.22041489208975
-
-
 ans =
-
 Berm Factor Calculation: Iteration 1, Profile Segment: 147
-
-
 dh =
-
          -5.19413545448658
-
-
 rdh_sum =
-
           8.39935710230119
-
-
 ans =
-
 Berm Factor Calculation: Iteration 1, Profile Segment: 148
-
-
 dh =
-
          -5.23781045448658
-
-
 rdh_sum =
-
           8.58112338933707
-
-
 ans =
-
 Berm Factor Calculation: Iteration 1, Profile Segment: 149
-
-
 dh =
-
          -5.26801045448657
-
-
 rdh_sum =
-
           8.76485249365481
-
-
 ans =
-
 Berm Factor Calculation: Iteration 1, Profile Segment: 154
-
-
 dh =
-
          -5.69873545448658
-
-
 rdh_sum =
-
           8.97743932112012
-
-
 ans =
-
 Berm Factor Calculation: Iteration 1, Profile Segment: 155
-
-
 dh =
-
          -5.67618545448657
-
-
 rdh_sum =
-
           9.18847659558763
-
-
 ans =
-
 Berm Factor Calculation: Iteration 1, Profile Segment: 172
-
-
 dh =
-
          -6.91756045448658
-
-
 rdh_sum =
-
           9.49035943034023
-
-
 ans =
-
 Berm Factor Calculation: Iteration 1, Profile Segment: 173
-
-
 dh =
-
          -6.93326045448658
-
-
 rdh_sum =
-
           9.79345509581798
-
-
 ans =
-
 Berm Factor Calculation: Iteration 1, Profile Segment: 178
-
-
 dh =
-
          -7.37643545448658
-
-
 rdh_sum =
-
           10.1313205579696
-
-
 ans =
-
 Berm Factor Calculation: Iteration 1, Profile Segment: 179
-
-
 dh =
-
          -7.40228545448657
-
-
 rdh_sum =
-
           10.4712437956307
-
-
 ans =
-
 Berm Factor Calculation: Iteration 1, Profile Segment: 180
-
-
 dh =
-
          -7.44433545448658
-
-
 rdh_sum =
-
            10.814520847403
-
-
 ans =
-
 Berm Factor Calculation: Iteration 1, Profile Segment: 181
-
-
 dh =
-
          -7.50258545448658
-
-
 rdh_sum =
-
             11.16245670252
-
-
 ans =
-
 Berm Factor Calculation: Iteration 1, Profile Segment: 184
-
-
 dh =
-
          -7.70038545448658
-
-
 rdh_sum =
-
            11.526318732635
-
-
 ans =
-
 Berm Factor Calculation: Iteration 1, Profile Segment: 185
-
-
 dh =
-
          -7.72573545448657
-
-
 rdh_sum =
-
           11.8922331195691
-
-
 ans =
-
 Berm Factor Calculation: Iteration 1, Profile Segment: 186
-
-
 dh =
-
          -7.76693545448658
-
-
 rdh_sum =
-
           12.2614882749465
-
-
 ans =
-
 Berm Factor Calculation: Iteration 1, Profile Segment: 187
-
-
 dh =
-
          -7.82398545448658
-
-
 rdh_sum =
-
           12.6353797514282
-
-
 ans =
-
 Berm Factor Calculation: Iteration 1, Profile Segment: 194
-
-
 dh =
-
          -8.59431045448657
-
-
 rdh_sum =
-
           13.0728347048123
-
-
 ans =
-
 Berm Factor Calculation: Iteration 1, Profile Segment: 195
-
-
 dh =
-
          -8.64211045448658
-
-
 rdh_sum =
-
           13.5142795294783
-
-
 ans =
-
 Berm Factor Calculation: Iteration 1, Profile Segment: 204
-
-
 dh =
-
          -9.83591045448658
-
-
 rdh_sum =
-
           14.0559270739797
-
-
 ans =
-
 Berm Factor Calculation: Iteration 1, Profile Segment: 205
-
-
 dh =
-
          -9.86051045448658
-
-
 rdh_sum =
-
           14.5996356624158
-
-
 ans =
-
 Berm Factor Calculation: Iteration 1, Profile Segment: 206
-
-
 dh =
-
          -9.86938545448658
-
-
 rdh_sum =
-
           15.1440876367368
-
-
 ans =
-
 Berm Factor Calculation: Iteration 1, Profile Segment: 207
-
-
 dh =
-
          -9.86253545448658
-
-
 rdh_sum =
-
           15.6879658514312
-
-
 ans =
-
 Berm Factor Calculation: Iteration 1, Profile Segment: 208
-
-
 dh =
-
          -9.86646045448658
-
-
 rdh_sum =
-
           16.2321728333765
-
-
 ans =
-
 Berm Factor Calculation: Iteration 1, Profile Segment: 209
-
-
 dh =
-
          -9.88116045448658
-
-
 rdh_sum =
-
           16.7776109496387
-
-
 ans =
-
 Berm Factor Calculation: Iteration 1, Profile Segment: 214
-
-
 dh =
-
          -10.3572104544866
-
-
 rdh_sum =
-
           17.3627259773918
-
-
 ans =
-
 Berm Factor Calculation: Iteration 1, Profile Segment: 215
-
-
 dh =
-
          -10.4098104544866
-
-
 rdh_sum =
-
           17.9521961529196
-
-
 ans =
-
 Berm Factor Calculation: Iteration 1, Profile Segment: 216
-
-
 dh =
-
          -10.4557854544866
-
-
 rdh_sum =
-
           18.5454672203581
-
-
 ans =
-
 Berm Factor Calculation: Iteration 1, Profile Segment: 217
-
-
 dh =
-
          -10.4951354544866
-
-
 rdh_sum =
-
           19.1419870509342
-
-
 ans =
-
 Berm Factor Calculation: Iteration 1, Profile Segment: 218
-
-
 dh =
-
          -10.5365604544866
-
-
 rdh_sum =
-
           19.7419223880212
-
-
 ans =
-
 Berm Factor Calculation: Iteration 1, Profile Segment: 219
-
-
 dh =
-
          -10.5800604544866
-
-
 rdh_sum =
-
           20.3454390921685
-
-
 ans =
-
 Berm Factor Calculation: Iteration 1, Profile Segment: 220
-
-
 dh =
-
          -10.6233604544866
-
-
 rdh_sum =
-
            20.952515195534
-
-
 ans =
-
 Berm Factor Calculation: Iteration 1, Profile Segment: 221
-
-
 dh =
-
          -10.6664604544866
-
-
 rdh_sum =
-
           21.5631286188907
-
-
 ans =
-
 Berm Factor Calculation: Iteration 1, Profile Segment: 228
-
-
 dh =
-
          -11.2982604544866
-
-
 rdh_sum =
-
           22.2248319635042
-
-
 ans =
-
 Berm Factor Calculation: Iteration 1, Profile Segment: 229
-
-
 dh =
-
          -11.3397604544866
-
-
 rdh_sum =
-
           22.8898335090317
-
-
 ans =
-
 Berm Factor Calculation: Iteration 1, Profile Segment: 230
-
-
 dh =
-
          -11.3860854544866
-
-
 rdh_sum =
-
           23.5585072200711
-
-
 ans =
-
 Berm Factor Calculation: Iteration 1, Profile Segment: 231
-
-
 dh =
-
          -11.4372354544866
-
-
 rdh_sum =
-
           24.2312236705167
-
-
 ans =
-
 Berm Factor Calculation: Iteration 1, Profile Segment: 232
-
-
 dh =
-
          -11.4944104544866
-
-
 rdh_sum =
-
           24.9084439162284
-
-
 ans =
-
 Berm Factor Calculation: Iteration 1, Profile Segment: 233
-
-
 dh =
-
          -11.5576104544866
-
-
 rdh_sum =
-
           25.5906234755512
-
-
 ans =
-
 Berm Factor Calculation: Iteration 1, Profile Segment: 234
-
-
 dh =
-
          -11.6099604544866
-
-
 rdh_sum =
-
           26.2768953870441
-
-
 ans =
-
 Berm Factor Calculation: Iteration 1, Profile Segment: 235
-
-
 dh =
-
          -11.6514604544866
-
-
 rdh_sum =
-
           26.9664012303305
-
-
 ans =
-
 Berm Factor Calculation: Iteration 1, Profile Segment: 238
-
-
 dh =
-
          -11.8127354544866
-
-
 rdh_sum =
-
           27.6683855252169
-
-
 ans =
-
 Berm Factor Calculation: Iteration 1, Profile Segment: 239
-
-
 dh =
-
          -11.8211854544866
-
-
 rdh_sum =
-
            28.371019611339
-
-
 ans =
-
 Berm Factor Calculation: Iteration 1, Profile Segment: 244
-
-
 dh =
-
          -12.2150604544866
-
-
 rdh_sum =
-
           29.1034659701403
-
-
 ans =
-
 Berm Factor Calculation: Iteration 1, Profile Segment: 245
-
-
 dh =
-
          -12.2813604544866
-
-
 rdh_sum =
-
           29.8408338001472
-
-
 ans =
-
 Berm Factor Calculation: Iteration 1, Profile Segment: 246
-
-
 dh =
-
          -12.3164354544866
-
-
 rdh_sum =
-
           30.5807933619185
-
-
 ans =
-
 Berm Factor Calculation: Iteration 1, Profile Segment: 247
-
-
 dh =
-
          -12.3202854544866
-
-
 rdh_sum =
-
           31.3210368976555
-
-
 ans =
-
 Berm Factor Calculation: Iteration 1, Profile Segment: 248
-
-
 dh =
-
          -12.3250104544866
-
-
 rdh_sum =
-
           32.0616288092266
-
-
 ans =
-
 Berm Factor Calculation: Iteration 1, Profile Segment: 249
-
-
 dh =
-
          -12.3306104544866
-
-
 rdh_sum =
-
           32.8026334139279
-
-
 ans =
-
 Berm Factor Calculation: Iteration 1, Profile Segment: 254
-
-
 dh =
-
          -12.8425354544866
-
-
 rdh_sum =
-
           33.8026334139279
-
-
 ans =
-
 Berm Factor Calculation: Iteration 1, Profile Segment: 255
-
-
 dh =
-
          -12.8881854544866
-
-
 rdh_sum =
-
           34.8026334139279
-
-
 ans =
-
 Berm Factor Calculation: Iteration 1, Profile Segment: 256
-
-
 dh =
-
          -12.9345104544866
-
-
 rdh_sum =
-
           35.8026334139279
-
-
 ans =
-
 Berm Factor Calculation: Iteration 1, Profile Segment: 257
-
-
 dh =
-
          -12.9815104544866
-
-
 rdh_sum =
-
           36.8026334139279
-
-
 ans =
-
 Berm Factor Calculation: Iteration 1, Profile Segment: 258
-
-
 dh =
-
          -13.0322354544866
-
-
 rdh_sum =
-
           37.8026334139279
-
-
 ans =
-
 Berm Factor Calculation: Iteration 1, Profile Segment: 259
-
-
 dh =
-
          -13.0866854544866
-
-
 rdh_sum =
-
           38.8026334139279
-
-
 ans =
-
 Berm Factor Calculation: Iteration 1, Profile Segment: 260
-
-
 dh =
-
          -13.1325604544866
-
-
 rdh_sum =
-
           39.8026334139279
-
-
 ans =
-
 Berm Factor Calculation: Iteration 1, Profile Segment: 261
-
-
 dh =
-
          -13.1698604544866
-
-
 rdh_sum =
-
           40.8026334139279
-
-
 ans =
-
 Berm Factor Calculation: Iteration 1, Profile Segment: 278
-
-
 dh =
-
          -15.1985854544866
-
-
 rdh_sum =
-
           41.8026334139279
-
-
 ans =
-
 Berm Factor Calculation: Iteration 1, Profile Segment: 279
-
-
 dh =
-
          -15.2425354544866
-
-
 rdh_sum =
-
           42.8026334139279
-
-
 ans =
-
 Berm Factor Calculation: Iteration 1, Profile Segment: 284
-
-
 dh =
-
          -15.8273854544866
-
-
 rdh_sum =
-
           43.8026334139279
-
-
 ans =
-
 Berm Factor Calculation: Iteration 1, Profile Segment: 285
-
-
 dh =
-
          -15.8577354544866
-
-
 rdh_sum =
-
           44.8026334139279
-
-
 ans =
-
 Berm Factor Calculation: Iteration 1, Profile Segment: 290
-
-
 dh =
-
          -16.3686354544866
-
-
 rdh_sum =
-
           45.8026334139279
-
-
 ans =
-
 Berm Factor Calculation: Iteration 1, Profile Segment: 291
-
-
 dh =
-
          -16.3826854544866
-
-
 rdh_sum =
-
           46.8026334139279
-
-
 ans =
-
 Berm Factor Calculation: Iteration 1, Profile Segment: 292
-
-
 dh =
-
          -16.3988104544866
-
-
 rdh_sum =
-
           47.8026334139279
-
-
 ans =
-
 Berm Factor Calculation: Iteration 1, Profile Segment: 293
-
-
 dh =
-
          -16.4170104544866
-
-
 rdh_sum =
-
           48.8026334139279
-
-
 ans =
-
 Berm Factor Calculation: Iteration 1, Profile Segment: 294
-
-
 dh =
-
          -16.4539854544866
-
-
 rdh_sum =
-
           49.8026334139279
-
-
 ans =
-
 Berm Factor Calculation: Iteration 1, Profile Segment: 295
-
-
 dh =
-
          -16.5097354544866
-
-
 rdh_sum =
-
           50.8026334139279
-
-
 ans =
-
 !------- End Berm Factor Calculation, Iter: 1 ---------!
-
-
 berm_width =
-
    130
-
-
 rB =
-
          0.408357625083988
-
-
 rdh_mean =
-
          0.390789487799445
-
-
 gamma_berm =
-
          0.751224242061582
-
-
 slope =
-
          0.150529429941286
-
-
 Irb =
-
           1.26659805841667
-
-
 gamma_berm =
-
          0.751224242061582
-
-
 gamma_perm =
-
      1
-
-
 gamma_beta =
-
      1
-
-
 gamma_rough =
-
      1
-
-
 gamma =
-
          0.751224242061582
-
-
 ans =
-
 !!! - - Iribaren number:   0.95 is in the valid range (0.5-10), TAW RECOMMENDED - - !!!
-
-
-
 ans =
-
 !!! - - slope: 1:6.6 V:H is in the valid range (1:8 - 1:1), TAW RECOMMENDED - - !!!
-
-
-
 R2_new =
-
           10.4867187515172
-
 !   Berm_width is greater than 1/4 wave length
 !   Runup will be weighted average with foreshore calculation assuming depth limited wave height on berm
-
 fore_H0 =
-
                 5.89559958
-
-
 upper_slope =
-
         0.0760215167036978
-
-
 upper_slope =
-
         0.0759137707687769
-
-
 upper_slope =
-
          0.075804847475598
-
-
 upper_slope =
-
         0.0756947274203544
-
-
 upper_slope =
-
         0.0755833907704967
-
-
 upper_slope =
-
         0.0754708172528257
-
-
 upper_slope =
-
         0.0754223383205499
-
-
 upper_slope =
-
         0.0753733147729274
-
-
 upper_slope =
-
         0.0753539582490276
-
-
 upper_slope =
-
          0.075334381802103
-
-
 w2 =
-
         0.0598447894485056
-
-
 w1 =
-
          0.940155210551494
-
-
 R2_new =
-
            10.265964123278
-
-
 R2del =
-
           8.41413587672201
-
-
 Z2 =
-
           19.3779536687914
-
-
 top_sta =
-
           211.236374706542
-
-
 ans =
-
 !----------------- STARTING ITERATION 2 -----------------!
-
-
 Ztoe =
-
                  -0.559889
-
-
 toe_sta =
-
          -4.37839811542992
-
-
 top_sta =
-
           211.236374706542
-
-
 Z2 =
-
           19.3779536687914
-
-
 H0 =
-
                     6.2267
-
-
 Tp =
-
                    10.2103
-
-
 T0 =
-
           9.28209090909091
-
-
 R2 =
-
            10.265964123278
-
-
 Z2 =
-
           19.3779536687914
-
-
 top_sta =
-
           211.236374706542
-
-
 Lslope =
-
           215.614772821972
-
-
 ans =
-
 Berm Factor Calculation: Iteration 2, Profile Segment: 20
-
-
 dh =
-
           7.01733954551342
-
-
 rdh_sum =
-
          0.599065845823981
-
-
 ans =
-
 Berm Factor Calculation: Iteration 2, Profile Segment: 21
-
-
 dh =
-
           6.95683954551342
-
-
 rdh_sum =
-
           1.19064063116286
-
-
 ans =
-
 Berm Factor Calculation: Iteration 2, Profile Segment: 28
-
-
 dh =
-
           5.84106454551342
-
-
 rdh_sum =
-
            1.6420749834842
-
-
 ans =
-
 Berm Factor Calculation: Iteration 2, Profile Segment: 29
-
-
 dh =
-
           5.82241454551342
-
-
 rdh_sum =
-
           2.09116860919536
-
-
 ans =
-
 Berm Factor Calculation: Iteration 2, Profile Segment: 30
-
-
 dh =
-
           5.79601454551342
-
-
 rdh_sum =
-
           2.53695075903407
-
-
 ans =
-
 Berm Factor Calculation: Iteration 2, Profile Segment: 31
-
-
 dh =
-
           5.76186454551342
-
-
 rdh_sum =
-
           2.97845290273617
-
-
 ans =
-
 Berm Factor Calculation: Iteration 2, Profile Segment: 32
-
-
 dh =
-
           5.71803954551342
-
-
 rdh_sum =
-
           3.41446888099168
-
-
 ans =
-
 Berm Factor Calculation: Iteration 2, Profile Segment: 33
-
-
 dh =
-
           5.66453954551342
-
-
 rdh_sum =
-
           3.84379821136296
-
-
 ans =
-
 Berm Factor Calculation: Iteration 2, Profile Segment: 44
-
-
 dh =
-
           4.10266454551342
-
-
 rdh_sum =
-
           4.08852215773557
-
-
 ans =
-
 Berm Factor Calculation: Iteration 2, Profile Segment: 45
-
-
 dh =
-
           4.03861454551342
-
-
 rdh_sum =
-
           4.32633313641215
-
-
 ans =
-
 Berm Factor Calculation: Iteration 2, Profile Segment: 60
-
-
 dh =
-
          0.716464545513425
-
-
 rdh_sum =
-
           4.33447774023632
-
-
 ans =
-
 Berm Factor Calculation: Iteration 2, Profile Segment: 61
-
-
 dh =
-
          0.718214545513424
-
-
 rdh_sum =
-
           4.34266207081192
-
-
 ans =
-
 Berm Factor Calculation: Iteration 2, Profile Segment: 62
-
-
 dh =
-
          0.719939545513425
-
-
 rdh_sum =
-
           4.35088565442187
-
-
 ans =
-
 Berm Factor Calculation: Iteration 2, Profile Segment: 63
-
-
 dh =
-
          0.721639545513424
-
-
 rdh_sum =
-
           4.35914801329253
-
-
 ans =
-
 Berm Factor Calculation: Iteration 2, Profile Segment: 72
-
-
 dh =
-
         -0.569610454486575
-
-
 rdh_sum =
-
           4.36672498212041
-
-
 ans =
-
 Berm Factor Calculation: Iteration 2, Profile Segment: 73
-
-
 dh =
-
         -0.597610454486576
-
-
 rdh_sum =
-
           4.37506304456257
-
-
 ans =
-
 Berm Factor Calculation: Iteration 2, Profile Segment: 74
-
-
 dh =
-
         -0.605235454486575
-
-
 rdh_sum =
-
           4.38361462508888
-
-
 ans =
-
 Berm Factor Calculation: Iteration 2, Profile Segment: 75
-
-
 dh =
-
         -0.592485454486576
-
-
 rdh_sum =
-
           4.39181067962445
-
-
 ans =
-
 Berm Factor Calculation: Iteration 2, Profile Segment: 76
-
-
 dh =
-
         -0.584710454486576
-
-
 rdh_sum =
-
           4.39979360756762
-
-
 ans =
-
 Berm Factor Calculation: Iteration 2, Profile Segment: 77
-
-
 dh =
-
         -0.581910454486575
-
-
 rdh_sum =
-
           4.40770046462582
-
-
 ans =
-
 Berm Factor Calculation: Iteration 2, Profile Segment: 82
-
-
 dh =
-
          -1.05048545448658
-
-
 rdh_sum =
-
           4.43331439950748
-
-
 ans =
-
 Berm Factor Calculation: Iteration 2, Profile Segment: 83
-
-
 dh =
-
          -1.10383545448657
-
-
 rdh_sum =
-
           4.46157065763506
-
-
 ans =
-
 Berm Factor Calculation: Iteration 2, Profile Segment: 88
-
-
 dh =
-
          -1.89333545448658
-
-
 rdh_sum =
-
           4.54317457725032
-
-
 ans =
-
 Berm Factor Calculation: Iteration 2, Profile Segment: 89
-
-
 dh =
-
          -1.93178545448658
-
-
 rdh_sum =
-
           4.62802857774397
-
-
 ans =
-
 Berm Factor Calculation: Iteration 2, Profile Segment: 94
-
-
 dh =
-
          -2.39768545448658
-
-
 rdh_sum =
-
           4.75669089949592
-
-
 ans =
-
 Berm Factor Calculation: Iteration 2, Profile Segment: 95
-
-
 dh =
-
          -2.45383545448658
-
-
 rdh_sum =
-
           4.89116107578002
-
-
 ans =
-
 Berm Factor Calculation: Iteration 2, Profile Segment: 96
-
-
 dh =
-
          -2.48993545448658
-
-
 rdh_sum =
-
           5.02942234879217
-
-
 ans =
-
 Berm Factor Calculation: Iteration 2, Profile Segment: 97
-
-
 dh =
-
          -2.50598545448658
-
-
 rdh_sum =
-
           5.16938334197964
-
-
 ans =
-
 Berm Factor Calculation: Iteration 2, Profile Segment: 98
-
-
 dh =
-
          -2.54166045448657
-
-
 rdh_sum =
-
           5.31315342220386
-
-
 ans =
-
 Berm Factor Calculation: Iteration 2, Profile Segment: 99
-
-
 dh =
-
          -2.59696045448658
-
-
 rdh_sum =
-
           5.46291173718541
-
-
 ans =
-
 Berm Factor Calculation: Iteration 2, Profile Segment: 100
-
-
 dh =
-
          -2.65703545448658
-
-
 rdh_sum =
-
           5.61928896405186
-
-
 ans =
-
 Berm Factor Calculation: Iteration 2, Profile Segment: 101
-
-
 dh =
-
          -2.72188545448658
-
-
 rdh_sum =
-
            5.7829414790897
-
-
 ans =
-
 Berm Factor Calculation: Iteration 2, Profile Segment: 102
-
-
 dh =
-
          -2.78673545448658
-
-
 rdh_sum =
-
           5.95400174494285
-
-
 ans =
-
 Berm Factor Calculation: Iteration 2, Profile Segment: 103
-
-
 dh =
-
          -2.85158545448658
-
-
 rdh_sum =
-
           6.13259930688464
-
-
 ans =
-
 Berm Factor Calculation: Iteration 2, Profile Segment: 104
-
-
 dh =
-
          -2.91396045448658
-
-
 rdh_sum =
-
            6.3185659629714
-
-
 ans =
-
 Berm Factor Calculation: Iteration 2, Profile Segment: 105
-
-
 dh =
-
          -2.97386045448658
-
-
 rdh_sum =
-
           6.51171704134807
-
-
 ans =
-
 Berm Factor Calculation: Iteration 2, Profile Segment: 106
-
-
 dh =
-
          -3.03341045448658
-
-
 rdh_sum =
-
           6.71211276739417
-
-
 ans =
-
 Berm Factor Calculation: Iteration 2, Profile Segment: 107
-
-
 dh =
-
          -3.09261045448658
-
-
 rdh_sum =
-
           6.91980918509293
-
-
 ans =
-
 Berm Factor Calculation: Iteration 2, Profile Segment: 108
-
-
 dh =
-
          -3.14551045448658
-
-
 rdh_sum =
-
           7.13411059738993
-
-
 ans =
-
 Berm Factor Calculation: Iteration 2, Profile Segment: 109
-
-
 dh =
-
          -3.19211045448658
-
-
 rdh_sum =
-
           7.35429248199598
-
-
 ans =
-
 Berm Factor Calculation: Iteration 2, Profile Segment: 110
-
-
 dh =
-
          -3.23113545448658
-
-
 rdh_sum =
-
           7.57944277746044
-
-
 ans =
-
 Berm Factor Calculation: Iteration 2, Profile Segment: 111
-
-
 dh =
-
          -3.26258545448658
-
-
 rdh_sum =
-
           7.80862564159852
-
-
 ans =
-
 Berm Factor Calculation: Iteration 2, Profile Segment: 112
-
-
 dh =
-
          -3.29383545448658
-
-
 rdh_sum =
-
           8.04184027707684
-
-
 ans =
-
 Berm Factor Calculation: Iteration 2, Profile Segment: 113
-
-
 dh =
-
          -3.32488545448658
-
-
 rdh_sum =
-
           8.27908504584482
-
-
 ans =
-
 Berm Factor Calculation: Iteration 2, Profile Segment: 114
-
-
 dh =
-
          -3.36333545448658
-
-
 rdh_sum =
-
           8.52135326780243
-
-
 ans =
-
 Berm Factor Calculation: Iteration 2, Profile Segment: 115
-
-
 dh =
-
          -3.40918545448658
-
-
 rdh_sum =
-
             8.769658331117
-
-
 ans =
-
 Berm Factor Calculation: Iteration 2, Profile Segment: 118
-
-
 dh =
-
          -3.60403545448658
-
-
 rdh_sum =
-
           9.04415651201236
-
-
 ans =
-
 Berm Factor Calculation: Iteration 2, Profile Segment: 119
-
-
 dh =
-
          -3.62728545448658
-
-
 rdh_sum =
-
           9.32183550529751
-
-
 ans =
-
 Berm Factor Calculation: Iteration 2, Profile Segment: 120
-
-
 dh =
-
          -3.64426045448658
-
-
 rdh_sum =
-
           9.60184395092967
-
-
 ans =
-
 Berm Factor Calculation: Iteration 2, Profile Segment: 121
-
-
 dh =
-
          -3.65496045448658
-
-
 rdh_sum =
-
           9.88332379491445
-
-
 ans =
-
 Berm Factor Calculation: Iteration 2, Profile Segment: 126
-
-
 dh =
-
          -4.12838545448658
-
-
 rdh_sum =
-
           10.2320197060058
-
-
 ans =
-
 Berm Factor Calculation: Iteration 2, Profile Segment: 127
-
-
 dh =
-
          -4.18293545448658
-
-
 rdh_sum =
-
           10.5886916892261
-
-
 ans =
-
 Berm Factor Calculation: Iteration 2, Profile Segment: 128
-
-
 dh =
-
          -4.21903545448658
-
-
 rdh_sum =
-
           10.9506641629155
-
-
 ans =
-
 Berm Factor Calculation: Iteration 2, Profile Segment: 129
-
-
 dh =
-
          -4.23668545448658
-
-
 rdh_sum =
-
           11.3152343221553
-
-
 ans =
-
 Berm Factor Calculation: Iteration 2, Profile Segment: 130
-
-
 dh =
-
          -4.25831045448658
-
-
 rdh_sum =
-
           11.6829925762071
-
-
 ans =
-
 Berm Factor Calculation: Iteration 2, Profile Segment: 131
-
-
 dh =
-
          -4.28391045448658
-
-
 rdh_sum =
-
           12.0545324197132
-
-
 ans =
-
 Berm Factor Calculation: Iteration 2, Profile Segment: 132
-
-
 dh =
-
          -4.31266045448658
-
-
 rdh_sum =
-
           12.4303285528878
-
-
 ans =
-
 Berm Factor Calculation: Iteration 2, Profile Segment: 133
-
-
 dh =
-
          -4.34456045448658
-
-
 rdh_sum =
-
           12.8108585547613
-
-
 ans =
-
 Berm Factor Calculation: Iteration 2, Profile Segment: 138
-
-
 dh =
-
          -4.79738545448658
-
-
 rdh_sum =
-
           13.2595984812618
-
-
 ans =
-
 Berm Factor Calculation: Iteration 2, Profile Segment: 139
-
-
 dh =
-
          -4.84253545448658
-
-
 rdh_sum =
-
           13.7152150818047
-
-
 ans =
-
 Berm Factor Calculation: Iteration 2, Profile Segment: 140
-
-
 dh =
-
          -4.86608545448658
-
-
 rdh_sum =
-
           14.1744219643721
-
-
 ans =
-
 Berm Factor Calculation: Iteration 2, Profile Segment: 141
-
-
 dh =
-
          -4.86803545448658
-
-
 rdh_sum =
-
           14.6339262289742
-
-
 ans =
-
 Berm Factor Calculation: Iteration 2, Profile Segment: 142
-
-
 dh =
-
          -4.89063545448658
-
-
 rdh_sum =
-
           15.0968780998871
-
-
 ans =
-
 Berm Factor Calculation: Iteration 2, Profile Segment: 143
-
-
 dh =
-
          -4.93388545448658
-
-
 rdh_sum =
-
           15.5664325134237
-
-
 ans =
-
 Berm Factor Calculation: Iteration 2, Profile Segment: 146
-
-
 dh =
-
          -5.13698545448658
-
-
 rdh_sum =
-
           16.0670444089466
-
-
 ans =
-
 Berm Factor Calculation: Iteration 2, Profile Segment: 147
-
-
 dh =
-
          -5.19413545448658
-
-
 rdh_sum =
-
           16.5764002791265
-
-
 ans =
-
 Berm Factor Calculation: Iteration 2, Profile Segment: 148
-
-
 dh =
-
          -5.23781045448658
-
-
 rdh_sum =
-
           17.0924366557703
-
-
 ans =
-
 Berm Factor Calculation: Iteration 2, Profile Segment: 149
-
-
 dh =
-
          -5.26801045448657
-
-
 rdh_sum =
-
           17.6130908060481
-
-
 ans =
-
 Berm Factor Calculation: Iteration 2, Profile Segment: 154
-
-
 dh =
-
          -5.69873545448658
-
-
 rdh_sum =
-
           18.1992242539089
-
-
 ans =
-
 Berm Factor Calculation: Iteration 2, Profile Segment: 155
-
-
 dh =
-
          -5.67618545448657
-
-
 rdh_sum =
-
           18.7819568848075
-
-
 ans =
-
 Berm Factor Calculation: Iteration 2, Profile Segment: 172
-
-
 dh =
-
          -6.91756045448658
-
-
 rdh_sum =
-
            19.541642627791
-
-
 ans =
-
 Berm Factor Calculation: Iteration 2, Profile Segment: 173
-
-
 dh =
-
          -6.93326045448658
-
-
 rdh_sum =
-
           20.3033782107369
-
-
 ans =
-
 Berm Factor Calculation: Iteration 2, Profile Segment: 178
-
-
 dh =
-
          -7.37643545448658
-
-
 rdh_sum =
-
           21.1203107234644
-
-
 ans =
-
 Berm Factor Calculation: Iteration 2, Profile Segment: 179
-
-
 dh =
-
          -7.40228545448657
-
-
 rdh_sum =
-
           21.9402924958984
-
-
 ans =
-
 Berm Factor Calculation: Iteration 2, Profile Segment: 180
-
-
 dh =
-
          -7.44433545448658
-
-
 rdh_sum =
-
           22.7651916126735
-
-
 ans =
-
 Berm Factor Calculation: Iteration 2, Profile Segment: 181
-
-
 dh =
-
          -7.50258545448658
-
-
 rdh_sum =
-
           23.5968134563169
-
-
 ans =
-
 Berm Factor Calculation: Iteration 2, Profile Segment: 184
-
-
 dh =
-
          -7.70038545448658
-
-
 rdh_sum =
-
           24.4504648421444
-
-
 ans =
-
 Berm Factor Calculation: Iteration 2, Profile Segment: 185
-
-
 dh =
-
          -7.72573545448657
-
-
 rdh_sum =
-
           25.3068475266138
-
-
 ans =
-
 Berm Factor Calculation: Iteration 2, Profile Segment: 186
-
-
 dh =
-
          -7.76693545448658
-
-
 rdh_sum =
-
           26.1676234181942
-
-
 ans =
-
 Berm Factor Calculation: Iteration 2, Profile Segment: 187
-
-
 dh =
-
          -7.82398545448658
-
-
 rdh_sum =
-
           27.0343877890093
-
-
 ans =
-
 Berm Factor Calculation: Iteration 2, Profile Segment: 194
-
-
 dh =
-
          -8.59431045448657
-
-
 rdh_sum =
-
           27.9703782310523
-
-
 ans =
-
 Berm Factor Calculation: Iteration 2, Profile Segment: 195
-
-
 dh =
-
          -8.64211045448658
-
-
 rdh_sum =
-
           28.9099023364405
-
-
 ans =
-
 Berm Factor Calculation: Iteration 2, Profile Segment: 204
-
-
 dh =
-
          -9.83591045448658
-
-
 rdh_sum =
-
            29.905578438641
-
-
 ans =
-
 Berm Factor Calculation: Iteration 2, Profile Segment: 205
-
-
 dh =
-
          -9.86051045448658
-
-
 rdh_sum =
-
           30.9017344391704
-
-
 ans =
-
 Berm Factor Calculation: Iteration 2, Profile Segment: 206
-
-
 dh =
-
          -9.86938545448658
-
-
 rdh_sum =
-
           31.8980566731293
-
-
 ans =
-
 Berm Factor Calculation: Iteration 2, Profile Segment: 207
-
-
 dh =
-
          -9.86253545448658
-
-
 rdh_sum =
-
           32.8942509252786
-
-
 ans =
-
 Berm Factor Calculation: Iteration 2, Profile Segment: 208
-
-
 dh =
-
          -9.86646045448658
-
-
 rdh_sum =
-
            33.890518776846
-
-
 ans =
-
 Berm Factor Calculation: Iteration 2, Profile Segment: 209
-
-
 dh =
-
          -9.88116045448658
-
-
 rdh_sum =
-
           34.8870559117084
-
-
 ans =
-
 Berm Factor Calculation: Iteration 2, Profile Segment: 214
-
-
 dh =
-
          -10.3572104544866
-
-
 rdh_sum =
-
           35.8868610351513
-
-
 ans =
-
 !------- End Berm Factor Calculation, Iter: 2 ---------!
-
-
 berm_width =
-
     89
-
-
 rB =
-
          0.412773201182672
-
-
 rdh_mean =
-
          0.403223157698329
-
-
 gamma_berm =
-
          0.753666512411453
-
-
 slope =
-
          0.157468534077182
-
-
 Irb =
-
           1.32498568287725
-
-
 gamma_berm =
-
          0.753666512411453
-
-
 gamma_perm =
-
      1
-
-
 gamma_beta =
-
      1
-
-
 gamma_rough =
-
      1
-
-
 gamma =
-
          0.753666512411453
-
-
 ans =
-
 !!! - - Iribaren number:   1.00 is in the valid range (0.5-10), TAW RECOMMENDED - - !!!
-
-
-
 ans =
-
 !!! - - slope: 1:6.4 V:H is in the valid range (1:8 - 1:1), TAW RECOMMENDED - - !!!
-
-
-
 R2_new =
-
           11.0057999055228
-
-
 R2del =
-
          0.739835782244787
-
-
 Z2 =
-
           20.1177894510362
-
-
 top_sta =
-
           222.698821613257
-
-
 ans =
-
 !----------------- STARTING ITERATION 3 -----------------!
-
-
 Ztoe =
-
                  -0.559889
-
-
 toe_sta =
-
          -4.37839811542992
-
-
 top_sta =
-
           222.698821613257
-
-
 Z2 =
-
           20.1177894510362
-
-
 H0 =
-
                     6.2267
-
-
 Tp =
-
                    10.2103
-
-
 T0 =
-
           9.28209090909091
-
-
 R2 =
-
           11.0057999055228
-
-
 Z2 =
-
           20.1177894510362
-
-
 top_sta =
-
           222.698821613257
-
-
 Lslope =
-
           227.077219728687
-
-
 ans =
-
 Berm Factor Calculation: Iteration 3, Profile Segment: 20
-
-
 dh =
-
           7.01733954551342
-
-
 rdh_sum =
-
          0.599065845823981
-
-
 ans =
-
 Berm Factor Calculation: Iteration 3, Profile Segment: 21
-
-
 dh =
-
           6.95683954551342
-
-
 rdh_sum =
-
           1.19064063116286
-
-
 ans =
-
 Berm Factor Calculation: Iteration 3, Profile Segment: 28
-
-
 dh =
-
           5.84106454551342
-
-
 rdh_sum =
-
            1.6420749834842
-
-
 ans =
-
 Berm Factor Calculation: Iteration 3, Profile Segment: 29
-
-
 dh =
-
           5.82241454551342
-
-
 rdh_sum =
-
           2.09116860919536
-
-
 ans =
-
 Berm Factor Calculation: Iteration 3, Profile Segment: 30
-
-
 dh =
-
           5.79601454551342
-
-
 rdh_sum =
-
           2.53695075903407
-
-
 ans =
-
 Berm Factor Calculation: Iteration 3, Profile Segment: 31
-
-
 dh =
-
           5.76186454551342
-
-
 rdh_sum =
-
           2.97845290273617
-
-
 ans =
-
 Berm Factor Calculation: Iteration 3, Profile Segment: 32
-
-
 dh =
-
           5.71803954551342
-
-
 rdh_sum =
-
           3.41446888099168
-
-
 ans =
-
 Berm Factor Calculation: Iteration 3, Profile Segment: 33
-
-
 dh =
-
           5.66453954551342
-
-
 rdh_sum =
-
           3.84379821136296
-
-
 ans =
-
 Berm Factor Calculation: Iteration 3, Profile Segment: 44
-
-
 dh =
-
           4.10266454551342
-
-
 rdh_sum =
-
           4.08852215773557
-
-
 ans =
-
 Berm Factor Calculation: Iteration 3, Profile Segment: 45
-
-
 dh =
-
           4.03861454551342
-
-
 rdh_sum =
-
           4.32633313641215
-
-
 ans =
-
 Berm Factor Calculation: Iteration 3, Profile Segment: 60
-
-
 dh =
-
          0.716464545513425
-
-
 rdh_sum =
-
           4.33447774023632
-
-
 ans =
-
 Berm Factor Calculation: Iteration 3, Profile Segment: 61
-
-
 dh =
-
          0.718214545513424
-
-
 rdh_sum =
-
           4.34266207081192
-
-
 ans =
-
 Berm Factor Calculation: Iteration 3, Profile Segment: 62
-
-
 dh =
-
          0.719939545513425
-
-
 rdh_sum =
-
           4.35088565442187
-
-
 ans =
-
 Berm Factor Calculation: Iteration 3, Profile Segment: 63
-
-
 dh =
-
          0.721639545513424
-
-
 rdh_sum =
-
           4.35914801329253
-
-
 ans =
-
 Berm Factor Calculation: Iteration 3, Profile Segment: 72
-
-
 dh =
-
         -0.569610454486575
-
-
 rdh_sum =
-
           4.36574270809429
-
-
 ans =
-
 Berm Factor Calculation: Iteration 3, Profile Segment: 73
-
-
 dh =
-
         -0.597610454486576
-
-
 rdh_sum =
-
           4.37300006948653
-
-
 ans =
-
 Berm Factor Calculation: Iteration 3, Profile Segment: 74
-
-
 dh =
-
         -0.605235454486575
-
-
 rdh_sum =
-
           4.38044334405394
-
-
 ans =
-
 Berm Factor Calculation: Iteration 3, Profile Segment: 75
-
-
 dh =
-
         -0.592485454486576
-
-
 rdh_sum =
-
           4.38757705910298
-
-
 ans =
-
 Berm Factor Calculation: Iteration 3, Profile Segment: 76
-
-
 dh =
-
         -0.584710454486576
-
-
 rdh_sum =
-
           4.39452520762113
-
-
 ans =
-
 Berm Factor Calculation: Iteration 3, Profile Segment: 77
-
-
 dh =
-
         -0.581910454486575
-
-
 rdh_sum =
-
           4.40140712305405
-
-
 ans =
-
 Berm Factor Calculation: Iteration 3, Profile Segment: 82
-
-
 dh =
-
          -1.05048545448658
-
-
 rdh_sum =
-
           4.42371813555522
-
-
 ans =
-
 Berm Factor Calculation: Iteration 3, Profile Segment: 83
-
-
 dh =
-
          -1.10383545448657
-
-
 rdh_sum =
-
           4.44833362132377
-
-
 ans =
-
 Berm Factor Calculation: Iteration 3, Profile Segment: 88
-
-
 dh =
-
          -1.89333545448658
-
-
 rdh_sum =
-
           4.51959498529184
-
-
 ans =
-
 Berm Factor Calculation: Iteration 3, Profile Segment: 89
-
-
 dh =
-
          -1.93178545448658
-
-
 rdh_sum =
-
           4.59370568232418
-
-
 ans =
-
 Berm Factor Calculation: Iteration 3, Profile Segment: 94
-
-
 dh =
-
          -2.39768545448658
-
-
 rdh_sum =
-
           4.70631145841565
-
-
 ans =
-
 Berm Factor Calculation: Iteration 3, Profile Segment: 95
-
-
 dh =
-
          -2.45383545448658
-
-
 rdh_sum =
-
           4.82403337241888
-
-
 ans =
-
 Berm Factor Calculation: Iteration 3, Profile Segment: 96
-
-
 dh =
-
          -2.48993545448658
-
-
 rdh_sum =
-
           4.94509650571875
-
-
 ans =
-
 Berm Factor Calculation: Iteration 3, Profile Segment: 97
-
-
 dh =
-
          -2.50598545448658
-
-
 rdh_sum =
-
           5.06765808246897
-
-
 ans =
-
 Berm Factor Calculation: Iteration 3, Profile Segment: 98
-
-
 dh =
-
          -2.54166045448657
-
-
 rdh_sum =
-
           5.19357864037501
-
-
 ans =
-
 Berm Factor Calculation: Iteration 3, Profile Segment: 99
-
-
 dh =
-
          -2.59696045448658
-
-
 rdh_sum =
-
           5.32478251596152
-
-
 ans =
-
 Berm Factor Calculation: Iteration 3, Profile Segment: 100
-
-
 dh =
-
          -2.65703545448658
-
-
 rdh_sum =
-
           5.46183000323624
-
-
 ans =
-
 Berm Factor Calculation: Iteration 3, Profile Segment: 101
-
-
 dh =
-
          -2.72188545448658
-
-
 rdh_sum =
-
           5.60530531491284
-
-
 ans =
-
 Berm Factor Calculation: Iteration 3, Profile Segment: 102
-
-
 dh =
-
          -2.78673545448658
-
-
 rdh_sum =
-
           5.75533061772272
-
-
 ans =
-
 Berm Factor Calculation: Iteration 3, Profile Segment: 103
-
-
 dh =
-
          -2.85158545448658
-
-
 rdh_sum =
-
           5.91202583397765
-
-
 ans =
-
 Berm Factor Calculation: Iteration 3, Profile Segment: 104
-
-
 dh =
-
          -2.91396045448658
-
-
 rdh_sum =
-
            6.0752474223091
-
-
 ans =
-
 Berm Factor Calculation: Iteration 3, Profile Segment: 105
-
-
 dh =
-
          -2.97386045448658
-
-
 rdh_sum =
-
           6.24483693657685
-
-
 ans =
-
 Berm Factor Calculation: Iteration 3, Profile Segment: 106
-
-
 dh =
-
          -3.03341045448658
-
-
 rdh_sum =
-
           6.42085292176391
-
-
 ans =
-
 Berm Factor Calculation: Iteration 3, Profile Segment: 107
-
-
 dh =
-
          -3.09261045448658
-
-
 rdh_sum =
-
           6.60335039900445
-
-
 ans =
-
 Berm Factor Calculation: Iteration 3, Profile Segment: 108
-
-
 dh =
-
          -3.14551045448658
-
-
 rdh_sum =
-
            6.7917163760749
-
-
 ans =
-
 Berm Factor Calculation: Iteration 3, Profile Segment: 109
-
-
 dh =
-
          -3.19211045448658
-
-
 rdh_sum =
-
           6.98531086923436
-
-
 ans =
-
 Berm Factor Calculation: Iteration 3, Profile Segment: 110
-
-
 dh =
-
          -3.23113545448658
-
-
 rdh_sum =
-
           7.18332571482023
-
-
 ans =
-
 Berm Factor Calculation: Iteration 3, Profile Segment: 111
-
-
 dh =
-
          -3.26258545448658
-
-
 rdh_sum =
-
           7.38493018895868
-
-
 ans =
-
 Berm Factor Calculation: Iteration 3, Profile Segment: 112
-
-
 dh =
-
          -3.29383545448658
-
-
 rdh_sum =
-
           7.59012528423923
-
-
 ans =
-
 Berm Factor Calculation: Iteration 3, Profile Segment: 113
-
-
 dh =
-
          -3.32488545448658
-
-
 rdh_sum =
-
           7.79891125439882
-
-
 ans =
-
 Berm Factor Calculation: Iteration 3, Profile Segment: 114
-
-
 dh =
-
          -3.36333545448658
-
-
 rdh_sum =
-
           8.01217556865805
-
-
 ans =
-
 Berm Factor Calculation: Iteration 3, Profile Segment: 115
-
-
 dh =
-
          -3.40918545448658
-
-
 rdh_sum =
-
           8.23082522475304
-
-
 ans =
-
 Berm Factor Calculation: Iteration 3, Profile Segment: 118
-
-
 dh =
-
          -3.60403545448658
-
-
 rdh_sum =
-
           8.47288739509683
-
-
 ans =
-
 Berm Factor Calculation: Iteration 3, Profile Segment: 119
-
-
 dh =
-
          -3.62728545448658
-
-
 rdh_sum =
-
            8.7177979255399
-
-
 ans =
-
 Berm Factor Calculation: Iteration 3, Profile Segment: 120
-
-
 dh =
-
          -3.64426045448658
-
-
 rdh_sum =
-
           8.96479516842474
-
-
 ans =
-
 Berm Factor Calculation: Iteration 3, Profile Segment: 121
-
-
 dh =
-
          -3.65496045448658
-
-
 rdh_sum =
-
           9.21311080235554
-
-
 ans =
-
 Berm Factor Calculation: Iteration 3, Profile Segment: 126
-
-
 dh =
-
          -4.12838545448658
-
-
 rdh_sum =
-
           9.52192825311554
-
-
 ans =
-
 Berm Factor Calculation: Iteration 3, Profile Segment: 127
-
-
 dh =
-
          -4.18293545448658
-
-
 rdh_sum =
-
           9.83796258198087
-
-
 ans =
-
 Berm Factor Calculation: Iteration 3, Profile Segment: 128
-
-
 dh =
-
          -4.21903545448658
-
-
 rdh_sum =
-
           10.1587975183832
-
-
 ans =
-
 Berm Factor Calculation: Iteration 3, Profile Segment: 129
-
-
 dh =
-
          -4.23668545448658
-
-
 rdh_sum =
-
           10.4819865225741
-
-
 ans =
-
 Berm Factor Calculation: Iteration 3, Profile Segment: 130
-
-
 dh =
-
          -4.25831045448658
-
-
 rdh_sum =
-
           10.8080658717953
-
-
 ans =
-
 Berm Factor Calculation: Iteration 3, Profile Segment: 131
-
-
 dh =
-
          -4.28391045448658
-
-
 rdh_sum =
-
           11.1375754123495
-
-
 ans =
-
 Berm Factor Calculation: Iteration 3, Profile Segment: 132
-
-
 dh =
-
          -4.31266045448658
-
-
 rdh_sum =
-
           11.4709480628741
-
-
 ans =
-
 Berm Factor Calculation: Iteration 3, Profile Segment: 133
-
-
 dh =
-
          -4.34456045448658
-
-
 rdh_sum =
-
           11.8086202085289
-
-
 ans =
-
 Berm Factor Calculation: Iteration 3, Profile Segment: 138
-
-
 dh =
-
          -4.79738545448658
-
-
 rdh_sum =
-
           12.2086047666992
-
-
 ans =
-
 Berm Factor Calculation: Iteration 3, Profile Segment: 139
-
-
 dh =
-
          -4.84253545448658
-
-
 rdh_sum =
-
           12.6149112221677
-
-
 ans =
-
 Berm Factor Calculation: Iteration 3, Profile Segment: 140
-
-
 dh =
-
          -4.86608545448658
-
-
 rdh_sum =
-
           13.0245213877872
-
-
 ans =
-
 Berm Factor Calculation: Iteration 3, Profile Segment: 141
-
-
 dh =
-
          -4.86803545448658
-
-
 rdh_sum =
-
           13.4344052941846
-
-
 ans =
-
 Berm Factor Calculation: Iteration 3, Profile Segment: 142
-
-
 dh =
-
          -4.89063545448658
-
-
 rdh_sum =
-
           13.8474638011439
-
-
 ans =
-
 Berm Factor Calculation: Iteration 3, Profile Segment: 143
-
-
 dh =
-
          -4.93388545448658
-
-
 rdh_sum =
-
           14.2666075699897
-
-
 ans =
-
 Berm Factor Calculation: Iteration 3, Profile Segment: 146
-
-
 dh =
-
          -5.13698545448658
-
-
 rdh_sum =
-
             14.71447693083
-
-
 ans =
-
 Berm Factor Calculation: Iteration 3, Profile Segment: 147
-
-
 dh =
-
          -5.19413545448658
-
-
 rdh_sum =
-
           15.1704651072159
-
-
 ans =
-
 Berm Factor Calculation: Iteration 3, Profile Segment: 148
-
-
 dh =
-
          -5.23781045448658
-
-
 rdh_sum =
-
           15.6326658304612
-
-
 ans =
-
 Berm Factor Calculation: Iteration 3, Profile Segment: 149
-
-
 dh =
-
          -5.26801045448657
-
-
 rdh_sum =
-
           16.0991658440298
-
-
 ans =
-
 Berm Factor Calculation: Iteration 3, Profile Segment: 154
-
-
 dh =
-
          -5.69873545448658
-
-
 rdh_sum =
-
           16.6271011101238
-
-
 ans =
-
 Berm Factor Calculation: Iteration 3, Profile Segment: 155
-
-
 dh =
-
          -5.67618545448657
-
-
 rdh_sum =
-
           17.1518224140215
-
-
 ans =
-
 Berm Factor Calculation: Iteration 3, Profile Segment: 172
-
-
 dh =
-
          -6.91756045448658
-
-
 rdh_sum =
-
           17.8482854833836
-
-
 ans =
-
 Berm Factor Calculation: Iteration 3, Profile Segment: 173
-
-
 dh =
-
          -6.93326045448658
-
-
 rdh_sum =
-
           18.5468071191688
-
-
 ans =
-
 Berm Factor Calculation: Iteration 3, Profile Segment: 178
-
-
 dh =
-
          -7.37643545448658
-
-
 rdh_sum =
-
           19.3016401999774
-
-
 ans =
-
 Berm Factor Calculation: Iteration 3, Profile Segment: 179
-
-
 dh =
-
          -7.40228545448657
-
-
 rdh_sum =
-
           20.0596405916311
-
-
 ans =
-
 Berm Factor Calculation: Iteration 3, Profile Segment: 180
-
-
 dh =
-
          -7.44433545448658
-
-
 rdh_sum =
-
           20.8227631363251
-
-
 ans =
-
 Berm Factor Calculation: Iteration 3, Profile Segment: 181
-
-
 dh =
-
          -7.50258545448658
-
-
 rdh_sum =
-
           21.5929183878569
-
-
 ans =
-
 Berm Factor Calculation: Iteration 3, Profile Segment: 184
-
-
 dh =
-
          -7.70038545448658
-
-
 rdh_sum =
-
           22.3863858216431
-
-
 ans =
-
 Berm Factor Calculation: Iteration 3, Profile Segment: 185
-
-
 dh =
-
          -7.72573545448657
-
-
 rdh_sum =
-
           23.1827748523011
-
-
 ans =
-
 Berm Factor Calculation: Iteration 3, Profile Segment: 186
-
-
 dh =
-
          -7.76693545448658
-
-
 rdh_sum =
-
           23.9838790226263
-
-
 ans =
-
 Berm Factor Calculation: Iteration 3, Profile Segment: 187
-
-
 dh =
-
          -7.82398545448658
-
-
 rdh_sum =
-
            24.791443392604
-
-
 ans =
-
 Berm Factor Calculation: Iteration 3, Profile Segment: 194
-
-
 dh =
-
          -8.59431045448657
-
-
 rdh_sum =
-
           25.6775881902255
-
-
 ans =
-
 Berm Factor Calculation: Iteration 3, Profile Segment: 195
-
-
 dh =
-
          -8.64211045448658
-
-
 rdh_sum =
-
           26.5680308662617
-
-
 ans =
-
 Berm Factor Calculation: Iteration 3, Profile Segment: 204
-
-
 dh =
-
          -9.83591045448658
-
-
 rdh_sum =
-
           27.5404090297858
-
-
 ans =
-
 Berm Factor Calculation: Iteration 3, Profile Segment: 205
-
-
 dh =
-
          -9.86051045448658
-
-
 rdh_sum =
-
           28.5139263562617
-
-
 ans =
-
 Berm Factor Calculation: Iteration 3, Profile Segment: 206
-
-
 dh =
-
          -9.86938545448658
-
-
 rdh_sum =
-
           29.4878489329007
-
-
 ans =
-
 Berm Factor Calculation: Iteration 3, Profile Segment: 207
-
-
 dh =
-
          -9.86253545448658
-
-
 rdh_sum =
-
           30.4614589925952
-
-
 ans =
-
 Berm Factor Calculation: Iteration 3, Profile Segment: 208
-
-
 dh =
-
          -9.86646045448658
-
-
 rdh_sum =
-
           31.4352483438142
-
-
 ans =
-
 Berm Factor Calculation: Iteration 3, Profile Segment: 209
-
-
 dh =
-
          -9.88116045448658
-
-
 rdh_sum =
-
           32.4097038951878
-
-
 ans =
-
 Berm Factor Calculation: Iteration 3, Profile Segment: 214
-
-
 dh =
-
          -10.3572104544866
-
-
 rdh_sum =
-
           33.4011589927084
-
-
 ans =
-
 Berm Factor Calculation: Iteration 3, Profile Segment: 215
-
-
 dh =
-
          -10.4098104544866
-
-
 rdh_sum =
-
           34.3939406292343
-
-
 ans =
-
 Berm Factor Calculation: Iteration 3, Profile Segment: 216
-
-
 dh =
-
          -10.4557854544866
-
-
 rdh_sum =
-
           35.3877907529978
-
-
 ans =
-
 Berm Factor Calculation: Iteration 3, Profile Segment: 217
-
-
 dh =
-
          -10.4951354544866
-
-
 rdh_sum =
-
            36.382487849933
-
-
 ans =
-
 Berm Factor Calculation: Iteration 3, Profile Segment: 218
-
-
 dh =
-
          -10.5365604544866
-
-
 rdh_sum =
-
           37.3780091433394
-
-
 ans =
-
 Berm Factor Calculation: Iteration 3, Profile Segment: 219
-
-
 dh =
-
          -10.5800604544866
-
-
 rdh_sum =
-
           38.3743213382053
-
-
 ans =
-
 Berm Factor Calculation: Iteration 3, Profile Segment: 220
-
-
 dh =
-
          -10.6233604544866
-
-
 rdh_sum =
-
           39.3713448037664
-
-
 ans =
-
 Berm Factor Calculation: Iteration 3, Profile Segment: 221
-
-
 dh =
-
          -10.6664604544866
-
-
 rdh_sum =
-
           40.3690008519398
-
-
 ans =
-
 !------- End Berm Factor Calculation, Iter: 3 ---------!
-
-
 berm_width =
-
     96
-
-
 rB =
-
          0.422763675346656
-
-
 rdh_mean =
-
           0.42051042554104
-
-
 gamma_berm =
-
           0.75501285767666
-
-
 slope =
-
          0.157751884681689
-
-
 Irb =
-
           1.32736987662368
-
-
 gamma_berm =
-
           0.75501285767666
-
-
 gamma_perm =
-
      1
-
-
 gamma_beta =
-
      1
-
-
 gamma_rough =
-
      1
-
-
 gamma =
-
           0.75501285767666
-
-
 ans =
-
 !!! - - Iribaren number:   1.00 is in the valid range (0.5-10), TAW RECOMMENDED - - !!!
-
-
-
 ans =
-
 !!! - - slope: 1:6.3 V:H is in the valid range (1:8 - 1:1), TAW RECOMMENDED - - !!!
-
-
-
 R2_new =
-
           11.0452999339406
-
-
 R2del =
-
         0.0395000284178515
-
-
 Z2 =
-
           20.1572894794541
-
-
 top_sta =
-
           223.084941148133
-
-
 ans =
-
 !----------------- STARTING ITERATION 4 -----------------!
-
-
 Ztoe =
-
                  -0.559889
-
-
 toe_sta =
-
          -4.37839811542992
-
-
 top_sta =
-
           223.084941148133
-
-
 Z2 =
-
           20.1572894794541
-
-
 H0 =
-
                     6.2267
-
-
 Tp =
-
                    10.2103
-
-
 T0 =
-
           9.28209090909091
-
-
 R2 =
-
           11.0452999339406
-
-
 Z2 =
-
           20.1572894794541
-
-
 top_sta =
-
           223.084941148133
-
-
 Lslope =
-
           227.463339263563
-
-
 ans =
-
 Berm Factor Calculation: Iteration 4, Profile Segment: 20
-
-
 dh =
-
           7.01733954551342
-
-
 rdh_sum =
-
          0.599065845823981
-
-
 ans =
-
 Berm Factor Calculation: Iteration 4, Profile Segment: 21
-
-
 dh =
-
           6.95683954551342
-
-
 rdh_sum =
-
           1.19064063116286
-
-
 ans =
-
 Berm Factor Calculation: Iteration 4, Profile Segment: 28
-
-
 dh =
-
           5.84106454551342
-
-
 rdh_sum =
-
            1.6420749834842
-
-
 ans =
-
 Berm Factor Calculation: Iteration 4, Profile Segment: 29
-
-
 dh =
-
           5.82241454551342
-
-
 rdh_sum =
-
           2.09116860919536
-
-
 ans =
-
 Berm Factor Calculation: Iteration 4, Profile Segment: 30
-
-
 dh =
-
           5.79601454551342
-
-
 rdh_sum =
-
           2.53695075903407
-
-
 ans =
-
 Berm Factor Calculation: Iteration 4, Profile Segment: 31
-
-
 dh =
-
           5.76186454551342
-
-
 rdh_sum =
-
           2.97845290273617
-
-
 ans =
-
 Berm Factor Calculation: Iteration 4, Profile Segment: 32
-
-
 dh =
-
           5.71803954551342
-
-
 rdh_sum =
-
           3.41446888099168
-
-
 ans =
-
 Berm Factor Calculation: Iteration 4, Profile Segment: 33
-
-
 dh =
-
           5.66453954551342
-
-
 rdh_sum =
-
           3.84379821136296
-
-
 ans =
-
 Berm Factor Calculation: Iteration 4, Profile Segment: 44
-
-
 dh =
-
           4.10266454551342
-
-
 rdh_sum =
-
           4.08852215773557
-
-
 ans =
-
 Berm Factor Calculation: Iteration 4, Profile Segment: 45
-
-
 dh =
-
           4.03861454551342
-
-
 rdh_sum =
-
           4.32633313641215
-
-
 ans =
-
 Berm Factor Calculation: Iteration 4, Profile Segment: 60
-
-
 dh =
-
          0.716464545513425
-
-
 rdh_sum =
-
           4.33447774023632
-
-
 ans =
-
 Berm Factor Calculation: Iteration 4, Profile Segment: 61
-
-
 dh =
-
          0.718214545513424
-
-
 rdh_sum =
-
           4.34266207081192
-
-
 ans =
-
 Berm Factor Calculation: Iteration 4, Profile Segment: 62
-
-
 dh =
-
          0.719939545513425
-
-
 rdh_sum =
-
           4.35088565442187
-
-
 ans =
-
 Berm Factor Calculation: Iteration 4, Profile Segment: 63
-
-
 dh =
-
          0.721639545513424
-
-
 rdh_sum =
-
           4.35914801329253
-
-
 ans =
-
 Berm Factor Calculation: Iteration 4, Profile Segment: 72
-
-
 dh =
-
         -0.569610454486575
-
-
 rdh_sum =
-
           4.36569572778009
-
-
 ans =
-
 Berm Factor Calculation: Iteration 4, Profile Segment: 73
-
-
 dh =
-
         -0.597610454486576
-
-
 rdh_sum =
-
           4.37290139947767
-
-
 ans =
-
 Berm Factor Calculation: Iteration 4, Profile Segment: 74
-
-
 dh =
-
         -0.605235454486575
-
-
 rdh_sum =
-
           4.38029166349505
-
-
 ans =
-
 Berm Factor Calculation: Iteration 4, Profile Segment: 75
-
-
 dh =
-
         -0.592485454486576
-
-
 rdh_sum =
-
           4.38737456740953
-
-
 ans =
-
 Berm Factor Calculation: Iteration 4, Profile Segment: 76
-
-
 dh =
-
         -0.584710454486576
-
-
 rdh_sum =
-
           4.39427322345938
-
-
 ans =
-
 Berm Factor Calculation: Iteration 4, Profile Segment: 77
-
-
 dh =
-
         -0.581910454486575
-
-
 rdh_sum =
-
           4.40110611712692
-
-
 ans =
-
 Berm Factor Calculation: Iteration 4, Profile Segment: 82
-
-
 dh =
-
          -1.05048545448658
-
-
 rdh_sum =
-
           4.42325902522953
-
-
 ans =
-
 Berm Factor Calculation: Iteration 4, Profile Segment: 83
-
-
 dh =
-
          -1.10383545448657
-
-
 rdh_sum =
-
           4.44770021282661
-
-
 ans =
-
 Berm Factor Calculation: Iteration 4, Profile Segment: 88
-
-
 dh =
-
          -1.89333545448658
-
-
 rdh_sum =
-
            4.5184651572114
-
-
 ans =
-
 Berm Factor Calculation: Iteration 4, Profile Segment: 89
-
-
 dh =
-
          -1.93178545448658
-
-
 rdh_sum =
-
           4.59206011566953
-
-
 ans =
-
 Berm Factor Calculation: Iteration 4, Profile Segment: 94
-
-
 dh =
-
          -2.39768545448658
-
-
 rdh_sum =
-
           4.70389334217407
-
-
 ans =
-
 Berm Factor Calculation: Iteration 4, Profile Segment: 95
-
-
 dh =
-
          -2.45383545448658
-
-
 rdh_sum =
-
            4.8208091755344
-
-
 ans =
-
 Berm Factor Calculation: Iteration 4, Profile Segment: 96
-
-
 dh =
-
          -2.48993545448658
-
-
 rdh_sum =
-
           4.94104440753902
-
-
 ans =
-
 Berm Factor Calculation: Iteration 4, Profile Segment: 97
-
-
 dh =
-
          -2.50598545448658
-
-
 rdh_sum =
-
           5.06276831705426
-
-
 ans =
-
 Berm Factor Calculation: Iteration 4, Profile Segment: 98
-
-
 dh =
-
          -2.54166045448657
-
-
 rdh_sum =
-
           5.18782936113373
-
-
 ans =
-
 Berm Factor Calculation: Iteration 4, Profile Segment: 99
-
-
 dh =
-
          -2.59696045448658
-
-
 rdh_sum =
-
           5.31813948762408
-
-
 ans =
-
 Berm Factor Calculation: Iteration 4, Profile Segment: 100
-
-
 dh =
-
          -2.65703545448658
-
-
 rdh_sum =
-
           5.45425554208633
-
-
 ans =
-
 Berm Factor Calculation: Iteration 4, Profile Segment: 101
-
-
 dh =
-
          -2.72188545448658
-
-
 rdh_sum =
-
           5.59675819266703
-
-
 ans =
-
 Berm Factor Calculation: Iteration 4, Profile Segment: 102
-
-
 dh =
-
          -2.78673545448658
-
-
 rdh_sum =
-
           5.74576906481571
-
-
 ans =
-
 Berm Factor Calculation: Iteration 4, Profile Segment: 103
-
-
 dh =
-
          -2.85158545448658
-
-
 rdh_sum =
-
           5.90140756979662
-
-
 ans =
-
 Berm Factor Calculation: Iteration 4, Profile Segment: 104
-
-
 dh =
-
          -2.91396045448658
-
-
 rdh_sum =
-
           6.06353132631094
-
-
 ans =
-
 Berm Factor Calculation: Iteration 4, Profile Segment: 105
-
-
 dh =
-
          -2.97386045448658
-
-
 rdh_sum =
-
           6.23198312730808
-
-
 ans =
-
 Berm Factor Calculation: Iteration 4, Profile Segment: 106
-
-
 dh =
-
          -3.03341045448658
-
-
 rdh_sum =
-
           6.40682139450134
-
-
 ans =
-
 Berm Factor Calculation: Iteration 4, Profile Segment: 107
-
-
 dh =
-
          -3.09261045448658
-
-
 rdh_sum =
-
           6.58810105653411
-
-
 ans =
-
 Berm Factor Calculation: Iteration 4, Profile Segment: 108
-
-
 dh =
-
          -3.14551045448658
-
-
 rdh_sum =
-
           6.77521313202248
-
-
 ans =
-
 Berm Factor Calculation: Iteration 4, Profile Segment: 109
-
-
 dh =
-
          -3.19211045448658
-
-
 rdh_sum =
-
           6.96752174915066
-
-
 ans =
-
 Berm Factor Calculation: Iteration 4, Profile Segment: 110
-
-
 dh =
-
          -3.23113545448658
-
-
 rdh_sum =
-
           7.16422381730647
-
-
 ans =
-
 Berm Factor Calculation: Iteration 4, Profile Segment: 111
-
-
 dh =
-
          -3.26258545448658
-
-
 rdh_sum =
-
           7.36449375701655
-
-
 ans =
-
 Berm Factor Calculation: Iteration 4, Profile Segment: 112
-
-
 dh =
-
          -3.29383545448658
-
-
 rdh_sum =
-
           7.56833263493058
-
-
 ans =
-
 Berm Factor Calculation: Iteration 4, Profile Segment: 113
-
-
 dh =
-
          -3.32488545448658
-
-
 rdh_sum =
-
           7.77574078379305
-
-
 ans =
-
 Berm Factor Calculation: Iteration 4, Profile Segment: 114
-
-
 dh =
-
          -3.36333545448658
-
-
 rdh_sum =
-
           7.98760044704861
-
-
 ans =
-
 Berm Factor Calculation: Iteration 4, Profile Segment: 115
-
-
 dh =
-
          -3.40918545448658
-
-
 rdh_sum =
-
           8.20481335669187
-
-
 ans =
-
 Berm Factor Calculation: Iteration 4, Profile Segment: 118
-
-
 dh =
-
          -3.60403545448658
-
-
 rdh_sum =
-
           8.44530141819106
-
-
 ans =
-
 Berm Factor Calculation: Iteration 4, Profile Segment: 119
-
-
 dh =
-
          -3.62728545448658
-
-
 rdh_sum =
-
           8.68862137326608
-
-
 ans =
-
 Berm Factor Calculation: Iteration 4, Profile Segment: 120
-
-
 dh =
-
          -3.64426045448658
-
-
 rdh_sum =
-
           8.93401601162604
-
-
 ans =
-
 Berm Factor Calculation: Iteration 4, Profile Segment: 121
-
-
 dh =
-
          -3.65496045448658
-
-
 rdh_sum =
-
           9.18072145595269
-
-
 ans =
-
 Berm Factor Calculation: Iteration 4, Profile Segment: 126
-
-
 dh =
-
          -4.12838545448658
-
-
 rdh_sum =
-
           9.48759356819826
-
-
 ans =
-
 Berm Factor Calculation: Iteration 4, Profile Segment: 127
-
-
 dh =
-
          -4.18293545448658
-
-
 rdh_sum =
-
           9.80164433922863
-
-
 ans =
-
 Berm Factor Calculation: Iteration 4, Profile Segment: 128
-
-
 dh =
-
          -4.21903545448658
-
-
 rdh_sum =
-
           10.1204705111922
-
-
 ans =
-
 Berm Factor Calculation: Iteration 4, Profile Segment: 129
-
-
 dh =
-
          -4.23668545448658
-
-
 rdh_sum =
-
           10.4416384541943
-
-
 ans =
-
 Berm Factor Calculation: Iteration 4, Profile Segment: 130
-
-
 dh =
-
          -4.25831045448658
-
-
 rdh_sum =
-
           10.7656817019238
-
-
 ans =
-
 Berm Factor Calculation: Iteration 4, Profile Segment: 131
-
-
 dh =
-
          -4.28391045448658
-
-
 rdh_sum =
-
           11.0931373745673
-
-
 ans =
-
 Berm Factor Calculation: Iteration 4, Profile Segment: 132
-
-
 dh =
-
          -4.31266045448658
-
-
 rdh_sum =
-
           11.4244362570965
-
-
 ans =
-
 Berm Factor Calculation: Iteration 4, Profile Segment: 133
-
-
 dh =
-
          -4.34456045448658
-
-
 rdh_sum =
-
           11.7600126229715
-
-
 ans =
-
 Berm Factor Calculation: Iteration 4, Profile Segment: 138
-
-
 dh =
-
          -4.79738545448658
-
-
 rdh_sum =
-
           12.1575992520768
-
-
 ans =
-
 Berm Factor Calculation: Iteration 4, Profile Segment: 139
-
-
 dh =
-
          -4.84253545448658
-
-
 rdh_sum =
-
           12.5614789743605
-
-
 ans =
-
 Berm Factor Calculation: Iteration 4, Profile Segment: 140
-
-
 dh =
-
          -4.86608545448658
-
-
 rdh_sum =
-
           12.9686474966653
-
-
 ans =
-
 Berm Factor Calculation: Iteration 4, Profile Segment: 141
-
-
 dh =
-
          -4.86803545448658
-
-
 rdh_sum =
-
            13.376088528731
-
-
 ans =
-
 Berm Factor Calculation: Iteration 4, Profile Segment: 142
-
-
 dh =
-
          -4.89063545448658
-
-
 rdh_sum =
-
           13.7866899347235
-
-
 ans =
-
 Berm Factor Calculation: Iteration 4, Profile Segment: 143
-
-
 dh =
-
          -4.93388545448658
-
-
 rdh_sum =
-
           14.2033495891876
-
-
 ans =
-
 Berm Factor Calculation: Iteration 4, Profile Segment: 146
-
-
 dh =
-
          -5.13698545448658
-
-
 rdh_sum =
-
           14.6486120081791
-
-
 ans =
-
 Berm Factor Calculation: Iteration 4, Profile Segment: 147
-
-
 dh =
-
          -5.19413545448658
-
-
 rdh_sum =
-
           15.1019599760397
-
-
 ans =
-
 Berm Factor Calculation: Iteration 4, Profile Segment: 148
-
-
 dh =
-
          -5.23781045448658
-
-
 rdh_sum =
-
           15.5614954804189
-
-
 ans =
-
 Berm Factor Calculation: Iteration 4, Profile Segment: 149
-
-
 dh =
-
          -5.26801045448657
-
-
 rdh_sum =
-
           16.0253131965372
-
-
 ans =
-
 Berm Factor Calculation: Iteration 4, Profile Segment: 154
-
-
 dh =
-
          -5.69873545448658
-
-
 rdh_sum =
-
           16.5503438673183
-
-
 ans =
-
 Berm Factor Calculation: Iteration 4, Profile Segment: 155
-
-
 dh =
-
          -5.67618545448657
-
-
 rdh_sum =
-
           17.0721711431519
-
-
 ans =
-
 Berm Factor Calculation: Iteration 4, Profile Segment: 172
-
-
 dh =
-
          -6.91756045448658
-
-
 rdh_sum =
-
           17.7653825409224
-
-
 ans =
-
 Berm Factor Calculation: Iteration 4, Profile Segment: 173
-
-
 dh =
-
          -6.93326045448658
-
-
 rdh_sum =
-
           18.4606513267108
-
-
 ans =
-
 Berm Factor Calculation: Iteration 4, Profile Segment: 178
-
-
 dh =
-
          -7.37643545448658
-
-
 rdh_sum =
-
           19.2122379168318
-
-
 ans =
-
 Berm Factor Calculation: Iteration 4, Profile Segment: 179
-
-
 dh =
-
          -7.40228545448657
-
-
 rdh_sum =
-
           19.9669946222166
-
-
 ans =
-
 Berm Factor Calculation: Iteration 4, Profile Segment: 180
-
-
 dh =
-
          -7.44433545448658
-
-
 rdh_sum =
-
           20.7268786319228
-
-
 ans =
-
 Berm Factor Calculation: Iteration 4, Profile Segment: 181
-
-
 dh =
-
          -7.50258545448658
-
-
 rdh_sum =
-
           21.4938036977231
-
-
 ans =
-
 Berm Factor Calculation: Iteration 4, Profile Segment: 184
-
-
 dh =
-
          -7.70038545448658
-
-
 rdh_sum =
-
           22.2840799591124
-
-
 ans =
-
 Berm Factor Calculation: Iteration 4, Profile Segment: 185
-
-
 dh =
-
          -7.72573545448657
-
-
 rdh_sum =
-
           23.0772840222052
-
-
 ans =
-
 Berm Factor Calculation: Iteration 4, Profile Segment: 186
-
-
 dh =
-
          -7.76693545448658
-
-
 rdh_sum =
-
           23.8752138992894
-
-
 ans =
-
 Berm Factor Calculation: Iteration 4, Profile Segment: 187
-
-
 dh =
-
          -7.82398545448658
-
-
 rdh_sum =
-
           24.6796199680946
-
-
 ans =
-
 Berm Factor Calculation: Iteration 4, Profile Segment: 194
-
-
 dh =
-
          -8.59431045448657
-
-
 rdh_sum =
-
           25.5629632576319
-
-
 ans =
-
 Berm Factor Calculation: Iteration 4, Profile Segment: 195
-
-
 dh =
-
          -8.64211045448658
-
-
 rdh_sum =
-
           26.4506353337351
-
-
 ans =
-
 Berm Factor Calculation: Iteration 4, Profile Segment: 204
-
-
 dh =
-
          -9.83591045448658
-
-
 rdh_sum =
-
            27.421344182127
-
-
 ans =
-
 Berm Factor Calculation: Iteration 4, Profile Segment: 205
-
-
 dh =
-
          -9.86051045448658
-
-
 rdh_sum =
-
           28.3932213297462
-
-
 ans =
-
 Berm Factor Calculation: Iteration 4, Profile Segment: 206
-
-
 dh =
-
          -9.86938545448658
-
-
 rdh_sum =
-
           29.3655142997744
-
-
 ans =
-
 Berm Factor Calculation: Iteration 4, Profile Segment: 207
-
-
 dh =
-
          -9.86253545448658
-
-
 rdh_sum =
-
           30.3374865900422
-
-
 ans =
-
 Berm Factor Calculation: Iteration 4, Profile Segment: 208
-
-
 dh =
-
          -9.86646045448658
-
-
 rdh_sum =
-
           31.3096428467276
-
-
 ans =
-
 Berm Factor Calculation: Iteration 4, Profile Segment: 209
-
-
 dh =
-
          -9.88116045448658
-
-
 rdh_sum =
-
           32.2824828678676
-
-
 ans =
-
 Berm Factor Calculation: Iteration 4, Profile Segment: 214
-
-
 dh =
-
          -10.3572104544866
-
-
 rdh_sum =
-
           33.2729373632931
-
-
 ans =
-
 Berm Factor Calculation: Iteration 4, Profile Segment: 215
-
-
 dh =
-
          -10.4098104544866
-
-
 rdh_sum =
-
           34.2647916199884
-
-
 ans =
-
 Berm Factor Calculation: Iteration 4, Profile Segment: 216
-
-
 dh =
-
          -10.4557854544866
-
-
 rdh_sum =
-
           35.2577791838701
-
-
 ans =
-
 Berm Factor Calculation: Iteration 4, Profile Segment: 217
-
-
 dh =
-
          -10.4951354544866
-
-
 rdh_sum =
-
           36.2516698001199
-
-
 ans =
-
 Berm Factor Calculation: Iteration 4, Profile Segment: 218
-
-
 dh =
-
          -10.5365604544866
-
-
 rdh_sum =
-
           37.2464442397028
-
-
 ans =
-
 Berm Factor Calculation: Iteration 4, Profile Segment: 219
-
-
 dh =
-
          -10.5800604544866
-
-
 rdh_sum =
-
           38.2420728382586
-
-
 ans =
-
 Berm Factor Calculation: Iteration 4, Profile Segment: 220
-
-
 dh =
-
          -10.6233604544866
-
-
 rdh_sum =
-
           39.2384763206842
-
-
 ans =
-
 Berm Factor Calculation: Iteration 4, Profile Segment: 221
-
-
 dh =
-
          -10.6664604544866
-
-
 rdh_sum =
-
           40.2355763368092
-
-
 ans =
-
 !------- End Berm Factor Calculation, Iter: 4 ---------!
-
-
 berm_width =
-
     96
-
-
 rB =
-
          0.422046033047832
-
-
 rdh_mean =
-
          0.419120586841762
-
-
 gamma_berm =
-
          0.754842147997413
-
-
 slope =
-
          0.157589017558115
-
-
 Irb =
-
           1.32599946565103
-
-
 gamma_berm =
-
          0.754842147997413
-
-
 gamma_perm =
-
      1
-
-
 gamma_beta =
-
      1
-
-
 gamma_rough =
-
      1
-
-
 gamma =
-
          0.754842147997413
-
-
 ans =
-
 !!! - - Iribaren number:   1.00 is in the valid range (0.5-10), TAW RECOMMENDED - - !!!
-
-
-
 ans =
-
 !!! - - slope: 1:6.3 V:H is in the valid range (1:8 - 1:1), TAW RECOMMENDED - - !!!
-
-
-
 R2_new =
-
           11.0314016981865
-
-
 R2del =
-
         0.0138982357541675
-
-
 Z2 =
-
           20.1433912436999
-
-
 top_sta =
-
           222.949083516128
-
-
 ans =
-
 !----------------- STARTING ITERATION 5 -----------------!
-
-
 Ztoe =
-
                  -0.559889
-
-
 toe_sta =
-
          -4.37839811542992
-
-
 top_sta =
-
           222.949083516128
-
-
 Z2 =
-
           20.1433912436999
-
-
 H0 =
-
                     6.2267
-
-
 Tp =
-
                    10.2103
-
-
 T0 =
-
           9.28209090909091
-
-
 R2 =
-
           11.0314016981865
-
-
 Z2 =
-
           20.1433912436999
-
-
 top_sta =
-
           222.949083516128
-
-
 Lslope =
-
           227.327481631558
-
-
 ans =
-
 Berm Factor Calculation: Iteration 5, Profile Segment: 20
-
-
 dh =
-
           7.01733954551342
-
-
 rdh_sum =
-
          0.599065845823981
-
-
 ans =
-
 Berm Factor Calculation: Iteration 5, Profile Segment: 21
-
-
 dh =
-
           6.95683954551342
-
-
 rdh_sum =
-
           1.19064063116286
-
-
 ans =
-
 Berm Factor Calculation: Iteration 5, Profile Segment: 28
-
-
 dh =
-
           5.84106454551342
-
-
 rdh_sum =
-
            1.6420749834842
-
-
 ans =
-
 Berm Factor Calculation: Iteration 5, Profile Segment: 29
-
-
 dh =
-
           5.82241454551342
-
-
 rdh_sum =
-
           2.09116860919536
-
-
 ans =
-
 Berm Factor Calculation: Iteration 5, Profile Segment: 30
-
-
 dh =
-
           5.79601454551342
-
-
 rdh_sum =
-
           2.53695075903407
-
-
 ans =
-
 Berm Factor Calculation: Iteration 5, Profile Segment: 31
-
-
 dh =
-
           5.76186454551342
-
-
 rdh_sum =
-
           2.97845290273617
-
-
 ans =
-
 Berm Factor Calculation: Iteration 5, Profile Segment: 32
-
-
 dh =
-
           5.71803954551342
-
-
 rdh_sum =
-
           3.41446888099168
-
-
 ans =
-
 Berm Factor Calculation: Iteration 5, Profile Segment: 33
-
-
 dh =
-
           5.66453954551342
-
-
 rdh_sum =
-
           3.84379821136296
-
-
 ans =
-
 Berm Factor Calculation: Iteration 5, Profile Segment: 44
-
-
 dh =
-
           4.10266454551342
-
-
 rdh_sum =
-
           4.08852215773557
-
-
 ans =
-
 Berm Factor Calculation: Iteration 5, Profile Segment: 45
-
-
 dh =
-
           4.03861454551342
-
-
 rdh_sum =
-
           4.32633313641215
-
-
 ans =
-
 Berm Factor Calculation: Iteration 5, Profile Segment: 60
-
-
 dh =
-
          0.716464545513425
-
-
 rdh_sum =
-
           4.33447774023632
-
-
 ans =
-
 Berm Factor Calculation: Iteration 5, Profile Segment: 61
-
-
 dh =
-
          0.718214545513424
-
-
 rdh_sum =
-
           4.34266207081192
-
-
 ans =
-
 Berm Factor Calculation: Iteration 5, Profile Segment: 62
-
-
 dh =
-
          0.719939545513425
-
-
 rdh_sum =
-
           4.35088565442187
-
-
 ans =
-
 Berm Factor Calculation: Iteration 5, Profile Segment: 63
-
-
 dh =
-
          0.721639545513424
-
-
 rdh_sum =
-
           4.35914801329253
-
-
 ans =
-
 Berm Factor Calculation: Iteration 5, Profile Segment: 72
-
-
 dh =
-
         -0.569610454486575
-
-
 rdh_sum =
-
           4.36571220061653
-
-
 ans =
-
 Berm Factor Calculation: Iteration 5, Profile Segment: 73
-
-
 dh =
-
         -0.597610454486576
-
-
 rdh_sum =
-
           4.37293599643225
-
-
 ans =
-
 Berm Factor Calculation: Iteration 5, Profile Segment: 74
-
-
 dh =
-
         -0.605235454486575
-
-
 rdh_sum =
-
           4.38034484770878
-
-
 ans =
-
 Berm Factor Calculation: Iteration 5, Profile Segment: 75
-
-
 dh =
-
         -0.592485454486576
-
-
 rdh_sum =
-
           4.38744556768572
-
-
 ans =
-
 Berm Factor Calculation: Iteration 5, Profile Segment: 76
-
-
 dh =
-
         -0.584710454486576
-
-
 rdh_sum =
-
           4.39436157742504
-
-
 ans =
-
 Berm Factor Calculation: Iteration 5, Profile Segment: 77
-
-
 dh =
-
         -0.581910454486575
-
-
 rdh_sum =
-
           4.40121165973634
-
-
 ans =
-
 Berm Factor Calculation: Iteration 5, Profile Segment: 82
-
-
 dh =
-
          -1.05048545448658
-
-
 rdh_sum =
-
            4.4234200057881
-
-
 ans =
-
 Berm Factor Calculation: Iteration 5, Profile Segment: 83
-
-
 dh =
-
          -1.10383545448657
-
-
 rdh_sum =
-
           4.44792230976563
-
-
 ans =
-
 Berm Factor Calculation: Iteration 5, Profile Segment: 88
-
-
 dh =
-
          -1.89333545448658
-
-
 rdh_sum =
-
           4.51886133336414
-
-
 ans =
-
 Berm Factor Calculation: Iteration 5, Profile Segment: 89
-
-
 dh =
-
          -1.93178545448658
-
-
 rdh_sum =
-
           4.59263714648905
-
-
 ans =
-
 Berm Factor Calculation: Iteration 5, Profile Segment: 94
-
-
 dh =
-
          -2.39768545448658
-
-
 rdh_sum =
-
           4.70474130202309
-
-
 ans =
-
 Berm Factor Calculation: Iteration 5, Profile Segment: 95
-
-
 dh =
-
          -2.45383545448658
-
-
 rdh_sum =
-
           4.82193982616538
-
-
 ans =
-
 Berm Factor Calculation: Iteration 5, Profile Segment: 96
-
-
 dh =
-
          -2.48993545448658
-
-
 rdh_sum =
-
           4.94246540315579
-
-
 ans =
-
 Berm Factor Calculation: Iteration 5, Profile Segment: 97
-
-
 dh =
-
          -2.50598545448658
-
-
 rdh_sum =
-
           5.06448308336729
-
-
 ans =
-
 Berm Factor Calculation: Iteration 5, Profile Segment: 98
-
-
 dh =
-
          -2.54166045448657
-
-
 rdh_sum =
-
           5.18984556159912
-
-
 ans =
-
 Berm Factor Calculation: Iteration 5, Profile Segment: 99
-
-
 dh =
-
          -2.59696045448658
-
-
 rdh_sum =
-
           5.32046913167688
-
-
 ans =
-
 Berm Factor Calculation: Iteration 5, Profile Segment: 100
-
-
 dh =
-
          -2.65703545448658
-
-
 rdh_sum =
-
           5.45691184915817
-
-
 ans =
-
 Berm Factor Calculation: Iteration 5, Profile Segment: 101
-
-
 dh =
-
          -2.72188545448658
-
-
 rdh_sum =
-
           5.59975562600399
-
-
 ans =
-
 Berm Factor Calculation: Iteration 5, Profile Segment: 102
-
-
 dh =
-
          -2.78673545448658
-
-
 rdh_sum =
-
           5.74912227796662
-
-
 ans =
-
 Berm Factor Calculation: Iteration 5, Profile Segment: 103
-
-
 dh =
-
          -2.85158545448658
-
-
 rdh_sum =
-
           5.90513139603257
-
-
 ans =
-
 Berm Factor Calculation: Iteration 5, Profile Segment: 104
-
-
 dh =
-
          -2.91396045448658
-
-
 rdh_sum =
-
           6.06764019234921
-
-
 ans =
-
 Berm Factor Calculation: Iteration 5, Profile Segment: 105
-
-
 dh =
-
          -2.97386045448658
-
-
 rdh_sum =
-
           6.23649102556178
-
-
 ans =
-
 Berm Factor Calculation: Iteration 5, Profile Segment: 106
-
-
 dh =
-
          -3.03341045448658
-
-
 rdh_sum =
-
            6.4117423610563
-
-
 ans =
-
 Berm Factor Calculation: Iteration 5, Profile Segment: 107
-
-
 dh =
-
          -3.09261045448658
-
-
 rdh_sum =
-
           6.59344916036403
-
-
 ans =
-
 Berm Factor Calculation: Iteration 5, Profile Segment: 108
-
-
 dh =
-
          -3.14551045448658
-
-
 rdh_sum =
-
           6.78100103519435
-
-
 ans =
-
 Berm Factor Calculation: Iteration 5, Profile Segment: 109
-
-
 dh =
-
          -3.19211045448658
-
-
 rdh_sum =
-
           6.97376067124052
-
-
 ans =
-
 Berm Factor Calculation: Iteration 5, Profile Segment: 110
-
-
 dh =
-
          -3.23113545448658
-
-
 rdh_sum =
-
           7.17092319802868
-
-
 ans =
-
 Berm Factor Calculation: Iteration 5, Profile Segment: 111
-
-
 dh =
-
          -3.26258545448658
-
-
 rdh_sum =
-
           7.37166123106984
-
-
 ans =
-
 Berm Factor Calculation: Iteration 5, Profile Segment: 112
-
-
 dh =
-
          -3.29383545448658
-
-
 rdh_sum =
-
           7.57597581116739
-
-
 ans =
-
 Berm Factor Calculation: Iteration 5, Profile Segment: 113
-
-
 dh =
-
          -3.32488545448658
-
-
 rdh_sum =
-
           7.78386724348411
-
-
 ans =
-
 Berm Factor Calculation: Iteration 5, Profile Segment: 114
-
-
 dh =
-
          -3.36333545448658
-
-
 rdh_sum =
-
           7.99621960550084
-
-
 ans =
-
 Berm Factor Calculation: Iteration 5, Profile Segment: 115
-
-
 dh =
-
          -3.40918545448658
-
-
 rdh_sum =
-
           8.21393647741063
-
-
 ans =
-
 Berm Factor Calculation: Iteration 5, Profile Segment: 118
-
-
 dh =
-
          -3.60403545448658
-
-
 rdh_sum =
-
           8.45497671070661
-
-
 ans =
-
 Berm Factor Calculation: Iteration 5, Profile Segment: 119
-
-
 dh =
-
          -3.62728545448658
-
-
 rdh_sum =
-
           8.69885461721066
-
-
 ans =
-
 Berm Factor Calculation: Iteration 5, Profile Segment: 120
-
-
 dh =
-
          -3.64426045448658
-
-
 rdh_sum =
-
           8.94481142921035
-
-
 ans =
-
 Berm Factor Calculation: Iteration 5, Profile Segment: 121
-
-
 dh =
-
          -3.65496045448658
-
-
 rdh_sum =
-
           9.19208170955222
-
-
 ans =
-
 Berm Factor Calculation: Iteration 5, Profile Segment: 126
-
-
 dh =
-
          -4.12838545448658
-
-
 rdh_sum =
-
           9.49963631911347
-
-
 ans =
-
 Berm Factor Calculation: Iteration 5, Profile Segment: 127
-
-
 dh =
-
          -4.18293545448658
-
-
 rdh_sum =
-
           9.81438300846251
-
-
 ans =
-
 Berm Factor Calculation: Iteration 5, Profile Segment: 128
-
-
 dh =
-
          -4.21903545448658
-
-
 rdh_sum =
-
           10.1339139506523
-
-
 ans =
-
 Berm Factor Calculation: Iteration 5, Profile Segment: 129
-
-
 dh =
-
          -4.23668545448658
-
-
 rdh_sum =
-
           10.4557909823054
-
-
 ans =
-
 Berm Factor Calculation: Iteration 5, Profile Segment: 130
-
-
 dh =
-
          -4.25831045448658
-
-
 rdh_sum =
-
           10.7805486007158
-
-
 ans =
-
 Berm Factor Calculation: Iteration 5, Profile Segment: 131
-
-
 dh =
-
          -4.28391045448658
-
-
 rdh_sum =
-
            11.108724883622
-
-
 ans =
-
 Berm Factor Calculation: Iteration 5, Profile Segment: 132
-
-
 dh =
-
          -4.31266045448658
-
-
 rdh_sum =
-
           11.4407513655541
-
-
 ans =
-
 Berm Factor Calculation: Iteration 5, Profile Segment: 133
-
-
 dh =
-
          -4.34456045448658
-
-
 rdh_sum =
-
           11.7770630618941
-
-
 ans =
-
 Berm Factor Calculation: Iteration 5, Profile Segment: 138
-
-
 dh =
-
          -4.79738545448658
-
-
 rdh_sum =
-
           12.1754911765547
-
-
 ans =
-
 Berm Factor Calculation: Iteration 5, Profile Segment: 139
-
-
 dh =
-
          -4.84253545448658
-
-
 rdh_sum =
-
           12.5802225080298
-
-
 ans =
-
 Berm Factor Calculation: Iteration 5, Profile Segment: 140
-
-
 dh =
-
          -4.86608545448658
-
-
 rdh_sum =
-
           12.9882478802201
-
-
 ans =
-
 Berm Factor Calculation: Iteration 5, Profile Segment: 141
-
-
 dh =
-
          -4.86803545448658
-
-
 rdh_sum =
-
           13.3965461948655
-
-
 ans =
-
 Berm Factor Calculation: Iteration 5, Profile Segment: 142
-
-
 dh =
-
          -4.89063545448658
-
-
 rdh_sum =
-
           13.8080098841127
-
-
 ans =
-
 Berm Factor Calculation: Iteration 5, Profile Segment: 143
-
-
 dh =
-
          -4.93388545448658
-
-
 rdh_sum =
-
            14.225541317633
-
-
 ans =
-
 Berm Factor Calculation: Iteration 5, Profile Segment: 146
-
-
 dh =
-
          -5.13698545448658
-
-
 rdh_sum =
-
           14.6717187024969
-
-
 ans =
-
 Berm Factor Calculation: Iteration 5, Profile Segment: 147
-
-
 dh =
-
          -5.19413545448658
-
-
 rdh_sum =
-
           15.1259933362586
-
-
 ans =
-
 Berm Factor Calculation: Iteration 5, Profile Segment: 148
-
-
 dh =
-
          -5.23781045448658
-
-
 rdh_sum =
-
           15.5864643038269
-
-
 ans =
-
 Berm Factor Calculation: Iteration 5, Profile Segment: 149
-
-
 dh =
-
          -5.26801045448657
-
-
 rdh_sum =
-
           16.0512234910058
-
-
 ans =
-
 Berm Factor Calculation: Iteration 5, Profile Segment: 154
-
-
 dh =
-
          -5.69873545448658
-
-
 rdh_sum =
-
           16.5772738844109
-
-
 ans =
-
 Berm Factor Calculation: Iteration 5, Profile Segment: 155
-
-
 dh =
-
          -5.67618545448657
-
-
 rdh_sum =
-
           17.1001171602999
-
-
 ans =
-
 Berm Factor Calculation: Iteration 5, Profile Segment: 172
-
-
 dh =
-
          -6.91756045448658
-
-
 rdh_sum =
-
           17.7944711216148
-
-
 ans =
-
 Berm Factor Calculation: Iteration 5, Profile Segment: 173
-
-
 dh =
-
          -6.93326045448658
-
-
 rdh_sum =
-
           18.4908829013787
-
-
 ans =
-
 Berm Factor Calculation: Iteration 5, Profile Segment: 178
-
-
 dh =
-
          -7.37643545448658
-
-
 rdh_sum =
-
           19.2436107649237
-
-
 ans =
-
 Berm Factor Calculation: Iteration 5, Profile Segment: 179
-
-
 dh =
-
          -7.40228545448657
-
-
 rdh_sum =
-
           19.9995077913618
-
-
 ans =
-
 Berm Factor Calculation: Iteration 5, Profile Segment: 180
-
-
 dh =
-
          -7.44433545448658
-
-
 rdh_sum =
-
           20.7605303665284
-
-
 ans =
-
 Berm Factor Calculation: Iteration 5, Profile Segment: 181
-
-
 dh =
-
          -7.50258545448658
-
-
 rdh_sum =
-
           21.5285911409164
-
-
 ans =
-
 Berm Factor Calculation: Iteration 5, Profile Segment: 184
-
-
 dh =
-
          -7.70038545448658
-
-
 rdh_sum =
-
           22.3199896757852
-
-
 ans =
-
 Berm Factor Calculation: Iteration 5, Profile Segment: 185
-
-
 dh =
-
          -7.72573545448657
-
-
 rdh_sum =
-
           23.1143138684938
-
-
 ans =
-
 Berm Factor Calculation: Iteration 5, Profile Segment: 186
-
-
 dh =
-
          -7.76693545448658
-
-
 rdh_sum =
-
           23.9133601842364
-
-
 ans =
-
 Berm Factor Calculation: Iteration 5, Profile Segment: 187
-
-
 dh =
-
          -7.82398545448658
-
-
 rdh_sum =
-
           24.7188771564981
-
-
 ans =
-
 Berm Factor Calculation: Iteration 5, Profile Segment: 194
-
-
 dh =
-
          -8.59431045448657
-
-
 rdh_sum =
-
           25.6032072516073
-
-
 ans =
-
 Berm Factor Calculation: Iteration 5, Profile Segment: 195
-
-
 dh =
-
          -8.64211045448658
-
-
 rdh_sum =
-
            26.491855359235
-
-
 ans =
-
 Berm Factor Calculation: Iteration 5, Profile Segment: 204
-
-
 dh =
-
          -9.83591045448658
-
-
 rdh_sum =
-
           27.4631556133794
-
-
 ans =
-
 Berm Factor Calculation: Iteration 5, Profile Segment: 205
-
-
 dh =
-
          -9.86051045448658
-
-
 rdh_sum =
-
           28.4356139792809
-
-
 ans =
-
 Berm Factor Calculation: Iteration 5, Profile Segment: 206
-
-
 dh =
-
          -9.86938545448658
-
-
 rdh_sum =
-
           29.4084844709152
-
-
 ans =
-
 Berm Factor Calculation: Iteration 5, Profile Segment: 207
-
-
 dh =
-
          -9.86253545448658
-
-
 rdh_sum =
-
           30.3810371369921
-
-
 ans =
-
 Berm Factor Calculation: Iteration 5, Profile Segment: 208
-
-
 dh =
-
          -9.86646045448658
-
-
 rdh_sum =
-
           31.3537721348715
-
-
 ans =
-
 Berm Factor Calculation: Iteration 5, Profile Segment: 209
-
-
 dh =
-
          -9.88116045448658
-
-
 rdh_sum =
-
           32.3271847556094
-
-
 ans =
-
 Berm Factor Calculation: Iteration 5, Profile Segment: 214
-
-
 dh =
-
          -10.3572104544866
-
-
 rdh_sum =
-
           33.3179967502946
-
-
 ans =
-
 Berm Factor Calculation: Iteration 5, Profile Segment: 215
-
-
 dh =
-
          -10.4098104544866
-
-
 rdh_sum =
-
           34.3101828837403
-
-
 ans =
-
 Berm Factor Calculation: Iteration 5, Profile Segment: 216
-
-
 dh =
-
          -10.4557854544866
-
-
 rdh_sum =
-
           35.3034796405385
-
-
 ans =
-
 Berm Factor Calculation: Iteration 5, Profile Segment: 217
-
-
 dh =
-
          -10.4951354544866
-
-
 rdh_sum =
-
           36.2976598235765
-
-
 ans =
-
 Berm Factor Calculation: Iteration 5, Profile Segment: 218
-
-
 dh =
-
          -10.5365604544866
-
-
 rdh_sum =
-
           37.2927029611055
-
-
 ans =
-
 Berm Factor Calculation: Iteration 5, Profile Segment: 219
-
-
 dh =
-
          -10.5800604544866
-
-
 rdh_sum =
-
           38.2885781168196
-
-
 ans =
-
 Berm Factor Calculation: Iteration 5, Profile Segment: 220
-
-
 dh =
-
          -10.6233604544866
-
-
 rdh_sum =
-
           39.2852058898539
-
-
 ans =
-
 Berm Factor Calculation: Iteration 5, Profile Segment: 221
-
-
 dh =
-
          -10.6664604544866
-
-
 rdh_sum =
-
           40.2825078104902
-
-
 ans =
-
 !------- End Berm Factor Calculation, Iter: 5 ---------!
-
-
 berm_width =
-
     96
-
-
 rB =
-
          0.422298260249909
-
-
 rdh_mean =
-
          0.419609456359273
-
-
 gamma_berm =
-
          0.754902083155022
-
-
 slope =
-
          0.157646213774078
-
-
 Irb =
-
           1.32648073111597
-
-
 gamma_berm =
-
          0.754902083155022
-
-
 gamma_perm =
-
      1
-
-
 gamma_beta =
-
      1
-
-
 gamma_rough =
-
      1
-
-
 gamma =
-
          0.754902083155022
-
-
 ans =
-
 !!! - - Iribaren number:   1.00 is in the valid range (0.5-10), TAW RECOMMENDED - - !!!
-
-
-
 ans =
-
 !!! - - slope: 1:6.3 V:H is in the valid range (1:8 - 1:1), TAW RECOMMENDED - - !!!
-
-
-
 R2_new =
-
           11.0362817164741
-
-
 R2del =
-
        0.00488001828766471
-
-
 Z2 =
-
           20.1482712619876
-
-
 top_sta =
-
           222.996786529693
-
-
 % final 2% runup elevation
 Z2=R2_new+SWEL
-
 Z2 =
-
           20.1482712619876
-
-
 diary off
+-1.000000e+00

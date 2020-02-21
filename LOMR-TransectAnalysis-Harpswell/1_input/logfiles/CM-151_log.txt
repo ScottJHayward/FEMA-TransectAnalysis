@@ -22,10 +22,10 @@ Transect Direction:   60.3343 deg CCW from East
 
 TAW/RUNUP input
 _______________
-toe sta:     0 ft
-toe elev:    0.1095 ft-NAVD88
-top sta:     102 ft
-top elev:    4.5214 ft-NAVD88
+toe sta:     100 ft
+toe elev:    4.4674 ft-NAVD88
+top sta:     250 ft
+top elev:    31.2447 ft-NAVD88
 *Wave and water level conditions at toe to be calculated in SWAN 1-D*
 
 PART 1 COMPLETE________________________________________

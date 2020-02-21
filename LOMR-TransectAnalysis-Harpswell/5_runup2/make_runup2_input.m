@@ -3,7 +3,7 @@ clc;clear all;close all
 % datafile='../data/transectdata.xls'; 
 datafile='../data/transectdata.xls';
 tDIR='../ADCIRC_returns/'; %location of transects
-imgfile='tpng'; runupname='YK-runup';
+imgfile='tpng'; runupname='CM-runup';
 picktoetop=0; %to pick toetop for all stations, set equal to 1
 L_append=2;
 engineer='sjh';

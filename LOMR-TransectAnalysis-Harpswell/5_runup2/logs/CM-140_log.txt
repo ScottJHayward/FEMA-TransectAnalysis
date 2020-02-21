@@ -1,0 +1,147 @@
+
+_______________________________________________________
+PART 5: RUNUP2
+
+        for transect: CM-140
+
+Station locations shifted by: -0.64 feet from their
+original location to set the shoreline to
+elevation 0 for RUNUP2 input
+
+
+______________RUNUP2 INPUT CONVERSIONS_________________
+        for transect: CM-140
+
+Incident significant wave height: 22.82 feet
+
+Peak wave period: 14.54 seconds
+
+Mean wave height: 14.29 feet
+
+Local Depth below SWEL: 36.64 feet
+
+Mean wave height deshoaled using Hunt approximation for
+celerity assuming constant wave energy flux.
+ References: R.G. Dean and R.A. Dalrymple. 2000.  Water
+
+             Wave Mechanics for Engineers and Scientists. World
+             Scientific Publishing Company, River Edge New Jersy
+
+             USACE (1985), Direct Methods for Calculating Wavelength, CETN-1-17
+             US Army Engineer Waterways Experiment Station Coastel Engineering
+             Research Center, Vicksburg, MS
+
+             also see Coastal Engineering Manual Part II-3
+             for discussion of shoaling coefficient
+
+    Depth, D = 36.64
+    Period, T = 12.36
+    Waveheight, H = 14.29
+Deep water wavelength, L0 (ft)
+    L0 = g*T*T/twopi
+    L0 = 32.17*12.36*12.36/6.28 = 782.38
+Deep water wave celerity, C0 (ft/s)
+    C0 = L0/T
+    C0 = 782.38/12.36 = 63.30 
+Angular frequency, sigma (rad/s)
+    sigma = twopi/T 
+    sigma = 6.28/12.36 = 0.51
+Hunts (1979) approximation for Celerity C1H (ft/s) at Depth D (ft)
+    y = sigma.*sigma.*D./g
+    y = 0.51*0.51*36.64/32.17 = 0.29
+    C1H = sqrt( g.*D./(y+1./(1 + 0.6522.*y + 0.4622.*y.^2 + 0.0864.*y.^4 +0.0675.*y.^5)) )
+    C1H = 32.66
+Shoaling Coefficient KsH 
+    KsH = sqrt(C0/C1H)
+    KsH = sqrt(63.30/32.66) = 1.39
+Deepwater Wave Height H0_H (ft) 
+    H0_H = H/KsH
+    H0_H = 14.29/1.39 = 10.26
+ 
+Deepwater mean wave height: 10.26 feet
+
+______________END RUNUP2 CONVERSIONS___________________
+
+______________RUNUP2 RESULTS___________________________
+        for transect: CM-140
+
+RUNUP2 SWEL:
+8.80
+8.80
+8.80
+8.80
+8.80
+8.80
+8.80
+8.80
+8.80
+
+RUNUP2 deepwater mean wave heights:
+9.75
+9.75
+9.75
+10.26
+10.26
+10.26
+10.78
+10.78
+10.78
+
+RUNUP2 mean wave periods:
+11.74
+12.36
+12.98
+11.74
+12.36
+12.98
+11.74
+12.36
+12.98
+
+RUNUP2 runup above SWEL:
+16.89
+18.56
+20.20
+16.83
+18.39
+20.23
+16.90
+18.46
+20.27
+
+RUNUP2 Mean runup height above SWEL: 18.53 feet
+
+RUNUP2 2-percent runup height above SWEL: 40.76 feet
+
+RUNUP2 2-percent runup elevation: 49.56 feet-NAVD88
+
+RUNUP2 Messages:
+No Messages
+
+______________END RUNUP2 RESULTS_______________________
+
+
+
+________________ACES BEACH RUNUP_______________________
+
+Incident significant wave height: 22.82 feet
+
+Significant wave height deshoaled using Hunt equation
+
+Deepwater significant wave height: 14.37 feet
+
+Peak wave period: 14.54 seconds
+
+Average beach Slope: 1:6.79 (H:V) 
+
+ACES RUNUP CALCULATED USING 'Aces_Beach_Runup.m'
+
+ACES Beach 2-percent runup height above SWEL: 31.82 feet
+
+ACES Beach 2-percent runup elevation: 40.62 feet-NAVD88
+
+ACES BEACH RUNUP is valid
+
+_____________END ACES BEACH RESULTS____________________
+
+PART 5 COMPLETE________________________________________

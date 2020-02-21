@@ -23,6 +23,7 @@ for i=2:size(raw,1)
 fnames{i-1}=raw{i,1};
 end
 setup=num(:,11);
+setup(isnan(setup))=0;
 maxsetup=num(:,5);
 twl=num(:,2);
 hs=num(:,12);
@@ -36,7 +37,8 @@ grough=num(:,15);
 gbeta=num(:,16);
 gperm=num(:,17);
 
-for i=[1:17 19:32 34:length(fnames)]
+% for i=[1:17 19:32 34:length(fnames)]
+for i=[18,33]
 
 fname=[tDIR fnames{i} 'XYZSTA_RETURNS.csv'];
 file=xlsread(fname);
@@ -47,8 +49,8 @@ end
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %add output to excel file
-for i=[1:17 19:32 34:length(fnames)]
-    
+% for i=[1:17 19:32 34:length(fnames)]
+for i=[18,33]
     
     %write a transect file for each run
     toesta=find(abs(sta{i}-toex(i))==min(abs(sta{i}-toex(i))));
@@ -90,7 +92,8 @@ for i=1:templatelines
 end
 
 fid2=fopen(tawfilename,'w')
-for i=[1:17 19:32 34:length(fnames)]
+% for i=[1:17 19:32 34:length(fnames)]
+for i=[18,33]
 for li=1:length(template)
     tawfile{li}=template{li}; %read each line of template
     tawfile{li}=strrep(tawfile{li},'$DIARYFILE$',['logfiles/' fnames{i} '-DIARY.txt']);

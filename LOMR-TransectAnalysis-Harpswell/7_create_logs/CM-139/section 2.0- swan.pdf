@@ -1,0 +1,94 @@
+%PDF-1.1
+1 0 obj
+<<
+/CreationDate (D:20200221103520)
+/Producer (text2pdf v1.1 (\251 Phil Smith, 1996))
+/Title (../2_swan/logfiles/CM-139_log.txt)
+>>
+endobj
+2 0 obj
+<<
+/Type /Catalog
+/Pages 3 0 R
+>>
+endobj
+4 0 obj
+<<
+/Type /Font
+/Subtype /Type1
+/Name /F1
+/BaseFont /Courier
+>>
+endobj
+5 0 obj
+<<
+  /Font << /F1 4 0 R >>
+  /ProcSet [ /PDF /Text ]
+>>
+endobj
+6 0 obj
+<<
+/Type /Page
+/Parent 3 0 R
+/Resources 5 0 R
+/Contents 7 0 R
+>>
+endobj
+7 0 obj
+<<
+/Length 8 0 R
+>>
+stream
+BT
+/F1 10 Tf
+1 0 0 1 50 752 Tm
+10 TL
+(_______________________________________________________)'
+(PART 2: SWAN 1-D)'
+()'
+(swan input grid name: 2_swan/gridfiles/CM-139zmeters_xmeters.grd)'
+(swan file name:       2_swan/swanfiles/CM-139.swn)'
+(swan output name:     2_swan/swanfiles/CM-139.dat)'
+()'
+(Boundary Conditions:)'
+(    TWL- 2.6835 meters)'
+(    HS-  1.7103 meters)'
+(    PER- 10.4458 seconds)'
+()'
+(Batch File: 2_swan/swanfiles/runswan.dat)'
+()'
+(SWAN maximum additional wave setup: 0.87295 feet)'
+(SWAN output at toe:)'
+(    SETUP- -0.023839 feet)'
+(    HS-    6.2267 feet)'
+(    PER-   10.2103 seconds)'
+()'
+(PART 2 COMPLETE________________________________________)'
+()'
+()'
+()'
+ET
+endstream
+endobj
+8 0 obj
+721
+endobj
+3 0 obj
+<<
+/Type /Pages
+/Count 1
+/MediaBox [ 0 0 612 792 ]
+/Kids [ 6 0 R ]
+>>
+endobj
+xref
+0 9
+0000000000 65535 f 0000000010 00000 n 0000000164 00000 n 0000001272 00000 n 0000000219 00000 n 0000000305 00000 n 0000000382 00000 n 0000000470 00000 n 0000001250 00000 n trailer
+<<
+/Size 9
+/Root 2 0 R
+/Info 1 0 R
+>>
+startxref
+1365
+%%EOF

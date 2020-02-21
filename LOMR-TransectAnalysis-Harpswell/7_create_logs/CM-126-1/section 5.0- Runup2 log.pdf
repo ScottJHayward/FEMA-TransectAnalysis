@@ -1,0 +1,264 @@
+%PDF-1.1
+1 0 obj
+<<
+/CreationDate (D:20200221103516)
+/Producer (text2pdf v1.1 (\251 Phil Smith, 1996))
+/Title (../5_runup2/logs/CM-126-1_log.txt)
+>>
+endobj
+2 0 obj
+<<
+/Type /Catalog
+/Pages 3 0 R
+>>
+endobj
+4 0 obj
+<<
+/Type /Font
+/Subtype /Type1
+/Name /F1
+/BaseFont /Courier
+>>
+endobj
+5 0 obj
+<<
+  /Font << /F1 4 0 R >>
+  /ProcSet [ /PDF /Text ]
+>>
+endobj
+6 0 obj
+<<
+/Type /Page
+/Parent 3 0 R
+/Resources 5 0 R
+/Contents 7 0 R
+>>
+endobj
+7 0 obj
+<<
+/Length 8 0 R
+>>
+stream
+BT
+/F1 10 Tf
+1 0 0 1 50 752 Tm
+10 TL
+()'
+(_______________________________________________________)'
+(PART 5: RUNUP2)'
+()'
+(        for transect: CM-126-1)'
+()'
+(Station locations shifted by: -0.89 feet from their)'
+(original location to set the shoreline to)'
+(elevation 0 for RUNUP2 input)'
+()'
+()'
+(______________RUNUP2 INPUT CONVERSIONS_________________)'
+(        for transect: CM-126-1)'
+()'
+(Incident significant wave height: 3.73 feet)'
+()'
+(Peak wave period: 11.30 seconds)'
+()'
+(Mean wave height: 2.34 feet)'
+()'
+(Local Depth below SWEL: 22.91 feet)'
+()'
+(Mean wave height deshoaled using Hunt approximation for)'
+(celerity assuming constant wave energy flux.)'
+( References: R.G. Dean and R.A. Dalrymple. 2000.  Water)'
+()'
+(             Wave Mechanics for Engineers and Scientists. World)'
+(             Scientific Publishing Company, River Edge New Jersy)'
+()'
+(             USACE \(1985\), Direct Methods for Calculating Wavelength, CETN-1-17)'
+(             US Army Engineer Waterways Experiment Station Coastel Engineering)'
+(             Research Center, Vicksburg, MS)'
+()'
+(             also see Coastal Engineering Manual Part II-3)'
+(             for discussion of shoaling coefficient)'
+()'
+(    Depth, D = 22.91)'
+(    Period, T = 9.61)'
+(    Waveheight, H = 2.34)'
+(Deep water wavelength, L0 \(ft\))'
+(    L0 = g*T*T/twopi)'
+(    L0 = 32.17*9.61*9.61/6.28 = 472.61)'
+(Deep water wave celerity, C0 \(ft/s\))'
+(    C0 = L0/T)'
+(    C0 = 472.61/9.61 = 49.19 )'
+(Angular frequency, sigma \(rad/s\))'
+(    sigma = twopi/T )'
+(    sigma = 6.28/9.61 = 0.65)'
+(Hunts \(1979\) approximation for Celerity C1H \(ft/s\) at Depth D \(ft\))'
+(    y = sigma.*sigma.*D./g)'
+(    y = 0.65*0.65*22.91/32.17 = 0.30)'
+(    C1H = sqrt\( g.*D./\(y+1./\(1 + 0.6522.*y + 0.4622.*y.^2 + 0.0864.*y.^4 +0.0675.*y.^5\)\) \))'
+(    C1H = 25.77)'
+(Shoaling Coefficient KsH )'
+(    KsH = sqrt\(C0/C1H\))'
+(    KsH = sqrt\(49.19/25.77\) = 1.38)'
+(Deepwater Wave Height H0_H \(ft\) )'
+(    H0_H = H/KsH)'
+(    H0_H = 2.34/1.38 = 1.69)'
+( )'
+(Deepwater mean wave height: 1.69 feet)'
+()'
+(______________END RUNUP2 CONVERSIONS___________________)'
+()'
+(______________RUNUP2 RESULTS___________________________)'
+(        for transect: CM-126-1)'
+()'
+(RUNUP2 SWEL:)'
+(8.90)'
+(8.90)'
+(8.90)'
+(8.90)'
+ET
+endstream
+endobj
+8 0 obj
+2364
+endobj
+9 0 obj
+<<
+/Type /Page
+/Parent 3 0 R
+/Resources 5 0 R
+/Contents 10 0 R
+>>
+endobj
+10 0 obj
+<<
+/Length 11 0 R
+>>
+stream
+BT
+/F1 10 Tf
+1 0 0 1 50 752 Tm
+10 TL
+(8.90)'
+(8.90)'
+(8.90)'
+(8.90)'
+(8.90)'
+()'
+(RUNUP2 deepwater mean wave heights:)'
+(1.61)'
+(1.61)'
+(1.61)'
+(1.69)'
+(1.69)'
+(1.69)'
+(1.78)'
+(1.78)'
+(1.78)'
+()'
+(RUNUP2 mean wave periods:)'
+(9.13)'
+(9.61)'
+(10.09)'
+(9.13)'
+(9.61)'
+(10.09)'
+(9.13)'
+(9.61)'
+(10.09)'
+()'
+(RUNUP2 runup above SWEL:)'
+(1.28)'
+(1.40)'
+(1.49)'
+(1.34)'
+(1.45)'
+(1.56)'
+(1.43)'
+(1.52)'
+(1.65)'
+()'
+(RUNUP2 Mean runup height above SWEL: 1.46 feet)'
+()'
+(RUNUP2 2-percent runup height above SWEL: 3.21 feet)'
+()'
+(RUNUP2 2-percent runup elevation: 12.11 feet-NAVD88)'
+()'
+(RUNUP2 Messages:)'
+(No Messages)'
+()'
+(______________END RUNUP2 RESULTS_______________________)'
+()'
+()'
+()'
+(________________ACES BEACH RUNUP_______________________)'
+()'
+(Incident significant wave height: 3.73 feet)'
+()'
+(Significant wave height deshoaled using Hunt equation)'
+()'
+(Deepwater significant wave height: 2.37 feet)'
+()'
+(Peak wave period: 11.30 seconds)'
+()'
+(Average beach Slope: 1:11.42 \(H:V\) )'
+()'
+(ACES RUNUP CALCULATED USING 'Aces_Beach_Runup.m')'
+()'
+(ACES Beach 2-percent runup height above SWEL: 5.75 feet)'
+()'
+(ACES Beach 2-percent runup elevation: 14.65 feet-NAVD88)'
+()'
+(ACES BEACH RUNUP is valid)'
+()'
+ET
+endstream
+endobj
+11 0 obj
+1296
+endobj
+12 0 obj
+<<
+/Type /Page
+/Parent 3 0 R
+/Resources 5 0 R
+/Contents 13 0 R
+>>
+endobj
+13 0 obj
+<<
+/Length 14 0 R
+>>
+stream
+BT
+/F1 10 Tf
+1 0 0 1 50 752 Tm
+10 TL
+(_____________END ACES BEACH RESULTS____________________)'
+()'
+(PART 5 COMPLETE________________________________________)'
+()'
+ET
+endstream
+endobj
+14 0 obj
+175
+endobj
+3 0 obj
+<<
+/Type /Pages
+/Count 3
+/MediaBox [ 0 0 612 792 ]
+/Kids [ 6 0 R 9 0 R 12 0 R ]
+>>
+endobj
+xref
+0 15
+0000000000 65535 f 0000000010 00000 n 0000000164 00000 n 0000004735 00000 n 0000000219 00000 n 0000000305 00000 n 0000000382 00000 n 0000000470 00000 n 0000002893 00000 n 0000002916 00000 n 0000003005 00000 n 0000004362 00000 n 0000004386 00000 n 0000004476 00000 n 0000004712 00000 n trailer
+<<
+/Size 15
+/Root 2 0 R
+/Info 1 0 R
+>>
+startxref
+4841
+%%EOF

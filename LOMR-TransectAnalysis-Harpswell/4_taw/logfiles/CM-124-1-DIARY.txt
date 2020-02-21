@@ -408,623 +408,251 @@ while(abs(R2del) > tol && iter <= 25)
        top_sta=sta(end)+dy/S(end);
     end
     topStaAll(iter)=top_sta;
-
 end
-
 ans =
-
 !----------------- STARTING ITERATION 1 -----------------!
-
-
 Ztoe =
-
                   6.356768
-
-
 toe_sta =
-
           383.113881459383
-
-
 top_sta =
-
           403.028129353382
-
-
 Z2 =
-
                  11.661368
-
-
 H0 =
-
                     1.7682
-
-
 Tp =
-
                      3.343
-
-
 T0 =
-
           3.03909090909091
-
-
 R2 =
-
                     5.3046
-
-
 Z2 =
-
           14.3303257693142
-
-
 top_sta =
-
           409.643929714403
-
-
 Lslope =
-
           26.5300482550197
-
-
 ans =
-
 !------- End Berm Factor Calculation, Iter: 1 ---------!
-
-
 berm_width =
-
      0
-
-
 rB =
-
      0
-
-
 rdh_mean =
-
      1
-
-
 gamma_berm =
-
      1
-
-
 slope =
-
          0.300548181920686
-
-
 Irb =
-
           1.55379120171371
-
-
 gamma_berm =
-
      1
-
-
 gamma_perm =
-
      1
-
-
 gamma_beta =
-
      1
-
-
 gamma_rough =
-
      1
-
-
 gamma =
-
      1
-
-
 ans =
-
 !!! - - Iribaren number:   1.55 is in the valid range (0.5-10), TAW RECOMMENDED - - !!!
-
-
-
 ans =
-
 !!! - - slope: 1:3.3 V:H is in the valid range (1:8 - 1:1), TAW RECOMMENDED - - !!!
-
-
-
 R2_new =
-
           4.86292207708021
-
-
 R2del =
-
          0.441677922919785
-
-
 Z2 =
-
           13.8886478463944
-
-
 top_sta =
-
           408.549099569172
-
-
 ans =
-
 !----------------- STARTING ITERATION 2 -----------------!
-
-
 Ztoe =
-
                   6.356768
-
-
 toe_sta =
-
           383.113881459383
-
-
 top_sta =
-
           408.549099569172
-
-
 Z2 =
-
           13.8886478463944
-
-
 H0 =
-
                     1.7682
-
-
 Tp =
-
                      3.343
-
-
 T0 =
-
           3.03909090909091
-
-
 R2 =
-
           4.86292207708021
-
-
 Z2 =
-
           13.8886478463944
-
-
 top_sta =
-
           408.549099569172
-
-
 Lslope =
-
           25.4352181097884
-
-
 ans =
-
 !------- End Berm Factor Calculation, Iter: 2 ---------!
-
-
 berm_width =
-
      0
-
-
 rB =
-
      0
-
-
 rdh_mean =
-
      1
-
-
 gamma_berm =
-
      1
-
-
 slope =
-
          0.296120120294778
-
-
 Irb =
-
           1.53089875514819
-
-
 gamma_berm =
-
      1
-
-
 gamma_perm =
-
      1
-
-
 gamma_beta =
-
      1
-
-
 gamma_rough =
-
      1
-
-
 gamma =
-
      1
-
-
 ans =
-
 !!! - - Iribaren number:   1.53 is in the valid range (0.5-10), TAW RECOMMENDED - - !!!
-
-
-
 ans =
-
 !!! - - slope: 1:3.4 V:H is in the valid range (1:8 - 1:1), TAW RECOMMENDED - - !!!
-
-
-
 R2_new =
-
           4.79127526656987
-
-
 R2del =
-
         0.0716468105103454
-
-
 Z2 =
-
           13.8170010358841
-
-
 top_sta =
-
           408.371501891032
-
-
 ans =
-
 !----------------- STARTING ITERATION 3 -----------------!
-
-
 Ztoe =
-
                   6.356768
-
-
 toe_sta =
-
           383.113881459383
-
-
 top_sta =
-
           408.371501891032
-
-
 Z2 =
-
           13.8170010358841
-
-
 H0 =
-
                     1.7682
-
-
 Tp =
-
                      3.343
-
-
 T0 =
-
           3.03909090909091
-
-
 R2 =
-
           4.79127526656987
-
-
 Z2 =
-
           13.8170010358841
-
-
 top_sta =
-
           408.371501891032
-
-
 Lslope =
-
            25.257620431649
-
-
 ans =
-
 !------- End Berm Factor Calculation, Iter: 3 ---------!
-
-
 berm_width =
-
      0
-
-
 rB =
-
      0
-
-
 rdh_mean =
-
      1
-
-
 gamma_berm =
-
      1
-
-
 slope =
-
          0.295365632565136
-
-
 Irb =
-
           1.52699816127793
-
-
 gamma_berm =
-
      1
-
-
 gamma_perm =
-
      1
-
-
 gamma_beta =
-
      1
-
-
 gamma_rough =
-
      1
-
-
 gamma =
-
      1
-
-
 ans =
-
 !!! - - Iribaren number:   1.53 is in the valid range (0.5-10), TAW RECOMMENDED - - !!!
-
-
-
 ans =
-
 !!! - - slope: 1:3.4 V:H is in the valid range (1:8 - 1:1), TAW RECOMMENDED - - !!!
-
-
-
 R2_new =
-
           4.77906752332578
-
-
 R2del =
-
          0.012207743244085
-
-
 Z2 =
-
             13.80479329264
-
-
 top_sta =
-
           408.341241411326
-
-
 ans =
-
 !----------------- STARTING ITERATION 4 -----------------!
-
-
 Ztoe =
-
                   6.356768
-
-
 toe_sta =
-
           383.113881459383
-
-
 top_sta =
-
           408.341241411326
-
-
 Z2 =
-
             13.80479329264
-
-
 H0 =
-
                     1.7682
-
-
 Tp =
-
                      3.343
-
-
 T0 =
-
           3.03909090909091
-
-
 R2 =
-
           4.77906752332578
-
-
 Z2 =
-
             13.80479329264
-
-
 top_sta =
-
           408.341241411326
-
-
 Lslope =
-
           25.2273599519427
-
-
 ans =
-
 !------- End Berm Factor Calculation, Iter: 4 ---------!
-
-
 berm_width =
-
      0
-
-
 rB =
-
      0
-
-
 rdh_mean =
-
      1
-
-
 gamma_berm =
-
      1
-
-
 slope =
-
          0.295236017832554
-
-
 Irb =
-
           1.52632807161107
-
-
 gamma_berm =
-
      1
-
-
 gamma_perm =
-
      1
-
-
 gamma_beta =
-
      1
-
-
 gamma_rough =
-
      1
-
-
 gamma =
-
      1
-
-
 ans =
-
 !!! - - Iribaren number:   1.53 is in the valid range (0.5-10), TAW RECOMMENDED - - !!!
-
-
-
 ans =
-
 !!! - - slope: 1:3.4 V:H is in the valid range (1:8 - 1:1), TAW RECOMMENDED - - !!!
-
-
-
 R2_new =
-
           4.77697033431417
-
-
 R2del =
-
        0.00209718901161171
-
-
 Z2 =
-
           13.8026961036284
-
-
 top_sta =
-
           408.336042911959
-
-
 % final 2% runup elevation
 Z2=R2_new+SWEL
-
 Z2 =
-
           13.8026961036284
-
-
 diary off
+-1.000000e+00
+-1.000000e+00

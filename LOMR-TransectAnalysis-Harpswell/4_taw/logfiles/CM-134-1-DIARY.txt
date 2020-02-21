@@ -434,11 +434,9 @@ while(abs(R2del) > tol && iter <= 25)
           R2_new=w2*fore_R2 + w1*R2_new
        end
     end % end berm width check
-
     % convergence criterion
     R2del=abs(R2-R2_new)
     R2_all(iter)=R2_new;
-
     % get the new top station (for plot purposes)
     Z2=R2_new+SWEL
     top_sta=-999;
@@ -453,471 +451,191 @@ while(abs(R2del) > tol && iter <= 25)
        top_sta=sta(end)+dy/S(end);
     end
     topStaAll(iter)=top_sta;
-
 end
-
 ans =
-
 !----------------- STARTING ITERATION 1 -----------------!
-
-
 Ztoe =
-
                  5.0736646
-
-
 toe_sta =
-
           198.656229192461
-
-
 top_sta =
-
           251.198365673644
-
-
 Z2 =
-
                 12.7122646
-
-
 H0 =
-
                     2.5462
-
-
 Tp =
-
                     3.2843
-
-
 T0 =
-
           2.98572727272727
-
-
 R2 =
-
                     7.6386
-
-
 Z2 =
-
           16.6738698750873
-
-
 top_sta =
-
           307.017644318127
-
-
 Lslope =
-
           108.361415125666
-
-
 ans =
-
 !------- End Berm Factor Calculation, Iter: 1 ---------!
-
-
 berm_width =
-
      0
-
-
 rB =
-
      0
-
-
 rdh_mean =
-
      1
-
-
 gamma_berm =
-
      1
-
-
 slope =
-
          0.107051068515805
-
-
 Irb =
-
          0.453101436653365
-
-
 gamma_berm =
-
      1
-
-
 gamma_perm =
-
      1
-
-
 gamma_beta =
-
      1
-
-
 gamma_rough =
-
                        0.8
-
-
 gamma =
-
                        0.8
-
-
 ans =
-
 !!! - - Iribaren number:   0.45 is outside the valid range (0.5-10), TAW NOT VALID - - !!!
-
-
-
 ans =
-
 !!! - - slope: 1:9.3 V:H is outside the valid range (1:8 - 1:1), TAW NOT VALID - - !!!
-
-
-
 R2_new =
-
           1.63362061925762
-
-
 R2del =
-
           6.00497938074238
-
-
 Z2 =
-
           10.6688904943449
-
-
 top_sta =
-
           237.143007940191
-
-
 ans =
-
 !----------------- STARTING ITERATION 2 -----------------!
-
-
 Ztoe =
-
                  5.0736646
-
-
 toe_sta =
-
           198.656229192461
-
-
 top_sta =
-
           237.143007940191
-
-
 Z2 =
-
           10.6688904943449
-
-
 H0 =
-
                     2.5462
-
-
 Tp =
-
                     3.2843
-
-
 T0 =
-
           2.98572727272727
-
-
 R2 =
-
           1.63362061925762
-
-
 Z2 =
-
           10.6688904943449
-
-
 top_sta =
-
           237.143007940191
-
-
 Lslope =
-
           38.4867787477295
-
-
 ans =
-
 !------- End Berm Factor Calculation, Iter: 2 ---------!
-
-
 berm_width =
-
      0
-
-
 rB =
-
      0
-
-
 rdh_mean =
-
      1
-
-
 gamma_berm =
-
      1
-
-
 slope =
-
          0.145380467693077
-
-
 Irb =
-
          0.615333407562822
-
-
 gamma_berm =
-
      1
-
-
 gamma_perm =
-
      1
-
-
 gamma_beta =
-
      1
-
-
 gamma_rough =
-
                        0.8
-
-
 gamma =
-
                        0.8
-
-
 ans =
-
 !!! - - Iribaren number:   0.62 is in the valid range (0.5-10), TAW RECOMMENDED - - !!!
-
-
-
 ans =
-
 !!! - - slope: 1:6.9 V:H is in the valid range (1:8 - 1:1), TAW RECOMMENDED - - !!!
-
-
-
 R2_new =
-
           2.21853488202842
-
-
 R2del =
-
            0.5849142627708
-
-
 Z2 =
-
           11.2538047571157
-
-
 top_sta =
-
           241.166347439595
-
-
 ans =
-
 !----------------- STARTING ITERATION 3 -----------------!
-
-
 Ztoe =
-
                  5.0736646
-
-
 toe_sta =
-
           198.656229192461
-
-
 top_sta =
-
           241.166347439595
-
-
 Z2 =
-
           11.2538047571157
-
-
 H0 =
-
                     2.5462
-
-
 Tp =
-
                     3.2843
-
-
 T0 =
-
           2.98572727272727
-
-
 R2 =
-
           2.21853488202842
-
-
 Z2 =
-
           11.2538047571157
-
-
 top_sta =
-
           241.166347439595
-
-
 Lslope =
-
           42.5101182471335
-
-
 ans =
-
 !------- End Berm Factor Calculation, Iter: 3 ---------!
-
-
 berm_width =
-
      0
-
-
 rB =
-
      0
-
-
 rdh_mean =
-
      1
-
-
 gamma_berm =
-
      1
-
-
 slope =
-
           0.14538045086554
-
-
 Irb =
-
          0.615333336339047
-
-
 gamma_berm =
-
      1
-
-
 gamma_perm =
-
      1
-
-
 gamma_beta =
-
      1
-
-
 gamma_rough =
-
                        0.8
-
-
 gamma =
-
                        0.8
-
-
 ans =
-
 !!! - - Iribaren number:   0.62 is in the valid range (0.5-10), TAW RECOMMENDED - - !!!
-
-
-
 ans =
-
 !!! - - slope: 1:6.9 V:H is in the valid range (1:8 - 1:1), TAW RECOMMENDED - - !!!
-
-
-
 R2_new =
-
           2.21853462523686
-
-
 R2del =
-
       2.56791565345083e-07
-
-
 Z2 =
-
           11.2538045003241
-
-
 top_sta =
-
           241.166345673259
-
-
 % final 2% runup elevation
 Z2=R2_new+SWEL
-
 Z2 =
-
           11.2538045003241
-
-
 diary off
+-1.000000e+00
+-1.000000e+00

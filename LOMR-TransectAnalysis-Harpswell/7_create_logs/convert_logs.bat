@@ -1,67 +1,441 @@
 @ECHO OFF
-text2pdf.win95.exe -f"Courier" -s10 -c216 -v10 -A4 ../1_input/logfiles/YK-05_log.txt > ../1_input/logfiles/YK-05_log.pdf
-text2pdf.win95.exe -f"Courier" -s10 -c216 -v10 -A4 ../2_swan/logfiles/YK-05_log.txt > ../2_swan/logfiles/YK-05_log.pdf
-text2pdf.win95.exe -f"Courier" -s8 -c216 -v8 -A4 ../2_swan/swanfiles/YK-05.prt > ../2_swan/logfiles/YK-05_1swanprint.pdf
-text2pdf.win95.exe -f"Courier" -s8 -c216 -v8 -A4 -L   ../2_swan/swanfiles/YK-05.dat > ../2_swan/logfiles/YK-05_3swanout.pdf
-text2pdf.win95.exe -f"Courier" -s10 -c216 -v10 -A4 ../3_whafis/logfiles/YK-05_log.txt > ../3_whafis/logfiles/YK-05_log.pdf
-text2pdf.win95.exe -f"Courier" -s7 -c216 -v7 -A4 ../3_whafis/logfiles/YK-05_short.out > ../3_whafis/logfiles/YK-05_output.pdf
-text2pdf.win95.exe -f"Courier" -s10 -c216 -v10 -A4 ../4_taw/logfiles/YK-05_log.txt > ../4_taw/logfiles/YK-05_log.pdf
-text2pdf.win95.exe -f"Courier" -s8 -c216 -v8 -A4 ../4_taw/logfiles/YK-05-DIARY.txt > ../4_taw/logfiles/YK-05-DIARY.pdf
-text2pdf.win95.exe -f"Courier" -s10 -c216 -v10 -A4 ../5_runup2/logs/YK-05_log.txt > ../5_runup2/logs/YK-05_log.pdf
-text2pdf.win95.exe -f"Courier" -s8 -c216 -v8 -A4 ../5_runup2/RUNUP2_files/YK-05.in > ../5_runup2/logs/YK-05_in.pdf
-text2pdf.win95.exe -f"Courier" -s8 -c216 -v8 -A4 -L ../5_runup2/RUNUP2_files/YK-05.OUT > ../5_runup2/logs/YK-05_out.pdf
-text2pdf.win95.exe -f"Courier" -s10 -c216 -v10 -A4 ../1_input/logfiles/YK-06F_log.txt > ../1_input/logfiles/YK-06F_log.pdf
-text2pdf.win95.exe -f"Courier" -s10 -c216 -v10 -A4 ../2_swan/logfiles/YK-06F_log.txt > ../2_swan/logfiles/YK-06F_log.pdf
-text2pdf.win95.exe -f"Courier" -s8 -c216 -v8 -A4 ../2_swan/swanfiles/YK-06F.prt > ../2_swan/logfiles/YK-06F_1swanprint.pdf
-text2pdf.win95.exe -f"Courier" -s8 -c216 -v8 -A4 -L   ../2_swan/swanfiles/YK-06F.dat > ../2_swan/logfiles/YK-06F_3swanout.pdf
-text2pdf.win95.exe -f"Courier" -s10 -c216 -v10 -A4 ../3_whafis/logfiles/YK-06F_log.txt > ../3_whafis/logfiles/YK-06F_log.pdf
-text2pdf.win95.exe -f"Courier" -s7 -c216 -v7 -A4 ../3_whafis/logfiles/YK-06F_short.out > ../3_whafis/logfiles/YK-06F_output.pdf
-text2pdf.win95.exe -f"Courier" -s10 -c216 -v10 -A4 ../4_taw/logfiles/YK-06F_log.txt > ../4_taw/logfiles/YK-06F_log.pdf
-text2pdf.win95.exe -f"Courier" -s8 -c216 -v8 -A4 ../4_taw/logfiles/YK-06F-DIARY.txt > ../4_taw/logfiles/YK-06F-DIARY.pdf
-text2pdf.win95.exe -f"Courier" -s10 -c216 -v10 -A4 ../5_runup2/logs/YK-06F_log.txt > ../5_runup2/logs/YK-06F_log.pdf
-text2pdf.win95.exe -f"Courier" -s8 -c216 -v8 -A4 ../5_runup2/RUNUP2_files/YK-06F.in > ../5_runup2/logs/YK-06F_in.pdf
-text2pdf.win95.exe -f"Courier" -s8 -c216 -v8 -A4 -L ../5_runup2/RUNUP2_files/YK-06F.OUT > ../5_runup2/logs/YK-06F_out.pdf
-text2pdf.win95.exe -f"Courier" -s10 -c216 -v10 -A4 ../1_input/logfiles/YK-06_log.txt > ../1_input/logfiles/YK-06_log.pdf
-text2pdf.win95.exe -f"Courier" -s10 -c216 -v10 -A4 ../2_swan/logfiles/YK-06_log.txt > ../2_swan/logfiles/YK-06_log.pdf
-text2pdf.win95.exe -f"Courier" -s8 -c216 -v8 -A4 ../2_swan/swanfiles/YK-06.prt > ../2_swan/logfiles/YK-06_1swanprint.pdf
-text2pdf.win95.exe -f"Courier" -s8 -c216 -v8 -A4 -L   ../2_swan/swanfiles/YK-06.dat > ../2_swan/logfiles/YK-06_3swanout.pdf
-text2pdf.win95.exe -f"Courier" -s10 -c216 -v10 -A4 ../3_whafis/logfiles/YK-06_log.txt > ../3_whafis/logfiles/YK-06_log.pdf
-text2pdf.win95.exe -f"Courier" -s7 -c216 -v7 -A4 ../3_whafis/logfiles/YK-06_short.out > ../3_whafis/logfiles/YK-06_output.pdf
-text2pdf.win95.exe -f"Courier" -s10 -c216 -v10 -A4 ../4_taw/logfiles/YK-06_log.txt > ../4_taw/logfiles/YK-06_log.pdf
-text2pdf.win95.exe -f"Courier" -s8 -c216 -v8 -A4 ../4_taw/logfiles/YK-06-DIARY.txt > ../4_taw/logfiles/YK-06-DIARY.pdf
-text2pdf.win95.exe -f"Courier" -s10 -c216 -v10 -A4 ../5_runup2/logs/YK-06_log.txt > ../5_runup2/logs/YK-06_log.pdf
-text2pdf.win95.exe -f"Courier" -s8 -c216 -v8 -A4 ../5_runup2/RUNUP2_files/YK-06.in > ../5_runup2/logs/YK-06_in.pdf
-text2pdf.win95.exe -f"Courier" -s8 -c216 -v8 -A4 -L ../5_runup2/RUNUP2_files/YK-06.OUT > ../5_runup2/logs/YK-06_out.pdf
-text2pdf.win95.exe -f"Courier" -s10 -c216 -v10 -A4 ../1_input/logfiles/YK-07_log.txt > ../1_input/logfiles/YK-07_log.pdf
-text2pdf.win95.exe -f"Courier" -s10 -c216 -v10 -A4 ../2_swan/logfiles/YK-07_log.txt > ../2_swan/logfiles/YK-07_log.pdf
-text2pdf.win95.exe -f"Courier" -s8 -c216 -v8 -A4 ../2_swan/swanfiles/YK-07.prt > ../2_swan/logfiles/YK-07_1swanprint.pdf
-text2pdf.win95.exe -f"Courier" -s8 -c216 -v8 -A4 -L   ../2_swan/swanfiles/YK-07.dat > ../2_swan/logfiles/YK-07_3swanout.pdf
-text2pdf.win95.exe -f"Courier" -s10 -c216 -v10 -A4 ../3_whafis/logfiles/YK-07_log.txt > ../3_whafis/logfiles/YK-07_log.pdf
-text2pdf.win95.exe -f"Courier" -s7 -c216 -v7 -A4 ../3_whafis/logfiles/YK-07_short.out > ../3_whafis/logfiles/YK-07_output.pdf
-text2pdf.win95.exe -f"Courier" -s10 -c216 -v10 -A4 ../4_taw/logfiles/YK-07_log.txt > ../4_taw/logfiles/YK-07_log.pdf
-text2pdf.win95.exe -f"Courier" -s8 -c216 -v8 -A4 ../4_taw/logfiles/YK-07-DIARY.txt > ../4_taw/logfiles/YK-07-DIARY.pdf
-text2pdf.win95.exe -f"Courier" -s10 -c216 -v10 -A4 ../5_runup2/logs/YK-07_log.txt > ../5_runup2/logs/YK-07_log.pdf
-text2pdf.win95.exe -f"Courier" -s8 -c216 -v8 -A4 ../5_runup2/RUNUP2_files/YK-07.in > ../5_runup2/logs/YK-07_in.pdf
-text2pdf.win95.exe -f"Courier" -s8 -c216 -v8 -A4 -L ../5_runup2/RUNUP2_files/YK-07.OUT > ../5_runup2/logs/YK-07_out.pdf
-text2pdf.win95.exe -f"Courier" -s10 -c216 -v10 -A4 ../1_input/logfiles/YK-14_log.txt > ../1_input/logfiles/YK-14_log.pdf
-text2pdf.win95.exe -f"Courier" -s10 -c216 -v10 -A4 ../2_swan/logfiles/YK-14_log.txt > ../2_swan/logfiles/YK-14_log.pdf
-text2pdf.win95.exe -f"Courier" -s8 -c216 -v8 -A4 ../2_swan/swanfiles/YK-14.prt > ../2_swan/logfiles/YK-14_1swanprint.pdf
-text2pdf.win95.exe -f"Courier" -s8 -c216 -v8 -A4 -L   ../2_swan/swanfiles/YK-14.dat > ../2_swan/logfiles/YK-14_3swanout.pdf
-text2pdf.win95.exe -f"Courier" -s10 -c216 -v10 -A4 ../3_whafis/logfiles/YK-14_log.txt > ../3_whafis/logfiles/YK-14_log.pdf
-text2pdf.win95.exe -f"Courier" -s7 -c216 -v7 -A4 ../3_whafis/logfiles/YK-14_short.out > ../3_whafis/logfiles/YK-14_output.pdf
-text2pdf.win95.exe -f"Courier" -s10 -c216 -v10 -A4 ../4_taw/logfiles/YK-14_log.txt > ../4_taw/logfiles/YK-14_log.pdf
-text2pdf.win95.exe -f"Courier" -s8 -c216 -v8 -A4 ../4_taw/logfiles/YK-14-DIARY.txt > ../4_taw/logfiles/YK-14-DIARY.pdf
-text2pdf.win95.exe -f"Courier" -s10 -c216 -v10 -A4 ../5_runup2/logs/YK-14_log.txt > ../5_runup2/logs/YK-14_log.pdf
-text2pdf.win95.exe -f"Courier" -s8 -c216 -v8 -A4 ../5_runup2/RUNUP2_files/YK-14.in > ../5_runup2/logs/YK-14_in.pdf
-text2pdf.win95.exe -f"Courier" -s8 -c216 -v8 -A4 -L ../5_runup2/RUNUP2_files/YK-14.OUT > ../5_runup2/logs/YK-14_out.pdf
-text2pdf.win95.exe -f"Courier" -s10 -c216 -v10 -A4 ../1_input/logfiles/YK-15_log.txt > ../1_input/logfiles/YK-15_log.pdf
-text2pdf.win95.exe -f"Courier" -s10 -c216 -v10 -A4 ../2_swan/logfiles/YK-15_log.txt > ../2_swan/logfiles/YK-15_log.pdf
-text2pdf.win95.exe -f"Courier" -s8 -c216 -v8 -A4 ../2_swan/swanfiles/YK-15.prt > ../2_swan/logfiles/YK-15_1swanprint.pdf
-text2pdf.win95.exe -f"Courier" -s8 -c216 -v8 -A4 -L   ../2_swan/swanfiles/YK-15.dat > ../2_swan/logfiles/YK-15_3swanout.pdf
-text2pdf.win95.exe -f"Courier" -s10 -c216 -v10 -A4 ../3_whafis/logfiles/YK-15_log.txt > ../3_whafis/logfiles/YK-15_log.pdf
-text2pdf.win95.exe -f"Courier" -s7 -c216 -v7 -A4 ../3_whafis/logfiles/YK-15_short.out > ../3_whafis/logfiles/YK-15_output.pdf
-text2pdf.win95.exe -f"Courier" -s10 -c216 -v10 -A4 ../4_taw/logfiles/YK-15_log.txt > ../4_taw/logfiles/YK-15_log.pdf
-text2pdf.win95.exe -f"Courier" -s8 -c216 -v8 -A4 ../4_taw/logfiles/YK-15-DIARY.txt > ../4_taw/logfiles/YK-15-DIARY.pdf
-text2pdf.win95.exe -f"Courier" -s10 -c216 -v10 -A4 ../5_runup2/logs/YK-15_log.txt > ../5_runup2/logs/YK-15_log.pdf
-text2pdf.win95.exe -f"Courier" -s8 -c216 -v8 -A4 ../5_runup2/RUNUP2_files/YK-15.in > ../5_runup2/logs/YK-15_in.pdf
-text2pdf.win95.exe -f"Courier" -s8 -c216 -v8 -A4 -L ../5_runup2/RUNUP2_files/YK-15.OUT > ../5_runup2/logs/YK-15_out.pdf
+text2pdf.win95.exe -f"Courier" -s10 -c216 -v10 -x612 -y792 ../1_input/logfiles/CM-122-1_log.txt > ../1_input/logfiles/CM-122-1_log.pdf
+text2pdf.win95.exe -f"Courier" -s10 -c216 -v10 -x612 -y792 ../2_swan/logfiles/CM-122-1_log.txt > ../2_swan/logfiles/CM-122-1_log.pdf
+text2pdf.win95.exe -f"Courier" -s8 -c216 -v8 -x612 -y792 ../2_swan/swanfiles/CM-122-1.prt > ../2_swan/logfiles/CM-122-1_1swanprint.pdf
+text2pdf.win95.exe -f"Courier" -s8 -c216 -v8 -x792 -y612  ../2_swan/swanfiles/CM-122-1.dat > ../2_swan/logfiles/CM-122-1_3swanout.pdf
+text2pdf.win95.exe -f"Courier" -s10 -c216 -v10 -x612 -y792 ../3_whafis/logfiles/CM-122-1_log.txt > ../3_whafis/logfiles/CM-122-1_log.pdf
+text2pdf.win95.exe -f"Courier" -s7 -c216 -v7 -x612 -y792 ../3_whafis/logfiles/CM-122-1_short.out > ../3_whafis/logfiles/CM-122-1_output.pdf
+text2pdf.win95.exe -f"Courier" -s10 -c216 -v10 -x612 -y792 ../4_taw/logfiles/CM-122-1_log.txt > ../4_taw/logfiles/CM-122-1_log.pdf
+text2pdf.win95.exe -f"Courier" -s8 -c216 -v8 -x612 -y792 ../4_taw/logfiles/CM-122-1-DIARY.txt > ../4_taw/logfiles/CM-122-1-DIARY.pdf
+text2pdf.win95.exe -f"Courier" -s10 -c216 -v10 -x612 -y792 ../5_runup2/logs/CM-122-1_log.txt > ../5_runup2/logs/CM-122-1_log.pdf
+text2pdf.win95.exe -f"Courier" -s8 -c216 -v8 -x612 -y792 ../5_runup2/RUNUP2_files/CM-122-1.in > ../5_runup2/logs/CM-122-1_in.pdf
+text2pdf.win95.exe -f"Courier" -s8 -c216 -v8 -x792 -y612 ../5_runup2/RUNUP2_files/CM-122-1.OUT > ../5_runup2/logs/CM-122-1_out.pdf
+text2pdf.win95.exe -f"Courier" -s10 -c216 -v10 -x612 -y792 ../1_input/logfiles/CM-123_log.txt > ../1_input/logfiles/CM-123_log.pdf
+text2pdf.win95.exe -f"Courier" -s10 -c216 -v10 -x612 -y792 ../2_swan/logfiles/CM-123_log.txt > ../2_swan/logfiles/CM-123_log.pdf
+text2pdf.win95.exe -f"Courier" -s8 -c216 -v8 -x612 -y792 ../2_swan/swanfiles/CM-123.prt > ../2_swan/logfiles/CM-123_1swanprint.pdf
+text2pdf.win95.exe -f"Courier" -s8 -c216 -v8 -x792 -y612  ../2_swan/swanfiles/CM-123.dat > ../2_swan/logfiles/CM-123_3swanout.pdf
+text2pdf.win95.exe -f"Courier" -s10 -c216 -v10 -x612 -y792 ../3_whafis/logfiles/CM-123_log.txt > ../3_whafis/logfiles/CM-123_log.pdf
+text2pdf.win95.exe -f"Courier" -s7 -c216 -v7 -x612 -y792 ../3_whafis/logfiles/CM-123_short.out > ../3_whafis/logfiles/CM-123_output.pdf
+text2pdf.win95.exe -f"Courier" -s10 -c216 -v10 -x612 -y792 ../4_taw/logfiles/CM-123_log.txt > ../4_taw/logfiles/CM-123_log.pdf
+text2pdf.win95.exe -f"Courier" -s8 -c216 -v8 -x612 -y792 ../4_taw/logfiles/CM-123-DIARY.txt > ../4_taw/logfiles/CM-123-DIARY.pdf
+text2pdf.win95.exe -f"Courier" -s10 -c216 -v10 -x612 -y792 ../5_runup2/logs/CM-123_log.txt > ../5_runup2/logs/CM-123_log.pdf
+text2pdf.win95.exe -f"Courier" -s8 -c216 -v8 -x612 -y792 ../5_runup2/RUNUP2_files/CM-123.in > ../5_runup2/logs/CM-123_in.pdf
+text2pdf.win95.exe -f"Courier" -s8 -c216 -v8 -x792 -y612 ../5_runup2/RUNUP2_files/CM-123.OUT > ../5_runup2/logs/CM-123_out.pdf
+text2pdf.win95.exe -f"Courier" -s10 -c216 -v10 -x612 -y792 ../1_input/logfiles/CM-123-1_log.txt > ../1_input/logfiles/CM-123-1_log.pdf
+text2pdf.win95.exe -f"Courier" -s10 -c216 -v10 -x612 -y792 ../2_swan/logfiles/CM-123-1_log.txt > ../2_swan/logfiles/CM-123-1_log.pdf
+text2pdf.win95.exe -f"Courier" -s8 -c216 -v8 -x612 -y792 ../2_swan/swanfiles/CM-123-1.prt > ../2_swan/logfiles/CM-123-1_1swanprint.pdf
+text2pdf.win95.exe -f"Courier" -s8 -c216 -v8 -x792 -y612  ../2_swan/swanfiles/CM-123-1.dat > ../2_swan/logfiles/CM-123-1_3swanout.pdf
+text2pdf.win95.exe -f"Courier" -s10 -c216 -v10 -x612 -y792 ../3_whafis/logfiles/CM-123-1_log.txt > ../3_whafis/logfiles/CM-123-1_log.pdf
+text2pdf.win95.exe -f"Courier" -s7 -c216 -v7 -x612 -y792 ../3_whafis/logfiles/CM-123-1_short.out > ../3_whafis/logfiles/CM-123-1_output.pdf
+text2pdf.win95.exe -f"Courier" -s10 -c216 -v10 -x612 -y792 ../4_taw/logfiles/CM-123-1_log.txt > ../4_taw/logfiles/CM-123-1_log.pdf
+text2pdf.win95.exe -f"Courier" -s8 -c216 -v8 -x612 -y792 ../4_taw/logfiles/CM-123-1-DIARY.txt > ../4_taw/logfiles/CM-123-1-DIARY.pdf
+text2pdf.win95.exe -f"Courier" -s10 -c216 -v10 -x612 -y792 ../5_runup2/logs/CM-123-1_log.txt > ../5_runup2/logs/CM-123-1_log.pdf
+text2pdf.win95.exe -f"Courier" -s8 -c216 -v8 -x612 -y792 ../5_runup2/RUNUP2_files/CM-123-1.in > ../5_runup2/logs/CM-123-1_in.pdf
+text2pdf.win95.exe -f"Courier" -s8 -c216 -v8 -x792 -y612 ../5_runup2/RUNUP2_files/CM-123-1.OUT > ../5_runup2/logs/CM-123-1_out.pdf
+text2pdf.win95.exe -f"Courier" -s10 -c216 -v10 -x612 -y792 ../1_input/logfiles/CM-124_log.txt > ../1_input/logfiles/CM-124_log.pdf
+text2pdf.win95.exe -f"Courier" -s10 -c216 -v10 -x612 -y792 ../2_swan/logfiles/CM-124_log.txt > ../2_swan/logfiles/CM-124_log.pdf
+text2pdf.win95.exe -f"Courier" -s8 -c216 -v8 -x612 -y792 ../2_swan/swanfiles/CM-124.prt > ../2_swan/logfiles/CM-124_1swanprint.pdf
+text2pdf.win95.exe -f"Courier" -s8 -c216 -v8 -x792 -y612  ../2_swan/swanfiles/CM-124.dat > ../2_swan/logfiles/CM-124_3swanout.pdf
+text2pdf.win95.exe -f"Courier" -s10 -c216 -v10 -x612 -y792 ../3_whafis/logfiles/CM-124_log.txt > ../3_whafis/logfiles/CM-124_log.pdf
+text2pdf.win95.exe -f"Courier" -s7 -c216 -v7 -x612 -y792 ../3_whafis/logfiles/CM-124_short.out > ../3_whafis/logfiles/CM-124_output.pdf
+text2pdf.win95.exe -f"Courier" -s10 -c216 -v10 -x612 -y792 ../4_taw/logfiles/CM-124_log.txt > ../4_taw/logfiles/CM-124_log.pdf
+text2pdf.win95.exe -f"Courier" -s8 -c216 -v8 -x612 -y792 ../4_taw/logfiles/CM-124-DIARY.txt > ../4_taw/logfiles/CM-124-DIARY.pdf
+text2pdf.win95.exe -f"Courier" -s10 -c216 -v10 -x612 -y792 ../5_runup2/logs/CM-124_log.txt > ../5_runup2/logs/CM-124_log.pdf
+text2pdf.win95.exe -f"Courier" -s8 -c216 -v8 -x612 -y792 ../5_runup2/RUNUP2_files/CM-124.in > ../5_runup2/logs/CM-124_in.pdf
+text2pdf.win95.exe -f"Courier" -s8 -c216 -v8 -x792 -y612 ../5_runup2/RUNUP2_files/CM-124.OUT > ../5_runup2/logs/CM-124_out.pdf
+text2pdf.win95.exe -f"Courier" -s10 -c216 -v10 -x612 -y792 ../1_input/logfiles/CM-124-1_log.txt > ../1_input/logfiles/CM-124-1_log.pdf
+text2pdf.win95.exe -f"Courier" -s10 -c216 -v10 -x612 -y792 ../2_swan/logfiles/CM-124-1_log.txt > ../2_swan/logfiles/CM-124-1_log.pdf
+text2pdf.win95.exe -f"Courier" -s8 -c216 -v8 -x612 -y792 ../2_swan/swanfiles/CM-124-1.prt > ../2_swan/logfiles/CM-124-1_1swanprint.pdf
+text2pdf.win95.exe -f"Courier" -s8 -c216 -v8 -x792 -y612  ../2_swan/swanfiles/CM-124-1.dat > ../2_swan/logfiles/CM-124-1_3swanout.pdf
+text2pdf.win95.exe -f"Courier" -s10 -c216 -v10 -x612 -y792 ../3_whafis/logfiles/CM-124-1_log.txt > ../3_whafis/logfiles/CM-124-1_log.pdf
+text2pdf.win95.exe -f"Courier" -s7 -c216 -v7 -x612 -y792 ../3_whafis/logfiles/CM-124-1_short.out > ../3_whafis/logfiles/CM-124-1_output.pdf
+text2pdf.win95.exe -f"Courier" -s10 -c216 -v10 -x612 -y792 ../4_taw/logfiles/CM-124-1_log.txt > ../4_taw/logfiles/CM-124-1_log.pdf
+text2pdf.win95.exe -f"Courier" -s8 -c216 -v8 -x612 -y792 ../4_taw/logfiles/CM-124-1-DIARY.txt > ../4_taw/logfiles/CM-124-1-DIARY.pdf
+text2pdf.win95.exe -f"Courier" -s10 -c216 -v10 -x612 -y792 ../5_runup2/logs/CM-124-1_log.txt > ../5_runup2/logs/CM-124-1_log.pdf
+text2pdf.win95.exe -f"Courier" -s8 -c216 -v8 -x612 -y792 ../5_runup2/RUNUP2_files/CM-124-1.in > ../5_runup2/logs/CM-124-1_in.pdf
+text2pdf.win95.exe -f"Courier" -s8 -c216 -v8 -x792 -y612 ../5_runup2/RUNUP2_files/CM-124-1.OUT > ../5_runup2/logs/CM-124-1_out.pdf
+text2pdf.win95.exe -f"Courier" -s10 -c216 -v10 -x612 -y792 ../1_input/logfiles/CM-124-2_log.txt > ../1_input/logfiles/CM-124-2_log.pdf
+text2pdf.win95.exe -f"Courier" -s10 -c216 -v10 -x612 -y792 ../2_swan/logfiles/CM-124-2_log.txt > ../2_swan/logfiles/CM-124-2_log.pdf
+text2pdf.win95.exe -f"Courier" -s8 -c216 -v8 -x612 -y792 ../2_swan/swanfiles/CM-124-2.prt > ../2_swan/logfiles/CM-124-2_1swanprint.pdf
+text2pdf.win95.exe -f"Courier" -s8 -c216 -v8 -x792 -y612  ../2_swan/swanfiles/CM-124-2.dat > ../2_swan/logfiles/CM-124-2_3swanout.pdf
+text2pdf.win95.exe -f"Courier" -s10 -c216 -v10 -x612 -y792 ../3_whafis/logfiles/CM-124-2_log.txt > ../3_whafis/logfiles/CM-124-2_log.pdf
+text2pdf.win95.exe -f"Courier" -s7 -c216 -v7 -x612 -y792 ../3_whafis/logfiles/CM-124-2_short.out > ../3_whafis/logfiles/CM-124-2_output.pdf
+text2pdf.win95.exe -f"Courier" -s10 -c216 -v10 -x612 -y792 ../4_taw/logfiles/CM-124-2_log.txt > ../4_taw/logfiles/CM-124-2_log.pdf
+text2pdf.win95.exe -f"Courier" -s8 -c216 -v8 -x612 -y792 ../4_taw/logfiles/CM-124-2-DIARY.txt > ../4_taw/logfiles/CM-124-2-DIARY.pdf
+text2pdf.win95.exe -f"Courier" -s10 -c216 -v10 -x612 -y792 ../5_runup2/logs/CM-124-2_log.txt > ../5_runup2/logs/CM-124-2_log.pdf
+text2pdf.win95.exe -f"Courier" -s8 -c216 -v8 -x612 -y792 ../5_runup2/RUNUP2_files/CM-124-2.in > ../5_runup2/logs/CM-124-2_in.pdf
+text2pdf.win95.exe -f"Courier" -s8 -c216 -v8 -x792 -y612 ../5_runup2/RUNUP2_files/CM-124-2.OUT > ../5_runup2/logs/CM-124-2_out.pdf
+text2pdf.win95.exe -f"Courier" -s10 -c216 -v10 -x612 -y792 ../1_input/logfiles/CM-126-1_log.txt > ../1_input/logfiles/CM-126-1_log.pdf
+text2pdf.win95.exe -f"Courier" -s10 -c216 -v10 -x612 -y792 ../2_swan/logfiles/CM-126-1_log.txt > ../2_swan/logfiles/CM-126-1_log.pdf
+text2pdf.win95.exe -f"Courier" -s8 -c216 -v8 -x612 -y792 ../2_swan/swanfiles/CM-126-1.prt > ../2_swan/logfiles/CM-126-1_1swanprint.pdf
+text2pdf.win95.exe -f"Courier" -s8 -c216 -v8 -x792 -y612  ../2_swan/swanfiles/CM-126-1.dat > ../2_swan/logfiles/CM-126-1_3swanout.pdf
+text2pdf.win95.exe -f"Courier" -s10 -c216 -v10 -x612 -y792 ../3_whafis/logfiles/CM-126-1_log.txt > ../3_whafis/logfiles/CM-126-1_log.pdf
+text2pdf.win95.exe -f"Courier" -s7 -c216 -v7 -x612 -y792 ../3_whafis/logfiles/CM-126-1_short.out > ../3_whafis/logfiles/CM-126-1_output.pdf
+text2pdf.win95.exe -f"Courier" -s10 -c216 -v10 -x612 -y792 ../4_taw/logfiles/CM-126-1_log.txt > ../4_taw/logfiles/CM-126-1_log.pdf
+text2pdf.win95.exe -f"Courier" -s8 -c216 -v8 -x612 -y792 ../4_taw/logfiles/CM-126-1-DIARY.txt > ../4_taw/logfiles/CM-126-1-DIARY.pdf
+text2pdf.win95.exe -f"Courier" -s10 -c216 -v10 -x612 -y792 ../5_runup2/logs/CM-126-1_log.txt > ../5_runup2/logs/CM-126-1_log.pdf
+text2pdf.win95.exe -f"Courier" -s8 -c216 -v8 -x612 -y792 ../5_runup2/RUNUP2_files/CM-126-1.in > ../5_runup2/logs/CM-126-1_in.pdf
+text2pdf.win95.exe -f"Courier" -s8 -c216 -v8 -x792 -y612 ../5_runup2/RUNUP2_files/CM-126-1.OUT > ../5_runup2/logs/CM-126-1_out.pdf
+text2pdf.win95.exe -f"Courier" -s10 -c216 -v10 -x612 -y792 ../1_input/logfiles/CM-127_log.txt > ../1_input/logfiles/CM-127_log.pdf
+text2pdf.win95.exe -f"Courier" -s10 -c216 -v10 -x612 -y792 ../2_swan/logfiles/CM-127_log.txt > ../2_swan/logfiles/CM-127_log.pdf
+text2pdf.win95.exe -f"Courier" -s8 -c216 -v8 -x612 -y792 ../2_swan/swanfiles/CM-127.prt > ../2_swan/logfiles/CM-127_1swanprint.pdf
+text2pdf.win95.exe -f"Courier" -s8 -c216 -v8 -x792 -y612  ../2_swan/swanfiles/CM-127.dat > ../2_swan/logfiles/CM-127_3swanout.pdf
+text2pdf.win95.exe -f"Courier" -s10 -c216 -v10 -x612 -y792 ../3_whafis/logfiles/CM-127_log.txt > ../3_whafis/logfiles/CM-127_log.pdf
+text2pdf.win95.exe -f"Courier" -s7 -c216 -v7 -x612 -y792 ../3_whafis/logfiles/CM-127_short.out > ../3_whafis/logfiles/CM-127_output.pdf
+text2pdf.win95.exe -f"Courier" -s10 -c216 -v10 -x612 -y792 ../4_taw/logfiles/CM-127_log.txt > ../4_taw/logfiles/CM-127_log.pdf
+text2pdf.win95.exe -f"Courier" -s8 -c216 -v8 -x612 -y792 ../4_taw/logfiles/CM-127-DIARY.txt > ../4_taw/logfiles/CM-127-DIARY.pdf
+text2pdf.win95.exe -f"Courier" -s10 -c216 -v10 -x612 -y792 ../5_runup2/logs/CM-127_log.txt > ../5_runup2/logs/CM-127_log.pdf
+text2pdf.win95.exe -f"Courier" -s8 -c216 -v8 -x612 -y792 ../5_runup2/RUNUP2_files/CM-127.in > ../5_runup2/logs/CM-127_in.pdf
+text2pdf.win95.exe -f"Courier" -s8 -c216 -v8 -x792 -y612 ../5_runup2/RUNUP2_files/CM-127.OUT > ../5_runup2/logs/CM-127_out.pdf
+text2pdf.win95.exe -f"Courier" -s10 -c216 -v10 -x612 -y792 ../1_input/logfiles/CM-127-1_log.txt > ../1_input/logfiles/CM-127-1_log.pdf
+text2pdf.win95.exe -f"Courier" -s10 -c216 -v10 -x612 -y792 ../2_swan/logfiles/CM-127-1_log.txt > ../2_swan/logfiles/CM-127-1_log.pdf
+text2pdf.win95.exe -f"Courier" -s8 -c216 -v8 -x612 -y792 ../2_swan/swanfiles/CM-127-1.prt > ../2_swan/logfiles/CM-127-1_1swanprint.pdf
+text2pdf.win95.exe -f"Courier" -s8 -c216 -v8 -x792 -y612  ../2_swan/swanfiles/CM-127-1.dat > ../2_swan/logfiles/CM-127-1_3swanout.pdf
+text2pdf.win95.exe -f"Courier" -s10 -c216 -v10 -x612 -y792 ../3_whafis/logfiles/CM-127-1_log.txt > ../3_whafis/logfiles/CM-127-1_log.pdf
+text2pdf.win95.exe -f"Courier" -s7 -c216 -v7 -x612 -y792 ../3_whafis/logfiles/CM-127-1_short.out > ../3_whafis/logfiles/CM-127-1_output.pdf
+text2pdf.win95.exe -f"Courier" -s10 -c216 -v10 -x612 -y792 ../4_taw/logfiles/CM-127-1_log.txt > ../4_taw/logfiles/CM-127-1_log.pdf
+text2pdf.win95.exe -f"Courier" -s8 -c216 -v8 -x612 -y792 ../4_taw/logfiles/CM-127-1-DIARY.txt > ../4_taw/logfiles/CM-127-1-DIARY.pdf
+text2pdf.win95.exe -f"Courier" -s10 -c216 -v10 -x612 -y792 ../5_runup2/logs/CM-127-1_log.txt > ../5_runup2/logs/CM-127-1_log.pdf
+text2pdf.win95.exe -f"Courier" -s8 -c216 -v8 -x612 -y792 ../5_runup2/RUNUP2_files/CM-127-1.in > ../5_runup2/logs/CM-127-1_in.pdf
+text2pdf.win95.exe -f"Courier" -s8 -c216 -v8 -x792 -y612 ../5_runup2/RUNUP2_files/CM-127-1.OUT > ../5_runup2/logs/CM-127-1_out.pdf
+text2pdf.win95.exe -f"Courier" -s10 -c216 -v10 -x612 -y792 ../1_input/logfiles/CM-129-1_log.txt > ../1_input/logfiles/CM-129-1_log.pdf
+text2pdf.win95.exe -f"Courier" -s10 -c216 -v10 -x612 -y792 ../2_swan/logfiles/CM-129-1_log.txt > ../2_swan/logfiles/CM-129-1_log.pdf
+text2pdf.win95.exe -f"Courier" -s8 -c216 -v8 -x612 -y792 ../2_swan/swanfiles/CM-129-1.prt > ../2_swan/logfiles/CM-129-1_1swanprint.pdf
+text2pdf.win95.exe -f"Courier" -s8 -c216 -v8 -x792 -y612  ../2_swan/swanfiles/CM-129-1.dat > ../2_swan/logfiles/CM-129-1_3swanout.pdf
+text2pdf.win95.exe -f"Courier" -s10 -c216 -v10 -x612 -y792 ../3_whafis/logfiles/CM-129-1_log.txt > ../3_whafis/logfiles/CM-129-1_log.pdf
+text2pdf.win95.exe -f"Courier" -s7 -c216 -v7 -x612 -y792 ../3_whafis/logfiles/CM-129-1_short.out > ../3_whafis/logfiles/CM-129-1_output.pdf
+text2pdf.win95.exe -f"Courier" -s10 -c216 -v10 -x612 -y792 ../4_taw/logfiles/CM-129-1_log.txt > ../4_taw/logfiles/CM-129-1_log.pdf
+text2pdf.win95.exe -f"Courier" -s8 -c216 -v8 -x612 -y792 ../4_taw/logfiles/CM-129-1-DIARY.txt > ../4_taw/logfiles/CM-129-1-DIARY.pdf
+text2pdf.win95.exe -f"Courier" -s10 -c216 -v10 -x612 -y792 ../5_runup2/logs/CM-129-1_log.txt > ../5_runup2/logs/CM-129-1_log.pdf
+text2pdf.win95.exe -f"Courier" -s8 -c216 -v8 -x612 -y792 ../5_runup2/RUNUP2_files/CM-129-1.in > ../5_runup2/logs/CM-129-1_in.pdf
+text2pdf.win95.exe -f"Courier" -s8 -c216 -v8 -x792 -y612 ../5_runup2/RUNUP2_files/CM-129-1.OUT > ../5_runup2/logs/CM-129-1_out.pdf
+text2pdf.win95.exe -f"Courier" -s10 -c216 -v10 -x612 -y792 ../1_input/logfiles/CM-130_log.txt > ../1_input/logfiles/CM-130_log.pdf
+text2pdf.win95.exe -f"Courier" -s10 -c216 -v10 -x612 -y792 ../2_swan/logfiles/CM-130_log.txt > ../2_swan/logfiles/CM-130_log.pdf
+text2pdf.win95.exe -f"Courier" -s8 -c216 -v8 -x612 -y792 ../2_swan/swanfiles/CM-130.prt > ../2_swan/logfiles/CM-130_1swanprint.pdf
+text2pdf.win95.exe -f"Courier" -s8 -c216 -v8 -x792 -y612  ../2_swan/swanfiles/CM-130.dat > ../2_swan/logfiles/CM-130_3swanout.pdf
+text2pdf.win95.exe -f"Courier" -s10 -c216 -v10 -x612 -y792 ../3_whafis/logfiles/CM-130_log.txt > ../3_whafis/logfiles/CM-130_log.pdf
+text2pdf.win95.exe -f"Courier" -s7 -c216 -v7 -x612 -y792 ../3_whafis/logfiles/CM-130_short.out > ../3_whafis/logfiles/CM-130_output.pdf
+text2pdf.win95.exe -f"Courier" -s10 -c216 -v10 -x612 -y792 ../4_taw/logfiles/CM-130_log.txt > ../4_taw/logfiles/CM-130_log.pdf
+text2pdf.win95.exe -f"Courier" -s8 -c216 -v8 -x612 -y792 ../4_taw/logfiles/CM-130-DIARY.txt > ../4_taw/logfiles/CM-130-DIARY.pdf
+text2pdf.win95.exe -f"Courier" -s10 -c216 -v10 -x612 -y792 ../5_runup2/logs/CM-130_log.txt > ../5_runup2/logs/CM-130_log.pdf
+text2pdf.win95.exe -f"Courier" -s8 -c216 -v8 -x612 -y792 ../5_runup2/RUNUP2_files/CM-130.in > ../5_runup2/logs/CM-130_in.pdf
+text2pdf.win95.exe -f"Courier" -s8 -c216 -v8 -x792 -y612 ../5_runup2/RUNUP2_files/CM-130.OUT > ../5_runup2/logs/CM-130_out.pdf
+text2pdf.win95.exe -f"Courier" -s10 -c216 -v10 -x612 -y792 ../1_input/logfiles/CM-131-1_log.txt > ../1_input/logfiles/CM-131-1_log.pdf
+text2pdf.win95.exe -f"Courier" -s10 -c216 -v10 -x612 -y792 ../2_swan/logfiles/CM-131-1_log.txt > ../2_swan/logfiles/CM-131-1_log.pdf
+text2pdf.win95.exe -f"Courier" -s8 -c216 -v8 -x612 -y792 ../2_swan/swanfiles/CM-131-1.prt > ../2_swan/logfiles/CM-131-1_1swanprint.pdf
+text2pdf.win95.exe -f"Courier" -s8 -c216 -v8 -x792 -y612  ../2_swan/swanfiles/CM-131-1.dat > ../2_swan/logfiles/CM-131-1_3swanout.pdf
+text2pdf.win95.exe -f"Courier" -s10 -c216 -v10 -x612 -y792 ../3_whafis/logfiles/CM-131-1_log.txt > ../3_whafis/logfiles/CM-131-1_log.pdf
+text2pdf.win95.exe -f"Courier" -s7 -c216 -v7 -x612 -y792 ../3_whafis/logfiles/CM-131-1_short.out > ../3_whafis/logfiles/CM-131-1_output.pdf
+text2pdf.win95.exe -f"Courier" -s10 -c216 -v10 -x612 -y792 ../4_taw/logfiles/CM-131-1_log.txt > ../4_taw/logfiles/CM-131-1_log.pdf
+text2pdf.win95.exe -f"Courier" -s8 -c216 -v8 -x612 -y792 ../4_taw/logfiles/CM-131-1-DIARY.txt > ../4_taw/logfiles/CM-131-1-DIARY.pdf
+text2pdf.win95.exe -f"Courier" -s10 -c216 -v10 -x612 -y792 ../5_runup2/logs/CM-131-1_log.txt > ../5_runup2/logs/CM-131-1_log.pdf
+text2pdf.win95.exe -f"Courier" -s8 -c216 -v8 -x612 -y792 ../5_runup2/RUNUP2_files/CM-131-1.in > ../5_runup2/logs/CM-131-1_in.pdf
+text2pdf.win95.exe -f"Courier" -s8 -c216 -v8 -x792 -y612 ../5_runup2/RUNUP2_files/CM-131-1.OUT > ../5_runup2/logs/CM-131-1_out.pdf
+text2pdf.win95.exe -f"Courier" -s10 -c216 -v10 -x612 -y792 ../1_input/logfiles/CM-133-1_log.txt > ../1_input/logfiles/CM-133-1_log.pdf
+text2pdf.win95.exe -f"Courier" -s10 -c216 -v10 -x612 -y792 ../2_swan/logfiles/CM-133-1_log.txt > ../2_swan/logfiles/CM-133-1_log.pdf
+text2pdf.win95.exe -f"Courier" -s8 -c216 -v8 -x612 -y792 ../2_swan/swanfiles/CM-133-1.prt > ../2_swan/logfiles/CM-133-1_1swanprint.pdf
+text2pdf.win95.exe -f"Courier" -s8 -c216 -v8 -x792 -y612  ../2_swan/swanfiles/CM-133-1.dat > ../2_swan/logfiles/CM-133-1_3swanout.pdf
+text2pdf.win95.exe -f"Courier" -s10 -c216 -v10 -x612 -y792 ../3_whafis/logfiles/CM-133-1_log.txt > ../3_whafis/logfiles/CM-133-1_log.pdf
+text2pdf.win95.exe -f"Courier" -s7 -c216 -v7 -x612 -y792 ../3_whafis/logfiles/CM-133-1_short.out > ../3_whafis/logfiles/CM-133-1_output.pdf
+text2pdf.win95.exe -f"Courier" -s10 -c216 -v10 -x612 -y792 ../4_taw/logfiles/CM-133-1_log.txt > ../4_taw/logfiles/CM-133-1_log.pdf
+text2pdf.win95.exe -f"Courier" -s8 -c216 -v8 -x612 -y792 ../4_taw/logfiles/CM-133-1-DIARY.txt > ../4_taw/logfiles/CM-133-1-DIARY.pdf
+text2pdf.win95.exe -f"Courier" -s10 -c216 -v10 -x612 -y792 ../5_runup2/logs/CM-133-1_log.txt > ../5_runup2/logs/CM-133-1_log.pdf
+text2pdf.win95.exe -f"Courier" -s8 -c216 -v8 -x612 -y792 ../5_runup2/RUNUP2_files/CM-133-1.in > ../5_runup2/logs/CM-133-1_in.pdf
+text2pdf.win95.exe -f"Courier" -s8 -c216 -v8 -x792 -y612 ../5_runup2/RUNUP2_files/CM-133-1.OUT > ../5_runup2/logs/CM-133-1_out.pdf
+text2pdf.win95.exe -f"Courier" -s10 -c216 -v10 -x612 -y792 ../1_input/logfiles/CM-132_log.txt > ../1_input/logfiles/CM-132_log.pdf
+text2pdf.win95.exe -f"Courier" -s10 -c216 -v10 -x612 -y792 ../2_swan/logfiles/CM-132_log.txt > ../2_swan/logfiles/CM-132_log.pdf
+text2pdf.win95.exe -f"Courier" -s8 -c216 -v8 -x612 -y792 ../2_swan/swanfiles/CM-132.prt > ../2_swan/logfiles/CM-132_1swanprint.pdf
+text2pdf.win95.exe -f"Courier" -s8 -c216 -v8 -x792 -y612  ../2_swan/swanfiles/CM-132.dat > ../2_swan/logfiles/CM-132_3swanout.pdf
+text2pdf.win95.exe -f"Courier" -s10 -c216 -v10 -x612 -y792 ../3_whafis/logfiles/CM-132_log.txt > ../3_whafis/logfiles/CM-132_log.pdf
+text2pdf.win95.exe -f"Courier" -s7 -c216 -v7 -x612 -y792 ../3_whafis/logfiles/CM-132_short.out > ../3_whafis/logfiles/CM-132_output.pdf
+text2pdf.win95.exe -f"Courier" -s10 -c216 -v10 -x612 -y792 ../4_taw/logfiles/CM-132_log.txt > ../4_taw/logfiles/CM-132_log.pdf
+text2pdf.win95.exe -f"Courier" -s8 -c216 -v8 -x612 -y792 ../4_taw/logfiles/CM-132-DIARY.txt > ../4_taw/logfiles/CM-132-DIARY.pdf
+text2pdf.win95.exe -f"Courier" -s10 -c216 -v10 -x612 -y792 ../5_runup2/logs/CM-132_log.txt > ../5_runup2/logs/CM-132_log.pdf
+text2pdf.win95.exe -f"Courier" -s8 -c216 -v8 -x612 -y792 ../5_runup2/RUNUP2_files/CM-132.in > ../5_runup2/logs/CM-132_in.pdf
+text2pdf.win95.exe -f"Courier" -s8 -c216 -v8 -x792 -y612 ../5_runup2/RUNUP2_files/CM-132.OUT > ../5_runup2/logs/CM-132_out.pdf
+text2pdf.win95.exe -f"Courier" -s10 -c216 -v10 -x612 -y792 ../1_input/logfiles/CM-133_log.txt > ../1_input/logfiles/CM-133_log.pdf
+text2pdf.win95.exe -f"Courier" -s10 -c216 -v10 -x612 -y792 ../2_swan/logfiles/CM-133_log.txt > ../2_swan/logfiles/CM-133_log.pdf
+text2pdf.win95.exe -f"Courier" -s8 -c216 -v8 -x612 -y792 ../2_swan/swanfiles/CM-133.prt > ../2_swan/logfiles/CM-133_1swanprint.pdf
+text2pdf.win95.exe -f"Courier" -s8 -c216 -v8 -x792 -y612  ../2_swan/swanfiles/CM-133.dat > ../2_swan/logfiles/CM-133_3swanout.pdf
+text2pdf.win95.exe -f"Courier" -s10 -c216 -v10 -x612 -y792 ../3_whafis/logfiles/CM-133_log.txt > ../3_whafis/logfiles/CM-133_log.pdf
+text2pdf.win95.exe -f"Courier" -s7 -c216 -v7 -x612 -y792 ../3_whafis/logfiles/CM-133_short.out > ../3_whafis/logfiles/CM-133_output.pdf
+text2pdf.win95.exe -f"Courier" -s10 -c216 -v10 -x612 -y792 ../4_taw/logfiles/CM-133_log.txt > ../4_taw/logfiles/CM-133_log.pdf
+text2pdf.win95.exe -f"Courier" -s8 -c216 -v8 -x612 -y792 ../4_taw/logfiles/CM-133-DIARY.txt > ../4_taw/logfiles/CM-133-DIARY.pdf
+text2pdf.win95.exe -f"Courier" -s10 -c216 -v10 -x612 -y792 ../5_runup2/logs/CM-133_log.txt > ../5_runup2/logs/CM-133_log.pdf
+text2pdf.win95.exe -f"Courier" -s8 -c216 -v8 -x612 -y792 ../5_runup2/RUNUP2_files/CM-133.in > ../5_runup2/logs/CM-133_in.pdf
+text2pdf.win95.exe -f"Courier" -s8 -c216 -v8 -x792 -y612 ../5_runup2/RUNUP2_files/CM-133.OUT > ../5_runup2/logs/CM-133_out.pdf
+text2pdf.win95.exe -f"Courier" -s10 -c216 -v10 -x612 -y792 ../1_input/logfiles/CM-134_log.txt > ../1_input/logfiles/CM-134_log.pdf
+text2pdf.win95.exe -f"Courier" -s10 -c216 -v10 -x612 -y792 ../2_swan/logfiles/CM-134_log.txt > ../2_swan/logfiles/CM-134_log.pdf
+text2pdf.win95.exe -f"Courier" -s8 -c216 -v8 -x612 -y792 ../2_swan/swanfiles/CM-134.prt > ../2_swan/logfiles/CM-134_1swanprint.pdf
+text2pdf.win95.exe -f"Courier" -s8 -c216 -v8 -x792 -y612  ../2_swan/swanfiles/CM-134.dat > ../2_swan/logfiles/CM-134_3swanout.pdf
+text2pdf.win95.exe -f"Courier" -s10 -c216 -v10 -x612 -y792 ../3_whafis/logfiles/CM-134_log.txt > ../3_whafis/logfiles/CM-134_log.pdf
+text2pdf.win95.exe -f"Courier" -s7 -c216 -v7 -x612 -y792 ../3_whafis/logfiles/CM-134_short.out > ../3_whafis/logfiles/CM-134_output.pdf
+text2pdf.win95.exe -f"Courier" -s10 -c216 -v10 -x612 -y792 ../4_taw/logfiles/CM-134_log.txt > ../4_taw/logfiles/CM-134_log.pdf
+text2pdf.win95.exe -f"Courier" -s8 -c216 -v8 -x612 -y792 ../4_taw/logfiles/CM-134-DIARY.txt > ../4_taw/logfiles/CM-134-DIARY.pdf
+text2pdf.win95.exe -f"Courier" -s10 -c216 -v10 -x612 -y792 ../5_runup2/logs/CM-134_log.txt > ../5_runup2/logs/CM-134_log.pdf
+text2pdf.win95.exe -f"Courier" -s8 -c216 -v8 -x612 -y792 ../5_runup2/RUNUP2_files/CM-134.in > ../5_runup2/logs/CM-134_in.pdf
+text2pdf.win95.exe -f"Courier" -s8 -c216 -v8 -x792 -y612 ../5_runup2/RUNUP2_files/CM-134.OUT > ../5_runup2/logs/CM-134_out.pdf
+text2pdf.win95.exe -f"Courier" -s10 -c216 -v10 -x612 -y792 ../1_input/logfiles/CM-134-1_log.txt > ../1_input/logfiles/CM-134-1_log.pdf
+text2pdf.win95.exe -f"Courier" -s10 -c216 -v10 -x612 -y792 ../2_swan/logfiles/CM-134-1_log.txt > ../2_swan/logfiles/CM-134-1_log.pdf
+text2pdf.win95.exe -f"Courier" -s8 -c216 -v8 -x612 -y792 ../2_swan/swanfiles/CM-134-1.prt > ../2_swan/logfiles/CM-134-1_1swanprint.pdf
+text2pdf.win95.exe -f"Courier" -s8 -c216 -v8 -x792 -y612  ../2_swan/swanfiles/CM-134-1.dat > ../2_swan/logfiles/CM-134-1_3swanout.pdf
+text2pdf.win95.exe -f"Courier" -s10 -c216 -v10 -x612 -y792 ../3_whafis/logfiles/CM-134-1_log.txt > ../3_whafis/logfiles/CM-134-1_log.pdf
+text2pdf.win95.exe -f"Courier" -s7 -c216 -v7 -x612 -y792 ../3_whafis/logfiles/CM-134-1_short.out > ../3_whafis/logfiles/CM-134-1_output.pdf
+text2pdf.win95.exe -f"Courier" -s10 -c216 -v10 -x612 -y792 ../4_taw/logfiles/CM-134-1_log.txt > ../4_taw/logfiles/CM-134-1_log.pdf
+text2pdf.win95.exe -f"Courier" -s8 -c216 -v8 -x612 -y792 ../4_taw/logfiles/CM-134-1-DIARY.txt > ../4_taw/logfiles/CM-134-1-DIARY.pdf
+text2pdf.win95.exe -f"Courier" -s10 -c216 -v10 -x612 -y792 ../5_runup2/logs/CM-134-1_log.txt > ../5_runup2/logs/CM-134-1_log.pdf
+text2pdf.win95.exe -f"Courier" -s8 -c216 -v8 -x612 -y792 ../5_runup2/RUNUP2_files/CM-134-1.in > ../5_runup2/logs/CM-134-1_in.pdf
+text2pdf.win95.exe -f"Courier" -s8 -c216 -v8 -x792 -y612 ../5_runup2/RUNUP2_files/CM-134-1.OUT > ../5_runup2/logs/CM-134-1_out.pdf
+text2pdf.win95.exe -f"Courier" -s10 -c216 -v10 -x612 -y792 ../1_input/logfiles/CM-135-1_log.txt > ../1_input/logfiles/CM-135-1_log.pdf
+text2pdf.win95.exe -f"Courier" -s10 -c216 -v10 -x612 -y792 ../2_swan/logfiles/CM-135-1_log.txt > ../2_swan/logfiles/CM-135-1_log.pdf
+text2pdf.win95.exe -f"Courier" -s8 -c216 -v8 -x612 -y792 ../2_swan/swanfiles/CM-135-1.prt > ../2_swan/logfiles/CM-135-1_1swanprint.pdf
+text2pdf.win95.exe -f"Courier" -s8 -c216 -v8 -x792 -y612  ../2_swan/swanfiles/CM-135-1.dat > ../2_swan/logfiles/CM-135-1_3swanout.pdf
+text2pdf.win95.exe -f"Courier" -s10 -c216 -v10 -x612 -y792 ../3_whafis/logfiles/CM-135-1_log.txt > ../3_whafis/logfiles/CM-135-1_log.pdf
+text2pdf.win95.exe -f"Courier" -s7 -c216 -v7 -x612 -y792 ../3_whafis/logfiles/CM-135-1_short.out > ../3_whafis/logfiles/CM-135-1_output.pdf
+text2pdf.win95.exe -f"Courier" -s10 -c216 -v10 -x612 -y792 ../4_taw/logfiles/CM-135-1_log.txt > ../4_taw/logfiles/CM-135-1_log.pdf
+text2pdf.win95.exe -f"Courier" -s8 -c216 -v8 -x612 -y792 ../4_taw/logfiles/CM-135-1-DIARY.txt > ../4_taw/logfiles/CM-135-1-DIARY.pdf
+text2pdf.win95.exe -f"Courier" -s10 -c216 -v10 -x612 -y792 ../5_runup2/logs/CM-135-1_log.txt > ../5_runup2/logs/CM-135-1_log.pdf
+text2pdf.win95.exe -f"Courier" -s8 -c216 -v8 -x612 -y792 ../5_runup2/RUNUP2_files/CM-135-1.in > ../5_runup2/logs/CM-135-1_in.pdf
+text2pdf.win95.exe -f"Courier" -s8 -c216 -v8 -x792 -y612 ../5_runup2/RUNUP2_files/CM-135-1.OUT > ../5_runup2/logs/CM-135-1_out.pdf
+text2pdf.win95.exe -f"Courier" -s10 -c216 -v10 -x612 -y792 ../1_input/logfiles/CM-135-2_log.txt > ../1_input/logfiles/CM-135-2_log.pdf
+text2pdf.win95.exe -f"Courier" -s10 -c216 -v10 -x612 -y792 ../2_swan/logfiles/CM-135-2_log.txt > ../2_swan/logfiles/CM-135-2_log.pdf
+text2pdf.win95.exe -f"Courier" -s8 -c216 -v8 -x612 -y792 ../2_swan/swanfiles/CM-135-2.prt > ../2_swan/logfiles/CM-135-2_1swanprint.pdf
+text2pdf.win95.exe -f"Courier" -s8 -c216 -v8 -x792 -y612  ../2_swan/swanfiles/CM-135-2.dat > ../2_swan/logfiles/CM-135-2_3swanout.pdf
+text2pdf.win95.exe -f"Courier" -s10 -c216 -v10 -x612 -y792 ../3_whafis/logfiles/CM-135-2_log.txt > ../3_whafis/logfiles/CM-135-2_log.pdf
+text2pdf.win95.exe -f"Courier" -s7 -c216 -v7 -x612 -y792 ../3_whafis/logfiles/CM-135-2_short.out > ../3_whafis/logfiles/CM-135-2_output.pdf
+text2pdf.win95.exe -f"Courier" -s10 -c216 -v10 -x612 -y792 ../4_taw/logfiles/CM-135-2_log.txt > ../4_taw/logfiles/CM-135-2_log.pdf
+text2pdf.win95.exe -f"Courier" -s8 -c216 -v8 -x612 -y792 ../4_taw/logfiles/CM-135-2-DIARY.txt > ../4_taw/logfiles/CM-135-2-DIARY.pdf
+text2pdf.win95.exe -f"Courier" -s10 -c216 -v10 -x612 -y792 ../5_runup2/logs/CM-135-2_log.txt > ../5_runup2/logs/CM-135-2_log.pdf
+text2pdf.win95.exe -f"Courier" -s8 -c216 -v8 -x612 -y792 ../5_runup2/RUNUP2_files/CM-135-2.in > ../5_runup2/logs/CM-135-2_in.pdf
+text2pdf.win95.exe -f"Courier" -s8 -c216 -v8 -x792 -y612 ../5_runup2/RUNUP2_files/CM-135-2.OUT > ../5_runup2/logs/CM-135-2_out.pdf
+text2pdf.win95.exe -f"Courier" -s10 -c216 -v10 -x612 -y792 ../1_input/logfiles/CM-136_log.txt > ../1_input/logfiles/CM-136_log.pdf
+text2pdf.win95.exe -f"Courier" -s10 -c216 -v10 -x612 -y792 ../2_swan/logfiles/CM-136_log.txt > ../2_swan/logfiles/CM-136_log.pdf
+text2pdf.win95.exe -f"Courier" -s8 -c216 -v8 -x612 -y792 ../2_swan/swanfiles/CM-136.prt > ../2_swan/logfiles/CM-136_1swanprint.pdf
+text2pdf.win95.exe -f"Courier" -s8 -c216 -v8 -x792 -y612  ../2_swan/swanfiles/CM-136.dat > ../2_swan/logfiles/CM-136_3swanout.pdf
+text2pdf.win95.exe -f"Courier" -s10 -c216 -v10 -x612 -y792 ../3_whafis/logfiles/CM-136_log.txt > ../3_whafis/logfiles/CM-136_log.pdf
+text2pdf.win95.exe -f"Courier" -s7 -c216 -v7 -x612 -y792 ../3_whafis/logfiles/CM-136_short.out > ../3_whafis/logfiles/CM-136_output.pdf
+text2pdf.win95.exe -f"Courier" -s10 -c216 -v10 -x612 -y792 ../4_taw/logfiles/CM-136_log.txt > ../4_taw/logfiles/CM-136_log.pdf
+text2pdf.win95.exe -f"Courier" -s8 -c216 -v8 -x612 -y792 ../4_taw/logfiles/CM-136-DIARY.txt > ../4_taw/logfiles/CM-136-DIARY.pdf
+text2pdf.win95.exe -f"Courier" -s10 -c216 -v10 -x612 -y792 ../5_runup2/logs/CM-136_log.txt > ../5_runup2/logs/CM-136_log.pdf
+text2pdf.win95.exe -f"Courier" -s8 -c216 -v8 -x612 -y792 ../5_runup2/RUNUP2_files/CM-136.in > ../5_runup2/logs/CM-136_in.pdf
+text2pdf.win95.exe -f"Courier" -s8 -c216 -v8 -x792 -y612 ../5_runup2/RUNUP2_files/CM-136.OUT > ../5_runup2/logs/CM-136_out.pdf
+text2pdf.win95.exe -f"Courier" -s10 -c216 -v10 -x612 -y792 ../1_input/logfiles/CM-137_log.txt > ../1_input/logfiles/CM-137_log.pdf
+text2pdf.win95.exe -f"Courier" -s10 -c216 -v10 -x612 -y792 ../2_swan/logfiles/CM-137_log.txt > ../2_swan/logfiles/CM-137_log.pdf
+text2pdf.win95.exe -f"Courier" -s8 -c216 -v8 -x612 -y792 ../2_swan/swanfiles/CM-137.prt > ../2_swan/logfiles/CM-137_1swanprint.pdf
+text2pdf.win95.exe -f"Courier" -s8 -c216 -v8 -x792 -y612  ../2_swan/swanfiles/CM-137.dat > ../2_swan/logfiles/CM-137_3swanout.pdf
+text2pdf.win95.exe -f"Courier" -s10 -c216 -v10 -x612 -y792 ../3_whafis/logfiles/CM-137_log.txt > ../3_whafis/logfiles/CM-137_log.pdf
+text2pdf.win95.exe -f"Courier" -s7 -c216 -v7 -x612 -y792 ../3_whafis/logfiles/CM-137_short.out > ../3_whafis/logfiles/CM-137_output.pdf
+text2pdf.win95.exe -f"Courier" -s10 -c216 -v10 -x612 -y792 ../4_taw/logfiles/CM-137_log.txt > ../4_taw/logfiles/CM-137_log.pdf
+text2pdf.win95.exe -f"Courier" -s8 -c216 -v8 -x612 -y792 ../4_taw/logfiles/CM-137-DIARY.txt > ../4_taw/logfiles/CM-137-DIARY.pdf
+text2pdf.win95.exe -f"Courier" -s10 -c216 -v10 -x612 -y792 ../5_runup2/logs/CM-137_log.txt > ../5_runup2/logs/CM-137_log.pdf
+text2pdf.win95.exe -f"Courier" -s8 -c216 -v8 -x612 -y792 ../5_runup2/RUNUP2_files/CM-137.in > ../5_runup2/logs/CM-137_in.pdf
+text2pdf.win95.exe -f"Courier" -s8 -c216 -v8 -x792 -y612 ../5_runup2/RUNUP2_files/CM-137.OUT > ../5_runup2/logs/CM-137_out.pdf
+text2pdf.win95.exe -f"Courier" -s10 -c216 -v10 -x612 -y792 ../1_input/logfiles/CM-138_log.txt > ../1_input/logfiles/CM-138_log.pdf
+text2pdf.win95.exe -f"Courier" -s10 -c216 -v10 -x612 -y792 ../2_swan/logfiles/CM-138_log.txt > ../2_swan/logfiles/CM-138_log.pdf
+text2pdf.win95.exe -f"Courier" -s8 -c216 -v8 -x612 -y792 ../2_swan/swanfiles/CM-138.prt > ../2_swan/logfiles/CM-138_1swanprint.pdf
+text2pdf.win95.exe -f"Courier" -s8 -c216 -v8 -x792 -y612  ../2_swan/swanfiles/CM-138.dat > ../2_swan/logfiles/CM-138_3swanout.pdf
+text2pdf.win95.exe -f"Courier" -s10 -c216 -v10 -x612 -y792 ../3_whafis/logfiles/CM-138_log.txt > ../3_whafis/logfiles/CM-138_log.pdf
+text2pdf.win95.exe -f"Courier" -s7 -c216 -v7 -x612 -y792 ../3_whafis/logfiles/CM-138_short.out > ../3_whafis/logfiles/CM-138_output.pdf
+text2pdf.win95.exe -f"Courier" -s10 -c216 -v10 -x612 -y792 ../4_taw/logfiles/CM-138_log.txt > ../4_taw/logfiles/CM-138_log.pdf
+text2pdf.win95.exe -f"Courier" -s8 -c216 -v8 -x612 -y792 ../4_taw/logfiles/CM-138-DIARY.txt > ../4_taw/logfiles/CM-138-DIARY.pdf
+text2pdf.win95.exe -f"Courier" -s10 -c216 -v10 -x612 -y792 ../5_runup2/logs/CM-138_log.txt > ../5_runup2/logs/CM-138_log.pdf
+text2pdf.win95.exe -f"Courier" -s8 -c216 -v8 -x612 -y792 ../5_runup2/RUNUP2_files/CM-138.in > ../5_runup2/logs/CM-138_in.pdf
+text2pdf.win95.exe -f"Courier" -s8 -c216 -v8 -x792 -y612 ../5_runup2/RUNUP2_files/CM-138.OUT > ../5_runup2/logs/CM-138_out.pdf
+text2pdf.win95.exe -f"Courier" -s10 -c216 -v10 -x612 -y792 ../1_input/logfiles/CM-139_log.txt > ../1_input/logfiles/CM-139_log.pdf
+text2pdf.win95.exe -f"Courier" -s10 -c216 -v10 -x612 -y792 ../2_swan/logfiles/CM-139_log.txt > ../2_swan/logfiles/CM-139_log.pdf
+text2pdf.win95.exe -f"Courier" -s8 -c216 -v8 -x612 -y792 ../2_swan/swanfiles/CM-139.prt > ../2_swan/logfiles/CM-139_1swanprint.pdf
+text2pdf.win95.exe -f"Courier" -s8 -c216 -v8 -x792 -y612  ../2_swan/swanfiles/CM-139.dat > ../2_swan/logfiles/CM-139_3swanout.pdf
+text2pdf.win95.exe -f"Courier" -s10 -c216 -v10 -x612 -y792 ../3_whafis/logfiles/CM-139_log.txt > ../3_whafis/logfiles/CM-139_log.pdf
+text2pdf.win95.exe -f"Courier" -s7 -c216 -v7 -x612 -y792 ../3_whafis/logfiles/CM-139_short.out > ../3_whafis/logfiles/CM-139_output.pdf
+text2pdf.win95.exe -f"Courier" -s10 -c216 -v10 -x612 -y792 ../4_taw/logfiles/CM-139_log.txt > ../4_taw/logfiles/CM-139_log.pdf
+text2pdf.win95.exe -f"Courier" -s8 -c216 -v8 -x612 -y792 ../4_taw/logfiles/CM-139-DIARY.txt > ../4_taw/logfiles/CM-139-DIARY.pdf
+text2pdf.win95.exe -f"Courier" -s10 -c216 -v10 -x612 -y792 ../5_runup2/logs/CM-139_log.txt > ../5_runup2/logs/CM-139_log.pdf
+text2pdf.win95.exe -f"Courier" -s8 -c216 -v8 -x612 -y792 ../5_runup2/RUNUP2_files/CM-139.in > ../5_runup2/logs/CM-139_in.pdf
+text2pdf.win95.exe -f"Courier" -s8 -c216 -v8 -x792 -y612 ../5_runup2/RUNUP2_files/CM-139.OUT > ../5_runup2/logs/CM-139_out.pdf
+text2pdf.win95.exe -f"Courier" -s10 -c216 -v10 -x612 -y792 ../1_input/logfiles/CM-139-1_log.txt > ../1_input/logfiles/CM-139-1_log.pdf
+text2pdf.win95.exe -f"Courier" -s10 -c216 -v10 -x612 -y792 ../2_swan/logfiles/CM-139-1_log.txt > ../2_swan/logfiles/CM-139-1_log.pdf
+text2pdf.win95.exe -f"Courier" -s8 -c216 -v8 -x612 -y792 ../2_swan/swanfiles/CM-139-1.prt > ../2_swan/logfiles/CM-139-1_1swanprint.pdf
+text2pdf.win95.exe -f"Courier" -s8 -c216 -v8 -x792 -y612  ../2_swan/swanfiles/CM-139-1.dat > ../2_swan/logfiles/CM-139-1_3swanout.pdf
+text2pdf.win95.exe -f"Courier" -s10 -c216 -v10 -x612 -y792 ../3_whafis/logfiles/CM-139-1_log.txt > ../3_whafis/logfiles/CM-139-1_log.pdf
+text2pdf.win95.exe -f"Courier" -s7 -c216 -v7 -x612 -y792 ../3_whafis/logfiles/CM-139-1_short.out > ../3_whafis/logfiles/CM-139-1_output.pdf
+text2pdf.win95.exe -f"Courier" -s10 -c216 -v10 -x612 -y792 ../4_taw/logfiles/CM-139-1_log.txt > ../4_taw/logfiles/CM-139-1_log.pdf
+text2pdf.win95.exe -f"Courier" -s8 -c216 -v8 -x612 -y792 ../4_taw/logfiles/CM-139-1-DIARY.txt > ../4_taw/logfiles/CM-139-1-DIARY.pdf
+text2pdf.win95.exe -f"Courier" -s10 -c216 -v10 -x612 -y792 ../5_runup2/logs/CM-139-1_log.txt > ../5_runup2/logs/CM-139-1_log.pdf
+text2pdf.win95.exe -f"Courier" -s8 -c216 -v8 -x612 -y792 ../5_runup2/RUNUP2_files/CM-139-1.in > ../5_runup2/logs/CM-139-1_in.pdf
+text2pdf.win95.exe -f"Courier" -s8 -c216 -v8 -x792 -y612 ../5_runup2/RUNUP2_files/CM-139-1.OUT > ../5_runup2/logs/CM-139-1_out.pdf
+text2pdf.win95.exe -f"Courier" -s10 -c216 -v10 -x612 -y792 ../1_input/logfiles/CM-139-2_log.txt > ../1_input/logfiles/CM-139-2_log.pdf
+text2pdf.win95.exe -f"Courier" -s10 -c216 -v10 -x612 -y792 ../2_swan/logfiles/CM-139-2_log.txt > ../2_swan/logfiles/CM-139-2_log.pdf
+text2pdf.win95.exe -f"Courier" -s8 -c216 -v8 -x612 -y792 ../2_swan/swanfiles/CM-139-2.prt > ../2_swan/logfiles/CM-139-2_1swanprint.pdf
+text2pdf.win95.exe -f"Courier" -s8 -c216 -v8 -x792 -y612  ../2_swan/swanfiles/CM-139-2.dat > ../2_swan/logfiles/CM-139-2_3swanout.pdf
+text2pdf.win95.exe -f"Courier" -s10 -c216 -v10 -x612 -y792 ../3_whafis/logfiles/CM-139-2_log.txt > ../3_whafis/logfiles/CM-139-2_log.pdf
+text2pdf.win95.exe -f"Courier" -s7 -c216 -v7 -x612 -y792 ../3_whafis/logfiles/CM-139-2_short.out > ../3_whafis/logfiles/CM-139-2_output.pdf
+text2pdf.win95.exe -f"Courier" -s10 -c216 -v10 -x612 -y792 ../4_taw/logfiles/CM-139-2_log.txt > ../4_taw/logfiles/CM-139-2_log.pdf
+text2pdf.win95.exe -f"Courier" -s8 -c216 -v8 -x612 -y792 ../4_taw/logfiles/CM-139-2-DIARY.txt > ../4_taw/logfiles/CM-139-2-DIARY.pdf
+text2pdf.win95.exe -f"Courier" -s10 -c216 -v10 -x612 -y792 ../5_runup2/logs/CM-139-2_log.txt > ../5_runup2/logs/CM-139-2_log.pdf
+text2pdf.win95.exe -f"Courier" -s8 -c216 -v8 -x612 -y792 ../5_runup2/RUNUP2_files/CM-139-2.in > ../5_runup2/logs/CM-139-2_in.pdf
+text2pdf.win95.exe -f"Courier" -s8 -c216 -v8 -x792 -y612 ../5_runup2/RUNUP2_files/CM-139-2.OUT > ../5_runup2/logs/CM-139-2_out.pdf
+text2pdf.win95.exe -f"Courier" -s10 -c216 -v10 -x612 -y792 ../1_input/logfiles/CM-140_log.txt > ../1_input/logfiles/CM-140_log.pdf
+text2pdf.win95.exe -f"Courier" -s10 -c216 -v10 -x612 -y792 ../2_swan/logfiles/CM-140_log.txt > ../2_swan/logfiles/CM-140_log.pdf
+text2pdf.win95.exe -f"Courier" -s8 -c216 -v8 -x612 -y792 ../2_swan/swanfiles/CM-140.prt > ../2_swan/logfiles/CM-140_1swanprint.pdf
+text2pdf.win95.exe -f"Courier" -s8 -c216 -v8 -x792 -y612  ../2_swan/swanfiles/CM-140.dat > ../2_swan/logfiles/CM-140_3swanout.pdf
+text2pdf.win95.exe -f"Courier" -s10 -c216 -v10 -x612 -y792 ../3_whafis/logfiles/CM-140_log.txt > ../3_whafis/logfiles/CM-140_log.pdf
+text2pdf.win95.exe -f"Courier" -s7 -c216 -v7 -x612 -y792 ../3_whafis/logfiles/CM-140_short.out > ../3_whafis/logfiles/CM-140_output.pdf
+text2pdf.win95.exe -f"Courier" -s10 -c216 -v10 -x612 -y792 ../4_taw/logfiles/CM-140_log.txt > ../4_taw/logfiles/CM-140_log.pdf
+text2pdf.win95.exe -f"Courier" -s8 -c216 -v8 -x612 -y792 ../4_taw/logfiles/CM-140-DIARY.txt > ../4_taw/logfiles/CM-140-DIARY.pdf
+text2pdf.win95.exe -f"Courier" -s10 -c216 -v10 -x612 -y792 ../5_runup2/logs/CM-140_log.txt > ../5_runup2/logs/CM-140_log.pdf
+text2pdf.win95.exe -f"Courier" -s8 -c216 -v8 -x612 -y792 ../5_runup2/RUNUP2_files/CM-140.in > ../5_runup2/logs/CM-140_in.pdf
+text2pdf.win95.exe -f"Courier" -s8 -c216 -v8 -x792 -y612 ../5_runup2/RUNUP2_files/CM-140.OUT > ../5_runup2/logs/CM-140_out.pdf
+text2pdf.win95.exe -f"Courier" -s10 -c216 -v10 -x612 -y792 ../1_input/logfiles/CM-141_log.txt > ../1_input/logfiles/CM-141_log.pdf
+text2pdf.win95.exe -f"Courier" -s10 -c216 -v10 -x612 -y792 ../2_swan/logfiles/CM-141_log.txt > ../2_swan/logfiles/CM-141_log.pdf
+text2pdf.win95.exe -f"Courier" -s8 -c216 -v8 -x612 -y792 ../2_swan/swanfiles/CM-141.prt > ../2_swan/logfiles/CM-141_1swanprint.pdf
+text2pdf.win95.exe -f"Courier" -s8 -c216 -v8 -x792 -y612  ../2_swan/swanfiles/CM-141.dat > ../2_swan/logfiles/CM-141_3swanout.pdf
+text2pdf.win95.exe -f"Courier" -s10 -c216 -v10 -x612 -y792 ../3_whafis/logfiles/CM-141_log.txt > ../3_whafis/logfiles/CM-141_log.pdf
+text2pdf.win95.exe -f"Courier" -s7 -c216 -v7 -x612 -y792 ../3_whafis/logfiles/CM-141_short.out > ../3_whafis/logfiles/CM-141_output.pdf
+text2pdf.win95.exe -f"Courier" -s10 -c216 -v10 -x612 -y792 ../4_taw/logfiles/CM-141_log.txt > ../4_taw/logfiles/CM-141_log.pdf
+text2pdf.win95.exe -f"Courier" -s8 -c216 -v8 -x612 -y792 ../4_taw/logfiles/CM-141-DIARY.txt > ../4_taw/logfiles/CM-141-DIARY.pdf
+text2pdf.win95.exe -f"Courier" -s10 -c216 -v10 -x612 -y792 ../5_runup2/logs/CM-141_log.txt > ../5_runup2/logs/CM-141_log.pdf
+text2pdf.win95.exe -f"Courier" -s8 -c216 -v8 -x612 -y792 ../5_runup2/RUNUP2_files/CM-141.in > ../5_runup2/logs/CM-141_in.pdf
+text2pdf.win95.exe -f"Courier" -s8 -c216 -v8 -x792 -y612 ../5_runup2/RUNUP2_files/CM-141.OUT > ../5_runup2/logs/CM-141_out.pdf
+text2pdf.win95.exe -f"Courier" -s10 -c216 -v10 -x612 -y792 ../1_input/logfiles/CM-142_log.txt > ../1_input/logfiles/CM-142_log.pdf
+text2pdf.win95.exe -f"Courier" -s10 -c216 -v10 -x612 -y792 ../2_swan/logfiles/CM-142_log.txt > ../2_swan/logfiles/CM-142_log.pdf
+text2pdf.win95.exe -f"Courier" -s8 -c216 -v8 -x612 -y792 ../2_swan/swanfiles/CM-142.prt > ../2_swan/logfiles/CM-142_1swanprint.pdf
+text2pdf.win95.exe -f"Courier" -s8 -c216 -v8 -x792 -y612  ../2_swan/swanfiles/CM-142.dat > ../2_swan/logfiles/CM-142_3swanout.pdf
+text2pdf.win95.exe -f"Courier" -s10 -c216 -v10 -x612 -y792 ../3_whafis/logfiles/CM-142_log.txt > ../3_whafis/logfiles/CM-142_log.pdf
+text2pdf.win95.exe -f"Courier" -s7 -c216 -v7 -x612 -y792 ../3_whafis/logfiles/CM-142_short.out > ../3_whafis/logfiles/CM-142_output.pdf
+text2pdf.win95.exe -f"Courier" -s10 -c216 -v10 -x612 -y792 ../4_taw/logfiles/CM-142_log.txt > ../4_taw/logfiles/CM-142_log.pdf
+text2pdf.win95.exe -f"Courier" -s8 -c216 -v8 -x612 -y792 ../4_taw/logfiles/CM-142-DIARY.txt > ../4_taw/logfiles/CM-142-DIARY.pdf
+text2pdf.win95.exe -f"Courier" -s10 -c216 -v10 -x612 -y792 ../5_runup2/logs/CM-142_log.txt > ../5_runup2/logs/CM-142_log.pdf
+text2pdf.win95.exe -f"Courier" -s8 -c216 -v8 -x612 -y792 ../5_runup2/RUNUP2_files/CM-142.in > ../5_runup2/logs/CM-142_in.pdf
+text2pdf.win95.exe -f"Courier" -s8 -c216 -v8 -x792 -y612 ../5_runup2/RUNUP2_files/CM-142.OUT > ../5_runup2/logs/CM-142_out.pdf
+text2pdf.win95.exe -f"Courier" -s10 -c216 -v10 -x612 -y792 ../1_input/logfiles/CM-145_log.txt > ../1_input/logfiles/CM-145_log.pdf
+text2pdf.win95.exe -f"Courier" -s10 -c216 -v10 -x612 -y792 ../2_swan/logfiles/CM-145_log.txt > ../2_swan/logfiles/CM-145_log.pdf
+text2pdf.win95.exe -f"Courier" -s8 -c216 -v8 -x612 -y792 ../2_swan/swanfiles/CM-145.prt > ../2_swan/logfiles/CM-145_1swanprint.pdf
+text2pdf.win95.exe -f"Courier" -s8 -c216 -v8 -x792 -y612  ../2_swan/swanfiles/CM-145.dat > ../2_swan/logfiles/CM-145_3swanout.pdf
+text2pdf.win95.exe -f"Courier" -s10 -c216 -v10 -x612 -y792 ../3_whafis/logfiles/CM-145_log.txt > ../3_whafis/logfiles/CM-145_log.pdf
+text2pdf.win95.exe -f"Courier" -s7 -c216 -v7 -x612 -y792 ../3_whafis/logfiles/CM-145_short.out > ../3_whafis/logfiles/CM-145_output.pdf
+text2pdf.win95.exe -f"Courier" -s10 -c216 -v10 -x612 -y792 ../4_taw/logfiles/CM-145_log.txt > ../4_taw/logfiles/CM-145_log.pdf
+text2pdf.win95.exe -f"Courier" -s8 -c216 -v8 -x612 -y792 ../4_taw/logfiles/CM-145-DIARY.txt > ../4_taw/logfiles/CM-145-DIARY.pdf
+text2pdf.win95.exe -f"Courier" -s10 -c216 -v10 -x612 -y792 ../5_runup2/logs/CM-145_log.txt > ../5_runup2/logs/CM-145_log.pdf
+text2pdf.win95.exe -f"Courier" -s8 -c216 -v8 -x612 -y792 ../5_runup2/RUNUP2_files/CM-145.in > ../5_runup2/logs/CM-145_in.pdf
+text2pdf.win95.exe -f"Courier" -s8 -c216 -v8 -x792 -y612 ../5_runup2/RUNUP2_files/CM-145.OUT > ../5_runup2/logs/CM-145_out.pdf
+text2pdf.win95.exe -f"Courier" -s10 -c216 -v10 -x612 -y792 ../1_input/logfiles/CM-149_log.txt > ../1_input/logfiles/CM-149_log.pdf
+text2pdf.win95.exe -f"Courier" -s10 -c216 -v10 -x612 -y792 ../2_swan/logfiles/CM-149_log.txt > ../2_swan/logfiles/CM-149_log.pdf
+text2pdf.win95.exe -f"Courier" -s8 -c216 -v8 -x612 -y792 ../2_swan/swanfiles/CM-149.prt > ../2_swan/logfiles/CM-149_1swanprint.pdf
+text2pdf.win95.exe -f"Courier" -s8 -c216 -v8 -x792 -y612  ../2_swan/swanfiles/CM-149.dat > ../2_swan/logfiles/CM-149_3swanout.pdf
+text2pdf.win95.exe -f"Courier" -s10 -c216 -v10 -x612 -y792 ../3_whafis/logfiles/CM-149_log.txt > ../3_whafis/logfiles/CM-149_log.pdf
+text2pdf.win95.exe -f"Courier" -s7 -c216 -v7 -x612 -y792 ../3_whafis/logfiles/CM-149_short.out > ../3_whafis/logfiles/CM-149_output.pdf
+text2pdf.win95.exe -f"Courier" -s10 -c216 -v10 -x612 -y792 ../4_taw/logfiles/CM-149_log.txt > ../4_taw/logfiles/CM-149_log.pdf
+text2pdf.win95.exe -f"Courier" -s8 -c216 -v8 -x612 -y792 ../4_taw/logfiles/CM-149-DIARY.txt > ../4_taw/logfiles/CM-149-DIARY.pdf
+text2pdf.win95.exe -f"Courier" -s10 -c216 -v10 -x612 -y792 ../5_runup2/logs/CM-149_log.txt > ../5_runup2/logs/CM-149_log.pdf
+text2pdf.win95.exe -f"Courier" -s8 -c216 -v8 -x612 -y792 ../5_runup2/RUNUP2_files/CM-149.in > ../5_runup2/logs/CM-149_in.pdf
+text2pdf.win95.exe -f"Courier" -s8 -c216 -v8 -x792 -y612 ../5_runup2/RUNUP2_files/CM-149.OUT > ../5_runup2/logs/CM-149_out.pdf
+text2pdf.win95.exe -f"Courier" -s10 -c216 -v10 -x612 -y792 ../1_input/logfiles/CM-149-1_log.txt > ../1_input/logfiles/CM-149-1_log.pdf
+text2pdf.win95.exe -f"Courier" -s10 -c216 -v10 -x612 -y792 ../2_swan/logfiles/CM-149-1_log.txt > ../2_swan/logfiles/CM-149-1_log.pdf
+text2pdf.win95.exe -f"Courier" -s8 -c216 -v8 -x612 -y792 ../2_swan/swanfiles/CM-149-1.prt > ../2_swan/logfiles/CM-149-1_1swanprint.pdf
+text2pdf.win95.exe -f"Courier" -s8 -c216 -v8 -x792 -y612  ../2_swan/swanfiles/CM-149-1.dat > ../2_swan/logfiles/CM-149-1_3swanout.pdf
+text2pdf.win95.exe -f"Courier" -s10 -c216 -v10 -x612 -y792 ../3_whafis/logfiles/CM-149-1_log.txt > ../3_whafis/logfiles/CM-149-1_log.pdf
+text2pdf.win95.exe -f"Courier" -s7 -c216 -v7 -x612 -y792 ../3_whafis/logfiles/CM-149-1_short.out > ../3_whafis/logfiles/CM-149-1_output.pdf
+text2pdf.win95.exe -f"Courier" -s10 -c216 -v10 -x612 -y792 ../4_taw/logfiles/CM-149-1_log.txt > ../4_taw/logfiles/CM-149-1_log.pdf
+text2pdf.win95.exe -f"Courier" -s8 -c216 -v8 -x612 -y792 ../4_taw/logfiles/CM-149-1-DIARY.txt > ../4_taw/logfiles/CM-149-1-DIARY.pdf
+text2pdf.win95.exe -f"Courier" -s10 -c216 -v10 -x612 -y792 ../5_runup2/logs/CM-149-1_log.txt > ../5_runup2/logs/CM-149-1_log.pdf
+text2pdf.win95.exe -f"Courier" -s8 -c216 -v8 -x612 -y792 ../5_runup2/RUNUP2_files/CM-149-1.in > ../5_runup2/logs/CM-149-1_in.pdf
+text2pdf.win95.exe -f"Courier" -s8 -c216 -v8 -x792 -y612 ../5_runup2/RUNUP2_files/CM-149-1.OUT > ../5_runup2/logs/CM-149-1_out.pdf
+text2pdf.win95.exe -f"Courier" -s10 -c216 -v10 -x612 -y792 ../1_input/logfiles/CM-150_log.txt > ../1_input/logfiles/CM-150_log.pdf
+text2pdf.win95.exe -f"Courier" -s10 -c216 -v10 -x612 -y792 ../2_swan/logfiles/CM-150_log.txt > ../2_swan/logfiles/CM-150_log.pdf
+text2pdf.win95.exe -f"Courier" -s8 -c216 -v8 -x612 -y792 ../2_swan/swanfiles/CM-150.prt > ../2_swan/logfiles/CM-150_1swanprint.pdf
+text2pdf.win95.exe -f"Courier" -s8 -c216 -v8 -x792 -y612  ../2_swan/swanfiles/CM-150.dat > ../2_swan/logfiles/CM-150_3swanout.pdf
+text2pdf.win95.exe -f"Courier" -s10 -c216 -v10 -x612 -y792 ../3_whafis/logfiles/CM-150_log.txt > ../3_whafis/logfiles/CM-150_log.pdf
+text2pdf.win95.exe -f"Courier" -s7 -c216 -v7 -x612 -y792 ../3_whafis/logfiles/CM-150_short.out > ../3_whafis/logfiles/CM-150_output.pdf
+text2pdf.win95.exe -f"Courier" -s10 -c216 -v10 -x612 -y792 ../4_taw/logfiles/CM-150_log.txt > ../4_taw/logfiles/CM-150_log.pdf
+text2pdf.win95.exe -f"Courier" -s8 -c216 -v8 -x612 -y792 ../4_taw/logfiles/CM-150-DIARY.txt > ../4_taw/logfiles/CM-150-DIARY.pdf
+text2pdf.win95.exe -f"Courier" -s10 -c216 -v10 -x612 -y792 ../5_runup2/logs/CM-150_log.txt > ../5_runup2/logs/CM-150_log.pdf
+text2pdf.win95.exe -f"Courier" -s8 -c216 -v8 -x612 -y792 ../5_runup2/RUNUP2_files/CM-150.in > ../5_runup2/logs/CM-150_in.pdf
+text2pdf.win95.exe -f"Courier" -s8 -c216 -v8 -x792 -y612 ../5_runup2/RUNUP2_files/CM-150.OUT > ../5_runup2/logs/CM-150_out.pdf
+text2pdf.win95.exe -f"Courier" -s10 -c216 -v10 -x612 -y792 ../1_input/logfiles/CM-151_log.txt > ../1_input/logfiles/CM-151_log.pdf
+text2pdf.win95.exe -f"Courier" -s10 -c216 -v10 -x612 -y792 ../2_swan/logfiles/CM-151_log.txt > ../2_swan/logfiles/CM-151_log.pdf
+text2pdf.win95.exe -f"Courier" -s8 -c216 -v8 -x612 -y792 ../2_swan/swanfiles/CM-151.prt > ../2_swan/logfiles/CM-151_1swanprint.pdf
+text2pdf.win95.exe -f"Courier" -s8 -c216 -v8 -x792 -y612  ../2_swan/swanfiles/CM-151.dat > ../2_swan/logfiles/CM-151_3swanout.pdf
+text2pdf.win95.exe -f"Courier" -s10 -c216 -v10 -x612 -y792 ../3_whafis/logfiles/CM-151_log.txt > ../3_whafis/logfiles/CM-151_log.pdf
+text2pdf.win95.exe -f"Courier" -s7 -c216 -v7 -x612 -y792 ../3_whafis/logfiles/CM-151_short.out > ../3_whafis/logfiles/CM-151_output.pdf
+text2pdf.win95.exe -f"Courier" -s10 -c216 -v10 -x612 -y792 ../4_taw/logfiles/CM-151_log.txt > ../4_taw/logfiles/CM-151_log.pdf
+text2pdf.win95.exe -f"Courier" -s8 -c216 -v8 -x612 -y792 ../4_taw/logfiles/CM-151-DIARY.txt > ../4_taw/logfiles/CM-151-DIARY.pdf
+text2pdf.win95.exe -f"Courier" -s10 -c216 -v10 -x612 -y792 ../5_runup2/logs/CM-151_log.txt > ../5_runup2/logs/CM-151_log.pdf
+text2pdf.win95.exe -f"Courier" -s8 -c216 -v8 -x612 -y792 ../5_runup2/RUNUP2_files/CM-151.in > ../5_runup2/logs/CM-151_in.pdf
+text2pdf.win95.exe -f"Courier" -s8 -c216 -v8 -x792 -y612 ../5_runup2/RUNUP2_files/CM-151.OUT > ../5_runup2/logs/CM-151_out.pdf
+text2pdf.win95.exe -f"Courier" -s10 -c216 -v10 -x612 -y792 ../1_input/logfiles/CM-150-1_log.txt > ../1_input/logfiles/CM-150-1_log.pdf
+text2pdf.win95.exe -f"Courier" -s10 -c216 -v10 -x612 -y792 ../2_swan/logfiles/CM-150-1_log.txt > ../2_swan/logfiles/CM-150-1_log.pdf
+text2pdf.win95.exe -f"Courier" -s8 -c216 -v8 -x612 -y792 ../2_swan/swanfiles/CM-150-1.prt > ../2_swan/logfiles/CM-150-1_1swanprint.pdf
+text2pdf.win95.exe -f"Courier" -s8 -c216 -v8 -x792 -y612  ../2_swan/swanfiles/CM-150-1.dat > ../2_swan/logfiles/CM-150-1_3swanout.pdf
+text2pdf.win95.exe -f"Courier" -s10 -c216 -v10 -x612 -y792 ../3_whafis/logfiles/CM-150-1_log.txt > ../3_whafis/logfiles/CM-150-1_log.pdf
+text2pdf.win95.exe -f"Courier" -s7 -c216 -v7 -x612 -y792 ../3_whafis/logfiles/CM-150-1_short.out > ../3_whafis/logfiles/CM-150-1_output.pdf
+text2pdf.win95.exe -f"Courier" -s10 -c216 -v10 -x612 -y792 ../4_taw/logfiles/CM-150-1_log.txt > ../4_taw/logfiles/CM-150-1_log.pdf
+text2pdf.win95.exe -f"Courier" -s8 -c216 -v8 -x612 -y792 ../4_taw/logfiles/CM-150-1-DIARY.txt > ../4_taw/logfiles/CM-150-1-DIARY.pdf
+text2pdf.win95.exe -f"Courier" -s10 -c216 -v10 -x612 -y792 ../5_runup2/logs/CM-150-1_log.txt > ../5_runup2/logs/CM-150-1_log.pdf
+text2pdf.win95.exe -f"Courier" -s8 -c216 -v8 -x612 -y792 ../5_runup2/RUNUP2_files/CM-150-1.in > ../5_runup2/logs/CM-150-1_in.pdf
+text2pdf.win95.exe -f"Courier" -s8 -c216 -v8 -x792 -y612 ../5_runup2/RUNUP2_files/CM-150-1.OUT > ../5_runup2/logs/CM-150-1_out.pdf
+text2pdf.win95.exe -f"Courier" -s10 -c216 -v10 -x612 -y792 ../1_input/logfiles/CM-150-2_log.txt > ../1_input/logfiles/CM-150-2_log.pdf
+text2pdf.win95.exe -f"Courier" -s10 -c216 -v10 -x612 -y792 ../2_swan/logfiles/CM-150-2_log.txt > ../2_swan/logfiles/CM-150-2_log.pdf
+text2pdf.win95.exe -f"Courier" -s8 -c216 -v8 -x612 -y792 ../2_swan/swanfiles/CM-150-2.prt > ../2_swan/logfiles/CM-150-2_1swanprint.pdf
+text2pdf.win95.exe -f"Courier" -s8 -c216 -v8 -x792 -y612  ../2_swan/swanfiles/CM-150-2.dat > ../2_swan/logfiles/CM-150-2_3swanout.pdf
+text2pdf.win95.exe -f"Courier" -s10 -c216 -v10 -x612 -y792 ../3_whafis/logfiles/CM-150-2_log.txt > ../3_whafis/logfiles/CM-150-2_log.pdf
+text2pdf.win95.exe -f"Courier" -s7 -c216 -v7 -x612 -y792 ../3_whafis/logfiles/CM-150-2_short.out > ../3_whafis/logfiles/CM-150-2_output.pdf
+text2pdf.win95.exe -f"Courier" -s10 -c216 -v10 -x612 -y792 ../4_taw/logfiles/CM-150-2_log.txt > ../4_taw/logfiles/CM-150-2_log.pdf
+text2pdf.win95.exe -f"Courier" -s8 -c216 -v8 -x612 -y792 ../4_taw/logfiles/CM-150-2-DIARY.txt > ../4_taw/logfiles/CM-150-2-DIARY.pdf
+text2pdf.win95.exe -f"Courier" -s10 -c216 -v10 -x612 -y792 ../5_runup2/logs/CM-150-2_log.txt > ../5_runup2/logs/CM-150-2_log.pdf
+text2pdf.win95.exe -f"Courier" -s8 -c216 -v8 -x612 -y792 ../5_runup2/RUNUP2_files/CM-150-2.in > ../5_runup2/logs/CM-150-2_in.pdf
+text2pdf.win95.exe -f"Courier" -s8 -c216 -v8 -x792 -y612 ../5_runup2/RUNUP2_files/CM-150-2.OUT > ../5_runup2/logs/CM-150-2_out.pdf
+text2pdf.win95.exe -f"Courier" -s10 -c216 -v10 -x612 -y792 ../1_input/logfiles/CM-151-1_log.txt > ../1_input/logfiles/CM-151-1_log.pdf
+text2pdf.win95.exe -f"Courier" -s10 -c216 -v10 -x612 -y792 ../2_swan/logfiles/CM-151-1_log.txt > ../2_swan/logfiles/CM-151-1_log.pdf
+text2pdf.win95.exe -f"Courier" -s8 -c216 -v8 -x612 -y792 ../2_swan/swanfiles/CM-151-1.prt > ../2_swan/logfiles/CM-151-1_1swanprint.pdf
+text2pdf.win95.exe -f"Courier" -s8 -c216 -v8 -x792 -y612  ../2_swan/swanfiles/CM-151-1.dat > ../2_swan/logfiles/CM-151-1_3swanout.pdf
+text2pdf.win95.exe -f"Courier" -s10 -c216 -v10 -x612 -y792 ../3_whafis/logfiles/CM-151-1_log.txt > ../3_whafis/logfiles/CM-151-1_log.pdf
+text2pdf.win95.exe -f"Courier" -s7 -c216 -v7 -x612 -y792 ../3_whafis/logfiles/CM-151-1_short.out > ../3_whafis/logfiles/CM-151-1_output.pdf
+text2pdf.win95.exe -f"Courier" -s10 -c216 -v10 -x612 -y792 ../4_taw/logfiles/CM-151-1_log.txt > ../4_taw/logfiles/CM-151-1_log.pdf
+text2pdf.win95.exe -f"Courier" -s8 -c216 -v8 -x612 -y792 ../4_taw/logfiles/CM-151-1-DIARY.txt > ../4_taw/logfiles/CM-151-1-DIARY.pdf
+text2pdf.win95.exe -f"Courier" -s10 -c216 -v10 -x612 -y792 ../5_runup2/logs/CM-151-1_log.txt > ../5_runup2/logs/CM-151-1_log.pdf
+text2pdf.win95.exe -f"Courier" -s8 -c216 -v8 -x612 -y792 ../5_runup2/RUNUP2_files/CM-151-1.in > ../5_runup2/logs/CM-151-1_in.pdf
+text2pdf.win95.exe -f"Courier" -s8 -c216 -v8 -x792 -y612 ../5_runup2/RUNUP2_files/CM-151-1.OUT > ../5_runup2/logs/CM-151-1_out.pdf
+text2pdf.win95.exe -f"Courier" -s10 -c216 -v10 -x612 -y792 ../1_input/logfiles/CM-158-1_log.txt > ../1_input/logfiles/CM-158-1_log.pdf
+text2pdf.win95.exe -f"Courier" -s10 -c216 -v10 -x612 -y792 ../2_swan/logfiles/CM-158-1_log.txt > ../2_swan/logfiles/CM-158-1_log.pdf
+text2pdf.win95.exe -f"Courier" -s8 -c216 -v8 -x612 -y792 ../2_swan/swanfiles/CM-158-1.prt > ../2_swan/logfiles/CM-158-1_1swanprint.pdf
+text2pdf.win95.exe -f"Courier" -s8 -c216 -v8 -x792 -y612  ../2_swan/swanfiles/CM-158-1.dat > ../2_swan/logfiles/CM-158-1_3swanout.pdf
+text2pdf.win95.exe -f"Courier" -s10 -c216 -v10 -x612 -y792 ../3_whafis/logfiles/CM-158-1_log.txt > ../3_whafis/logfiles/CM-158-1_log.pdf
+text2pdf.win95.exe -f"Courier" -s7 -c216 -v7 -x612 -y792 ../3_whafis/logfiles/CM-158-1_short.out > ../3_whafis/logfiles/CM-158-1_output.pdf
+text2pdf.win95.exe -f"Courier" -s10 -c216 -v10 -x612 -y792 ../4_taw/logfiles/CM-158-1_log.txt > ../4_taw/logfiles/CM-158-1_log.pdf
+text2pdf.win95.exe -f"Courier" -s8 -c216 -v8 -x612 -y792 ../4_taw/logfiles/CM-158-1-DIARY.txt > ../4_taw/logfiles/CM-158-1-DIARY.pdf
+text2pdf.win95.exe -f"Courier" -s10 -c216 -v10 -x612 -y792 ../5_runup2/logs/CM-158-1_log.txt > ../5_runup2/logs/CM-158-1_log.pdf
+text2pdf.win95.exe -f"Courier" -s8 -c216 -v8 -x612 -y792 ../5_runup2/RUNUP2_files/CM-158-1.in > ../5_runup2/logs/CM-158-1_in.pdf
+text2pdf.win95.exe -f"Courier" -s8 -c216 -v8 -x792 -y612 ../5_runup2/RUNUP2_files/CM-158-1.OUT > ../5_runup2/logs/CM-158-1_out.pdf
+text2pdf.win95.exe -f"Courier" -s10 -c216 -v10 -x612 -y792 ../1_input/logfiles/CM-159_log.txt > ../1_input/logfiles/CM-159_log.pdf
+text2pdf.win95.exe -f"Courier" -s10 -c216 -v10 -x612 -y792 ../2_swan/logfiles/CM-159_log.txt > ../2_swan/logfiles/CM-159_log.pdf
+text2pdf.win95.exe -f"Courier" -s8 -c216 -v8 -x612 -y792 ../2_swan/swanfiles/CM-159.prt > ../2_swan/logfiles/CM-159_1swanprint.pdf
+text2pdf.win95.exe -f"Courier" -s8 -c216 -v8 -x792 -y612  ../2_swan/swanfiles/CM-159.dat > ../2_swan/logfiles/CM-159_3swanout.pdf
+text2pdf.win95.exe -f"Courier" -s10 -c216 -v10 -x612 -y792 ../3_whafis/logfiles/CM-159_log.txt > ../3_whafis/logfiles/CM-159_log.pdf
+text2pdf.win95.exe -f"Courier" -s7 -c216 -v7 -x612 -y792 ../3_whafis/logfiles/CM-159_short.out > ../3_whafis/logfiles/CM-159_output.pdf
+text2pdf.win95.exe -f"Courier" -s10 -c216 -v10 -x612 -y792 ../4_taw/logfiles/CM-159_log.txt > ../4_taw/logfiles/CM-159_log.pdf
+text2pdf.win95.exe -f"Courier" -s8 -c216 -v8 -x612 -y792 ../4_taw/logfiles/CM-159-DIARY.txt > ../4_taw/logfiles/CM-159-DIARY.pdf
+text2pdf.win95.exe -f"Courier" -s10 -c216 -v10 -x612 -y792 ../5_runup2/logs/CM-159_log.txt > ../5_runup2/logs/CM-159_log.pdf
+text2pdf.win95.exe -f"Courier" -s8 -c216 -v8 -x612 -y792 ../5_runup2/RUNUP2_files/CM-159.in > ../5_runup2/logs/CM-159_in.pdf
+text2pdf.win95.exe -f"Courier" -s8 -c216 -v8 -x792 -y612 ../5_runup2/RUNUP2_files/CM-159.OUT > ../5_runup2/logs/CM-159_out.pdf
+text2pdf.win95.exe -f"Courier" -s10 -c216 -v10 -x612 -y792 ../1_input/logfiles/CM-159-1_log.txt > ../1_input/logfiles/CM-159-1_log.pdf
+text2pdf.win95.exe -f"Courier" -s10 -c216 -v10 -x612 -y792 ../2_swan/logfiles/CM-159-1_log.txt > ../2_swan/logfiles/CM-159-1_log.pdf
+text2pdf.win95.exe -f"Courier" -s8 -c216 -v8 -x612 -y792 ../2_swan/swanfiles/CM-159-1.prt > ../2_swan/logfiles/CM-159-1_1swanprint.pdf
+text2pdf.win95.exe -f"Courier" -s8 -c216 -v8 -x792 -y612  ../2_swan/swanfiles/CM-159-1.dat > ../2_swan/logfiles/CM-159-1_3swanout.pdf
+text2pdf.win95.exe -f"Courier" -s10 -c216 -v10 -x612 -y792 ../3_whafis/logfiles/CM-159-1_log.txt > ../3_whafis/logfiles/CM-159-1_log.pdf
+text2pdf.win95.exe -f"Courier" -s7 -c216 -v7 -x612 -y792 ../3_whafis/logfiles/CM-159-1_short.out > ../3_whafis/logfiles/CM-159-1_output.pdf
+text2pdf.win95.exe -f"Courier" -s10 -c216 -v10 -x612 -y792 ../4_taw/logfiles/CM-159-1_log.txt > ../4_taw/logfiles/CM-159-1_log.pdf
+text2pdf.win95.exe -f"Courier" -s8 -c216 -v8 -x612 -y792 ../4_taw/logfiles/CM-159-1-DIARY.txt > ../4_taw/logfiles/CM-159-1-DIARY.pdf
+text2pdf.win95.exe -f"Courier" -s10 -c216 -v10 -x612 -y792 ../5_runup2/logs/CM-159-1_log.txt > ../5_runup2/logs/CM-159-1_log.pdf
+text2pdf.win95.exe -f"Courier" -s8 -c216 -v8 -x612 -y792 ../5_runup2/RUNUP2_files/CM-159-1.in > ../5_runup2/logs/CM-159-1_in.pdf
+text2pdf.win95.exe -f"Courier" -s8 -c216 -v8 -x792 -y612 ../5_runup2/RUNUP2_files/CM-159-1.OUT > ../5_runup2/logs/CM-159-1_out.pdf
+text2pdf.win95.exe -f"Courier" -s10 -c216 -v10 -x612 -y792 ../1_input/logfiles/CM-161-1_log.txt > ../1_input/logfiles/CM-161-1_log.pdf
+text2pdf.win95.exe -f"Courier" -s10 -c216 -v10 -x612 -y792 ../2_swan/logfiles/CM-161-1_log.txt > ../2_swan/logfiles/CM-161-1_log.pdf
+text2pdf.win95.exe -f"Courier" -s8 -c216 -v8 -x612 -y792 ../2_swan/swanfiles/CM-161-1.prt > ../2_swan/logfiles/CM-161-1_1swanprint.pdf
+text2pdf.win95.exe -f"Courier" -s8 -c216 -v8 -x792 -y612  ../2_swan/swanfiles/CM-161-1.dat > ../2_swan/logfiles/CM-161-1_3swanout.pdf
+text2pdf.win95.exe -f"Courier" -s10 -c216 -v10 -x612 -y792 ../3_whafis/logfiles/CM-161-1_log.txt > ../3_whafis/logfiles/CM-161-1_log.pdf
+text2pdf.win95.exe -f"Courier" -s7 -c216 -v7 -x612 -y792 ../3_whafis/logfiles/CM-161-1_short.out > ../3_whafis/logfiles/CM-161-1_output.pdf
+text2pdf.win95.exe -f"Courier" -s10 -c216 -v10 -x612 -y792 ../4_taw/logfiles/CM-161-1_log.txt > ../4_taw/logfiles/CM-161-1_log.pdf
+text2pdf.win95.exe -f"Courier" -s8 -c216 -v8 -x612 -y792 ../4_taw/logfiles/CM-161-1-DIARY.txt > ../4_taw/logfiles/CM-161-1-DIARY.pdf
+text2pdf.win95.exe -f"Courier" -s10 -c216 -v10 -x612 -y792 ../5_runup2/logs/CM-161-1_log.txt > ../5_runup2/logs/CM-161-1_log.pdf
+text2pdf.win95.exe -f"Courier" -s8 -c216 -v8 -x612 -y792 ../5_runup2/RUNUP2_files/CM-161-1.in > ../5_runup2/logs/CM-161-1_in.pdf
+text2pdf.win95.exe -f"Courier" -s8 -c216 -v8 -x792 -y612 ../5_runup2/RUNUP2_files/CM-161-1.OUT > ../5_runup2/logs/CM-161-1_out.pdf

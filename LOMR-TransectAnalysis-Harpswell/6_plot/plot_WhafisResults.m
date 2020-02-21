@@ -4,7 +4,7 @@ clear all;
 %%%%%%%%%%%%%%%%%%   config   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 datafile='../data/transectdata.xls'; 
 tDIR='../ADCIRC_returns/'; %location of transects
-prefix='YK-';
+prefix='CM-';
 %%%%%%%%%%%%%%%%%%   end config   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 [num,txt,raw]=xlsread(datafile);
