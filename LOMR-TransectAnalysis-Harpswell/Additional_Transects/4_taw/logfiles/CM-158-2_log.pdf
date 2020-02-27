@@ -1,0 +1,96 @@
+%PDF-1.1
+1 0 obj
+<<
+/CreationDate (D:20200226134329)
+/Producer (text2pdf v1.1 (\251 Phil Smith, 1996))
+/Title (../4_taw/logfiles/CM-158-2_log.txt)
+>>
+endobj
+2 0 obj
+<<
+/Type /Catalog
+/Pages 3 0 R
+>>
+endobj
+4 0 obj
+<<
+/Type /Font
+/Subtype /Type1
+/Name /F1
+/BaseFont /Courier
+>>
+endobj
+5 0 obj
+<<
+  /Font << /F1 4 0 R >>
+  /ProcSet [ /PDF /Text ]
+>>
+endobj
+6 0 obj
+<<
+/Type /Page
+/Parent 3 0 R
+/Resources 5 0 R
+/Contents 7 0 R
+>>
+endobj
+7 0 obj
+<<
+/Length 8 0 R
+>>
+stream
+BT
+/F1 10 Tf
+1 0 0 1 50 752 Tm
+10 TL
+(_______________________________________________________)'
+(PART 4: TAW)'
+()'
+(Input Paramters:)'
+(    TWL- 8.8547 feet)'
+(    HS-  1.1951 feet)'
+(    PER- 1.6123 seconds)'
+(    TOE- x: -12.5 , z: -1.2842 feet)'
+(    TOP- x: 16.5 , z: 14.6555 feet)'
+(    GBERM-   1)'
+(    GGROUGH- 0.8)'
+(    GBETA-   1)'
+(    GPERM-   1)'
+()'
+(RUNNING TAW:)'
+(...)'
+(MATLAB DIARY: /4_taw/logfiles/CM-158-2-DIARY.txt)'
+()'
+(CHECKING VALIDITY: )'
+(...)'
+(TAW method is valid!)'
+(Using TAW runup to detemine runup elevation)'
+(TAW 2% runup: 12.0011 feet)'
+()'
+(PART 4 COMPLETE________________________________________)'
+()'
+ET
+endstream
+endobj
+8 0 obj
+676
+endobj
+3 0 obj
+<<
+/Type /Pages
+/Count 1
+/MediaBox [ 0 0 612 792 ]
+/Kids [ 6 0 R ]
+>>
+endobj
+xref
+0 9
+0000000000 65535 f 0000000010 00000 n 0000000165 00000 n 0000001228 00000 n 0000000220 00000 n 0000000306 00000 n 0000000383 00000 n 0000000471 00000 n 0000001206 00000 n trailer
+<<
+/Size 9
+/Root 2 0 R
+/Info 1 0 R
+>>
+startxref
+1321
+%%EOF

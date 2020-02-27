@@ -1,0 +1,24 @@
+_______________________________________________________
+PART 4: TAW
+
+Input Paramters:
+    TWL- 8.816 feet
+    HS-  1.833 feet
+    PER- 2.6668 seconds
+    TOE- x: -10 , z: -2.6436 feet
+    TOP- x: 32.5 , z: 11.9226 feet
+    GBERM-   1
+    GGROUGH- 0.6
+    GBETA-   1
+    GPERM-   1
+
+RUNNING TAW:
+...
+MATLAB DIARY: /4_taw/logfiles/CM-158-1-DIARY.txt
+
+CHECKING VALIDITY: 
+...
+TAW method is not valid!
+Runup elevation to be calculated using another method
+
+PART 4 COMPLETE________________________________________

@@ -1,0 +1,847 @@
+ WAVE HEIGHT COMPUTATIONS FOR FLOOD INSURANCE STUDIES (WHAFIS VERSION 4.0G, 08_2007)
+ Executed on: Wed Feb 26 13:21:30 2020
+ Input file:  C:\FEMA-TransectAnalysis\LOMR-TransectAnalysis-Harpswell\Additional_Transects\3_whafis\whafis4\CM-144-1.dat                     
+ Output file: C:\FEMA-TransectAnalysis\LOMR-TransectAnalysis-Harpswell\Additional_Transects\3_whafis\whafis4\CM-144-1.out                     
+                                                              header                                                                
+                                                     THIS IS A 100-YEAR CASE
+                                       THE FOLLOWING NON-DEFAULT WIND SPEEDS ARE BEING USED
+                                            WINDIF  56.14  WINDOF  56.14  WINDVH  60.00
+                                                             PART1 INPUT
+          IE      0.000    -15.740      1.000      1.000      8.804     11.111     10.000     56.140      0.069      0.000
+          OF      1.000    -15.671      0.000      8.804      0.000      0.000      0.000      0.000      0.069      0.000
+          OF      2.000    -15.602      0.000      8.804      0.000      0.000      0.000      0.000      0.069      0.000
+          OF      3.000    -15.533      0.000      8.804      0.000      0.000      0.000      0.000      0.069      0.000
+          OF      4.000    -15.464      0.000      8.804      0.000      0.000      0.000      0.000      0.069      0.000
+          OF      5.000    -15.395      0.000      8.804      0.000      0.000      0.000      0.000      0.069      0.000
+          OF      6.000    -15.326      0.000      8.804      0.000      0.000      0.000      0.000      0.068      0.000
+          OF      7.000    -15.258      0.000      8.804      0.000      0.000      0.000      0.000      0.068      0.000
+          OF      8.000    -15.189      0.000      8.804      0.000      0.000      0.000      0.000      0.069      0.000
+          OF      9.000    -15.120      0.000      8.804      0.000      0.000      0.000      0.000      0.109      0.000
+          OF     10.000    -14.970      0.000      8.805      0.000      0.000      0.000      0.000      0.176      0.000
+          OF     11.000    -14.767      0.000      8.806      0.000      0.000      0.000      0.000      0.203      0.000
+          OF     12.000    -14.564      0.000      8.807      0.000      0.000      0.000      0.000      0.203      0.000
+          OF     13.000    -14.362      0.000      8.808      0.000      0.000      0.000      0.000      0.203      0.000
+          OF     14.000    -14.159      0.000      8.809      0.000      0.000      0.000      0.000      0.203      0.000
+          OF     15.000    -13.956      0.000      8.810      0.000      0.000      0.000      0.000      0.203      0.000
+          OF     16.000    -13.753      0.000      8.811      0.000      0.000      0.000      0.000      0.203      0.000
+          OF     17.000    -13.550      0.000      8.812      0.000      0.000      0.000      0.000      0.203      0.000
+          OF     18.000    -13.348      0.000      8.813      0.000      0.000      0.000      0.000      0.203      0.000
+          OF     19.000    -13.144      0.000      8.814      0.000      0.000      0.000      0.000      0.203      0.000
+          OF     20.000    -12.942      0.000      8.815      0.000      0.000      0.000      0.000      0.203      0.000
+          OF     21.000    -12.739      0.000      8.816      0.000      0.000      0.000      0.000      0.203      0.000
+          OF     22.000    -12.536      0.000      8.817      0.000      0.000      0.000      0.000      0.203      0.000
+          OF     23.000    -12.333      0.000      8.818      0.000      0.000      0.000      0.000      0.203      0.000
+          OF     24.000    -12.131      0.000      8.818      0.000      0.000      0.000      0.000      0.203      0.000
+          OF     25.000    -11.928      0.000      8.819      0.000      0.000      0.000      0.000      0.203      0.000
+          OF     26.000    -11.725      0.000      8.821      0.000      0.000      0.000      0.000      0.203      0.000
+          OF     27.000    -11.522      0.000      8.821      0.000      0.000      0.000      0.000      0.203      0.000
+          OF     28.000    -11.319      0.000      8.822      0.000      0.000      0.000      0.000      0.203      0.000
+          OF     29.000    -11.117      0.000      8.823      0.000      0.000      0.000      0.000      0.203      0.000
+          OF     30.000    -10.914      0.000      8.824      0.000      0.000      0.000      0.000      0.203      0.000
+          OF     31.000    -10.711      0.000      8.825      0.000      0.000      0.000      0.000      0.203      0.000
+          OF     32.000    -10.508      0.000      8.826      0.000      0.000      0.000      0.000      0.203      0.000
+          OF     33.000    -10.305      0.000      8.827      0.000      0.000      0.000      0.000      0.203      0.000
+          OF     34.000    -10.103      0.000      8.828      0.000      0.000      0.000      0.000      0.203      0.000
+          OF     35.000     -9.900      0.000      8.829      0.000      0.000      0.000      0.000      0.203      0.000
+          OF     36.000     -9.697      0.000      8.830      0.000      0.000      0.000      0.000      0.203      0.000
+          OF     37.000     -9.495      0.000      8.831      0.000      0.000      0.000      0.000      0.203      0.000
+          OF     38.000     -9.292      0.000      8.832      0.000      0.000      0.000      0.000      0.203      0.000
+          OF     39.000     -9.089      0.000      8.833      0.000      0.000      0.000      0.000      0.203      0.000
+          OF     40.000     -8.886      0.000      8.834      0.000      0.000      0.000      0.000      0.203      0.000
+          OF     41.000     -8.683      0.000      8.835      0.000      0.000      0.000      0.000      0.203      0.000
+          OF     42.000     -8.481      0.000      8.836      0.000      0.000      0.000      0.000      0.203      0.000
+          OF     43.000     -8.277      0.000      8.837      0.000      0.000      0.000      0.000      0.203      0.000
+          OF     44.000     -8.075      0.000      8.838      0.000      0.000      0.000      0.000      0.203      0.000
+          OF     45.000     -7.872      0.000      8.839      0.000      0.000      0.000      0.000      0.203      0.000
+          OF     46.000     -7.669      0.000      8.840      0.000      0.000      0.000      0.000      0.203      0.000
+          OF     47.000     -7.466      0.000      8.841      0.000      0.000      0.000      0.000      0.203      0.000
+          OF     48.000     -7.264      0.000      8.842      0.000      0.000      0.000      0.000      0.203      0.000
+          OF     49.000     -7.061      0.000      8.842      0.000      0.000      0.000      0.000      0.203      0.000
+          OF     50.000     -6.858      0.000      8.844      0.000      0.000      0.000      0.000      0.203      0.000
+          OF     51.000     -6.655      0.000      8.844      0.000      0.000      0.000      0.000      0.203      0.000
+          OF     52.000     -6.452      0.000      8.845      0.000      0.000      0.000      0.000      0.203      0.000
+          OF     53.000     -6.250      0.000      8.846      0.000      0.000      0.000      0.000      0.203      0.000
+          OF     54.000     -6.046      0.000      8.847      0.000      0.000      0.000      0.000      0.203      0.000
+          OF     55.000     -5.844      0.000      8.848      0.000      0.000      0.000      0.000      0.203      0.000
+          OF     56.000     -5.641      0.000      8.849      0.000      0.000      0.000      0.000      0.203      0.000
+          OF     57.000     -5.438      0.000      8.850      0.000      0.000      0.000      0.000      0.203      0.000
+          OF     58.000     -5.235      0.000      8.851      0.000      0.000      0.000      0.000      0.203      0.000
+          OF     59.000     -5.032      0.000      8.852      0.000      0.000      0.000      0.000      0.203      0.000
+          OF     60.000     -4.830      0.000      8.853      0.000      0.000      0.000      0.000      0.203      0.000
+          OF     61.000     -4.627      0.000      8.854      0.000      0.000      0.000      0.000      0.203      0.000
+          OF     62.000     -4.424      0.000      8.855      0.000      0.000      0.000      0.000      0.203      0.000
+          OF     63.000     -4.221      0.000      8.856      0.000      0.000      0.000      0.000      0.203      0.000
+          OF     64.000     -4.019      0.000      8.857      0.000      0.000      0.000      0.000      0.203      0.000
+          OF     65.000     -3.816      0.000      8.858      0.000      0.000      0.000      0.000      0.203      0.000
+          OF     66.000     -3.613      0.000      8.859      0.000      0.000      0.000      0.000      0.203      0.000
+          OF     67.000     -3.410      0.000      8.860      0.000      0.000      0.000      0.000      0.203      0.000
+          OF     68.000     -3.207      0.000      8.861      0.000      0.000      0.000      0.000      0.203      0.000
+          OF     69.000     -3.005      0.000      8.862      0.000      0.000      0.000      0.000      0.203      0.000
+          OF     70.000     -2.801      0.000      8.863      0.000      0.000      0.000      0.000      0.203      0.000
+          OF     71.000     -2.599      0.000      8.864      0.000      0.000      0.000      0.000      0.203      0.000
+          OF     72.000     -2.396      0.000      8.865      0.000      0.000      0.000      0.000      0.203      0.000
+          OF     73.000     -2.193      0.000      8.866      0.000      0.000      0.000      0.000      0.203      0.000
+          OF     74.000     -1.990      0.000      8.866      0.000      0.000      0.000      0.000      0.206      0.000
+          OF     75.000     -1.782      0.000      8.868      0.000      0.000      0.000      0.000      0.208      0.000
+          OF     76.000     -1.574      0.000      8.869      0.000      0.000      0.000      0.000      0.208      0.000
+          OF     77.000     -1.365      0.000      8.870      0.000      0.000      0.000      0.000      0.208      0.000
+          OF     78.000     -1.157      0.000      8.872      0.000      0.000      0.000      0.000      0.208      0.000
+          OF     79.000     -0.949      0.000      8.873      0.000      0.000      0.000      0.000      0.208      0.000
+          OF     80.000     -0.740      0.000      8.874      0.000      0.000      0.000      0.000      0.208      0.000
+          OF     81.000     -0.532      0.000      8.876      0.000      0.000      0.000      0.000      0.208      0.000
+          OF     82.000     -0.324      0.000      8.877      0.000      0.000      0.000      0.000      0.208      0.000
+          OF     83.000     -0.115      0.000      8.878      0.000      0.000      0.000      0.000     -0.226      0.000
+          OF     91.900     -2.560      0.000      8.805      0.000      0.000      0.000      0.000     -0.205      0.000
+          OF     95.100     -2.593      0.000      8.811      0.000      0.000      0.000      0.000      0.061      0.000
+          OF     98.400     -2.162      0.000      8.810      0.000      0.000      0.000      0.000      0.131      0.000
+          OF    101.700     -1.732      0.000      8.810      0.000      0.000      0.000      0.000      0.131      0.000
+          OF    105.000     -1.301      0.000      8.811      0.000      0.000      0.000      0.000      0.131      0.000
+          OF    108.300     -0.870      0.000      8.813      0.000      0.000      0.000      0.000      0.180      0.000
+          OF    111.500     -0.131      0.000      8.812      0.000      0.000      0.000      0.000      0.281      0.000
+          IF    114.800      0.953      0.000      8.809      0.000      0.000      0.000      0.000      0.329      0.000
+          IF    118.100      2.038      0.000      8.812      0.000      0.000      0.000      0.000      0.329      0.000
+          IF    121.400      3.123      0.000      8.825      0.000      0.000      0.000      0.000      0.329      0.000
+          IF    124.700      4.207      0.000      8.845      0.000      0.000      0.000      0.000      0.329      0.000
+          IF    128.000      5.292      0.000      9.028      0.000      0.000      0.000      0.000      0.334      0.000
+          IF    131.200      6.377      0.000      9.303      0.000      0.000      0.000      0.000      0.309      0.000
+          IF    134.500      7.299      0.000      9.545      0.000      0.000      0.000      0.000      0.225      0.000
+          IF    137.800      7.858      0.000      9.698      0.000      0.000      0.000      0.000      0.169      0.000
+          IF    141.100      8.417      0.000      9.848      0.000      0.000      0.000      0.000      0.169      0.000
+          IF    144.400      8.976      0.000     10.002      0.000      0.000      0.000      0.000      0.172      0.000
+          IF    147.600      9.536      0.000     10.160      0.000      0.000      0.000      0.000      0.172      0.000
+          IF    150.900     10.095      0.000     10.324      0.000      0.000      0.000      0.000      0.168      0.000
+          IF    152.300     10.324      0.000     10.324      0.000      0.000      0.000      0.000      0.163      0.000
+          ET      0.000      0.000      0.000      0.000      0.000      0.000      0.000      0.000      0.000      0.000
+1
+            END        END      FETCH SURGE ELEV SURGE ELEV    INITIAL    INITIAL                BOTTOM    AVERAGE
+        STATION  ELEVATION     LENGTH    10-YEAR   100-YEAR WAVE HEIGHT  W. PERIOD                SLOPE    A-ZONES
+  IE      0.000    -15.740      1.000      1.000      8.804     11.111     10.000     56.140      0.069      0.000
+            END        END  NEW SURGE  NEW SURGE                                                 BOTTOM    AVERAGE
+        STATION  ELEVATION    10-YEAR   100-YEAR                                                  SLOPE    A-ZONES
+  OF      1.000    -15.671      0.000      8.804      0.000      0.000      0.000      0.000      0.069      0.000
+            END        END  NEW SURGE  NEW SURGE                                                 BOTTOM    AVERAGE
+        STATION  ELEVATION    10-YEAR   100-YEAR                                                  SLOPE    A-ZONES
+  OF      2.000    -15.602      0.000      8.804      0.000      0.000      0.000      0.000      0.069      0.000
+            END        END  NEW SURGE  NEW SURGE                                                 BOTTOM    AVERAGE
+        STATION  ELEVATION    10-YEAR   100-YEAR                                                  SLOPE    A-ZONES
+  OF      3.000    -15.533      0.000      8.804      0.000      0.000      0.000      0.000      0.069      0.000
+            END        END  NEW SURGE  NEW SURGE                                                 BOTTOM    AVERAGE
+        STATION  ELEVATION    10-YEAR   100-YEAR                                                  SLOPE    A-ZONES
+  OF      4.000    -15.464      0.000      8.804      0.000      0.000      0.000      0.000      0.069      0.000
+            END        END  NEW SURGE  NEW SURGE                                                 BOTTOM    AVERAGE
+        STATION  ELEVATION    10-YEAR   100-YEAR                                                  SLOPE    A-ZONES
+  OF      5.000    -15.395      0.000      8.804      0.000      0.000      0.000      0.000      0.069      0.000
+            END        END  NEW SURGE  NEW SURGE                                                 BOTTOM    AVERAGE
+        STATION  ELEVATION    10-YEAR   100-YEAR                                                  SLOPE    A-ZONES
+  OF      6.000    -15.326      0.000      8.804      0.000      0.000      0.000      0.000      0.068      0.000
+            END        END  NEW SURGE  NEW SURGE                                                 BOTTOM    AVERAGE
+        STATION  ELEVATION    10-YEAR   100-YEAR                                                  SLOPE    A-ZONES
+  OF      7.000    -15.258      0.000      8.804      0.000      0.000      0.000      0.000      0.068      0.000
+            END        END  NEW SURGE  NEW SURGE                                                 BOTTOM    AVERAGE
+        STATION  ELEVATION    10-YEAR   100-YEAR                                                  SLOPE    A-ZONES
+  OF      8.000    -15.189      0.000      8.804      0.000      0.000      0.000      0.000      0.069      0.000
+            END        END  NEW SURGE  NEW SURGE                                                 BOTTOM    AVERAGE
+        STATION  ELEVATION    10-YEAR   100-YEAR                                                  SLOPE    A-ZONES
+  OF      9.000    -15.120      0.000      8.804      0.000      0.000      0.000      0.000      0.109      0.000
+            END        END  NEW SURGE  NEW SURGE                                                 BOTTOM    AVERAGE
+        STATION  ELEVATION    10-YEAR   100-YEAR                                                  SLOPE    A-ZONES
+  OF     10.000    -14.970      0.000      8.805      0.000      0.000      0.000      0.000      0.176      0.000
+            END        END  NEW SURGE  NEW SURGE                                                 BOTTOM    AVERAGE
+        STATION  ELEVATION    10-YEAR   100-YEAR                                                  SLOPE    A-ZONES
+  OF     11.000    -14.767      0.000      8.806      0.000      0.000      0.000      0.000      0.203      0.000
+            END        END  NEW SURGE  NEW SURGE                                                 BOTTOM    AVERAGE
+        STATION  ELEVATION    10-YEAR   100-YEAR                                                  SLOPE    A-ZONES
+  OF     12.000    -14.564      0.000      8.807      0.000      0.000      0.000      0.000      0.203      0.000
+            END        END  NEW SURGE  NEW SURGE                                                 BOTTOM    AVERAGE
+        STATION  ELEVATION    10-YEAR   100-YEAR                                                  SLOPE    A-ZONES
+  OF     13.000    -14.362      0.000      8.808      0.000      0.000      0.000      0.000      0.203      0.000
+            END        END  NEW SURGE  NEW SURGE                                                 BOTTOM    AVERAGE
+        STATION  ELEVATION    10-YEAR   100-YEAR                                                  SLOPE    A-ZONES
+  OF     14.000    -14.159      0.000      8.809      0.000      0.000      0.000      0.000      0.203      0.000
+            END        END  NEW SURGE  NEW SURGE                                                 BOTTOM    AVERAGE
+        STATION  ELEVATION    10-YEAR   100-YEAR                                                  SLOPE    A-ZONES
+  OF     15.000    -13.956      0.000      8.810      0.000      0.000      0.000      0.000      0.203      0.000
+            END        END  NEW SURGE  NEW SURGE                                                 BOTTOM    AVERAGE
+        STATION  ELEVATION    10-YEAR   100-YEAR                                                  SLOPE    A-ZONES
+  OF     16.000    -13.753      0.000      8.811      0.000      0.000      0.000      0.000      0.203      0.000
+            END        END  NEW SURGE  NEW SURGE                                                 BOTTOM    AVERAGE
+        STATION  ELEVATION    10-YEAR   100-YEAR                                                  SLOPE    A-ZONES
+  OF     17.000    -13.550      0.000      8.812      0.000      0.000      0.000      0.000      0.203      0.000
+            END        END  NEW SURGE  NEW SURGE                                                 BOTTOM    AVERAGE
+        STATION  ELEVATION    10-YEAR   100-YEAR                                                  SLOPE    A-ZONES
+  OF     18.000    -13.348      0.000      8.813      0.000      0.000      0.000      0.000      0.203      0.000
+            END        END  NEW SURGE  NEW SURGE                                                 BOTTOM    AVERAGE
+        STATION  ELEVATION    10-YEAR   100-YEAR                                                  SLOPE    A-ZONES
+  OF     19.000    -13.144      0.000      8.814      0.000      0.000      0.000      0.000      0.203      0.000
+            END        END  NEW SURGE  NEW SURGE                                                 BOTTOM    AVERAGE
+        STATION  ELEVATION    10-YEAR   100-YEAR                                                  SLOPE    A-ZONES
+  OF     20.000    -12.942      0.000      8.815      0.000      0.000      0.000      0.000      0.203      0.000
+            END        END  NEW SURGE  NEW SURGE                                                 BOTTOM    AVERAGE
+        STATION  ELEVATION    10-YEAR   100-YEAR                                                  SLOPE    A-ZONES
+  OF     21.000    -12.739      0.000      8.816      0.000      0.000      0.000      0.000      0.203      0.000
+            END        END  NEW SURGE  NEW SURGE                                                 BOTTOM    AVERAGE
+        STATION  ELEVATION    10-YEAR   100-YEAR                                                  SLOPE    A-ZONES
+  OF     22.000    -12.536      0.000      8.817      0.000      0.000      0.000      0.000      0.203      0.000
+            END        END  NEW SURGE  NEW SURGE                                                 BOTTOM    AVERAGE
+        STATION  ELEVATION    10-YEAR   100-YEAR                                                  SLOPE    A-ZONES
+  OF     23.000    -12.333      0.000      8.818      0.000      0.000      0.000      0.000      0.203      0.000
+            END        END  NEW SURGE  NEW SURGE                                                 BOTTOM    AVERAGE
+        STATION  ELEVATION    10-YEAR   100-YEAR                                                  SLOPE    A-ZONES
+  OF     24.000    -12.131      0.000      8.818      0.000      0.000      0.000      0.000      0.203      0.000
+            END        END  NEW SURGE  NEW SURGE                                                 BOTTOM    AVERAGE
+        STATION  ELEVATION    10-YEAR   100-YEAR                                                  SLOPE    A-ZONES
+  OF     25.000    -11.928      0.000      8.819      0.000      0.000      0.000      0.000      0.203      0.000
+            END        END  NEW SURGE  NEW SURGE                                                 BOTTOM    AVERAGE
+        STATION  ELEVATION    10-YEAR   100-YEAR                                                  SLOPE    A-ZONES
+  OF     26.000    -11.725      0.000      8.821      0.000      0.000      0.000      0.000      0.203      0.000
+            END        END  NEW SURGE  NEW SURGE                                                 BOTTOM    AVERAGE
+        STATION  ELEVATION    10-YEAR   100-YEAR                                                  SLOPE    A-ZONES
+  OF     27.000    -11.522      0.000      8.821      0.000      0.000      0.000      0.000      0.203      0.000
+            END        END  NEW SURGE  NEW SURGE                                                 BOTTOM    AVERAGE
+        STATION  ELEVATION    10-YEAR   100-YEAR                                                  SLOPE    A-ZONES
+  OF     28.000    -11.319      0.000      8.822      0.000      0.000      0.000      0.000      0.203      0.000
+            END        END  NEW SURGE  NEW SURGE                                                 BOTTOM    AVERAGE
+        STATION  ELEVATION    10-YEAR   100-YEAR                                                  SLOPE    A-ZONES
+  OF     29.000    -11.117      0.000      8.823      0.000      0.000      0.000      0.000      0.203      0.000
+            END        END  NEW SURGE  NEW SURGE                                                 BOTTOM    AVERAGE
+        STATION  ELEVATION    10-YEAR   100-YEAR                                                  SLOPE    A-ZONES
+  OF     30.000    -10.914      0.000      8.824      0.000      0.000      0.000      0.000      0.203      0.000
+            END        END  NEW SURGE  NEW SURGE                                                 BOTTOM    AVERAGE
+        STATION  ELEVATION    10-YEAR   100-YEAR                                                  SLOPE    A-ZONES
+  OF     31.000    -10.711      0.000      8.825      0.000      0.000      0.000      0.000      0.203      0.000
+            END        END  NEW SURGE  NEW SURGE                                                 BOTTOM    AVERAGE
+        STATION  ELEVATION    10-YEAR   100-YEAR                                                  SLOPE    A-ZONES
+  OF     32.000    -10.508      0.000      8.826      0.000      0.000      0.000      0.000      0.203      0.000
+            END        END  NEW SURGE  NEW SURGE                                                 BOTTOM    AVERAGE
+        STATION  ELEVATION    10-YEAR   100-YEAR                                                  SLOPE    A-ZONES
+  OF     33.000    -10.305      0.000      8.827      0.000      0.000      0.000      0.000      0.203      0.000
+            END        END  NEW SURGE  NEW SURGE                                                 BOTTOM    AVERAGE
+        STATION  ELEVATION    10-YEAR   100-YEAR                                                  SLOPE    A-ZONES
+  OF     34.000    -10.103      0.000      8.828      0.000      0.000      0.000      0.000      0.203      0.000
+            END        END  NEW SURGE  NEW SURGE                                                 BOTTOM    AVERAGE
+        STATION  ELEVATION    10-YEAR   100-YEAR                                                  SLOPE    A-ZONES
+  OF     35.000     -9.900      0.000      8.829      0.000      0.000      0.000      0.000      0.203      0.000
+            END        END  NEW SURGE  NEW SURGE                                                 BOTTOM    AVERAGE
+        STATION  ELEVATION    10-YEAR   100-YEAR                                                  SLOPE    A-ZONES
+  OF     36.000     -9.697      0.000      8.830      0.000      0.000      0.000      0.000      0.203      0.000
+            END        END  NEW SURGE  NEW SURGE                                                 BOTTOM    AVERAGE
+        STATION  ELEVATION    10-YEAR   100-YEAR                                                  SLOPE    A-ZONES
+  OF     37.000     -9.495      0.000      8.831      0.000      0.000      0.000      0.000      0.203      0.000
+            END        END  NEW SURGE  NEW SURGE                                                 BOTTOM    AVERAGE
+        STATION  ELEVATION    10-YEAR   100-YEAR                                                  SLOPE    A-ZONES
+  OF     38.000     -9.292      0.000      8.832      0.000      0.000      0.000      0.000      0.203      0.000
+            END        END  NEW SURGE  NEW SURGE                                                 BOTTOM    AVERAGE
+        STATION  ELEVATION    10-YEAR   100-YEAR                                                  SLOPE    A-ZONES
+  OF     39.000     -9.089      0.000      8.833      0.000      0.000      0.000      0.000      0.203      0.000
+            END        END  NEW SURGE  NEW SURGE                                                 BOTTOM    AVERAGE
+        STATION  ELEVATION    10-YEAR   100-YEAR                                                  SLOPE    A-ZONES
+  OF     40.000     -8.886      0.000      8.834      0.000      0.000      0.000      0.000      0.203      0.000
+            END        END  NEW SURGE  NEW SURGE                                                 BOTTOM    AVERAGE
+        STATION  ELEVATION    10-YEAR   100-YEAR                                                  SLOPE    A-ZONES
+  OF     41.000     -8.683      0.000      8.835      0.000      0.000      0.000      0.000      0.203      0.000
+            END        END  NEW SURGE  NEW SURGE                                                 BOTTOM    AVERAGE
+        STATION  ELEVATION    10-YEAR   100-YEAR                                                  SLOPE    A-ZONES
+  OF     42.000     -8.481      0.000      8.836      0.000      0.000      0.000      0.000      0.203      0.000
+            END        END  NEW SURGE  NEW SURGE                                                 BOTTOM    AVERAGE
+        STATION  ELEVATION    10-YEAR   100-YEAR                                                  SLOPE    A-ZONES
+  OF     43.000     -8.277      0.000      8.837      0.000      0.000      0.000      0.000      0.203      0.000
+            END        END  NEW SURGE  NEW SURGE                                                 BOTTOM    AVERAGE
+        STATION  ELEVATION    10-YEAR   100-YEAR                                                  SLOPE    A-ZONES
+  OF     44.000     -8.075      0.000      8.838      0.000      0.000      0.000      0.000      0.203      0.000
+            END        END  NEW SURGE  NEW SURGE                                                 BOTTOM    AVERAGE
+        STATION  ELEVATION    10-YEAR   100-YEAR                                                  SLOPE    A-ZONES
+  OF     45.000     -7.872      0.000      8.839      0.000      0.000      0.000      0.000      0.203      0.000
+            END        END  NEW SURGE  NEW SURGE                                                 BOTTOM    AVERAGE
+        STATION  ELEVATION    10-YEAR   100-YEAR                                                  SLOPE    A-ZONES
+  OF     46.000     -7.669      0.000      8.840      0.000      0.000      0.000      0.000      0.203      0.000
+            END        END  NEW SURGE  NEW SURGE                                                 BOTTOM    AVERAGE
+        STATION  ELEVATION    10-YEAR   100-YEAR                                                  SLOPE    A-ZONES
+  OF     47.000     -7.466      0.000      8.841      0.000      0.000      0.000      0.000      0.203      0.000
+            END        END  NEW SURGE  NEW SURGE                                                 BOTTOM    AVERAGE
+        STATION  ELEVATION    10-YEAR   100-YEAR                                                  SLOPE    A-ZONES
+  OF     48.000     -7.264      0.000      8.842      0.000      0.000      0.000      0.000      0.203      0.000
+            END        END  NEW SURGE  NEW SURGE                                                 BOTTOM    AVERAGE
+        STATION  ELEVATION    10-YEAR   100-YEAR                                                  SLOPE    A-ZONES
+  OF     49.000     -7.061      0.000      8.842      0.000      0.000      0.000      0.000      0.203      0.000
+            END        END  NEW SURGE  NEW SURGE                                                 BOTTOM    AVERAGE
+        STATION  ELEVATION    10-YEAR   100-YEAR                                                  SLOPE    A-ZONES
+  OF     50.000     -6.858      0.000      8.844      0.000      0.000      0.000      0.000      0.203      0.000
+            END        END  NEW SURGE  NEW SURGE                                                 BOTTOM    AVERAGE
+        STATION  ELEVATION    10-YEAR   100-YEAR                                                  SLOPE    A-ZONES
+  OF     51.000     -6.655      0.000      8.844      0.000      0.000      0.000      0.000      0.203      0.000
+            END        END  NEW SURGE  NEW SURGE                                                 BOTTOM    AVERAGE
+        STATION  ELEVATION    10-YEAR   100-YEAR                                                  SLOPE    A-ZONES
+  OF     52.000     -6.452      0.000      8.845      0.000      0.000      0.000      0.000      0.203      0.000
+            END        END  NEW SURGE  NEW SURGE                                                 BOTTOM    AVERAGE
+        STATION  ELEVATION    10-YEAR   100-YEAR                                                  SLOPE    A-ZONES
+  OF     53.000     -6.250      0.000      8.846      0.000      0.000      0.000      0.000      0.203      0.000
+            END        END  NEW SURGE  NEW SURGE                                                 BOTTOM    AVERAGE
+        STATION  ELEVATION    10-YEAR   100-YEAR                                                  SLOPE    A-ZONES
+  OF     54.000     -6.046      0.000      8.847      0.000      0.000      0.000      0.000      0.203      0.000
+            END        END  NEW SURGE  NEW SURGE                                                 BOTTOM    AVERAGE
+        STATION  ELEVATION    10-YEAR   100-YEAR                                                  SLOPE    A-ZONES
+  OF     55.000     -5.844      0.000      8.848      0.000      0.000      0.000      0.000      0.203      0.000
+            END        END  NEW SURGE  NEW SURGE                                                 BOTTOM    AVERAGE
+        STATION  ELEVATION    10-YEAR   100-YEAR                                                  SLOPE    A-ZONES
+  OF     56.000     -5.641      0.000      8.849      0.000      0.000      0.000      0.000      0.203      0.000
+            END        END  NEW SURGE  NEW SURGE                                                 BOTTOM    AVERAGE
+        STATION  ELEVATION    10-YEAR   100-YEAR                                                  SLOPE    A-ZONES
+  OF     57.000     -5.438      0.000      8.850      0.000      0.000      0.000      0.000      0.203      0.000
+            END        END  NEW SURGE  NEW SURGE                                                 BOTTOM    AVERAGE
+        STATION  ELEVATION    10-YEAR   100-YEAR                                                  SLOPE    A-ZONES
+  OF     58.000     -5.235      0.000      8.851      0.000      0.000      0.000      0.000      0.203      0.000
+            END        END  NEW SURGE  NEW SURGE                                                 BOTTOM    AVERAGE
+        STATION  ELEVATION    10-YEAR   100-YEAR                                                  SLOPE    A-ZONES
+  OF     59.000     -5.032      0.000      8.852      0.000      0.000      0.000      0.000      0.203      0.000
+            END        END  NEW SURGE  NEW SURGE                                                 BOTTOM    AVERAGE
+        STATION  ELEVATION    10-YEAR   100-YEAR                                                  SLOPE    A-ZONES
+  OF     60.000     -4.830      0.000      8.853      0.000      0.000      0.000      0.000      0.203      0.000
+            END        END  NEW SURGE  NEW SURGE                                                 BOTTOM    AVERAGE
+        STATION  ELEVATION    10-YEAR   100-YEAR                                                  SLOPE    A-ZONES
+  OF     61.000     -4.627      0.000      8.854      0.000      0.000      0.000      0.000      0.203      0.000
+            END        END  NEW SURGE  NEW SURGE                                                 BOTTOM    AVERAGE
+        STATION  ELEVATION    10-YEAR   100-YEAR                                                  SLOPE    A-ZONES
+  OF     62.000     -4.424      0.000      8.855      0.000      0.000      0.000      0.000      0.203      0.000
+            END        END  NEW SURGE  NEW SURGE                                                 BOTTOM    AVERAGE
+        STATION  ELEVATION    10-YEAR   100-YEAR                                                  SLOPE    A-ZONES
+  OF     63.000     -4.221      0.000      8.856      0.000      0.000      0.000      0.000      0.203      0.000
+            END        END  NEW SURGE  NEW SURGE                                                 BOTTOM    AVERAGE
+        STATION  ELEVATION    10-YEAR   100-YEAR                                                  SLOPE    A-ZONES
+  OF     64.000     -4.019      0.000      8.857      0.000      0.000      0.000      0.000      0.203      0.000
+            END        END  NEW SURGE  NEW SURGE                                                 BOTTOM    AVERAGE
+        STATION  ELEVATION    10-YEAR   100-YEAR                                                  SLOPE    A-ZONES
+  OF     65.000     -3.816      0.000      8.858      0.000      0.000      0.000      0.000      0.203      0.000
+            END        END  NEW SURGE  NEW SURGE                                                 BOTTOM    AVERAGE
+        STATION  ELEVATION    10-YEAR   100-YEAR                                                  SLOPE    A-ZONES
+  OF     66.000     -3.613      0.000      8.859      0.000      0.000      0.000      0.000      0.203      0.000
+            END        END  NEW SURGE  NEW SURGE                                                 BOTTOM    AVERAGE
+        STATION  ELEVATION    10-YEAR   100-YEAR                                                  SLOPE    A-ZONES
+  OF     67.000     -3.410      0.000      8.860      0.000      0.000      0.000      0.000      0.203      0.000
+            END        END  NEW SURGE  NEW SURGE                                                 BOTTOM    AVERAGE
+        STATION  ELEVATION    10-YEAR   100-YEAR                                                  SLOPE    A-ZONES
+  OF     68.000     -3.207      0.000      8.861      0.000      0.000      0.000      0.000      0.203      0.000
+            END        END  NEW SURGE  NEW SURGE                                                 BOTTOM    AVERAGE
+        STATION  ELEVATION    10-YEAR   100-YEAR                                                  SLOPE    A-ZONES
+  OF     69.000     -3.005      0.000      8.862      0.000      0.000      0.000      0.000      0.203      0.000
+            END        END  NEW SURGE  NEW SURGE                                                 BOTTOM    AVERAGE
+        STATION  ELEVATION    10-YEAR   100-YEAR                                                  SLOPE    A-ZONES
+  OF     70.000     -2.801      0.000      8.863      0.000      0.000      0.000      0.000      0.203      0.000
+            END        END  NEW SURGE  NEW SURGE                                                 BOTTOM    AVERAGE
+        STATION  ELEVATION    10-YEAR   100-YEAR                                                  SLOPE    A-ZONES
+  OF     71.000     -2.599      0.000      8.864      0.000      0.000      0.000      0.000      0.203      0.000
+            END        END  NEW SURGE  NEW SURGE                                                 BOTTOM    AVERAGE
+        STATION  ELEVATION    10-YEAR   100-YEAR                                                  SLOPE    A-ZONES
+  OF     72.000     -2.396      0.000      8.865      0.000      0.000      0.000      0.000      0.203      0.000
+            END        END  NEW SURGE  NEW SURGE                                                 BOTTOM    AVERAGE
+        STATION  ELEVATION    10-YEAR   100-YEAR                                                  SLOPE    A-ZONES
+  OF     73.000     -2.193      0.000      8.866      0.000      0.000      0.000      0.000      0.203      0.000
+            END        END  NEW SURGE  NEW SURGE                                                 BOTTOM    AVERAGE
+        STATION  ELEVATION    10-YEAR   100-YEAR                                                  SLOPE    A-ZONES
+  OF     74.000     -1.990      0.000      8.866      0.000      0.000      0.000      0.000      0.206      0.000
+            END        END  NEW SURGE  NEW SURGE                                                 BOTTOM    AVERAGE
+        STATION  ELEVATION    10-YEAR   100-YEAR                                                  SLOPE    A-ZONES
+  OF     75.000     -1.782      0.000      8.868      0.000      0.000      0.000      0.000      0.208      0.000
+            END        END  NEW SURGE  NEW SURGE                                                 BOTTOM    AVERAGE
+        STATION  ELEVATION    10-YEAR   100-YEAR                                                  SLOPE    A-ZONES
+  OF     76.000     -1.574      0.000      8.869      0.000      0.000      0.000      0.000      0.208      0.000
+            END        END  NEW SURGE  NEW SURGE                                                 BOTTOM    AVERAGE
+        STATION  ELEVATION    10-YEAR   100-YEAR                                                  SLOPE    A-ZONES
+  OF     77.000     -1.365      0.000      8.870      0.000      0.000      0.000      0.000      0.208      0.000
+            END        END  NEW SURGE  NEW SURGE                                                 BOTTOM    AVERAGE
+        STATION  ELEVATION    10-YEAR   100-YEAR                                                  SLOPE    A-ZONES
+  OF     78.000     -1.157      0.000      8.872      0.000      0.000      0.000      0.000      0.208      0.000
+            END        END  NEW SURGE  NEW SURGE                                                 BOTTOM    AVERAGE
+        STATION  ELEVATION    10-YEAR   100-YEAR                                                  SLOPE    A-ZONES
+  OF     79.000     -0.949      0.000      8.873      0.000      0.000      0.000      0.000      0.208      0.000
+            END        END  NEW SURGE  NEW SURGE                                                 BOTTOM    AVERAGE
+        STATION  ELEVATION    10-YEAR   100-YEAR                                                  SLOPE    A-ZONES
+  OF     80.000     -0.740      0.000      8.874      0.000      0.000      0.000      0.000      0.208      0.000
+            END        END  NEW SURGE  NEW SURGE                                                 BOTTOM    AVERAGE
+        STATION  ELEVATION    10-YEAR   100-YEAR                                                  SLOPE    A-ZONES
+  OF     81.000     -0.532      0.000      8.876      0.000      0.000      0.000      0.000      0.208      0.000
+            END        END  NEW SURGE  NEW SURGE                                                 BOTTOM    AVERAGE
+        STATION  ELEVATION    10-YEAR   100-YEAR                                                  SLOPE    A-ZONES
+  OF     82.000     -0.324      0.000      8.877      0.000      0.000      0.000      0.000      0.208      0.000
+            END        END  NEW SURGE  NEW SURGE                                                 BOTTOM    AVERAGE
+        STATION  ELEVATION    10-YEAR   100-YEAR                                                  SLOPE    A-ZONES
+  OF     83.000     -0.115      0.000      8.878      0.000      0.000      0.000      0.000     -0.226      0.000
+            END        END  NEW SURGE  NEW SURGE                                                 BOTTOM    AVERAGE
+        STATION  ELEVATION    10-YEAR   100-YEAR                                                  SLOPE    A-ZONES
+  OF     91.900     -2.560      0.000      8.805      0.000      0.000      0.000      0.000     -0.205      0.000
+            END        END  NEW SURGE  NEW SURGE                                                 BOTTOM    AVERAGE
+        STATION  ELEVATION    10-YEAR   100-YEAR                                                  SLOPE    A-ZONES
+  OF     95.100     -2.593      0.000      8.811      0.000      0.000      0.000      0.000      0.061      0.000
+            END        END  NEW SURGE  NEW SURGE                                                 BOTTOM    AVERAGE
+        STATION  ELEVATION    10-YEAR   100-YEAR                                                  SLOPE    A-ZONES
+  OF     98.400     -2.162      0.000      8.810      0.000      0.000      0.000      0.000      0.131      0.000
+            END        END  NEW SURGE  NEW SURGE                                                 BOTTOM    AVERAGE
+        STATION  ELEVATION    10-YEAR   100-YEAR                                                  SLOPE    A-ZONES
+  OF    101.700     -1.732      0.000      8.810      0.000      0.000      0.000      0.000      0.131      0.000
+            END        END  NEW SURGE  NEW SURGE                                                 BOTTOM    AVERAGE
+        STATION  ELEVATION    10-YEAR   100-YEAR                                                  SLOPE    A-ZONES
+  OF    105.000     -1.301      0.000      8.811      0.000      0.000      0.000      0.000      0.131      0.000
+            END        END  NEW SURGE  NEW SURGE                                                 BOTTOM    AVERAGE
+        STATION  ELEVATION    10-YEAR   100-YEAR                                                  SLOPE    A-ZONES
+  OF    108.300     -0.870      0.000      8.813      0.000      0.000      0.000      0.000      0.180      0.000
+            END        END  NEW SURGE  NEW SURGE                                                 BOTTOM    AVERAGE
+        STATION  ELEVATION    10-YEAR   100-YEAR                                                  SLOPE    A-ZONES
+  OF    111.500     -0.131      0.000      8.812      0.000      0.000      0.000      0.000      0.281      0.000
+            END        END  NEW SURGE  NEW SURGE                                                 BOTTOM    AVERAGE
+        STATION  ELEVATION    10-YEAR   100-YEAR                                                  SLOPE    A-ZONES
+  IF    114.800      0.953      0.000      8.809      0.000      0.000      0.000      0.000      0.329      0.000
+            END        END  NEW SURGE  NEW SURGE                                                 BOTTOM    AVERAGE
+        STATION  ELEVATION    10-YEAR   100-YEAR                                                  SLOPE    A-ZONES
+  IF    118.100      2.038      0.000      8.812      0.000      0.000      0.000      0.000      0.329      0.000
+            END        END  NEW SURGE  NEW SURGE                                                 BOTTOM    AVERAGE
+        STATION  ELEVATION    10-YEAR   100-YEAR                                                  SLOPE    A-ZONES
+  IF    121.400      3.123      0.000      8.825      0.000      0.000      0.000      0.000      0.329      0.000
+            END        END  NEW SURGE  NEW SURGE                                                 BOTTOM    AVERAGE
+        STATION  ELEVATION    10-YEAR   100-YEAR                                                  SLOPE    A-ZONES
+  IF    124.700      4.207      0.000      8.845      0.000      0.000      0.000      0.000      0.329      0.000
+            END        END  NEW SURGE  NEW SURGE                                                 BOTTOM    AVERAGE
+        STATION  ELEVATION    10-YEAR   100-YEAR                                                  SLOPE    A-ZONES
+  IF    128.000      5.292      0.000      9.028      0.000      0.000      0.000      0.000      0.334      0.000
+            END        END  NEW SURGE  NEW SURGE                                                 BOTTOM    AVERAGE
+        STATION  ELEVATION    10-YEAR   100-YEAR                                                  SLOPE    A-ZONES
+  IF    131.200      6.377      0.000      9.303      0.000      0.000      0.000      0.000      0.309      0.000
+            END        END  NEW SURGE  NEW SURGE                                                 BOTTOM    AVERAGE
+        STATION  ELEVATION    10-YEAR   100-YEAR                                                  SLOPE    A-ZONES
+  IF    134.500      7.299      0.000      9.545      0.000      0.000      0.000      0.000      0.225      0.000
+            END        END  NEW SURGE  NEW SURGE                                                 BOTTOM    AVERAGE
+        STATION  ELEVATION    10-YEAR   100-YEAR                                                  SLOPE    A-ZONES
+  IF    137.800      7.858      0.000      9.698      0.000      0.000      0.000      0.000      0.169      0.000
+            END        END  NEW SURGE  NEW SURGE                                                 BOTTOM    AVERAGE
+        STATION  ELEVATION    10-YEAR   100-YEAR                                                  SLOPE    A-ZONES
+  IF    141.100      8.417      0.000      9.848      0.000      0.000      0.000      0.000      0.169      0.000
+            END        END  NEW SURGE  NEW SURGE                                                 BOTTOM    AVERAGE
+        STATION  ELEVATION    10-YEAR   100-YEAR                                                  SLOPE    A-ZONES
+  IF    144.400      8.976      0.000     10.002      0.000      0.000      0.000      0.000      0.172      0.000
+            END        END  NEW SURGE  NEW SURGE                                                 BOTTOM    AVERAGE
+        STATION  ELEVATION    10-YEAR   100-YEAR                                                  SLOPE    A-ZONES
+  IF    147.600      9.536      0.000     10.160      0.000      0.000      0.000      0.000      0.172      0.000
+            END        END  NEW SURGE  NEW SURGE                                                 BOTTOM    AVERAGE
+        STATION  ELEVATION    10-YEAR   100-YEAR                                                  SLOPE    A-ZONES
+  IF    150.900     10.095      0.000     10.324      0.000      0.000      0.000      0.000      0.168      0.000
+            END        END  NEW SURGE  NEW SURGE                                                 BOTTOM    AVERAGE
+        STATION  ELEVATION    10-YEAR   100-YEAR                                                  SLOPE    A-ZONES
+  IF    152.300     10.324      0.000     10.324      0.000      0.000      0.000      0.000      0.163      0.000
+  ------------------------------------------------END OF TRANSECT-------------------------------------------------
+  NOTE:
+  SURGE ELEVATION INCLUDES CONTRIBUTIONS FROM ASTRONOMICAL AND STORM TIDES.
+1
+                                                PART2: CONTROLLING WAVE HEIGHTS, SPECTRAL 
+                                                       PEAK WAVE PERIOD, AND WAVE CREST ELEVATIONS
+                                          LOCATION        CONTROLLING  SPECTRAL PEAK   WAVE CREST
+                                                          WAVE HEIGHT  WAVE PERIOD     ELEVATION 
+                                        IE       0.00        11.11        10.00        16.58
+                                        OF       1.00        11.12        10.00        16.59
+                                        OF       2.00        11.13        10.00        16.59
+                                        OF       3.00        11.14        10.00        16.60
+                                        OF       4.00        11.15        10.00        16.61
+                                        OF       5.00        11.15        10.00        16.61
+                                        OF       6.00        11.16        10.00        16.62
+                                        OF       7.00        11.17        10.00        16.62
+                                        OF       8.00        11.18        10.00        16.63
+                                        OF       9.00        11.19        10.00        16.64
+                                        OF      10.00        11.21        10.00        16.65
+                                        OF      11.00        11.24        10.00        16.67
+                                        OF      12.00        11.26        10.00        16.69
+                                        OF      13.00        11.29        10.00        16.71
+                                        OF      14.00        11.32        10.00        16.73
+                                        OF      15.00        11.35        10.00        16.75
+                                        OF      16.00        11.38        10.00        16.77
+                                        OF      17.00        11.41        10.00        16.80
+                                        OF      18.00        11.44        10.00        16.82
+                                        OF      19.00        11.47        10.00        16.84
+                                        OF      20.00        11.50        10.00        16.86
+                                        OF      21.00        11.53        10.00        16.89
+                                        OF      22.00        11.56        10.00        16.91
+                                        OF      23.00        11.59        10.00        16.93
+                                        OF      24.00        11.62        10.00        16.96
+                                        OF      25.00        11.66        10.00        16.98
+                                        OF      26.00        11.69        10.00        17.01
+                                        OF      27.00        11.73        10.00        17.03
+                                        OF      28.00        11.76        10.00        17.05
+                                        OF      29.00        11.80        10.00        17.08
+                                        OF      30.00        11.81        10.00        17.09
+                                        OF      31.00        11.79        10.00        17.08
+                                        OF      32.00        11.76        10.00        17.06
+                                        OF      33.00        11.74        10.00        17.04
+                                        OF      34.00        11.71        10.00        17.03
+                                        OF      35.00        11.68        10.00        17.01
+                                        OF      36.00        11.66        10.00        16.99
+                                        OF      37.00        11.63        10.00        16.97
+                                        OF      38.00        11.60        10.00        16.95
+                                        OF      39.00        11.57        10.00        16.93
+                                        OF      40.00        11.54        10.00        16.91
+                                        OF      41.00        11.51        10.00        16.89
+                                        OF      42.00        11.48        10.00        16.87
+                                        OF      43.00        11.44        10.00        16.85
+                                        OF      44.00        11.41        10.00        16.83
+                                        OF      45.00        11.38        10.00        16.80
+                                        OF      46.00        11.35        10.00        16.78
+                                        OF      47.00        11.31        10.00        16.76
+                                        OF      48.00        11.28        10.00        16.74
+                                        OF      49.00        11.24        10.00        16.71
+                                        OF      50.00        11.20        10.00        16.69
+                                        OF      51.00        11.17        10.00        16.66
+                                        OF      52.00        11.13        10.00        16.63
+                                        OF      53.00        11.16        10.00        16.66
+                                        OF      54.00        11.11        10.00        16.62
+                                        OF      55.00        10.96        10.00        16.52
+                                        OF      56.00        10.82        10.00        16.42
+                                        OF      57.00        10.67        10.00        16.32
+                                        OF      58.00        10.53        10.00        16.22
+                                        OF      59.00        10.38        10.00        16.12
+                                        OF      60.00        10.24        10.00        16.02
+                                        OF      61.00        10.09        10.00        15.92
+                                        OF      62.00         9.95        10.00        15.82
+                                        OF      63.00         9.80        10.00        15.72
+                                        OF      64.00         9.66        10.00        15.62
+                                        OF      65.00         9.51        10.00        15.52
+                                        OF      66.00         9.37        10.00        15.42
+                                        OF      67.00         9.22        10.00        15.32
+                                        OF      68.00         9.08        10.00        15.21
+                                        OF      69.00         8.93        10.00        15.11
+                                        OF      70.00         8.78        10.00        15.01
+                                        OF      71.00         8.64        10.00        14.91
+                                        OF      72.00         8.49        10.00        14.81
+                                        OF      73.00         8.34        10.00        14.71
+                                        OF      74.00         8.19        10.00        14.60
+                                        OF      75.00         8.04        10.00        14.50
+                                        OF      76.00         7.89        10.00        14.39
+                                        OF      77.00         7.74        10.00        14.29
+                                        OF      78.00         7.59        10.00        14.18
+                                        OF      79.00         7.44        10.00        14.08
+                                        OF      80.00         7.28        10.00        13.97
+                                        OF      81.00         7.13        10.00        13.87
+                                        OF      82.00         6.98        10.00        13.76
+                                        OF      83.00         6.83        10.00        13.66
+                                        OF      91.90         7.23        10.00        13.87
+                                        OF      95.10         7.24        10.00        13.88
+                                        OF      98.40         7.18        10.00        13.84
+                                        OF     101.70         7.11        10.00        13.79
+                                        OF     105.00         7.04        10.00        13.74
+                                        OF     108.30         6.97        10.00        13.69
+                                        OF     111.50         6.79        10.00        13.56
+                                        IF     114.80         5.98        10.00        13.00
+                                        IF     118.10         5.18        10.00        12.44
+                                        IF     121.40         4.37        10.00        11.88
+                                        IF     124.70         3.57        10.00        11.34
+                                        IF     128.00         2.88        10.00        11.04
+                                        IF     131.20         2.26        10.00        10.89
+                                        IF     134.50         1.74        10.00        10.76
+                                        IF     137.80         1.43        10.00        10.70
+                                        IF     141.10         1.11        10.00        10.63
+                                        IF     144.40         0.80        10.00        10.56
+                                        IF     147.60         0.49        10.00        10.50
+                                        IF     150.90         0.18        10.00        10.45
+                                        IF     152.30         0.01        10.00        10.33
+                                        PART3 LOCATION OF AREAS ABOVE 100-YEAR SURGE
+                                        NO AREAS ABOVE 100-YEAR SURGE IN THIS TRANSECT
+                                                  PART4 LOCATION OF SURGE CHANGES
+                                        STATION          10-YEAR SURGE          100-YEAR SURGE
+                                         10.00                 1.00                 8.81
+                                         11.00                 1.00                 8.81
+                                         12.00                 1.00                 8.81
+                                         13.00                 1.00                 8.81
+                                         14.00                 1.00                 8.81
+                                         15.00                 1.00                 8.81
+                                         16.00                 1.00                 8.81
+                                         17.00                 1.00                 8.81
+                                         18.00                 1.00                 8.81
+                                         19.00                 1.00                 8.81
+                                         20.00                 1.00                 8.81
+                                         21.00                 1.00                 8.82
+                                         22.00                 1.00                 8.82
+                                         23.00                 1.00                 8.82
+                                         25.00                 1.00                 8.82
+                                         26.00                 1.00                 8.82
+                                         28.00                 1.00                 8.82
+                                         29.00                 1.00                 8.82
+                                         30.00                 1.00                 8.82
+                                         31.00                 1.00                 8.82
+                                         32.00                 1.00                 8.83
+                                         33.00                 1.00                 8.83
+                                         34.00                 1.00                 8.83
+                                         35.00                 1.00                 8.83
+                                         36.00                 1.00                 8.83
+                                         37.00                 1.00                 8.83
+                                         38.00                 1.00                 8.83
+                                         39.00                 1.00                 8.83
+                                         40.00                 1.00                 8.83
+                                         41.00                 1.00                 8.84
+                                         42.00                 1.00                 8.84
+                                         43.00                 1.00                 8.84
+                                         44.00                 1.00                 8.84
+                                         45.00                 1.00                 8.84
+                                         46.00                 1.00                 8.84
+                                         47.00                 1.00                 8.84
+                                         48.00                 1.00                 8.84
+                                         50.00                 1.00                 8.84
+                                         52.00                 1.00                 8.85
+                                         53.00                 1.00                 8.85
+                                         54.00                 1.00                 8.85
+                                         55.00                 1.00                 8.85
+                                         56.00                 1.00                 8.85
+                                         57.00                 1.00                 8.85
+                                         58.00                 1.00                 8.85
+                                         59.00                 1.00                 8.85
+                                         60.00                 1.00                 8.85
+                                         61.00                 1.00                 8.85
+                                         62.00                 1.00                 8.85
+                                         63.00                 1.00                 8.86
+                                         64.00                 1.00                 8.86
+                                         65.00                 1.00                 8.86
+                                         66.00                 1.00                 8.86
+                                         67.00                 1.00                 8.86
+                                         68.00                 1.00                 8.86
+                                         69.00                 1.00                 8.86
+                                         70.00                 1.00                 8.86
+                                         71.00                 1.00                 8.86
+                                         72.00                 1.00                 8.86
+                                         73.00                 1.00                 8.87
+                                         75.00                 1.00                 8.87
+                                         76.00                 1.00                 8.87
+                                         77.00                 1.00                 8.87
+                                         78.00                 1.00                 8.87
+                                         79.00                 1.00                 8.87
+                                         80.00                 1.00                 8.87
+                                         81.00                 1.00                 8.88
+                                         82.00                 1.00                 8.88
+                                         83.00                 1.00                 8.88
+                                         91.90                 1.00                 8.81
+                                         95.10                 1.00                 8.81
+                                         98.40                 1.00                 8.81
+                                        105.00                 1.00                 8.81
+                                        108.30                 1.00                 8.81
+                                        111.50                 1.00                 8.81
+                                        114.80                 1.00                 8.81
+                                        118.10                 1.00                 8.81
+                                        121.40                 1.00                 8.82
+                                        124.70                 1.00                 8.85
+                                        128.00                 1.00                 9.03
+                                        131.20                 1.00                 9.30
+                                        134.50                 1.00                 9.55
+                                        137.80                 1.00                 9.70
+                                        141.10                 1.00                 9.85
+                                        144.40                 1.00                10.00
+                                        147.60                 1.00                10.16
+                                        150.90                 1.00                10.32
+                                                       PART5  LOCATION OF V ZONES
+                                             STATION OF GUTTER          LOCATION OF ZONE
+                                                      127.43               WINDWARD
+                                                   PART6 NUMBERED A ZONES AND V ZONES
+                                        STATION OF GUTTER  ELEVATION  ZONE DESIGNATION   FHF
+                                               0.00          16.58
+                                                                          V22  EL=17     120
+                                               9.00          16.64
+                                                                          V22  EL=17     120
+                                              10.00          16.65
+                                                                          V22  EL=17     120
+                                              11.00          16.67
+                                                                          V22  EL=17     120
+                                              12.00          16.69
+                                                                          V22  EL=17     120
+                                              13.00          16.71
+                                                                          V22  EL=17     120
+                                              14.00          16.73
+                                                                          V22  EL=17     120
+                                              15.00          16.75
+                                                                          V22  EL=17     120
+                                              16.00          16.77
+                                                                          V22  EL=17     120
+                                              17.00          16.80
+                                                                          V22  EL=17     120
+                                              18.00          16.82
+                                                                          V22  EL=17     120
+                                              19.00          16.84
+                                                                          V22  EL=17     120
+                                              20.00          16.86
+                                                                          V22  EL=17     120
+                                              21.00          16.89
+                                                                          V22  EL=17     120
+                                              22.00          16.91
+                                                                          V22  EL=17     120
+                                              23.00          16.93
+                                                                          V22  EL=17     120
+                                              24.00          16.96
+                                                                          V22  EL=17     120
+                                              25.00          16.98
+                                                                          V22  EL=17     120
+                                              26.00          17.01
+                                                                          V22  EL=17     120
+                                              27.00          17.03
+                                                                          V22  EL=17     120
+                                              28.00          17.05
+                                                                          V22  EL=17     120
+                                              29.00          17.08
+                                                                          V22  EL=17     120
+                                              30.00          17.09
+                                                                          V22  EL=17     120
+                                              31.00          17.08
+                                                                          V22  EL=17     120
+                                              32.00          17.06
+                                                                          V22  EL=17     120
+                                              33.00          17.04
+                                                                          V22  EL=17     120
+                                              34.00          17.03
+                                                                          V22  EL=17     120
+                                              35.00          17.01
+                                                                          V22  EL=17     120
+                                              36.00          16.99
+                                                                          V22  EL=17     120
+                                              37.00          16.97
+                                                                          V22  EL=17     120
+                                              38.00          16.95
+                                                                          V22  EL=17     120
+                                              39.00          16.93
+                                                                          V22  EL=17     120
+                                              40.00          16.91
+                                                                          V22  EL=17     120
+                                              41.00          16.89
+                                                                          V22  EL=17     120
+                                              42.00          16.87
+                                                                          V22  EL=17     120
+                                              43.00          16.85
+                                                                          V22  EL=17     120
+                                              44.00          16.83
+                                                                          V22  EL=17     120
+                                              45.00          16.80
+                                                                          V22  EL=17     120
+                                              46.00          16.78
+                                                                          V22  EL=17     120
+                                              47.00          16.76
+                                                                          V22  EL=17     120
+                                              48.00          16.74
+                                                                          V22  EL=17     120
+                                              49.00          16.71
+                                                                          V22  EL=17     120
+                                              50.00          16.69
+                                                                          V22  EL=17     120
+                                              51.00          16.66
+                                                                          V22  EL=17     120
+                                              52.00          16.63
+                                                                          V22  EL=17     120
+                                              53.00          16.66
+                                                                          V22  EL=17     120
+                                              54.00          16.62
+                                                                          V22  EL=17     120
+                                              55.00          16.52
+                                                                          V22  EL=17     120
+                                              55.21          16.50
+                                                                          V22  EL=16     120
+                                              56.00          16.42
+                                                                          V22  EL=16     120
+                                              57.00          16.32
+                                                                          V22  EL=16     120
+                                              58.00          16.22
+                                                                          V22  EL=16     120
+                                              59.00          16.12
+                                                                          V22  EL=16     120
+                                              60.00          16.02
+                                                                          V22  EL=16     120
+                                              61.00          15.92
+                                                                          V22  EL=16     120
+                                              62.00          15.82
+                                                                          V22  EL=16     120
+                                              63.00          15.72
+                                                                          V22  EL=16     120
+                                              64.00          15.62
+                                                                          V22  EL=16     120
+                                              65.00          15.52
+                                                                          V22  EL=16     120
+                                              65.17          15.50
+                                                                          V22  EL=15     120
+                                              66.00          15.42
+                                                                          V22  EL=15     120
+                                              67.00          15.32
+                                                                          V22  EL=15     120
+                                              68.00          15.21
+                                                                          V22  EL=15     120
+                                              69.00          15.11
+                                                                          V22  EL=15     120
+                                              70.00          15.01
+                                                                          V22  EL=15     120
+                                              71.00          14.91
+                                                                          V22  EL=15     120
+                                              72.00          14.81
+                                                                          V22  EL=15     120
+                                              73.00          14.71
+                                                                          V22  EL=15     120
+                                              74.00          14.60
+                                                                          V22  EL=15     120
+                                              74.98          14.50
+                                                                          V22  EL=14     120
+                                              75.00          14.50
+                                                                          V22  EL=14     120
+                                              76.00          14.39
+                                                                          V22  EL=14     120
+                                              77.00          14.29
+                                                                          V22  EL=14     120
+                                              78.00          14.18
+                                                                          V22  EL=14     120
+                                              79.00          14.08
+                                                                          V22  EL=14     120
+                                              80.00          13.97
+                                                                          V22  EL=14     120
+                                              81.00          13.87
+                                                                          V22  EL=14     120
+                                              82.00          13.76
+                                                                          V22  EL=14     120
+                                              83.00          13.66
+                                                                          V22  EL=14     120
+                                              91.90          13.87
+                                                                          V22  EL=14     120
+                                              95.10          13.88
+                                                                          V22  EL=14     120
+                                              98.40          13.84
+                                                                          V22  EL=14     120
+                                             101.70          13.79
+                                                                          V22  EL=14     120
+                                             105.00          13.74
+                                                                          V22  EL=14     120
+                                             108.30          13.69
+                                                                          V22  EL=14     120
+                                             111.50          13.56
+                                                                          V22  EL=14     120
+                                             111.87          13.50
+                                                                          V22  EL=13     120
+                                             114.80          13.00
+                                                                          V22  EL=13     120
+                                             117.72          12.50
+                                                                          V22  EL=12     120
+                                             118.10          12.44
+                                                                          V22  EL=12     120
+                                             121.40          11.88
+                                                                          V22  EL=12     120
+                                             123.74          11.50
+                                                                          V22  EL=11     120
+                                             124.70          11.34
+                                                                          V22  EL=11     120
+                                             127.43          11.04
+                                                                          A19  EL=11      95
+                                             128.00          11.04
+                                                                          A19  EL=11      95
+                                             131.20          10.89
+                                                                          A19  EL=11      95
+                                             134.50          10.76
+                                                                          A19  EL=11      95
+                                             137.80          10.70
+                                                                          A19  EL=11      95
+                                             141.10          10.63
+                                                                          A19  EL=11      95
+                                             144.40          10.56
+                                                                          A19  EL=11      95
+                                             147.60          10.50
+                                                                          A19  EL=11      95
+                                             147.60          10.50
+                                                                          A19  EL=10      95
+                                             150.90          10.45
+                                                                          A19  EL=10      95
+                                             152.30          10.33
+                                                  ZONE TERMINATED AT END OF TRANSECT
+                                                  PART 7   POSTSCRIPT NOTES
+                         PS#  1   START(422364.6654,4845890.3094)                                              
+                         PS#  2   END(422315.9586,4845909.2882)                                                
+-1.000000e+00

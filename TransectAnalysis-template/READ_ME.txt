@@ -1,4 +1,4 @@
-2017 FEMA Appeal: Transect-Based Analyses
+2017 FEMA Preliminary Map Revision: Transect-Based Analyses
 ___________________________________________________________________________
 
 
@@ -6,7 +6,7 @@ This document describes how to set up and run the transect based hydrodynamic
 analyses for the York and Cumberland County FEMA appeals, prepared by Scott 
 Hayward, Nathan Dill, and Tom Nielson of Ransom Conlsulting inc. 
 
-nld-20190912
+nld-20200220
 
 
 ___________________________________________________________________________
@@ -16,9 +16,9 @@ The data in the preliminary flood insurance study provided by FEMA were not
 consistent on a town-by-town basis. The most notable inconsistency being the 
 resolution and formatting of the provided 1-dimensional elevation profiles. 
 Before configuring or proceeding with any transect-based calculations the engineer
-should asses the provided profile, and determine whether the horizontal spatial 
+should assess the provided profile, and determine whether the horizontal spatial 
 reference is sufficient to be used for hydrodynamic analyses. The Directory titled
-'FEMA_transects' should contain all transects used for this appeal. 
+'FEMA_transects' should contain all transects for this analysis. 
 
 Here are the most common scenarios at this stage: 
 

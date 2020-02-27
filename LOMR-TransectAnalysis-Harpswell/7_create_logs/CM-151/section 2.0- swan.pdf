@@ -1,7 +1,7 @@
 %PDF-1.1
 1 0 obj
 <<
-/CreationDate (D:20200221103522)
+/CreationDate (D:20200226134438)
 /Producer (text2pdf v1.1 (\251 Phil Smith, 1996))
 /Title (../2_swan/logfiles/CM-151_log.txt)
 >>
@@ -59,9 +59,9 @@ BT
 ()'
 (SWAN maximum additional wave setup: 0.3738 feet)'
 (SWAN output at toe:)'
-(    SETUP- NaN feet)'
-(    HS-    NaN feet)'
-(    PER-   NaN seconds)'
+(    SETUP- 0.043986 feet)'
+(    HS-    2.9153 feet)'
+(    PER-   8.7643 seconds)'
 ()'
 (PART 2 COMPLETE________________________________________)'
 ()'
@@ -71,7 +71,7 @@ ET
 endstream
 endobj
 8 0 obj
-706
+717
 endobj
 3 0 obj
 <<
@@ -83,12 +83,12 @@ endobj
 endobj
 xref
 0 9
-0000000000 65535 f 0000000010 00000 n 0000000164 00000 n 0000001257 00000 n 0000000219 00000 n 0000000305 00000 n 0000000382 00000 n 0000000470 00000 n 0000001235 00000 n trailer
+0000000000 65535 f 0000000010 00000 n 0000000164 00000 n 0000001268 00000 n 0000000219 00000 n 0000000305 00000 n 0000000382 00000 n 0000000470 00000 n 0000001246 00000 n trailer
 <<
 /Size 9
 /Root 2 0 R
 /Info 1 0 R
 >>
 startxref
-1350
+1361
 %%EOF

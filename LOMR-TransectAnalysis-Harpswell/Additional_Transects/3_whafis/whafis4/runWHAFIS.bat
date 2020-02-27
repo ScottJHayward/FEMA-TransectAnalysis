@@ -1,0 +1,4 @@
+@ECHO OFF
+WHAFIS4.exe CM-144-1.dat CM-144-1.out
+WHAFIS4.exe CM-158-1.dat CM-158-1.out
+WHAFIS4.exe CM-158-2.dat CM-158-2.out

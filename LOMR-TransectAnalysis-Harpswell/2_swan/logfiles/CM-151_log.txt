@@ -14,9 +14,9 @@ Batch File: 2_swan/swanfiles/runswan.dat
 
 SWAN maximum additional wave setup: 0.3738 feet
 SWAN output at toe:
-    SETUP- -0.026024 feet
-    HS-    3.4963 feet
-    PER-   8.7174 seconds
+    SETUP- 0.043986 feet
+    HS-    2.9153 feet
+    PER-   8.7643 seconds
 
 PART 2 COMPLETE________________________________________
 

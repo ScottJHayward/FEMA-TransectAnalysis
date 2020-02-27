@@ -38,7 +38,7 @@ gbeta=num(:,16);
 gperm=num(:,17);
 
 % for i=[1:17 19:32 34:length(fnames)]
-for i=[18,33]
+for i=27
 
 fname=[tDIR fnames{i} 'XYZSTA_RETURNS.csv'];
 file=xlsread(fname);
@@ -50,7 +50,7 @@ end
 
 %add output to excel file
 % for i=[1:17 19:32 34:length(fnames)]
-for i=[18,33]
+for i=27
     
     %write a transect file for each run
     toesta=find(abs(sta{i}-toex(i))==min(abs(sta{i}-toex(i))));
@@ -93,7 +93,7 @@ end
 
 fid2=fopen(tawfilename,'w')
 % for i=[1:17 19:32 34:length(fnames)]
-for i=[18,33]
+for i=27
 for li=1:length(template)
     tawfile{li}=template{li}; %read each line of template
     tawfile{li}=strrep(tawfile{li},'$DIARYFILE$',['logfiles/' fnames{i} '-DIARY.txt']);
