@@ -13,7 +13,7 @@ end
 
 line=0;
 
-for i=[1:17 19:32 34:length(fnames)]
+for i=33
     clear line
     name=['logfiles/' fnames{i} '-DIARY.txt']
     fid=fopen(name,'r');
