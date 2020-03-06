@@ -1,0 +1,5 @@
+RUNUP2 YK-73.in YK-73.out
+RUNUP2 YK-74.in YK-74.out
+RUNUP2 YK-75.in YK-75.out
+RUNUP2 YK-76F.in YK-76F.out
+RUNUP2 YK-76.in YK-76.out

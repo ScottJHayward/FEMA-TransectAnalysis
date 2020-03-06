@@ -1,0 +1,7 @@
+_______________________________________________________
+PART 3: WHAFIS
+
+WHAFIS input:  YK-73.dat
+WHAFIS output: YK-73.out
+
+PART 3 COMPLETE________________________________________
