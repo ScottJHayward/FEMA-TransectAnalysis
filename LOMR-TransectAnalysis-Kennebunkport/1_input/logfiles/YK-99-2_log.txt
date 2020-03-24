@@ -1,0 +1,32 @@
+_______________________________________________________
+DATA LOG FOR TRANSECT ID: YK-99-2
+_______________________________________________________
+
+
+_______________________________________________________
+PART 1: USER INPUT
+
+
+SWAN 1-D / WHAFIS input
+_______________________
+station:    1402 ft
+LON:        -70.4318 deg E
+LAT:        43.3651 deg N
+Bottom ELEV:       -16.2385 ft-NAVD88
+TWL:        9.3261 ft-NAVD88
+HS:         4.4534 ft
+TP:         11.615 sec
+Wave Direction bin: 90 deg CCW from East (90 deg sector)
+Transect Direction:   70.417 deg CCW from East
+
+
+TAW/RUNUP input
+_______________
+toe sta:     1622.5 ft
+toe elev:    0.86286 ft-NAVD88
+top sta:     1675 ft
+top elev:    11.5584 ft-NAVD88
+*Wave and water level conditions at toe to be calculated in SWAN 1-D*
+
+PART 1 COMPLETE________________________________________
+

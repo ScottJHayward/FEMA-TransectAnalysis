@@ -1,0 +1,84 @@
+PROJECT '2018FemaAppeal' '1'
+   '100-year Wind and Wave conditions'
+! -- SET commands -----------------------------------------------------    
+ SET DEPMIN=0.01 MAXMES=999 MAXERR=3 PWTAIL=4
+ SET LEVEL 0
+ SET CARTESIAN
+! -- MODE commands ----------------------------------------------------
+ MODE STATIONARY ONED
+!-- COORDINATES commands-----------------------------------------------
+COORDINATES CART
+!
+!  --  computational (CGRID) grid commands --------------------------------------
+!                                    xlenc=length of grid in meters
+!  mxc = number of mesh cells (one less than number of grid points)
+!CGRID REGular [xpc]  [ypc]  [alpc]  [xlenc]   [ylenc]  [mxc]  [myc] & 
+!      [ CIRcle|SECtor[dir1] [dir2] ] [mdc] [flow] [fhigh] [msc]
+ CGRID REGULAR   0      0       0      147       0.   147     0    &
+        CIRCLE                          36    0.03    0.8     30
+! -- READgrid ---- not used in 1-D mode --------------------------------------
+! -- INPgrid commands  ----------------------------------------------------------
+!INPgrid BOTtom REGular [xpinp] [ypinp] [alpinp] [mxinp] [myinp] [dxinp] [dyinp] 
+!                                          
+ INPGRID BOTTOM REGULAR    0       0        0      147   0      1       1   
+!READinp BOTtom [fac]  'fname1'  [idla]  [nhedf]  [FREe|FORmat[form]|UNFormatted]
+ READ    BOTTOM   -1. '../gridfiles/YK-110zmeters_xmeters.grd'    1      0       FREE
+!--------------------------------------------------------------------------
+! -- WIND [vel] [dir]    
+WIND      25.1  0  
+! -- BOUnd SHAPespec 
+BOUND SHAPE JONSWAP 3.3  PEAK DSPR POWER
+! -- BOUndspec 
+! BOU SIDE W CCW CON FILE 'swanspec.txt' 1
+BOUN SIDE W CCW CONSTANT PAR   2.1659     15.2303     0  2
+!-- BOUndnest1  - optional for boundary from parent run
+!-- BOUndnest2
+!-- BOUndnest3
+!-- INITial -- usest to specify initial values
+!
+!---------------- P H Y S I C S -------------------------
+!-- GEN1 [cf10] [cf20] [cf30] [cf40] [edm1pm] [cdrag] [umin] [cfpm]
+!-- GEN2 [cf10] [cf20] [cf30] [cf40] [cf50] [cf60] [edm1pm] [cdrag] [umin] [cfpm]
+    GEN3 KOMEN
+!   whitecapping ( on by default)
+!-- WCAPping KOMen [cds2] [stpm] [powst] [delta] [powk]
+    WCAP KOM
+!   quadruplet wave interactions
+!-- QUADrupl [iquad] [lambda] [Cn14] [Csh1] [Csh2]
+! -- BREaking CONstant [alpha] [gamma]
+     BREAK    CON       1.      0.73
+!-- FRICtion JONswap CONstant [cfjon]
+    FRIC     JONSWAP CON       0.038
+!-- TRIad [itriad] [trfac] [cutfr]   [a]  [b]  [urcrit] [urslim]
+! TRIAD        1      0.65    2.5    0.95 -0.75  0.2       0.01
+  TRIAD
+!-- VEGEtation [height] [diamtr] [nstems] [drag]
+!-- MUD [layer] [rhom] [viscm]
+!- LIMiter [ursell] [qb] deactivates quadruplets with Ursell number exceeds ursell
+!-- OBSTacle -- not in 1-D
+!-- SETUP [supcor]
+   SETUP    0  
+!
+! ----------------- N U M E R I C S ------------------------------
+! 
+!-- PROP  can use BBST or GSE instead of default 
+! -- NUMeric -- lots of options
+!     NUM ACCUR npnts=100. stat 30
+     NUMeric STOPC   
+!
+! -------------------O U T P U T -------------------------------
+!
+!OUTPut OPTIons "comment' (TABLE [field]) (BLOck [ndec] [len]) (SPEC [ndec])
+ OUTPUT OPTIONS '%' TABLE 16 
+ $BLOCK 9 1000 SPEC 8
+!CURve 'sname' [xp1] [yp1] <[int]   [xp]   [yp] > 
+ CURVE 'curve' 0     0      147  147    0
+!TABLe 'sname' < HEADer|NOHEADer|INDexed > 'fname' <output parameters> (output time)
+ Table 'curve'   HEADER 'YK-110.dat' XP YP HSIGN TPS RTP TMM10 DIR &
+ DSPR DEPTH SETUP
+!QUANTITY XP hexp=99999
+!
+!----------------------------------------------
+COMPUTE STATIONARY
+STOP
+    

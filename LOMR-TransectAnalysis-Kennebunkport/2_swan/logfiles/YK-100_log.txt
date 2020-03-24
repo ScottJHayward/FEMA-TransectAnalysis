@@ -1,0 +1,23 @@
+_______________________________________________________
+PART 2: SWAN 1-D
+
+swan input grid name: 2_swan/gridfiles/YK-100zmeters_xmeters.grd
+swan file name:       2_swan/swanfiles/YK-100.swn
+swan output name:     2_swan/swanfiles/YK-100.dat
+
+Boundary Conditions:
+    TWL- 2.8408 meters
+    HS-  1.2221 meters
+    PER- 11.251 seconds
+
+Batch File: 2_swan/swanfiles/runswan.dat
+
+SWAN maximum additional wave setup: 0.77566 feet
+SWAN output at toe:
+    SETUP- -0.033077 feet
+    HS-    4.7158 feet
+    PER-   11.1241 seconds
+
+PART 2 COMPLETE________________________________________
+
+
