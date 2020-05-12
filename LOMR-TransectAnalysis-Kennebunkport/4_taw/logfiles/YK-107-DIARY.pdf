@@ -1,0 +1,5626 @@
+%PDF-1.1
+1 0 obj
+<<
+/CreationDate (D:20200413164742)
+/Producer (text2pdf v1.1 (\251 Phil Smith, 1996))
+/Title (../4_taw/logfiles/YK-107-DIARY.txt)
+>>
+endobj
+2 0 obj
+<<
+/Type /Catalog
+/Pages 3 0 R
+>>
+endobj
+4 0 obj
+<<
+/Type /Font
+/Subtype /Type1
+/Name /F1
+/BaseFont /Courier
+>>
+endobj
+5 0 obj
+<<
+  /Font << /F1 4 0 R >>
+  /ProcSet [ /PDF /Text ]
+>>
+endobj
+6 0 obj
+<<
+/Type /Page
+/Parent 3 0 R
+/Resources 5 0 R
+/Contents 7 0 R
+>>
+endobj
+7 0 obj
+<<
+/Length 8 0 R
+>>
+stream
+BT
+/F1 8 Tf
+1 0 0 1 50 752 Tm
+8 TL
+(diary on         % begin recording)'
+()'
+(% FEMA appeal for The Town of Kennebunkport, York county, Maine)'
+(% TRANSECT ID: YK-107)'
+(% calculation by SJH, Ransom Consulting, Inc. 02-Apr-2020)'
+(% 100-year wave runup using TAW methodology)'
+(% including berm and weighted average with foreshore if necessary)'
+(%)'
+(% chk nld 20200220)'
+(%)'
+(% This script assumes that the incident wave conditions provided)'
+(% as input in the configuration section below are the )'
+(% appropriate values located at the end of the foreshore)'
+(% or toe of the slope on which the run-up is being calculated)'
+(% the script does not attempt to apply a depth limit or any other)'
+(% transformation to the incident wave conditions other than )'
+(% conversion of the peak wave period to the spectral mean wave )'
+(% as recommended in the references below)'
+(% )'
+(% references:)'
+(%)'
+(% Van der Meer, J.W., 2002. Technical Report Wave Run-up and )'
+(% Wave Overtopping at Dikes. TAW Technical Advisory Committee on)'
+(% Flood Defence, The Netherlands.)'
+(%)'
+(% FEMA. 2007,  Atlantic Ocean and Gulf of Mexico Coastal Guidelines Update)'
+(%)'
+(% )'
+(%)'
+()'
+(%--------------------------------------------------------------------------)'
+(% CONFIG)'
+(%--------------------------------------------------------------------------)'
+(fname='inpfiles/YK-107sta_ele_include.csv';   % file with station, elevation, include)'
+(                                      % third colunm is 0 for excluded points)'
+(imgname='logfiles/YK-107-runup';                            )'
+(SWEL=9.3596;  % 100-yr still water level including wave setup. )'
+(H0=5.7654;    % significant wave height at toe of structure )'
+(Tp=13.2478;    % peak period, 1/fma, )'
+(T0=Tp/1.1;   )'
+()'
+(gamma_berm=0.70525;   % this may get changed automatically below)'
+(gamma_rough=0.6;  )'
+(gamma_beta=1;  )'
+(gamma_perm=1;)'
+()'
+(setupAtToe=-0.0031758; )'
+(maxSetup=0.61291;   % only used in case of berm/shallow foreshore weighted average )'
+()'
+(plotTitle='Iterative TAW for YK-107')'
+()'
+(plotTitle =)'
+()'
+(Iterative TAW for YK-107)'
+()'
+()'
+()'
+(% END CONFIG)'
+(%-------------------------------)'
+()'
+(SWEL=SWEL+setupAtToe  )'
+()'
+(SWEL =)'
+()'
+(                 9.3564242)'
+()'
+(SWEL_fore=SWEL+maxSetup)'
+()'
+(SWEL_fore =)'
+()'
+(                 9.9693342)'
+()'
+()'
+()'
+(% FIND WAVELENGTH USING DEEPWATER DISPERSION RELATION)'
+(% using English units)'
+(L0=32.15/\(2*pi\)*T0^2)'
+()'
+(L0 =)'
+()'
+(          742.169776643312)'
+()'
+()'
+(% Find Hb \(Munk, 1949\))'
+(%Hb=H0/\(3.3*\(H0/L0\)^\(1/3\)\) )'
+(%Db=-Hb/.78+SWEL;  % depth at breaking)'
+()'
+(% The toe elevation here is only used to determine the average )'
+(% structure slope, it is not used to depth limit the wave height.)'
+(% Any depth limiting or other modification of the wave height )'
+ET
+endstream
+endobj
+8 0 obj
+2921
+endobj
+9 0 obj
+<<
+/Type /Page
+/Parent 3 0 R
+/Resources 5 0 R
+/Contents 10 0 R
+>>
+endobj
+10 0 obj
+<<
+/Length 11 0 R
+>>
+stream
+BT
+/F1 8 Tf
+1 0 0 1 50 752 Tm
+8 TL
+(% to make it consitent with TAW guidance should be performed )'
+(% prior to the input of the significant wave height given above. )'
+(Ztoe=SWEL-1.5*H0)'
+()'
+(Ztoe =)'
+()'
+(         0.708324200000002)'
+()'
+()'
+(% read the transect)'
+([sta,dep,inc] = textread\(fname,'%n%n%n%*[^\\n]','delimiter',',','headerlines',0\);)'
+()'
+(% remove unselected points)'
+(k=find\(inc==0\);)'
+(sta\(k\)=[];)'
+(dep\(k\)=[];)'
+()'
+(sta_org=sta;  % used for plotting purposes)'
+(dep_org=dep;)'
+()'
+()'
+(% initial guess at maximum run-up elevation to estimate slope)'
+(Z2=SWEL+1.5*H0)'
+()'
+(Z2 =)'
+()'
+(                18.0045242)'
+()'
+()'
+(% determine station at the max runup and -1.5*H0 \(i.e. the toe\))'
+(top_sta=-999;)'
+(toe_sta=-999;)'
+(for kk=1:length\(sta\)-1)'
+(    if \(\(Z2 > dep\(kk\)\) & \(Z2 <= dep\(kk+1\)\)\)    % here is the intersection of z2 with profile)'
+(       top_sta=interp1\(dep\(kk:kk+1\),sta\(kk:kk+1\),Z2\))'
+(    end)'
+(    if  \(\(Ztoe > dep\(kk\)\) & \(Ztoe <= dep\(kk+1\)\)\)    % here is the intersection of Ztoe with profile)'
+(       toe_sta=interp1\(dep\(kk:kk+1\),sta\(kk:kk+1\),Ztoe\))'
+(    end)'
+(end)'
+(% check to make sure we got them, if not extend the end slopes outward)'
+(S=diff\(dep\)./diff\(sta\);)'
+(if toe_sta==-999)'
+(   dy=dep\(1\)-Ztoe;)'
+(   toe_sta=sta\(1\)-dy/S\(1\))'
+(end)'
+()'
+(toe_sta =)'
+()'
+(         -9.28910224942969)'
+()'
+(if top_sta==-999)'
+(   dy=Z2-dep\(end\);)'
+(   top_sta=sta\(end\)+dy/S\(end\))'
+(end)'
+()'
+(top_sta =)'
+()'
+(          244.624605765617)'
+()'
+()'
+(% just so the reader can tell the values aren't -999 anymore)'
+(top_sta)'
+()'
+(top_sta =)'
+()'
+(          244.624605765617)'
+()'
+(toe_sta)'
+()'
+(toe_sta =)'
+()'
+(         -9.28910224942969)'
+()'
+()'
+()'
+()'
+(% check for case where the toe of slope is below SWL-1.5*H0)'
+(% in this case interpolate setup from the setupAtToe\(really setup as first station\), and the max setup)'
+(% also un-include points seaward of SWL-1.5*H0)'
+(if Ztoe > dep\(1\))'
+(   dd=SWEL_fore-dep;)'
+(   k=find\(dd<0,1\); % k is index of first land point)'
+(   staAtSWL=interp1\(dep\(k-1:k\),sta\(k-1:k\),SWEL_fore\);   )'
+(   dsta=staAtSWL-sta\(1\);)'
+(   dsetup=maxSetup-setupAtToe;)'
+(   dsetdsta=dsetup/dsta;)'
+(   setup=setupAtToe+dsetdsta*\(toe_sta-sta\(1\)\);)'
+(   sprintf\('-!!- Location of SWEL-1.5*H0 is %4.1f ft landward of toe of slope',dsta\))'
+(   sprintf\('-!!- Setup is interpolated between setup at toe of slope and max setup'\))'
+ET
+endstream
+endobj
+11 0 obj
+2571
+endobj
+12 0 obj
+<<
+/Type /Page
+/Parent 3 0 R
+/Resources 5 0 R
+/Contents 13 0 R
+>>
+endobj
+13 0 obj
+<<
+/Length 14 0 R
+>>
+stream
+BT
+/F1 8 Tf
+1 0 0 1 50 752 Tm
+8 TL
+(   sprintf\('-!!-       setup is adjusted to %4.2f feet',setup\))'
+(   SWEL=SWEL-setupAtToe+setup;)'
+(   sprintf\('-!!-       SWEL is adjusted to %4.2f feet',SWEL\))'
+(   k=find\(dep < SWEL-1.5*H0\))'
+(   sta\(k\)=[];)'
+(   dep\(k\)=[];)'
+(else)'
+(   sprintf\('-!!- The User has selected a starting point that is %4.2f feet above the elevation of SWEL-1.5H0\\n',dep\(1\)-Ztoe\))'
+(   sprintf\('-!!- This may be reasonable for some cases.  However the user may want to consider:\\n'\))'
+(   sprintf\('-!!-   1\) Selecting a starting point that is at or below %4.2f feet elevation, or\\n', Ztoe\))'
+(   sprintf\('-!!-   2\) Reducing the incident wave height to a depth limited condition.\\n'\))'
+(end)'
+()'
+(ans =)'
+()'
+(-!!- The User has selected a starting point that is 0.64 feet above the elevation of SWEL-1.5H0)'
+()'
+()'
+()'
+(ans =)'
+()'
+(-!!- This may be reasonable for some cases.  However the user may want to consider:)'
+()'
+()'
+()'
+(ans =)'
+()'
+(-!!-   1\) Selecting a starting point that is at or below 0.71 feet elevation, or)'
+()'
+()'
+()'
+(ans =)'
+()'
+(-!!-   2\) Reducing the incident wave height to a depth limited condition.)'
+()'
+()'
+()'
+()'
+()'
+(% now iterate converge on a runup elevation)'
+(tol=0.01;  % convergence criteria)'
+(R2del=999;)'
+(R2_new=3*H0; %initial guess)'
+(R2=R2_new;)'
+(iter=0;)'
+(R2_all=[];)'
+(topStaAll=[];)'
+(Berm_Segs=[];)'
+(TAW_ALWAYS_VALID=1;)'
+(while\(abs\(R2del\) > tol && iter <= 25\))'
+(    iter=iter+1;)'
+(    sprintf \('!----------------- STARTING ITERATION %d -----------------!',iter\))'
+(    % elevation of toe of slope)'
+(    Ztoe)'
+(    % station of toe slope \(relative to 0-NAVD88 shoreline)'
+(    toe_sta )'
+(    % station of top of slope/extent of 2% run-up)'
+(    top_sta)'
+(    % elevation of top of slope/extent of 2% run-up)'
+(    Z2)'
+(    % incident significant wave height)'
+(    H0)'
+(    % incident spectral peak wave period)'
+(    Tp)'
+(    % incident spectral mean wave period)'
+(    T0)'
+(        )'
+(    R2=R2_new  )'
+(    Z2=R2+SWEL)'
+(    % determine slope for this iteration)'
+(    top_sta=-999;)'
+(    for kk=1:length\(sta\)-1)'
+(       if \(\(Z2 > dep\(kk\)\) & \(Z2 <= dep\(kk+1\)\)\)    % here is the intersection of z2 with profile)'
+(          top_sta=interp1\(dep\(kk:kk+1\),sta\(kk:kk+1\),Z2\))'
+(          break;)'
+(       end)'
+(    end)'
+(    if top_sta==-999)'
+(       dy=Z2-dep\(end\);)'
+(       top_sta=sta\(end\)+dy/S\(end\))'
+(    end)'
+(    )'
+(    % get the length of the slope \(not accounting for berm\))'
+(    Lslope=top_sta-toe_sta)'
+()'
+(    % loop over profile segments to determine berm factor )'
+(    % re-calculate influence of depth of berm based on this run-up elevation)'
+(    % check for berm, berm width, berm height)'
+(    berm_width=0;)'
+(    rdh_sum=0;)'
+ET
+endstream
+endobj
+14 0 obj
+2897
+endobj
+15 0 obj
+<<
+/Type /Page
+/Parent 3 0 R
+/Resources 5 0 R
+/Contents 16 0 R
+>>
+endobj
+16 0 obj
+<<
+/Length 17 0 R
+>>
+stream
+BT
+/F1 8 Tf
+1 0 0 1 50 752 Tm
+8 TL
+(    Berm_Segs=[];)'
+(    Berm_Heights=[];)'
+(    for kk=1:length\(sta\)-1)'
+(       ddep=dep\(kk+1\)-dep\(kk\);)'
+(       dsta=sta\(kk+1\)-sta\(kk\);)'
+(       s=ddep/dsta;)'
+(       if  \(s < 1/15\)     % count it as a berm if slope is flatter than 1:15 \(see TAW manual\))'
+(          sprintf \('Berm Factor Calculation: Iteration %d, Profile Segment: %d',iter,kk\) )'
+(          berm_width=berm_width+dsta;   % tally the width of all berm segments)'
+(          % compute the rdh for this segment and weight it by the segment length)'
+(          dh=SWEL-\(dep\(kk\)+dep\(kk+1\)\)/2  )'
+(          if  dh < 0)'
+(              chi=R2;)'
+(          else )'
+(              chi=2* H0;)'
+(          end)'
+(          if \(dh <= R2 & dh >=-2*H0\))'
+(             rdh=\(0.5-0.5*cos\(3.14159*dh/chi\)\) ;)'
+(          else)'
+(             rdh=1;)'
+(          end)'
+(          rdh_sum=rdh_sum + rdh * dsta)'
+(          Berm_Segs=[Berm_Segs, kk];)'
+(          Berm_Heights=[Berm_Heights, \(dep\(kk\)+dep\(kk+1\)\)/2];)'
+(       end)'
+(       if dep\(kk\) >= Z2  % jump out of loop if we reached limit of run-up for this iteration )'
+(          break)'
+(       end)'
+(    end)'
+(    sprintf \('!------- End Berm Factor Calculation, Iter: %d ---------!',iter\))'
+(    berm_width)'
+(    rB=berm_width/Lslope )'
+(    if \(berm_width > 0\))'
+(       rdh_mean=rdh_sum/berm_width)'
+(    else)'
+(       rdh_mean=1)'
+(    end)'
+(    gamma_berm=1- rB * \(1-rdh_mean\))'
+(    if gamma_berm > 1)'
+(       gamma_berm=1)'
+(    end)'
+(    if gamma_berm < 0.6)'
+(       gamma_berm =0.6)'
+(    end)'
+(    % Iribarren number)'
+(    slope=\(Z2-Ztoe\)/\(Lslope-berm_width\))'
+(    Irb=\(slope/\(sqrt\(H0/L0\)\)\))'
+(    % runup height)'
+(    gamma_berm)'
+(    gamma_perm)'
+(    gamma_beta)'
+(    gamma_rough)'
+(    gamma=gamma_berm*gamma_perm*gamma_beta*gamma_rough)'
+()'
+(    % check validity)'
+(    TAW_VALID=1;)'
+(    if \(Irb*gamma_berm < 0.5 | Irb*gamma_berm > 10 \))'
+(       sprintf\('!!! - - Iribaren number: %6.2f is outside the valid range \(0.5-10\), TAW NOT VALID - - !!!\\n', Irb*gamma_berm\))'
+(       TAW_VALID=0;)'
+(    else)'
+(       sprintf\('!!! - - Iribaren number: %6.2f is in the valid range \(0.5-10\), TAW RECOMMENDED - - !!!\\n', Irb*gamma_berm\))'
+(    end)'
+(    islope=1/slope;  )'
+(    if \(slope < 1/8 | slope > 1\))'
+(       sprintf\('!!! - - slope: 1:%3.1f V:H is outside the valid range \(1:8 - 1:1\), TAW NOT VALID - - !!!\\n', islope\))'
+(       TAW_VALID=0;)'
+(    else)'
+(       sprintf\('!!! - - slope: 1:%3.1f V:H is in the valid range \(1:8 - 1:1\), TAW RECOMMENDED - - !!!\\n', islope\))'
+(    end)'
+(    if TAW_VALID == 0)'
+(       TAW_ALWAYS_VALID=0;)'
+(    end)'
+(         )'
+(    if \(Irb*gamma_berm < 1.8\))'
+(       R2_new=gamma*H0*1.77*Irb)'
+(    else)'
+(       R2_new=gamma*H0*\(4.3-\(1.6/sqrt\(Irb\)\)\) )'
+(    end)'
+()'
+()'
+(    % check to see if we need to evaluate a shallow foreshore)'
+(    if berm_width > 0.25 * L0;)'
+(       disp \('!   Berm_width is greater than 1/4 wave length'\))'
+(       disp \('!   Runup will be weighted average with foreshore calculation assuming depth limited wave height on berm'\);)'
+(       % do the foreshore calculation )'
+(       fore_H0=0.78*\(SWEL_fore-min\(Berm_Heights\)\))'
+(       % get upper slope)'
+(       fore_toe_sta=-999;)'
+(       fore_toe_dep=-999;)'
+(       for kk=length\(dep\)-1:-1:1)'
+ET
+endstream
+endobj
+17 0 obj
+3497
+endobj
+18 0 obj
+<<
+/Type /Page
+/Parent 3 0 R
+/Resources 5 0 R
+/Contents 19 0 R
+>>
+endobj
+19 0 obj
+<<
+/Length 20 0 R
+>>
+stream
+BT
+/F1 8 Tf
+1 0 0 1 50 752 Tm
+8 TL
+(          ddep=dep\(kk+1\)-dep\(kk\);)'
+(          dsta=sta\(kk+1\)-sta\(kk\);)'
+(          s=ddep/dsta;)'
+(          if s < 1/15)'
+(             break)'
+(          end)'
+(          fore_toe_sta=sta\(kk\);)'
+(          fore_toe_dep=dep\(kk\);)'
+(          upper_slope=\(Z2-fore_toe_dep\)/\(top_sta-fore_toe_sta\))'
+(       end)'
+(       fore_Irb=upper_slope/\(sqrt\(fore_H0/L0\)\);)'
+(       fore_gamma=gamma_perm*gamma_beta*gamma_rough;)'
+(       if \(fore_Irb < 1.8\))'
+(          fore_R2=fore_gamma*fore_H0*1.77*fore_Irb;)'
+(       else)'
+(          fore_R2=fore_gamma*fore_H0*\(4.3-\(1.6/sqrt\(fore_Irb\)\)\); )'
+(       end)'
+(       if berm_width >= L0)'
+(          R2_new=fore_R2)'
+(          disp \('berm is wider than one wavelength, use full shallow foreshore solution'\);)'
+(       else)'
+(          w2=\(berm_width-0.25*L0\)/\(0.75*L0\))'
+(          w1=1-w2)'
+(          R2_new=w2*fore_R2 + w1*R2_new)'
+(       end)'
+(    end % end berm width check)'
+()'
+(    % convergence criterion)'
+(    R2del=abs\(R2-R2_new\))'
+(    R2_all\(iter\)=R2_new;)'
+()'
+(    % get the new top station \(for plot purposes\))'
+(    Z2=R2_new+SWEL)'
+(    top_sta=-999;)'
+(    for kk=1:length\(sta\)-1)'
+(       if \(\(Z2 > dep\(kk\)\) & \(Z2 <= dep\(kk+1\)\)\)    % here is the intersection of z2 with profile)'
+(          top_sta=interp1\(dep\(kk:kk+1\),sta\(kk:kk+1\),Z2\))'
+(          break;)'
+(       end)'
+(    end)'
+(    if top_sta==-999)'
+(       dy=Z2-dep\(end\);)'
+(       top_sta=sta\(end\)+dy/S\(end\);)'
+(    end)'
+(    topStaAll\(iter\)=top_sta;)'
+(end)'
+(ans =)'
+(!----------------- STARTING ITERATION 1 -----------------!)'
+(Ztoe =)'
+(         0.708324200000002)'
+(toe_sta =)'
+(         -9.28910224942969)'
+(top_sta =)'
+(          244.624605765617)'
+(Z2 =)'
+(                18.0045242)'
+(H0 =)'
+(                    5.7654)'
+(Tp =)'
+(                   13.2478)'
+(T0 =)'
+(          12.0434545454545)'
+(R2 =)'
+(                   17.2962)'
+(Z2 =)'
+(                26.6526242)'
+(top_sta =)'
+(          415.735189252295)'
+(Lslope =)'
+(          425.024291501724)'
+(ans =)'
+(Berm Factor Calculation: Iteration 1, Profile Segment: 40)'
+(dh =)'
+(                 4.4473502)'
+(rdh_sum =)'
+(         0.324280978646442)'
+(ans =)'
+(Berm Factor Calculation: Iteration 1, Profile Segment: 41)'
+(dh =)'
+(                 4.4192287)'
+(rdh_sum =)'
+(         0.644980637357216)'
+(ans =)'
+(Berm Factor Calculation: Iteration 1, Profile Segment: 42)'
+(dh =)'
+(                 4.3911072)'
+(rdh_sum =)'
+(         0.962109501471238)'
+(ans =)'
+(Berm Factor Calculation: Iteration 1, Profile Segment: 43)'
+ET
+endstream
+endobj
+20 0 obj
+2724
+endobj
+21 0 obj
+<<
+/Type /Page
+/Parent 3 0 R
+/Resources 5 0 R
+/Contents 22 0 R
+>>
+endobj
+22 0 obj
+<<
+/Length 23 0 R
+>>
+stream
+BT
+/F1 8 Tf
+1 0 0 1 50 752 Tm
+8 TL
+(dh =)'
+(                 4.3629857)'
+(rdh_sum =)'
+(          1.27567830594121)'
+(ans =)'
+(Berm Factor Calculation: Iteration 1, Profile Segment: 44)'
+(dh =)'
+(                 4.3348642)'
+(rdh_sum =)'
+(          1.58569799470345)'
+(ans =)'
+(Berm Factor Calculation: Iteration 1, Profile Segment: 45)'
+(dh =)'
+(                 4.3067427)'
+(rdh_sum =)'
+(          1.89217972003547)'
+(ans =)'
+(Berm Factor Calculation: Iteration 1, Profile Segment: 46)'
+(dh =)'
+(                 4.2786212)'
+(rdh_sum =)'
+(           2.1951348419013)'
+(ans =)'
+(Berm Factor Calculation: Iteration 1, Profile Segment: 47)'
+(dh =)'
+(                 4.2504997)'
+(rdh_sum =)'
+(          2.49457492728462)'
+(ans =)'
+(Berm Factor Calculation: Iteration 1, Profile Segment: 48)'
+(dh =)'
+(                 4.2223782)'
+(rdh_sum =)'
+(          2.79051174950979)'
+(ans =)'
+(Berm Factor Calculation: Iteration 1, Profile Segment: 49)'
+(dh =)'
+(                 4.1942567)'
+(rdh_sum =)'
+(           3.0829572875507)'
+(ans =)'
+(Berm Factor Calculation: Iteration 1, Profile Segment: 58)'
+(dh =)'
+(                 3.2693722)'
+(rdh_sum =)'
+(          3.26854164898686)'
+(ans =)'
+(Berm Factor Calculation: Iteration 1, Profile Segment: 59)'
+(dh =)'
+(                 3.2475002)'
+(rdh_sum =)'
+(          3.45181489328406)'
+(ans =)'
+(Berm Factor Calculation: Iteration 1, Profile Segment: 60)'
+(dh =)'
+(                 3.2256282)'
+(rdh_sum =)'
+(          3.63278826754331)'
+(ans =)'
+(Berm Factor Calculation: Iteration 1, Profile Segment: 61)'
+(dh =)'
+(                 3.2037557)'
+(rdh_sum =)'
+(          3.81147304834834)'
+(ans =)'
+(Berm Factor Calculation: Iteration 1, Profile Segment: 62)'
+(dh =)'
+(                 3.1818832)'
+(rdh_sum =)'
+(          3.98788064626011)'
+(ans =)'
+(Berm Factor Calculation: Iteration 1, Profile Segment: 63)'
+(dh =)'
+(                 3.1600112)'
+(rdh_sum =)'
+(          4.16202260436817)'
+(ans =)'
+(Berm Factor Calculation: Iteration 1, Profile Segment: 64)'
+(dh =)'
+(                 3.1364562)'
+(rdh_sum =)'
+(          4.33373753040655)'
+(ans =)'
+(Berm Factor Calculation: Iteration 1, Profile Segment: 65)'
+(dh =)'
+(                 3.1112187)'
+(rdh_sum =)'
+(          4.50286707129962)'
+(ans =)'
+(Berm Factor Calculation: Iteration 1, Profile Segment: 66)'
+ET
+endstream
+endobj
+23 0 obj
+2398
+endobj
+24 0 obj
+<<
+/Type /Page
+/Parent 3 0 R
+/Resources 5 0 R
+/Contents 25 0 R
+>>
+endobj
+25 0 obj
+<<
+/Length 26 0 R
+>>
+stream
+BT
+/F1 8 Tf
+1 0 0 1 50 752 Tm
+8 TL
+(dh =)'
+(                 3.0859817)'
+(rdh_sum =)'
+(          4.66942692112822)'
+(ans =)'
+(Berm Factor Calculation: Iteration 1, Profile Segment: 67)'
+(dh =)'
+(                 3.0607447)'
+(rdh_sum =)'
+(          4.83343284408631)'
+(ans =)'
+(Berm Factor Calculation: Iteration 1, Profile Segment: 68)'
+(dh =)'
+(                 3.0355077)'
+(rdh_sum =)'
+(          4.99490072511098)'
+(ans =)'
+(Berm Factor Calculation: Iteration 1, Profile Segment: 69)'
+(dh =)'
+(                 3.0102702)'
+(rdh_sum =)'
+(          5.15384651932369)'
+(ans =)'
+(Berm Factor Calculation: Iteration 1, Profile Segment: 70)'
+(dh =)'
+(                 2.9973072)'
+(rdh_sum =)'
+(          5.31150312858367)'
+(ans =)'
+(Berm Factor Calculation: Iteration 1, Profile Segment: 71)'
+(dh =)'
+(                 3.0088937)'
+(rdh_sum =)'
+(          5.47031182615509)'
+(ans =)'
+(Berm Factor Calculation: Iteration 1, Profile Segment: 72)'
+(dh =)'
+(                 3.0327542)'
+(rdh_sum =)'
+(          5.63150375862059)'
+(ans =)'
+(Berm Factor Calculation: Iteration 1, Profile Segment: 73)'
+(dh =)'
+(                 3.0566147)'
+(rdh_sum =)'
+(          5.79509324427916)'
+(ans =)'
+(Berm Factor Calculation: Iteration 1, Profile Segment: 74)'
+(dh =)'
+(                 3.0804757)'
+(rdh_sum =)'
+(          5.96109455079449)'
+(ans =)'
+(Berm Factor Calculation: Iteration 1, Profile Segment: 75)'
+(dh =)'
+(                 3.1043362)'
+(rdh_sum =)'
+(           6.1295217428272)'
+(ans =)'
+(Berm Factor Calculation: Iteration 1, Profile Segment: 80)'
+(dh =)'
+(                 2.5429832)'
+(rdh_sum =)'
+(          6.24480448001698)'
+(ans =)'
+(Berm Factor Calculation: Iteration 1, Profile Segment: 81)'
+(dh =)'
+(                 2.5119012)'
+(rdh_sum =)'
+(          6.35739656631689)'
+(ans =)'
+(Berm Factor Calculation: Iteration 1, Profile Segment: 82)'
+(dh =)'
+(                 2.4808197)'
+(rdh_sum =)'
+(          6.46732582636616)'
+(ans =)'
+(Berm Factor Calculation: Iteration 1, Profile Segment: 83)'
+(dh =)'
+(                 2.4497382)'
+(rdh_sum =)'
+(          6.57462023225059)'
+(ans =)'
+(Berm Factor Calculation: Iteration 1, Profile Segment: 84)'
+(dh =)'
+(                 2.4186562)'
+(rdh_sum =)'
+(          6.67930790329641)'
+(ans =)'
+(Berm Factor Calculation: Iteration 1, Profile Segment: 85)'
+ET
+endstream
+endobj
+26 0 obj
+2398
+endobj
+27 0 obj
+<<
+/Type /Page
+/Parent 3 0 R
+/Resources 5 0 R
+/Contents 28 0 R
+>>
+endobj
+28 0 obj
+<<
+/Length 29 0 R
+>>
+stream
+BT
+/F1 8 Tf
+1 0 0 1 50 752 Tm
+8 TL
+(dh =)'
+(                 2.3875747)'
+(rdh_sum =)'
+(          6.78141722962548)'
+(ans =)'
+(Berm Factor Calculation: Iteration 1, Profile Segment: 86)'
+(dh =)'
+(                 2.3564932)'
+(rdh_sum =)'
+(          6.88097674409328)'
+(ans =)'
+(Berm Factor Calculation: Iteration 1, Profile Segment: 87)'
+(dh =)'
+(                 2.3254112)'
+(rdh_sum =)'
+(          6.97801512207878)'
+(ans =)'
+(Berm Factor Calculation: Iteration 1, Profile Segment: 88)'
+(dh =)'
+(                 2.2943297)'
+(rdh_sum =)'
+(           7.0725613008643)'
+(ans =)'
+(Berm Factor Calculation: Iteration 1, Profile Segment: 89)'
+(dh =)'
+(                 2.2681657)'
+(rdh_sum =)'
+(          7.16503211071685)'
+(ans =)'
+(Berm Factor Calculation: Iteration 1, Profile Segment: 90)'
+(dh =)'
+(                 2.2518362)'
+(rdh_sum =)'
+(           7.2562181282114)'
+(ans =)'
+(Berm Factor Calculation: Iteration 1, Profile Segment: 91)'
+(dh =)'
+(                 2.2404247)'
+(rdh_sum =)'
+(          7.34651109955671)'
+(ans =)'
+(Berm Factor Calculation: Iteration 1, Profile Segment: 92)'
+(dh =)'
+(                 2.2290132)'
+(rdh_sum =)'
+(          7.43591498514927)'
+(ans =)'
+(Berm Factor Calculation: Iteration 1, Profile Segment: 93)'
+(dh =)'
+(                 2.2176017)'
+(rdh_sum =)'
+(          7.52443375397985)'
+(ans =)'
+(Berm Factor Calculation: Iteration 1, Profile Segment: 94)'
+(dh =)'
+(                 2.2061902)'
+(rdh_sum =)'
+(          7.61207138359508)'
+(ans =)'
+(Berm Factor Calculation: Iteration 1, Profile Segment: 95)'
+(dh =)'
+(                 2.1947782)'
+(rdh_sum =)'
+(           7.6988318217137)'
+(ans =)'
+(Berm Factor Calculation: Iteration 1, Profile Segment: 96)'
+(dh =)'
+(                 2.1833667)'
+(rdh_sum =)'
+(          7.78471910139933)'
+(ans =)'
+(Berm Factor Calculation: Iteration 1, Profile Segment: 97)'
+(dh =)'
+(                 2.1719552)'
+(rdh_sum =)'
+(           7.8697372256357)'
+(ans =)'
+(Berm Factor Calculation: Iteration 1, Profile Segment: 98)'
+(dh =)'
+(                 2.1605437)'
+(rdh_sum =)'
+(          7.95389020580813)'
+(ans =)'
+(Berm Factor Calculation: Iteration 1, Profile Segment: 99)'
+(dh =)'
+(                 2.1491322)'
+(rdh_sum =)'
+(          8.03718206166478)'
+(ans =)'
+(Berm Factor Calculation: Iteration 1, Profile Segment: 100)'
+ET
+endstream
+endobj
+29 0 obj
+2399
+endobj
+30 0 obj
+<<
+/Type /Page
+/Parent 3 0 R
+/Resources 5 0 R
+/Contents 31 0 R
+>>
+endobj
+31 0 obj
+<<
+/Length 32 0 R
+>>
+stream
+BT
+/F1 8 Tf
+1 0 0 1 50 752 Tm
+8 TL
+(dh =)'
+(                 2.1377202)'
+(rdh_sum =)'
+(          8.11961678381213)'
+(ans =)'
+(Berm Factor Calculation: Iteration 1, Profile Segment: 101)'
+(dh =)'
+(                 2.1279132)'
+(rdh_sum =)'
+(           8.2013181454926)'
+(ans =)'
+(Berm Factor Calculation: Iteration 1, Profile Segment: 102)'
+(dh =)'
+(                 2.1197112)'
+(rdh_sum =)'
+(          8.28240846046287)'
+(ans =)'
+(Berm Factor Calculation: Iteration 1, Profile Segment: 103)'
+(dh =)'
+(                 2.1115092)'
+(rdh_sum =)'
+(          8.36288982061794)'
+(ans =)'
+(Berm Factor Calculation: Iteration 1, Profile Segment: 104)'
+(dh =)'
+(                 2.1033072)'
+(rdh_sum =)'
+(          8.44276432089374)'
+(ans =)'
+(Berm Factor Calculation: Iteration 1, Profile Segment: 105)'
+(dh =)'
+(                 2.0951052)'
+(rdh_sum =)'
+(          8.52203405925664)'
+(ans =)'
+(Berm Factor Calculation: Iteration 1, Profile Segment: 106)'
+(dh =)'
+(                 2.0869032)'
+(rdh_sum =)'
+(            8.600701136693)'
+(ans =)'
+(Berm Factor Calculation: Iteration 1, Profile Segment: 107)'
+(dh =)'
+(                 2.0787012)'
+(rdh_sum =)'
+(          8.67876765719867)'
+(ans =)'
+(Berm Factor Calculation: Iteration 1, Profile Segment: 108)'
+(dh =)'
+(                 2.0704992)'
+(rdh_sum =)'
+(          8.75623572776848)'
+(ans =)'
+(Berm Factor Calculation: Iteration 1, Profile Segment: 109)'
+(dh =)'
+(                 2.0683277)'
+(rdh_sum =)'
+(          8.83354571035977)'
+(ans =)'
+(Berm Factor Calculation: Iteration 1, Profile Segment: 110)'
+(dh =)'
+(                 2.0721872)'
+(rdh_sum =)'
+(          8.91113677165987)'
+(ans =)'
+(Berm Factor Calculation: Iteration 1, Profile Segment: 111)'
+(dh =)'
+(                 2.0760472)'
+(rdh_sum =)'
+(          8.98900941523621)'
+(ans =)'
+(Berm Factor Calculation: Iteration 1, Profile Segment: 112)'
+(dh =)'
+(                 2.0799072)'
+(rdh_sum =)'
+(          9.06716410796121)'
+(ans =)'
+(Berm Factor Calculation: Iteration 1, Profile Segment: 113)'
+(dh =)'
+(                 2.0837672)'
+(rdh_sum =)'
+(           9.1456013163953)'
+(ans =)'
+(Berm Factor Calculation: Iteration 1, Profile Segment: 114)'
+(dh =)'
+(                 2.0876267)'
+(rdh_sum =)'
+(          9.22432147010061)'
+(ans =)'
+(Berm Factor Calculation: Iteration 1, Profile Segment: 115)'
+ET
+endstream
+endobj
+32 0 obj
+2413
+endobj
+33 0 obj
+<<
+/Type /Page
+/Parent 3 0 R
+/Resources 5 0 R
+/Contents 34 0 R
+>>
+endobj
+34 0 obj
+<<
+/Length 35 0 R
+>>
+stream
+BT
+/F1 8 Tf
+1 0 0 1 50 752 Tm
+8 TL
+(dh =)'
+(                 2.0914862)'
+(rdh_sum =)'
+(           9.3033250348915)'
+(ans =)'
+(Berm Factor Calculation: Iteration 1, Profile Segment: 116)'
+(dh =)'
+(                 2.0953462)'
+(rdh_sum =)'
+(          9.38261251307542)'
+(ans =)'
+(Berm Factor Calculation: Iteration 1, Profile Segment: 117)'
+(dh =)'
+(                 2.1138252)'
+(rdh_sum =)'
+(          9.46326561177069)'
+(ans =)'
+(Berm Factor Calculation: Iteration 1, Profile Segment: 118)'
+(dh =)'
+(                 2.1615422)'
+(rdh_sum =)'
+(          9.54749413122066)'
+(ans =)'
+(Berm Factor Calculation: Iteration 1, Profile Segment: 119)'
+(dh =)'
+(                 2.2238782)'
+(rdh_sum =)'
+(          9.63649923617176)'
+(ans =)'
+(Berm Factor Calculation: Iteration 1, Profile Segment: 120)'
+(dh =)'
+(                 2.2862142)'
+(rdh_sum =)'
+(          9.73039947182654)'
+(ans =)'
+(Berm Factor Calculation: Iteration 1, Profile Segment: 121)'
+(dh =)'
+(                 2.3485502)'
+(rdh_sum =)'
+(          9.82931197146185)'
+(ans =)'
+(Berm Factor Calculation: Iteration 1, Profile Segment: 122)'
+(dh =)'
+(                 2.4108862)'
+(rdh_sum =)'
+(           9.9333524226435)'
+(ans =)'
+(Berm Factor Calculation: Iteration 1, Profile Segment: 123)'
+(dh =)'
+(                 2.4732222)'
+(rdh_sum =)'
+(           10.042635033858)'
+(ans =)'
+(Berm Factor Calculation: Iteration 1, Profile Segment: 124)'
+(dh =)'
+(                 2.5355582)'
+(rdh_sum =)'
+(          10.1572725015708)'
+(ans =)'
+(Berm Factor Calculation: Iteration 1, Profile Segment: 125)'
+(dh =)'
+(                 2.5978942)'
+(rdh_sum =)'
+(          10.2773759777207)'
+(ans =)'
+(Berm Factor Calculation: Iteration 1, Profile Segment: 126)'
+(dh =)'
+(                 2.6602302)'
+(rdh_sum =)'
+(            10.40305503766)'
+(ans =)'
+(Berm Factor Calculation: Iteration 1, Profile Segment: 127)'
+(dh =)'
+(                 2.6922182)'
+(rdh_sum =)'
+(          10.5316372534521)'
+(ans =)'
+(Berm Factor Calculation: Iteration 1, Profile Segment: 128)'
+(dh =)'
+(                 2.6635107)'
+(rdh_sum =)'
+(          10.6576127392301)'
+(ans =)'
+(Berm Factor Calculation: Iteration 1, Profile Segment: 129)'
+(dh =)'
+(                 2.6044557)'
+(rdh_sum =)'
+(          10.7782979701724)'
+(ans =)'
+(Berm Factor Calculation: Iteration 1, Profile Segment: 130)'
+ET
+endstream
+endobj
+35 0 obj
+2413
+endobj
+36 0 obj
+<<
+/Type /Page
+/Parent 3 0 R
+/Resources 5 0 R
+/Contents 37 0 R
+>>
+endobj
+37 0 obj
+<<
+/Length 38 0 R
+>>
+stream
+BT
+/F1 8 Tf
+1 0 0 1 50 752 Tm
+8 TL
+(dh =)'
+(                 2.5454007)'
+(rdh_sum =)'
+(           10.893791140033)'
+(ans =)'
+(Berm Factor Calculation: Iteration 1, Profile Segment: 131)'
+(dh =)'
+(                 2.4863452)'
+(rdh_sum =)'
+(          11.0041917439506)'
+(ans =)'
+(Berm Factor Calculation: Iteration 1, Profile Segment: 132)'
+(dh =)'
+(                 2.4305707)'
+(rdh_sum =)'
+(          11.1098753004792)'
+(ans =)'
+(Berm Factor Calculation: Iteration 1, Profile Segment: 133)'
+(dh =)'
+(                 2.3813582)'
+(rdh_sum =)'
+(          11.2114723594644)'
+(ans =)'
+(Berm Factor Calculation: Iteration 1, Profile Segment: 134)'
+(dh =)'
+(                 2.3354267)'
+(rdh_sum =)'
+(          11.3093199720722)'
+(ans =)'
+(Berm Factor Calculation: Iteration 1, Profile Segment: 135)'
+(dh =)'
+(                 2.2894952)'
+(rdh_sum =)'
+(          11.4034811159413)'
+(ans =)'
+(Berm Factor Calculation: Iteration 1, Profile Segment: 136)'
+(dh =)'
+(                 2.2435632)'
+(rdh_sum =)'
+(          11.4940193069266)'
+(ans =)'
+(Berm Factor Calculation: Iteration 1, Profile Segment: 169)'
+(dh =)'
+(                -4.8006863)'
+(rdh_sum =)'
+(          11.6723599774653)'
+(ans =)'
+(!------- End Berm Factor Calculation, Iter: 1 ---------!)'
+(berm_width =)'
+(    86)'
+(rB =)'
+(          0.20234137605674)'
+(rdh_mean =)'
+(         0.135725116017038)'
+(gamma_berm =)'
+(         0.825121430683608)'
+(slope =)'
+(        0.0765263748065912)'
+(Irb =)'
+(         0.868256515356538)'
+(gamma_berm =)'
+(         0.825121430683608)'
+(gamma_perm =)'
+(     1)'
+(gamma_beta =)'
+(     1)'
+(gamma_rough =)'
+(                       0.6)'
+(gamma =)'
+(         0.495072858410165)'
+(ans =)'
+(!!! - - Iribaren number:   0.72 is in the valid range \(0.5-10\), TAW RECOMMENDED - - !!!)'
+(ans =)'
+(!!! - - slope: 1:13.1 V:H is outside the valid range \(1:8 - 1:1\), TAW NOT VALID - - !!!)'
+(R2_new =)'
+(          4.38651762330388)'
+(R2del =)'
+(          12.9096823766961)'
+(Z2 =)'
+(          13.7429418233039)'
+(top_sta =)'
+(          163.944816826593)'
+(ans =)'
+(!----------------- STARTING ITERATION 2 -----------------!)'
+(Ztoe =)'
+(         0.708324200000002)'
+(toe_sta =)'
+(         -9.28910224942969)'
+(top_sta =)'
+(          163.944816826593)'
+ET
+endstream
+endobj
+38 0 obj
+2332
+endobj
+39 0 obj
+<<
+/Type /Page
+/Parent 3 0 R
+/Resources 5 0 R
+/Contents 40 0 R
+>>
+endobj
+40 0 obj
+<<
+/Length 41 0 R
+>>
+stream
+BT
+/F1 8 Tf
+1 0 0 1 50 752 Tm
+8 TL
+(Z2 =)'
+(          13.7429418233039)'
+(H0 =)'
+(                    5.7654)'
+(Tp =)'
+(                   13.2478)'
+(T0 =)'
+(          12.0434545454545)'
+(R2 =)'
+(          4.38651762330388)'
+(Z2 =)'
+(          13.7429418233039)'
+(top_sta =)'
+(          163.944816826593)'
+(Lslope =)'
+(          173.233919076022)'
+(ans =)'
+(Berm Factor Calculation: Iteration 2, Profile Segment: 40)'
+(dh =)'
+(                 4.4473502)'
+(rdh_sum =)'
+(     1)'
+(ans =)'
+(Berm Factor Calculation: Iteration 2, Profile Segment: 41)'
+(dh =)'
+(                 4.4192287)'
+(rdh_sum =)'
+(     2)'
+(ans =)'
+(Berm Factor Calculation: Iteration 2, Profile Segment: 42)'
+(dh =)'
+(                 4.3911072)'
+(rdh_sum =)'
+(     3)'
+(ans =)'
+(Berm Factor Calculation: Iteration 2, Profile Segment: 43)'
+(dh =)'
+(                 4.3629857)'
+(rdh_sum =)'
+(          3.31356880446997)'
+(ans =)'
+(Berm Factor Calculation: Iteration 2, Profile Segment: 44)'
+(dh =)'
+(                 4.3348642)'
+(rdh_sum =)'
+(          3.62358849323221)'
+(ans =)'
+(Berm Factor Calculation: Iteration 2, Profile Segment: 45)'
+(dh =)'
+(                 4.3067427)'
+(rdh_sum =)'
+(          3.93007021856423)'
+(ans =)'
+(Berm Factor Calculation: Iteration 2, Profile Segment: 46)'
+(dh =)'
+(                 4.2786212)'
+(rdh_sum =)'
+(          4.23302534043006)'
+(ans =)'
+(Berm Factor Calculation: Iteration 2, Profile Segment: 47)'
+(dh =)'
+(                 4.2504997)'
+(rdh_sum =)'
+(          4.53246542581338)'
+(ans =)'
+(Berm Factor Calculation: Iteration 2, Profile Segment: 48)'
+(dh =)'
+(                 4.2223782)'
+(rdh_sum =)'
+(          4.82840224803855)'
+(ans =)'
+(Berm Factor Calculation: Iteration 2, Profile Segment: 49)'
+(dh =)'
+(                 4.1942567)'
+(rdh_sum =)'
+(          5.12084778607947)'
+(ans =)'
+(Berm Factor Calculation: Iteration 2, Profile Segment: 58)'
+(dh =)'
+(                 3.2693722)'
+(rdh_sum =)'
+(          5.30643214751562)'
+(ans =)'
+(Berm Factor Calculation: Iteration 2, Profile Segment: 59)'
+(dh =)'
+(                 3.2475002)'
+(rdh_sum =)'
+(          5.48970539181282)'
+(ans =)'
+(Berm Factor Calculation: Iteration 2, Profile Segment: 60)'
+ET
+endstream
+endobj
+41 0 obj
+2268
+endobj
+42 0 obj
+<<
+/Type /Page
+/Parent 3 0 R
+/Resources 5 0 R
+/Contents 43 0 R
+>>
+endobj
+43 0 obj
+<<
+/Length 44 0 R
+>>
+stream
+BT
+/F1 8 Tf
+1 0 0 1 50 752 Tm
+8 TL
+(dh =)'
+(                 3.2256282)'
+(rdh_sum =)'
+(          5.67067876607207)'
+(ans =)'
+(Berm Factor Calculation: Iteration 2, Profile Segment: 61)'
+(dh =)'
+(                 3.2037557)'
+(rdh_sum =)'
+(          5.84936354687711)'
+(ans =)'
+(Berm Factor Calculation: Iteration 2, Profile Segment: 62)'
+(dh =)'
+(                 3.1818832)'
+(rdh_sum =)'
+(          6.02577114478887)'
+(ans =)'
+(Berm Factor Calculation: Iteration 2, Profile Segment: 63)'
+(dh =)'
+(                 3.1600112)'
+(rdh_sum =)'
+(          6.19991310289693)'
+(ans =)'
+(Berm Factor Calculation: Iteration 2, Profile Segment: 64)'
+(dh =)'
+(                 3.1364562)'
+(rdh_sum =)'
+(          6.37162802893531)'
+(ans =)'
+(Berm Factor Calculation: Iteration 2, Profile Segment: 65)'
+(dh =)'
+(                 3.1112187)'
+(rdh_sum =)'
+(          6.54075756982839)'
+(ans =)'
+(Berm Factor Calculation: Iteration 2, Profile Segment: 66)'
+(dh =)'
+(                 3.0859817)'
+(rdh_sum =)'
+(          6.70731741965698)'
+(ans =)'
+(Berm Factor Calculation: Iteration 2, Profile Segment: 67)'
+(dh =)'
+(                 3.0607447)'
+(rdh_sum =)'
+(          6.87132334261507)'
+(ans =)'
+(Berm Factor Calculation: Iteration 2, Profile Segment: 68)'
+(dh =)'
+(                 3.0355077)'
+(rdh_sum =)'
+(          7.03279122363974)'
+(ans =)'
+(Berm Factor Calculation: Iteration 2, Profile Segment: 69)'
+(dh =)'
+(                 3.0102702)'
+(rdh_sum =)'
+(          7.19173701785245)'
+(ans =)'
+(Berm Factor Calculation: Iteration 2, Profile Segment: 70)'
+(dh =)'
+(                 2.9973072)'
+(rdh_sum =)'
+(          7.34939362711243)'
+(ans =)'
+(Berm Factor Calculation: Iteration 2, Profile Segment: 71)'
+(dh =)'
+(                 3.0088937)'
+(rdh_sum =)'
+(          7.50820232468385)'
+(ans =)'
+(Berm Factor Calculation: Iteration 2, Profile Segment: 72)'
+(dh =)'
+(                 3.0327542)'
+(rdh_sum =)'
+(          7.66939425714935)'
+(ans =)'
+(Berm Factor Calculation: Iteration 2, Profile Segment: 73)'
+(dh =)'
+(                 3.0566147)'
+(rdh_sum =)'
+(          7.83298374280792)'
+(ans =)'
+(Berm Factor Calculation: Iteration 2, Profile Segment: 74)'
+(dh =)'
+(                 3.0804757)'
+(rdh_sum =)'
+(          7.99898504932325)'
+(ans =)'
+(Berm Factor Calculation: Iteration 2, Profile Segment: 75)'
+ET
+endstream
+endobj
+44 0 obj
+2398
+endobj
+45 0 obj
+<<
+/Type /Page
+/Parent 3 0 R
+/Resources 5 0 R
+/Contents 46 0 R
+>>
+endobj
+46 0 obj
+<<
+/Length 47 0 R
+>>
+stream
+BT
+/F1 8 Tf
+1 0 0 1 50 752 Tm
+8 TL
+(dh =)'
+(                 3.1043362)'
+(rdh_sum =)'
+(          8.16741224135596)'
+(ans =)'
+(Berm Factor Calculation: Iteration 2, Profile Segment: 80)'
+(dh =)'
+(                 2.5429832)'
+(rdh_sum =)'
+(          8.28269497854575)'
+(ans =)'
+(Berm Factor Calculation: Iteration 2, Profile Segment: 81)'
+(dh =)'
+(                 2.5119012)'
+(rdh_sum =)'
+(          8.39528706484565)'
+(ans =)'
+(Berm Factor Calculation: Iteration 2, Profile Segment: 82)'
+(dh =)'
+(                 2.4808197)'
+(rdh_sum =)'
+(          8.50521632489492)'
+(ans =)'
+(Berm Factor Calculation: Iteration 2, Profile Segment: 83)'
+(dh =)'
+(                 2.4497382)'
+(rdh_sum =)'
+(          8.61251073077935)'
+(ans =)'
+(Berm Factor Calculation: Iteration 2, Profile Segment: 84)'
+(dh =)'
+(                 2.4186562)'
+(rdh_sum =)'
+(          8.71719840182517)'
+(ans =)'
+(Berm Factor Calculation: Iteration 2, Profile Segment: 85)'
+(dh =)'
+(                 2.3875747)'
+(rdh_sum =)'
+(          8.81930772815424)'
+(ans =)'
+(Berm Factor Calculation: Iteration 2, Profile Segment: 86)'
+(dh =)'
+(                 2.3564932)'
+(rdh_sum =)'
+(          8.91886724262204)'
+(ans =)'
+(Berm Factor Calculation: Iteration 2, Profile Segment: 87)'
+(dh =)'
+(                 2.3254112)'
+(rdh_sum =)'
+(          9.01590562060754)'
+(ans =)'
+(Berm Factor Calculation: Iteration 2, Profile Segment: 88)'
+(dh =)'
+(                 2.2943297)'
+(rdh_sum =)'
+(          9.11045179939306)'
+(ans =)'
+(Berm Factor Calculation: Iteration 2, Profile Segment: 89)'
+(dh =)'
+(                 2.2681657)'
+(rdh_sum =)'
+(          9.20292260924562)'
+(ans =)'
+(Berm Factor Calculation: Iteration 2, Profile Segment: 90)'
+(dh =)'
+(                 2.2518362)'
+(rdh_sum =)'
+(          9.29410862674016)'
+(ans =)'
+(Berm Factor Calculation: Iteration 2, Profile Segment: 91)'
+(dh =)'
+(                 2.2404247)'
+(rdh_sum =)'
+(          9.38440159808547)'
+(ans =)'
+(Berm Factor Calculation: Iteration 2, Profile Segment: 92)'
+(dh =)'
+(                 2.2290132)'
+(rdh_sum =)'
+(          9.47380548367804)'
+(ans =)'
+(Berm Factor Calculation: Iteration 2, Profile Segment: 93)'
+(dh =)'
+(                 2.2176017)'
+(rdh_sum =)'
+(          9.56232425250861)'
+(ans =)'
+(Berm Factor Calculation: Iteration 2, Profile Segment: 94)'
+ET
+endstream
+endobj
+47 0 obj
+2398
+endobj
+48 0 obj
+<<
+/Type /Page
+/Parent 3 0 R
+/Resources 5 0 R
+/Contents 49 0 R
+>>
+endobj
+49 0 obj
+<<
+/Length 50 0 R
+>>
+stream
+BT
+/F1 8 Tf
+1 0 0 1 50 752 Tm
+8 TL
+(dh =)'
+(                 2.2061902)'
+(rdh_sum =)'
+(          9.64996188212385)'
+(ans =)'
+(Berm Factor Calculation: Iteration 2, Profile Segment: 95)'
+(dh =)'
+(                 2.1947782)'
+(rdh_sum =)'
+(          9.73672232024246)'
+(ans =)'
+(Berm Factor Calculation: Iteration 2, Profile Segment: 96)'
+(dh =)'
+(                 2.1833667)'
+(rdh_sum =)'
+(          9.82260959992809)'
+(ans =)'
+(Berm Factor Calculation: Iteration 2, Profile Segment: 97)'
+(dh =)'
+(                 2.1719552)'
+(rdh_sum =)'
+(          9.90762772416446)'
+(ans =)'
+(Berm Factor Calculation: Iteration 2, Profile Segment: 98)'
+(dh =)'
+(                 2.1605437)'
+(rdh_sum =)'
+(          9.99178070433689)'
+(ans =)'
+(Berm Factor Calculation: Iteration 2, Profile Segment: 99)'
+(dh =)'
+(                 2.1491322)'
+(rdh_sum =)'
+(          10.0750725601935)'
+(ans =)'
+(Berm Factor Calculation: Iteration 2, Profile Segment: 100)'
+(dh =)'
+(                 2.1377202)'
+(rdh_sum =)'
+(          10.1575072823409)'
+(ans =)'
+(Berm Factor Calculation: Iteration 2, Profile Segment: 101)'
+(dh =)'
+(                 2.1279132)'
+(rdh_sum =)'
+(          10.2392086440214)'
+(ans =)'
+(Berm Factor Calculation: Iteration 2, Profile Segment: 102)'
+(dh =)'
+(                 2.1197112)'
+(rdh_sum =)'
+(          10.3202989589916)'
+(ans =)'
+(Berm Factor Calculation: Iteration 2, Profile Segment: 103)'
+(dh =)'
+(                 2.1115092)'
+(rdh_sum =)'
+(          10.4007803191467)'
+(ans =)'
+(Berm Factor Calculation: Iteration 2, Profile Segment: 104)'
+(dh =)'
+(                 2.1033072)'
+(rdh_sum =)'
+(          10.4806548194225)'
+(ans =)'
+(Berm Factor Calculation: Iteration 2, Profile Segment: 105)'
+(dh =)'
+(                 2.0951052)'
+(rdh_sum =)'
+(          10.5599245577854)'
+(ans =)'
+(Berm Factor Calculation: Iteration 2, Profile Segment: 106)'
+(dh =)'
+(                 2.0869032)'
+(rdh_sum =)'
+(          10.6385916352218)'
+(ans =)'
+(Berm Factor Calculation: Iteration 2, Profile Segment: 107)'
+(dh =)'
+(                 2.0787012)'
+(rdh_sum =)'
+(          10.7166581557274)'
+(ans =)'
+(Berm Factor Calculation: Iteration 2, Profile Segment: 108)'
+(dh =)'
+(                 2.0704992)'
+(rdh_sum =)'
+(          10.7941262262972)'
+(ans =)'
+(Berm Factor Calculation: Iteration 2, Profile Segment: 109)'
+ET
+endstream
+endobj
+50 0 obj
+2408
+endobj
+51 0 obj
+<<
+/Type /Page
+/Parent 3 0 R
+/Resources 5 0 R
+/Contents 52 0 R
+>>
+endobj
+52 0 obj
+<<
+/Length 53 0 R
+>>
+stream
+BT
+/F1 8 Tf
+1 0 0 1 50 752 Tm
+8 TL
+(dh =)'
+(                 2.0683277)'
+(rdh_sum =)'
+(          10.8714362088885)'
+(ans =)'
+(Berm Factor Calculation: Iteration 2, Profile Segment: 110)'
+(dh =)'
+(                 2.0721872)'
+(rdh_sum =)'
+(          10.9490272701886)'
+(ans =)'
+(Berm Factor Calculation: Iteration 2, Profile Segment: 111)'
+(dh =)'
+(                 2.0760472)'
+(rdh_sum =)'
+(           11.026899913765)'
+(ans =)'
+(Berm Factor Calculation: Iteration 2, Profile Segment: 112)'
+(dh =)'
+(                 2.0799072)'
+(rdh_sum =)'
+(            11.10505460649)'
+(ans =)'
+(Berm Factor Calculation: Iteration 2, Profile Segment: 113)'
+(dh =)'
+(                 2.0837672)'
+(rdh_sum =)'
+(          11.1834918149241)'
+(ans =)'
+(Berm Factor Calculation: Iteration 2, Profile Segment: 114)'
+(dh =)'
+(                 2.0876267)'
+(rdh_sum =)'
+(          11.2622119686294)'
+(ans =)'
+(Berm Factor Calculation: Iteration 2, Profile Segment: 115)'
+(dh =)'
+(                 2.0914862)'
+(rdh_sum =)'
+(          11.3412155334203)'
+(ans =)'
+(Berm Factor Calculation: Iteration 2, Profile Segment: 116)'
+(dh =)'
+(                 2.0953462)'
+(rdh_sum =)'
+(          11.4205030116042)'
+(ans =)'
+(Berm Factor Calculation: Iteration 2, Profile Segment: 117)'
+(dh =)'
+(                 2.1138252)'
+(rdh_sum =)'
+(          11.5011561102995)'
+(ans =)'
+(Berm Factor Calculation: Iteration 2, Profile Segment: 118)'
+(dh =)'
+(                 2.1615422)'
+(rdh_sum =)'
+(          11.5853846297494)'
+(ans =)'
+(Berm Factor Calculation: Iteration 2, Profile Segment: 119)'
+(dh =)'
+(                 2.2238782)'
+(rdh_sum =)'
+(          11.6743897347005)'
+(ans =)'
+(Berm Factor Calculation: Iteration 2, Profile Segment: 120)'
+(dh =)'
+(                 2.2862142)'
+(rdh_sum =)'
+(          11.7682899703553)'
+(ans =)'
+(Berm Factor Calculation: Iteration 2, Profile Segment: 121)'
+(dh =)'
+(                 2.3485502)'
+(rdh_sum =)'
+(          11.8672024699906)'
+(ans =)'
+(Berm Factor Calculation: Iteration 2, Profile Segment: 122)'
+(dh =)'
+(                 2.4108862)'
+(rdh_sum =)'
+(          11.9712429211723)'
+(ans =)'
+(Berm Factor Calculation: Iteration 2, Profile Segment: 123)'
+(dh =)'
+(                 2.4732222)'
+(rdh_sum =)'
+(          12.0805255323868)'
+(ans =)'
+(Berm Factor Calculation: Iteration 2, Profile Segment: 124)'
+ET
+endstream
+endobj
+53 0 obj
+2413
+endobj
+54 0 obj
+<<
+/Type /Page
+/Parent 3 0 R
+/Resources 5 0 R
+/Contents 55 0 R
+>>
+endobj
+55 0 obj
+<<
+/Length 56 0 R
+>>
+stream
+BT
+/F1 8 Tf
+1 0 0 1 50 752 Tm
+8 TL
+(dh =)'
+(                 2.5355582)'
+(rdh_sum =)'
+(          12.1951630000995)'
+(ans =)'
+(Berm Factor Calculation: Iteration 2, Profile Segment: 125)'
+(dh =)'
+(                 2.5978942)'
+(rdh_sum =)'
+(          12.3152664762495)'
+(ans =)'
+(Berm Factor Calculation: Iteration 2, Profile Segment: 126)'
+(dh =)'
+(                 2.6602302)'
+(rdh_sum =)'
+(          12.4409455361888)'
+(ans =)'
+(Berm Factor Calculation: Iteration 2, Profile Segment: 127)'
+(dh =)'
+(                 2.6922182)'
+(rdh_sum =)'
+(          12.5695277519809)'
+(ans =)'
+(Berm Factor Calculation: Iteration 2, Profile Segment: 128)'
+(dh =)'
+(                 2.6635107)'
+(rdh_sum =)'
+(          12.6955032377589)'
+(ans =)'
+(Berm Factor Calculation: Iteration 2, Profile Segment: 129)'
+(dh =)'
+(                 2.6044557)'
+(rdh_sum =)'
+(          12.8161884687011)'
+(ans =)'
+(Berm Factor Calculation: Iteration 2, Profile Segment: 130)'
+(dh =)'
+(                 2.5454007)'
+(rdh_sum =)'
+(          12.9316816385617)'
+(ans =)'
+(Berm Factor Calculation: Iteration 2, Profile Segment: 131)'
+(dh =)'
+(                 2.4863452)'
+(rdh_sum =)'
+(          13.0420822424794)'
+(ans =)'
+(Berm Factor Calculation: Iteration 2, Profile Segment: 132)'
+(dh =)'
+(                 2.4305707)'
+(rdh_sum =)'
+(           13.147765799008)'
+(ans =)'
+(Berm Factor Calculation: Iteration 2, Profile Segment: 133)'
+(dh =)'
+(                 2.3813582)'
+(rdh_sum =)'
+(          13.2493628579932)'
+(ans =)'
+(Berm Factor Calculation: Iteration 2, Profile Segment: 134)'
+(dh =)'
+(                 2.3354267)'
+(rdh_sum =)'
+(           13.347210470601)'
+(ans =)'
+(Berm Factor Calculation: Iteration 2, Profile Segment: 135)'
+(dh =)'
+(                 2.2894952)'
+(rdh_sum =)'
+(          13.4413716144701)'
+(ans =)'
+(Berm Factor Calculation: Iteration 2, Profile Segment: 136)'
+(dh =)'
+(                 2.2435632)'
+(rdh_sum =)'
+(          13.5319098054553)'
+(ans =)'
+(!------- End Berm Factor Calculation, Iter: 2 ---------!)'
+(berm_width =)'
+(    85)'
+(rB =)'
+(         0.490666033842359)'
+(rdh_mean =)'
+(          0.15919893888771)'
+(gamma_berm =)'
+(         0.587447478093586)'
+(gamma_berm =)'
+(                       0.6)'
+(slope =)'
+(         0.147727968561311)'
+ET
+endstream
+endobj
+56 0 obj
+2348
+endobj
+57 0 obj
+<<
+/Type /Page
+/Parent 3 0 R
+/Resources 5 0 R
+/Contents 58 0 R
+>>
+endobj
+58 0 obj
+<<
+/Length 59 0 R
+>>
+stream
+BT
+/F1 8 Tf
+1 0 0 1 50 752 Tm
+8 TL
+(Irb =)'
+(          1.67609888130617)'
+(gamma_berm =)'
+(                       0.6)'
+(gamma_perm =)'
+(     1)'
+(gamma_beta =)'
+(     1)'
+(gamma_rough =)'
+(                       0.6)'
+(gamma =)'
+(                      0.36)'
+(ans =)'
+(!!! - - Iribaren number:   1.01 is in the valid range \(0.5-10\), TAW RECOMMENDED - - !!!)'
+(ans =)'
+(!!! - - slope: 1:6.8 V:H is in the valid range \(1:8 - 1:1\), TAW RECOMMENDED - - !!!)'
+(R2_new =)'
+(          6.15750604840807)'
+(R2del =)'
+(          1.77098842510419)'
+(Z2 =)'
+(          15.5139302484081)'
+(ans =)'
+(!----------------- STARTING ITERATION 3 -----------------!)'
+(Ztoe =)'
+(         0.708324200000002)'
+(toe_sta =)'
+(         -9.28910224942969)'
+(top_sta =)'
+(          195.345922091136)'
+(Z2 =)'
+(          15.5139302484081)'
+(H0 =)'
+(                    5.7654)'
+(Tp =)'
+(                   13.2478)'
+(T0 =)'
+(          12.0434545454545)'
+(R2 =)'
+(          6.15750604840807)'
+(Z2 =)'
+(          15.5139302484081)'
+(top_sta =)'
+(          195.345922091136)'
+(Lslope =)'
+(          204.635024340565)'
+(ans =)'
+(Berm Factor Calculation: Iteration 3, Profile Segment: 40)'
+(dh =)'
+(                 4.4473502)'
+(rdh_sum =)'
+(         0.324280978646442)'
+(ans =)'
+(Berm Factor Calculation: Iteration 3, Profile Segment: 41)'
+(dh =)'
+(                 4.4192287)'
+(rdh_sum =)'
+(         0.644980637357216)'
+(ans =)'
+(Berm Factor Calculation: Iteration 3, Profile Segment: 42)'
+(dh =)'
+(                 4.3911072)'
+(rdh_sum =)'
+(         0.962109501471238)'
+(ans =)'
+(Berm Factor Calculation: Iteration 3, Profile Segment: 43)'
+(dh =)'
+(                 4.3629857)'
+(rdh_sum =)'
+(          1.27567830594121)'
+(ans =)'
+(Berm Factor Calculation: Iteration 3, Profile Segment: 44)'
+(dh =)'
+(                 4.3348642)'
+(rdh_sum =)'
+(          1.58569799470345)'
+(ans =)'
+(Berm Factor Calculation: Iteration 3, Profile Segment: 45)'
+(dh =)'
+(                 4.3067427)'
+(rdh_sum =)'
+(          1.89217972003547)'
+(ans =)'
+(Berm Factor Calculation: Iteration 3, Profile Segment: 46)'
+(dh =)'
+(                 4.2786212)'
+(rdh_sum =)'
+(           2.1951348419013)'
+(ans =)'
+(Berm Factor Calculation: Iteration 3, Profile Segment: 47)'
+ET
+endstream
+endobj
+59 0 obj
+2316
+endobj
+60 0 obj
+<<
+/Type /Page
+/Parent 3 0 R
+/Resources 5 0 R
+/Contents 61 0 R
+>>
+endobj
+61 0 obj
+<<
+/Length 62 0 R
+>>
+stream
+BT
+/F1 8 Tf
+1 0 0 1 50 752 Tm
+8 TL
+(dh =)'
+(                 4.2504997)'
+(rdh_sum =)'
+(          2.49457492728462)'
+(ans =)'
+(Berm Factor Calculation: Iteration 3, Profile Segment: 48)'
+(dh =)'
+(                 4.2223782)'
+(rdh_sum =)'
+(          2.79051174950979)'
+(ans =)'
+(Berm Factor Calculation: Iteration 3, Profile Segment: 49)'
+(dh =)'
+(                 4.1942567)'
+(rdh_sum =)'
+(           3.0829572875507)'
+(ans =)'
+(Berm Factor Calculation: Iteration 3, Profile Segment: 58)'
+(dh =)'
+(                 3.2693722)'
+(rdh_sum =)'
+(          3.26854164898686)'
+(ans =)'
+(Berm Factor Calculation: Iteration 3, Profile Segment: 59)'
+(dh =)'
+(                 3.2475002)'
+(rdh_sum =)'
+(          3.45181489328406)'
+(ans =)'
+(Berm Factor Calculation: Iteration 3, Profile Segment: 60)'
+(dh =)'
+(                 3.2256282)'
+(rdh_sum =)'
+(          3.63278826754331)'
+(ans =)'
+(Berm Factor Calculation: Iteration 3, Profile Segment: 61)'
+(dh =)'
+(                 3.2037557)'
+(rdh_sum =)'
+(          3.81147304834834)'
+(ans =)'
+(Berm Factor Calculation: Iteration 3, Profile Segment: 62)'
+(dh =)'
+(                 3.1818832)'
+(rdh_sum =)'
+(          3.98788064626011)'
+(ans =)'
+(Berm Factor Calculation: Iteration 3, Profile Segment: 63)'
+(dh =)'
+(                 3.1600112)'
+(rdh_sum =)'
+(          4.16202260436817)'
+(ans =)'
+(Berm Factor Calculation: Iteration 3, Profile Segment: 64)'
+(dh =)'
+(                 3.1364562)'
+(rdh_sum =)'
+(          4.33373753040655)'
+(ans =)'
+(Berm Factor Calculation: Iteration 3, Profile Segment: 65)'
+(dh =)'
+(                 3.1112187)'
+(rdh_sum =)'
+(          4.50286707129962)'
+(ans =)'
+(Berm Factor Calculation: Iteration 3, Profile Segment: 66)'
+(dh =)'
+(                 3.0859817)'
+(rdh_sum =)'
+(          4.66942692112822)'
+(ans =)'
+(Berm Factor Calculation: Iteration 3, Profile Segment: 67)'
+(dh =)'
+(                 3.0607447)'
+(rdh_sum =)'
+(          4.83343284408631)'
+(ans =)'
+(Berm Factor Calculation: Iteration 3, Profile Segment: 68)'
+(dh =)'
+(                 3.0355077)'
+(rdh_sum =)'
+(          4.99490072511098)'
+(ans =)'
+(Berm Factor Calculation: Iteration 3, Profile Segment: 69)'
+(dh =)'
+(                 3.0102702)'
+(rdh_sum =)'
+(          5.15384651932369)'
+(ans =)'
+(Berm Factor Calculation: Iteration 3, Profile Segment: 70)'
+ET
+endstream
+endobj
+62 0 obj
+2398
+endobj
+63 0 obj
+<<
+/Type /Page
+/Parent 3 0 R
+/Resources 5 0 R
+/Contents 64 0 R
+>>
+endobj
+64 0 obj
+<<
+/Length 65 0 R
+>>
+stream
+BT
+/F1 8 Tf
+1 0 0 1 50 752 Tm
+8 TL
+(dh =)'
+(                 2.9973072)'
+(rdh_sum =)'
+(          5.31150312858367)'
+(ans =)'
+(Berm Factor Calculation: Iteration 3, Profile Segment: 71)'
+(dh =)'
+(                 3.0088937)'
+(rdh_sum =)'
+(          5.47031182615509)'
+(ans =)'
+(Berm Factor Calculation: Iteration 3, Profile Segment: 72)'
+(dh =)'
+(                 3.0327542)'
+(rdh_sum =)'
+(          5.63150375862059)'
+(ans =)'
+(Berm Factor Calculation: Iteration 3, Profile Segment: 73)'
+(dh =)'
+(                 3.0566147)'
+(rdh_sum =)'
+(          5.79509324427916)'
+(ans =)'
+(Berm Factor Calculation: Iteration 3, Profile Segment: 74)'
+(dh =)'
+(                 3.0804757)'
+(rdh_sum =)'
+(          5.96109455079449)'
+(ans =)'
+(Berm Factor Calculation: Iteration 3, Profile Segment: 75)'
+(dh =)'
+(                 3.1043362)'
+(rdh_sum =)'
+(           6.1295217428272)'
+(ans =)'
+(Berm Factor Calculation: Iteration 3, Profile Segment: 80)'
+(dh =)'
+(                 2.5429832)'
+(rdh_sum =)'
+(          6.24480448001698)'
+(ans =)'
+(Berm Factor Calculation: Iteration 3, Profile Segment: 81)'
+(dh =)'
+(                 2.5119012)'
+(rdh_sum =)'
+(          6.35739656631689)'
+(ans =)'
+(Berm Factor Calculation: Iteration 3, Profile Segment: 82)'
+(dh =)'
+(                 2.4808197)'
+(rdh_sum =)'
+(          6.46732582636616)'
+(ans =)'
+(Berm Factor Calculation: Iteration 3, Profile Segment: 83)'
+(dh =)'
+(                 2.4497382)'
+(rdh_sum =)'
+(          6.57462023225059)'
+(ans =)'
+(Berm Factor Calculation: Iteration 3, Profile Segment: 84)'
+(dh =)'
+(                 2.4186562)'
+(rdh_sum =)'
+(          6.67930790329641)'
+(ans =)'
+(Berm Factor Calculation: Iteration 3, Profile Segment: 85)'
+(dh =)'
+(                 2.3875747)'
+(rdh_sum =)'
+(          6.78141722962548)'
+(ans =)'
+(Berm Factor Calculation: Iteration 3, Profile Segment: 86)'
+(dh =)'
+(                 2.3564932)'
+(rdh_sum =)'
+(          6.88097674409328)'
+(ans =)'
+(Berm Factor Calculation: Iteration 3, Profile Segment: 87)'
+(dh =)'
+(                 2.3254112)'
+(rdh_sum =)'
+(          6.97801512207878)'
+(ans =)'
+(Berm Factor Calculation: Iteration 3, Profile Segment: 88)'
+(dh =)'
+(                 2.2943297)'
+(rdh_sum =)'
+(           7.0725613008643)'
+(ans =)'
+(Berm Factor Calculation: Iteration 3, Profile Segment: 89)'
+ET
+endstream
+endobj
+65 0 obj
+2398
+endobj
+66 0 obj
+<<
+/Type /Page
+/Parent 3 0 R
+/Resources 5 0 R
+/Contents 67 0 R
+>>
+endobj
+67 0 obj
+<<
+/Length 68 0 R
+>>
+stream
+BT
+/F1 8 Tf
+1 0 0 1 50 752 Tm
+8 TL
+(dh =)'
+(                 2.2681657)'
+(rdh_sum =)'
+(          7.16503211071685)'
+(ans =)'
+(Berm Factor Calculation: Iteration 3, Profile Segment: 90)'
+(dh =)'
+(                 2.2518362)'
+(rdh_sum =)'
+(           7.2562181282114)'
+(ans =)'
+(Berm Factor Calculation: Iteration 3, Profile Segment: 91)'
+(dh =)'
+(                 2.2404247)'
+(rdh_sum =)'
+(          7.34651109955671)'
+(ans =)'
+(Berm Factor Calculation: Iteration 3, Profile Segment: 92)'
+(dh =)'
+(                 2.2290132)'
+(rdh_sum =)'
+(          7.43591498514927)'
+(ans =)'
+(Berm Factor Calculation: Iteration 3, Profile Segment: 93)'
+(dh =)'
+(                 2.2176017)'
+(rdh_sum =)'
+(          7.52443375397985)'
+(ans =)'
+(Berm Factor Calculation: Iteration 3, Profile Segment: 94)'
+(dh =)'
+(                 2.2061902)'
+(rdh_sum =)'
+(          7.61207138359508)'
+(ans =)'
+(Berm Factor Calculation: Iteration 3, Profile Segment: 95)'
+(dh =)'
+(                 2.1947782)'
+(rdh_sum =)'
+(           7.6988318217137)'
+(ans =)'
+(Berm Factor Calculation: Iteration 3, Profile Segment: 96)'
+(dh =)'
+(                 2.1833667)'
+(rdh_sum =)'
+(          7.78471910139933)'
+(ans =)'
+(Berm Factor Calculation: Iteration 3, Profile Segment: 97)'
+(dh =)'
+(                 2.1719552)'
+(rdh_sum =)'
+(           7.8697372256357)'
+(ans =)'
+(Berm Factor Calculation: Iteration 3, Profile Segment: 98)'
+(dh =)'
+(                 2.1605437)'
+(rdh_sum =)'
+(          7.95389020580813)'
+(ans =)'
+(Berm Factor Calculation: Iteration 3, Profile Segment: 99)'
+(dh =)'
+(                 2.1491322)'
+(rdh_sum =)'
+(          8.03718206166478)'
+(ans =)'
+(Berm Factor Calculation: Iteration 3, Profile Segment: 100)'
+(dh =)'
+(                 2.1377202)'
+(rdh_sum =)'
+(          8.11961678381213)'
+(ans =)'
+(Berm Factor Calculation: Iteration 3, Profile Segment: 101)'
+(dh =)'
+(                 2.1279132)'
+(rdh_sum =)'
+(           8.2013181454926)'
+(ans =)'
+(Berm Factor Calculation: Iteration 3, Profile Segment: 102)'
+(dh =)'
+(                 2.1197112)'
+(rdh_sum =)'
+(          8.28240846046287)'
+(ans =)'
+(Berm Factor Calculation: Iteration 3, Profile Segment: 103)'
+(dh =)'
+(                 2.1115092)'
+(rdh_sum =)'
+(          8.36288982061794)'
+(ans =)'
+(Berm Factor Calculation: Iteration 3, Profile Segment: 104)'
+ET
+endstream
+endobj
+68 0 obj
+2403
+endobj
+69 0 obj
+<<
+/Type /Page
+/Parent 3 0 R
+/Resources 5 0 R
+/Contents 70 0 R
+>>
+endobj
+70 0 obj
+<<
+/Length 71 0 R
+>>
+stream
+BT
+/F1 8 Tf
+1 0 0 1 50 752 Tm
+8 TL
+(dh =)'
+(                 2.1033072)'
+(rdh_sum =)'
+(          8.44276432089374)'
+(ans =)'
+(Berm Factor Calculation: Iteration 3, Profile Segment: 105)'
+(dh =)'
+(                 2.0951052)'
+(rdh_sum =)'
+(          8.52203405925664)'
+(ans =)'
+(Berm Factor Calculation: Iteration 3, Profile Segment: 106)'
+(dh =)'
+(                 2.0869032)'
+(rdh_sum =)'
+(            8.600701136693)'
+(ans =)'
+(Berm Factor Calculation: Iteration 3, Profile Segment: 107)'
+(dh =)'
+(                 2.0787012)'
+(rdh_sum =)'
+(          8.67876765719867)'
+(ans =)'
+(Berm Factor Calculation: Iteration 3, Profile Segment: 108)'
+(dh =)'
+(                 2.0704992)'
+(rdh_sum =)'
+(          8.75623572776848)'
+(ans =)'
+(Berm Factor Calculation: Iteration 3, Profile Segment: 109)'
+(dh =)'
+(                 2.0683277)'
+(rdh_sum =)'
+(          8.83354571035977)'
+(ans =)'
+(Berm Factor Calculation: Iteration 3, Profile Segment: 110)'
+(dh =)'
+(                 2.0721872)'
+(rdh_sum =)'
+(          8.91113677165987)'
+(ans =)'
+(Berm Factor Calculation: Iteration 3, Profile Segment: 111)'
+(dh =)'
+(                 2.0760472)'
+(rdh_sum =)'
+(          8.98900941523621)'
+(ans =)'
+(Berm Factor Calculation: Iteration 3, Profile Segment: 112)'
+(dh =)'
+(                 2.0799072)'
+(rdh_sum =)'
+(          9.06716410796121)'
+(ans =)'
+(Berm Factor Calculation: Iteration 3, Profile Segment: 113)'
+(dh =)'
+(                 2.0837672)'
+(rdh_sum =)'
+(           9.1456013163953)'
+(ans =)'
+(Berm Factor Calculation: Iteration 3, Profile Segment: 114)'
+(dh =)'
+(                 2.0876267)'
+(rdh_sum =)'
+(          9.22432147010061)'
+(ans =)'
+(Berm Factor Calculation: Iteration 3, Profile Segment: 115)'
+(dh =)'
+(                 2.0914862)'
+(rdh_sum =)'
+(           9.3033250348915)'
+(ans =)'
+(Berm Factor Calculation: Iteration 3, Profile Segment: 116)'
+(dh =)'
+(                 2.0953462)'
+(rdh_sum =)'
+(          9.38261251307542)'
+(ans =)'
+(Berm Factor Calculation: Iteration 3, Profile Segment: 117)'
+(dh =)'
+(                 2.1138252)'
+(rdh_sum =)'
+(          9.46326561177069)'
+(ans =)'
+(Berm Factor Calculation: Iteration 3, Profile Segment: 118)'
+(dh =)'
+(                 2.1615422)'
+(rdh_sum =)'
+(          9.54749413122066)'
+(ans =)'
+(Berm Factor Calculation: Iteration 3, Profile Segment: 119)'
+ET
+endstream
+endobj
+71 0 obj
+2413
+endobj
+72 0 obj
+<<
+/Type /Page
+/Parent 3 0 R
+/Resources 5 0 R
+/Contents 73 0 R
+>>
+endobj
+73 0 obj
+<<
+/Length 74 0 R
+>>
+stream
+BT
+/F1 8 Tf
+1 0 0 1 50 752 Tm
+8 TL
+(dh =)'
+(                 2.2238782)'
+(rdh_sum =)'
+(          9.63649923617176)'
+(ans =)'
+(Berm Factor Calculation: Iteration 3, Profile Segment: 120)'
+(dh =)'
+(                 2.2862142)'
+(rdh_sum =)'
+(          9.73039947182654)'
+(ans =)'
+(Berm Factor Calculation: Iteration 3, Profile Segment: 121)'
+(dh =)'
+(                 2.3485502)'
+(rdh_sum =)'
+(          9.82931197146185)'
+(ans =)'
+(Berm Factor Calculation: Iteration 3, Profile Segment: 122)'
+(dh =)'
+(                 2.4108862)'
+(rdh_sum =)'
+(           9.9333524226435)'
+(ans =)'
+(Berm Factor Calculation: Iteration 3, Profile Segment: 123)'
+(dh =)'
+(                 2.4732222)'
+(rdh_sum =)'
+(           10.042635033858)'
+(ans =)'
+(Berm Factor Calculation: Iteration 3, Profile Segment: 124)'
+(dh =)'
+(                 2.5355582)'
+(rdh_sum =)'
+(          10.1572725015708)'
+(ans =)'
+(Berm Factor Calculation: Iteration 3, Profile Segment: 125)'
+(dh =)'
+(                 2.5978942)'
+(rdh_sum =)'
+(          10.2773759777207)'
+(ans =)'
+(Berm Factor Calculation: Iteration 3, Profile Segment: 126)'
+(dh =)'
+(                 2.6602302)'
+(rdh_sum =)'
+(            10.40305503766)'
+(ans =)'
+(Berm Factor Calculation: Iteration 3, Profile Segment: 127)'
+(dh =)'
+(                 2.6922182)'
+(rdh_sum =)'
+(          10.5316372534521)'
+(ans =)'
+(Berm Factor Calculation: Iteration 3, Profile Segment: 128)'
+(dh =)'
+(                 2.6635107)'
+(rdh_sum =)'
+(          10.6576127392301)'
+(ans =)'
+(Berm Factor Calculation: Iteration 3, Profile Segment: 129)'
+(dh =)'
+(                 2.6044557)'
+(rdh_sum =)'
+(          10.7782979701724)'
+(ans =)'
+(Berm Factor Calculation: Iteration 3, Profile Segment: 130)'
+(dh =)'
+(                 2.5454007)'
+(rdh_sum =)'
+(           10.893791140033)'
+(ans =)'
+(Berm Factor Calculation: Iteration 3, Profile Segment: 131)'
+(dh =)'
+(                 2.4863452)'
+(rdh_sum =)'
+(          11.0041917439506)'
+(ans =)'
+(Berm Factor Calculation: Iteration 3, Profile Segment: 132)'
+(dh =)'
+(                 2.4305707)'
+(rdh_sum =)'
+(          11.1098753004792)'
+(ans =)'
+(Berm Factor Calculation: Iteration 3, Profile Segment: 133)'
+(dh =)'
+(                 2.3813582)'
+(rdh_sum =)'
+(          11.2114723594644)'
+(ans =)'
+(Berm Factor Calculation: Iteration 3, Profile Segment: 134)'
+ET
+endstream
+endobj
+74 0 obj
+2413
+endobj
+75 0 obj
+<<
+/Type /Page
+/Parent 3 0 R
+/Resources 5 0 R
+/Contents 76 0 R
+>>
+endobj
+76 0 obj
+<<
+/Length 77 0 R
+>>
+stream
+BT
+/F1 8 Tf
+1 0 0 1 50 752 Tm
+8 TL
+(dh =)'
+(                 2.3354267)'
+(rdh_sum =)'
+(          11.3093199720722)'
+(ans =)'
+(Berm Factor Calculation: Iteration 3, Profile Segment: 135)'
+(dh =)'
+(                 2.2894952)'
+(rdh_sum =)'
+(          11.4034811159413)'
+(ans =)'
+(Berm Factor Calculation: Iteration 3, Profile Segment: 136)'
+(dh =)'
+(                 2.2435632)'
+(rdh_sum =)'
+(          11.4940193069266)'
+(ans =)'
+(Berm Factor Calculation: Iteration 3, Profile Segment: 169)'
+(dh =)'
+(                -4.8006863)'
+(rdh_sum =)'
+(           12.378922429044)'
+(ans =)'
+(!------- End Berm Factor Calculation, Iter: 3 ---------!)'
+(berm_width =)'
+(    86)'
+(rB =)'
+(         0.420260413764136)'
+(rdh_mean =)'
+(         0.143940958477256)'
+(gamma_berm =)'
+(         0.640232273003122)'
+(slope =)'
+(         0.124799620775612)'
+(Irb =)'
+(          1.41595736275642)'
+(gamma_berm =)'
+(         0.640232273003122)'
+(gamma_perm =)'
+(     1)'
+(gamma_beta =)'
+(     1)'
+(gamma_rough =)'
+(                       0.6)'
+(gamma =)'
+(         0.384139363801873)'
+(ans =)'
+(!!! - - Iribaren number:   0.91 is in the valid range \(0.5-10\), TAW RECOMMENDED - - !!!)'
+(ans =)'
+(!!! - - slope: 1:8.0 V:H is outside the valid range \(1:8 - 1:1\), TAW NOT VALID - - !!!)'
+(R2_new =)'
+(          5.55062259206032)'
+(R2del =)'
+(         0.606883456347744)'
+(Z2 =)'
+(          14.9070467920603)'
+(ans =)'
+(!----------------- STARTING ITERATION 4 -----------------!)'
+(Ztoe =)'
+(         0.708324200000002)'
+(toe_sta =)'
+(         -9.28910224942969)'
+(top_sta =)'
+(          183.338176768571)'
+(Z2 =)'
+(          14.9070467920603)'
+(H0 =)'
+(                    5.7654)'
+(Tp =)'
+(                   13.2478)'
+(T0 =)'
+(          12.0434545454545)'
+(R2 =)'
+(          5.55062259206032)'
+(Z2 =)'
+(          14.9070467920603)'
+(top_sta =)'
+(          183.338176768571)'
+(Lslope =)'
+(          192.627279018001)'
+(ans =)'
+(Berm Factor Calculation: Iteration 4, Profile Segment: 40)'
+(dh =)'
+(                 4.4473502)'
+(rdh_sum =)'
+(         0.324280978646442)'
+(ans =)'
+(Berm Factor Calculation: Iteration 4, Profile Segment: 41)'
+(dh =)'
+(                 4.4192287)'
+ET
+endstream
+endobj
+77 0 obj
+2252
+endobj
+78 0 obj
+<<
+/Type /Page
+/Parent 3 0 R
+/Resources 5 0 R
+/Contents 79 0 R
+>>
+endobj
+79 0 obj
+<<
+/Length 80 0 R
+>>
+stream
+BT
+/F1 8 Tf
+1 0 0 1 50 752 Tm
+8 TL
+(rdh_sum =)'
+(         0.644980637357216)'
+(ans =)'
+(Berm Factor Calculation: Iteration 4, Profile Segment: 42)'
+(dh =)'
+(                 4.3911072)'
+(rdh_sum =)'
+(         0.962109501471238)'
+(ans =)'
+(Berm Factor Calculation: Iteration 4, Profile Segment: 43)'
+(dh =)'
+(                 4.3629857)'
+(rdh_sum =)'
+(          1.27567830594121)'
+(ans =)'
+(Berm Factor Calculation: Iteration 4, Profile Segment: 44)'
+(dh =)'
+(                 4.3348642)'
+(rdh_sum =)'
+(          1.58569799470345)'
+(ans =)'
+(Berm Factor Calculation: Iteration 4, Profile Segment: 45)'
+(dh =)'
+(                 4.3067427)'
+(rdh_sum =)'
+(          1.89217972003547)'
+(ans =)'
+(Berm Factor Calculation: Iteration 4, Profile Segment: 46)'
+(dh =)'
+(                 4.2786212)'
+(rdh_sum =)'
+(           2.1951348419013)'
+(ans =)'
+(Berm Factor Calculation: Iteration 4, Profile Segment: 47)'
+(dh =)'
+(                 4.2504997)'
+(rdh_sum =)'
+(          2.49457492728462)'
+(ans =)'
+(Berm Factor Calculation: Iteration 4, Profile Segment: 48)'
+(dh =)'
+(                 4.2223782)'
+(rdh_sum =)'
+(          2.79051174950979)'
+(ans =)'
+(Berm Factor Calculation: Iteration 4, Profile Segment: 49)'
+(dh =)'
+(                 4.1942567)'
+(rdh_sum =)'
+(           3.0829572875507)'
+(ans =)'
+(Berm Factor Calculation: Iteration 4, Profile Segment: 58)'
+(dh =)'
+(                 3.2693722)'
+(rdh_sum =)'
+(          3.26854164898686)'
+(ans =)'
+(Berm Factor Calculation: Iteration 4, Profile Segment: 59)'
+(dh =)'
+(                 3.2475002)'
+(rdh_sum =)'
+(          3.45181489328406)'
+(ans =)'
+(Berm Factor Calculation: Iteration 4, Profile Segment: 60)'
+(dh =)'
+(                 3.2256282)'
+(rdh_sum =)'
+(          3.63278826754331)'
+(ans =)'
+(Berm Factor Calculation: Iteration 4, Profile Segment: 61)'
+(dh =)'
+(                 3.2037557)'
+(rdh_sum =)'
+(          3.81147304834834)'
+(ans =)'
+(Berm Factor Calculation: Iteration 4, Profile Segment: 62)'
+(dh =)'
+(                 3.1818832)'
+(rdh_sum =)'
+(          3.98788064626011)'
+(ans =)'
+(Berm Factor Calculation: Iteration 4, Profile Segment: 63)'
+(dh =)'
+(                 3.1600112)'
+(rdh_sum =)'
+(          4.16202260436817)'
+(ans =)'
+(Berm Factor Calculation: Iteration 4, Profile Segment: 64)'
+(dh =)'
+(                 3.1364562)'
+ET
+endstream
+endobj
+80 0 obj
+2398
+endobj
+81 0 obj
+<<
+/Type /Page
+/Parent 3 0 R
+/Resources 5 0 R
+/Contents 82 0 R
+>>
+endobj
+82 0 obj
+<<
+/Length 83 0 R
+>>
+stream
+BT
+/F1 8 Tf
+1 0 0 1 50 752 Tm
+8 TL
+(rdh_sum =)'
+(          4.33373753040655)'
+(ans =)'
+(Berm Factor Calculation: Iteration 4, Profile Segment: 65)'
+(dh =)'
+(                 3.1112187)'
+(rdh_sum =)'
+(          4.50286707129962)'
+(ans =)'
+(Berm Factor Calculation: Iteration 4, Profile Segment: 66)'
+(dh =)'
+(                 3.0859817)'
+(rdh_sum =)'
+(          4.66942692112822)'
+(ans =)'
+(Berm Factor Calculation: Iteration 4, Profile Segment: 67)'
+(dh =)'
+(                 3.0607447)'
+(rdh_sum =)'
+(          4.83343284408631)'
+(ans =)'
+(Berm Factor Calculation: Iteration 4, Profile Segment: 68)'
+(dh =)'
+(                 3.0355077)'
+(rdh_sum =)'
+(          4.99490072511098)'
+(ans =)'
+(Berm Factor Calculation: Iteration 4, Profile Segment: 69)'
+(dh =)'
+(                 3.0102702)'
+(rdh_sum =)'
+(          5.15384651932369)'
+(ans =)'
+(Berm Factor Calculation: Iteration 4, Profile Segment: 70)'
+(dh =)'
+(                 2.9973072)'
+(rdh_sum =)'
+(          5.31150312858367)'
+(ans =)'
+(Berm Factor Calculation: Iteration 4, Profile Segment: 71)'
+(dh =)'
+(                 3.0088937)'
+(rdh_sum =)'
+(          5.47031182615509)'
+(ans =)'
+(Berm Factor Calculation: Iteration 4, Profile Segment: 72)'
+(dh =)'
+(                 3.0327542)'
+(rdh_sum =)'
+(          5.63150375862059)'
+(ans =)'
+(Berm Factor Calculation: Iteration 4, Profile Segment: 73)'
+(dh =)'
+(                 3.0566147)'
+(rdh_sum =)'
+(          5.79509324427916)'
+(ans =)'
+(Berm Factor Calculation: Iteration 4, Profile Segment: 74)'
+(dh =)'
+(                 3.0804757)'
+(rdh_sum =)'
+(          5.96109455079449)'
+(ans =)'
+(Berm Factor Calculation: Iteration 4, Profile Segment: 75)'
+(dh =)'
+(                 3.1043362)'
+(rdh_sum =)'
+(           6.1295217428272)'
+(ans =)'
+(Berm Factor Calculation: Iteration 4, Profile Segment: 80)'
+(dh =)'
+(                 2.5429832)'
+(rdh_sum =)'
+(          6.24480448001698)'
+(ans =)'
+(Berm Factor Calculation: Iteration 4, Profile Segment: 81)'
+(dh =)'
+(                 2.5119012)'
+(rdh_sum =)'
+(          6.35739656631689)'
+(ans =)'
+(Berm Factor Calculation: Iteration 4, Profile Segment: 82)'
+(dh =)'
+(                 2.4808197)'
+(rdh_sum =)'
+(          6.46732582636616)'
+(ans =)'
+(Berm Factor Calculation: Iteration 4, Profile Segment: 83)'
+(dh =)'
+(                 2.4497382)'
+ET
+endstream
+endobj
+83 0 obj
+2398
+endobj
+84 0 obj
+<<
+/Type /Page
+/Parent 3 0 R
+/Resources 5 0 R
+/Contents 85 0 R
+>>
+endobj
+85 0 obj
+<<
+/Length 86 0 R
+>>
+stream
+BT
+/F1 8 Tf
+1 0 0 1 50 752 Tm
+8 TL
+(rdh_sum =)'
+(          6.57462023225059)'
+(ans =)'
+(Berm Factor Calculation: Iteration 4, Profile Segment: 84)'
+(dh =)'
+(                 2.4186562)'
+(rdh_sum =)'
+(          6.67930790329641)'
+(ans =)'
+(Berm Factor Calculation: Iteration 4, Profile Segment: 85)'
+(dh =)'
+(                 2.3875747)'
+(rdh_sum =)'
+(          6.78141722962548)'
+(ans =)'
+(Berm Factor Calculation: Iteration 4, Profile Segment: 86)'
+(dh =)'
+(                 2.3564932)'
+(rdh_sum =)'
+(          6.88097674409328)'
+(ans =)'
+(Berm Factor Calculation: Iteration 4, Profile Segment: 87)'
+(dh =)'
+(                 2.3254112)'
+(rdh_sum =)'
+(          6.97801512207878)'
+(ans =)'
+(Berm Factor Calculation: Iteration 4, Profile Segment: 88)'
+(dh =)'
+(                 2.2943297)'
+(rdh_sum =)'
+(           7.0725613008643)'
+(ans =)'
+(Berm Factor Calculation: Iteration 4, Profile Segment: 89)'
+(dh =)'
+(                 2.2681657)'
+(rdh_sum =)'
+(          7.16503211071685)'
+(ans =)'
+(Berm Factor Calculation: Iteration 4, Profile Segment: 90)'
+(dh =)'
+(                 2.2518362)'
+(rdh_sum =)'
+(           7.2562181282114)'
+(ans =)'
+(Berm Factor Calculation: Iteration 4, Profile Segment: 91)'
+(dh =)'
+(                 2.2404247)'
+(rdh_sum =)'
+(          7.34651109955671)'
+(ans =)'
+(Berm Factor Calculation: Iteration 4, Profile Segment: 92)'
+(dh =)'
+(                 2.2290132)'
+(rdh_sum =)'
+(          7.43591498514927)'
+(ans =)'
+(Berm Factor Calculation: Iteration 4, Profile Segment: 93)'
+(dh =)'
+(                 2.2176017)'
+(rdh_sum =)'
+(          7.52443375397985)'
+(ans =)'
+(Berm Factor Calculation: Iteration 4, Profile Segment: 94)'
+(dh =)'
+(                 2.2061902)'
+(rdh_sum =)'
+(          7.61207138359508)'
+(ans =)'
+(Berm Factor Calculation: Iteration 4, Profile Segment: 95)'
+(dh =)'
+(                 2.1947782)'
+(rdh_sum =)'
+(           7.6988318217137)'
+(ans =)'
+(Berm Factor Calculation: Iteration 4, Profile Segment: 96)'
+(dh =)'
+(                 2.1833667)'
+(rdh_sum =)'
+(          7.78471910139933)'
+(ans =)'
+(Berm Factor Calculation: Iteration 4, Profile Segment: 97)'
+(dh =)'
+(                 2.1719552)'
+(rdh_sum =)'
+(           7.8697372256357)'
+(ans =)'
+(Berm Factor Calculation: Iteration 4, Profile Segment: 98)'
+(dh =)'
+(                 2.1605437)'
+ET
+endstream
+endobj
+86 0 obj
+2398
+endobj
+87 0 obj
+<<
+/Type /Page
+/Parent 3 0 R
+/Resources 5 0 R
+/Contents 88 0 R
+>>
+endobj
+88 0 obj
+<<
+/Length 89 0 R
+>>
+stream
+BT
+/F1 8 Tf
+1 0 0 1 50 752 Tm
+8 TL
+(rdh_sum =)'
+(          7.95389020580813)'
+(ans =)'
+(Berm Factor Calculation: Iteration 4, Profile Segment: 99)'
+(dh =)'
+(                 2.1491322)'
+(rdh_sum =)'
+(          8.03718206166478)'
+(ans =)'
+(Berm Factor Calculation: Iteration 4, Profile Segment: 100)'
+(dh =)'
+(                 2.1377202)'
+(rdh_sum =)'
+(          8.11961678381213)'
+(ans =)'
+(Berm Factor Calculation: Iteration 4, Profile Segment: 101)'
+(dh =)'
+(                 2.1279132)'
+(rdh_sum =)'
+(           8.2013181454926)'
+(ans =)'
+(Berm Factor Calculation: Iteration 4, Profile Segment: 102)'
+(dh =)'
+(                 2.1197112)'
+(rdh_sum =)'
+(          8.28240846046287)'
+(ans =)'
+(Berm Factor Calculation: Iteration 4, Profile Segment: 103)'
+(dh =)'
+(                 2.1115092)'
+(rdh_sum =)'
+(          8.36288982061794)'
+(ans =)'
+(Berm Factor Calculation: Iteration 4, Profile Segment: 104)'
+(dh =)'
+(                 2.1033072)'
+(rdh_sum =)'
+(          8.44276432089374)'
+(ans =)'
+(Berm Factor Calculation: Iteration 4, Profile Segment: 105)'
+(dh =)'
+(                 2.0951052)'
+(rdh_sum =)'
+(          8.52203405925664)'
+(ans =)'
+(Berm Factor Calculation: Iteration 4, Profile Segment: 106)'
+(dh =)'
+(                 2.0869032)'
+(rdh_sum =)'
+(            8.600701136693)'
+(ans =)'
+(Berm Factor Calculation: Iteration 4, Profile Segment: 107)'
+(dh =)'
+(                 2.0787012)'
+(rdh_sum =)'
+(          8.67876765719867)'
+(ans =)'
+(Berm Factor Calculation: Iteration 4, Profile Segment: 108)'
+(dh =)'
+(                 2.0704992)'
+(rdh_sum =)'
+(          8.75623572776848)'
+(ans =)'
+(Berm Factor Calculation: Iteration 4, Profile Segment: 109)'
+(dh =)'
+(                 2.0683277)'
+(rdh_sum =)'
+(          8.83354571035977)'
+(ans =)'
+(Berm Factor Calculation: Iteration 4, Profile Segment: 110)'
+(dh =)'
+(                 2.0721872)'
+(rdh_sum =)'
+(          8.91113677165987)'
+(ans =)'
+(Berm Factor Calculation: Iteration 4, Profile Segment: 111)'
+(dh =)'
+(                 2.0760472)'
+(rdh_sum =)'
+(          8.98900941523621)'
+(ans =)'
+(Berm Factor Calculation: Iteration 4, Profile Segment: 112)'
+(dh =)'
+(                 2.0799072)'
+(rdh_sum =)'
+(          9.06716410796121)'
+(ans =)'
+(Berm Factor Calculation: Iteration 4, Profile Segment: 113)'
+(dh =)'
+(                 2.0837672)'
+ET
+endstream
+endobj
+89 0 obj
+2412
+endobj
+90 0 obj
+<<
+/Type /Page
+/Parent 3 0 R
+/Resources 5 0 R
+/Contents 91 0 R
+>>
+endobj
+91 0 obj
+<<
+/Length 92 0 R
+>>
+stream
+BT
+/F1 8 Tf
+1 0 0 1 50 752 Tm
+8 TL
+(rdh_sum =)'
+(           9.1456013163953)'
+(ans =)'
+(Berm Factor Calculation: Iteration 4, Profile Segment: 114)'
+(dh =)'
+(                 2.0876267)'
+(rdh_sum =)'
+(          9.22432147010061)'
+(ans =)'
+(Berm Factor Calculation: Iteration 4, Profile Segment: 115)'
+(dh =)'
+(                 2.0914862)'
+(rdh_sum =)'
+(           9.3033250348915)'
+(ans =)'
+(Berm Factor Calculation: Iteration 4, Profile Segment: 116)'
+(dh =)'
+(                 2.0953462)'
+(rdh_sum =)'
+(          9.38261251307542)'
+(ans =)'
+(Berm Factor Calculation: Iteration 4, Profile Segment: 117)'
+(dh =)'
+(                 2.1138252)'
+(rdh_sum =)'
+(          9.46326561177069)'
+(ans =)'
+(Berm Factor Calculation: Iteration 4, Profile Segment: 118)'
+(dh =)'
+(                 2.1615422)'
+(rdh_sum =)'
+(          9.54749413122066)'
+(ans =)'
+(Berm Factor Calculation: Iteration 4, Profile Segment: 119)'
+(dh =)'
+(                 2.2238782)'
+(rdh_sum =)'
+(          9.63649923617176)'
+(ans =)'
+(Berm Factor Calculation: Iteration 4, Profile Segment: 120)'
+(dh =)'
+(                 2.2862142)'
+(rdh_sum =)'
+(          9.73039947182654)'
+(ans =)'
+(Berm Factor Calculation: Iteration 4, Profile Segment: 121)'
+(dh =)'
+(                 2.3485502)'
+(rdh_sum =)'
+(          9.82931197146185)'
+(ans =)'
+(Berm Factor Calculation: Iteration 4, Profile Segment: 122)'
+(dh =)'
+(                 2.4108862)'
+(rdh_sum =)'
+(           9.9333524226435)'
+(ans =)'
+(Berm Factor Calculation: Iteration 4, Profile Segment: 123)'
+(dh =)'
+(                 2.4732222)'
+(rdh_sum =)'
+(           10.042635033858)'
+(ans =)'
+(Berm Factor Calculation: Iteration 4, Profile Segment: 124)'
+(dh =)'
+(                 2.5355582)'
+(rdh_sum =)'
+(          10.1572725015708)'
+(ans =)'
+(Berm Factor Calculation: Iteration 4, Profile Segment: 125)'
+(dh =)'
+(                 2.5978942)'
+(rdh_sum =)'
+(          10.2773759777207)'
+(ans =)'
+(Berm Factor Calculation: Iteration 4, Profile Segment: 126)'
+(dh =)'
+(                 2.6602302)'
+(rdh_sum =)'
+(            10.40305503766)'
+(ans =)'
+(Berm Factor Calculation: Iteration 4, Profile Segment: 127)'
+(dh =)'
+(                 2.6922182)'
+(rdh_sum =)'
+(          10.5316372534521)'
+(ans =)'
+(Berm Factor Calculation: Iteration 4, Profile Segment: 128)'
+(dh =)'
+(                 2.6635107)'
+ET
+endstream
+endobj
+92 0 obj
+2413
+endobj
+93 0 obj
+<<
+/Type /Page
+/Parent 3 0 R
+/Resources 5 0 R
+/Contents 94 0 R
+>>
+endobj
+94 0 obj
+<<
+/Length 95 0 R
+>>
+stream
+BT
+/F1 8 Tf
+1 0 0 1 50 752 Tm
+8 TL
+(rdh_sum =)'
+(          10.6576127392301)'
+(ans =)'
+(Berm Factor Calculation: Iteration 4, Profile Segment: 129)'
+(dh =)'
+(                 2.6044557)'
+(rdh_sum =)'
+(          10.7782979701724)'
+(ans =)'
+(Berm Factor Calculation: Iteration 4, Profile Segment: 130)'
+(dh =)'
+(                 2.5454007)'
+(rdh_sum =)'
+(           10.893791140033)'
+(ans =)'
+(Berm Factor Calculation: Iteration 4, Profile Segment: 131)'
+(dh =)'
+(                 2.4863452)'
+(rdh_sum =)'
+(          11.0041917439506)'
+(ans =)'
+(Berm Factor Calculation: Iteration 4, Profile Segment: 132)'
+(dh =)'
+(                 2.4305707)'
+(rdh_sum =)'
+(          11.1098753004792)'
+(ans =)'
+(Berm Factor Calculation: Iteration 4, Profile Segment: 133)'
+(dh =)'
+(                 2.3813582)'
+(rdh_sum =)'
+(          11.2114723594644)'
+(ans =)'
+(Berm Factor Calculation: Iteration 4, Profile Segment: 134)'
+(dh =)'
+(                 2.3354267)'
+(rdh_sum =)'
+(          11.3093199720722)'
+(ans =)'
+(Berm Factor Calculation: Iteration 4, Profile Segment: 135)'
+(dh =)'
+(                 2.2894952)'
+(rdh_sum =)'
+(          11.4034811159413)'
+(ans =)'
+(Berm Factor Calculation: Iteration 4, Profile Segment: 136)'
+(dh =)'
+(                 2.2435632)'
+(rdh_sum =)'
+(          11.4940193069266)'
+(ans =)'
+(Berm Factor Calculation: Iteration 4, Profile Segment: 169)'
+(dh =)'
+(                -4.8006863)'
+(rdh_sum =)'
+(           12.449650311268)'
+(ans =)'
+(!------- End Berm Factor Calculation, Iter: 4 ---------!)'
+(berm_width =)'
+(    86)'
+(rB =)'
+(         0.446458053285192)'
+(rdh_mean =)'
+(         0.144763375712419)'
+(gamma_berm =)'
+(         0.618172721622367)'
+(slope =)'
+(          0.13316219566724)'
+(Irb =)'
+(          1.51083785530769)'
+(gamma_berm =)'
+(         0.618172721622367)'
+(gamma_perm =)'
+(     1)'
+(gamma_beta =)'
+(     1)'
+(gamma_rough =)'
+(                       0.6)'
+(gamma =)'
+(          0.37090363297342)'
+(ans =)'
+(!!! - - Iribaren number:   0.93 is in the valid range \(0.5-10\), TAW RECOMMENDED - - !!!)'
+(ans =)'
+(!!! - - slope: 1:7.5 V:H is in the valid range \(1:8 - 1:1\), TAW RECOMMENDED - - !!!)'
+(R2_new =)'
+(          5.71849380898391)'
+(R2del =)'
+(         0.167871216923583)'
+(Z2 =)'
+(          15.0749180089839)'
+ET
+endstream
+endobj
+95 0 obj
+2354
+endobj
+96 0 obj
+<<
+/Type /Page
+/Parent 3 0 R
+/Resources 5 0 R
+/Contents 97 0 R
+>>
+endobj
+97 0 obj
+<<
+/Length 98 0 R
+>>
+stream
+BT
+/F1 8 Tf
+1 0 0 1 50 752 Tm
+8 TL
+(ans =)'
+(!----------------- STARTING ITERATION 5 -----------------!)'
+(Ztoe =)'
+(         0.708324200000002)'
+(toe_sta =)'
+(         -9.28910224942969)'
+(top_sta =)'
+(          186.659662630022)'
+(Z2 =)'
+(          15.0749180089839)'
+(H0 =)'
+(                    5.7654)'
+(Tp =)'
+(                   13.2478)'
+(T0 =)'
+(          12.0434545454545)'
+(R2 =)'
+(          5.71849380898391)'
+(Z2 =)'
+(          15.0749180089839)'
+(top_sta =)'
+(          186.659662630022)'
+(Lslope =)'
+(          195.948764879451)'
+(ans =)'
+(Berm Factor Calculation: Iteration 5, Profile Segment: 40)'
+(dh =)'
+(                 4.4473502)'
+(rdh_sum =)'
+(         0.324280978646442)'
+(ans =)'
+(Berm Factor Calculation: Iteration 5, Profile Segment: 41)'
+(dh =)'
+(                 4.4192287)'
+(rdh_sum =)'
+(         0.644980637357216)'
+(ans =)'
+(Berm Factor Calculation: Iteration 5, Profile Segment: 42)'
+(dh =)'
+(                 4.3911072)'
+(rdh_sum =)'
+(         0.962109501471238)'
+(ans =)'
+(Berm Factor Calculation: Iteration 5, Profile Segment: 43)'
+(dh =)'
+(                 4.3629857)'
+(rdh_sum =)'
+(          1.27567830594121)'
+(ans =)'
+(Berm Factor Calculation: Iteration 5, Profile Segment: 44)'
+(dh =)'
+(                 4.3348642)'
+(rdh_sum =)'
+(          1.58569799470345)'
+(ans =)'
+(Berm Factor Calculation: Iteration 5, Profile Segment: 45)'
+(dh =)'
+(                 4.3067427)'
+(rdh_sum =)'
+(          1.89217972003547)'
+(ans =)'
+(Berm Factor Calculation: Iteration 5, Profile Segment: 46)'
+(dh =)'
+(                 4.2786212)'
+(rdh_sum =)'
+(           2.1951348419013)'
+(ans =)'
+(Berm Factor Calculation: Iteration 5, Profile Segment: 47)'
+(dh =)'
+(                 4.2504997)'
+(rdh_sum =)'
+(          2.49457492728462)'
+(ans =)'
+(Berm Factor Calculation: Iteration 5, Profile Segment: 48)'
+(dh =)'
+(                 4.2223782)'
+(rdh_sum =)'
+(          2.79051174950979)'
+(ans =)'
+(Berm Factor Calculation: Iteration 5, Profile Segment: 49)'
+(dh =)'
+(                 4.1942567)'
+(rdh_sum =)'
+(           3.0829572875507)'
+(ans =)'
+(Berm Factor Calculation: Iteration 5, Profile Segment: 58)'
+(dh =)'
+(                 3.2693722)'
+(rdh_sum =)'
+(          3.26854164898686)'
+ET
+endstream
+endobj
+98 0 obj
+2304
+endobj
+99 0 obj
+<<
+/Type /Page
+/Parent 3 0 R
+/Resources 5 0 R
+/Contents 100 0 R
+>>
+endobj
+100 0 obj
+<<
+/Length 101 0 R
+>>
+stream
+BT
+/F1 8 Tf
+1 0 0 1 50 752 Tm
+8 TL
+(ans =)'
+(Berm Factor Calculation: Iteration 5, Profile Segment: 59)'
+(dh =)'
+(                 3.2475002)'
+(rdh_sum =)'
+(          3.45181489328406)'
+(ans =)'
+(Berm Factor Calculation: Iteration 5, Profile Segment: 60)'
+(dh =)'
+(                 3.2256282)'
+(rdh_sum =)'
+(          3.63278826754331)'
+(ans =)'
+(Berm Factor Calculation: Iteration 5, Profile Segment: 61)'
+(dh =)'
+(                 3.2037557)'
+(rdh_sum =)'
+(          3.81147304834834)'
+(ans =)'
+(Berm Factor Calculation: Iteration 5, Profile Segment: 62)'
+(dh =)'
+(                 3.1818832)'
+(rdh_sum =)'
+(          3.98788064626011)'
+(ans =)'
+(Berm Factor Calculation: Iteration 5, Profile Segment: 63)'
+(dh =)'
+(                 3.1600112)'
+(rdh_sum =)'
+(          4.16202260436817)'
+(ans =)'
+(Berm Factor Calculation: Iteration 5, Profile Segment: 64)'
+(dh =)'
+(                 3.1364562)'
+(rdh_sum =)'
+(          4.33373753040655)'
+(ans =)'
+(Berm Factor Calculation: Iteration 5, Profile Segment: 65)'
+(dh =)'
+(                 3.1112187)'
+(rdh_sum =)'
+(          4.50286707129962)'
+(ans =)'
+(Berm Factor Calculation: Iteration 5, Profile Segment: 66)'
+(dh =)'
+(                 3.0859817)'
+(rdh_sum =)'
+(          4.66942692112822)'
+(ans =)'
+(Berm Factor Calculation: Iteration 5, Profile Segment: 67)'
+(dh =)'
+(                 3.0607447)'
+(rdh_sum =)'
+(          4.83343284408631)'
+(ans =)'
+(Berm Factor Calculation: Iteration 5, Profile Segment: 68)'
+(dh =)'
+(                 3.0355077)'
+(rdh_sum =)'
+(          4.99490072511098)'
+(ans =)'
+(Berm Factor Calculation: Iteration 5, Profile Segment: 69)'
+(dh =)'
+(                 3.0102702)'
+(rdh_sum =)'
+(          5.15384651932369)'
+(ans =)'
+(Berm Factor Calculation: Iteration 5, Profile Segment: 70)'
+(dh =)'
+(                 2.9973072)'
+(rdh_sum =)'
+(          5.31150312858367)'
+(ans =)'
+(Berm Factor Calculation: Iteration 5, Profile Segment: 71)'
+(dh =)'
+(                 3.0088937)'
+(rdh_sum =)'
+(          5.47031182615509)'
+(ans =)'
+(Berm Factor Calculation: Iteration 5, Profile Segment: 72)'
+(dh =)'
+(                 3.0327542)'
+(rdh_sum =)'
+(          5.63150375862059)'
+(ans =)'
+(Berm Factor Calculation: Iteration 5, Profile Segment: 73)'
+(dh =)'
+(                 3.0566147)'
+(rdh_sum =)'
+(          5.79509324427916)'
+ET
+endstream
+endobj
+101 0 obj
+2398
+endobj
+102 0 obj
+<<
+/Type /Page
+/Parent 3 0 R
+/Resources 5 0 R
+/Contents 103 0 R
+>>
+endobj
+103 0 obj
+<<
+/Length 104 0 R
+>>
+stream
+BT
+/F1 8 Tf
+1 0 0 1 50 752 Tm
+8 TL
+(ans =)'
+(Berm Factor Calculation: Iteration 5, Profile Segment: 74)'
+(dh =)'
+(                 3.0804757)'
+(rdh_sum =)'
+(          5.96109455079449)'
+(ans =)'
+(Berm Factor Calculation: Iteration 5, Profile Segment: 75)'
+(dh =)'
+(                 3.1043362)'
+(rdh_sum =)'
+(           6.1295217428272)'
+(ans =)'
+(Berm Factor Calculation: Iteration 5, Profile Segment: 80)'
+(dh =)'
+(                 2.5429832)'
+(rdh_sum =)'
+(          6.24480448001698)'
+(ans =)'
+(Berm Factor Calculation: Iteration 5, Profile Segment: 81)'
+(dh =)'
+(                 2.5119012)'
+(rdh_sum =)'
+(          6.35739656631689)'
+(ans =)'
+(Berm Factor Calculation: Iteration 5, Profile Segment: 82)'
+(dh =)'
+(                 2.4808197)'
+(rdh_sum =)'
+(          6.46732582636616)'
+(ans =)'
+(Berm Factor Calculation: Iteration 5, Profile Segment: 83)'
+(dh =)'
+(                 2.4497382)'
+(rdh_sum =)'
+(          6.57462023225059)'
+(ans =)'
+(Berm Factor Calculation: Iteration 5, Profile Segment: 84)'
+(dh =)'
+(                 2.4186562)'
+(rdh_sum =)'
+(          6.67930790329641)'
+(ans =)'
+(Berm Factor Calculation: Iteration 5, Profile Segment: 85)'
+(dh =)'
+(                 2.3875747)'
+(rdh_sum =)'
+(          6.78141722962548)'
+(ans =)'
+(Berm Factor Calculation: Iteration 5, Profile Segment: 86)'
+(dh =)'
+(                 2.3564932)'
+(rdh_sum =)'
+(          6.88097674409328)'
+(ans =)'
+(Berm Factor Calculation: Iteration 5, Profile Segment: 87)'
+(dh =)'
+(                 2.3254112)'
+(rdh_sum =)'
+(          6.97801512207878)'
+(ans =)'
+(Berm Factor Calculation: Iteration 5, Profile Segment: 88)'
+(dh =)'
+(                 2.2943297)'
+(rdh_sum =)'
+(           7.0725613008643)'
+(ans =)'
+(Berm Factor Calculation: Iteration 5, Profile Segment: 89)'
+(dh =)'
+(                 2.2681657)'
+(rdh_sum =)'
+(          7.16503211071685)'
+(ans =)'
+(Berm Factor Calculation: Iteration 5, Profile Segment: 90)'
+(dh =)'
+(                 2.2518362)'
+(rdh_sum =)'
+(           7.2562181282114)'
+(ans =)'
+(Berm Factor Calculation: Iteration 5, Profile Segment: 91)'
+(dh =)'
+(                 2.2404247)'
+(rdh_sum =)'
+(          7.34651109955671)'
+(ans =)'
+(Berm Factor Calculation: Iteration 5, Profile Segment: 92)'
+(dh =)'
+(                 2.2290132)'
+(rdh_sum =)'
+(          7.43591498514927)'
+ET
+endstream
+endobj
+104 0 obj
+2398
+endobj
+105 0 obj
+<<
+/Type /Page
+/Parent 3 0 R
+/Resources 5 0 R
+/Contents 106 0 R
+>>
+endobj
+106 0 obj
+<<
+/Length 107 0 R
+>>
+stream
+BT
+/F1 8 Tf
+1 0 0 1 50 752 Tm
+8 TL
+(ans =)'
+(Berm Factor Calculation: Iteration 5, Profile Segment: 93)'
+(dh =)'
+(                 2.2176017)'
+(rdh_sum =)'
+(          7.52443375397985)'
+(ans =)'
+(Berm Factor Calculation: Iteration 5, Profile Segment: 94)'
+(dh =)'
+(                 2.2061902)'
+(rdh_sum =)'
+(          7.61207138359508)'
+(ans =)'
+(Berm Factor Calculation: Iteration 5, Profile Segment: 95)'
+(dh =)'
+(                 2.1947782)'
+(rdh_sum =)'
+(           7.6988318217137)'
+(ans =)'
+(Berm Factor Calculation: Iteration 5, Profile Segment: 96)'
+(dh =)'
+(                 2.1833667)'
+(rdh_sum =)'
+(          7.78471910139933)'
+(ans =)'
+(Berm Factor Calculation: Iteration 5, Profile Segment: 97)'
+(dh =)'
+(                 2.1719552)'
+(rdh_sum =)'
+(           7.8697372256357)'
+(ans =)'
+(Berm Factor Calculation: Iteration 5, Profile Segment: 98)'
+(dh =)'
+(                 2.1605437)'
+(rdh_sum =)'
+(          7.95389020580813)'
+(ans =)'
+(Berm Factor Calculation: Iteration 5, Profile Segment: 99)'
+(dh =)'
+(                 2.1491322)'
+(rdh_sum =)'
+(          8.03718206166478)'
+(ans =)'
+(Berm Factor Calculation: Iteration 5, Profile Segment: 100)'
+(dh =)'
+(                 2.1377202)'
+(rdh_sum =)'
+(          8.11961678381213)'
+(ans =)'
+(Berm Factor Calculation: Iteration 5, Profile Segment: 101)'
+(dh =)'
+(                 2.1279132)'
+(rdh_sum =)'
+(           8.2013181454926)'
+(ans =)'
+(Berm Factor Calculation: Iteration 5, Profile Segment: 102)'
+(dh =)'
+(                 2.1197112)'
+(rdh_sum =)'
+(          8.28240846046287)'
+(ans =)'
+(Berm Factor Calculation: Iteration 5, Profile Segment: 103)'
+(dh =)'
+(                 2.1115092)'
+(rdh_sum =)'
+(          8.36288982061794)'
+(ans =)'
+(Berm Factor Calculation: Iteration 5, Profile Segment: 104)'
+(dh =)'
+(                 2.1033072)'
+(rdh_sum =)'
+(          8.44276432089374)'
+(ans =)'
+(Berm Factor Calculation: Iteration 5, Profile Segment: 105)'
+(dh =)'
+(                 2.0951052)'
+(rdh_sum =)'
+(          8.52203405925664)'
+(ans =)'
+(Berm Factor Calculation: Iteration 5, Profile Segment: 106)'
+(dh =)'
+(                 2.0869032)'
+(rdh_sum =)'
+(            8.600701136693)'
+(ans =)'
+(Berm Factor Calculation: Iteration 5, Profile Segment: 107)'
+(dh =)'
+(                 2.0787012)'
+(rdh_sum =)'
+(          8.67876765719867)'
+ET
+endstream
+endobj
+107 0 obj
+2406
+endobj
+108 0 obj
+<<
+/Type /Page
+/Parent 3 0 R
+/Resources 5 0 R
+/Contents 109 0 R
+>>
+endobj
+109 0 obj
+<<
+/Length 110 0 R
+>>
+stream
+BT
+/F1 8 Tf
+1 0 0 1 50 752 Tm
+8 TL
+(ans =)'
+(Berm Factor Calculation: Iteration 5, Profile Segment: 108)'
+(dh =)'
+(                 2.0704992)'
+(rdh_sum =)'
+(          8.75623572776848)'
+(ans =)'
+(Berm Factor Calculation: Iteration 5, Profile Segment: 109)'
+(dh =)'
+(                 2.0683277)'
+(rdh_sum =)'
+(          8.83354571035977)'
+(ans =)'
+(Berm Factor Calculation: Iteration 5, Profile Segment: 110)'
+(dh =)'
+(                 2.0721872)'
+(rdh_sum =)'
+(          8.91113677165987)'
+(ans =)'
+(Berm Factor Calculation: Iteration 5, Profile Segment: 111)'
+(dh =)'
+(                 2.0760472)'
+(rdh_sum =)'
+(          8.98900941523621)'
+(ans =)'
+(Berm Factor Calculation: Iteration 5, Profile Segment: 112)'
+(dh =)'
+(                 2.0799072)'
+(rdh_sum =)'
+(          9.06716410796121)'
+(ans =)'
+(Berm Factor Calculation: Iteration 5, Profile Segment: 113)'
+(dh =)'
+(                 2.0837672)'
+(rdh_sum =)'
+(           9.1456013163953)'
+(ans =)'
+(Berm Factor Calculation: Iteration 5, Profile Segment: 114)'
+(dh =)'
+(                 2.0876267)'
+(rdh_sum =)'
+(          9.22432147010061)'
+(ans =)'
+(Berm Factor Calculation: Iteration 5, Profile Segment: 115)'
+(dh =)'
+(                 2.0914862)'
+(rdh_sum =)'
+(           9.3033250348915)'
+(ans =)'
+(Berm Factor Calculation: Iteration 5, Profile Segment: 116)'
+(dh =)'
+(                 2.0953462)'
+(rdh_sum =)'
+(          9.38261251307542)'
+(ans =)'
+(Berm Factor Calculation: Iteration 5, Profile Segment: 117)'
+(dh =)'
+(                 2.1138252)'
+(rdh_sum =)'
+(          9.46326561177069)'
+(ans =)'
+(Berm Factor Calculation: Iteration 5, Profile Segment: 118)'
+(dh =)'
+(                 2.1615422)'
+(rdh_sum =)'
+(          9.54749413122066)'
+(ans =)'
+(Berm Factor Calculation: Iteration 5, Profile Segment: 119)'
+(dh =)'
+(                 2.2238782)'
+(rdh_sum =)'
+(          9.63649923617176)'
+(ans =)'
+(Berm Factor Calculation: Iteration 5, Profile Segment: 120)'
+(dh =)'
+(                 2.2862142)'
+(rdh_sum =)'
+(          9.73039947182654)'
+(ans =)'
+(Berm Factor Calculation: Iteration 5, Profile Segment: 121)'
+(dh =)'
+(                 2.3485502)'
+(rdh_sum =)'
+(          9.82931197146185)'
+(ans =)'
+(Berm Factor Calculation: Iteration 5, Profile Segment: 122)'
+(dh =)'
+(                 2.4108862)'
+(rdh_sum =)'
+(           9.9333524226435)'
+ET
+endstream
+endobj
+110 0 obj
+2413
+endobj
+111 0 obj
+<<
+/Type /Page
+/Parent 3 0 R
+/Resources 5 0 R
+/Contents 112 0 R
+>>
+endobj
+112 0 obj
+<<
+/Length 113 0 R
+>>
+stream
+BT
+/F1 8 Tf
+1 0 0 1 50 752 Tm
+8 TL
+(ans =)'
+(Berm Factor Calculation: Iteration 5, Profile Segment: 123)'
+(dh =)'
+(                 2.4732222)'
+(rdh_sum =)'
+(           10.042635033858)'
+(ans =)'
+(Berm Factor Calculation: Iteration 5, Profile Segment: 124)'
+(dh =)'
+(                 2.5355582)'
+(rdh_sum =)'
+(          10.1572725015708)'
+(ans =)'
+(Berm Factor Calculation: Iteration 5, Profile Segment: 125)'
+(dh =)'
+(                 2.5978942)'
+(rdh_sum =)'
+(          10.2773759777207)'
+(ans =)'
+(Berm Factor Calculation: Iteration 5, Profile Segment: 126)'
+(dh =)'
+(                 2.6602302)'
+(rdh_sum =)'
+(            10.40305503766)'
+(ans =)'
+(Berm Factor Calculation: Iteration 5, Profile Segment: 127)'
+(dh =)'
+(                 2.6922182)'
+(rdh_sum =)'
+(          10.5316372534521)'
+(ans =)'
+(Berm Factor Calculation: Iteration 5, Profile Segment: 128)'
+(dh =)'
+(                 2.6635107)'
+(rdh_sum =)'
+(          10.6576127392301)'
+(ans =)'
+(Berm Factor Calculation: Iteration 5, Profile Segment: 129)'
+(dh =)'
+(                 2.6044557)'
+(rdh_sum =)'
+(          10.7782979701724)'
+(ans =)'
+(Berm Factor Calculation: Iteration 5, Profile Segment: 130)'
+(dh =)'
+(                 2.5454007)'
+(rdh_sum =)'
+(           10.893791140033)'
+(ans =)'
+(Berm Factor Calculation: Iteration 5, Profile Segment: 131)'
+(dh =)'
+(                 2.4863452)'
+(rdh_sum =)'
+(          11.0041917439506)'
+(ans =)'
+(Berm Factor Calculation: Iteration 5, Profile Segment: 132)'
+(dh =)'
+(                 2.4305707)'
+(rdh_sum =)'
+(          11.1098753004792)'
+(ans =)'
+(Berm Factor Calculation: Iteration 5, Profile Segment: 133)'
+(dh =)'
+(                 2.3813582)'
+(rdh_sum =)'
+(          11.2114723594644)'
+(ans =)'
+(Berm Factor Calculation: Iteration 5, Profile Segment: 134)'
+(dh =)'
+(                 2.3354267)'
+(rdh_sum =)'
+(          11.3093199720722)'
+(ans =)'
+(Berm Factor Calculation: Iteration 5, Profile Segment: 135)'
+(dh =)'
+(                 2.2894952)'
+(rdh_sum =)'
+(          11.4034811159413)'
+(ans =)'
+(Berm Factor Calculation: Iteration 5, Profile Segment: 136)'
+(dh =)'
+(                 2.2435632)'
+(rdh_sum =)'
+(          11.4940193069266)'
+(ans =)'
+(Berm Factor Calculation: Iteration 5, Profile Segment: 169)'
+(dh =)'
+(                -4.8006863)'
+(rdh_sum =)'
+(           12.431794626244)'
+ET
+endstream
+endobj
+113 0 obj
+2413
+endobj
+114 0 obj
+<<
+/Type /Page
+/Parent 3 0 R
+/Resources 5 0 R
+/Contents 115 0 R
+>>
+endobj
+115 0 obj
+<<
+/Length 116 0 R
+>>
+stream
+BT
+/F1 8 Tf
+1 0 0 1 50 752 Tm
+8 TL
+(ans =)'
+(!------- End Berm Factor Calculation, Iter: 5 ---------!)'
+(berm_width =)'
+(    86)'
+(rB =)'
+(         0.438890237725702)'
+(rdh_mean =)'
+(         0.144555751467954)'
+(gamma_berm =)'
+(         0.624553870400686)'
+(slope =)'
+(         0.130666259186591)'
+(Irb =)'
+(          1.48251934268095)'
+(gamma_berm =)'
+(         0.624553870400686)'
+(gamma_perm =)'
+(     1)'
+(gamma_beta =)'
+(     1)'
+(gamma_rough =)'
+(                       0.6)'
+(gamma =)'
+(         0.374732322240412)'
+(ans =)'
+(!!! - - Iribaren number:   0.93 is in the valid range \(0.5-10\), TAW RECOMMENDED - - !!!)'
+(ans =)'
+(!!! - - slope: 1:7.7 V:H is in the valid range \(1:8 - 1:1\), TAW RECOMMENDED - - !!!)'
+(R2_new =)'
+(            5.669232040686)'
+(R2del =)'
+(        0.0492617682979093)'
+(Z2 =)'
+(           15.025656240686)'
+(ans =)'
+(!----------------- STARTING ITERATION 6 -----------------!)'
+(Ztoe =)'
+(         0.708324200000002)'
+(toe_sta =)'
+(         -9.28910224942969)'
+(top_sta =)'
+(          185.684973401516)'
+(Z2 =)'
+(           15.025656240686)'
+(H0 =)'
+(                    5.7654)'
+(Tp =)'
+(                   13.2478)'
+(T0 =)'
+(          12.0434545454545)'
+(R2 =)'
+(            5.669232040686)'
+(Z2 =)'
+(           15.025656240686)'
+(top_sta =)'
+(          185.684973401516)'
+(Lslope =)'
+(          194.974075650946)'
+(ans =)'
+(Berm Factor Calculation: Iteration 6, Profile Segment: 40)'
+(dh =)'
+(                 4.4473502)'
+(rdh_sum =)'
+(         0.324280978646442)'
+(ans =)'
+(Berm Factor Calculation: Iteration 6, Profile Segment: 41)'
+(dh =)'
+(                 4.4192287)'
+(rdh_sum =)'
+(         0.644980637357216)'
+(ans =)'
+(Berm Factor Calculation: Iteration 6, Profile Segment: 42)'
+(dh =)'
+(                 4.3911072)'
+(rdh_sum =)'
+(         0.962109501471238)'
+(ans =)'
+(Berm Factor Calculation: Iteration 6, Profile Segment: 43)'
+(dh =)'
+(                 4.3629857)'
+(rdh_sum =)'
+(          1.27567830594121)'
+(ans =)'
+(Berm Factor Calculation: Iteration 6, Profile Segment: 44)'
+(dh =)'
+(                 4.3348642)'
+(rdh_sum =)'
+(          1.58569799470345)'
+(ans =)'
+(Berm Factor Calculation: Iteration 6, Profile Segment: 45)'
+ET
+endstream
+endobj
+116 0 obj
+2278
+endobj
+117 0 obj
+<<
+/Type /Page
+/Parent 3 0 R
+/Resources 5 0 R
+/Contents 118 0 R
+>>
+endobj
+118 0 obj
+<<
+/Length 119 0 R
+>>
+stream
+BT
+/F1 8 Tf
+1 0 0 1 50 752 Tm
+8 TL
+(dh =)'
+(                 4.3067427)'
+(rdh_sum =)'
+(          1.89217972003547)'
+(ans =)'
+(Berm Factor Calculation: Iteration 6, Profile Segment: 46)'
+(dh =)'
+(                 4.2786212)'
+(rdh_sum =)'
+(           2.1951348419013)'
+(ans =)'
+(Berm Factor Calculation: Iteration 6, Profile Segment: 47)'
+(dh =)'
+(                 4.2504997)'
+(rdh_sum =)'
+(          2.49457492728462)'
+(ans =)'
+(Berm Factor Calculation: Iteration 6, Profile Segment: 48)'
+(dh =)'
+(                 4.2223782)'
+(rdh_sum =)'
+(          2.79051174950979)'
+(ans =)'
+(Berm Factor Calculation: Iteration 6, Profile Segment: 49)'
+(dh =)'
+(                 4.1942567)'
+(rdh_sum =)'
+(           3.0829572875507)'
+(ans =)'
+(Berm Factor Calculation: Iteration 6, Profile Segment: 58)'
+(dh =)'
+(                 3.2693722)'
+(rdh_sum =)'
+(          3.26854164898686)'
+(ans =)'
+(Berm Factor Calculation: Iteration 6, Profile Segment: 59)'
+(dh =)'
+(                 3.2475002)'
+(rdh_sum =)'
+(          3.45181489328406)'
+(ans =)'
+(Berm Factor Calculation: Iteration 6, Profile Segment: 60)'
+(dh =)'
+(                 3.2256282)'
+(rdh_sum =)'
+(          3.63278826754331)'
+(ans =)'
+(Berm Factor Calculation: Iteration 6, Profile Segment: 61)'
+(dh =)'
+(                 3.2037557)'
+(rdh_sum =)'
+(          3.81147304834834)'
+(ans =)'
+(Berm Factor Calculation: Iteration 6, Profile Segment: 62)'
+(dh =)'
+(                 3.1818832)'
+(rdh_sum =)'
+(          3.98788064626011)'
+(ans =)'
+(Berm Factor Calculation: Iteration 6, Profile Segment: 63)'
+(dh =)'
+(                 3.1600112)'
+(rdh_sum =)'
+(          4.16202260436817)'
+(ans =)'
+(Berm Factor Calculation: Iteration 6, Profile Segment: 64)'
+(dh =)'
+(                 3.1364562)'
+(rdh_sum =)'
+(          4.33373753040655)'
+(ans =)'
+(Berm Factor Calculation: Iteration 6, Profile Segment: 65)'
+(dh =)'
+(                 3.1112187)'
+(rdh_sum =)'
+(          4.50286707129962)'
+(ans =)'
+(Berm Factor Calculation: Iteration 6, Profile Segment: 66)'
+(dh =)'
+(                 3.0859817)'
+(rdh_sum =)'
+(          4.66942692112822)'
+(ans =)'
+(Berm Factor Calculation: Iteration 6, Profile Segment: 67)'
+(dh =)'
+(                 3.0607447)'
+(rdh_sum =)'
+(          4.83343284408631)'
+(ans =)'
+(Berm Factor Calculation: Iteration 6, Profile Segment: 68)'
+ET
+endstream
+endobj
+119 0 obj
+2398
+endobj
+120 0 obj
+<<
+/Type /Page
+/Parent 3 0 R
+/Resources 5 0 R
+/Contents 121 0 R
+>>
+endobj
+121 0 obj
+<<
+/Length 122 0 R
+>>
+stream
+BT
+/F1 8 Tf
+1 0 0 1 50 752 Tm
+8 TL
+(dh =)'
+(                 3.0355077)'
+(rdh_sum =)'
+(          4.99490072511098)'
+(ans =)'
+(Berm Factor Calculation: Iteration 6, Profile Segment: 69)'
+(dh =)'
+(                 3.0102702)'
+(rdh_sum =)'
+(          5.15384651932369)'
+(ans =)'
+(Berm Factor Calculation: Iteration 6, Profile Segment: 70)'
+(dh =)'
+(                 2.9973072)'
+(rdh_sum =)'
+(          5.31150312858367)'
+(ans =)'
+(Berm Factor Calculation: Iteration 6, Profile Segment: 71)'
+(dh =)'
+(                 3.0088937)'
+(rdh_sum =)'
+(          5.47031182615509)'
+(ans =)'
+(Berm Factor Calculation: Iteration 6, Profile Segment: 72)'
+(dh =)'
+(                 3.0327542)'
+(rdh_sum =)'
+(          5.63150375862059)'
+(ans =)'
+(Berm Factor Calculation: Iteration 6, Profile Segment: 73)'
+(dh =)'
+(                 3.0566147)'
+(rdh_sum =)'
+(          5.79509324427916)'
+(ans =)'
+(Berm Factor Calculation: Iteration 6, Profile Segment: 74)'
+(dh =)'
+(                 3.0804757)'
+(rdh_sum =)'
+(          5.96109455079449)'
+(ans =)'
+(Berm Factor Calculation: Iteration 6, Profile Segment: 75)'
+(dh =)'
+(                 3.1043362)'
+(rdh_sum =)'
+(           6.1295217428272)'
+(ans =)'
+(Berm Factor Calculation: Iteration 6, Profile Segment: 80)'
+(dh =)'
+(                 2.5429832)'
+(rdh_sum =)'
+(          6.24480448001698)'
+(ans =)'
+(Berm Factor Calculation: Iteration 6, Profile Segment: 81)'
+(dh =)'
+(                 2.5119012)'
+(rdh_sum =)'
+(          6.35739656631689)'
+(ans =)'
+(Berm Factor Calculation: Iteration 6, Profile Segment: 82)'
+(dh =)'
+(                 2.4808197)'
+(rdh_sum =)'
+(          6.46732582636616)'
+(ans =)'
+(Berm Factor Calculation: Iteration 6, Profile Segment: 83)'
+(dh =)'
+(                 2.4497382)'
+(rdh_sum =)'
+(          6.57462023225059)'
+(ans =)'
+(Berm Factor Calculation: Iteration 6, Profile Segment: 84)'
+(dh =)'
+(                 2.4186562)'
+(rdh_sum =)'
+(          6.67930790329641)'
+(ans =)'
+(Berm Factor Calculation: Iteration 6, Profile Segment: 85)'
+(dh =)'
+(                 2.3875747)'
+(rdh_sum =)'
+(          6.78141722962548)'
+(ans =)'
+(Berm Factor Calculation: Iteration 6, Profile Segment: 86)'
+(dh =)'
+(                 2.3564932)'
+(rdh_sum =)'
+(          6.88097674409328)'
+(ans =)'
+(Berm Factor Calculation: Iteration 6, Profile Segment: 87)'
+ET
+endstream
+endobj
+122 0 obj
+2398
+endobj
+123 0 obj
+<<
+/Type /Page
+/Parent 3 0 R
+/Resources 5 0 R
+/Contents 124 0 R
+>>
+endobj
+124 0 obj
+<<
+/Length 125 0 R
+>>
+stream
+BT
+/F1 8 Tf
+1 0 0 1 50 752 Tm
+8 TL
+(dh =)'
+(                 2.3254112)'
+(rdh_sum =)'
+(          6.97801512207878)'
+(ans =)'
+(Berm Factor Calculation: Iteration 6, Profile Segment: 88)'
+(dh =)'
+(                 2.2943297)'
+(rdh_sum =)'
+(           7.0725613008643)'
+(ans =)'
+(Berm Factor Calculation: Iteration 6, Profile Segment: 89)'
+(dh =)'
+(                 2.2681657)'
+(rdh_sum =)'
+(          7.16503211071685)'
+(ans =)'
+(Berm Factor Calculation: Iteration 6, Profile Segment: 90)'
+(dh =)'
+(                 2.2518362)'
+(rdh_sum =)'
+(           7.2562181282114)'
+(ans =)'
+(Berm Factor Calculation: Iteration 6, Profile Segment: 91)'
+(dh =)'
+(                 2.2404247)'
+(rdh_sum =)'
+(          7.34651109955671)'
+(ans =)'
+(Berm Factor Calculation: Iteration 6, Profile Segment: 92)'
+(dh =)'
+(                 2.2290132)'
+(rdh_sum =)'
+(          7.43591498514927)'
+(ans =)'
+(Berm Factor Calculation: Iteration 6, Profile Segment: 93)'
+(dh =)'
+(                 2.2176017)'
+(rdh_sum =)'
+(          7.52443375397985)'
+(ans =)'
+(Berm Factor Calculation: Iteration 6, Profile Segment: 94)'
+(dh =)'
+(                 2.2061902)'
+(rdh_sum =)'
+(          7.61207138359508)'
+(ans =)'
+(Berm Factor Calculation: Iteration 6, Profile Segment: 95)'
+(dh =)'
+(                 2.1947782)'
+(rdh_sum =)'
+(           7.6988318217137)'
+(ans =)'
+(Berm Factor Calculation: Iteration 6, Profile Segment: 96)'
+(dh =)'
+(                 2.1833667)'
+(rdh_sum =)'
+(          7.78471910139933)'
+(ans =)'
+(Berm Factor Calculation: Iteration 6, Profile Segment: 97)'
+(dh =)'
+(                 2.1719552)'
+(rdh_sum =)'
+(           7.8697372256357)'
+(ans =)'
+(Berm Factor Calculation: Iteration 6, Profile Segment: 98)'
+(dh =)'
+(                 2.1605437)'
+(rdh_sum =)'
+(          7.95389020580813)'
+(ans =)'
+(Berm Factor Calculation: Iteration 6, Profile Segment: 99)'
+(dh =)'
+(                 2.1491322)'
+(rdh_sum =)'
+(          8.03718206166478)'
+(ans =)'
+(Berm Factor Calculation: Iteration 6, Profile Segment: 100)'
+(dh =)'
+(                 2.1377202)'
+(rdh_sum =)'
+(          8.11961678381213)'
+(ans =)'
+(Berm Factor Calculation: Iteration 6, Profile Segment: 101)'
+(dh =)'
+(                 2.1279132)'
+(rdh_sum =)'
+(           8.2013181454926)'
+(ans =)'
+(Berm Factor Calculation: Iteration 6, Profile Segment: 102)'
+ET
+endstream
+endobj
+125 0 obj
+2401
+endobj
+126 0 obj
+<<
+/Type /Page
+/Parent 3 0 R
+/Resources 5 0 R
+/Contents 127 0 R
+>>
+endobj
+127 0 obj
+<<
+/Length 128 0 R
+>>
+stream
+BT
+/F1 8 Tf
+1 0 0 1 50 752 Tm
+8 TL
+(dh =)'
+(                 2.1197112)'
+(rdh_sum =)'
+(          8.28240846046287)'
+(ans =)'
+(Berm Factor Calculation: Iteration 6, Profile Segment: 103)'
+(dh =)'
+(                 2.1115092)'
+(rdh_sum =)'
+(          8.36288982061794)'
+(ans =)'
+(Berm Factor Calculation: Iteration 6, Profile Segment: 104)'
+(dh =)'
+(                 2.1033072)'
+(rdh_sum =)'
+(          8.44276432089374)'
+(ans =)'
+(Berm Factor Calculation: Iteration 6, Profile Segment: 105)'
+(dh =)'
+(                 2.0951052)'
+(rdh_sum =)'
+(          8.52203405925664)'
+(ans =)'
+(Berm Factor Calculation: Iteration 6, Profile Segment: 106)'
+(dh =)'
+(                 2.0869032)'
+(rdh_sum =)'
+(            8.600701136693)'
+(ans =)'
+(Berm Factor Calculation: Iteration 6, Profile Segment: 107)'
+(dh =)'
+(                 2.0787012)'
+(rdh_sum =)'
+(          8.67876765719867)'
+(ans =)'
+(Berm Factor Calculation: Iteration 6, Profile Segment: 108)'
+(dh =)'
+(                 2.0704992)'
+(rdh_sum =)'
+(          8.75623572776848)'
+(ans =)'
+(Berm Factor Calculation: Iteration 6, Profile Segment: 109)'
+(dh =)'
+(                 2.0683277)'
+(rdh_sum =)'
+(          8.83354571035977)'
+(ans =)'
+(Berm Factor Calculation: Iteration 6, Profile Segment: 110)'
+(dh =)'
+(                 2.0721872)'
+(rdh_sum =)'
+(          8.91113677165987)'
+(ans =)'
+(Berm Factor Calculation: Iteration 6, Profile Segment: 111)'
+(dh =)'
+(                 2.0760472)'
+(rdh_sum =)'
+(          8.98900941523621)'
+(ans =)'
+(Berm Factor Calculation: Iteration 6, Profile Segment: 112)'
+(dh =)'
+(                 2.0799072)'
+(rdh_sum =)'
+(          9.06716410796121)'
+(ans =)'
+(Berm Factor Calculation: Iteration 6, Profile Segment: 113)'
+(dh =)'
+(                 2.0837672)'
+(rdh_sum =)'
+(           9.1456013163953)'
+(ans =)'
+(Berm Factor Calculation: Iteration 6, Profile Segment: 114)'
+(dh =)'
+(                 2.0876267)'
+(rdh_sum =)'
+(          9.22432147010061)'
+(ans =)'
+(Berm Factor Calculation: Iteration 6, Profile Segment: 115)'
+(dh =)'
+(                 2.0914862)'
+(rdh_sum =)'
+(           9.3033250348915)'
+(ans =)'
+(Berm Factor Calculation: Iteration 6, Profile Segment: 116)'
+(dh =)'
+(                 2.0953462)'
+(rdh_sum =)'
+(          9.38261251307542)'
+(ans =)'
+(Berm Factor Calculation: Iteration 6, Profile Segment: 117)'
+ET
+endstream
+endobj
+128 0 obj
+2413
+endobj
+129 0 obj
+<<
+/Type /Page
+/Parent 3 0 R
+/Resources 5 0 R
+/Contents 130 0 R
+>>
+endobj
+130 0 obj
+<<
+/Length 131 0 R
+>>
+stream
+BT
+/F1 8 Tf
+1 0 0 1 50 752 Tm
+8 TL
+(dh =)'
+(                 2.1138252)'
+(rdh_sum =)'
+(          9.46326561177069)'
+(ans =)'
+(Berm Factor Calculation: Iteration 6, Profile Segment: 118)'
+(dh =)'
+(                 2.1615422)'
+(rdh_sum =)'
+(          9.54749413122066)'
+(ans =)'
+(Berm Factor Calculation: Iteration 6, Profile Segment: 119)'
+(dh =)'
+(                 2.2238782)'
+(rdh_sum =)'
+(          9.63649923617176)'
+(ans =)'
+(Berm Factor Calculation: Iteration 6, Profile Segment: 120)'
+(dh =)'
+(                 2.2862142)'
+(rdh_sum =)'
+(          9.73039947182654)'
+(ans =)'
+(Berm Factor Calculation: Iteration 6, Profile Segment: 121)'
+(dh =)'
+(                 2.3485502)'
+(rdh_sum =)'
+(          9.82931197146185)'
+(ans =)'
+(Berm Factor Calculation: Iteration 6, Profile Segment: 122)'
+(dh =)'
+(                 2.4108862)'
+(rdh_sum =)'
+(           9.9333524226435)'
+(ans =)'
+(Berm Factor Calculation: Iteration 6, Profile Segment: 123)'
+(dh =)'
+(                 2.4732222)'
+(rdh_sum =)'
+(           10.042635033858)'
+(ans =)'
+(Berm Factor Calculation: Iteration 6, Profile Segment: 124)'
+(dh =)'
+(                 2.5355582)'
+(rdh_sum =)'
+(          10.1572725015708)'
+(ans =)'
+(Berm Factor Calculation: Iteration 6, Profile Segment: 125)'
+(dh =)'
+(                 2.5978942)'
+(rdh_sum =)'
+(          10.2773759777207)'
+(ans =)'
+(Berm Factor Calculation: Iteration 6, Profile Segment: 126)'
+(dh =)'
+(                 2.6602302)'
+(rdh_sum =)'
+(            10.40305503766)'
+(ans =)'
+(Berm Factor Calculation: Iteration 6, Profile Segment: 127)'
+(dh =)'
+(                 2.6922182)'
+(rdh_sum =)'
+(          10.5316372534521)'
+(ans =)'
+(Berm Factor Calculation: Iteration 6, Profile Segment: 128)'
+(dh =)'
+(                 2.6635107)'
+(rdh_sum =)'
+(          10.6576127392301)'
+(ans =)'
+(Berm Factor Calculation: Iteration 6, Profile Segment: 129)'
+(dh =)'
+(                 2.6044557)'
+(rdh_sum =)'
+(          10.7782979701724)'
+(ans =)'
+(Berm Factor Calculation: Iteration 6, Profile Segment: 130)'
+(dh =)'
+(                 2.5454007)'
+(rdh_sum =)'
+(           10.893791140033)'
+(ans =)'
+(Berm Factor Calculation: Iteration 6, Profile Segment: 131)'
+(dh =)'
+(                 2.4863452)'
+(rdh_sum =)'
+(          11.0041917439506)'
+(ans =)'
+(Berm Factor Calculation: Iteration 6, Profile Segment: 132)'
+ET
+endstream
+endobj
+131 0 obj
+2413
+endobj
+132 0 obj
+<<
+/Type /Page
+/Parent 3 0 R
+/Resources 5 0 R
+/Contents 133 0 R
+>>
+endobj
+133 0 obj
+<<
+/Length 134 0 R
+>>
+stream
+BT
+/F1 8 Tf
+1 0 0 1 50 752 Tm
+8 TL
+(dh =)'
+(                 2.4305707)'
+(rdh_sum =)'
+(          11.1098753004792)'
+(ans =)'
+(Berm Factor Calculation: Iteration 6, Profile Segment: 133)'
+(dh =)'
+(                 2.3813582)'
+(rdh_sum =)'
+(          11.2114723594644)'
+(ans =)'
+(Berm Factor Calculation: Iteration 6, Profile Segment: 134)'
+(dh =)'
+(                 2.3354267)'
+(rdh_sum =)'
+(          11.3093199720722)'
+(ans =)'
+(Berm Factor Calculation: Iteration 6, Profile Segment: 135)'
+(dh =)'
+(                 2.2894952)'
+(rdh_sum =)'
+(          11.4034811159413)'
+(ans =)'
+(Berm Factor Calculation: Iteration 6, Profile Segment: 136)'
+(dh =)'
+(                 2.2435632)'
+(rdh_sum =)'
+(          11.4940193069266)'
+(ans =)'
+(Berm Factor Calculation: Iteration 6, Profile Segment: 169)'
+(dh =)'
+(                -4.8006863)'
+(rdh_sum =)'
+(          12.4372150827059)'
+(ans =)'
+(!------- End Berm Factor Calculation, Iter: 6 ---------!)'
+(berm_width =)'
+(    86)'
+(rB =)'
+(         0.441084281142907)'
+(rdh_mean =)'
+(         0.144618780031464)'
+(gamma_berm =)'
+(         0.622704789487036)'
+(slope =)'
+(         0.131382917956981)'
+(Irb =)'
+(          1.49065044321003)'
+(gamma_berm =)'
+(         0.622704789487036)'
+(gamma_perm =)'
+(     1)'
+(gamma_beta =)'
+(     1)'
+(gamma_rough =)'
+(                       0.6)'
+(gamma =)'
+(         0.373622873692222)'
+(ans =)'
+(!!! - - Iribaren number:   0.93 is in the valid range \(0.5-10\), TAW RECOMMENDED - - !!!)'
+(ans =)'
+(!!! - - slope: 1:7.6 V:H is in the valid range \(1:8 - 1:1\), TAW RECOMMENDED - - !!!)'
+(R2_new =)'
+(          5.68344916884426)'
+(R2del =)'
+(         0.014217128158263)'
+(Z2 =)'
+(          15.0398733688443)'
+(ans =)'
+(!----------------- STARTING ITERATION 7 -----------------!)'
+(Ztoe =)'
+(         0.708324200000002)'
+(toe_sta =)'
+(         -9.28910224942969)'
+(top_sta =)'
+(          185.966272310486)'
+(Z2 =)'
+(          15.0398733688443)'
+(H0 =)'
+(                    5.7654)'
+(Tp =)'
+(                   13.2478)'
+(T0 =)'
+(          12.0434545454545)'
+(R2 =)'
+(          5.68344916884426)'
+(Z2 =)'
+(          15.0398733688443)'
+(top_sta =)'
+(          185.966272310486)'
+ET
+endstream
+endobj
+134 0 obj
+2252
+endobj
+135 0 obj
+<<
+/Type /Page
+/Parent 3 0 R
+/Resources 5 0 R
+/Contents 136 0 R
+>>
+endobj
+136 0 obj
+<<
+/Length 137 0 R
+>>
+stream
+BT
+/F1 8 Tf
+1 0 0 1 50 752 Tm
+8 TL
+(Lslope =)'
+(          195.255374559916)'
+(ans =)'
+(Berm Factor Calculation: Iteration 7, Profile Segment: 40)'
+(dh =)'
+(                 4.4473502)'
+(rdh_sum =)'
+(         0.324280978646442)'
+(ans =)'
+(Berm Factor Calculation: Iteration 7, Profile Segment: 41)'
+(dh =)'
+(                 4.4192287)'
+(rdh_sum =)'
+(         0.644980637357216)'
+(ans =)'
+(Berm Factor Calculation: Iteration 7, Profile Segment: 42)'
+(dh =)'
+(                 4.3911072)'
+(rdh_sum =)'
+(         0.962109501471238)'
+(ans =)'
+(Berm Factor Calculation: Iteration 7, Profile Segment: 43)'
+(dh =)'
+(                 4.3629857)'
+(rdh_sum =)'
+(          1.27567830594121)'
+(ans =)'
+(Berm Factor Calculation: Iteration 7, Profile Segment: 44)'
+(dh =)'
+(                 4.3348642)'
+(rdh_sum =)'
+(          1.58569799470345)'
+(ans =)'
+(Berm Factor Calculation: Iteration 7, Profile Segment: 45)'
+(dh =)'
+(                 4.3067427)'
+(rdh_sum =)'
+(          1.89217972003547)'
+(ans =)'
+(Berm Factor Calculation: Iteration 7, Profile Segment: 46)'
+(dh =)'
+(                 4.2786212)'
+(rdh_sum =)'
+(           2.1951348419013)'
+(ans =)'
+(Berm Factor Calculation: Iteration 7, Profile Segment: 47)'
+(dh =)'
+(                 4.2504997)'
+(rdh_sum =)'
+(          2.49457492728462)'
+(ans =)'
+(Berm Factor Calculation: Iteration 7, Profile Segment: 48)'
+(dh =)'
+(                 4.2223782)'
+(rdh_sum =)'
+(          2.79051174950979)'
+(ans =)'
+(Berm Factor Calculation: Iteration 7, Profile Segment: 49)'
+(dh =)'
+(                 4.1942567)'
+(rdh_sum =)'
+(           3.0829572875507)'
+(ans =)'
+(Berm Factor Calculation: Iteration 7, Profile Segment: 58)'
+(dh =)'
+(                 3.2693722)'
+(rdh_sum =)'
+(          3.26854164898686)'
+(ans =)'
+(Berm Factor Calculation: Iteration 7, Profile Segment: 59)'
+(dh =)'
+(                 3.2475002)'
+(rdh_sum =)'
+(          3.45181489328406)'
+(ans =)'
+(Berm Factor Calculation: Iteration 7, Profile Segment: 60)'
+(dh =)'
+(                 3.2256282)'
+(rdh_sum =)'
+(          3.63278826754331)'
+(ans =)'
+(Berm Factor Calculation: Iteration 7, Profile Segment: 61)'
+(dh =)'
+(                 3.2037557)'
+(rdh_sum =)'
+(          3.81147304834834)'
+(ans =)'
+(Berm Factor Calculation: Iteration 7, Profile Segment: 62)'
+(dh =)'
+(                 3.1818832)'
+ET
+endstream
+endobj
+137 0 obj
+2397
+endobj
+138 0 obj
+<<
+/Type /Page
+/Parent 3 0 R
+/Resources 5 0 R
+/Contents 139 0 R
+>>
+endobj
+139 0 obj
+<<
+/Length 140 0 R
+>>
+stream
+BT
+/F1 8 Tf
+1 0 0 1 50 752 Tm
+8 TL
+(rdh_sum =)'
+(          3.98788064626011)'
+(ans =)'
+(Berm Factor Calculation: Iteration 7, Profile Segment: 63)'
+(dh =)'
+(                 3.1600112)'
+(rdh_sum =)'
+(          4.16202260436817)'
+(ans =)'
+(Berm Factor Calculation: Iteration 7, Profile Segment: 64)'
+(dh =)'
+(                 3.1364562)'
+(rdh_sum =)'
+(          4.33373753040655)'
+(ans =)'
+(Berm Factor Calculation: Iteration 7, Profile Segment: 65)'
+(dh =)'
+(                 3.1112187)'
+(rdh_sum =)'
+(          4.50286707129962)'
+(ans =)'
+(Berm Factor Calculation: Iteration 7, Profile Segment: 66)'
+(dh =)'
+(                 3.0859817)'
+(rdh_sum =)'
+(          4.66942692112822)'
+(ans =)'
+(Berm Factor Calculation: Iteration 7, Profile Segment: 67)'
+(dh =)'
+(                 3.0607447)'
+(rdh_sum =)'
+(          4.83343284408631)'
+(ans =)'
+(Berm Factor Calculation: Iteration 7, Profile Segment: 68)'
+(dh =)'
+(                 3.0355077)'
+(rdh_sum =)'
+(          4.99490072511098)'
+(ans =)'
+(Berm Factor Calculation: Iteration 7, Profile Segment: 69)'
+(dh =)'
+(                 3.0102702)'
+(rdh_sum =)'
+(          5.15384651932369)'
+(ans =)'
+(Berm Factor Calculation: Iteration 7, Profile Segment: 70)'
+(dh =)'
+(                 2.9973072)'
+(rdh_sum =)'
+(          5.31150312858367)'
+(ans =)'
+(Berm Factor Calculation: Iteration 7, Profile Segment: 71)'
+(dh =)'
+(                 3.0088937)'
+(rdh_sum =)'
+(          5.47031182615509)'
+(ans =)'
+(Berm Factor Calculation: Iteration 7, Profile Segment: 72)'
+(dh =)'
+(                 3.0327542)'
+(rdh_sum =)'
+(          5.63150375862059)'
+(ans =)'
+(Berm Factor Calculation: Iteration 7, Profile Segment: 73)'
+(dh =)'
+(                 3.0566147)'
+(rdh_sum =)'
+(          5.79509324427916)'
+(ans =)'
+(Berm Factor Calculation: Iteration 7, Profile Segment: 74)'
+(dh =)'
+(                 3.0804757)'
+(rdh_sum =)'
+(          5.96109455079449)'
+(ans =)'
+(Berm Factor Calculation: Iteration 7, Profile Segment: 75)'
+(dh =)'
+(                 3.1043362)'
+(rdh_sum =)'
+(           6.1295217428272)'
+(ans =)'
+(Berm Factor Calculation: Iteration 7, Profile Segment: 80)'
+(dh =)'
+(                 2.5429832)'
+(rdh_sum =)'
+(          6.24480448001698)'
+(ans =)'
+(Berm Factor Calculation: Iteration 7, Profile Segment: 81)'
+(dh =)'
+(                 2.5119012)'
+ET
+endstream
+endobj
+140 0 obj
+2398
+endobj
+141 0 obj
+<<
+/Type /Page
+/Parent 3 0 R
+/Resources 5 0 R
+/Contents 142 0 R
+>>
+endobj
+142 0 obj
+<<
+/Length 143 0 R
+>>
+stream
+BT
+/F1 8 Tf
+1 0 0 1 50 752 Tm
+8 TL
+(rdh_sum =)'
+(          6.35739656631689)'
+(ans =)'
+(Berm Factor Calculation: Iteration 7, Profile Segment: 82)'
+(dh =)'
+(                 2.4808197)'
+(rdh_sum =)'
+(          6.46732582636616)'
+(ans =)'
+(Berm Factor Calculation: Iteration 7, Profile Segment: 83)'
+(dh =)'
+(                 2.4497382)'
+(rdh_sum =)'
+(          6.57462023225059)'
+(ans =)'
+(Berm Factor Calculation: Iteration 7, Profile Segment: 84)'
+(dh =)'
+(                 2.4186562)'
+(rdh_sum =)'
+(          6.67930790329641)'
+(ans =)'
+(Berm Factor Calculation: Iteration 7, Profile Segment: 85)'
+(dh =)'
+(                 2.3875747)'
+(rdh_sum =)'
+(          6.78141722962548)'
+(ans =)'
+(Berm Factor Calculation: Iteration 7, Profile Segment: 86)'
+(dh =)'
+(                 2.3564932)'
+(rdh_sum =)'
+(          6.88097674409328)'
+(ans =)'
+(Berm Factor Calculation: Iteration 7, Profile Segment: 87)'
+(dh =)'
+(                 2.3254112)'
+(rdh_sum =)'
+(          6.97801512207878)'
+(ans =)'
+(Berm Factor Calculation: Iteration 7, Profile Segment: 88)'
+(dh =)'
+(                 2.2943297)'
+(rdh_sum =)'
+(           7.0725613008643)'
+(ans =)'
+(Berm Factor Calculation: Iteration 7, Profile Segment: 89)'
+(dh =)'
+(                 2.2681657)'
+(rdh_sum =)'
+(          7.16503211071685)'
+(ans =)'
+(Berm Factor Calculation: Iteration 7, Profile Segment: 90)'
+(dh =)'
+(                 2.2518362)'
+(rdh_sum =)'
+(           7.2562181282114)'
+(ans =)'
+(Berm Factor Calculation: Iteration 7, Profile Segment: 91)'
+(dh =)'
+(                 2.2404247)'
+(rdh_sum =)'
+(          7.34651109955671)'
+(ans =)'
+(Berm Factor Calculation: Iteration 7, Profile Segment: 92)'
+(dh =)'
+(                 2.2290132)'
+(rdh_sum =)'
+(          7.43591498514927)'
+(ans =)'
+(Berm Factor Calculation: Iteration 7, Profile Segment: 93)'
+(dh =)'
+(                 2.2176017)'
+(rdh_sum =)'
+(          7.52443375397985)'
+(ans =)'
+(Berm Factor Calculation: Iteration 7, Profile Segment: 94)'
+(dh =)'
+(                 2.2061902)'
+(rdh_sum =)'
+(          7.61207138359508)'
+(ans =)'
+(Berm Factor Calculation: Iteration 7, Profile Segment: 95)'
+(dh =)'
+(                 2.1947782)'
+(rdh_sum =)'
+(           7.6988318217137)'
+(ans =)'
+(Berm Factor Calculation: Iteration 7, Profile Segment: 96)'
+(dh =)'
+(                 2.1833667)'
+ET
+endstream
+endobj
+143 0 obj
+2398
+endobj
+144 0 obj
+<<
+/Type /Page
+/Parent 3 0 R
+/Resources 5 0 R
+/Contents 145 0 R
+>>
+endobj
+145 0 obj
+<<
+/Length 146 0 R
+>>
+stream
+BT
+/F1 8 Tf
+1 0 0 1 50 752 Tm
+8 TL
+(rdh_sum =)'
+(          7.78471910139933)'
+(ans =)'
+(Berm Factor Calculation: Iteration 7, Profile Segment: 97)'
+(dh =)'
+(                 2.1719552)'
+(rdh_sum =)'
+(           7.8697372256357)'
+(ans =)'
+(Berm Factor Calculation: Iteration 7, Profile Segment: 98)'
+(dh =)'
+(                 2.1605437)'
+(rdh_sum =)'
+(          7.95389020580813)'
+(ans =)'
+(Berm Factor Calculation: Iteration 7, Profile Segment: 99)'
+(dh =)'
+(                 2.1491322)'
+(rdh_sum =)'
+(          8.03718206166478)'
+(ans =)'
+(Berm Factor Calculation: Iteration 7, Profile Segment: 100)'
+(dh =)'
+(                 2.1377202)'
+(rdh_sum =)'
+(          8.11961678381213)'
+(ans =)'
+(Berm Factor Calculation: Iteration 7, Profile Segment: 101)'
+(dh =)'
+(                 2.1279132)'
+(rdh_sum =)'
+(           8.2013181454926)'
+(ans =)'
+(Berm Factor Calculation: Iteration 7, Profile Segment: 102)'
+(dh =)'
+(                 2.1197112)'
+(rdh_sum =)'
+(          8.28240846046287)'
+(ans =)'
+(Berm Factor Calculation: Iteration 7, Profile Segment: 103)'
+(dh =)'
+(                 2.1115092)'
+(rdh_sum =)'
+(          8.36288982061794)'
+(ans =)'
+(Berm Factor Calculation: Iteration 7, Profile Segment: 104)'
+(dh =)'
+(                 2.1033072)'
+(rdh_sum =)'
+(          8.44276432089374)'
+(ans =)'
+(Berm Factor Calculation: Iteration 7, Profile Segment: 105)'
+(dh =)'
+(                 2.0951052)'
+(rdh_sum =)'
+(          8.52203405925664)'
+(ans =)'
+(Berm Factor Calculation: Iteration 7, Profile Segment: 106)'
+(dh =)'
+(                 2.0869032)'
+(rdh_sum =)'
+(            8.600701136693)'
+(ans =)'
+(Berm Factor Calculation: Iteration 7, Profile Segment: 107)'
+(dh =)'
+(                 2.0787012)'
+(rdh_sum =)'
+(          8.67876765719867)'
+(ans =)'
+(Berm Factor Calculation: Iteration 7, Profile Segment: 108)'
+(dh =)'
+(                 2.0704992)'
+(rdh_sum =)'
+(          8.75623572776848)'
+(ans =)'
+(Berm Factor Calculation: Iteration 7, Profile Segment: 109)'
+(dh =)'
+(                 2.0683277)'
+(rdh_sum =)'
+(          8.83354571035977)'
+(ans =)'
+(Berm Factor Calculation: Iteration 7, Profile Segment: 110)'
+(dh =)'
+(                 2.0721872)'
+(rdh_sum =)'
+(          8.91113677165987)'
+(ans =)'
+(Berm Factor Calculation: Iteration 7, Profile Segment: 111)'
+(dh =)'
+(                 2.0760472)'
+ET
+endstream
+endobj
+146 0 obj
+2410
+endobj
+147 0 obj
+<<
+/Type /Page
+/Parent 3 0 R
+/Resources 5 0 R
+/Contents 148 0 R
+>>
+endobj
+148 0 obj
+<<
+/Length 149 0 R
+>>
+stream
+BT
+/F1 8 Tf
+1 0 0 1 50 752 Tm
+8 TL
+(rdh_sum =)'
+(          8.98900941523621)'
+(ans =)'
+(Berm Factor Calculation: Iteration 7, Profile Segment: 112)'
+(dh =)'
+(                 2.0799072)'
+(rdh_sum =)'
+(          9.06716410796121)'
+(ans =)'
+(Berm Factor Calculation: Iteration 7, Profile Segment: 113)'
+(dh =)'
+(                 2.0837672)'
+(rdh_sum =)'
+(           9.1456013163953)'
+(ans =)'
+(Berm Factor Calculation: Iteration 7, Profile Segment: 114)'
+(dh =)'
+(                 2.0876267)'
+(rdh_sum =)'
+(          9.22432147010061)'
+(ans =)'
+(Berm Factor Calculation: Iteration 7, Profile Segment: 115)'
+(dh =)'
+(                 2.0914862)'
+(rdh_sum =)'
+(           9.3033250348915)'
+(ans =)'
+(Berm Factor Calculation: Iteration 7, Profile Segment: 116)'
+(dh =)'
+(                 2.0953462)'
+(rdh_sum =)'
+(          9.38261251307542)'
+(ans =)'
+(Berm Factor Calculation: Iteration 7, Profile Segment: 117)'
+(dh =)'
+(                 2.1138252)'
+(rdh_sum =)'
+(          9.46326561177069)'
+(ans =)'
+(Berm Factor Calculation: Iteration 7, Profile Segment: 118)'
+(dh =)'
+(                 2.1615422)'
+(rdh_sum =)'
+(          9.54749413122066)'
+(ans =)'
+(Berm Factor Calculation: Iteration 7, Profile Segment: 119)'
+(dh =)'
+(                 2.2238782)'
+(rdh_sum =)'
+(          9.63649923617176)'
+(ans =)'
+(Berm Factor Calculation: Iteration 7, Profile Segment: 120)'
+(dh =)'
+(                 2.2862142)'
+(rdh_sum =)'
+(          9.73039947182654)'
+(ans =)'
+(Berm Factor Calculation: Iteration 7, Profile Segment: 121)'
+(dh =)'
+(                 2.3485502)'
+(rdh_sum =)'
+(          9.82931197146185)'
+(ans =)'
+(Berm Factor Calculation: Iteration 7, Profile Segment: 122)'
+(dh =)'
+(                 2.4108862)'
+(rdh_sum =)'
+(           9.9333524226435)'
+(ans =)'
+(Berm Factor Calculation: Iteration 7, Profile Segment: 123)'
+(dh =)'
+(                 2.4732222)'
+(rdh_sum =)'
+(           10.042635033858)'
+(ans =)'
+(Berm Factor Calculation: Iteration 7, Profile Segment: 124)'
+(dh =)'
+(                 2.5355582)'
+(rdh_sum =)'
+(          10.1572725015708)'
+(ans =)'
+(Berm Factor Calculation: Iteration 7, Profile Segment: 125)'
+(dh =)'
+(                 2.5978942)'
+(rdh_sum =)'
+(          10.2773759777207)'
+(ans =)'
+(Berm Factor Calculation: Iteration 7, Profile Segment: 126)'
+(dh =)'
+(                 2.6602302)'
+ET
+endstream
+endobj
+149 0 obj
+2413
+endobj
+150 0 obj
+<<
+/Type /Page
+/Parent 3 0 R
+/Resources 5 0 R
+/Contents 151 0 R
+>>
+endobj
+151 0 obj
+<<
+/Length 152 0 R
+>>
+stream
+BT
+/F1 8 Tf
+1 0 0 1 50 752 Tm
+8 TL
+(rdh_sum =)'
+(            10.40305503766)'
+(ans =)'
+(Berm Factor Calculation: Iteration 7, Profile Segment: 127)'
+(dh =)'
+(                 2.6922182)'
+(rdh_sum =)'
+(          10.5316372534521)'
+(ans =)'
+(Berm Factor Calculation: Iteration 7, Profile Segment: 128)'
+(dh =)'
+(                 2.6635107)'
+(rdh_sum =)'
+(          10.6576127392301)'
+(ans =)'
+(Berm Factor Calculation: Iteration 7, Profile Segment: 129)'
+(dh =)'
+(                 2.6044557)'
+(rdh_sum =)'
+(          10.7782979701724)'
+(ans =)'
+(Berm Factor Calculation: Iteration 7, Profile Segment: 130)'
+(dh =)'
+(                 2.5454007)'
+(rdh_sum =)'
+(           10.893791140033)'
+(ans =)'
+(Berm Factor Calculation: Iteration 7, Profile Segment: 131)'
+(dh =)'
+(                 2.4863452)'
+(rdh_sum =)'
+(          11.0041917439506)'
+(ans =)'
+(Berm Factor Calculation: Iteration 7, Profile Segment: 132)'
+(dh =)'
+(                 2.4305707)'
+(rdh_sum =)'
+(          11.1098753004792)'
+(ans =)'
+(Berm Factor Calculation: Iteration 7, Profile Segment: 133)'
+(dh =)'
+(                 2.3813582)'
+(rdh_sum =)'
+(          11.2114723594644)'
+(ans =)'
+(Berm Factor Calculation: Iteration 7, Profile Segment: 134)'
+(dh =)'
+(                 2.3354267)'
+(rdh_sum =)'
+(          11.3093199720722)'
+(ans =)'
+(Berm Factor Calculation: Iteration 7, Profile Segment: 135)'
+(dh =)'
+(                 2.2894952)'
+(rdh_sum =)'
+(          11.4034811159413)'
+(ans =)'
+(Berm Factor Calculation: Iteration 7, Profile Segment: 136)'
+(dh =)'
+(                 2.2435632)'
+(rdh_sum =)'
+(          11.4940193069266)'
+(ans =)'
+(Berm Factor Calculation: Iteration 7, Profile Segment: 169)'
+(dh =)'
+(                -4.8006863)'
+(rdh_sum =)'
+(          12.4356649294839)'
+(ans =)'
+(!------- End Berm Factor Calculation, Iter: 7 ---------!)'
+(berm_width =)'
+(    86)'
+(rB =)'
+(          0.44044882346432)'
+(rdh_mean =)'
+(         0.144600754993998)'
+(gamma_berm =)'
+(         0.623240408944839)'
+(slope =)'
+(         0.131174774939651)'
+(Irb =)'
+(          1.48828888444837)'
+(gamma_berm =)'
+(         0.623240408944839)'
+(gamma_perm =)'
+(     1)'
+(gamma_beta =)'
+(     1)'
+(gamma_rough =)'
+(                       0.6)'
+ET
+endstream
+endobj
+152 0 obj
+2296
+endobj
+153 0 obj
+<<
+/Type /Page
+/Parent 3 0 R
+/Resources 5 0 R
+/Contents 154 0 R
+>>
+endobj
+154 0 obj
+<<
+/Length 155 0 R
+>>
+stream
+BT
+/F1 8 Tf
+1 0 0 1 50 752 Tm
+8 TL
+(gamma =)'
+(         0.373944245366903)'
+(ans =)'
+(!!! - - Iribaren number:   0.93 is in the valid range \(0.5-10\), TAW RECOMMENDED - - !!!)'
+(ans =)'
+(!!! - - slope: 1:7.6 V:H is in the valid range \(1:8 - 1:1\), TAW RECOMMENDED - - !!!)'
+(R2_new =)'
+(          5.67932605393606)'
+(R2del =)'
+(       0.00412311490820283)'
+(Z2 =)'
+(          15.0357502539361)'
+(% final 2% runup elevation)'
+(Z2=R2_new+SWEL)'
+(Z2 =)'
+(          15.0357502539361)'
+(diary off)'
+(-1.000000e+00)'
+()'
+ET
+endstream
+endobj
+155 0 obj
+544
+endobj
+3 0 obj
+<<
+/Type /Pages
+/Count 50
+/MediaBox [ 0 0 612 792 ]
+/Kids [ 6 0 R 9 0 R 12 0 R 15 0 R 18 0 R 21 0 R 24 0 R 27 0 R 30 0 R 33 0 R 36 0 R 39 0 R 42 0 R 45 0 R 48 0 R 51 0 R 54 0 R 57 0 R 60 0 R 63 0 R 66 0 R 69 0 R 72 0 R 75 0 R 78 0 R 81 0 R 84 0 R 87 0 R 90 0 R 93 0 R 96 0 R 99 0 R 102 0 R 105 0 R 108 0 R 111 0 R 114 0 R 117 0 R 120 0 R 123 0 R 126 0 R 129 0 R 132 0 R 135 0 R 138 0 R 141 0 R 144 0 R 147 0 R 150 0 R 153 0 R ]
+>>
+endobj
+xref
+0 156
+0000000000 65535 f 0000000010 00000 n 0000000165 00000 n 0000129123 00000 n 0000000220 00000 n 0000000306 00000 n 0000000383 00000 n 0000000471 00000 n 0000003451 00000 n 0000003474 00000 n 0000003563 00000 n 0000006195 00000 n 0000006219 00000 n 0000006309 00000 n 0000009267 00000 n 0000009291 00000 n 0000009381 00000 n 0000012939 00000 n 0000012963 00000 n 0000013053 00000 n 0000015838 00000 n 0000015862 00000 n 0000015952 00000 n 0000018411 00000 n 0000018435 00000 n 0000018525 00000 n 0000020984 00000 n 0000021008 00000 n 0000021098 00000 n 0000023558 00000 n 0000023582 00000 n 0000023672 00000 n 0000026146 00000 n 0000026170 00000 n 0000026260 00000 n 0000028734 00000 n 0000028758 00000 n 0000028848 00000 n 0000031241 00000 n 0000031265 00000 n 0000031355 00000 n 0000033684 00000 n 0000033708 00000 n 0000033798 00000 n 0000036257 00000 n 0000036281 00000 n 0000036371 00000 n 0000038830 00000 n 0000038854 00000 n 0000038944 00000 n 0000041413 00000 n 0000041437 00000 n 0000041527 00000 n 0000044001 00000 n 0000044025 00000 n 0000044115 00000 n 0000046524 00000 n 0000046548 00000 n 0000046638 00000 n 0000049015 00000 n 0000049039 00000 n 0000049129 00000 n 0000051588 00000 n 0000051612 00000 n 0000051702 00000 n 0000054161 00000 n 0000054185 00000 n 0000054275 00000 n 0000056739 00000 n 0000056763 00000 n 0000056853 00000 n 0000059327 00000 n 0000059351 00000 n 0000059441 00000 n 0000061915 00000 n 0000061939 00000 n 0000062029 00000 n 0000064342 00000 n 0000064366 00000 n 0000064456 00000 n 0000066915 00000 n 0000066939 00000 n 0000067029 00000 n 0000069488 00000 n 0000069512 00000 n 0000069602 00000 n 0000072061 00000 n 0000072085 00000 n 0000072175 00000 n 0000074648 00000 n 0000074672 00000 n 0000074762 00000 n 0000077236 00000 n 0000077260 00000 n 0000077350 00000 n 0000079765 00000 n 0000079789 00000 n 0000079879 00000 n 0000082244 00000 n 0000082268 00000 n 0000082359 00000 n 0000084820 00000 n 0000084845 00000 n 0000084937 00000 n 0000087398 00000 n 0000087423 00000 n 0000087515 00000 n 0000089984 00000 n 0000090009 00000 n 0000090101 00000 n 0000092577 00000 n 0000092602 00000 n 0000092694 00000 n 0000095170 00000 n 0000095195 00000 n 0000095287 00000 n 0000097628 00000 n 0000097653 00000 n 0000097745 00000 n 0000100206 00000 n 0000100231 00000 n 0000100323 00000 n 0000102784 00000 n 0000102809 00000 n 0000102901 00000 n 0000105365 00000 n 0000105390 00000 n 0000105482 00000 n 0000107958 00000 n 0000107983 00000 n 0000108075 00000 n 0000110551 00000 n 0000110576 00000 n 0000110668 00000 n 0000112983 00000 n 0000113008 00000 n 0000113100 00000 n 0000115560 00000 n 0000115585 00000 n 0000115677 00000 n 0000118138 00000 n 0000118163 00000 n 0000118255 00000 n 0000120716 00000 n 0000120741 00000 n 0000120833 00000 n 0000123306 00000 n 0000123331 00000 n 0000123423 00000 n 0000125899 00000 n 0000125924 00000 n 0000126016 00000 n 0000128375 00000 n 0000128400 00000 n 0000128492 00000 n 0000129099 00000 n trailer
+<<
+/Size 156
+/Root 2 0 R
+/Info 1 0 R
+>>
+startxref
+129577
+%%EOF

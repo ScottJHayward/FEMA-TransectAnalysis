@@ -25,7 +25,7 @@ tDIR='../ADCIRC_returns/'; %location of transects
 tname= 'YK-'; %for York County
 tnums = {'92','99','99-1','99-2','100','103','105','106','107','108','109','110'};
 pickSTA=zeros(size(tnums)); %by default. can be array of 0's and 1's [0 1 1]
-% pickSTA= [ 0,   0,   0,     0,   0,   0];
+pickSTA(3)=1; %re-pick for YK-99-1
 savefile='../data/transectdata.xls'; imgfile='tpng';
 logpre=['logfiles/' tname];
 L_append=2; %line to append to... this will overwrite previous data

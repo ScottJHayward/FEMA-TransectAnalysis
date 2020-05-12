@@ -1,0 +1,1410 @@
+diary on         % begin recording
+
+% FEMA appeal for The Town of Kennebunkport, York county, Maine
+% TRANSECT ID: YK-99-2
+% calculation by SJH, Ransom Consulting, Inc. 02-Apr-2020
+% 100-year wave runup using TAW methodology
+% including berm and weighted average with foreshore if necessary
+%
+% chk nld 20200220
+%
+% This script assumes that the incident wave conditions provided
+% as input in the configuration section below are the 
+% appropriate values located at the end of the foreshore
+% or toe of the slope on which the run-up is being calculated
+% the script does not attempt to apply a depth limit or any other
+% transformation to the incident wave conditions other than 
+% conversion of the peak wave period to the spectral mean wave 
+% as recommended in the references below
+% 
+% references:
+%
+% Van der Meer, J.W., 2002. Technical Report Wave Run-up and 
+% Wave Overtopping at Dikes. TAW Technical Advisory Committee on
+% Flood Defence, The Netherlands.
+%
+% FEMA. 2007,  Atlantic Ocean and Gulf of Mexico Coastal Guidelines Update
+%
+% 
+%
+
+%--------------------------------------------------------------------------
+% CONFIG
+%--------------------------------------------------------------------------
+fname='inpfiles/YK-99-2sta_ele_include.csv';   % file with station, elevation, include
+                                      % third colunm is 0 for excluded points
+imgname='logfiles/YK-99-2-runup';                            
+SWEL=9.3261;  % 100-yr still water level including wave setup. 
+H0=5.0379;    % significant wave height at toe of structure 
+Tp=11.3516;    % peak period, 1/fma, 
+T0=Tp/1.1;   
+
+gamma_berm=0.94117;   % this may get changed automatically below
+gamma_rough=1;  
+gamma_beta=1;  
+gamma_perm=1;
+
+setupAtToe=-0.039442; 
+maxSetup=0.93903;   % only used in case of berm/shallow foreshore weighted average 
+
+plotTitle='Iterative TAW for YK-99-2'
+
+plotTitle =
+
+Iterative TAW for YK-99-2
+
+
+
+% END CONFIG
+%-------------------------------
+
+SWEL=SWEL+setupAtToe  
+
+SWEL =
+
+                  9.286658
+
+SWEL_fore=SWEL+maxSetup
+
+SWEL_fore =
+
+                 10.225688
+
+
+
+% FIND WAVELENGTH USING DEEPWATER DISPERSION RELATION
+% using English units
+L0=32.15/(2*pi)*T0^2
+
+L0 =
+
+          544.916423199444
+
+
+% Find Hb (Munk, 1949)
+%Hb=H0/(3.3*(H0/L0)^(1/3)) 
+%Db=-Hb/.78+SWEL;  % depth at breaking
+
+% The toe elevation here is only used to determine the average 
+% structure slope, it is not used to depth limit the wave height.
+% Any depth limiting or other modification of the wave height 
+% to make it consitent with TAW guidance should be performed 
+% prior to the input of the significant wave height given above. 
+Ztoe=SWEL-1.5*H0
+
+Ztoe =
+
+                  1.729808
+
+
+% read the transect
+[sta,dep,inc] = textread(fname,'%n%n%n%*[^\n]','delimiter',',','headerlines',0);
+
+% remove unselected points
+k=find(inc==0);
+sta(k)=[];
+dep(k)=[];
+
+sta_org=sta;  % used for plotting purposes
+dep_org=dep;
+
+
+% initial guess at maximum run-up elevation to estimate slope
+Z2=SWEL+1.5*H0
+
+Z2 =
+
+                 16.843508
+
+
+% determine station at the max runup and -1.5*H0 (i.e. the toe)
+top_sta=-999;
+toe_sta=-999;
+for kk=1:length(sta)-1
+    if ((Z2 > dep(kk)) & (Z2 <= dep(kk+1)))    % here is the intersection of z2 with profile
+       top_sta=interp1(dep(kk:kk+1),sta(kk:kk+1),Z2)
+    end
+    if  ((Ztoe > dep(kk)) & (Ztoe <= dep(kk+1)))    % here is the intersection of Ztoe with profile
+       toe_sta=interp1(dep(kk:kk+1),sta(kk:kk+1),Ztoe)
+    end
+end
+
+toe_sta =
+
+          1626.06965548772
+
+% check to make sure we got them, if not extend the end slopes outward
+S=diff(dep)./diff(sta);
+if toe_sta==-999
+   dy=dep(1)-Ztoe;
+   toe_sta=sta(1)-dy/S(1)
+end
+if top_sta==-999
+   dy=Z2-dep(end);
+   top_sta=sta(end)+dy/S(end)
+end
+
+top_sta =
+
+          1763.60050963102
+
+
+% just so the reader can tell the values aren't -999 anymore
+top_sta
+
+top_sta =
+
+          1763.60050963102
+
+toe_sta
+
+toe_sta =
+
+          1626.06965548772
+
+
+
+
+% check for case where the toe of slope is below SWL-1.5*H0
+% in this case interpolate setup from the setupAtToe(really setup as first station), and the max setup
+% also un-include points seaward of SWL-1.5*H0
+if Ztoe > dep(1)
+   dd=SWEL_fore-dep;
+   k=find(dd<0,1); % k is index of first land point
+   staAtSWL=interp1(dep(k-1:k),sta(k-1:k),SWEL_fore);   
+   dsta=staAtSWL-sta(1);
+   dsetup=maxSetup-setupAtToe;
+   dsetdsta=dsetup/dsta;
+   setup=setupAtToe+dsetdsta*(toe_sta-sta(1));
+   sprintf('-!!- Location of SWEL-1.5*H0 is %4.1f ft landward of toe of slope',dsta)
+   sprintf('-!!- Setup is interpolated between setup at toe of slope and max setup')
+   sprintf('-!!-       setup is adjusted to %4.2f feet',setup)
+   SWEL=SWEL-setupAtToe+setup;
+   sprintf('-!!-       SWEL is adjusted to %4.2f feet',SWEL)
+   k=find(dep < SWEL-1.5*H0)
+   sta(k)=[];
+   dep(k)=[];
+else
+   sprintf('-!!- The User has selected a starting point that is %4.2f feet above the elevation of SWEL-1.5H0\n',dep(1)-Ztoe)
+   sprintf('-!!- This may be reasonable for some cases.  However the user may want to consider:\n')
+   sprintf('-!!-   1) Selecting a starting point that is at or below %4.2f feet elevation, or\n', Ztoe)
+   sprintf('-!!-   2) Reducing the incident wave height to a depth limited condition.\n')
+end
+
+ans =
+
+-!!- Location of SWEL-1.5*H0 is 40.4 ft landward of toe of slope
+
+
+ans =
+
+-!!- Setup is interpolated between setup at toe of slope and max setup
+
+
+ans =
+
+-!!-       setup is adjusted to 0.06 feet
+
+
+ans =
+
+-!!-       SWEL is adjusted to 9.39 feet
+
+
+k =
+
+     1
+     2
+     3
+     4
+     5
+     6
+
+
+
+
+% now iterate converge on a runup elevation
+tol=0.01;  % convergence criteria
+R2del=999;
+R2_new=3*H0; %initial guess
+R2=R2_new;
+iter=0;
+R2_all=[];
+topStaAll=[];
+Berm_Segs=[];
+TAW_ALWAYS_VALID=1;
+while(abs(R2del) > tol && iter <= 25)
+    iter=iter+1;
+    sprintf ('!----------------- STARTING ITERATION %d -----------------!',iter)
+    % elevation of toe of slope
+    Ztoe
+    % station of toe slope (relative to 0-NAVD88 shoreline
+    toe_sta 
+    % station of top of slope/extent of 2% run-up
+    top_sta
+    % elevation of top of slope/extent of 2% run-up
+    Z2
+    % incident significant wave height
+    H0
+    % incident spectral peak wave period
+    Tp
+    % incident spectral mean wave period
+    T0
+        
+    R2=R2_new  
+    Z2=R2+SWEL
+    % determine slope for this iteration
+    top_sta=-999;
+    for kk=1:length(sta)-1
+       if ((Z2 > dep(kk)) & (Z2 <= dep(kk+1)))    % here is the intersection of z2 with profile
+          top_sta=interp1(dep(kk:kk+1),sta(kk:kk+1),Z2)
+          break;
+       end
+    end
+    if top_sta==-999
+       dy=Z2-dep(end);
+       top_sta=sta(end)+dy/S(end)
+    end
+    
+    % get the length of the slope (not accounting for berm)
+    Lslope=top_sta-toe_sta
+
+    % loop over profile segments to determine berm factor 
+    % re-calculate influence of depth of berm based on this run-up elevation
+    % check for berm, berm width, berm height
+    berm_width=0;
+    rdh_sum=0;
+    Berm_Segs=[];
+    Berm_Heights=[];
+    for kk=1:length(sta)-1
+       ddep=dep(kk+1)-dep(kk);
+       dsta=sta(kk+1)-sta(kk);
+       s=ddep/dsta;
+       if  (s < 1/15)     % count it as a berm if slope is flatter than 1:15 (see TAW manual)
+          sprintf ('Berm Factor Calculation: Iteration %d, Profile Segment: %d',iter,kk) 
+          berm_width=berm_width+dsta;   % tally the width of all berm segments
+          % compute the rdh for this segment and weight it by the segment length
+          dh=SWEL-(dep(kk)+dep(kk+1))/2  
+          if  dh < 0
+              chi=R2;
+          else 
+              chi=2* H0;
+          end
+          if (dh <= R2 & dh >=-2*H0)
+             rdh=(0.5-0.5*cos(3.14159*dh/chi)) ;
+          else
+             rdh=1;
+          end
+          rdh_sum=rdh_sum + rdh * dsta
+          Berm_Segs=[Berm_Segs, kk];
+          Berm_Heights=[Berm_Heights, (dep(kk)+dep(kk+1))/2];
+       end
+       if dep(kk) >= Z2  % jump out of loop if we reached limit of run-up for this iteration 
+          break
+       end
+    end
+    sprintf ('!------- End Berm Factor Calculation, Iter: %d ---------!',iter)
+    berm_width
+    rB=berm_width/Lslope 
+    if (berm_width > 0)
+       rdh_mean=rdh_sum/berm_width
+    else
+       rdh_mean=1
+    end
+    gamma_berm=1- rB * (1-rdh_mean)
+    if gamma_berm > 1
+       gamma_berm=1
+    end
+    if gamma_berm < 0.6
+       gamma_berm =0.6
+    end
+    % Iribarren number
+    slope=(Z2-Ztoe)/(Lslope-berm_width)
+    Irb=(slope/(sqrt(H0/L0)))
+    % runup height
+    gamma_berm
+    gamma_perm
+    gamma_beta
+    gamma_rough
+    gamma=gamma_berm*gamma_perm*gamma_beta*gamma_rough
+
+    % check validity
+    TAW_VALID=1;
+    if (Irb*gamma_berm < 0.5 | Irb*gamma_berm > 10 )
+       sprintf('!!! - - Iribaren number: %6.2f is outside the valid range (0.5-10), TAW NOT VALID - - !!!\n', Irb*gamma_berm)
+       TAW_VALID=0;
+    else
+       sprintf('!!! - - Iribaren number: %6.2f is in the valid range (0.5-10), TAW RECOMMENDED - - !!!\n', Irb*gamma_berm)
+    end
+    islope=1/slope;  
+    if (slope < 1/8 | slope > 1)
+       sprintf('!!! - - slope: 1:%3.1f V:H is outside the valid range (1:8 - 1:1), TAW NOT VALID - - !!!\n', islope)
+       TAW_VALID=0;
+    else
+       sprintf('!!! - - slope: 1:%3.1f V:H is in the valid range (1:8 - 1:1), TAW RECOMMENDED - - !!!\n', islope)
+    end
+    if TAW_VALID == 0
+       TAW_ALWAYS_VALID=0;
+    end
+         
+    if (Irb*gamma_berm < 1.8)
+       R2_new=gamma*H0*1.77*Irb
+    else
+       R2_new=gamma*H0*(4.3-(1.6/sqrt(Irb))) 
+    end
+
+
+    % check to see if we need to evaluate a shallow foreshore
+    if berm_width > 0.25 * L0;
+       disp ('!   Berm_width is greater than 1/4 wave length')
+       disp ('!   Runup will be weighted average with foreshore calculation assuming depth limited wave height on berm');
+       % do the foreshore calculation 
+       fore_H0=0.78*(SWEL_fore-min(Berm_Heights))
+       % get upper slope
+       fore_toe_sta=-999;
+       fore_toe_dep=-999;
+       for kk=length(dep)-1:-1:1
+          ddep=dep(kk+1)-dep(kk);
+          dsta=sta(kk+1)-sta(kk);
+          s=ddep/dsta;
+          if s < 1/15
+             break
+          end
+          fore_toe_sta=sta(kk);
+          fore_toe_dep=dep(kk);
+          upper_slope=(Z2-fore_toe_dep)/(top_sta-fore_toe_sta)
+       end
+       fore_Irb=upper_slope/(sqrt(fore_H0/L0));
+       fore_gamma=gamma_perm*gamma_beta*gamma_rough;
+       if (fore_Irb < 1.8)
+          fore_R2=fore_gamma*fore_H0*1.77*fore_Irb;
+       else
+          fore_R2=fore_gamma*fore_H0*(4.3-(1.6/sqrt(fore_Irb))); 
+       end
+       if berm_width >= L0
+          R2_new=fore_R2
+          disp ('berm is wider than one wavelength, use full shallow foreshore solution');
+       else
+          w2=(berm_width-0.25*L0)/(0.75*L0)
+          w1=1-w2
+          R2_new=w2*fore_R2 + w1*R2_new
+       end
+    end % end berm width check
+
+    % convergence criterion
+    R2del=abs(R2-R2_new)
+    R2_all(iter)=R2_new;
+
+    % get the new top station (for plot purposes)
+    Z2=R2_new+SWEL
+    top_sta=-999;
+    for kk=1:length(sta)-1
+       if ((Z2 > dep(kk)) & (Z2 <= dep(kk+1)))    % here is the intersection of z2 with profile
+          top_sta=interp1(dep(kk:kk+1),sta(kk:kk+1),Z2)
+          break;
+       end
+    end
+    if top_sta==-999
+       dy=Z2-dep(end);
+       top_sta=sta(end)+dy/S(end);
+    end
+    topStaAll(iter)=top_sta;
+end
+ans =
+!----------------- STARTING ITERATION 1 -----------------!
+Ztoe =
+                  1.729808
+toe_sta =
+          1626.06965548772
+top_sta =
+          1763.60050963102
+Z2 =
+                 16.843508
+H0 =
+                    5.0379
+Tp =
+                   11.3516
+T0 =
+          10.3196363636364
+R2 =
+                   15.1137
+Z2 =
+          24.4989728103088
+top_sta =
+          1891.93808670951
+Lslope =
+          265.868431221787
+ans =
+Berm Factor Calculation: Iteration 1, Profile Segment: 37
+dh =
+         -1.54678418969124
+rdh_sum =
+        0.0256219611509224
+ans =
+Berm Factor Calculation: Iteration 1, Profile Segment: 38
+dh =
+         -1.60643618969124
+rdh_sum =
+        0.0532395156699975
+ans =
+Berm Factor Calculation: Iteration 1, Profile Segment: 39
+dh =
+         -1.66608768969124
+rdh_sum =
+        0.0829252725026096
+ans =
+Berm Factor Calculation: Iteration 1, Profile Segment: 40
+dh =
+         -1.72573918969124
+rdh_sum =
+         0.114751539044794
+ans =
+Berm Factor Calculation: Iteration 1, Profile Segment: 41
+dh =
+         -1.78539118969124
+rdh_sum =
+         0.148790312450615
+ans =
+Berm Factor Calculation: Iteration 1, Profile Segment: 42
+dh =
+         -1.84504268969124
+rdh_sum =
+         0.185113212627531
+ans =
+Berm Factor Calculation: Iteration 1, Profile Segment: 43
+dh =
+         -1.90469418969124
+rdh_sum =
+         0.223791526559033
+ans =
+Berm Factor Calculation: Iteration 1, Profile Segment: 44
+dh =
+         -1.96434568969124
+rdh_sum =
+         0.264896179100873
+ans =
+Berm Factor Calculation: Iteration 1, Profile Segment: 45
+dh =
+         -2.02399718969124
+rdh_sum =
+         0.308497722076877
+ans =
+Berm Factor Calculation: Iteration 1, Profile Segment: 46
+dh =
+         -2.08364918969124
+rdh_sum =
+         0.354666345242235
+ans =
+Berm Factor Calculation: Iteration 1, Profile Segment: 47
+dh =
+         -2.14330068969124
+rdh_sum =
+         0.403471800648496
+ans =
+!------- End Berm Factor Calculation, Iter: 1 ---------!
+berm_width =
+    11
+rB =
+        0.0413738477691765
+rdh_mean =
+        0.0366792546044087
+gamma_berm =
+         0.960143714127113
+slope =
+        0.0893369363210579
+Irb =
+         0.929118766642681
+gamma_berm =
+         0.960143714127113
+gamma_perm =
+     1
+gamma_beta =
+     1
+gamma_rough =
+     1
+gamma =
+         0.960143714127113
+ans =
+!!! - - Iribaren number:   0.89 is in the valid range (0.5-10), TAW RECOMMENDED - - !!!
+ans =
+!!! - - slope: 1:11.2 V:H is outside the valid range (1:8 - 1:1), TAW NOT VALID - - !!!
+R2_new =
+          7.95481866838369
+R2del =
+           7.1588813316163
+Z2 =
+          17.3400914786925
+ans =
+!----------------- STARTING ITERATION 2 -----------------!
+Ztoe =
+                  1.729808
+toe_sta =
+          1626.06965548772
+top_sta =
+          1771.92532361054
+Z2 =
+          17.3400914786925
+H0 =
+                    5.0379
+Tp =
+                   11.3516
+T0 =
+          10.3196363636364
+R2 =
+          7.95481866838369
+Z2 =
+          17.3400914786925
+top_sta =
+          1771.92532361054
+Lslope =
+          145.855668122821
+ans =
+Berm Factor Calculation: Iteration 2, Profile Segment: 37
+dh =
+         -1.54678418969124
+rdh_sum =
+        0.0904254034272675
+ans =
+Berm Factor Calculation: Iteration 2, Profile Segment: 38
+dh =
+         -1.60643618969124
+rdh_sum =
+         0.187720127674867
+ans =
+Berm Factor Calculation: Iteration 2, Profile Segment: 39
+dh =
+         -1.66608768969124
+rdh_sum =
+           0.2921076011301
+ans =
+Berm Factor Calculation: Iteration 2, Profile Segment: 40
+dh =
+         -1.72573918969124
+rdh_sum =
+         0.403807372624405
+ans =
+Berm Factor Calculation: Iteration 2, Profile Segment: 41
+dh =
+         -1.78539118969124
+rdh_sum =
+         0.523034996951388
+ans =
+Berm Factor Calculation: Iteration 2, Profile Segment: 42
+dh =
+         -1.84504268969124
+rdh_sum =
+         0.650001725062773
+ans =
+Berm Factor Calculation: Iteration 2, Profile Segment: 43
+dh =
+         -1.90469418969124
+rdh_sum =
+         0.784914575223744
+ans =
+Berm Factor Calculation: Iteration 2, Profile Segment: 44
+dh =
+         -1.96434568969124
+rdh_sum =
+         0.927976155925547
+ans =
+Berm Factor Calculation: Iteration 2, Profile Segment: 45
+dh =
+         -2.02399718969124
+rdh_sum =
+          1.07938455344603
+ans =
+Berm Factor Calculation: Iteration 2, Profile Segment: 46
+dh =
+         -2.08364918969124
+rdh_sum =
+          1.23933329430215
+ans =
+Berm Factor Calculation: Iteration 2, Profile Segment: 47
+dh =
+         -2.14330068969124
+rdh_sum =
+          1.40801102230549
+ans =
+!------- End Berm Factor Calculation, Iter: 2 ---------!
+berm_width =
+    11
+rB =
+          0.07541702109744
+rdh_mean =
+         0.128001002027772
+gamma_berm =
+         0.934236433172982
+slope =
+         0.115755486558231
+Irb =
+          1.20387601514107
+gamma_berm =
+         0.934236433172982
+gamma_perm =
+     1
+gamma_beta =
+     1
+gamma_rough =
+     1
+gamma =
+         0.934236433172982
+ans =
+!!! - - Iribaren number:   1.12 is in the valid range (0.5-10), TAW RECOMMENDED - - !!!
+ans =
+!!! - - slope: 1:8.6 V:H is outside the valid range (1:8 - 1:1), TAW NOT VALID - - !!!
+R2_new =
+          10.0290863585598
+R2del =
+           2.0742676901761
+Z2 =
+          19.4143591688686
+ans =
+!----------------- STARTING ITERATION 3 -----------------!
+Ztoe =
+                  1.729808
+toe_sta =
+          1626.06965548772
+top_sta =
+          1806.69871701847
+Z2 =
+          19.4143591688686
+H0 =
+                    5.0379
+Tp =
+                   11.3516
+T0 =
+          10.3196363636364
+R2 =
+          10.0290863585598
+Z2 =
+          19.4143591688686
+top_sta =
+          1806.69871701847
+Lslope =
+          180.629061530746
+ans =
+Berm Factor Calculation: Iteration 3, Profile Segment: 37
+dh =
+         -1.54678418969124
+rdh_sum =
+        0.0575522845257002
+ans =
+Berm Factor Calculation: Iteration 3, Profile Segment: 38
+dh =
+         -1.60643618969124
+rdh_sum =
+         0.119533397816781
+ans =
+Berm Factor Calculation: Iteration 3, Profile Segment: 39
+dh =
+         -1.66608768969124
+rdh_sum =
+         0.186096235692182
+ans =
+Berm Factor Calculation: Iteration 3, Profile Segment: 40
+dh =
+         -1.72573918969124
+rdh_sum =
+         0.257392130759526
+ans =
+Berm Factor Calculation: Iteration 3, Profile Segment: 41
+dh =
+         -1.78539118969124
+rdh_sum =
+         0.333570804650896
+ans =
+Berm Factor Calculation: Iteration 3, Profile Segment: 42
+dh =
+         -1.84504268969124
+rdh_sum =
+         0.414780192346405
+ans =
+Berm Factor Calculation: Iteration 3, Profile Segment: 43
+dh =
+         -1.90469418969124
+rdh_sum =
+          0.50116651267763
+ans =
+Berm Factor Calculation: Iteration 3, Profile Segment: 44
+dh =
+         -1.96434568969124
+rdh_sum =
+         0.592874176973738
+ans =
+Berm Factor Calculation: Iteration 3, Profile Segment: 45
+dh =
+         -2.02399718969124
+rdh_sum =
+         0.690045738640926
+ans =
+Berm Factor Calculation: Iteration 3, Profile Segment: 46
+dh =
+         -2.08364918969124
+rdh_sum =
+         0.792821890951963
+ans =
+Berm Factor Calculation: Iteration 3, Profile Segment: 47
+dh =
+         -2.14330068969124
+rdh_sum =
+         0.901341276410312
+ans =
+!------- End Berm Factor Calculation, Iter: 3 ---------!
+berm_width =
+    11
+rB =
+        0.0608982846214235
+rdh_mean =
+        0.0819401160373011
+gamma_berm =
+         0.944091727886929
+slope =
+         0.104254253423805
+Irb =
+          1.08426130721864
+gamma_berm =
+         0.944091727886929
+gamma_perm =
+     1
+gamma_beta =
+     1
+gamma_rough =
+     1
+gamma =
+         0.944091727886929
+ans =
+!!! - - Iribaren number:   1.02 is in the valid range (0.5-10), TAW RECOMMENDED - - !!!
+ans =
+!!! - - slope: 1:9.6 V:H is outside the valid range (1:8 - 1:1), TAW NOT VALID - - !!!
+R2_new =
+          9.12790184453968
+R2del =
+         0.901184514020114
+Z2 =
+          18.5131746548484
+ans =
+!----------------- STARTING ITERATION 4 -----------------!
+Ztoe =
+                  1.729808
+toe_sta =
+          1626.06965548772
+top_sta =
+          1791.59109914081
+Z2 =
+          18.5131746548484
+H0 =
+                    5.0379
+Tp =
+                   11.3516
+T0 =
+          10.3196363636364
+R2 =
+          9.12790184453968
+Z2 =
+          18.5131746548484
+top_sta =
+          1791.59109914081
+Lslope =
+          165.521443653089
+ans =
+Berm Factor Calculation: Iteration 4, Profile Segment: 37
+dh =
+         -1.54678418969124
+rdh_sum =
+        0.0691950822850872
+ans =
+Berm Factor Calculation: Iteration 4, Profile Segment: 38
+dh =
+         -1.60643618969124
+rdh_sum =
+         0.143690982738681
+ans =
+Berm Factor Calculation: Iteration 4, Profile Segment: 39
+dh =
+         -1.66608768969124
+rdh_sum =
+         0.223667002294197
+ans =
+Berm Factor Calculation: Iteration 4, Profile Segment: 40
+dh =
+         -1.72573918969124
+rdh_sum =
+         0.309300175757282
+ans =
+Berm Factor Calculation: Iteration 4, Profile Segment: 41
+dh =
+         -1.78539118969124
+rdh_sum =
+         0.400765203122065
+ans =
+Berm Factor Calculation: Iteration 4, Profile Segment: 42
+dh =
+         -1.84504268969124
+rdh_sum =
+         0.498234228568711
+ans =
+Berm Factor Calculation: Iteration 4, Profile Segment: 43
+dh =
+         -1.90469418969124
+rdh_sum =
+         0.601876913821702
+ans =
+Berm Factor Calculation: Iteration 4, Profile Segment: 44
+dh =
+         -1.96434568969124
+rdh_sum =
+         0.711860318485847
+ans =
+Berm Factor Calculation: Iteration 4, Profile Segment: 45
+dh =
+         -2.02399718969124
+rdh_sum =
+         0.828348829632762
+ans =
+Berm Factor Calculation: Iteration 4, Profile Segment: 46
+dh =
+         -2.08364918969124
+rdh_sum =
+         0.951504149064295
+ans =
+Berm Factor Calculation: Iteration 4, Profile Segment: 47
+dh =
+         -2.14330068969124
+rdh_sum =
+            1.081485056849
+ans =
+!------- End Berm Factor Calculation, Iter: 4 ---------!
+berm_width =
+    11
+rB =
+        0.0664566460829966
+rdh_mean =
+        0.0983168233499088
+gamma_berm =
+         0.940077160250373
+slope =
+         0.108615129771427
+Irb =
+          1.12961513532645
+gamma_berm =
+         0.940077160250373
+gamma_perm =
+     1
+gamma_beta =
+     1
+gamma_rough =
+     1
+gamma =
+         0.940077160250373
+ans =
+!!! - - Iribaren number:   1.06 is in the valid range (0.5-10), TAW RECOMMENDED - - !!!
+ans =
+!!! - - slope: 1:9.2 V:H is outside the valid range (1:8 - 1:1), TAW NOT VALID - - !!!
+R2_new =
+          9.46927682989579
+R2del =
+          0.34137498535611
+Z2 =
+          18.8545496402046
+ans =
+!----------------- STARTING ITERATION 5 -----------------!
+Ztoe =
+                  1.729808
+toe_sta =
+          1626.06965548772
+top_sta =
+          1797.31397026378
+Z2 =
+          18.8545496402046
+H0 =
+                    5.0379
+Tp =
+                   11.3516
+T0 =
+          10.3196363636364
+R2 =
+          9.46927682989579
+Z2 =
+          18.8545496402046
+top_sta =
+          1797.31397026378
+Lslope =
+          171.244314776056
+ans =
+Berm Factor Calculation: Iteration 5, Profile Segment: 37
+dh =
+         -1.54678418969124
+rdh_sum =
+         0.064404034091573
+ans =
+Berm Factor Calculation: Iteration 5, Profile Segment: 38
+dh =
+         -1.60643618969124
+rdh_sum =
+         0.133751062296208
+ans =
+Berm Factor Calculation: Iteration 5, Profile Segment: 39
+dh =
+         -1.66608768969124
+rdh_sum =
+         0.208209707506491
+ans =
+Berm Factor Calculation: Iteration 5, Profile Segment: 40
+dh =
+         -1.72573918969124
+rdh_sum =
+         0.287946631389085
+ans =
+Berm Factor Calculation: Iteration 5, Profile Segment: 41
+dh =
+         -1.78539118969124
+rdh_sum =
+         0.373126474698892
+ans =
+Berm Factor Calculation: Iteration 5, Profile Segment: 42
+dh =
+         -1.84504268969124
+rdh_sum =
+         0.463911655250388
+ans =
+Berm Factor Calculation: Iteration 5, Profile Segment: 43
+dh =
+         -1.90469418969124
+rdh_sum =
+         0.560462440484243
+ans =
+Berm Factor Calculation: Iteration 5, Profile Segment: 44
+dh =
+         -1.96434568969124
+rdh_sum =
+           0.6629368397638
+ans =
+Berm Factor Calculation: Iteration 5, Profile Segment: 45
+dh =
+         -2.02399718969124
+rdh_sum =
+         0.771490542491301
+ans =
+Berm Factor Calculation: Iteration 5, Profile Segment: 46
+dh =
+         -2.08364918969124
+rdh_sum =
+         0.886276910010338
+ans =
+Berm Factor Calculation: Iteration 5, Profile Segment: 47
+dh =
+         -2.14330068969124
+rdh_sum =
+           1.0074467581845
+ans =
+!------- End Berm Factor Calculation, Iter: 5 ---------!
+berm_width =
+    11
+rB =
+        0.0642357091643316
+rdh_mean =
+        0.0915860689258636
+gamma_berm =
+         0.941647386922695
+slope =
+         0.106866453665683
+Irb =
+          1.11142861748139
+gamma_berm =
+         0.941647386922695
+gamma_perm =
+     1
+gamma_beta =
+     1
+gamma_rough =
+     1
+gamma =
+         0.941647386922695
+ans =
+!!! - - Iribaren number:   1.05 is in the valid range (0.5-10), TAW RECOMMENDED - - !!!
+ans =
+!!! - - slope: 1:9.4 V:H is outside the valid range (1:8 - 1:1), TAW NOT VALID - - !!!
+R2_new =
+          9.33238591641954
+R2del =
+         0.136890913476247
+Z2 =
+          18.7176587267283
+ans =
+!----------------- STARTING ITERATION 6 -----------------!
+Ztoe =
+                  1.729808
+toe_sta =
+          1626.06965548772
+top_sta =
+          1795.01910658209
+Z2 =
+          18.7176587267283
+H0 =
+                    5.0379
+Tp =
+                   11.3516
+T0 =
+          10.3196363636364
+R2 =
+          9.33238591641954
+Z2 =
+          18.7176587267283
+top_sta =
+          1795.01910658209
+Lslope =
+           168.94945109437
+ans =
+Berm Factor Calculation: Iteration 6, Profile Segment: 37
+dh =
+         -1.54678418969124
+rdh_sum =
+        0.0662641152074591
+ans =
+Berm Factor Calculation: Iteration 6, Profile Segment: 38
+dh =
+         -1.60643618969124
+rdh_sum =
+         0.137610313555862
+ans =
+Berm Factor Calculation: Iteration 6, Profile Segment: 39
+dh =
+         -1.66608768969124
+rdh_sum =
+         0.214211394848707
+ans =
+Berm Factor Calculation: Iteration 6, Profile Segment: 40
+dh =
+         -1.72573918969124
+rdh_sum =
+         0.296238081884604
+ans =
+Berm Factor Calculation: Iteration 6, Profile Segment: 41
+dh =
+         -1.78539118969124
+rdh_sum =
+         0.383858957341145
+ans =
+Berm Factor Calculation: Iteration 6, Profile Segment: 42
+dh =
+         -1.84504268969124
+rdh_sum =
+         0.477240254431518
+ans =
+Berm Factor Calculation: Iteration 6, Profile Segment: 43
+dh =
+         -1.90469418969124
+rdh_sum =
+          0.57654592984021
+ans =
+Berm Factor Calculation: Iteration 6, Profile Segment: 44
+dh =
+         -1.96434568969124
+rdh_sum =
+         0.681937551425475
+ans =
+Berm Factor Calculation: Iteration 6, Profile Segment: 45
+dh =
+         -2.02399718969124
+rdh_sum =
+         0.793574233071974
+ans =
+Berm Factor Calculation: Iteration 6, Profile Segment: 46
+dh =
+         -2.08364918969124
+rdh_sum =
+         0.911612624840858
+ans =
+Berm Factor Calculation: Iteration 6, Profile Segment: 47
+dh =
+         -2.14330068969124
+rdh_sum =
+          1.03620668818343
+ans =
+!------- End Berm Factor Calculation, Iter: 6 ---------!
+berm_width =
+    11
+rB =
+        0.0651082316559627
+rdh_mean =
+        0.0942006080166755
+gamma_berm =
+          0.94102500335292
+slope =
+          0.10755245180674
+Irb =
+          1.11856311048043
+gamma_berm =
+          0.94102500335292
+gamma_perm =
+     1
+gamma_beta =
+     1
+gamma_rough =
+     1
+gamma =
+          0.94102500335292
+ans =
+!!! - - Iribaren number:   1.05 is in the valid range (0.5-10), TAW RECOMMENDED - - !!!
+ans =
+!!! - - slope: 1:9.3 V:H is outside the valid range (1:8 - 1:1), TAW NOT VALID - - !!!
+R2_new =
+          9.38608460262104
+R2del =
+        0.0536986862014981
+Z2 =
+          18.7713574129298
+ans =
+!----------------- STARTING ITERATION 7 -----------------!
+Ztoe =
+                  1.729808
+toe_sta =
+          1626.06965548772
+top_sta =
+          1795.91932093226
+Z2 =
+          18.7713574129298
+H0 =
+                    5.0379
+Tp =
+                   11.3516
+T0 =
+          10.3196363636364
+R2 =
+          9.38608460262104
+Z2 =
+          18.7713574129298
+top_sta =
+          1795.91932093226
+Lslope =
+          169.849665444532
+ans =
+Berm Factor Calculation: Iteration 7, Profile Segment: 37
+dh =
+         -1.54678418969124
+rdh_sum =
+         0.065525042965719
+ans =
+Berm Factor Calculation: Iteration 7, Profile Segment: 38
+dh =
+         -1.60643618969124
+rdh_sum =
+         0.136076929715519
+ans =
+Berm Factor Calculation: Iteration 7, Profile Segment: 39
+dh =
+         -1.66608768969124
+rdh_sum =
+         0.211826805172205
+ans =
+Berm Factor Calculation: Iteration 7, Profile Segment: 40
+dh =
+         -1.72573918969124
+rdh_sum =
+         0.292943783651279
+ans =
+Berm Factor Calculation: Iteration 7, Profile Segment: 41
+dh =
+         -1.78539118969124
+rdh_sum =
+         0.379594887117465
+ans =
+Berm Factor Calculation: Iteration 7, Profile Segment: 42
+dh =
+         -1.84504268969124
+rdh_sum =
+         0.471944838755677
+ans =
+Berm Factor Calculation: Iteration 7, Profile Segment: 43
+dh =
+         -1.90469418969124
+rdh_sum =
+          0.57015613576958
+ans =
+Berm Factor Calculation: Iteration 7, Profile Segment: 44
+dh =
+         -1.96434568969124
+rdh_sum =
+         0.674388938917062
+ans =
+Berm Factor Calculation: Iteration 7, Profile Segment: 45
+dh =
+         -2.02399718969124
+rdh_sum =
+         0.784801008667059
+ans =
+Berm Factor Calculation: Iteration 7, Profile Segment: 46
+dh =
+         -2.08364918969124
+rdh_sum =
+          0.90154769605345
+ans =
+Berm Factor Calculation: Iteration 7, Profile Segment: 47
+dh =
+         -2.14330068969124
+rdh_sum =
+           1.0247817208195
+ans =
+!------- End Berm Factor Calculation, Iter: 7 ---------!
+berm_width =
+    11
+rB =
+        0.0647631537643051
+rdh_mean =
+        0.0931619746199547
+gamma_berm =
+         0.941270309522993
+slope =
+         0.107280990269888
+Irb =
+           1.1157398660454
+gamma_berm =
+         0.941270309522993
+gamma_perm =
+     1
+gamma_beta =
+     1
+gamma_rough =
+     1
+gamma =
+         0.941270309522993
+ans =
+!!! - - Iribaren number:   1.05 is in the valid range (0.5-10), TAW RECOMMENDED - - !!!
+ans =
+!!! - - slope: 1:9.3 V:H is outside the valid range (1:8 - 1:1), TAW NOT VALID - - !!!
+R2_new =
+          9.36483478604849
+R2del =
+         0.021249816572551
+Z2 =
+          18.7501075963573
+ans =
+!----------------- STARTING ITERATION 8 -----------------!
+Ztoe =
+                  1.729808
+toe_sta =
+          1626.06965548772
+top_sta =
+          1795.56308521831
+Z2 =
+          18.7501075963573
+H0 =
+                    5.0379
+Tp =
+                   11.3516
+T0 =
+          10.3196363636364
+R2 =
+          9.36483478604849
+Z2 =
+          18.7501075963573
+top_sta =
+          1795.56308521831
+Lslope =
+          169.493429730587
+ans =
+Berm Factor Calculation: Iteration 8, Profile Segment: 37
+dh =
+         -1.54678418969124
+rdh_sum =
+        0.0658160375402676
+ans =
+Berm Factor Calculation: Iteration 8, Profile Segment: 38
+dh =
+         -1.60643618969124
+rdh_sum =
+         0.136680672223293
+ans =
+Berm Factor Calculation: Iteration 8, Profile Segment: 39
+dh =
+         -1.66608768969124
+rdh_sum =
+         0.212765701294397
+ans =
+Berm Factor Calculation: Iteration 8, Profile Segment: 40
+dh =
+         -1.72573918969124
+rdh_sum =
+         0.294240873185609
+ans =
+Berm Factor Calculation: Iteration 8, Profile Segment: 41
+dh =
+         -1.78539118969124
+rdh_sum =
+         0.381273825233258
+ans =
+Berm Factor Calculation: Iteration 8, Profile Segment: 42
+dh =
+         -1.84504268969124
+rdh_sum =
+         0.474029876102721
+ans =
+Berm Factor Calculation: Iteration 8, Profile Segment: 43
+dh =
+         -1.90469418969124
+rdh_sum =
+         0.572672098642466
+ans =
+Berm Factor Calculation: Iteration 8, Profile Segment: 44
+dh =
+         -1.96434568969124
+rdh_sum =
+         0.677361208699018
+ans =
+Berm Factor Calculation: Iteration 8, Profile Segment: 45
+dh =
+         -2.02399718969124
+rdh_sum =
+         0.788255500761444
+ans =
+Berm Factor Calculation: Iteration 8, Profile Segment: 46
+dh =
+         -2.08364918969124
+rdh_sum =
+         0.905510838539324
+ans =
+Berm Factor Calculation: Iteration 8, Profile Segment: 47
+dh =
+         -2.14330068969124
+rdh_sum =
+          1.02928043195394
+ans =
+!------- End Berm Factor Calculation, Iter: 8 ---------!
+berm_width =
+    11
+rB =
+        0.0648992708300535
+rdh_mean =
+        0.0935709483594489
+gamma_berm =
+         0.941173415489351
+slope =
+         0.107388045203445
+Irb =
+          1.11685325488461
+gamma_berm =
+         0.941173415489351
+gamma_perm =
+     1
+gamma_beta =
+     1
+gamma_rough =
+     1
+gamma =
+         0.941173415489351
+ans =
+!!! - - Iribaren number:   1.05 is in the valid range (0.5-10), TAW RECOMMENDED - - !!!
+ans =
+!!! - - slope: 1:9.3 V:H is outside the valid range (1:8 - 1:1), TAW NOT VALID - - !!!
+R2_new =
+          9.37321491298903
+R2del =
+       0.00838012694054058
+Z2 =
+          18.7584877232978
+% final 2% runup elevation
+Z2=R2_new+SWEL
+Z2 =
+          18.7584877232978
+diary off
+-1.000000e+00

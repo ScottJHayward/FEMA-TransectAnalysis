@@ -11,8 +11,8 @@ templatefile='TAW_template.txt';
 templatelines=401;
 
 %config
-CITYNAME='The Town of Harpswell';
-COUNTY='Cumberland';
+CITYNAME='The Town of Kennebunkport';
+COUNTY='York';
 ENGINEER='SJH';
 DATE=date;
 tawfilename='TAW_iterative.m'
@@ -46,9 +46,9 @@ end
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+
 %add output to excel file
-for i=1:length(fnames)
-    
+for i=[1 3:length(fnames)]
     
     %write a transect file for each run
     toesta=find(abs(sta{i}-toex(i))==min(abs(sta{i}-toex(i))));
@@ -90,7 +90,7 @@ for i=1:templatelines
 end
 
 fid2=fopen(tawfilename,'w')
-for i=1:length(fnames)
+for i=[1 3:length(fnames)]
 for li=1:length(template)
     tawfile{li}=template{li}; %read each line of template
     tawfile{li}=strrep(tawfile{li},'$DIARYFILE$',['logfiles/' fnames{i} '-DIARY.txt']);

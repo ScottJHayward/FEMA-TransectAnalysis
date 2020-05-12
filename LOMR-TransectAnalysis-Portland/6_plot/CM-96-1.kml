@@ -1,0 +1,1663 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+   <name>CM-96-1.kml</name>
+   <Style id="Tstyle">
+     <IconStyle>
+        <scale>0.6</scale>
+     </IconStyle>
+     <LineStyle><width>3</width></LineStyle>
+    </Style>
+ <Folder>
+  <name>CM-96-1.out</name>
+  <Placemark>
+    <name>CM-96-1.out</name>
+    <description>
+    PART 2 WHAFIS output: 
+
+                                        IE       0.00         4.12         4.72        11.77
+                                        OF       1.00         4.12         4.72        11.77
+                                        OF       2.00         4.12         4.72        11.77
+                                        OF       3.00         4.13         4.72        11.77
+                                        OF       4.00         4.13         4.72        11.77
+                                        OF       5.00         4.13         4.72        11.77
+                                        OF       6.00         4.13         4.72        11.77
+                                        OF       7.00         4.13         4.72        11.77
+                                        OF       8.00         4.13         4.72        11.77
+                                        OF       9.00         4.13         4.72        11.77
+                                        OF      10.00         4.13         4.72        11.77
+                                        OF      11.00         4.13         4.72        11.77
+                                        OF      12.00         4.13         4.72        11.77
+                                        OF      13.00         4.13         4.72        11.77
+                                        OF      14.00         4.13         4.72        11.77
+                                        OF      15.00         4.13         4.72        11.77
+                                        OF      16.00         4.13         4.72        11.77
+                                        OF      17.00         4.13         4.72        11.77
+                                        OF      18.00         4.13         4.72        11.77
+                                        OF      19.00         4.13         4.72        11.77
+                                        OF      20.00         4.13         4.72        11.77
+                                        OF      21.00         4.13         4.72        11.78
+                                        OF      22.00         4.13         4.72        11.78
+                                        OF      23.00         4.13         4.72        11.78
+                                        OF      24.00         4.13         4.72        11.78
+                                        OF      25.00         4.14         4.72        11.78
+                                        OF      26.00         4.14         4.72        11.78
+                                        OF      27.00         4.14         4.72        11.78
+                                        OF      28.00         4.14         4.72        11.78
+                                        OF      29.00         4.14         4.72        11.78
+                                        OF      30.00         4.14         4.72        11.78
+                                        OF      31.00         4.14         4.72        11.78
+                                        OF      32.00         4.14         4.72        11.78
+                                        OF      33.00         4.14         4.72        11.78
+                                        OF      34.00         4.14         4.72        11.78
+                                        OF      35.00         4.14         4.72        11.78
+                                        OF      36.00         4.14         4.72        11.78
+                                        OF      37.00         4.14         4.72        11.78
+                                        OF      38.00         4.14         4.72        11.78
+                                        OF      39.00         4.14         4.72        11.78
+                                        OF      40.00         4.14         4.72        11.78
+                                        OF      41.00         4.14         4.72        11.78
+                                        OF      42.00         4.14         4.72        11.78
+                                        OF      43.00         4.14         4.72        11.78
+                                        OF      44.00         4.14         4.72        11.78
+                                        OF      45.00         4.14         4.72        11.79
+                                        OF      46.00         4.15         4.72        11.79
+                                        OF      47.00         4.15         4.72        11.79
+                                        OF      48.00         4.15         4.72        11.79
+                                        OF      49.00         4.15         4.72        11.79
+                                        OF      50.00         4.15         4.72        11.79
+                                        OF      51.00         4.15         4.72        11.79
+                                        OF      52.00         4.15         4.72        11.79
+                                        OF      53.00         4.15         4.72        11.79
+                                        OF      54.00         4.15         4.72        11.79
+                                        OF      55.00         4.15         4.72        11.79
+                                        OF      56.00         4.15         4.72        11.79
+                                        OF      57.00         4.15         4.72        11.79
+                                        OF      58.00         4.15         4.72        11.79
+                                        OF      59.00         4.15         4.72        11.79
+                                        OF      60.00         4.15         4.72        11.79
+                                        OF      61.00         4.15         4.72        11.79
+                                        OF      62.00         4.15         4.72        11.79
+                                        OF      63.00         4.15         4.72        11.79
+                                        OF      64.00         4.15         4.72        11.79
+                                        OF      65.00         4.15         4.72        11.79
+                                        OF      66.00         4.16         4.72        11.79
+                                        OF      67.00         4.16         4.72        11.79
+                                        OF      68.00         4.16         4.72        11.79
+                                        OF      69.00         4.16         4.72        11.79
+                                        OF      70.00         4.16         4.72        11.80
+                                        OF      71.00         4.16         4.72        11.80
+                                        OF      72.00         4.16         4.72        11.80
+                                        OF      73.00         4.16         4.72        11.80
+                                        OF      74.00         4.16         4.72        11.80
+                                        OF      75.00         4.16         4.72        11.80
+                                        OF      76.00         4.16         4.72        11.80
+                                        OF      77.00         4.16         4.72        11.80
+                                        OF      78.00         4.16         4.72        11.80
+                                        OF      79.00         4.16         4.72        11.80
+                                        OF      80.00         4.16         4.72        11.80
+                                        OF      81.00         4.16         4.72        11.80
+                                        OF      82.00         4.16         4.72        11.80
+                                        OF      83.00         4.16         4.72        11.80
+                                        OF      84.00         4.16         4.72        11.80
+                                        OF      85.00         4.17         4.72        11.80
+                                        OF      86.00         4.17         4.72        11.80
+                                        OF      87.00         4.17         4.72        11.80
+                                        OF      88.00         4.17         4.72        11.80
+                                        OF      89.00         4.17         4.72        11.80
+                                        OF      90.00         4.17         4.72        11.80
+                                        OF      91.00         4.17         4.72        11.81
+                                        OF      92.00         4.18         4.72        11.81
+                                        OF      93.00         4.18         4.72        11.81
+                                        OF      94.00         4.18         4.72        11.81
+                                        OF      95.00         4.18         4.72        11.81
+                                        OF      96.00         4.19         4.72        11.82
+                                        OF      97.00         4.19         4.72        11.82
+                                        OF      98.00         4.19         4.72        11.82
+                                        OF      99.00         4.20         4.72        11.82
+                                        OF     100.00         4.20         4.73        11.83
+                                        OF     101.00         4.20         4.73        11.83
+                                        OF     102.00         4.21         4.73        11.83
+                                        OF     103.00         4.21         4.73        11.83
+                                        OF     104.00         4.22         4.73        11.84
+                                        OF     105.00         4.22         4.73        11.84
+                                        OF     106.00         4.23         4.73        11.84
+                                        OF     107.00         4.23         4.73        11.85
+                                        OF     108.00         4.24         4.73        11.85
+                                        OF     109.00         4.24         4.73        11.85
+                                        OF     110.00         4.25         4.73        11.86
+                                        OF     111.00         4.25         4.73        11.86
+                                        OF     112.00         4.26         4.73        11.87
+                                        OF     113.00         4.26         4.73        11.87
+                                        OF     114.00         4.27         4.73        11.87
+                                        OF     115.00         4.28         4.73        11.88
+                                        OF     116.00         4.28         4.73        11.88
+                                        OF     117.00         4.29         4.73        11.89
+                                        OF     118.00         4.30         4.73        11.89
+                                        OF     119.00         4.31         4.73        11.90
+                                        OF     120.00         4.31         4.73        11.90
+                                        OF     121.00         4.32         4.73        11.91
+                                        OF     122.00         4.33         4.73        11.92
+                                        OF     123.00         4.34         4.73        11.92
+                                        OF     124.00         4.35         4.73        11.93
+                                        OF     125.00         4.36         4.73        11.93
+                                        IF     129.00         4.59         4.73        12.09
+                                        IF     134.00         4.53         4.73        12.06
+                                        IF     137.00         3.76         4.73        11.52
+                                        IF     147.00         3.65         4.73        11.44
+                                        IF     156.00         3.62         4.73        11.42
+                                        IF     167.30         0.98         4.73         9.68
+                                        IF     170.60         0.90         4.73         9.75
+                                        IF     173.90         0.76         4.73         9.70
+                                        IF     177.20         0.39         4.73         9.47
+                                        IF     178.80         0.01         4.73         9.20
+    </description>
+    <styleUrl>#Tstyle</styleUrl>
+    <LineString>
+    <tessellate>1</tessellate>
+    <coordinates>
+      -70.1016362086169,43.6978630750777,0 -70.1030749932722,43.6979587548899,0
+    </coordinates>
+    </LineString>
+  </Placemark>
+</Folder>
+ <Folder><name>WHAFIS CARDS</name>
+  <Placemark>
+    <name>VE 12</name>
+    <description>
+Crest :: 11.77;lat :: 43.6978630750777;elevation :: -8.809;SWL_100 :: 8.881;Tp :: 4.72;y :: 4838905.6463;Hc :: 4.12;bfe :: 12;type :: IE;lon :: -70.1016362086169;station :: 0;zone :: VE;x :: 411230.068;    </description>
+    <styleUrl>#Tstyle</styleUrl>
+    <Point>
+    <coordinates>
+      -70.1016362086169,43.6978630750777,-8.809
+    </coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>VE 12</name>
+    <description>
+x :: 411229.764868297;zone :: VE;lon :: -70.1016399750507;station :: 0.304800609632187;type :: OF;Hc :: 4.12;bfe :: 12;SWL_100 :: 8.881;Tp :: 4.72;y :: 4838905.67815251;Crest :: 11.77;elevation :: -8.792;lat :: 43.6978633255713;    </description>
+    <styleUrl>#Tstyle</styleUrl>
+    <Point>
+    <coordinates>
+      -70.1016399750507,43.6978633255713,-8.792
+    </coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>VE 12</name>
+    <description>
+bfe :: 12;Hc :: 4.12;y :: 4838905.71000502;Tp :: 4.72;SWL_100 :: 8.882;elevation :: -8.775;Crest :: 11.77;lat :: 43.6978635760647;x :: 411229.461736595;zone :: VE;station :: 0.609601219264374;lon :: -70.1016437414846;type :: OF;    </description>
+    <styleUrl>#Tstyle</styleUrl>
+    <Point>
+    <coordinates>
+      -70.1016437414846,43.6978635760647,-8.775
+    </coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>VE 12</name>
+    <description>
+zone :: VE;x :: 411229.158604892;type :: OF;station :: 0.914401828896561;lon :: -70.1016475079184;Hc :: 4.13;bfe :: 12;Crest :: 11.77;elevation :: -8.758;lat :: 43.6978638265581;Tp :: 4.72;y :: 4838905.74185753;SWL_100 :: 8.882;    </description>
+    <styleUrl>#Tstyle</styleUrl>
+    <Point>
+    <coordinates>
+      -70.1016475079184,43.6978638265581,-8.758
+    </coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>VE 12</name>
+    <description>
+lon :: -70.1016512743523;station :: 1.21920243852875;type :: OF;x :: 411228.855473189;zone :: VE;SWL_100 :: 8.882;Tp :: 4.72;y :: 4838905.77371004;Crest :: 11.77;elevation :: -8.740;lat :: 43.6978640770513;Hc :: 4.13;bfe :: 12;    </description>
+    <styleUrl>#Tstyle</styleUrl>
+    <Point>
+    <coordinates>
+      -70.1016512743523,43.6978640770513,-8.740
+    </coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>VE 12</name>
+    <description>
+SWL_100 :: 8.882;y :: 4838905.80556255;Tp :: 4.72;lat :: 43.6978643275444;Crest :: 11.77;elevation :: -8.723;bfe :: 12;Hc :: 4.13;lon :: -70.1016550407862;station :: 1.52400304816094;type :: OF;x :: 411228.552341486;zone :: VE;    </description>
+    <styleUrl>#Tstyle</styleUrl>
+    <Point>
+    <coordinates>
+      -70.1016550407862,43.6978643275444,-8.723
+    </coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>VE 12</name>
+    <description>
+SWL_100 :: 8.882;Tp :: 4.72;y :: 4838905.83741506;elevation :: -8.706;Crest :: 11.77;lat :: 43.6978645780373;Hc :: 4.13;bfe :: 12;lon :: -70.1016588072202;station :: 1.82880365779312;type :: OF;x :: 411228.249209784;zone :: VE;    </description>
+    <styleUrl>#Tstyle</styleUrl>
+    <Point>
+    <coordinates>
+      -70.1016588072202,43.6978645780373,-8.706
+    </coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>VE 12</name>
+    <description>
+zone :: VE;x :: 411227.946078081;type :: OF;station :: 2.13360426742531;lon :: -70.1016625736542;Hc :: 4.13;bfe :: 12;elevation :: -8.689;lat :: 43.6978648285301;Crest :: 11.77;Tp :: 4.72;y :: 4838905.86926757;SWL_100 :: 8.882;    </description>
+    <styleUrl>#Tstyle</styleUrl>
+    <Point>
+    <coordinates>
+      -70.1016625736542,43.6978648285301,-8.689
+    </coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>VE 12</name>
+    <description>
+elevation :: -8.672;Crest :: 11.77;lat :: 43.6978650790229;SWL_100 :: 8.882;Tp :: 4.72;y :: 4838905.90112009;Hc :: 4.13;bfe :: 12;type :: OF;lon :: -70.1016663400882;station :: 2.4384048770575;zone :: VE;x :: 411227.642946378;    </description>
+    <styleUrl>#Tstyle</styleUrl>
+    <Point>
+    <coordinates>
+      -70.1016663400882,43.6978650790229,-8.672
+    </coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>VE 12</name>
+    <description>
+type :: OF;lon :: -70.1016701065222;station :: 2.74320548668968;zone :: VE;x :: 411227.339814676;Crest :: 11.77;elevation :: -8.655;lat :: 43.6978653295155;SWL_100 :: 8.882;Tp :: 4.72;y :: 4838905.9329726;Hc :: 4.13;bfe :: 12;    </description>
+    <styleUrl>#Tstyle</styleUrl>
+    <Point>
+    <coordinates>
+      -70.1016701065222,43.6978653295155,-8.655
+    </coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>VE 12</name>
+    <description>
+elevation :: -8.637;Crest :: 11.77;lat :: 43.6978655800079;SWL_100 :: 8.882;Tp :: 4.72;y :: 4838905.96482511;Hc :: 4.13;bfe :: 12;type :: OF;lon :: -70.1016738729563;station :: 3.04800609632187;zone :: VE;x :: 411227.036682973;    </description>
+    <styleUrl>#Tstyle</styleUrl>
+    <Point>
+    <coordinates>
+      -70.1016738729563,43.6978655800079,-8.637
+    </coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>VE 12</name>
+    <description>
+x :: 411226.73355127;zone :: VE;station :: 3.35280670595406;lon :: -70.1016776393903;type :: OF;bfe :: 12;Hc :: 4.13;y :: 4838905.99667762;Tp :: 4.72;SWL_100 :: 8.882;elevation :: -8.620;lat :: 43.6978658305002;Crest :: 11.77;    </description>
+    <styleUrl>#Tstyle</styleUrl>
+    <Point>
+    <coordinates>
+      -70.1016776393903,43.6978658305002,-8.620
+    </coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>VE 12</name>
+    <description>
+y :: 4838906.02853013;Tp :: 4.72;SWL_100 :: 8.882;Crest :: 11.77;lat :: 43.6978660809925;elevation :: -8.603;bfe :: 12;Hc :: 4.13;station :: 3.65760731558624;lon :: -70.1016814058245;type :: OF;x :: 411226.430419567;zone :: VE;    </description>
+    <styleUrl>#Tstyle</styleUrl>
+    <Point>
+    <coordinates>
+      -70.1016814058245,43.6978660809925,-8.603
+    </coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>VE 12</name>
+    <description>
+lat :: 43.6978663314845;elevation :: -8.586;Crest :: 11.77;y :: 4838906.06038264;Tp :: 4.72;SWL_100 :: 8.882;bfe :: 12;Hc :: 4.13;type :: OF;station :: 3.96240792521843;lon :: -70.1016851722586;zone :: VE;x :: 411226.127287865;    </description>
+    <styleUrl>#Tstyle</styleUrl>
+    <Point>
+    <coordinates>
+      -70.1016851722586,43.6978663314845,-8.586
+    </coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>VE 12</name>
+    <description>
+bfe :: 12;Hc :: 4.13;lat :: 43.6978665819765;Crest :: 11.77;elevation :: -8.569;y :: 4838906.09223515;Tp :: 4.72;SWL_100 :: 8.882;zone :: VE;x :: 411225.824156162;type :: OF;station :: 4.26720853485062;lon :: -70.1016889386928;    </description>
+    <styleUrl>#Tstyle</styleUrl>
+    <Point>
+    <coordinates>
+      -70.1016889386928,43.6978665819765,-8.569
+    </coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>VE 12</name>
+    <description>
+x :: 411225.521024459;zone :: VE;station :: 4.5720091444828;lon :: -70.101692705127;type :: OF;Hc :: 4.13;bfe :: 12;Tp :: 4.72;y :: 4838906.12408766;SWL_100 :: 8.882;elevation :: -8.552;Crest :: 11.77;lat :: 43.6978668324684;    </description>
+    <styleUrl>#Tstyle</styleUrl>
+    <Point>
+    <coordinates>
+      -70.101692705127,43.6978668324684,-8.552
+    </coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>VE 12</name>
+    <description>
+Hc :: 4.13;bfe :: 12;Tp :: 4.72;y :: 4838906.15594017;SWL_100 :: 8.882;lat :: 43.6978670829601;Crest :: 11.77;elevation :: -8.534;x :: 411225.217892756;zone :: VE;station :: 4.87680975411499;lon :: -70.1016964715613;type :: OF;    </description>
+    <styleUrl>#Tstyle</styleUrl>
+    <Point>
+    <coordinates>
+      -70.1016964715613,43.6978670829601,-8.534
+    </coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>VE 12</name>
+    <description>
+zone :: VE;x :: 411224.914761054;type :: OF;lon :: -70.1017002379955;station :: 5.18161036374718;bfe :: 12;Hc :: 4.13;lat :: 43.6978673334517;Crest :: 11.77;elevation :: -8.517;SWL_100 :: 8.882;y :: 4838906.18779268;Tp :: 4.72;    </description>
+    <styleUrl>#Tstyle</styleUrl>
+    <Point>
+    <coordinates>
+      -70.1017002379955,43.6978673334517,-8.517
+    </coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>VE 12</name>
+    <description>
+elevation :: -8.500;Crest :: 11.77;lat :: 43.6978675839431;Tp :: 4.72;y :: 4838906.21964519;SWL_100 :: 8.882;Hc :: 4.13;bfe :: 12;type :: OF;station :: 5.48641097337937;lon :: -70.1017040044298;zone :: VE;x :: 411224.611629351;    </description>
+    <styleUrl>#Tstyle</styleUrl>
+    <Point>
+    <coordinates>
+      -70.1017040044298,43.6978675839431,-8.500
+    </coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>VE 12</name>
+    <description>
+elevation :: -8.483;Crest :: 11.77;lat :: 43.6978678344345;SWL_100 :: 8.882;Tp :: 4.72;y :: 4838906.2514977;Hc :: 4.13;bfe :: 12;type :: OF;lon :: -70.1017077708641;station :: 5.79121158301155;zone :: VE;x :: 411224.308497648;    </description>
+    <styleUrl>#Tstyle</styleUrl>
+    <Point>
+    <coordinates>
+      -70.1017077708641,43.6978678344345,-8.483
+    </coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>VE 12</name>
+    <description>
+zone :: VE;x :: 411224.005365946;type :: OF;station :: 6.09601219264374;lon :: -70.1017115372985;bfe :: 12;Hc :: 4.13;lat :: 43.6978680849257;Crest :: 11.77;elevation :: -8.466;y :: 4838906.28335021;Tp :: 4.72;SWL_100 :: 8.882;    </description>
+    <styleUrl>#Tstyle</styleUrl>
+    <Point>
+    <coordinates>
+      -70.1017115372985,43.6978680849257,-8.466
+    </coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>VE 12</name>
+    <description>
+elevation :: -8.449;Crest :: 11.78;lat :: 43.6978683354168;Tp :: 4.72;y :: 4838906.31520272;SWL_100 :: 8.882;Hc :: 4.13;bfe :: 12;type :: OF;station :: 6.40081280227593;lon :: -70.1017153037329;zone :: VE;x :: 411223.702234243;    </description>
+    <styleUrl>#Tstyle</styleUrl>
+    <Point>
+    <coordinates>
+      -70.1017153037329,43.6978683354168,-8.449
+    </coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>VE 12</name>
+    <description>
+SWL_100 :: 8.882;y :: 4838906.34705523;Tp :: 4.72;lat :: 43.6978685859077;elevation :: -8.431;Crest :: 11.78;bfe :: 12;Hc :: 4.13;lon :: -70.1017190701673;station :: 6.70561341190811;type :: OF;x :: 411223.39910254;zone :: VE;    </description>
+    <styleUrl>#Tstyle</styleUrl>
+    <Point>
+    <coordinates>
+      -70.1017190701673,43.6978685859077,-8.431
+    </coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>VE 12</name>
+    <description>
+bfe :: 12;Hc :: 4.13;Crest :: 11.78;lat :: 43.6978688363986;elevation :: -8.414;y :: 4838906.37890774;Tp :: 4.72;SWL_100 :: 8.882;zone :: VE;x :: 411223.095970837;type :: OF;station :: 7.0104140215403;lon :: -70.1017228366017;    </description>
+    <styleUrl>#Tstyle</styleUrl>
+    <Point>
+    <coordinates>
+      -70.1017228366017,43.6978688363986,-8.414
+    </coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>VE 12</name>
+    <description>
+station :: 7.31521463117249;lon :: -70.1017266030362;type :: OF;x :: 411222.792839135;zone :: VE;y :: 4838906.41076026;Tp :: 4.72;SWL_100 :: 8.882;Crest :: 11.78;elevation :: -8.397;lat :: 43.6978690868893;bfe :: 12;Hc :: 4.13;    </description>
+    <styleUrl>#Tstyle</styleUrl>
+    <Point>
+    <coordinates>
+      -70.1017266030362,43.6978690868893,-8.397
+    </coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>VE 12</name>
+    <description>
+type :: OF;station :: 7.62001524080468;lon :: -70.1017303694707;zone :: VE;x :: 411222.489707432;Crest :: 11.78;elevation :: -8.380;lat :: 43.6978693373799;y :: 4838906.44261277;Tp :: 4.72;SWL_100 :: 8.883;bfe :: 12;Hc :: 4.14;    </description>
+    <styleUrl>#Tstyle</styleUrl>
+    <Point>
+    <coordinates>
+      -70.1017303694707,43.6978693373799,-8.380
+    </coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>VE 12</name>
+    <description>
+zone :: VE;x :: 411222.186575729;type :: OF;station :: 7.92481585043686;lon :: -70.1017341359052;bfe :: 12;Hc :: 4.14;Crest :: 11.78;elevation :: -8.363;lat :: 43.6978695878704;y :: 4838906.47446528;Tp :: 4.72;SWL_100 :: 8.883;    </description>
+    <styleUrl>#Tstyle</styleUrl>
+    <Point>
+    <coordinates>
+      -70.1017341359052,43.6978695878704,-8.363
+    </coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>VE 12</name>
+    <description>
+type :: OF;station :: 8.22961646006905;lon :: -70.1017379023397;zone :: VE;x :: 411221.883444026;Crest :: 11.78;lat :: 43.6978698383607;elevation :: -8.346;Tp :: 4.72;y :: 4838906.50631779;SWL_100 :: 8.883;Hc :: 4.14;bfe :: 12;    </description>
+    <styleUrl>#Tstyle</styleUrl>
+    <Point>
+    <coordinates>
+      -70.1017379023397,43.6978698383607,-8.346
+    </coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>VE 12</name>
+    <description>
+Hc :: 4.14;bfe :: 12;SWL_100 :: 8.883;Tp :: 4.72;y :: 4838906.5381703;lat :: 43.6978700888509;elevation :: -8.328;Crest :: 11.78;x :: 411221.580312324;zone :: VE;lon :: -70.1017416687743;station :: 8.53441706970124;type :: OF;    </description>
+    <styleUrl>#Tstyle</styleUrl>
+    <Point>
+    <coordinates>
+      -70.1017416687743,43.6978700888509,-8.328
+    </coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>VE 12</name>
+    <description>
+bfe :: 12;Hc :: 4.14;lat :: 43.697870339341;elevation :: -8.311;Crest :: 11.78;y :: 4838906.57002281;Tp :: 4.72;SWL_100 :: 8.883;zone :: VE;x :: 411221.277180621;type :: OF;station :: 8.83921767933342;lon :: -70.101745435209;    </description>
+    <styleUrl>#Tstyle</styleUrl>
+    <Point>
+    <coordinates>
+      -70.101745435209,43.697870339341,-8.311
+    </coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>VE 12</name>
+    <description>
+type :: OF;station :: 9.14401828896561;lon :: -70.1017492016436;zone :: VE;x :: 411220.974048918;lat :: 43.697870589831;Crest :: 11.78;elevation :: -8.294;Tp :: 4.72;y :: 4838906.60187532;SWL_100 :: 8.883;Hc :: 4.14;bfe :: 12;    </description>
+    <styleUrl>#Tstyle</styleUrl>
+    <Point>
+    <coordinates>
+      -70.1017492016436,43.697870589831,-8.294
+    </coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>VE 12</name>
+    <description>
+Crest :: 11.78;lat :: 43.6978708403209;elevation :: -8.277;SWL_100 :: 8.883;y :: 4838906.63372783;Tp :: 4.72;bfe :: 12;Hc :: 4.14;type :: OF;lon :: -70.1017529680783;station :: 9.4488188985978;zone :: VE;x :: 411220.670917216;    </description>
+    <styleUrl>#Tstyle</styleUrl>
+    <Point>
+    <coordinates>
+      -70.1017529680783,43.6978708403209,-8.277
+    </coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>VE 12</name>
+    <description>
+x :: 411220.367785513;zone :: VE;station :: 9.75361950822998;lon :: -70.101756734513;type :: OF;bfe :: 12;Hc :: 4.14;y :: 4838906.66558034;Tp :: 4.72;SWL_100 :: 8.883;lat :: 43.6978710908106;Crest :: 11.78;elevation :: -8.260;    </description>
+    <styleUrl>#Tstyle</styleUrl>
+    <Point>
+    <coordinates>
+      -70.101756734513,43.6978710908106,-8.260
+    </coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>VE 12</name>
+    <description>
+type :: OF;lon :: -70.1017605009477;station :: 10.0584201178622;zone :: VE;x :: 411220.06465381;lat :: 43.6978713413002;Crest :: 11.78;elevation :: -8.243;SWL_100 :: 8.883;y :: 4838906.69743285;Tp :: 4.72;bfe :: 12;Hc :: 4.14;    </description>
+    <styleUrl>#Tstyle</styleUrl>
+    <Point>
+    <coordinates>
+      -70.1017605009477,43.6978713413002,-8.243
+    </coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>VE 12</name>
+    <description>
+bfe :: 12;Hc :: 4.14;elevation :: -8.225;lat :: 43.6978715917897;Crest :: 11.78;SWL_100 :: 8.883;y :: 4838906.72928536;Tp :: 4.72;zone :: VE;x :: 411219.761522107;type :: OF;lon :: -70.1017642673824;station :: 10.3632207274944;    </description>
+    <styleUrl>#Tstyle</styleUrl>
+    <Point>
+    <coordinates>
+      -70.1017642673824,43.6978715917897,-8.225
+    </coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>VE 12</name>
+    <description>
+Hc :: 4.14;bfe :: 12;lat :: 43.697871842279;elevation :: -8.208;Crest :: 11.78;Tp :: 4.72;y :: 4838906.76113787;SWL_100 :: 8.883;zone :: VE;x :: 411219.458390405;type :: OF;station :: 10.6680213371265;lon :: -70.1017680338172;    </description>
+    <styleUrl>#Tstyle</styleUrl>
+    <Point>
+    <coordinates>
+      -70.1017680338172,43.697871842279,-8.208
+    </coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>VE 12</name>
+    <description>
+x :: 411219.155258702;zone :: VE;station :: 10.9728219467587;lon :: -70.101771800252;type :: OF;Hc :: 4.14;bfe :: 12;Tp :: 4.72;y :: 4838906.79299038;SWL_100 :: 8.883;elevation :: -8.191;lat :: 43.6978720927682;Crest :: 11.78;    </description>
+    <styleUrl>#Tstyle</styleUrl>
+    <Point>
+    <coordinates>
+      -70.101771800252,43.6978720927682,-8.191
+    </coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>VE 12</name>
+    <description>
+x :: 411218.852126999;zone :: VE;station :: 11.2776225563909;lon :: -70.1017755666869;type :: OF;bfe :: 12;Hc :: 4.14;y :: 4838906.82484289;Tp :: 4.72;SWL_100 :: 8.883;lat :: 43.6978723432573;Crest :: 11.78;elevation :: -8.174;    </description>
+    <styleUrl>#Tstyle</styleUrl>
+    <Point>
+    <coordinates>
+      -70.1017755666869,43.6978723432573,-8.174
+    </coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>VE 12</name>
+    <description>
+bfe :: 12;Hc :: 4.14;Crest :: 11.78;lat :: 43.6978725937463;elevation :: -8.157;SWL_100 :: 8.883;y :: 4838906.8566954;Tp :: 4.72;zone :: VE;x :: 411218.548995296;type :: OF;lon :: -70.1017793331218;station :: 11.5824231660231;    </description>
+    <styleUrl>#Tstyle</styleUrl>
+    <Point>
+    <coordinates>
+      -70.1017793331218,43.6978725937463,-8.157
+    </coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>VE 12</name>
+    <description>
+Crest :: 11.78;lat :: 43.6978728442351;elevation :: -8.139;y :: 4838906.88854792;Tp :: 4.72;SWL_100 :: 8.883;bfe :: 12;Hc :: 4.14;type :: OF;station :: 11.8872237756553;lon :: -70.1017830995567;zone :: VE;x :: 411218.245863594;    </description>
+    <styleUrl>#Tstyle</styleUrl>
+    <Point>
+    <coordinates>
+      -70.1017830995567,43.6978728442351,-8.139
+    </coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>VE 12</name>
+    <description>
+Crest :: 11.78;elevation :: -8.122;lat :: 43.6978730947239;Tp :: 4.72;y :: 4838906.92040043;SWL_100 :: 8.883;Hc :: 4.14;bfe :: 12;type :: OF;station :: 12.1920243852875;lon :: -70.1017868659916;zone :: VE;x :: 411217.942731891;    </description>
+    <styleUrl>#Tstyle</styleUrl>
+    <Point>
+    <coordinates>
+      -70.1017868659916,43.6978730947239,-8.122
+    </coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>VE 12</name>
+    <description>
+lon :: -70.1017906324266;station :: 12.4968249949197;type :: OF;x :: 411217.639600188;zone :: VE;SWL_100 :: 8.883;y :: 4838906.95225294;Tp :: 4.72;lat :: 43.6978733452125;Crest :: 11.78;elevation :: -8.105;bfe :: 12;Hc :: 4.14;    </description>
+    <styleUrl>#Tstyle</styleUrl>
+    <Point>
+    <coordinates>
+      -70.1017906324266,43.6978733452125,-8.105
+    </coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>VE 12</name>
+    <description>
+bfe :: 12;Hc :: 4.14;y :: 4838906.98410545;Tp :: 4.72;SWL_100 :: 8.883;Crest :: 11.78;lat :: 43.697873595701;elevation :: -8.088;x :: 411217.336468486;zone :: VE;station :: 12.8016256045519;lon :: -70.1017943988615;type :: OF;    </description>
+    <styleUrl>#Tstyle</styleUrl>
+    <Point>
+    <coordinates>
+      -70.1017943988615,43.697873595701,-8.088
+    </coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>VE 12</name>
+    <description>
+station :: 13.106426214184;lon :: -70.1017981652966;type :: OF;x :: 411217.033336783;zone :: VE;Tp :: 4.72;y :: 4838907.01595796;SWL_100 :: 8.883;Crest :: 11.78;lat :: 43.6978738461893;elevation :: -8.071;Hc :: 4.14;bfe :: 12;    </description>
+    <styleUrl>#Tstyle</styleUrl>
+    <Point>
+    <coordinates>
+      -70.1017981652966,43.6978738461893,-8.071
+    </coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>VE 12</name>
+    <description>
+station :: 13.4112268238162;lon :: -70.1018019317316;type :: OF;x :: 411216.73020508;zone :: VE;y :: 4838907.04781047;Tp :: 4.72;SWL_100 :: 8.884;elevation :: -8.054;Crest :: 11.78;lat :: 43.6978740966775;bfe :: 12;Hc :: 4.14;    </description>
+    <styleUrl>#Tstyle</styleUrl>
+    <Point>
+    <coordinates>
+      -70.1018019317316,43.6978740966775,-8.054
+    </coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>VE 12</name>
+    <description>
+Hc :: 4.14;bfe :: 12;SWL_100 :: 8.884;Tp :: 4.72;y :: 4838907.07966298;lat :: 43.6978743471657;elevation :: -8.037;Crest :: 11.79;x :: 411216.427073377;zone :: VE;lon :: -70.1018056981667;station :: 13.7160274334484;type :: OF;    </description>
+    <styleUrl>#Tstyle</styleUrl>
+    <Point>
+    <coordinates>
+      -70.1018056981667,43.6978743471657,-8.037
+    </coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>VE 12</name>
+    <description>
+Hc :: 4.15;bfe :: 12;SWL_100 :: 8.884;Tp :: 4.72;y :: 4838907.11151549;Crest :: 11.79;elevation :: -8.019;lat :: 43.6978745976536;x :: 411216.123941675;zone :: VE;lon :: -70.1018094646018;station :: 14.0208280430806;type :: OF;    </description>
+    <styleUrl>#Tstyle</styleUrl>
+    <Point>
+    <coordinates>
+      -70.1018094646018,43.6978745976536,-8.019
+    </coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>VE 12</name>
+    <description>
+bfe :: 12;Hc :: 4.15;Crest :: 11.79;lat :: 43.6978748481415;elevation :: -8.002;SWL_100 :: 8.884;y :: 4838907.143368;Tp :: 4.72;zone :: VE;x :: 411215.820809972;type :: OF;lon :: -70.1018132310369;station :: 14.3256286527128;    </description>
+    <styleUrl>#Tstyle</styleUrl>
+    <Point>
+    <coordinates>
+      -70.1018132310369,43.6978748481415,-8.002
+    </coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>VE 12</name>
+    <description>
+station :: 14.630429262345;lon :: -70.1018169974721;type :: OF;x :: 411215.517678269;zone :: VE;y :: 4838907.17522051;Tp :: 4.72;SWL_100 :: 8.884;lat :: 43.6978750986292;Crest :: 11.79;elevation :: -7.985;bfe :: 12;Hc :: 4.15;    </description>
+    <styleUrl>#Tstyle</styleUrl>
+    <Point>
+    <coordinates>
+      -70.1018169974721,43.6978750986292,-7.985
+    </coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>VE 12</name>
+    <description>
+zone :: VE;x :: 411215.214546566;type :: OF;station :: 14.9352298719772;lon :: -70.1018207639073;Hc :: 4.15;bfe :: 12;lat :: 43.6978753491168;Crest :: 11.79;elevation :: -7.968;Tp :: 4.72;y :: 4838907.20707302;SWL_100 :: 8.884;    </description>
+    <styleUrl>#Tstyle</styleUrl>
+    <Point>
+    <coordinates>
+      -70.1018207639073,43.6978753491168,-7.968
+    </coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>VE 12</name>
+    <description>
+y :: 4838907.23892553;Tp :: 4.72;SWL_100 :: 8.884;Crest :: 11.79;elevation :: -7.951;lat :: 43.6978755996043;bfe :: 12;Hc :: 4.15;station :: 15.2400304816094;lon :: -70.1018245303425;type :: OF;x :: 411214.911414864;zone :: VE;    </description>
+    <styleUrl>#Tstyle</styleUrl>
+    <Point>
+    <coordinates>
+      -70.1018245303425,43.6978755996043,-7.951
+    </coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>VE 12</name>
+    <description>
+bfe :: 12;Hc :: 4.15;elevation :: -7.934;lat :: 43.6978758500917;Crest :: 11.79;y :: 4838907.27077804;Tp :: 4.72;SWL_100 :: 8.884;zone :: VE;x :: 411214.608283161;type :: OF;station :: 15.5448310912415;lon :: -70.1018282967777;    </description>
+    <styleUrl>#Tstyle</styleUrl>
+    <Point>
+    <coordinates>
+      -70.1018282967777,43.6978758500917,-7.934
+    </coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>VE 12</name>
+    <description>
+type :: OF;lon :: -70.101832063213;station :: 15.8496317008737;zone :: VE;x :: 411214.305151458;elevation :: -7.916;Crest :: 11.79;lat :: 43.6978761005789;SWL_100 :: 8.884;Tp :: 4.72;y :: 4838907.30263055;Hc :: 4.15;bfe :: 12;    </description>
+    <styleUrl>#Tstyle</styleUrl>
+    <Point>
+    <coordinates>
+      -70.101832063213,43.6978761005789,-7.916
+    </coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>VE 12</name>
+    <description>
+Crest :: 11.79;elevation :: -7.899;lat :: 43.697876351066;SWL_100 :: 8.884;y :: 4838907.33448306;Tp :: 4.72;bfe :: 12;Hc :: 4.15;type :: OF;lon :: -70.1018358296483;station :: 16.1544323105059;zone :: VE;x :: 411214.002019756;    </description>
+    <styleUrl>#Tstyle</styleUrl>
+    <Point>
+    <coordinates>
+      -70.1018358296483,43.697876351066,-7.899
+    </coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>VE 12</name>
+    <description>
+x :: 411213.698888053;zone :: VE;lon :: -70.1018395960837;station :: 16.4592329201381;type :: OF;Hc :: 4.15;bfe :: 12;SWL_100 :: 8.884;Tp :: 4.72;y :: 4838907.36633557;elevation :: -7.882;Crest :: 11.79;lat :: 43.697876601553;    </description>
+    <styleUrl>#Tstyle</styleUrl>
+    <Point>
+    <coordinates>
+      -70.1018395960837,43.697876601553,-7.882
+    </coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>VE 12</name>
+    <description>
+y :: 4838907.39818809;Tp :: 4.72;SWL_100 :: 8.884;elevation :: -7.865;lat :: 43.6978768520398;Crest :: 11.79;bfe :: 12;Hc :: 4.15;station :: 16.7640335297703;lon :: -70.101843362519;type :: OF;x :: 411213.39575635;zone :: VE;    </description>
+    <styleUrl>#Tstyle</styleUrl>
+    <Point>
+    <coordinates>
+      -70.101843362519,43.6978768520398,-7.865
+    </coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>VE 12</name>
+    <description>
+type :: OF;lon :: -70.1018471289544;station :: 17.0688341394025;zone :: VE;x :: 411213.092624647;elevation :: -7.848;Crest :: 11.79;lat :: 43.6978771025266;SWL_100 :: 8.884;y :: 4838907.4300406;Tp :: 4.72;bfe :: 12;Hc :: 4.15;    </description>
+    <styleUrl>#Tstyle</styleUrl>
+    <Point>
+    <coordinates>
+      -70.1018471289544,43.6978771025266,-7.848
+    </coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>VE 12</name>
+    <description>
+bfe :: 12;Hc :: 4.15;y :: 4838907.46189311;Tp :: 4.72;SWL_100 :: 8.884;elevation :: -7.831;Crest :: 11.79;lat :: 43.6978773530132;x :: 411212.789492945;zone :: VE;station :: 17.3736347490347;lon :: -70.1018508953898;type :: OF;    </description>
+    <styleUrl>#Tstyle</styleUrl>
+    <Point>
+    <coordinates>
+      -70.1018508953898,43.6978773530132,-7.831
+    </coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>VE 12</name>
+    <description>
+zone :: VE;x :: 411212.486361242;type :: OF;lon :: -70.1018546618253;station :: 17.6784353586668;Hc :: 4.15;bfe :: 12;elevation :: -7.813;Crest :: 11.79;lat :: 43.6978776034997;SWL_100 :: 8.884;Tp :: 4.72;y :: 4838907.49374562;    </description>
+    <styleUrl>#Tstyle</styleUrl>
+    <Point>
+    <coordinates>
+      -70.1018546618253,43.6978776034997,-7.813
+    </coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>VE 12</name>
+    <description>
+x :: 411212.183229539;zone :: VE;station :: 17.983235968299;lon :: -70.1018584282607;type :: OF;Hc :: 4.15;bfe :: 12;Tp :: 4.72;y :: 4838907.52559813;SWL_100 :: 8.884;lat :: 43.697877853986;elevation :: -7.796;Crest :: 11.79;    </description>
+    <styleUrl>#Tstyle</styleUrl>
+    <Point>
+    <coordinates>
+      -70.1018584282607,43.697877853986,-7.796
+    </coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>VE 12</name>
+    <description>
+bfe :: 12;Hc :: 4.15;lat :: 43.6978781044723;Crest :: 11.79;elevation :: -7.779;y :: 4838907.55745064;Tp :: 4.72;SWL_100 :: 8.884;zone :: VE;x :: 411211.880097836;type :: OF;station :: 18.2880365779312;lon :: -70.1018621946963;    </description>
+    <styleUrl>#Tstyle</styleUrl>
+    <Point>
+    <coordinates>
+      -70.1018621946963,43.6978781044723,-7.779
+    </coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>VE 12</name>
+    <description>
+SWL_100 :: 8.884;y :: 4838907.58930315;Tp :: 4.72;Crest :: 11.79;lat :: 43.6978783549584;elevation :: -7.762;bfe :: 12;Hc :: 4.15;lon :: -70.1018659611318;station :: 18.5928371875634;type :: OF;x :: 411211.576966134;zone :: VE;    </description>
+    <styleUrl>#Tstyle</styleUrl>
+    <Point>
+    <coordinates>
+      -70.1018659611318,43.6978783549584,-7.762
+    </coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>VE 12</name>
+    <description>
+x :: 411211.273834431;zone :: VE;lon :: -70.1018697275674;station :: 18.8976377971956;type :: OF;bfe :: 12;Hc :: 4.15;SWL_100 :: 8.884;y :: 4838907.62115566;Tp :: 4.72;Crest :: 11.79;elevation :: -7.745;lat :: 43.6978786054444;    </description>
+    <styleUrl>#Tstyle</styleUrl>
+    <Point>
+    <coordinates>
+      -70.1018697275674,43.6978786054444,-7.745
+    </coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>VE 12</name>
+    <description>
+x :: 411210.970702728;zone :: VE;station :: 19.2024384068278;lon :: -70.1018734940029;type :: OF;bfe :: 12;Hc :: 4.15;y :: 4838907.65300817;Tp :: 4.72;SWL_100 :: 8.884;elevation :: -7.728;lat :: 43.6978788559302;Crest :: 11.79;    </description>
+    <styleUrl>#Tstyle</styleUrl>
+    <Point>
+    <coordinates>
+      -70.1018734940029,43.6978788559302,-7.728
+    </coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>VE 12</name>
+    <description>
+Crest :: 11.79;lat :: 43.697879106416;elevation :: -7.710;y :: 4838907.68486068;Tp :: 4.72;SWL_100 :: 8.884;bfe :: 12;Hc :: 4.15;type :: OF;station :: 19.50723901646;lon :: -70.1018772604386;zone :: VE;x :: 411210.667571026;    </description>
+    <styleUrl>#Tstyle</styleUrl>
+    <Point>
+    <coordinates>
+      -70.1018772604386,43.697879106416,-7.710
+    </coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>VE 12</name>
+    <description>
+Hc :: 4.15;bfe :: 12;Tp :: 4.72;y :: 4838907.71671319;SWL_100 :: 8.884;lat :: 43.6978793569016;Crest :: 11.79;elevation :: -7.693;x :: 411210.364439323;zone :: VE;station :: 19.8120396260922;lon :: -70.1018810268742;type :: OF;    </description>
+    <styleUrl>#Tstyle</styleUrl>
+    <Point>
+    <coordinates>
+      -70.1018810268742,43.6978793569016,-7.693
+    </coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>VE 12</name>
+    <description>
+zone :: VE;x :: 411210.06130762;type :: OF;lon :: -70.1018847933099;station :: 20.1168402357243;Hc :: 4.16;bfe :: 12;Crest :: 11.79;lat :: 43.6978796073871;elevation :: -7.676;SWL_100 :: 8.884;Tp :: 4.72;y :: 4838907.7485657;    </description>
+    <styleUrl>#Tstyle</styleUrl>
+    <Point>
+    <coordinates>
+      -70.1018847933099,43.6978796073871,-7.676
+    </coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>VE 12</name>
+    <description>
+SWL_100 :: 8.885;y :: 4838907.78041821;Tp :: 4.72;lat :: 43.6978798578725;Crest :: 11.79;elevation :: -7.659;bfe :: 12;Hc :: 4.16;lon :: -70.1018885597456;station :: 20.4216408453565;type :: OF;x :: 411209.758175917;zone :: VE;    </description>
+    <styleUrl>#Tstyle</styleUrl>
+    <Point>
+    <coordinates>
+      -70.1018885597456,43.6978798578725,-7.659
+    </coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>VE 12</name>
+    <description>
+type :: OF;lon :: -70.1018923261814;station :: 20.7264414549887;zone :: VE;x :: 411209.455044215;Crest :: 11.79;elevation :: -7.642;lat :: 43.6978801083577;SWL_100 :: 8.885;Tp :: 4.72;y :: 4838907.81227072;Hc :: 4.16;bfe :: 12;    </description>
+    <styleUrl>#Tstyle</styleUrl>
+    <Point>
+    <coordinates>
+      -70.1018923261814,43.6978801083577,-7.642
+    </coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>VE 12</name>
+    <description>
+Hc :: 4.16;bfe :: 12;Tp :: 4.72;y :: 4838907.84412323;SWL_100 :: 8.885;lat :: 43.6978803588428;Crest :: 11.79;elevation :: -7.625;x :: 411209.151912512;zone :: VE;station :: 21.0312420646209;lon :: -70.1018960926171;type :: OF;    </description>
+    <styleUrl>#Tstyle</styleUrl>
+    <Point>
+    <coordinates>
+      -70.1018960926171,43.6978803588428,-7.625
+    </coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>VE 12</name>
+    <description>
+bfe :: 12;Hc :: 4.16;SWL_100 :: 8.885;y :: 4838907.87597574;Tp :: 4.72;Crest :: 11.80;elevation :: -7.608;lat :: 43.6978806093278;x :: 411208.848780809;zone :: VE;lon :: -70.1018998590529;station :: 21.3360426742531;type :: OF;    </description>
+    <styleUrl>#Tstyle</styleUrl>
+    <Point>
+    <coordinates>
+      -70.1018998590529,43.6978806093278,-7.608
+    </coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>VE 12</name>
+    <description>
+type :: OF;lon :: -70.1019036254887;station :: 21.6408432838853;zone :: VE;x :: 411208.545649106;Crest :: 11.80;lat :: 43.6978808598127;elevation :: -7.590;SWL_100 :: 8.885;Tp :: 4.72;y :: 4838907.90782826;Hc :: 4.16;bfe :: 12;    </description>
+    <styleUrl>#Tstyle</styleUrl>
+    <Point>
+    <coordinates>
+      -70.1019036254887,43.6978808598127,-7.590
+    </coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>VE 12</name>
+    <description>
+type :: OF;station :: 21.9456438935175;lon :: -70.1019073919246;zone :: VE;x :: 411208.242517404;elevation :: -7.573;Crest :: 11.80;lat :: 43.6978811102974;y :: 4838907.93968077;Tp :: 4.72;SWL_100 :: 8.885;bfe :: 12;Hc :: 4.16;    </description>
+    <styleUrl>#Tstyle</styleUrl>
+    <Point>
+    <coordinates>
+      -70.1019073919246,43.6978811102974,-7.573
+    </coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>VE 12</name>
+    <description>
+bfe :: 12;Hc :: 4.16;Crest :: 11.80;elevation :: -7.556;lat :: 43.697881360782;SWL_100 :: 8.885;y :: 4838907.97153328;Tp :: 4.72;zone :: VE;x :: 411207.939385701;type :: OF;lon :: -70.1019111583605;station :: 22.2504445031497;    </description>
+    <styleUrl>#Tstyle</styleUrl>
+    <Point>
+    <coordinates>
+      -70.1019111583605,43.697881360782,-7.556
+    </coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>VE 12</name>
+    <description>
+zone :: VE;x :: 411207.636253998;type :: OF;lon :: -70.1019149247964;station :: 22.5552451127818;bfe :: 12;Hc :: 4.16;Crest :: 11.80;elevation :: -7.539;lat :: 43.6978816112665;SWL_100 :: 8.885;y :: 4838908.00338579;Tp :: 4.72;    </description>
+    <styleUrl>#Tstyle</styleUrl>
+    <Point>
+    <coordinates>
+      -70.1019149247964,43.6978816112665,-7.539
+    </coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>VE 12</name>
+    <description>
+zone :: VE;x :: 411207.333122296;type :: OF;station :: 22.860045722414;lon :: -70.1019186912323;bfe :: 12;Hc :: 4.16;lat :: 43.6978818617509;Crest :: 11.80;elevation :: -7.522;y :: 4838908.0352383;Tp :: 4.72;SWL_100 :: 8.885;    </description>
+    <styleUrl>#Tstyle</styleUrl>
+    <Point>
+    <coordinates>
+      -70.1019186912323,43.6978818617509,-7.522
+    </coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>VE 12</name>
+    <description>
+bfe :: 12;Hc :: 4.16;Crest :: 11.80;elevation :: -7.504;lat :: 43.6978821122352;SWL_100 :: 8.885;y :: 4838908.06709081;Tp :: 4.72;zone :: VE;x :: 411207.029990593;type :: OF;lon :: -70.1019224576683;station :: 23.1648463320462;    </description>
+    <styleUrl>#Tstyle</styleUrl>
+    <Point>
+    <coordinates>
+      -70.1019224576683,43.6978821122352,-7.504
+    </coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>VE 12</name>
+    <description>
+y :: 4838908.09894332;Tp :: 4.72;SWL_100 :: 8.885;Crest :: 11.80;elevation :: -7.487;lat :: 43.6978823627193;bfe :: 12;Hc :: 4.16;station :: 23.4696469416784;lon :: -70.1019262241043;type :: OF;x :: 411206.72685889;zone :: VE;    </description>
+    <styleUrl>#Tstyle</styleUrl>
+    <Point>
+    <coordinates>
+      -70.1019262241043,43.6978823627193,-7.487
+    </coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>VE 12</name>
+    <description>
+bfe :: 12;Hc :: 4.16;elevation :: -7.470;Crest :: 11.80;lat :: 43.6978826132033;y :: 4838908.13079583;Tp :: 4.72;SWL_100 :: 8.885;zone :: VE;x :: 411206.423727187;type :: OF;station :: 23.7744475513106;lon :: -70.1019299905403;    </description>
+    <styleUrl>#Tstyle</styleUrl>
+    <Point>
+    <coordinates>
+      -70.1019299905403,43.6978826132033,-7.470
+    </coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>VE 12</name>
+    <description>
+type :: OF;station :: 24.0792481609428;lon :: -70.1019337569764;zone :: VE;x :: 411206.120595485;elevation :: -7.453;Crest :: 11.80;lat :: 43.6978828636872;Tp :: 4.72;y :: 4838908.16264834;SWL_100 :: 8.885;Hc :: 4.16;bfe :: 12;    </description>
+    <styleUrl>#Tstyle</styleUrl>
+    <Point>
+    <coordinates>
+      -70.1019337569764,43.6978828636872,-7.453
+    </coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>VE 12</name>
+    <description>
+zone :: VE;x :: 411205.817463782;type :: OF;lon :: -70.1019375234125;station :: 24.384048770575;bfe :: 12;Hc :: 4.16;Crest :: 11.80;lat :: 43.6978831141709;elevation :: -7.436;SWL_100 :: 8.885;y :: 4838908.19450085;Tp :: 4.72;    </description>
+    <styleUrl>#Tstyle</styleUrl>
+    <Point>
+    <coordinates>
+      -70.1019375234125,43.6978831141709,-7.436
+    </coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>VE 12</name>
+    <description>
+Hc :: 4.16;bfe :: 12;Crest :: 11.80;elevation :: -7.419;lat :: 43.6978833646545;SWL_100 :: 8.885;Tp :: 4.72;y :: 4838908.22635336;zone :: VE;x :: 411205.514332079;type :: OF;lon :: -70.1019412898486;station :: 24.6888493802071;    </description>
+    <styleUrl>#Tstyle</styleUrl>
+    <Point>
+    <coordinates>
+      -70.1019412898486,43.6978833646545,-7.419
+    </coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>VE 12</name>
+    <description>
+Crest :: 11.80;elevation :: -7.402;lat :: 43.697883615138;SWL_100 :: 8.885;Tp :: 4.72;y :: 4838908.25820587;Hc :: 4.16;bfe :: 12;type :: OF;lon :: -70.1019450562847;station :: 24.9936499898393;zone :: VE;x :: 411205.211200376;    </description>
+    <styleUrl>#Tstyle</styleUrl>
+    <Point>
+    <coordinates>
+      -70.1019450562847,43.697883615138,-7.402
+    </coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>VE 12</name>
+    <description>
+x :: 411204.908068674;zone :: VE;station :: 25.2984505994715;lon :: -70.1019488227209;type :: OF;Hc :: 4.16;bfe :: 12;Tp :: 4.72;y :: 4838908.29005838;SWL_100 :: 8.885;lat :: 43.6978838656214;Crest :: 11.80;elevation :: -7.384;    </description>
+    <styleUrl>#Tstyle</styleUrl>
+    <Point>
+    <coordinates>
+      -70.1019488227209,43.6978838656214,-7.384
+    </coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>VE 12</name>
+    <description>
+type :: OF;lon :: -70.1019525891571;station :: 25.6032512091037;zone :: VE;x :: 411204.604936971;elevation :: -7.367;lat :: 43.6978841161047;Crest :: 11.80;SWL_100 :: 8.885;Tp :: 4.72;y :: 4838908.32191089;Hc :: 4.16;bfe :: 12;    </description>
+    <styleUrl>#Tstyle</styleUrl>
+    <Point>
+    <coordinates>
+      -70.1019525891571,43.6978841161047,-7.367
+    </coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>VE 12</name>
+    <description>
+station :: 25.9080518187359;lon :: -70.1019563555933;type :: OF;x :: 411204.301805268;zone :: VE;y :: 4838908.35376341;Tp :: 4.72;SWL_100 :: 8.885;elevation :: -7.350;Crest :: 11.80;lat :: 43.6978843665878;bfe :: 12;Hc :: 4.17;    </description>
+    <styleUrl>#Tstyle</styleUrl>
+    <Point>
+    <coordinates>
+      -70.1019563555933,43.6978843665878,-7.350
+    </coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>VE 12</name>
+    <description>
+SWL_100 :: 8.885;y :: 4838908.38561592;Tp :: 4.72;Crest :: 11.80;elevation :: -7.333;lat :: 43.6978846170708;bfe :: 12;Hc :: 4.17;lon :: -70.1019601220296;station :: 26.2128524283681;type :: OF;x :: 411203.998673566;zone :: VE;    </description>
+    <styleUrl>#Tstyle</styleUrl>
+    <Point>
+    <coordinates>
+      -70.1019601220296,43.6978846170708,-7.333
+    </coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>VE 12</name>
+    <description>
+station :: 26.5176530380003;lon :: -70.1019638884659;type :: OF;x :: 411203.695541863;zone :: VE;y :: 4838908.41746843;Tp :: 4.72;SWL_100 :: 8.885;lat :: 43.6978848675537;elevation :: -7.316;Crest :: 11.80;bfe :: 12;Hc :: 4.17;    </description>
+    <styleUrl>#Tstyle</styleUrl>
+    <Point>
+    <coordinates>
+      -70.1019638884659,43.6978848675537,-7.316
+    </coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>VE 12</name>
+    <description>
+Hc :: 4.17;bfe :: 12;lat :: 43.6978851180364;Crest :: 11.80;elevation :: -7.299;SWL_100 :: 8.885;Tp :: 4.72;y :: 4838908.44932094;zone :: VE;x :: 411203.39241016;type :: OF;lon :: -70.1019676549022;station :: 26.8224536476325;    </description>
+    <styleUrl>#Tstyle</styleUrl>
+    <Point>
+    <coordinates>
+      -70.1019676549022,43.6978851180364,-7.299
+    </coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>VE 12</name>
+    <description>
+SWL_100 :: 8.885;Tp :: 4.72;y :: 4838908.48117345;elevation :: -7.256;lat :: 43.697885368519;Crest :: 11.80;Hc :: 4.17;bfe :: 12;lon :: -70.1019714213385;station :: 27.1272542572646;type :: OF;x :: 411203.089278457;zone :: VE;    </description>
+    <styleUrl>#Tstyle</styleUrl>
+    <Point>
+    <coordinates>
+      -70.1019714213385,43.697885368519,-7.256
+    </coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>VE 12</name>
+    <description>
+Tp :: 4.72;y :: 4838908.51302596;SWL_100 :: 8.885;lat :: 43.6978856190015;Crest :: 11.80;elevation :: -7.111;Hc :: 4.17;bfe :: 12;station :: 27.4320548668968;lon :: -70.1019751877749;type :: OF;x :: 411202.786146755;zone :: VE;    </description>
+    <styleUrl>#Tstyle</styleUrl>
+    <Point>
+    <coordinates>
+      -70.1019751877749,43.6978856190015,-7.111
+    </coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>VE 12</name>
+    <description>
+y :: 4838908.54487847;Tp :: 4.72;SWL_100 :: 8.885;lat :: 43.6978858694839;elevation :: -6.966;Crest :: 11.81;bfe :: 12;Hc :: 4.17;station :: 27.736855476529;lon :: -70.1019789542113;type :: OF;x :: 411202.483015052;zone :: VE;    </description>
+    <styleUrl>#Tstyle</styleUrl>
+    <Point>
+    <coordinates>
+      -70.1019789542113,43.6978858694839,-6.966
+    </coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>VE 12</name>
+    <description>
+type :: OF;lon :: -70.1019827206478;station :: 28.0416560861612;zone :: VE;x :: 411202.179883349;elevation :: -6.821;Crest :: 11.81;lat :: 43.6978861199662;SWL_100 :: 8.885;Tp :: 4.72;y :: 4838908.57673098;Hc :: 4.18;bfe :: 12;    </description>
+    <styleUrl>#Tstyle</styleUrl>
+    <Point>
+    <coordinates>
+      -70.1019827206478,43.6978861199662,-6.821
+    </coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>VE 12</name>
+    <description>
+station :: 28.3464566957934;lon :: -70.1019864870842;type :: OF;x :: 411201.876751646;zone :: VE;y :: 4838908.60858349;Tp :: 4.72;SWL_100 :: 8.885;Crest :: 11.81;elevation :: -6.676;lat :: 43.6978863704483;bfe :: 12;Hc :: 4.18;    </description>
+    <styleUrl>#Tstyle</styleUrl>
+    <Point>
+    <coordinates>
+      -70.1019864870842,43.6978863704483,-6.676
+    </coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>VE 12</name>
+    <description>
+lon :: -70.1019902535207;station :: 28.6512573054256;type :: OF;x :: 411201.573619944;zone :: VE;SWL_100 :: 8.885;y :: 4838908.640436;Tp :: 4.72;lat :: 43.6978866209303;elevation :: -6.530;Crest :: 11.81;bfe :: 12;Hc :: 4.18;    </description>
+    <styleUrl>#Tstyle</styleUrl>
+    <Point>
+    <coordinates>
+      -70.1019902535207,43.6978866209303,-6.530
+    </coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>VE 12</name>
+    <description>
+bfe :: 12;Hc :: 4.18;y :: 4838908.67228851;Tp :: 4.72;SWL_100 :: 8.885;lat :: 43.6978868714122;Crest :: 11.81;elevation :: -6.385;x :: 411201.270488241;zone :: VE;station :: 28.9560579150578;lon :: -70.1019940199572;type :: OF;    </description>
+    <styleUrl>#Tstyle</styleUrl>
+    <Point>
+    <coordinates>
+      -70.1019940199572,43.6978868714122,-6.385
+    </coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>VE 12</name>
+    <description>
+bfe :: 12;Hc :: 4.19;SWL_100 :: 8.885;y :: 4838908.70414102;Tp :: 4.72;lat :: 43.697887121894;Crest :: 11.82;elevation :: -6.240;x :: 411200.967356538;zone :: VE;lon :: -70.1019977863938;station :: 29.26085852469;type :: OF;    </description>
+    <styleUrl>#Tstyle</styleUrl>
+    <Point>
+    <coordinates>
+      -70.1019977863938,43.697887121894,-6.240
+    </coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>VE 12</name>
+    <description>
+Hc :: 4.19;bfe :: 12;SWL_100 :: 8.885;Tp :: 4.72;y :: 4838908.73599353;lat :: 43.6978873723756;Crest :: 11.82;elevation :: -6.094;x :: 411200.664224836;zone :: VE;lon :: -70.1020015528303;station :: 29.5656591343221;type :: OF;    </description>
+    <styleUrl>#Tstyle</styleUrl>
+    <Point>
+    <coordinates>
+      -70.1020015528303,43.6978873723756,-6.094
+    </coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>VE 12</name>
+    <description>
+bfe :: 12;Hc :: 4.19;Crest :: 11.82;elevation :: -5.949;lat :: 43.6978876228571;SWL_100 :: 8.885;y :: 4838908.76784604;Tp :: 4.72;zone :: VE;x :: 411200.361093133;type :: OF;lon :: -70.102005319267;station :: 29.8704597439543;    </description>
+    <styleUrl>#Tstyle</styleUrl>
+    <Point>
+    <coordinates>
+      -70.102005319267,43.6978876228571,-5.949
+    </coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>VE 12</name>
+    <description>
+bfe :: 12;Hc :: 4.20;SWL_100 :: 8.885;y :: 4838908.79969855;Tp :: 4.72;lat :: 43.6978878733385;Crest :: 11.82;elevation :: -5.804;x :: 411200.05796143;zone :: VE;lon :: -70.1020090857036;station :: 30.1752603535865;type :: OF;    </description>
+    <styleUrl>#Tstyle</styleUrl>
+    <Point>
+    <coordinates>
+      -70.1020090857036,43.6978878733385,-5.804
+    </coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>VE 12</name>
+    <description>
+zone :: VE;x :: 411199.754829727;type :: OF;station :: 30.4800609632187;lon :: -70.1020128521402;bfe :: 12;Hc :: 4.20;Crest :: 11.83;lat :: 43.6978881238197;elevation :: -5.659;y :: 4838908.83155106;Tp :: 4.73;SWL_100 :: 8.885;    </description>
+    <styleUrl>#Tstyle</styleUrl>
+    <Point>
+    <coordinates>
+      -70.1020128521402,43.6978881238197,-5.659
+    </coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>VE 12</name>
+    <description>
+bfe :: 12;Hc :: 4.20;elevation :: -5.514;Crest :: 11.83;lat :: 43.6978883743009;y :: 4838908.86340358;Tp :: 4.73;SWL_100 :: 8.885;zone :: VE;x :: 411199.451698025;type :: OF;station :: 30.7848615728509;lon :: -70.1020166185769;    </description>
+    <styleUrl>#Tstyle</styleUrl>
+    <Point>
+    <coordinates>
+      -70.1020166185769,43.6978883743009,-5.514
+    </coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>VE 12</name>
+    <description>
+type :: OF;lon :: -70.1020203850137;station :: 31.0896621824831;zone :: VE;x :: 411199.148566322;Crest :: 11.83;elevation :: -5.368;lat :: 43.6978886247819;SWL_100 :: 8.885;y :: 4838908.89525609;Tp :: 4.73;bfe :: 12;Hc :: 4.21;    </description>
+    <styleUrl>#Tstyle</styleUrl>
+    <Point>
+    <coordinates>
+      -70.1020203850137,43.6978886247819,-5.368
+    </coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>VE 12</name>
+    <description>
+type :: OF;station :: 31.3944627921153;lon :: -70.1020241514504;zone :: VE;x :: 411198.845434619;lat :: 43.6978888752628;Crest :: 11.83;elevation :: -5.223;y :: 4838908.9271086;Tp :: 4.73;SWL_100 :: 8.885;bfe :: 12;Hc :: 4.21;    </description>
+    <styleUrl>#Tstyle</styleUrl>
+    <Point>
+    <coordinates>
+      -70.1020241514504,43.6978888752628,-5.223
+    </coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>VE 12</name>
+    <description>
+lat :: 43.6978891257435;Crest :: 11.84;elevation :: -5.078;SWL_100 :: 8.885;Tp :: 4.73;y :: 4838908.95896111;Hc :: 4.22;bfe :: 12;type :: OF;lon :: -70.1020279178872;station :: 31.6992634017474;zone :: VE;x :: 411198.542302916;    </description>
+    <styleUrl>#Tstyle</styleUrl>
+    <Point>
+    <coordinates>
+      -70.1020279178872,43.6978891257435,-5.078
+    </coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>VE 12</name>
+    <description>
+zone :: VE;x :: 411198.239171214;type :: OF;lon :: -70.102031684324;station :: 32.0040640113796;Hc :: 4.22;bfe :: 12;elevation :: -4.933;Crest :: 11.84;lat :: 43.6978893762242;SWL_100 :: 8.885;Tp :: 4.73;y :: 4838908.99081362;    </description>
+    <styleUrl>#Tstyle</styleUrl>
+    <Point>
+    <coordinates>
+      -70.102031684324,43.6978893762242,-4.933
+    </coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>VE 12</name>
+    <description>
+zone :: VE;x :: 411197.936039511;type :: OF;station :: 32.3088646210118;lon :: -70.1020354507608;Hc :: 4.23;bfe :: 12;lat :: 43.6978896267047;elevation :: -4.787;Crest :: 11.84;Tp :: 4.73;y :: 4838909.02266613;SWL_100 :: 8.885;    </description>
+    <styleUrl>#Tstyle</styleUrl>
+    <Point>
+    <coordinates>
+      -70.1020354507608,43.6978896267047,-4.787
+    </coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>VE 12</name>
+    <description>
+bfe :: 12;Hc :: 4.23;Crest :: 11.85;lat :: 43.6978898771851;elevation :: -4.642;y :: 4838909.05451864;Tp :: 4.73;SWL_100 :: 8.885;zone :: VE;x :: 411197.632907808;type :: OF;station :: 32.613665230644;lon :: -70.1020392171977;    </description>
+    <styleUrl>#Tstyle</styleUrl>
+    <Point>
+    <coordinates>
+      -70.1020392171977,43.6978898771851,-4.642
+    </coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>VE 12</name>
+    <description>
+station :: 32.9184658402762;lon :: -70.1020429836346;type :: OF;x :: 411197.329776106;zone :: VE;Tp :: 4.73;y :: 4838909.08637115;SWL_100 :: 8.885;elevation :: -4.497;lat :: 43.6978901276653;Crest :: 11.85;Hc :: 4.24;bfe :: 12;    </description>
+    <styleUrl>#Tstyle</styleUrl>
+    <Point>
+    <coordinates>
+      -70.1020429836346,43.6978901276653,-4.497
+    </coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>VE 12</name>
+    <description>
+type :: OF;station :: 33.2232664499084;lon :: -70.1020467500715;zone :: VE;x :: 411197.026644403;Crest :: 11.85;lat :: 43.6978903781455;elevation :: -4.352;y :: 4838909.11822366;Tp :: 4.73;SWL_100 :: 8.885;bfe :: 12;Hc :: 4.24;    </description>
+    <styleUrl>#Tstyle</styleUrl>
+    <Point>
+    <coordinates>
+      -70.1020467500715,43.6978903781455,-4.352
+    </coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>VE 12</name>
+    <description>
+Hc :: 4.25;bfe :: 12;Tp :: 4.73;y :: 4838909.15007617;SWL_100 :: 8.885;lat :: 43.6978906286255;Crest :: 11.86;elevation :: -4.207;x :: 411196.7235127;zone :: VE;station :: 33.5280670595406;lon :: -70.1020505165085;type :: OF;    </description>
+    <styleUrl>#Tstyle</styleUrl>
+    <Point>
+    <coordinates>
+      -70.1020505165085,43.6978906286255,-4.207
+    </coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>VE 12</name>
+    <description>
+zone :: VE;x :: 411196.420380997;type :: OF;station :: 33.8328676691728;lon :: -70.1020542829455;bfe :: 12;Hc :: 4.25;elevation :: -4.061;Crest :: 11.86;lat :: 43.6978908791054;y :: 4838909.18192868;Tp :: 4.73;SWL_100 :: 8.885;    </description>
+    <styleUrl>#Tstyle</styleUrl>
+    <Point>
+    <coordinates>
+      -70.1020542829455,43.6978908791054,-4.061
+    </coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>VE 12</name>
+    <description>
+station :: 34.1376682788049;lon :: -70.1020580493825;type :: OF;x :: 411196.117249295;zone :: VE;y :: 4838909.21378119;Tp :: 4.73;SWL_100 :: 8.885;elevation :: -3.916;lat :: 43.6978911295851;Crest :: 11.87;bfe :: 12;Hc :: 4.26;    </description>
+    <styleUrl>#Tstyle</styleUrl>
+    <Point>
+    <coordinates>
+      -70.1020580493825,43.6978911295851,-3.916
+    </coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>VE 12</name>
+    <description>
+Hc :: 4.26;bfe :: 12;SWL_100 :: 8.885;Tp :: 4.73;y :: 4838909.2456337;Crest :: 11.87;elevation :: -3.771;lat :: 43.6978913800648;x :: 411195.814117592;zone :: VE;lon :: -70.1020618158195;station :: 34.4424688884371;type :: OF;    </description>
+    <styleUrl>#Tstyle</styleUrl>
+    <Point>
+    <coordinates>
+      -70.1020618158195,43.6978913800648,-3.771
+    </coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>VE 12</name>
+    <description>
+zone :: VE;x :: 411195.510985889;type :: OF;station :: 34.7472694980693;lon :: -70.1020655822566;bfe :: 12;Hc :: 4.27;lat :: 43.6978916305443;Crest :: 11.87;elevation :: -3.626;y :: 4838909.27748621;Tp :: 4.73;SWL_100 :: 8.885;    </description>
+    <styleUrl>#Tstyle</styleUrl>
+    <Point>
+    <coordinates>
+      -70.1020655822566,43.6978916305443,-3.626
+    </coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>VE 12</name>
+    <description>
+Crest :: 11.88;lat :: 43.6978918810237;elevation :: -3.480;SWL_100 :: 8.885;Tp :: 4.73;y :: 4838909.30933872;Hc :: 4.28;bfe :: 12;type :: OF;lon :: -70.1020693486937;station :: 35.0520701077015;zone :: VE;x :: 411195.207854186;    </description>
+    <styleUrl>#Tstyle</styleUrl>
+    <Point>
+    <coordinates>
+      -70.1020693486937,43.6978918810237,-3.480
+    </coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>VE 12</name>
+    <description>
+zone :: VE;x :: 411194.904722484;type :: OF;lon :: -70.1020731151308;station :: 35.3568707173337;Hc :: 4.28;bfe :: 12;elevation :: -3.335;lat :: 43.6978921315029;Crest :: 11.88;SWL_100 :: 8.885;Tp :: 4.73;y :: 4838909.34119123;    </description>
+    <styleUrl>#Tstyle</styleUrl>
+    <Point>
+    <coordinates>
+      -70.1020731151308,43.6978921315029,-3.335
+    </coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>VE 12</name>
+    <description>
+type :: OF;station :: 35.6616713269659;lon :: -70.102076881568;zone :: VE;x :: 411194.601590781;elevation :: -3.190;Crest :: 11.89;lat :: 43.6978923819821;y :: 4838909.37304375;Tp :: 4.73;SWL_100 :: 8.885;bfe :: 12;Hc :: 4.29;    </description>
+    <styleUrl>#Tstyle</styleUrl>
+    <Point>
+    <coordinates>
+      -70.102076881568,43.6978923819821,-3.190
+    </coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>VE 12</name>
+    <description>
+station :: 35.9664719365981;lon :: -70.1020806480051;type :: OF;x :: 411194.298459078;zone :: VE;Tp :: 4.73;y :: 4838909.40489626;SWL_100 :: 8.885;Crest :: 11.89;elevation :: -3.045;lat :: 43.6978926324611;Hc :: 4.30;bfe :: 12;    </description>
+    <styleUrl>#Tstyle</styleUrl>
+    <Point>
+    <coordinates>
+      -70.1020806480051,43.6978926324611,-3.045
+    </coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>VE 12</name>
+    <description>
+type :: OF;station :: 36.2712725462303;lon :: -70.1020844144423;zone :: VE;x :: 411193.995327376;Crest :: 11.90;lat :: 43.69789288294;elevation :: -2.899;y :: 4838909.43674877;Tp :: 4.73;SWL_100 :: 8.885;bfe :: 12;Hc :: 4.31;    </description>
+    <styleUrl>#Tstyle</styleUrl>
+    <Point>
+    <coordinates>
+      -70.1020844144423,43.69789288294,-2.899
+    </coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>VE 12</name>
+    <description>
+zone :: VE;x :: 411193.692195673;type :: OF;station :: 36.5760731558624;lon :: -70.1020881808796;bfe :: 12;Hc :: 4.31;elevation :: -2.754;lat :: 43.6978931334188;Crest :: 11.90;y :: 4838909.46860128;Tp :: 4.73;SWL_100 :: 8.885;    </description>
+    <styleUrl>#Tstyle</styleUrl>
+    <Point>
+    <coordinates>
+      -70.1020881808796,43.6978931334188,-2.754
+    </coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>VE 12</name>
+    <description>
+type :: OF;lon :: -70.1020919473169;station :: 36.8808737654946;zone :: VE;x :: 411193.38906397;elevation :: -2.609;lat :: 43.6978933838974;Crest :: 11.91;SWL_100 :: 8.885;y :: 4838909.50045379;Tp :: 4.73;bfe :: 12;Hc :: 4.32;    </description>
+    <styleUrl>#Tstyle</styleUrl>
+    <Point>
+    <coordinates>
+      -70.1020919473169,43.6978933838974,-2.609
+    </coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>VE 12</name>
+    <description>
+x :: 411193.085932267;zone :: VE;station :: 37.1856743751268;lon :: -70.1020957137542;type :: OF;Hc :: 4.33;bfe :: 12;Tp :: 4.73;y :: 4838909.5323063;SWL_100 :: 8.885;Crest :: 11.92;elevation :: -2.464;lat :: 43.6978936343759;    </description>
+    <styleUrl>#Tstyle</styleUrl>
+    <Point>
+    <coordinates>
+      -70.1020957137542,43.6978936343759,-2.464
+    </coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>VE 12</name>
+    <description>
+bfe :: 12;Hc :: 4.34;SWL_100 :: 8.885;y :: 4838909.56415881;Tp :: 4.73;elevation :: -2.319;Crest :: 11.92;lat :: 43.6978938848544;x :: 411192.782800565;zone :: VE;lon :: -70.1020994801915;station :: 37.490474984759;type :: OF;    </description>
+    <styleUrl>#Tstyle</styleUrl>
+    <Point>
+    <coordinates>
+      -70.1020994801915,43.6978938848544,-2.319
+    </coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>VE 12</name>
+    <description>
+type :: OF;lon :: -70.1021032466288;station :: 37.7952755943912;zone :: VE;x :: 411192.479668862;lat :: 43.6978941353326;Crest :: 11.93;elevation :: -2.174;SWL_100 :: 8.885;y :: 4838909.59601132;Tp :: 4.73;bfe :: 12;Hc :: 4.35;    </description>
+    <styleUrl>#Tstyle</styleUrl>
+    <Point>
+    <coordinates>
+      -70.1021032466288,43.6978941353326,-2.174
+    </coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>VE 12</name>
+    <description>
+bfe :: 12;Hc :: 4.36;SWL_100 :: 8.885;y :: 4838909.62786383;Tp :: 4.73;Crest :: 11.93;lat :: 43.6978943858108;elevation :: -2.028;x :: 411192.176537159;zone :: VE;lon :: -70.1021070130662;station :: 38.1000762040234;type :: OF;    </description>
+    <styleUrl>#Tstyle</styleUrl>
+    <Point>
+    <coordinates>
+      -70.1021070130662,43.6978943858108,-2.028
+    </coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>VE 12</name>
+    <description>
+elevation :: 1.529;Crest :: 12.09;lat :: 43.6978953877221;Tp :: 4.73;y :: 4838909.75527387;SWL_100 :: 8.885;Hc :: 4.59;bfe :: 12;type :: IF;station :: 39.3192786425521;lon :: -70.1021220788161;zone :: VE;x :: 411190.964010348;    </description>
+    <styleUrl>#Tstyle</styleUrl>
+    <Point>
+    <coordinates>
+      -70.1021220788161,43.6978953877221,1.529
+    </coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>VE 12</name>
+    <description>
+Hc :: 4.53;bfe :: 12;Crest :: 12.06;elevation :: 1.854;lat :: 43.6978966401085;SWL_100 :: 8.885;Tp :: 4.73;y :: 4838909.91453643;zone :: VE;x :: 411189.448351835;type :: IF;lon :: -70.102140911004;station :: 40.8432816907131;    </description>
+    <styleUrl>#Tstyle</styleUrl>
+    <Point>
+    <coordinates>
+      -70.102140911004,43.6978966401085,1.854
+    </coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>VE 12</name>
+    <description>
+type :: IF;lon :: -70.1021522103171;station :: 41.7576835196096;zone :: VE;x :: 411188.538956726;lat :: 43.6978973915388;Crest :: 11.52;elevation :: 3.720;SWL_100 :: 8.885;Tp :: 4.73;y :: 4838910.01009396;Hc :: 3.76;bfe :: 12;    </description>
+    <styleUrl>#Tstyle</styleUrl>
+    <Point>
+    <coordinates>
+      -70.1021522103171,43.6978973915388,3.720
+    </coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>VE 11</name>
+    <description>
+zone :: VE;x :: 411185.507639699;type :: IF;lon :: -70.102189874696;station :: 44.8056896159315;bfe :: 11;Hc :: 3.65;lat :: 43.6978998962985;elevation :: 3.885;Crest :: 11.44;SWL_100 :: 8.885;y :: 4838910.32861906;Tp :: 4.73;    </description>
+    <styleUrl>#Tstyle</styleUrl>
+    <Point>
+    <coordinates>
+      -70.102189874696,43.6978998962985,3.885
+    </coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>VE 11</name>
+    <description>
+Crest :: 11.42;lat :: 43.6979021505716;elevation :: 3.691;Tp :: 4.73;y :: 4838910.61529166;SWL_100 :: 8.885;Hc :: 3.62;bfe :: 11;type :: IF;station :: 47.5488951026212;lon :: -70.1022237726395;zone :: VE;x :: 411182.779454375;    </description>
+    <styleUrl>#Tstyle</styleUrl>
+    <Point>
+    <coordinates>
+      -70.1022237726395,43.6979021505716,3.691
+    </coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>AE 10</name>
+    <description>
+type :: IF;lon :: -70.1022663333941;station :: 50.9931419914649;zone :: AE;x :: 411179.354066134;lat :: 43.6979049809224;elevation :: 7.718;Crest :: 9.68;SWL_100 :: 8.997;y :: 4838910.97522503;Tp :: 4.73;bfe :: 10;Hc :: 0.98;    </description>
+    <styleUrl>#Tstyle</styleUrl>
+    <Point>
+    <coordinates>
+      -70.1022663333941,43.6979049809224,7.718
+    </coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>AE 10</name>
+    <description>
+Tp :: 4.73;y :: 4838911.08033832;SWL_100 :: 9.121;lat :: 43.697905807482;Crest :: 9.75;elevation :: 7.944;Hc :: 0.90;bfe :: 10;station :: 51.9989840032511;lon :: -70.1022787626417;type :: IF;x :: 411178.353731515;zone :: AE;    </description>
+    <styleUrl>#Tstyle</styleUrl>
+    <Point>
+    <coordinates>
+      -70.1022787626417,43.697905807482,7.944
+    </coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>AE 10</name>
+    <description>
+Hc :: 0.76;bfe :: 10;SWL_100 :: 9.165;Tp :: 4.73;y :: 4838911.1854516;elevation :: 8.171;Crest :: 9.70;lat :: 43.6979066340403;x :: 411177.353396896;zone :: AE;lon :: -70.1022911918896;station :: 53.0048260150373;type :: IF;    </description>
+    <styleUrl>#Tstyle</styleUrl>
+    <Point>
+    <coordinates>
+      -70.1022911918896,43.6979066340403,8.171
+    </coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>AE 9</name>
+    <description>
+lon :: -70.1023036211378;station :: 54.0106680268235;type :: IF;x :: 411176.353062277;zone :: AE;SWL_100 :: 9.193;Tp :: 4.73;y :: 4838911.29056489;lat :: 43.6979074605972;Crest :: 9.47;elevation :: 8.684;Hc :: 0.39;bfe :: 9;    </description>
+    <styleUrl>#Tstyle</styleUrl>
+    <Point>
+    <coordinates>
+      -70.1023036211378,43.6979074605972,8.684
+    </coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>AE 9</name>
+    <description>
+elevation :: 9.193;lat :: 43.6979078613516;Crest :: 9.20;SWL_100 :: 9.193;y :: 4838911.3415289;Tp :: 4.73;bfe :: 9;Hc :: 0.01;type :: IF;lon :: -70.1023096474401;station :: 54.498349002235;zone :: AE;x :: 411175.868051553;    </description>
+    <styleUrl>#Tstyle</styleUrl>
+    <Point>
+    <coordinates>
+      -70.1023096474401,43.6979078613516,9.193
+    </coordinates>
+    </Point>
+  </Placemark>
+</Folder>
+</Document>
+</kml>

@@ -13,7 +13,7 @@ end
 
 line=0;
 
-for i=1:length(fnames)
+for i=[1 3:length(fnames)]
     clear line
     name=['logfiles/' fnames{i} '-DIARY.txt']
     fid=fopen(name,'r');
@@ -37,3 +37,4 @@ for i=1:length(fnames)
 end
 
 fclose all 
+;

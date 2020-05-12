@@ -6,17 +6,26 @@ swan file name:       2_swan/swanfiles/YK-99-1.swn
 swan output name:     2_swan/swanfiles/YK-99-1.dat
 
 Boundary Conditions:
-    TWL- 2.8617 meters
-    HS-  0.80131 meters
-    PER- 6.421 seconds
+    TWL- 2.8655 meters
+    HS-  0.62125 meters
+    PER- 7.945 seconds
 
 Batch File: 2_swan/swanfiles/runswan.dat
 
-SWAN maximum additional wave setup: 0.39116 feet
+SWAN maximum additional wave setup: 0.30665 feet
 SWAN output at toe:
-    SETUP- -0.012041 feet
-    HS-    3.0589 feet
-    PER-   6.3881 seconds
+    SETUP- -0.0047506 feet
+    HS-    2.142 feet
+    PER-   7.9359 seconds
+
+PART 2 COMPLETE________________________________________
+
+
+SWAN maximum additional wave setup: 0.30665 feet
+SWAN output at toe:
+    SETUP- -0.0047506 feet
+    HS-    2.142 feet
+    PER-   7.9359 seconds
 
 PART 2 COMPLETE________________________________________
 

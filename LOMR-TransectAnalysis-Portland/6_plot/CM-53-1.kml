@@ -1,0 +1,1591 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+   <name>CM-53-1.kml</name>
+   <Style id="Tstyle">
+     <IconStyle>
+        <scale>0.6</scale>
+     </IconStyle>
+     <LineStyle><width>3</width></LineStyle>
+    </Style>
+ <Folder>
+  <name>CM-53-1.out</name>
+  <Placemark>
+    <name>CM-53-1.out</name>
+    <description>
+    PART 2 WHAFIS output: 
+
+                                        IE       0.00         2.69         8.30        10.96
+                                        OF       1.00         2.69         8.30        10.96
+                                        OF       2.00         2.69         8.30        10.96
+                                        OF       3.00         2.70         8.30        10.96
+                                        OF       4.00         2.70         8.30        10.96
+                                        OF       5.00         2.70         8.30        10.96
+                                        OF       6.00         2.70         8.30        10.97
+                                        OF       7.00         2.70         8.30        10.97
+                                        OF       8.00         2.70         8.30        10.97
+                                        OF       9.00         2.71         8.30        10.97
+                                        OF      10.00         2.71         8.30        10.97
+                                        OF      11.00         2.71         8.30        10.98
+                                        OF      12.00         2.71         8.30        10.98
+                                        OF      13.00         2.71         8.30        10.98
+                                        OF      14.00         2.71         8.30        10.98
+                                        OF      15.00         2.72         8.30        10.98
+                                        OF      16.00         2.72         8.30        10.98
+                                        OF      17.00         2.72         8.30        10.99
+                                        OF      18.00         2.72         8.30        10.99
+                                        OF      19.00         2.72         8.30        10.99
+                                        OF      20.00         2.72         8.30        10.99
+                                        OF      21.00         2.73         8.30        10.99
+                                        OF      22.00         2.73         8.30        10.99
+                                        OF      23.00         2.73         8.30        11.00
+                                        OF      24.00         2.73         8.30        11.00
+                                        OF      25.00         2.73         8.30        11.00
+                                        OF      26.00         2.73         8.30        11.00
+                                        OF      27.00         2.74         8.30        11.00
+                                        OF      28.00         2.74         8.30        11.01
+                                        OF      29.00         2.74         8.30        11.01
+                                        OF      30.00         2.74         8.30        11.01
+                                        OF      31.00         2.74         8.30        11.01
+                                        OF      32.00         2.74         8.30        11.01
+                                        OF      33.00         2.75         8.30        11.01
+                                        OF      34.00         2.75         8.30        11.02
+                                        OF      35.00         2.75         8.30        11.02
+                                        OF      36.00         2.75         8.30        11.02
+                                        OF      37.00         2.75         8.30        11.02
+                                        OF      38.00         2.76         8.30        11.02
+                                        OF      39.00         2.76         8.30        11.02
+                                        OF      40.00         2.76         8.30        11.03
+                                        OF      41.00         2.76         8.30        11.03
+                                        OF      42.00         2.76         8.30        11.03
+                                        OF      43.00         2.76         8.30        11.03
+                                        OF      44.00         2.77         8.30        11.03
+                                        OF      45.00         2.77         8.30        11.04
+                                        OF      46.00         2.77         8.30        11.04
+                                        OF      47.00         2.77         8.30        11.04
+                                        OF      48.00         2.77         8.30        11.04
+                                        OF      49.00         2.77         8.30        11.04
+                                        OF      50.00         2.78         8.30        11.04
+                                        OF      51.00         2.78         8.30        11.05
+                                        OF      52.00         2.78         8.30        11.05
+                                        OF      53.00         2.78         8.30        11.05
+                                        OF      54.00         2.78         8.30        11.05
+                                        OF      55.00         2.79         8.30        11.05
+                                        OF      56.00         2.79         8.30        11.06
+                                        OF      57.00         2.79         8.30        11.06
+                                        OF      58.00         2.79         8.30        11.06
+                                        OF      59.00         2.79         8.30        11.06
+                                        OF      60.00         2.79         8.30        11.06
+                                        OF      61.00         2.80         8.30        11.07
+                                        OF      62.00         2.80         8.30        11.07
+                                        OF      63.00         2.80         8.30        11.07
+                                        OF      64.00         2.80         8.30        11.07
+                                        OF      65.00         2.80         8.30        11.07
+                                        OF      66.00         2.81         8.30        11.08
+                                        OF      67.00         2.81         8.30        11.08
+                                        OF      68.00         2.81         8.30        11.08
+                                        OF      69.00         2.81         8.30        11.08
+                                        OF      70.00         2.81         8.30        11.08
+                                        OF      71.00         2.82         8.30        11.08
+                                        OF      72.00         2.82         8.30        11.09
+                                        OF      73.00         2.82         8.30        11.09
+                                        OF      74.00         2.82         8.30        11.09
+                                        OF      75.00         2.82         8.30        11.09
+                                        OF      76.00         2.82         8.30        11.09
+                                        OF      77.00         2.83         8.30        11.10
+                                        OF      78.00         2.83         8.30        11.10
+                                        OF      79.00         2.83         8.30        11.10
+                                        OF      80.00         2.84         8.30        11.10
+                                        OF      81.00         2.84         8.30        11.10
+                                        OF      82.00         2.84         8.30        11.11
+                                        OF      83.00         2.84         8.30        11.11
+                                        OF      84.00         2.85         8.30        11.11
+                                        OF      85.00         2.85         8.30        11.11
+                                        OF      86.00         2.85         8.30        11.12
+                                        OF      87.00         2.85         8.30        11.12
+                                        OF      88.00         2.86         8.30        11.12
+                                        OF      89.00         2.86         8.30        11.12
+                                        OF      90.00         2.86         8.30        11.13
+                                        OF      91.00         2.87         8.30        11.13
+                                        OF      92.00         2.87         8.30        11.13
+                                        OF      93.00         2.87         8.30        11.13
+                                        OF      94.00         2.87         8.30        11.13
+                                        OF      95.00         2.88         8.30        11.14
+                                        OF      96.00         2.88         8.30        11.14
+                                        OF      97.00         2.88         8.30        11.14
+                                        OF      98.00         2.89         8.30        11.14
+                                        OF      99.00         2.89         8.30        11.15
+                                        OF     100.00         2.89         8.30        11.15
+                                        OF     101.00         2.89         8.30        11.15
+                                        OF     102.00         2.90         8.30        11.15
+                                        OF     103.00         2.90         8.30        11.16
+                                        OF     104.00         2.90         8.30        11.16
+                                        OF     105.00         2.91         8.30        11.16
+                                        OF     106.00         2.91         8.30        11.16
+                                        OF     107.00         2.91         8.30        11.17
+                                        OF     108.00         2.92         8.30        11.17
+                                        OF     109.00         2.93         8.30        11.18
+                                        OF     110.00         2.94         8.30        11.19
+                                        OF     111.00         2.96         8.30        11.20
+                                        OF     112.00         2.97         8.30        11.21
+                                        OF     113.00         2.99         8.30        11.22
+                                        OF     114.00         3.00         8.30        11.23
+                                        OF     115.00         3.02         8.30        11.24
+                                        OF     116.00         3.04         8.30        11.25
+                                        OF     117.00         3.05         8.30        11.26
+                                        OF     118.00         3.07         8.30        11.28
+                                        OF     119.00         3.09         8.30        11.29
+                                        OF     120.00         3.11         8.30        11.30
+                                        OF     129.00         3.14         8.30        11.33
+                                        OF     144.50         3.21         8.30        11.37
+                                        IF     157.00         3.38         8.30        11.49
+                                        IF     172.50         3.63         8.30        11.67
+                                        IF     189.00         3.68         8.30        11.70
+                                        IF     205.50         1.38         8.30        10.09
+                                        IF     210.00         0.70         8.30         9.71
+                                        IF     213.30         0.30         8.30         9.63
+                                        IF     215.00         0.01         8.30         9.43
+    </description>
+    <styleUrl>#Tstyle</styleUrl>
+    <LineString>
+    <tessellate>1</tessellate>
+    <coordinates>
+      -70.1963258070309,43.6511643552507,0 -70.1958217673122,43.6523207308505,0
+    </coordinates>
+    </LineString>
+  </Placemark>
+</Folder>
+ <Folder><name>WHAFIS CARDS</name>
+  <Placemark>
+    <name>AE 11</name>
+    <description>
+x :: 403525.1288;zone :: AE;lon :: -70.1963258070309;station :: 0;type :: IE;bfe :: 11;Hc :: 2.69;SWL_100 :: 9.073;y :: 4833824.8875;Tp :: 8.30;Crest :: 10.96;elevation :: -7.446;lat :: 43.6511643552507;    </description>
+    <styleUrl>#Tstyle</styleUrl>
+    <Point>
+    <coordinates>
+      -70.1963258070309,43.6511643552507,-7.446
+    </coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>AE 11</name>
+    <description>
+Crest :: 10.96;elevation :: -7.422;lat :: 43.6511669714785;Tp :: 8.30;y :: 4833825.17673836;SWL_100 :: 9.073;Hc :: 2.69;bfe :: 11;type :: OF;station :: 0.304800609632187;lon :: -70.1963246666949;zone :: AE;x :: 403525.22494876;    </description>
+    <styleUrl>#Tstyle</styleUrl>
+    <Point>
+    <coordinates>
+      -70.1963246666949,43.6511669714785,-7.422
+    </coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>AE 11</name>
+    <description>
+x :: 403525.321097519;zone :: AE;lon :: -70.1963235263588;station :: 0.609601219264374;type :: OF;Hc :: 2.69;bfe :: 11;SWL_100 :: 9.074;Tp :: 8.30;y :: 4833825.46597672;Crest :: 10.96;elevation :: -7.399;lat :: 43.6511695877063;    </description>
+    <styleUrl>#Tstyle</styleUrl>
+    <Point>
+    <coordinates>
+      -70.1963235263588,43.6511695877063,-7.399
+    </coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>AE 11</name>
+    <description>
+x :: 403525.417246279;zone :: AE;station :: 0.914401828896561;lon :: -70.1963223860225;type :: OF;Hc :: 2.70;bfe :: 11;Tp :: 8.30;y :: 4833825.75521507;SWL_100 :: 9.074;lat :: 43.6511722039341;Crest :: 10.96;elevation :: -7.376;    </description>
+    <styleUrl>#Tstyle</styleUrl>
+    <Point>
+    <coordinates>
+      -70.1963223860225,43.6511722039341,-7.376
+    </coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>AE 11</name>
+    <description>
+station :: 1.21920243852875;lon :: -70.1963212456862;type :: OF;x :: 403525.513395039;zone :: AE;Tp :: 8.30;y :: 4833826.04445343;SWL_100 :: 9.075;Crest :: 10.96;lat :: 43.6511748201618;elevation :: -7.353;Hc :: 2.70;bfe :: 11;    </description>
+    <styleUrl>#Tstyle</styleUrl>
+    <Point>
+    <coordinates>
+      -70.1963212456862,43.6511748201618,-7.353
+    </coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>AE 11</name>
+    <description>
+lon :: -70.1963201053498;station :: 1.52400304816094;type :: OF;x :: 403525.609543799;zone :: AE;SWL_100 :: 9.076;Tp :: 8.30;y :: 4833826.33369179;lat :: 43.6511774363895;elevation :: -7.330;Crest :: 10.96;Hc :: 2.70;bfe :: 11;    </description>
+    <styleUrl>#Tstyle</styleUrl>
+    <Point>
+    <coordinates>
+      -70.1963201053498,43.6511774363895,-7.330
+    </coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>AE 11</name>
+    <description>
+station :: 1.82880365779312;lon :: -70.1963189650132;type :: OF;x :: 403525.705692558;zone :: AE;y :: 4833826.62293015;Tp :: 8.30;SWL_100 :: 9.076;elevation :: -7.306;Crest :: 10.97;lat :: 43.6511800526173;bfe :: 11;Hc :: 2.70;    </description>
+    <styleUrl>#Tstyle</styleUrl>
+    <Point>
+    <coordinates>
+      -70.1963189650132,43.6511800526173,-7.306
+    </coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>AE 11</name>
+    <description>
+Tp :: 8.30;y :: 4833826.9121685;SWL_100 :: 9.077;elevation :: -7.283;Crest :: 10.97;lat :: 43.651182668845;Hc :: 2.70;bfe :: 11;station :: 2.13360426742531;lon :: -70.1963178246766;type :: OF;x :: 403525.801841318;zone :: AE;    </description>
+    <styleUrl>#Tstyle</styleUrl>
+    <Point>
+    <coordinates>
+      -70.1963178246766,43.651182668845,-7.283
+    </coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>AE 11</name>
+    <description>
+type :: OF;station :: 2.4384048770575;lon :: -70.1963166843399;zone :: AE;x :: 403525.897990078;lat :: 43.6511852850727;elevation :: -7.260;Crest :: 10.97;Tp :: 8.30;y :: 4833827.20140686;SWL_100 :: 9.077;Hc :: 2.70;bfe :: 11;    </description>
+    <styleUrl>#Tstyle</styleUrl>
+    <Point>
+    <coordinates>
+      -70.1963166843399,43.6511852850727,-7.260
+    </coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>AE 11</name>
+    <description>
+zone :: AE;x :: 403525.994138837;type :: OF;lon :: -70.1963155440031;station :: 2.74320548668968;Hc :: 2.71;bfe :: 11;elevation :: -7.237;Crest :: 10.97;lat :: 43.6511879013004;SWL_100 :: 9.078;Tp :: 8.30;y :: 4833827.49064522;    </description>
+    <styleUrl>#Tstyle</styleUrl>
+    <Point>
+    <coordinates>
+      -70.1963155440031,43.6511879013004,-7.237
+    </coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>AE 11</name>
+    <description>
+zone :: AE;x :: 403526.090287597;type :: OF;lon :: -70.1963144036662;station :: 3.04800609632187;Hc :: 2.71;bfe :: 11;Crest :: 10.97;lat :: 43.6511905175281;elevation :: -7.213;SWL_100 :: 9.078;Tp :: 8.30;y :: 4833827.77988358;    </description>
+    <styleUrl>#Tstyle</styleUrl>
+    <Point>
+    <coordinates>
+      -70.1963144036662,43.6511905175281,-7.213
+    </coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>AE 11</name>
+    <description>
+Hc :: 2.71;bfe :: 11;elevation :: -7.190;Crest :: 10.98;lat :: 43.6511931337557;Tp :: 8.30;y :: 4833828.06912194;SWL_100 :: 9.079;zone :: AE;x :: 403526.186436357;type :: OF;station :: 3.35280670595406;lon :: -70.1963132633292;    </description>
+    <styleUrl>#Tstyle</styleUrl>
+    <Point>
+    <coordinates>
+      -70.1963132633292,43.6511931337557,-7.190
+    </coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>AE 11</name>
+    <description>
+bfe :: 11;Hc :: 2.71;elevation :: -7.167;lat :: 43.6511957499834;Crest :: 10.98;SWL_100 :: 9.080;y :: 4833828.35836029;Tp :: 8.30;zone :: AE;x :: 403526.282585117;type :: OF;lon :: -70.1963121229921;station :: 3.65760731558624;    </description>
+    <styleUrl>#Tstyle</styleUrl>
+    <Point>
+    <coordinates>
+      -70.1963121229921,43.6511957499834,-7.167
+    </coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>AE 11</name>
+    <description>
+lon :: -70.1963109826549;station :: 3.96240792521843;type :: OF;x :: 403526.378733876;zone :: AE;SWL_100 :: 9.080;Tp :: 8.30;y :: 4833828.64759865;Crest :: 10.98;lat :: 43.651198366211;elevation :: -7.144;Hc :: 2.71;bfe :: 11;    </description>
+    <styleUrl>#Tstyle</styleUrl>
+    <Point>
+    <coordinates>
+      -70.1963109826549,43.651198366211,-7.144
+    </coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>AE 11</name>
+    <description>
+bfe :: 11;Hc :: 2.71;SWL_100 :: 9.081;y :: 4833828.93683701;Tp :: 8.30;lat :: 43.6512009824387;elevation :: -7.121;Crest :: 10.98;x :: 403526.474882636;zone :: AE;lon :: -70.1963098423176;station :: 4.26720853485062;type :: OF;    </description>
+    <styleUrl>#Tstyle</styleUrl>
+    <Point>
+    <coordinates>
+      -70.1963098423176,43.6512009824387,-7.121
+    </coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>AE 11</name>
+    <description>
+Hc :: 2.72;bfe :: 11;SWL_100 :: 9.081;Tp :: 8.30;y :: 4833829.22607537;elevation :: -7.097;Crest :: 10.98;lat :: 43.6512035986663;x :: 403526.571031396;zone :: AE;lon :: -70.1963087019802;station :: 4.5720091444828;type :: OF;    </description>
+    <styleUrl>#Tstyle</styleUrl>
+    <Point>
+    <coordinates>
+      -70.1963087019802,43.6512035986663,-7.097
+    </coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>AE 11</name>
+    <description>
+Hc :: 2.72;bfe :: 11;SWL_100 :: 9.082;Tp :: 8.30;y :: 4833829.51531372;elevation :: -7.074;Crest :: 10.98;lat :: 43.6512062148939;x :: 403526.667180155;zone :: AE;lon :: -70.1963075616427;station :: 4.87680975411499;type :: OF;    </description>
+    <styleUrl>#Tstyle</styleUrl>
+    <Point>
+    <coordinates>
+      -70.1963075616427,43.6512062148939,-7.074
+    </coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>AE 11</name>
+    <description>
+x :: 403526.763328915;zone :: AE;lon :: -70.1963064213051;station :: 5.18161036374718;type :: OF;bfe :: 11;Hc :: 2.72;SWL_100 :: 9.082;y :: 4833829.80455208;Tp :: 8.30;Crest :: 10.99;elevation :: -7.051;lat :: 43.6512088311215;    </description>
+    <styleUrl>#Tstyle</styleUrl>
+    <Point>
+    <coordinates>
+      -70.1963064213051,43.6512088311215,-7.051
+    </coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>AE 11</name>
+    <description>
+zone :: AE;x :: 403526.859477675;type :: OF;station :: 5.48641097337937;lon :: -70.1963052809675;bfe :: 11;Hc :: 2.72;lat :: 43.6512114473491;Crest :: 10.99;elevation :: -7.028;y :: 4833830.09379044;Tp :: 8.30;SWL_100 :: 9.083;    </description>
+    <styleUrl>#Tstyle</styleUrl>
+    <Point>
+    <coordinates>
+      -70.1963052809675,43.6512114473491,-7.028
+    </coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>AE 11</name>
+    <description>
+type :: OF;station :: 5.79121158301155;lon :: -70.1963041406297;zone :: AE;x :: 403526.955626435;elevation :: -7.004;Crest :: 10.99;lat :: 43.6512140635766;y :: 4833830.3830288;Tp :: 8.30;SWL_100 :: 9.084;bfe :: 11;Hc :: 2.72;    </description>
+    <styleUrl>#Tstyle</styleUrl>
+    <Point>
+    <coordinates>
+      -70.1963041406297,43.6512140635766,-7.004
+    </coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>AE 11</name>
+    <description>
+SWL_100 :: 9.084;y :: 4833830.67226716;Tp :: 8.30;lat :: 43.6512166798042;Crest :: 10.99;elevation :: -6.981;bfe :: 11;Hc :: 2.72;lon :: -70.1963030002918;station :: 6.09601219264374;type :: OF;x :: 403527.051775194;zone :: AE;    </description>
+    <styleUrl>#Tstyle</styleUrl>
+    <Point>
+    <coordinates>
+      -70.1963030002918,43.6512166798042,-6.981
+    </coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>AE 11</name>
+    <description>
+type :: OF;lon :: -70.1963018599538;station :: 6.40081280227593;zone :: AE;x :: 403527.147923954;lat :: 43.6512192960318;Crest :: 10.99;elevation :: -6.958;SWL_100 :: 9.085;y :: 4833830.96150551;Tp :: 8.30;bfe :: 11;Hc :: 2.73;    </description>
+    <styleUrl>#Tstyle</styleUrl>
+    <Point>
+    <coordinates>
+      -70.1963018599538,43.6512192960318,-6.958
+    </coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>AE 11</name>
+    <description>
+lat :: 43.6512219122593;elevation :: -6.935;Crest :: 10.99;y :: 4833831.25074387;Tp :: 8.30;SWL_100 :: 9.085;bfe :: 11;Hc :: 2.73;type :: OF;station :: 6.70561341190811;lon :: -70.1963007196158;zone :: AE;x :: 403527.244072714;    </description>
+    <styleUrl>#Tstyle</styleUrl>
+    <Point>
+    <coordinates>
+      -70.1963007196158,43.6512219122593,-6.935
+    </coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>AE 11</name>
+    <description>
+x :: 403527.340221473;zone :: AE;lon :: -70.1962995792776;station :: 7.0104140215403;type :: OF;bfe :: 11;Hc :: 2.73;SWL_100 :: 9.086;y :: 4833831.53998223;Tp :: 8.30;lat :: 43.6512245284868;elevation :: -6.911;Crest :: 11.00;    </description>
+    <styleUrl>#Tstyle</styleUrl>
+    <Point>
+    <coordinates>
+      -70.1962995792776,43.6512245284868,-6.911
+    </coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>AE 11</name>
+    <description>
+Tp :: 8.30;y :: 4833831.82922059;SWL_100 :: 9.086;elevation :: -6.888;Crest :: 11.00;lat :: 43.6512271447143;Hc :: 2.73;bfe :: 11;station :: 7.31521463117249;lon :: -70.1962984389394;type :: OF;x :: 403527.436370233;zone :: AE;    </description>
+    <styleUrl>#Tstyle</styleUrl>
+    <Point>
+    <coordinates>
+      -70.1962984389394,43.6512271447143,-6.888
+    </coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>AE 11</name>
+    <description>
+Hc :: 2.73;bfe :: 11;SWL_100 :: 9.087;Tp :: 8.30;y :: 4833832.11845895;Crest :: 11.00;lat :: 43.6512297609419;elevation :: -6.865;x :: 403527.532518993;zone :: AE;lon :: -70.196297298601;station :: 7.62001524080468;type :: OF;    </description>
+    <styleUrl>#Tstyle</styleUrl>
+    <Point>
+    <coordinates>
+      -70.196297298601,43.6512297609419,-6.865
+    </coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>AE 11</name>
+    <description>
+zone :: AE;x :: 403527.628667753;type :: OF;station :: 7.92481585043686;lon :: -70.1962961582625;bfe :: 11;Hc :: 2.73;lat :: 43.6512323771694;Crest :: 11.00;elevation :: -6.842;y :: 4833832.4076973;Tp :: 8.30;SWL_100 :: 9.088;    </description>
+    <styleUrl>#Tstyle</styleUrl>
+    <Point>
+    <coordinates>
+      -70.1962961582625,43.6512323771694,-6.842
+    </coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>AE 11</name>
+    <description>
+zone :: AE;x :: 403527.724816512;type :: OF;lon :: -70.196295017924;station :: 8.22961646006905;bfe :: 11;Hc :: 2.74;Crest :: 11.00;lat :: 43.6512349933968;elevation :: -6.819;SWL_100 :: 9.088;y :: 4833832.69693566;Tp :: 8.30;    </description>
+    <styleUrl>#Tstyle</styleUrl>
+    <Point>
+    <coordinates>
+      -70.196295017924,43.6512349933968,-6.819
+    </coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>AE 11</name>
+    <description>
+type :: OF;lon :: -70.1962938775853;station :: 8.53441706970124;zone :: AE;x :: 403527.820965272;Crest :: 11.01;lat :: 43.6512376096243;elevation :: -6.795;SWL_100 :: 9.089;y :: 4833832.98617402;Tp :: 8.30;bfe :: 11;Hc :: 2.74;    </description>
+    <styleUrl>#Tstyle</styleUrl>
+    <Point>
+    <coordinates>
+      -70.1962938775853,43.6512376096243,-6.795
+    </coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>AE 11</name>
+    <description>
+zone :: AE;x :: 403527.917114032;type :: OF;lon :: -70.1962927372466;station :: 8.83921767933342;bfe :: 11;Hc :: 2.74;Crest :: 11.01;lat :: 43.6512402258518;elevation :: -6.772;SWL_100 :: 9.089;y :: 4833833.27541238;Tp :: 8.30;    </description>
+    <styleUrl>#Tstyle</styleUrl>
+    <Point>
+    <coordinates>
+      -70.1962927372466,43.6512402258518,-6.772
+    </coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>AE 11</name>
+    <description>
+Hc :: 2.74;bfe :: 11;elevation :: -6.749;Crest :: 11.01;lat :: 43.6512428420792;Tp :: 8.30;y :: 4833833.56465073;SWL_100 :: 9.090;zone :: AE;x :: 403528.013262791;type :: OF;station :: 9.14401828896561;lon :: -70.1962915969077;    </description>
+    <styleUrl>#Tstyle</styleUrl>
+    <Point>
+    <coordinates>
+      -70.1962915969077,43.6512428420792,-6.749
+    </coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>AE 11</name>
+    <description>
+Hc :: 2.74;bfe :: 11;SWL_100 :: 9.090;Tp :: 8.30;y :: 4833833.85388909;Crest :: 11.01;lat :: 43.6512454583067;elevation :: -6.726;x :: 403528.109411551;zone :: AE;lon :: -70.1962904565688;station :: 9.4488188985978;type :: OF;    </description>
+    <styleUrl>#Tstyle</styleUrl>
+    <Point>
+    <coordinates>
+      -70.1962904565688,43.6512454583067,-6.726
+    </coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>AE 11</name>
+    <description>
+zone :: AE;x :: 403528.205560311;type :: OF;lon :: -70.1962893162298;station :: 9.75361950822998;bfe :: 11;Hc :: 2.74;elevation :: -6.703;lat :: 43.6512480745341;Crest :: 11.01;SWL_100 :: 9.091;y :: 4833834.14312745;Tp :: 8.30;    </description>
+    <styleUrl>#Tstyle</styleUrl>
+    <Point>
+    <coordinates>
+      -70.1962893162298,43.6512480745341,-6.703
+    </coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>AE 11</name>
+    <description>
+x :: 403528.301709071;zone :: AE;station :: 10.0584201178622;lon :: -70.1962881758906;type :: OF;bfe :: 11;Hc :: 2.75;y :: 4833834.43236581;Tp :: 8.30;SWL_100 :: 9.092;elevation :: -6.679;lat :: 43.6512506907615;Crest :: 11.01;    </description>
+    <styleUrl>#Tstyle</styleUrl>
+    <Point>
+    <coordinates>
+      -70.1962881758906,43.6512506907615,-6.679
+    </coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>AE 11</name>
+    <description>
+elevation :: -6.656;lat :: 43.6512533069889;Crest :: 11.02;Tp :: 8.30;y :: 4833834.72160417;SWL_100 :: 9.092;Hc :: 2.75;bfe :: 11;type :: OF;station :: 10.3632207274944;lon :: -70.1962870355514;zone :: AE;x :: 403528.39785783;    </description>
+    <styleUrl>#Tstyle</styleUrl>
+    <Point>
+    <coordinates>
+      -70.1962870355514,43.6512533069889,-6.656
+    </coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>AE 11</name>
+    <description>
+Hc :: 2.75;bfe :: 11;lat :: 43.6512559232163;elevation :: -6.633;Crest :: 11.02;SWL_100 :: 9.093;Tp :: 8.30;y :: 4833835.01084252;zone :: AE;x :: 403528.49400659;type :: OF;lon :: -70.1962858952121;station :: 10.6680213371265;    </description>
+    <styleUrl>#Tstyle</styleUrl>
+    <Point>
+    <coordinates>
+      -70.1962858952121,43.6512559232163,-6.633
+    </coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>AE 11</name>
+    <description>
+type :: OF;lon :: -70.1962847548727;station :: 10.9728219467587;zone :: AE;x :: 403528.59015535;Crest :: 11.02;elevation :: -6.610;lat :: 43.6512585394437;SWL_100 :: 9.093;Tp :: 8.30;y :: 4833835.30008088;Hc :: 2.75;bfe :: 11;    </description>
+    <styleUrl>#Tstyle</styleUrl>
+    <Point>
+    <coordinates>
+      -70.1962847548727,43.6512585394437,-6.610
+    </coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>AE 11</name>
+    <description>
+Hc :: 2.75;bfe :: 11;Crest :: 11.02;elevation :: -6.586;lat :: 43.651261155671;SWL_100 :: 9.094;Tp :: 8.30;y :: 4833835.58931924;zone :: AE;x :: 403528.686304109;type :: OF;lon :: -70.1962836145331;station :: 11.2776225563909;    </description>
+    <styleUrl>#Tstyle</styleUrl>
+    <Point>
+    <coordinates>
+      -70.1962836145331,43.651261155671,-6.586
+    </coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>AE 11</name>
+    <description>
+x :: 403528.782452869;zone :: AE;station :: 11.5824231660231;lon :: -70.1962824741935;type :: OF;Hc :: 2.76;bfe :: 11;Tp :: 8.30;y :: 4833835.8785576;SWL_100 :: 9.094;Crest :: 11.02;elevation :: -6.563;lat :: 43.6512637718984;    </description>
+    <styleUrl>#Tstyle</styleUrl>
+    <Point>
+    <coordinates>
+      -70.1962824741935,43.6512637718984,-6.563
+    </coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>AE 11</name>
+    <description>
+x :: 403528.878601629;zone :: AE;station :: 11.8872237756553;lon :: -70.1962813338538;type :: OF;Hc :: 2.76;bfe :: 11;Tp :: 8.30;y :: 4833836.16779596;SWL_100 :: 9.095;Crest :: 11.02;lat :: 43.6512663881258;elevation :: -6.540;    </description>
+    <styleUrl>#Tstyle</styleUrl>
+    <Point>
+    <coordinates>
+      -70.1962813338538,43.6512663881258,-6.540
+    </coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>AE 11</name>
+    <description>
+x :: 403528.974750389;zone :: AE;station :: 12.1920243852875;lon :: -70.196280193514;type :: OF;Hc :: 2.76;bfe :: 11;Tp :: 8.30;y :: 4833836.45703431;SWL_100 :: 9.096;lat :: 43.6512690043531;Crest :: 11.03;elevation :: -6.517;    </description>
+    <styleUrl>#Tstyle</styleUrl>
+    <Point>
+    <coordinates>
+      -70.196280193514,43.6512690043531,-6.517
+    </coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>AE 11</name>
+    <description>
+y :: 4833836.74627267;Tp :: 8.30;SWL_100 :: 9.096;elevation :: -6.494;lat :: 43.6512716205804;Crest :: 11.03;bfe :: 11;Hc :: 2.76;station :: 12.4968249949197;lon :: -70.1962790531741;type :: OF;x :: 403529.070899148;zone :: AE;    </description>
+    <styleUrl>#Tstyle</styleUrl>
+    <Point>
+    <coordinates>
+      -70.1962790531741,43.6512716205804,-6.494
+    </coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>AE 11</name>
+    <description>
+zone :: AE;x :: 403529.167047908;type :: OF;station :: 12.8016256045519;lon :: -70.1962779128341;bfe :: 11;Hc :: 2.76;lat :: 43.6512742368077;Crest :: 11.03;elevation :: -6.470;y :: 4833837.03551103;Tp :: 8.30;SWL_100 :: 9.097;    </description>
+    <styleUrl>#Tstyle</styleUrl>
+    <Point>
+    <coordinates>
+      -70.1962779128341,43.6512742368077,-6.470
+    </coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>AE 11</name>
+    <description>
+x :: 403529.263196668;zone :: AE;lon :: -70.196276772494;station :: 13.106426214184;type :: OF;bfe :: 11;Hc :: 2.76;SWL_100 :: 9.097;y :: 4833837.32474939;Tp :: 8.30;lat :: 43.651276853035;Crest :: 11.03;elevation :: -6.447;    </description>
+    <styleUrl>#Tstyle</styleUrl>
+    <Point>
+    <coordinates>
+      -70.196276772494,43.651276853035,-6.447
+    </coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>AE 11</name>
+    <description>
+zone :: AE;x :: 403529.359345427;type :: OF;station :: 13.4112268238162;lon :: -70.1962756321538;bfe :: 11;Hc :: 2.77;Crest :: 11.03;elevation :: -6.424;lat :: 43.6512794692623;y :: 4833837.61398774;Tp :: 8.30;SWL_100 :: 9.098;    </description>
+    <styleUrl>#Tstyle</styleUrl>
+    <Point>
+    <coordinates>
+      -70.1962756321538,43.6512794692623,-6.424
+    </coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>AE 11</name>
+    <description>
+Tp :: 8.30;y :: 4833837.9032261;SWL_100 :: 9.099;Crest :: 11.04;elevation :: -6.401;lat :: 43.6512820854896;Hc :: 2.77;bfe :: 11;station :: 13.7160274334484;lon :: -70.1962744918135;type :: OF;x :: 403529.455494187;zone :: AE;    </description>
+    <styleUrl>#Tstyle</styleUrl>
+    <Point>
+    <coordinates>
+      -70.1962744918135,43.6512820854896,-6.401
+    </coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>AE 11</name>
+    <description>
+lon :: -70.1962733514731;station :: 14.0208280430806;type :: OF;x :: 403529.551642947;zone :: AE;SWL_100 :: 9.099;y :: 4833838.19246446;Tp :: 8.30;Crest :: 11.04;elevation :: -6.377;lat :: 43.6512847017169;bfe :: 11;Hc :: 2.77;    </description>
+    <styleUrl>#Tstyle</styleUrl>
+    <Point>
+    <coordinates>
+      -70.1962733514731,43.6512847017169,-6.377
+    </coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>AE 11</name>
+    <description>
+x :: 403529.647791707;zone :: AE;station :: 14.3256286527128;lon :: -70.1962722111326;type :: OF;Hc :: 2.77;bfe :: 11;Tp :: 8.30;y :: 4833838.48170282;SWL_100 :: 9.100;lat :: 43.6512873179441;Crest :: 11.04;elevation :: -6.354;    </description>
+    <styleUrl>#Tstyle</styleUrl>
+    <Point>
+    <coordinates>
+      -70.1962722111326,43.6512873179441,-6.354
+    </coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>AE 11</name>
+    <description>
+type :: OF;station :: 14.630429262345;lon :: -70.196271070792;zone :: AE;x :: 403529.743940466;Crest :: 11.04;elevation :: -6.331;lat :: 43.6512899341714;Tp :: 8.30;y :: 4833838.77094118;SWL_100 :: 9.100;Hc :: 2.77;bfe :: 11;    </description>
+    <styleUrl>#Tstyle</styleUrl>
+    <Point>
+    <coordinates>
+      -70.196271070792,43.6512899341714,-6.331
+    </coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>AE 11</name>
+    <description>
+bfe :: 11;Hc :: 2.77;SWL_100 :: 9.101;y :: 4833839.06017953;Tp :: 8.30;elevation :: -6.308;lat :: 43.6512925503986;Crest :: 11.04;x :: 403529.840089226;zone :: AE;lon :: -70.1962699304513;station :: 14.9352298719772;type :: OF;    </description>
+    <styleUrl>#Tstyle</styleUrl>
+    <Point>
+    <coordinates>
+      -70.1962699304513,43.6512925503986,-6.308
+    </coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>AE 11</name>
+    <description>
+bfe :: 11;Hc :: 2.78;lat :: 43.6512951666258;Crest :: 11.04;elevation :: -6.285;SWL_100 :: 9.101;y :: 4833839.34941789;Tp :: 8.30;zone :: AE;x :: 403529.936237986;type :: OF;lon :: -70.1962687901106;station :: 15.2400304816094;    </description>
+    <styleUrl>#Tstyle</styleUrl>
+    <Point>
+    <coordinates>
+      -70.1962687901106,43.6512951666258,-6.285
+    </coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>AE 11</name>
+    <description>
+x :: 403530.032386745;zone :: AE;station :: 15.5448310912415;lon :: -70.1962676497697;type :: OF;bfe :: 11;Hc :: 2.78;y :: 4833839.63865625;Tp :: 8.30;SWL_100 :: 9.102;lat :: 43.651297782853;Crest :: 11.05;elevation :: -6.261;    </description>
+    <styleUrl>#Tstyle</styleUrl>
+    <Point>
+    <coordinates>
+      -70.1962676497697,43.651297782853,-6.261
+    </coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>AE 11</name>
+    <description>
+zone :: AE;x :: 403530.128535505;type :: OF;station :: 15.8496317008737;lon :: -70.1962665094287;Hc :: 2.78;bfe :: 11;Crest :: 11.05;elevation :: -6.238;lat :: 43.6513003990802;Tp :: 8.30;y :: 4833839.92789461;SWL_100 :: 9.102;    </description>
+    <styleUrl>#Tstyle</styleUrl>
+    <Point>
+    <coordinates>
+      -70.1962665094287,43.6513003990802,-6.238
+    </coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>AE 11</name>
+    <description>
+station :: 16.1544323105059;lon :: -70.1962653690876;type :: OF;x :: 403530.224684265;zone :: AE;Tp :: 8.30;y :: 4833840.21713297;SWL_100 :: 9.103;Crest :: 11.05;elevation :: -6.215;lat :: 43.6513030153074;Hc :: 2.78;bfe :: 11;    </description>
+    <styleUrl>#Tstyle</styleUrl>
+    <Point>
+    <coordinates>
+      -70.1962653690876,43.6513030153074,-6.215
+    </coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>AE 11</name>
+    <description>
+station :: 16.4592329201381;lon :: -70.1962642287465;type :: OF;x :: 403530.320833025;zone :: AE;y :: 4833840.50637132;Tp :: 8.30;SWL_100 :: 9.104;elevation :: -6.192;lat :: 43.6513056315346;Crest :: 11.05;bfe :: 11;Hc :: 2.78;    </description>
+    <styleUrl>#Tstyle</styleUrl>
+    <Point>
+    <coordinates>
+      -70.1962642287465,43.6513056315346,-6.192
+    </coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>AE 11</name>
+    <description>
+zone :: AE;x :: 403530.416981784;type :: OF;lon :: -70.1962630884052;station :: 16.7640335297703;bfe :: 11;Hc :: 2.79;Crest :: 11.05;lat :: 43.6513082477618;elevation :: -6.168;SWL_100 :: 9.104;y :: 4833840.79560968;Tp :: 8.30;    </description>
+    <styleUrl>#Tstyle</styleUrl>
+    <Point>
+    <coordinates>
+      -70.1962630884052,43.6513082477618,-6.168
+    </coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>AE 11</name>
+    <description>
+Crest :: 11.06;elevation :: -6.145;lat :: 43.6513108639889;y :: 4833841.08484804;Tp :: 8.30;SWL_100 :: 9.105;bfe :: 11;Hc :: 2.79;type :: OF;station :: 17.0688341394025;lon :: -70.1962619480639;zone :: AE;x :: 403530.513130544;    </description>
+    <styleUrl>#Tstyle</styleUrl>
+    <Point>
+    <coordinates>
+      -70.1962619480639,43.6513108639889,-6.145
+    </coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>AE 11</name>
+    <description>
+elevation :: -6.122;lat :: 43.6513134802161;Crest :: 11.06;Tp :: 8.30;y :: 4833841.3740864;SWL_100 :: 9.105;Hc :: 2.79;bfe :: 11;type :: OF;station :: 17.3736347490347;lon :: -70.1962608077224;zone :: AE;x :: 403530.609279304;    </description>
+    <styleUrl>#Tstyle</styleUrl>
+    <Point>
+    <coordinates>
+      -70.1962608077224,43.6513134802161,-6.122
+    </coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>AE 11</name>
+    <description>
+bfe :: 11;Hc :: 2.79;y :: 4833841.66332475;Tp :: 8.30;SWL_100 :: 9.106;Crest :: 11.06;elevation :: -6.099;lat :: 43.6513160964432;x :: 403530.705428063;zone :: AE;station :: 17.6784353586668;lon :: -70.1962596673809;type :: OF;    </description>
+    <styleUrl>#Tstyle</styleUrl>
+    <Point>
+    <coordinates>
+      -70.1962596673809,43.6513160964432,-6.099
+    </coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>AE 11</name>
+    <description>
+type :: OF;lon :: -70.1962585270392;station :: 17.983235968299;zone :: AE;x :: 403530.801576823;elevation :: -6.076;lat :: 43.6513187126703;Crest :: 11.06;SWL_100 :: 9.106;Tp :: 8.30;y :: 4833841.95256311;Hc :: 2.79;bfe :: 11;    </description>
+    <styleUrl>#Tstyle</styleUrl>
+    <Point>
+    <coordinates>
+      -70.1962585270392,43.6513187126703,-6.076
+    </coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>AE 11</name>
+    <description>
+bfe :: 11;Hc :: 2.79;elevation :: -6.052;Crest :: 11.06;lat :: 43.6513213288974;SWL_100 :: 9.107;y :: 4833842.24180147;Tp :: 8.30;zone :: AE;x :: 403530.897725583;type :: OF;lon :: -70.1962573866975;station :: 18.2880365779312;    </description>
+    <styleUrl>#Tstyle</styleUrl>
+    <Point>
+    <coordinates>
+      -70.1962573866975,43.6513213288974,-6.052
+    </coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>AE 11</name>
+    <description>
+SWL_100 :: 9.108;Tp :: 8.30;y :: 4833842.53103983;elevation :: -6.029;Crest :: 11.07;lat :: 43.6513239451245;Hc :: 2.80;bfe :: 11;lon :: -70.1962562463556;station :: 18.5928371875634;type :: OF;x :: 403530.993874343;zone :: AE;    </description>
+    <styleUrl>#Tstyle</styleUrl>
+    <Point>
+    <coordinates>
+      -70.1962562463556,43.6513239451245,-6.029
+    </coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>AE 11</name>
+    <description>
+type :: OF;station :: 18.8976377971956;lon :: -70.1962551060137;zone :: AE;x :: 403531.090023102;lat :: 43.6513265613516;Crest :: 11.07;elevation :: -6.006;y :: 4833842.82027819;Tp :: 8.30;SWL_100 :: 9.108;bfe :: 11;Hc :: 2.80;    </description>
+    <styleUrl>#Tstyle</styleUrl>
+    <Point>
+    <coordinates>
+      -70.1962551060137,43.6513265613516,-6.006
+    </coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>AE 11</name>
+    <description>
+x :: 403531.186171862;zone :: AE;station :: 19.2024384068278;lon :: -70.1962539656716;type :: OF;bfe :: 11;Hc :: 2.80;y :: 4833843.10951654;Tp :: 8.30;SWL_100 :: 9.109;elevation :: -5.983;Crest :: 11.07;lat :: 43.6513291775787;    </description>
+    <styleUrl>#Tstyle</styleUrl>
+    <Point>
+    <coordinates>
+      -70.1962539656716,43.6513291775787,-5.983
+    </coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>AE 11</name>
+    <description>
+lon :: -70.1962528253295;station :: 19.50723901646;type :: OF;x :: 403531.282320622;zone :: AE;SWL_100 :: 9.109;y :: 4833843.3987549;Tp :: 8.30;Crest :: 11.07;elevation :: -5.959;lat :: 43.6513317938057;bfe :: 11;Hc :: 2.80;    </description>
+    <styleUrl>#Tstyle</styleUrl>
+    <Point>
+    <coordinates>
+      -70.1962528253295,43.6513317938057,-5.959
+    </coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>AE 11</name>
+    <description>
+station :: 19.8120396260922;lon :: -70.1962516849873;type :: OF;x :: 403531.378469381;zone :: AE;y :: 4833843.68799326;Tp :: 8.30;SWL_100 :: 9.110;Crest :: 11.07;lat :: 43.6513344100328;elevation :: -5.936;bfe :: 11;Hc :: 2.80;    </description>
+    <styleUrl>#Tstyle</styleUrl>
+    <Point>
+    <coordinates>
+      -70.1962516849873,43.6513344100328,-5.936
+    </coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>AE 11</name>
+    <description>
+bfe :: 11;Hc :: 2.81;elevation :: -5.913;Crest :: 11.08;lat :: 43.6513370262598;y :: 4833843.97723162;Tp :: 8.30;SWL_100 :: 9.111;zone :: AE;x :: 403531.474618141;type :: OF;station :: 20.1168402357243;lon :: -70.196250544645;    </description>
+    <styleUrl>#Tstyle</styleUrl>
+    <Point>
+    <coordinates>
+      -70.196250544645,43.6513370262598,-5.913
+    </coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>AE 11</name>
+    <description>
+zone :: AE;x :: 403531.570766901;type :: OF;lon :: -70.1962494043025;station :: 20.4216408453565;bfe :: 11;Hc :: 2.81;lat :: 43.6513396424869;elevation :: -5.890;Crest :: 11.08;SWL_100 :: 9.111;y :: 4833844.26646997;Tp :: 8.30;    </description>
+    <styleUrl>#Tstyle</styleUrl>
+    <Point>
+    <coordinates>
+      -70.1962494043025,43.6513396424869,-5.890
+    </coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>AE 11</name>
+    <description>
+Tp :: 8.30;y :: 4833844.55570833;SWL_100 :: 9.112;Crest :: 11.08;elevation :: -5.867;lat :: 43.6513422587139;Hc :: 2.81;bfe :: 11;station :: 20.7264414549887;lon :: -70.19624826396;type :: OF;x :: 403531.666915661;zone :: AE;    </description>
+    <styleUrl>#Tstyle</styleUrl>
+    <Point>
+    <coordinates>
+      -70.19624826396,43.6513422587139,-5.867
+    </coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>AE 11</name>
+    <description>
+Tp :: 8.30;y :: 4833844.84494669;SWL_100 :: 9.112;lat :: 43.6513448749409;Crest :: 11.08;elevation :: -5.843;Hc :: 2.81;bfe :: 11;station :: 21.0312420646209;lon :: -70.1962471236174;type :: OF;x :: 403531.76306442;zone :: AE;    </description>
+    <styleUrl>#Tstyle</styleUrl>
+    <Point>
+    <coordinates>
+      -70.1962471236174,43.6513448749409,-5.843
+    </coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>AE 11</name>
+    <description>
+Hc :: 2.81;bfe :: 11;elevation :: -5.820;Crest :: 11.08;lat :: 43.6513474911679;SWL_100 :: 9.113;Tp :: 8.30;y :: 4833845.13418505;zone :: AE;x :: 403531.85921318;type :: OF;lon :: -70.1962459832747;station :: 21.3360426742531;    </description>
+    <styleUrl>#Tstyle</styleUrl>
+    <Point>
+    <coordinates>
+      -70.1962459832747,43.6513474911679,-5.820
+    </coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>AE 11</name>
+    <description>
+x :: 403531.95536194;zone :: AE;station :: 21.6408432838853;lon :: -70.1962448429319;type :: OF;bfe :: 11;Hc :: 2.82;y :: 4833845.42342341;Tp :: 8.30;SWL_100 :: 9.113;elevation :: -5.797;Crest :: 11.08;lat :: 43.6513501073949;    </description>
+    <styleUrl>#Tstyle</styleUrl>
+    <Point>
+    <coordinates>
+      -70.1962448429319,43.6513501073949,-5.797
+    </coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>AE 11</name>
+    <description>
+bfe :: 11;Hc :: 2.82;y :: 4833845.71266176;Tp :: 8.30;SWL_100 :: 9.114;Crest :: 11.09;lat :: 43.6513527236218;elevation :: -5.774;x :: 403532.051510699;zone :: AE;station :: 21.9456438935175;lon :: -70.196243702589;type :: OF;    </description>
+    <styleUrl>#Tstyle</styleUrl>
+    <Point>
+    <coordinates>
+      -70.196243702589,43.6513527236218,-5.774
+    </coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>AE 11</name>
+    <description>
+x :: 403532.147659459;zone :: AE;lon :: -70.1962425622459;station :: 22.2504445031497;type :: OF;Hc :: 2.82;bfe :: 11;SWL_100 :: 9.115;Tp :: 8.30;y :: 4833846.00190012;elevation :: -5.751;Crest :: 11.09;lat :: 43.6513553398488;    </description>
+    <styleUrl>#Tstyle</styleUrl>
+    <Point>
+    <coordinates>
+      -70.1962425622459,43.6513553398488,-5.751
+    </coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>AE 11</name>
+    <description>
+lat :: 43.6513579560757;elevation :: -5.727;Crest :: 11.09;SWL_100 :: 9.115;y :: 4833846.29113848;Tp :: 8.30;bfe :: 11;Hc :: 2.82;type :: OF;lon :: -70.1962414219029;station :: 22.5552451127818;zone :: AE;x :: 403532.243808219;    </description>
+    <styleUrl>#Tstyle</styleUrl>
+    <Point>
+    <coordinates>
+      -70.1962414219029,43.6513579560757,-5.727
+    </coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>AE 11</name>
+    <description>
+x :: 403532.339956979;zone :: AE;station :: 22.860045722414;lon :: -70.1962402815597;type :: OF;Hc :: 2.82;bfe :: 11;Tp :: 8.30;y :: 4833846.58037684;SWL_100 :: 9.116;elevation :: -5.704;lat :: 43.6513605723027;Crest :: 11.09;    </description>
+    <styleUrl>#Tstyle</styleUrl>
+    <Point>
+    <coordinates>
+      -70.1962402815597,43.6513605723027,-5.704
+    </coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>AE 11</name>
+    <description>
+y :: 4833846.8696152;Tp :: 8.30;SWL_100 :: 9.116;Crest :: 11.09;lat :: 43.6513631885296;elevation :: -5.677;bfe :: 11;Hc :: 2.82;station :: 23.1648463320462;lon :: -70.1962391412164;type :: OF;x :: 403532.436105738;zone :: AE;    </description>
+    <styleUrl>#Tstyle</styleUrl>
+    <Point>
+    <coordinates>
+      -70.1962391412164,43.6513631885296,-5.677
+    </coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>AE 11</name>
+    <description>
+lon :: -70.196238000873;station :: 23.4696469416784;type :: OF;x :: 403532.532254498;zone :: AE;SWL_100 :: 9.117;Tp :: 8.30;y :: 4833847.15885355;Crest :: 11.10;elevation :: -5.640;lat :: 43.6513658047565;Hc :: 2.83;bfe :: 11;    </description>
+    <styleUrl>#Tstyle</styleUrl>
+    <Point>
+    <coordinates>
+      -70.196238000873,43.6513658047565,-5.640
+    </coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>AE 11</name>
+    <description>
+x :: 403532.628403258;zone :: AE;station :: 23.7744475513106;lon :: -70.1962368605295;type :: OF;Hc :: 2.83;bfe :: 11;Tp :: 8.30;y :: 4833847.44809191;SWL_100 :: 9.117;Crest :: 11.10;lat :: 43.6513684209834;elevation :: -5.603;    </description>
+    <styleUrl>#Tstyle</styleUrl>
+    <Point>
+    <coordinates>
+      -70.1962368605295,43.6513684209834,-5.603
+    </coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>AE 11</name>
+    <description>
+y :: 4833847.73733027;Tp :: 8.30;SWL_100 :: 9.117;Crest :: 11.10;lat :: 43.6513710372103;elevation :: -5.566;bfe :: 11;Hc :: 2.83;station :: 24.0792481609428;lon :: -70.1962357201859;type :: OF;x :: 403532.724552017;zone :: AE;    </description>
+    <styleUrl>#Tstyle</styleUrl>
+    <Point>
+    <coordinates>
+      -70.1962357201859,43.6513710372103,-5.566
+    </coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>AE 11</name>
+    <description>
+zone :: AE;x :: 403532.820700777;type :: OF;lon :: -70.1962345798422;station :: 24.384048770575;bfe :: 11;Hc :: 2.84;elevation :: -5.529;lat :: 43.6513736534372;Crest :: 11.10;SWL_100 :: 9.118;y :: 4833848.02656863;Tp :: 8.30;    </description>
+    <styleUrl>#Tstyle</styleUrl>
+    <Point>
+    <coordinates>
+      -70.1962345798422,43.6513736534372,-5.529
+    </coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>AE 11</name>
+    <description>
+lat :: 43.651376269664;Crest :: 11.10;elevation :: -5.492;SWL_100 :: 9.118;y :: 4833848.31580698;Tp :: 8.30;bfe :: 11;Hc :: 2.84;type :: OF;lon :: -70.1962334394984;station :: 24.6888493802071;zone :: AE;x :: 403532.916849537;    </description>
+    <styleUrl>#Tstyle</styleUrl>
+    <Point>
+    <coordinates>
+      -70.1962334394984,43.651376269664,-5.492
+    </coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>AE 11</name>
+    <description>
+lat :: 43.6513788858909;Crest :: 11.11;elevation :: -5.456;Tp :: 8.30;y :: 4833848.60504534;SWL_100 :: 9.118;Hc :: 2.84;bfe :: 11;type :: OF;station :: 24.9936499898393;lon :: -70.1962322991546;zone :: AE;x :: 403533.012998297;    </description>
+    <styleUrl>#Tstyle</styleUrl>
+    <Point>
+    <coordinates>
+      -70.1962322991546,43.6513788858909,-5.456
+    </coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>AE 11</name>
+    <description>
+type :: OF;lon :: -70.1962311588106;station :: 25.2984505994715;zone :: AE;x :: 403533.109147056;elevation :: -5.419;lat :: 43.6513815021178;Crest :: 11.11;SWL_100 :: 9.119;Tp :: 8.30;y :: 4833848.8942837;Hc :: 2.84;bfe :: 11;    </description>
+    <styleUrl>#Tstyle</styleUrl>
+    <Point>
+    <coordinates>
+      -70.1962311588106,43.6513815021178,-5.419
+    </coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>AE 11</name>
+    <description>
+Hc :: 2.85;bfe :: 11;Tp :: 8.30;y :: 4833849.18352206;SWL_100 :: 9.119;lat :: 43.6513841183446;Crest :: 11.11;elevation :: -5.382;x :: 403533.205295816;zone :: AE;station :: 25.6032512091037;lon :: -70.1962300184665;type :: OF;    </description>
+    <styleUrl>#Tstyle</styleUrl>
+    <Point>
+    <coordinates>
+      -70.1962300184665,43.6513841183446,-5.382
+    </coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>AE 11</name>
+    <description>
+type :: OF;station :: 25.9080518187359;lon :: -70.1962288781223;zone :: AE;x :: 403533.301444576;Crest :: 11.11;elevation :: -5.345;lat :: 43.6513867345714;y :: 4833849.47276042;Tp :: 8.30;SWL_100 :: 9.120;bfe :: 11;Hc :: 2.85;    </description>
+    <styleUrl>#Tstyle</styleUrl>
+    <Point>
+    <coordinates>
+      -70.1962288781223,43.6513867345714,-5.345
+    </coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>AE 11</name>
+    <description>
+SWL_100 :: 9.120;Tp :: 8.30;y :: 4833849.76199877;lat :: 43.6513893507982;elevation :: -5.308;Crest :: 11.12;Hc :: 2.85;bfe :: 11;lon :: -70.1962277377781;station :: 26.2128524283681;type :: OF;x :: 403533.397593335;zone :: AE;    </description>
+    <styleUrl>#Tstyle</styleUrl>
+    <Point>
+    <coordinates>
+      -70.1962277377781,43.6513893507982,-5.308
+    </coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>AE 11</name>
+    <description>
+bfe :: 11;Hc :: 2.85;elevation :: -5.272;lat :: 43.651391967025;Crest :: 11.12;y :: 4833850.05123713;Tp :: 8.30;SWL_100 :: 9.120;zone :: AE;x :: 403533.493742095;type :: OF;station :: 26.5176530380003;lon :: -70.1962265974337;    </description>
+    <styleUrl>#Tstyle</styleUrl>
+    <Point>
+    <coordinates>
+      -70.1962265974337,43.651391967025,-5.272
+    </coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>AE 11</name>
+    <description>
+Tp :: 8.30;y :: 4833850.34047549;SWL_100 :: 9.121;Crest :: 11.12;lat :: 43.6513945832518;elevation :: -5.235;Hc :: 2.86;bfe :: 11;station :: 26.8224536476325;lon :: -70.1962254570893;type :: OF;x :: 403533.589890855;zone :: AE;    </description>
+    <styleUrl>#Tstyle</styleUrl>
+    <Point>
+    <coordinates>
+      -70.1962254570893,43.6513945832518,-5.235
+    </coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>AE 11</name>
+    <description>
+Crest :: 11.12;elevation :: -5.198;lat :: 43.6513971994786;y :: 4833850.62971385;Tp :: 8.30;SWL_100 :: 9.121;bfe :: 11;Hc :: 2.86;type :: OF;station :: 27.1272542572646;lon :: -70.1962243167447;zone :: AE;x :: 403533.686039614;    </description>
+    <styleUrl>#Tstyle</styleUrl>
+    <Point>
+    <coordinates>
+      -70.1962243167447,43.6513971994786,-5.198
+    </coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>AE 11</name>
+    <description>
+x :: 403533.782188374;zone :: AE;station :: 27.4320548668968;lon :: -70.1962231764001;type :: OF;Hc :: 2.86;bfe :: 11;Tp :: 8.30;y :: 4833850.9189522;SWL_100 :: 9.122;Crest :: 11.13;lat :: 43.6513998157053;elevation :: -5.161;    </description>
+    <styleUrl>#Tstyle</styleUrl>
+    <Point>
+    <coordinates>
+      -70.1962231764001,43.6513998157053,-5.161
+    </coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>AE 11</name>
+    <description>
+Hc :: 2.87;bfe :: 11;SWL_100 :: 9.122;Tp :: 8.30;y :: 4833851.20819056;elevation :: -5.124;lat :: 43.6514024319321;Crest :: 11.13;x :: 403533.878337134;zone :: AE;lon :: -70.1962220360553;station :: 27.736855476529;type :: OF;    </description>
+    <styleUrl>#Tstyle</styleUrl>
+    <Point>
+    <coordinates>
+      -70.1962220360553,43.6514024319321,-5.124
+    </coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>AE 11</name>
+    <description>
+type :: OF;lon :: -70.1962208957105;station :: 28.0416560861612;zone :: AE;x :: 403533.974485894;lat :: 43.6514050481588;Crest :: 11.13;elevation :: -5.087;SWL_100 :: 9.122;y :: 4833851.49742892;Tp :: 8.30;bfe :: 11;Hc :: 2.87;    </description>
+    <styleUrl>#Tstyle</styleUrl>
+    <Point>
+    <coordinates>
+      -70.1962208957105,43.6514050481588,-5.087
+    </coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>AE 11</name>
+    <description>
+station :: 28.3464566957934;lon :: -70.1962197553655;type :: OF;x :: 403534.070634653;zone :: AE;y :: 4833851.78666728;Tp :: 8.30;SWL_100 :: 9.123;Crest :: 11.13;elevation :: -5.050;lat :: 43.6514076643856;bfe :: 11;Hc :: 2.87;    </description>
+    <styleUrl>#Tstyle</styleUrl>
+    <Point>
+    <coordinates>
+      -70.1962197553655,43.6514076643856,-5.050
+    </coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>AE 11</name>
+    <description>
+elevation :: -5.014;Crest :: 11.13;lat :: 43.6514102806123;SWL_100 :: 9.123;Tp :: 8.30;y :: 4833852.07590564;Hc :: 2.87;bfe :: 11;type :: OF;lon :: -70.1962186150205;station :: 28.6512573054256;zone :: AE;x :: 403534.166783413;    </description>
+    <styleUrl>#Tstyle</styleUrl>
+    <Point>
+    <coordinates>
+      -70.1962186150205,43.6514102806123,-5.014
+    </coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>AE 11</name>
+    <description>
+bfe :: 11;Hc :: 2.88;elevation :: -4.977;lat :: 43.651412896839;Crest :: 11.14;y :: 4833852.36514399;Tp :: 8.30;SWL_100 :: 9.123;zone :: AE;x :: 403534.262932173;type :: OF;station :: 28.9560579150578;lon :: -70.1962174746754;    </description>
+    <styleUrl>#Tstyle</styleUrl>
+    <Point>
+    <coordinates>
+      -70.1962174746754,43.651412896839,-4.977
+    </coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>AE 11</name>
+    <description>
+bfe :: 11;Hc :: 2.88;lat :: 43.6514155130657;elevation :: -4.940;Crest :: 11.14;y :: 4833852.65438235;Tp :: 8.30;SWL_100 :: 9.124;zone :: AE;x :: 403534.359080933;type :: OF;station :: 29.26085852469;lon :: -70.1962163343301;    </description>
+    <styleUrl>#Tstyle</styleUrl>
+    <Point>
+    <coordinates>
+      -70.1962163343301,43.6514155130657,-4.940
+    </coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>AE 11</name>
+    <description>
+type :: OF;lon :: -70.1962151939848;station :: 29.5656591343221;zone :: AE;x :: 403534.455229692;lat :: 43.6514181292924;elevation :: -4.903;Crest :: 11.14;SWL_100 :: 9.124;y :: 4833852.94362071;Tp :: 8.30;bfe :: 11;Hc :: 2.88;    </description>
+    <styleUrl>#Tstyle</styleUrl>
+    <Point>
+    <coordinates>
+      -70.1962151939848,43.6514181292924,-4.903
+    </coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>AE 11</name>
+    <description>
+Hc :: 2.89;bfe :: 11;Tp :: 8.30;y :: 4833853.23285907;SWL_100 :: 9.125;Crest :: 11.14;lat :: 43.6514207455191;elevation :: -4.866;x :: 403534.551378452;zone :: AE;station :: 29.8704597439543;lon :: -70.1962140536394;type :: OF;    </description>
+    <styleUrl>#Tstyle</styleUrl>
+    <Point>
+    <coordinates>
+      -70.1962140536394,43.6514207455191,-4.866
+    </coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>AE 11</name>
+    <description>
+zone :: AE;x :: 403534.647527212;type :: OF;station :: 30.1752603535865;lon :: -70.1962129132939;Hc :: 2.89;bfe :: 11;Crest :: 11.15;lat :: 43.6514233617457;elevation :: -4.829;Tp :: 8.30;y :: 4833853.52209742;SWL_100 :: 9.125;    </description>
+    <styleUrl>#Tstyle</styleUrl>
+    <Point>
+    <coordinates>
+      -70.1962129132939,43.6514233617457,-4.829
+    </coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>AE 11</name>
+    <description>
+SWL_100 :: 9.125;y :: 4833853.81133578;Tp :: 8.30;Crest :: 11.15;elevation :: -4.792;lat :: 43.6514259779724;bfe :: 11;Hc :: 2.89;lon :: -70.1962117729482;station :: 30.4800609632187;type :: OF;x :: 403534.743675971;zone :: AE;    </description>
+    <styleUrl>#Tstyle</styleUrl>
+    <Point>
+    <coordinates>
+      -70.1962117729482,43.6514259779724,-4.792
+    </coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>AE 11</name>
+    <description>
+type :: OF;station :: 30.7848615728509;lon :: -70.1962106326025;zone :: AE;x :: 403534.839824731;lat :: 43.651428594199;Crest :: 11.15;elevation :: -4.756;y :: 4833854.10057414;Tp :: 8.30;SWL_100 :: 9.126;bfe :: 11;Hc :: 2.89;    </description>
+    <styleUrl>#Tstyle</styleUrl>
+    <Point>
+    <coordinates>
+      -70.1962106326025,43.651428594199,-4.756
+    </coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>AE 11</name>
+    <description>
+zone :: AE;x :: 403534.935973491;type :: OF;lon :: -70.1962094922567;station :: 31.0896621824831;Hc :: 2.90;bfe :: 11;Crest :: 11.15;lat :: 43.6514312104256;elevation :: -4.719;SWL_100 :: 9.126;Tp :: 8.30;y :: 4833854.3898125;    </description>
+    <styleUrl>#Tstyle</styleUrl>
+    <Point>
+    <coordinates>
+      -70.1962094922567,43.6514312104256,-4.719
+    </coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>AE 11</name>
+    <description>
+x :: 403535.03212225;zone :: AE;station :: 31.3944627921153;lon :: -70.1962083519108;type :: OF;bfe :: 11;Hc :: 2.90;y :: 4833854.67905086;Tp :: 8.30;SWL_100 :: 9.126;Crest :: 11.16;lat :: 43.6514338266523;elevation :: -4.682;    </description>
+    <styleUrl>#Tstyle</styleUrl>
+    <Point>
+    <coordinates>
+      -70.1962083519108,43.6514338266523,-4.682
+    </coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>AE 11</name>
+    <description>
+bfe :: 11;Hc :: 2.90;y :: 4833854.96828921;Tp :: 8.30;SWL_100 :: 9.127;Crest :: 11.16;lat :: 43.6514364428789;elevation :: -4.645;x :: 403535.12827101;zone :: AE;station :: 31.6992634017474;lon :: -70.1962072115648;type :: OF;    </description>
+    <styleUrl>#Tstyle</styleUrl>
+    <Point>
+    <coordinates>
+      -70.1962072115648,43.6514364428789,-4.645
+    </coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>AE 11</name>
+    <description>
+station :: 32.0040640113796;lon :: -70.1962060712187;type :: OF;x :: 403535.22441977;zone :: AE;y :: 4833855.25752757;Tp :: 8.30;SWL_100 :: 9.127;lat :: 43.6514390591055;Crest :: 11.16;elevation :: -4.608;bfe :: 11;Hc :: 2.91;    </description>
+    <styleUrl>#Tstyle</styleUrl>
+    <Point>
+    <coordinates>
+      -70.1962060712187,43.6514390591055,-4.608
+    </coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>AE 11</name>
+    <description>
+Hc :: 2.91;bfe :: 11;elevation :: -4.571;lat :: 43.651441675332;Crest :: 11.16;SWL_100 :: 9.128;Tp :: 8.30;y :: 4833855.54676593;zone :: AE;x :: 403535.32056853;type :: OF;lon :: -70.1962049308725;station :: 32.3088646210118;    </description>
+    <styleUrl>#Tstyle</styleUrl>
+    <Point>
+    <coordinates>
+      -70.1962049308725,43.651441675332,-4.571
+    </coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>AE 11</name>
+    <description>
+bfe :: 11;Hc :: 2.91;SWL_100 :: 9.128;y :: 4833855.83600429;Tp :: 8.30;elevation :: -4.535;Crest :: 11.17;lat :: 43.6514442915586;x :: 403535.416717289;zone :: AE;lon :: -70.1962037905262;station :: 32.613665230644;type :: OF;    </description>
+    <styleUrl>#Tstyle</styleUrl>
+    <Point>
+    <coordinates>
+      -70.1962037905262,43.6514442915586,-4.535
+    </coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>AE 11</name>
+    <description>
+Tp :: 8.30;y :: 4833856.12524264;SWL_100 :: 9.128;elevation :: -4.467;Crest :: 11.17;lat :: 43.6514469077852;Hc :: 2.92;bfe :: 11;station :: 32.9184658402762;lon :: -70.1962026501798;type :: OF;x :: 403535.512866049;zone :: AE;    </description>
+    <styleUrl>#Tstyle</styleUrl>
+    <Point>
+    <coordinates>
+      -70.1962026501798,43.6514469077852,-4.467
+    </coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>AE 11</name>
+    <description>
+y :: 4833856.414481;Tp :: 8.30;SWL_100 :: 9.128;Crest :: 11.18;elevation :: -4.270;lat :: 43.6514495240117;bfe :: 11;Hc :: 2.93;station :: 33.2232664499084;lon :: -70.1962015098333;type :: OF;x :: 403535.609014809;zone :: AE;    </description>
+    <styleUrl>#Tstyle</styleUrl>
+    <Point>
+    <coordinates>
+      -70.1962015098333,43.6514495240117,-4.270
+    </coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>AE 11</name>
+    <description>
+station :: 33.5280670595406;lon :: -70.1962003694867;type :: OF;x :: 403535.705163568;zone :: AE;y :: 4833856.70371936;Tp :: 8.30;SWL_100 :: 9.128;Crest :: 11.19;lat :: 43.6514521402383;elevation :: -4.072;bfe :: 11;Hc :: 2.94;    </description>
+    <styleUrl>#Tstyle</styleUrl>
+    <Point>
+    <coordinates>
+      -70.1962003694867,43.6514521402383,-4.072
+    </coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>AE 11</name>
+    <description>
+bfe :: 11;Hc :: 2.96;lat :: 43.6514547564648;elevation :: -3.874;Crest :: 11.20;SWL_100 :: 9.128;y :: 4833856.99295772;Tp :: 8.30;zone :: AE;x :: 403535.801312328;type :: OF;lon :: -70.1961992291401;station :: 33.8328676691728;    </description>
+    <styleUrl>#Tstyle</styleUrl>
+    <Point>
+    <coordinates>
+      -70.1961992291401,43.6514547564648,-3.874
+    </coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>AE 11</name>
+    <description>
+Crest :: 11.21;lat :: 43.6514573726913;elevation :: -3.677;y :: 4833857.28219608;Tp :: 8.30;SWL_100 :: 9.128;bfe :: 11;Hc :: 2.97;type :: OF;station :: 34.1376682788049;lon :: -70.1961980887933;zone :: AE;x :: 403535.897461088;    </description>
+    <styleUrl>#Tstyle</styleUrl>
+    <Point>
+    <coordinates>
+      -70.1961980887933,43.6514573726913,-3.677
+    </coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>AE 11</name>
+    <description>
+zone :: AE;x :: 403535.993609848;type :: OF;station :: 34.4424688884371;lon :: -70.1961969484464;Hc :: 2.99;bfe :: 11;Crest :: 11.22;lat :: 43.6514599889178;elevation :: -3.478;Tp :: 8.30;y :: 4833857.57143443;SWL_100 :: 9.128;    </description>
+    <styleUrl>#Tstyle</styleUrl>
+    <Point>
+    <coordinates>
+      -70.1961969484464,43.6514599889178,-3.478
+    </coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>VE 11</name>
+    <description>
+x :: 403536.089758607;zone :: VE;lon :: -70.1961958080994;station :: 34.7472694980693;type :: OF;bfe :: 11;Hc :: 3.00;SWL_100 :: 9.128;y :: 4833857.86067279;Tp :: 8.30;Crest :: 11.23;elevation :: -3.281;lat :: 43.6514626051443;    </description>
+    <styleUrl>#Tstyle</styleUrl>
+    <Point>
+    <coordinates>
+      -70.1961958080994,43.6514626051443,-3.281
+    </coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>VE 11</name>
+    <description>
+bfe :: 11;Hc :: 3.02;SWL_100 :: 9.128;y :: 4833858.14991115;Tp :: 8.30;elevation :: -3.083;Crest :: 11.24;lat :: 43.6514652213708;x :: 403536.185907367;zone :: VE;lon :: -70.1961946677524;station :: 35.0520701077015;type :: OF;    </description>
+    <styleUrl>#Tstyle</styleUrl>
+    <Point>
+    <coordinates>
+      -70.1961946677524,43.6514652213708,-3.083
+    </coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>VE 11</name>
+    <description>
+Tp :: 8.30;y :: 4833858.43914951;SWL_100 :: 9.128;Crest :: 11.25;elevation :: -2.885;lat :: 43.6514678375973;Hc :: 3.04;bfe :: 11;station :: 35.3568707173337;lon :: -70.1961935274052;type :: OF;x :: 403536.282056127;zone :: VE;    </description>
+    <styleUrl>#Tstyle</styleUrl>
+    <Point>
+    <coordinates>
+      -70.1961935274052,43.6514678375973,-2.885
+    </coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>VE 11</name>
+    <description>
+station :: 35.6616713269659;lon :: -70.1961923870579;type :: OF;x :: 403536.378204886;zone :: VE;y :: 4833858.72838787;Tp :: 8.30;SWL_100 :: 9.128;Crest :: 11.26;lat :: 43.6514704538237;elevation :: -2.688;bfe :: 11;Hc :: 3.05;    </description>
+    <styleUrl>#Tstyle</styleUrl>
+    <Point>
+    <coordinates>
+      -70.1961923870579,43.6514704538237,-2.688
+    </coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>VE 11</name>
+    <description>
+bfe :: 11;Hc :: 3.07;SWL_100 :: 9.128;y :: 4833859.01762622;Tp :: 8.30;Crest :: 11.28;lat :: 43.6514730700501;elevation :: -2.490;x :: 403536.474353646;zone :: VE;lon :: -70.1961912467106;station :: 35.9664719365981;type :: OF;    </description>
+    <styleUrl>#Tstyle</styleUrl>
+    <Point>
+    <coordinates>
+      -70.1961912467106,43.6514730700501,-2.490
+    </coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>VE 11</name>
+    <description>
+elevation :: -2.293;Crest :: 11.29;lat :: 43.6514756862766;SWL_100 :: 9.128;y :: 4833859.30686458;Tp :: 8.30;bfe :: 11;Hc :: 3.09;type :: OF;lon :: -70.1961901063631;station :: 36.2712725462303;zone :: VE;x :: 403536.570502406;    </description>
+    <styleUrl>#Tstyle</styleUrl>
+    <Point>
+    <coordinates>
+      -70.1961901063631,43.6514756862766,-2.293
+    </coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>VE 11</name>
+    <description>
+SWL_100 :: 9.128;y :: 4833859.59610294;Tp :: 8.30;Crest :: 11.30;lat :: 43.651478302503;elevation :: -2.095;bfe :: 11;Hc :: 3.11;lon :: -70.1961889660156;station :: 36.5760731558624;type :: OF;x :: 403536.666651166;zone :: VE;    </description>
+    <styleUrl>#Tstyle</styleUrl>
+    <Point>
+    <coordinates>
+      -70.1961889660156,43.651478302503,-2.095
+    </coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>VE 11</name>
+    <description>
+zone :: VE;x :: 403537.531990003;type :: OF;lon :: -70.1961787028832;station :: 39.3192786425521;Hc :: 3.14;bfe :: 11;lat :: 43.6515018485403;elevation :: -1.742;Crest :: 11.33;SWL_100 :: 9.128;Tp :: 8.30;y :: 4833862.19924816;    </description>
+    <styleUrl>#Tstyle</styleUrl>
+    <Point>
+    <coordinates>
+      -70.1961787028832,43.6515018485403,-1.742
+    </coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>VE 11</name>
+    <description>
+bfe :: 11;Hc :: 3.21;lat :: 43.6515424000468;Crest :: 11.37;elevation :: -1.181;y :: 4833866.68244271;Tp :: 8.30;SWL_100 :: 9.128;zone :: VE;x :: 403539.022295779;type :: OF;station :: 44.043688091851;lon :: -70.1961610274703;    </description>
+    <styleUrl>#Tstyle</styleUrl>
+    <Point>
+    <coordinates>
+      -70.1961610274703,43.6515424000468,-1.181
+    </coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>VE 11</name>
+    <description>
+x :: 403540.224155275;zone :: VE;lon :: -70.1961467730881;station :: 47.8536957122534;type :: IF;bfe :: 11;Hc :: 3.38;SWL_100 :: 9.128;y :: 4833870.29792218;Tp :: 8.30;Crest :: 11.49;lat :: 43.6515751028726;elevation :: 0.220;    </description>
+    <styleUrl>#Tstyle</styleUrl>
+    <Point>
+    <coordinates>
+      -70.1961467730881,43.6515751028726,0.220
+    </coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>VE 12</name>
+    <description>
+Hc :: 3.63;bfe :: 12;Tp :: 8.30;y :: 4833874.78111672;SWL_100 :: 9.128;lat :: 43.6516156543742;elevation :: 1.732;Crest :: 11.67;x :: 403541.714461051;zone :: VE;station :: 52.5781051615523;lon :: -70.1961290976331;type :: IF;    </description>
+    <styleUrl>#Tstyle</styleUrl>
+    <Point>
+    <coordinates>
+      -70.1961290976331,43.6516156543742,1.732
+    </coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>VE 12</name>
+    <description>
+type :: IF;station :: 57.6073152204833;lon :: -70.1961102818006;zone :: VE;x :: 403543.300915586;elevation :: 2.910;lat :: 43.6516588220986;Crest :: 11.70;y :: 4833879.55354963;Tp :: 8.30;SWL_100 :: 9.128;bfe :: 12;Hc :: 3.68;    </description>
+    <styleUrl>#Tstyle</styleUrl>
+    <Point>
+    <coordinates>
+      -70.1961102818006,43.6516588220986,2.910
+    </coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>AE 10</name>
+    <description>
+bfe :: 10;Hc :: 1.38;SWL_100 :: 9.128;y :: 4833884.32598253;Tp :: 8.30;Crest :: 10.09;lat :: 43.65170198982;elevation :: 7.343;x :: 403544.887370121;zone :: AE;lon :: -70.1960914659418;station :: 62.6365252794144;type :: IF;    </description>
+    <styleUrl>#Tstyle</styleUrl>
+    <Point>
+    <coordinates>
+      -70.1960914659418,43.65170198982,7.343
+    </coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>AE 10</name>
+    <description>
+type :: IF;station :: 64.0081280227593;lon :: -70.1960863343394;zone :: AE;x :: 403545.32003954;elevation :: 8.317;Crest :: 9.71;lat :: 43.6517137628344;y :: 4833885.62755514;Tp :: 8.30;SWL_100 :: 9.222;bfe :: 10;Hc :: 0.70;    </description>
+    <styleUrl>#Tstyle</styleUrl>
+    <Point>
+    <coordinates>
+      -70.1960863343394,43.6517137628344,8.317
+    </coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>AE 10</name>
+    <description>
+elevation :: 9.033;Crest :: 9.63;lat :: 43.6517223963781;y :: 4833886.58204172;Tp :: 8.30;SWL_100 :: 9.420;bfe :: 10;Hc :: 0.30;type :: IF;station :: 65.0139700345455;lon :: -70.1960825711631;zone :: AE;x :: 403545.637330447;    </description>
+    <styleUrl>#Tstyle</styleUrl>
+    <Point>
+    <coordinates>
+      -70.1960825711631,43.6517223963781,9.033
+    </coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>AE 9</name>
+    <description>
+Crest :: 9.43;lat :: 43.6517268439612;elevation :: 9.420;y :: 4833887.07374693;Tp :: 8.30;SWL_100 :: 9.420;bfe :: 9;Hc :: 0.01;type :: IF;station :: 65.5321310709202;lon :: -70.1960806325566;zone :: AE;x :: 403545.800783338;    </description>
+    <styleUrl>#Tstyle</styleUrl>
+    <Point>
+    <coordinates>
+      -70.1960806325566,43.6517268439612,9.420
+    </coordinates>
+    </Point>
+  </Placemark>
+</Folder>
+</Document>
+</kml>

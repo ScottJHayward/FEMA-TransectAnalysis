@@ -9,21 +9,21 @@ PART 1: USER INPUT
 
 SWAN 1-D / WHAFIS input
 _______________________
-station:    -530.5 ft
-LON:        -70.4353 deg E
-LAT:        43.3704 deg N
-Bottom ELEV:       -7.7985 ft-NAVD88
-TWL:        9.3887 ft-NAVD88
-HS:         2.629 ft
-TP:         6.421 sec
+station:    -73.5 ft
+LON:        -70.4357 deg E
+LAT:        43.3717 deg N
+Bottom ELEV:       -1.3558 ft-NAVD88
+TWL:        9.4014 ft-NAVD88
+HS:         2.0382 ft
+TP:         7.945 sec
 Wave Direction bin: 90 deg CCW from East (90 deg sector)
 Transect Direction:   107.7246 deg CCW from East
 
 
 TAW/RUNUP input
 _______________
-toe sta:     -27.5 ft
-toe elev:    -0.82979 ft-NAVD88
+toe sta:     40 ft
+toe elev:    1.0597 ft-NAVD88
 top sta:     194 ft
 top elev:    10.5741 ft-NAVD88
 *Wave and water level conditions at toe to be calculated in SWAN 1-D*

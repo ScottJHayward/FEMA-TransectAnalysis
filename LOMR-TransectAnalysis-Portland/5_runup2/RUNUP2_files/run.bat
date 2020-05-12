@@ -1,0 +1,4 @@
+RUNUP2 CM-96-1.in CM-96-1.out
+RUNUP2 CM-57-1.in CM-57-1.out
+RUNUP2 CM-54.in CM-54.out
+RUNUP2 CM-53-1.in CM-53-1.out

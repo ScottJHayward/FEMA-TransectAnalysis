@@ -1,0 +1,14 @@
+ WAVE HEIGHT COMPUTATIONS FOR FLOOD INSURANCE STUDIES (WHAFIS VERSION 4.0G, 08_2007)
+ Executed on: Mon May 11 15:31:26 2020
+ Input file:  C:\FEMA-TransectAnalysis\LOMR-TransectAnalysis-Biddeford\3_whafis\whafis4\YK-125.dat                                            
+ Output file: C:\FEMA-TransectAnalysis\LOMR-TransectAnalysis-Biddeford\3_whafis\whafis4\YK-125.out                                            
+                                                              header                                                                
+                                                     THIS IS A 100-YEAR CASE
+                                       THE FOLLOWING NON-DEFAULT WIND SPEEDS ARE BEING USED
+                                            WINDIF  56.14  WINDOF  56.14  WINDVH  60.00
+                                                             PART1 INPUT
+          IE      0.000      8.980      1.000      1.000      8.980      8.851     10.305     56.140      0.000      0.000
+          IF  -5135.000      8.980      0.000      8.980      0.000      0.000      0.000      0.000      0.000      0.000
+      AVERAGE DEPTH LESS THAN OR EQUAL TO ZERO. JOB DUMPED.
+  TOF= IF  STATION= -5135.00
+-1.000000e+00

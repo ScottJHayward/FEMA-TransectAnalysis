@@ -14,13 +14,13 @@ COORDINATES CART
 !  mxc = number of mesh cells (one less than number of grid points)
 !CGRID REGular [xpc]  [ypc]  [alpc]  [xlenc]   [ylenc]  [mxc]  [myc] & 
 !      [ CIRcle|SECtor[dir1] [dir2] ] [mdc] [flow] [fhigh] [msc]
- CGRID REGULAR   0      0       0      214       0.   214     0    &
+ CGRID REGULAR   0      0       0      74       0.   74     0    &
         CIRCLE                          36    0.03    0.8     30
 ! -- READgrid ---- not used in 1-D mode --------------------------------------
 ! -- INPgrid commands  ----------------------------------------------------------
 !INPgrid BOTtom REGular [xpinp] [ypinp] [alpinp] [mxinp] [myinp] [dxinp] [dyinp] 
 !                                          
- INPGRID BOTTOM REGULAR    0       0        0      214   0      1       1   
+ INPGRID BOTTOM REGULAR    0       0        0      74   0      1       1   
 !READinp BOTtom [fac]  'fname1'  [idla]  [nhedf]  [FREe|FORmat[form]|UNFormatted]
  READ    BOTTOM   -1. '../gridfiles/YK-99-1zmeters_xmeters.grd'    1      0       FREE
 !--------------------------------------------------------------------------
@@ -30,7 +30,7 @@ WIND      25.1  0
 BOUND SHAPE JONSWAP 3.3  PEAK DSPR POWER
 ! -- BOUndspec 
 ! BOU SIDE W CCW CON FILE 'swanspec.txt' 1
-BOUN SIDE W CCW CONSTANT PAR   0.80131     6.421     0  2
+BOUN SIDE W CCW CONSTANT PAR   0.62125     7.945     0  2
 !-- BOUndnest1  - optional for boundary from parent run
 !-- BOUndnest2
 !-- BOUndnest3
@@ -72,7 +72,7 @@ BOUN SIDE W CCW CONSTANT PAR   0.80131     6.421     0  2
  OUTPUT OPTIONS '%' TABLE 16 
  $BLOCK 9 1000 SPEC 8
 !CURve 'sname' [xp1] [yp1] <[int]   [xp]   [yp] > 
- CURVE 'curve' 0     0      214  214    0
+ CURVE 'curve' 0     0      74  74    0
 !TABLe 'sname' < HEADer|NOHEADer|INDexed > 'fname' <output parameters> (output time)
  Table 'curve'   HEADER 'YK-99-1.dat' XP YP HSIGN TPS RTP TMM10 DIR &
  DSPR DEPTH SETUP

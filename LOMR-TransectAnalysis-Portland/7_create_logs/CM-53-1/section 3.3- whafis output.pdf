@@ -1,0 +1,1238 @@
+%PDF-1.1
+1 0 obj
+<<
+/CreationDate (D:20200416151245)
+/Producer (text2pdf v1.1 (\251 Phil Smith, 1996))
+/Title (../3_whafis/logfiles/CM-53-1_short.out)
+>>
+endobj
+2 0 obj
+<<
+/Type /Catalog
+/Pages 3 0 R
+>>
+endobj
+4 0 obj
+<<
+/Type /Font
+/Subtype /Type1
+/Name /F1
+/BaseFont /Courier
+>>
+endobj
+5 0 obj
+<<
+  /Font << /F1 4 0 R >>
+  /ProcSet [ /PDF /Text ]
+>>
+endobj
+6 0 obj
+<<
+/Type /Page
+/Parent 3 0 R
+/Resources 5 0 R
+/Contents 7 0 R
+>>
+endobj
+7 0 obj
+<<
+/Length 8 0 R
+>>
+stream
+BT
+/F1 7 Tf
+1 0 0 1 50 752 Tm
+7 TL
+( WAVE HEIGHT COMPUTATIONS FOR FLOOD INSURANCE STUDIES \(WHAFIS VERSION 4.0G, 08_2007\))'
+( Executed on: Thu Apr 16 13:27:11 2020)'
+( Input file:  C:\\FEMA-TransectAnalysis\\LOMR-TransectAnalysis-Portland\\3_whafis\\whafis4\\CM-53-1.dat                                            )'
+( Output file: C:\\FEMA-TransectAnalysis\\LOMR-TransectAnalysis-Portland\\3_whafis\\whafis4\\CM-53-1.out                                            )'
+(                                                              header                                                                )'
+(                                                     THIS IS A 100-YEAR CASE)'
+(                                       THE FOLLOWING NON-DEFAULT WIND SPEEDS ARE BEING USED)'
+(                                            WINDIF  56.14  WINDOF  56.14  WINDVH  60.00)'
+(                                                             PART1 INPUT)'
+(          IE      0.000     -7.446      1.000      1.000      9.073      2.690      8.300     56.140      0.023      0.000)'
+(          OF      1.000     -7.422      0.000      9.073      0.000      0.000      0.000      0.000      0.023      0.000)'
+(          OF      2.000     -7.399      0.000      9.074      0.000      0.000      0.000      0.000      0.023      0.000)'
+(          OF      3.000     -7.376      0.000      9.074      0.000      0.000      0.000      0.000      0.023      0.000)'
+(          OF      4.000     -7.353      0.000      9.075      0.000      0.000      0.000      0.000      0.023      0.000)'
+(          OF      5.000     -7.330      0.000      9.076      0.000      0.000      0.000      0.000      0.023      0.000)'
+(          OF      6.000     -7.306      0.000      9.076      0.000      0.000      0.000      0.000      0.023      0.000)'
+(          OF      7.000     -7.283      0.000      9.077      0.000      0.000      0.000      0.000      0.023      0.000)'
+(          OF      8.000     -7.260      0.000      9.077      0.000      0.000      0.000      0.000      0.023      0.000)'
+(          OF      9.000     -7.237      0.000      9.078      0.000      0.000      0.000      0.000      0.023      0.000)'
+(          OF     10.000     -7.213      0.000      9.078      0.000      0.000      0.000      0.000      0.023      0.000)'
+(          OF     11.000     -7.190      0.000      9.079      0.000      0.000      0.000      0.000      0.023      0.000)'
+(          OF     12.000     -7.167      0.000      9.080      0.000      0.000      0.000      0.000      0.023      0.000)'
+(          OF     13.000     -7.144      0.000      9.080      0.000      0.000      0.000      0.000      0.023      0.000)'
+(          OF     14.000     -7.121      0.000      9.081      0.000      0.000      0.000      0.000      0.023      0.000)'
+(          OF     15.000     -7.097      0.000      9.081      0.000      0.000      0.000      0.000      0.023      0.000)'
+(          OF     16.000     -7.074      0.000      9.082      0.000      0.000      0.000      0.000      0.023      0.000)'
+(          OF     17.000     -7.051      0.000      9.082      0.000      0.000      0.000      0.000      0.023      0.000)'
+(          OF     18.000     -7.028      0.000      9.083      0.000      0.000      0.000      0.000      0.023      0.000)'
+(          OF     19.000     -7.004      0.000      9.084      0.000      0.000      0.000      0.000      0.023      0.000)'
+(          OF     20.000     -6.981      0.000      9.084      0.000      0.000      0.000      0.000      0.023      0.000)'
+(          OF     21.000     -6.958      0.000      9.085      0.000      0.000      0.000      0.000      0.023      0.000)'
+(          OF     22.000     -6.935      0.000      9.085      0.000      0.000      0.000      0.000      0.023      0.000)'
+(          OF     23.000     -6.911      0.000      9.086      0.000      0.000      0.000      0.000      0.023      0.000)'
+(          OF     24.000     -6.888      0.000      9.086      0.000      0.000      0.000      0.000      0.023      0.000)'
+(          OF     25.000     -6.865      0.000      9.087      0.000      0.000      0.000      0.000      0.023      0.000)'
+(          OF     26.000     -6.842      0.000      9.088      0.000      0.000      0.000      0.000      0.023      0.000)'
+(          OF     27.000     -6.819      0.000      9.088      0.000      0.000      0.000      0.000      0.023      0.000)'
+(          OF     28.000     -6.795      0.000      9.089      0.000      0.000      0.000      0.000      0.023      0.000)'
+(          OF     29.000     -6.772      0.000      9.089      0.000      0.000      0.000      0.000      0.023      0.000)'
+(          OF     30.000     -6.749      0.000      9.090      0.000      0.000      0.000      0.000      0.023      0.000)'
+(          OF     31.000     -6.726      0.000      9.090      0.000      0.000      0.000      0.000      0.023      0.000)'
+(          OF     32.000     -6.703      0.000      9.091      0.000      0.000      0.000      0.000      0.023      0.000)'
+(          OF     33.000     -6.679      0.000      9.092      0.000      0.000      0.000      0.000      0.023      0.000)'
+(          OF     34.000     -6.656      0.000      9.092      0.000      0.000      0.000      0.000      0.023      0.000)'
+(          OF     35.000     -6.633      0.000      9.093      0.000      0.000      0.000      0.000      0.023      0.000)'
+(          OF     36.000     -6.610      0.000      9.093      0.000      0.000      0.000      0.000      0.023      0.000)'
+(          OF     37.000     -6.586      0.000      9.094      0.000      0.000      0.000      0.000      0.023      0.000)'
+(          OF     38.000     -6.563      0.000      9.094      0.000      0.000      0.000      0.000      0.023      0.000)'
+(          OF     39.000     -6.540      0.000      9.095      0.000      0.000      0.000      0.000      0.023      0.000)'
+(          OF     40.000     -6.517      0.000      9.096      0.000      0.000      0.000      0.000      0.023      0.000)'
+(          OF     41.000     -6.494      0.000      9.096      0.000      0.000      0.000      0.000      0.023      0.000)'
+(          OF     42.000     -6.470      0.000      9.097      0.000      0.000      0.000      0.000      0.023      0.000)'
+(          OF     43.000     -6.447      0.000      9.097      0.000      0.000      0.000      0.000      0.023      0.000)'
+(          OF     44.000     -6.424      0.000      9.098      0.000      0.000      0.000      0.000      0.023      0.000)'
+(          OF     45.000     -6.401      0.000      9.099      0.000      0.000      0.000      0.000      0.023      0.000)'
+(          OF     46.000     -6.377      0.000      9.099      0.000      0.000      0.000      0.000      0.023      0.000)'
+(          OF     47.000     -6.354      0.000      9.100      0.000      0.000      0.000      0.000      0.023      0.000)'
+(          OF     48.000     -6.331      0.000      9.100      0.000      0.000      0.000      0.000      0.023      0.000)'
+(          OF     49.000     -6.308      0.000      9.101      0.000      0.000      0.000      0.000      0.023      0.000)'
+(          OF     50.000     -6.285      0.000      9.101      0.000      0.000      0.000      0.000      0.023      0.000)'
+(          OF     51.000     -6.261      0.000      9.102      0.000      0.000      0.000      0.000      0.023      0.000)'
+(          OF     52.000     -6.238      0.000      9.102      0.000      0.000      0.000      0.000      0.023      0.000)'
+(          OF     53.000     -6.215      0.000      9.103      0.000      0.000      0.000      0.000      0.023      0.000)'
+(          OF     54.000     -6.192      0.000      9.104      0.000      0.000      0.000      0.000      0.023      0.000)'
+(          OF     55.000     -6.168      0.000      9.104      0.000      0.000      0.000      0.000      0.023      0.000)'
+(          OF     56.000     -6.145      0.000      9.105      0.000      0.000      0.000      0.000      0.023      0.000)'
+(          OF     57.000     -6.122      0.000      9.105      0.000      0.000      0.000      0.000      0.023      0.000)'
+(          OF     58.000     -6.099      0.000      9.106      0.000      0.000      0.000      0.000      0.023      0.000)'
+(          OF     59.000     -6.076      0.000      9.106      0.000      0.000      0.000      0.000      0.023      0.000)'
+(          OF     60.000     -6.052      0.000      9.107      0.000      0.000      0.000      0.000      0.023      0.000)'
+(          OF     61.000     -6.029      0.000      9.108      0.000      0.000      0.000      0.000      0.023      0.000)'
+(          OF     62.000     -6.006      0.000      9.108      0.000      0.000      0.000      0.000      0.023      0.000)'
+(          OF     63.000     -5.983      0.000      9.109      0.000      0.000      0.000      0.000      0.023      0.000)'
+(          OF     64.000     -5.959      0.000      9.109      0.000      0.000      0.000      0.000      0.023      0.000)'
+(          OF     65.000     -5.936      0.000      9.110      0.000      0.000      0.000      0.000      0.023      0.000)'
+(          OF     66.000     -5.913      0.000      9.111      0.000      0.000      0.000      0.000      0.023      0.000)'
+(          OF     67.000     -5.890      0.000      9.111      0.000      0.000      0.000      0.000      0.023      0.000)'
+(          OF     68.000     -5.867      0.000      9.112      0.000      0.000      0.000      0.000      0.023      0.000)'
+(          OF     69.000     -5.843      0.000      9.112      0.000      0.000      0.000      0.000      0.023      0.000)'
+(          OF     70.000     -5.820      0.000      9.113      0.000      0.000      0.000      0.000      0.023      0.000)'
+(          OF     71.000     -5.797      0.000      9.113      0.000      0.000      0.000      0.000      0.023      0.000)'
+(          OF     72.000     -5.774      0.000      9.114      0.000      0.000      0.000      0.000      0.023      0.000)'
+(          OF     73.000     -5.751      0.000      9.115      0.000      0.000      0.000      0.000      0.023      0.000)'
+(          OF     74.000     -5.727      0.000      9.115      0.000      0.000      0.000      0.000      0.023      0.000)'
+(          OF     75.000     -5.704      0.000      9.116      0.000      0.000      0.000      0.000      0.025      0.000)'
+(          OF     76.000     -5.677      0.000      9.116      0.000      0.000      0.000      0.000      0.032      0.000)'
+(          OF     77.000     -5.640      0.000      9.117      0.000      0.000      0.000      0.000      0.037      0.000)'
+(          OF     78.000     -5.603      0.000      9.117      0.000      0.000      0.000      0.000      0.037      0.000)'
+(          OF     79.000     -5.566      0.000      9.117      0.000      0.000      0.000      0.000      0.037      0.000)'
+(          OF     80.000     -5.529      0.000      9.118      0.000      0.000      0.000      0.000      0.037      0.000)'
+(          OF     81.000     -5.492      0.000      9.118      0.000      0.000      0.000      0.000      0.037      0.000)'
+(          OF     82.000     -5.456      0.000      9.118      0.000      0.000      0.000      0.000      0.037      0.000)'
+(          OF     83.000     -5.419      0.000      9.119      0.000      0.000      0.000      0.000      0.037      0.000)'
+(          OF     84.000     -5.382      0.000      9.119      0.000      0.000      0.000      0.000      0.037      0.000)'
+(          OF     85.000     -5.345      0.000      9.120      0.000      0.000      0.000      0.000      0.037      0.000)'
+(          OF     86.000     -5.308      0.000      9.120      0.000      0.000      0.000      0.000      0.037      0.000)'
+(          OF     87.000     -5.272      0.000      9.120      0.000      0.000      0.000      0.000      0.037      0.000)'
+(          OF     88.000     -5.235      0.000      9.121      0.000      0.000      0.000      0.000      0.037      0.000)'
+(          OF     89.000     -5.198      0.000      9.121      0.000      0.000      0.000      0.000      0.037      0.000)'
+(          OF     90.000     -5.161      0.000      9.122      0.000      0.000      0.000      0.000      0.037      0.000)'
+(          OF     91.000     -5.124      0.000      9.122      0.000      0.000      0.000      0.000      0.037      0.000)'
+(          OF     92.000     -5.087      0.000      9.122      0.000      0.000      0.000      0.000      0.037      0.000)'
+ET
+endstream
+endobj
+8 0 obj
+12775
+endobj
+9 0 obj
+<<
+/Type /Page
+/Parent 3 0 R
+/Resources 5 0 R
+/Contents 10 0 R
+>>
+endobj
+10 0 obj
+<<
+/Length 11 0 R
+>>
+stream
+BT
+/F1 7 Tf
+1 0 0 1 50 752 Tm
+7 TL
+(          OF     93.000     -5.050      0.000      9.123      0.000      0.000      0.000      0.000      0.037      0.000)'
+(          OF     94.000     -5.014      0.000      9.123      0.000      0.000      0.000      0.000      0.037      0.000)'
+(          OF     95.000     -4.977      0.000      9.123      0.000      0.000      0.000      0.000      0.037      0.000)'
+(          OF     96.000     -4.940      0.000      9.124      0.000      0.000      0.000      0.000      0.037      0.000)'
+(          OF     97.000     -4.903      0.000      9.124      0.000      0.000      0.000      0.000      0.037      0.000)'
+(          OF     98.000     -4.866      0.000      9.125      0.000      0.000      0.000      0.000      0.037      0.000)'
+(          OF     99.000     -4.829      0.000      9.125      0.000      0.000      0.000      0.000      0.037      0.000)'
+(          OF    100.000     -4.792      0.000      9.125      0.000      0.000      0.000      0.000      0.037      0.000)'
+(          OF    101.000     -4.756      0.000      9.126      0.000      0.000      0.000      0.000      0.037      0.000)'
+(          OF    102.000     -4.719      0.000      9.126      0.000      0.000      0.000      0.000      0.037      0.000)'
+(          OF    103.000     -4.682      0.000      9.126      0.000      0.000      0.000      0.000      0.037      0.000)'
+(          OF    104.000     -4.645      0.000      9.127      0.000      0.000      0.000      0.000      0.037      0.000)'
+(          OF    105.000     -4.608      0.000      9.127      0.000      0.000      0.000      0.000      0.037      0.000)'
+(          OF    106.000     -4.571      0.000      9.128      0.000      0.000      0.000      0.000      0.037      0.000)'
+(          OF    107.000     -4.535      0.000      9.128      0.000      0.000      0.000      0.000      0.052      0.000)'
+(          OF    108.000     -4.467      0.000      9.128      0.000      0.000      0.000      0.000      0.132      0.000)'
+(          OF    109.000     -4.270      0.000      9.128      0.000      0.000      0.000      0.000      0.198      0.000)'
+(          OF    110.000     -4.072      0.000      9.128      0.000      0.000      0.000      0.000      0.198      0.000)'
+(          OF    111.000     -3.874      0.000      9.128      0.000      0.000      0.000      0.000      0.198      0.000)'
+(          OF    112.000     -3.677      0.000      9.128      0.000      0.000      0.000      0.000      0.198      0.000)'
+(          OF    113.000     -3.478      0.000      9.128      0.000      0.000      0.000      0.000      0.198      0.000)'
+(          OF    114.000     -3.281      0.000      9.128      0.000      0.000      0.000      0.000      0.198      0.000)'
+(          OF    115.000     -3.083      0.000      9.128      0.000      0.000      0.000      0.000      0.198      0.000)'
+(          OF    116.000     -2.885      0.000      9.128      0.000      0.000      0.000      0.000      0.198      0.000)'
+(          OF    117.000     -2.688      0.000      9.128      0.000      0.000      0.000      0.000      0.198      0.000)'
+(          OF    118.000     -2.490      0.000      9.128      0.000      0.000      0.000      0.000      0.198      0.000)'
+(          OF    119.000     -2.293      0.000      9.128      0.000      0.000      0.000      0.000      0.198      0.000)'
+(          OF    120.000     -2.095      0.000      9.128      0.000      0.000      0.000      0.000      0.055      0.000)'
+(          OF    129.000     -1.742      0.000      9.128      0.000      0.000      0.000      0.000      0.037      0.000)'
+(          OF    144.500     -1.181      0.000      9.128      0.000      0.000      0.000      0.000      0.070      0.000)'
+(          IF    157.000      0.220      0.000      9.128      0.000      0.000      0.000      0.000      0.104      0.000)'
+(          IF    172.500      1.732      0.000      9.128      0.000      0.000      0.000      0.000      0.084      0.000)'
+(          IF    189.000      2.910      0.000      9.128      0.000      0.000      0.000      0.000      0.170      0.000)'
+(          IF    205.500      7.343      0.000      9.128      0.000      0.000      0.000      0.000      0.257      0.000)'
+(          IF    210.000      8.317      0.000      9.222      0.000      0.000      0.000      0.000      0.217      0.000)'
+(          IF    213.300      9.033      0.000      9.420      0.000      0.000      0.000      0.000      0.220      0.000)'
+(          IF    215.000      9.420      0.000      9.420      0.000      0.000      0.000      0.000      0.228      0.000)'
+(          ET      0.000      0.000      0.000      0.000      0.000      0.000      0.000      0.000      0.000      0.000)'
+(1)'
+(            END        END      FETCH SURGE ELEV SURGE ELEV    INITIAL    INITIAL                BOTTOM    AVERAGE)'
+(        STATION  ELEVATION     LENGTH    10-YEAR   100-YEAR WAVE HEIGHT  W. PERIOD                SLOPE    A-ZONES)'
+(  IE      0.000     -7.446      1.000      1.000      9.073      2.690      8.300     56.140      0.023      0.000)'
+(            END        END  NEW SURGE  NEW SURGE                                                 BOTTOM    AVERAGE)'
+(        STATION  ELEVATION    10-YEAR   100-YEAR                                                  SLOPE    A-ZONES)'
+(  OF      1.000     -7.422      0.000      9.073      0.000      0.000      0.000      0.000      0.023      0.000)'
+(            END        END  NEW SURGE  NEW SURGE                                                 BOTTOM    AVERAGE)'
+(        STATION  ELEVATION    10-YEAR   100-YEAR                                                  SLOPE    A-ZONES)'
+(  OF      2.000     -7.399      0.000      9.074      0.000      0.000      0.000      0.000      0.023      0.000)'
+(            END        END  NEW SURGE  NEW SURGE                                                 BOTTOM    AVERAGE)'
+(        STATION  ELEVATION    10-YEAR   100-YEAR                                                  SLOPE    A-ZONES)'
+(  OF      3.000     -7.376      0.000      9.074      0.000      0.000      0.000      0.000      0.023      0.000)'
+(            END        END  NEW SURGE  NEW SURGE                                                 BOTTOM    AVERAGE)'
+(        STATION  ELEVATION    10-YEAR   100-YEAR                                                  SLOPE    A-ZONES)'
+(  OF      4.000     -7.353      0.000      9.075      0.000      0.000      0.000      0.000      0.023      0.000)'
+(            END        END  NEW SURGE  NEW SURGE                                                 BOTTOM    AVERAGE)'
+(        STATION  ELEVATION    10-YEAR   100-YEAR                                                  SLOPE    A-ZONES)'
+(  OF      5.000     -7.330      0.000      9.076      0.000      0.000      0.000      0.000      0.023      0.000)'
+(            END        END  NEW SURGE  NEW SURGE                                                 BOTTOM    AVERAGE)'
+(        STATION  ELEVATION    10-YEAR   100-YEAR                                                  SLOPE    A-ZONES)'
+(  OF      6.000     -7.306      0.000      9.076      0.000      0.000      0.000      0.000      0.023      0.000)'
+(            END        END  NEW SURGE  NEW SURGE                                                 BOTTOM    AVERAGE)'
+(        STATION  ELEVATION    10-YEAR   100-YEAR                                                  SLOPE    A-ZONES)'
+(  OF      7.000     -7.283      0.000      9.077      0.000      0.000      0.000      0.000      0.023      0.000)'
+(            END        END  NEW SURGE  NEW SURGE                                                 BOTTOM    AVERAGE)'
+(        STATION  ELEVATION    10-YEAR   100-YEAR                                                  SLOPE    A-ZONES)'
+(  OF      8.000     -7.260      0.000      9.077      0.000      0.000      0.000      0.000      0.023      0.000)'
+(            END        END  NEW SURGE  NEW SURGE                                                 BOTTOM    AVERAGE)'
+(        STATION  ELEVATION    10-YEAR   100-YEAR                                                  SLOPE    A-ZONES)'
+(  OF      9.000     -7.237      0.000      9.078      0.000      0.000      0.000      0.000      0.023      0.000)'
+(            END        END  NEW SURGE  NEW SURGE                                                 BOTTOM    AVERAGE)'
+(        STATION  ELEVATION    10-YEAR   100-YEAR                                                  SLOPE    A-ZONES)'
+(  OF     10.000     -7.213      0.000      9.078      0.000      0.000      0.000      0.000      0.023      0.000)'
+(            END        END  NEW SURGE  NEW SURGE                                                 BOTTOM    AVERAGE)'
+(        STATION  ELEVATION    10-YEAR   100-YEAR                                                  SLOPE    A-ZONES)'
+(  OF     11.000     -7.190      0.000      9.079      0.000      0.000      0.000      0.000      0.023      0.000)'
+(            END        END  NEW SURGE  NEW SURGE                                                 BOTTOM    AVERAGE)'
+(        STATION  ELEVATION    10-YEAR   100-YEAR                                                  SLOPE    A-ZONES)'
+(  OF     12.000     -7.167      0.000      9.080      0.000      0.000      0.000      0.000      0.023      0.000)'
+(            END        END  NEW SURGE  NEW SURGE                                                 BOTTOM    AVERAGE)'
+(        STATION  ELEVATION    10-YEAR   100-YEAR                                                  SLOPE    A-ZONES)'
+(  OF     13.000     -7.144      0.000      9.080      0.000      0.000      0.000      0.000      0.023      0.000)'
+(            END        END  NEW SURGE  NEW SURGE                                                 BOTTOM    AVERAGE)'
+(        STATION  ELEVATION    10-YEAR   100-YEAR                                                  SLOPE    A-ZONES)'
+(  OF     14.000     -7.121      0.000      9.081      0.000      0.000      0.000      0.000      0.023      0.000)'
+(            END        END  NEW SURGE  NEW SURGE                                                 BOTTOM    AVERAGE)'
+(        STATION  ELEVATION    10-YEAR   100-YEAR                                                  SLOPE    A-ZONES)'
+(  OF     15.000     -7.097      0.000      9.081      0.000      0.000      0.000      0.000      0.023      0.000)'
+(            END        END  NEW SURGE  NEW SURGE                                                 BOTTOM    AVERAGE)'
+(        STATION  ELEVATION    10-YEAR   100-YEAR                                                  SLOPE    A-ZONES)'
+(  OF     16.000     -7.074      0.000      9.082      0.000      0.000      0.000      0.000      0.023      0.000)'
+(            END        END  NEW SURGE  NEW SURGE                                                 BOTTOM    AVERAGE)'
+(        STATION  ELEVATION    10-YEAR   100-YEAR                                                  SLOPE    A-ZONES)'
+(  OF     17.000     -7.051      0.000      9.082      0.000      0.000      0.000      0.000      0.023      0.000)'
+(            END        END  NEW SURGE  NEW SURGE                                                 BOTTOM    AVERAGE)'
+(        STATION  ELEVATION    10-YEAR   100-YEAR                                                  SLOPE    A-ZONES)'
+(  OF     18.000     -7.028      0.000      9.083      0.000      0.000      0.000      0.000      0.023      0.000)'
+(            END        END  NEW SURGE  NEW SURGE                                                 BOTTOM    AVERAGE)'
+(        STATION  ELEVATION    10-YEAR   100-YEAR                                                  SLOPE    A-ZONES)'
+(  OF     19.000     -7.004      0.000      9.084      0.000      0.000      0.000      0.000      0.023      0.000)'
+(            END        END  NEW SURGE  NEW SURGE                                                 BOTTOM    AVERAGE)'
+(        STATION  ELEVATION    10-YEAR   100-YEAR                                                  SLOPE    A-ZONES)'
+(  OF     20.000     -6.981      0.000      9.084      0.000      0.000      0.000      0.000      0.023      0.000)'
+ET
+endstream
+endobj
+11 0 obj
+12372
+endobj
+12 0 obj
+<<
+/Type /Page
+/Parent 3 0 R
+/Resources 5 0 R
+/Contents 13 0 R
+>>
+endobj
+13 0 obj
+<<
+/Length 14 0 R
+>>
+stream
+BT
+/F1 7 Tf
+1 0 0 1 50 752 Tm
+7 TL
+(            END        END  NEW SURGE  NEW SURGE                                                 BOTTOM    AVERAGE)'
+(        STATION  ELEVATION    10-YEAR   100-YEAR                                                  SLOPE    A-ZONES)'
+(  OF     21.000     -6.958      0.000      9.085      0.000      0.000      0.000      0.000      0.023      0.000)'
+(            END        END  NEW SURGE  NEW SURGE                                                 BOTTOM    AVERAGE)'
+(        STATION  ELEVATION    10-YEAR   100-YEAR                                                  SLOPE    A-ZONES)'
+(  OF     22.000     -6.935      0.000      9.085      0.000      0.000      0.000      0.000      0.023      0.000)'
+(            END        END  NEW SURGE  NEW SURGE                                                 BOTTOM    AVERAGE)'
+(        STATION  ELEVATION    10-YEAR   100-YEAR                                                  SLOPE    A-ZONES)'
+(  OF     23.000     -6.911      0.000      9.086      0.000      0.000      0.000      0.000      0.023      0.000)'
+(            END        END  NEW SURGE  NEW SURGE                                                 BOTTOM    AVERAGE)'
+(        STATION  ELEVATION    10-YEAR   100-YEAR                                                  SLOPE    A-ZONES)'
+(  OF     24.000     -6.888      0.000      9.086      0.000      0.000      0.000      0.000      0.023      0.000)'
+(            END        END  NEW SURGE  NEW SURGE                                                 BOTTOM    AVERAGE)'
+(        STATION  ELEVATION    10-YEAR   100-YEAR                                                  SLOPE    A-ZONES)'
+(  OF     25.000     -6.865      0.000      9.087      0.000      0.000      0.000      0.000      0.023      0.000)'
+(            END        END  NEW SURGE  NEW SURGE                                                 BOTTOM    AVERAGE)'
+(        STATION  ELEVATION    10-YEAR   100-YEAR                                                  SLOPE    A-ZONES)'
+(  OF     26.000     -6.842      0.000      9.088      0.000      0.000      0.000      0.000      0.023      0.000)'
+(            END        END  NEW SURGE  NEW SURGE                                                 BOTTOM    AVERAGE)'
+(        STATION  ELEVATION    10-YEAR   100-YEAR                                                  SLOPE    A-ZONES)'
+(  OF     27.000     -6.819      0.000      9.088      0.000      0.000      0.000      0.000      0.023      0.000)'
+(            END        END  NEW SURGE  NEW SURGE                                                 BOTTOM    AVERAGE)'
+(        STATION  ELEVATION    10-YEAR   100-YEAR                                                  SLOPE    A-ZONES)'
+(  OF     28.000     -6.795      0.000      9.089      0.000      0.000      0.000      0.000      0.023      0.000)'
+(            END        END  NEW SURGE  NEW SURGE                                                 BOTTOM    AVERAGE)'
+(        STATION  ELEVATION    10-YEAR   100-YEAR                                                  SLOPE    A-ZONES)'
+(  OF     29.000     -6.772      0.000      9.089      0.000      0.000      0.000      0.000      0.023      0.000)'
+(            END        END  NEW SURGE  NEW SURGE                                                 BOTTOM    AVERAGE)'
+(        STATION  ELEVATION    10-YEAR   100-YEAR                                                  SLOPE    A-ZONES)'
+(  OF     30.000     -6.749      0.000      9.090      0.000      0.000      0.000      0.000      0.023      0.000)'
+(            END        END  NEW SURGE  NEW SURGE                                                 BOTTOM    AVERAGE)'
+(        STATION  ELEVATION    10-YEAR   100-YEAR                                                  SLOPE    A-ZONES)'
+(  OF     31.000     -6.726      0.000      9.090      0.000      0.000      0.000      0.000      0.023      0.000)'
+(            END        END  NEW SURGE  NEW SURGE                                                 BOTTOM    AVERAGE)'
+(        STATION  ELEVATION    10-YEAR   100-YEAR                                                  SLOPE    A-ZONES)'
+(  OF     32.000     -6.703      0.000      9.091      0.000      0.000      0.000      0.000      0.023      0.000)'
+(            END        END  NEW SURGE  NEW SURGE                                                 BOTTOM    AVERAGE)'
+(        STATION  ELEVATION    10-YEAR   100-YEAR                                                  SLOPE    A-ZONES)'
+(  OF     33.000     -6.679      0.000      9.092      0.000      0.000      0.000      0.000      0.023      0.000)'
+(            END        END  NEW SURGE  NEW SURGE                                                 BOTTOM    AVERAGE)'
+(        STATION  ELEVATION    10-YEAR   100-YEAR                                                  SLOPE    A-ZONES)'
+(  OF     34.000     -6.656      0.000      9.092      0.000      0.000      0.000      0.000      0.023      0.000)'
+(            END        END  NEW SURGE  NEW SURGE                                                 BOTTOM    AVERAGE)'
+(        STATION  ELEVATION    10-YEAR   100-YEAR                                                  SLOPE    A-ZONES)'
+(  OF     35.000     -6.633      0.000      9.093      0.000      0.000      0.000      0.000      0.023      0.000)'
+(            END        END  NEW SURGE  NEW SURGE                                                 BOTTOM    AVERAGE)'
+(        STATION  ELEVATION    10-YEAR   100-YEAR                                                  SLOPE    A-ZONES)'
+(  OF     36.000     -6.610      0.000      9.093      0.000      0.000      0.000      0.000      0.023      0.000)'
+(            END        END  NEW SURGE  NEW SURGE                                                 BOTTOM    AVERAGE)'
+(        STATION  ELEVATION    10-YEAR   100-YEAR                                                  SLOPE    A-ZONES)'
+(  OF     37.000     -6.586      0.000      9.094      0.000      0.000      0.000      0.000      0.023      0.000)'
+(            END        END  NEW SURGE  NEW SURGE                                                 BOTTOM    AVERAGE)'
+(        STATION  ELEVATION    10-YEAR   100-YEAR                                                  SLOPE    A-ZONES)'
+(  OF     38.000     -6.563      0.000      9.094      0.000      0.000      0.000      0.000      0.023      0.000)'
+(            END        END  NEW SURGE  NEW SURGE                                                 BOTTOM    AVERAGE)'
+(        STATION  ELEVATION    10-YEAR   100-YEAR                                                  SLOPE    A-ZONES)'
+(  OF     39.000     -6.540      0.000      9.095      0.000      0.000      0.000      0.000      0.023      0.000)'
+(            END        END  NEW SURGE  NEW SURGE                                                 BOTTOM    AVERAGE)'
+(        STATION  ELEVATION    10-YEAR   100-YEAR                                                  SLOPE    A-ZONES)'
+(  OF     40.000     -6.517      0.000      9.096      0.000      0.000      0.000      0.000      0.023      0.000)'
+(            END        END  NEW SURGE  NEW SURGE                                                 BOTTOM    AVERAGE)'
+(        STATION  ELEVATION    10-YEAR   100-YEAR                                                  SLOPE    A-ZONES)'
+(  OF     41.000     -6.494      0.000      9.096      0.000      0.000      0.000      0.000      0.023      0.000)'
+(            END        END  NEW SURGE  NEW SURGE                                                 BOTTOM    AVERAGE)'
+(        STATION  ELEVATION    10-YEAR   100-YEAR                                                  SLOPE    A-ZONES)'
+(  OF     42.000     -6.470      0.000      9.097      0.000      0.000      0.000      0.000      0.023      0.000)'
+(            END        END  NEW SURGE  NEW SURGE                                                 BOTTOM    AVERAGE)'
+(        STATION  ELEVATION    10-YEAR   100-YEAR                                                  SLOPE    A-ZONES)'
+(  OF     43.000     -6.447      0.000      9.097      0.000      0.000      0.000      0.000      0.023      0.000)'
+(            END        END  NEW SURGE  NEW SURGE                                                 BOTTOM    AVERAGE)'
+(        STATION  ELEVATION    10-YEAR   100-YEAR                                                  SLOPE    A-ZONES)'
+(  OF     44.000     -6.424      0.000      9.098      0.000      0.000      0.000      0.000      0.023      0.000)'
+(            END        END  NEW SURGE  NEW SURGE                                                 BOTTOM    AVERAGE)'
+(        STATION  ELEVATION    10-YEAR   100-YEAR                                                  SLOPE    A-ZONES)'
+(  OF     45.000     -6.401      0.000      9.099      0.000      0.000      0.000      0.000      0.023      0.000)'
+(            END        END  NEW SURGE  NEW SURGE                                                 BOTTOM    AVERAGE)'
+(        STATION  ELEVATION    10-YEAR   100-YEAR                                                  SLOPE    A-ZONES)'
+(  OF     46.000     -6.377      0.000      9.099      0.000      0.000      0.000      0.000      0.023      0.000)'
+(            END        END  NEW SURGE  NEW SURGE                                                 BOTTOM    AVERAGE)'
+(        STATION  ELEVATION    10-YEAR   100-YEAR                                                  SLOPE    A-ZONES)'
+(  OF     47.000     -6.354      0.000      9.100      0.000      0.000      0.000      0.000      0.023      0.000)'
+(            END        END  NEW SURGE  NEW SURGE                                                 BOTTOM    AVERAGE)'
+(        STATION  ELEVATION    10-YEAR   100-YEAR                                                  SLOPE    A-ZONES)'
+(  OF     48.000     -6.331      0.000      9.100      0.000      0.000      0.000      0.000      0.023      0.000)'
+(            END        END  NEW SURGE  NEW SURGE                                                 BOTTOM    AVERAGE)'
+(        STATION  ELEVATION    10-YEAR   100-YEAR                                                  SLOPE    A-ZONES)'
+(  OF     49.000     -6.308      0.000      9.101      0.000      0.000      0.000      0.000      0.023      0.000)'
+(            END        END  NEW SURGE  NEW SURGE                                                 BOTTOM    AVERAGE)'
+(        STATION  ELEVATION    10-YEAR   100-YEAR                                                  SLOPE    A-ZONES)'
+(  OF     50.000     -6.285      0.000      9.101      0.000      0.000      0.000      0.000      0.023      0.000)'
+(            END        END  NEW SURGE  NEW SURGE                                                 BOTTOM    AVERAGE)'
+(        STATION  ELEVATION    10-YEAR   100-YEAR                                                  SLOPE    A-ZONES)'
+(  OF     51.000     -6.261      0.000      9.102      0.000      0.000      0.000      0.000      0.023      0.000)'
+(            END        END  NEW SURGE  NEW SURGE                                                 BOTTOM    AVERAGE)'
+(        STATION  ELEVATION    10-YEAR   100-YEAR                                                  SLOPE    A-ZONES)'
+(  OF     52.000     -6.238      0.000      9.102      0.000      0.000      0.000      0.000      0.023      0.000)'
+(            END        END  NEW SURGE  NEW SURGE                                                 BOTTOM    AVERAGE)'
+(        STATION  ELEVATION    10-YEAR   100-YEAR                                                  SLOPE    A-ZONES)'
+(  OF     53.000     -6.215      0.000      9.103      0.000      0.000      0.000      0.000      0.023      0.000)'
+(            END        END  NEW SURGE  NEW SURGE                                                 BOTTOM    AVERAGE)'
+(        STATION  ELEVATION    10-YEAR   100-YEAR                                                  SLOPE    A-ZONES)'
+(  OF     54.000     -6.192      0.000      9.104      0.000      0.000      0.000      0.000      0.023      0.000)'
+ET
+endstream
+endobj
+14 0 obj
+12181
+endobj
+15 0 obj
+<<
+/Type /Page
+/Parent 3 0 R
+/Resources 5 0 R
+/Contents 16 0 R
+>>
+endobj
+16 0 obj
+<<
+/Length 17 0 R
+>>
+stream
+BT
+/F1 7 Tf
+1 0 0 1 50 752 Tm
+7 TL
+(            END        END  NEW SURGE  NEW SURGE                                                 BOTTOM    AVERAGE)'
+(        STATION  ELEVATION    10-YEAR   100-YEAR                                                  SLOPE    A-ZONES)'
+(  OF     55.000     -6.168      0.000      9.104      0.000      0.000      0.000      0.000      0.023      0.000)'
+(            END        END  NEW SURGE  NEW SURGE                                                 BOTTOM    AVERAGE)'
+(        STATION  ELEVATION    10-YEAR   100-YEAR                                                  SLOPE    A-ZONES)'
+(  OF     56.000     -6.145      0.000      9.105      0.000      0.000      0.000      0.000      0.023      0.000)'
+(            END        END  NEW SURGE  NEW SURGE                                                 BOTTOM    AVERAGE)'
+(        STATION  ELEVATION    10-YEAR   100-YEAR                                                  SLOPE    A-ZONES)'
+(  OF     57.000     -6.122      0.000      9.105      0.000      0.000      0.000      0.000      0.023      0.000)'
+(            END        END  NEW SURGE  NEW SURGE                                                 BOTTOM    AVERAGE)'
+(        STATION  ELEVATION    10-YEAR   100-YEAR                                                  SLOPE    A-ZONES)'
+(  OF     58.000     -6.099      0.000      9.106      0.000      0.000      0.000      0.000      0.023      0.000)'
+(            END        END  NEW SURGE  NEW SURGE                                                 BOTTOM    AVERAGE)'
+(        STATION  ELEVATION    10-YEAR   100-YEAR                                                  SLOPE    A-ZONES)'
+(  OF     59.000     -6.076      0.000      9.106      0.000      0.000      0.000      0.000      0.023      0.000)'
+(            END        END  NEW SURGE  NEW SURGE                                                 BOTTOM    AVERAGE)'
+(        STATION  ELEVATION    10-YEAR   100-YEAR                                                  SLOPE    A-ZONES)'
+(  OF     60.000     -6.052      0.000      9.107      0.000      0.000      0.000      0.000      0.023      0.000)'
+(            END        END  NEW SURGE  NEW SURGE                                                 BOTTOM    AVERAGE)'
+(        STATION  ELEVATION    10-YEAR   100-YEAR                                                  SLOPE    A-ZONES)'
+(  OF     61.000     -6.029      0.000      9.108      0.000      0.000      0.000      0.000      0.023      0.000)'
+(            END        END  NEW SURGE  NEW SURGE                                                 BOTTOM    AVERAGE)'
+(        STATION  ELEVATION    10-YEAR   100-YEAR                                                  SLOPE    A-ZONES)'
+(  OF     62.000     -6.006      0.000      9.108      0.000      0.000      0.000      0.000      0.023      0.000)'
+(            END        END  NEW SURGE  NEW SURGE                                                 BOTTOM    AVERAGE)'
+(        STATION  ELEVATION    10-YEAR   100-YEAR                                                  SLOPE    A-ZONES)'
+(  OF     63.000     -5.983      0.000      9.109      0.000      0.000      0.000      0.000      0.023      0.000)'
+(            END        END  NEW SURGE  NEW SURGE                                                 BOTTOM    AVERAGE)'
+(        STATION  ELEVATION    10-YEAR   100-YEAR                                                  SLOPE    A-ZONES)'
+(  OF     64.000     -5.959      0.000      9.109      0.000      0.000      0.000      0.000      0.023      0.000)'
+(            END        END  NEW SURGE  NEW SURGE                                                 BOTTOM    AVERAGE)'
+(        STATION  ELEVATION    10-YEAR   100-YEAR                                                  SLOPE    A-ZONES)'
+(  OF     65.000     -5.936      0.000      9.110      0.000      0.000      0.000      0.000      0.023      0.000)'
+(            END        END  NEW SURGE  NEW SURGE                                                 BOTTOM    AVERAGE)'
+(        STATION  ELEVATION    10-YEAR   100-YEAR                                                  SLOPE    A-ZONES)'
+(  OF     66.000     -5.913      0.000      9.111      0.000      0.000      0.000      0.000      0.023      0.000)'
+(            END        END  NEW SURGE  NEW SURGE                                                 BOTTOM    AVERAGE)'
+(        STATION  ELEVATION    10-YEAR   100-YEAR                                                  SLOPE    A-ZONES)'
+(  OF     67.000     -5.890      0.000      9.111      0.000      0.000      0.000      0.000      0.023      0.000)'
+(            END        END  NEW SURGE  NEW SURGE                                                 BOTTOM    AVERAGE)'
+(        STATION  ELEVATION    10-YEAR   100-YEAR                                                  SLOPE    A-ZONES)'
+(  OF     68.000     -5.867      0.000      9.112      0.000      0.000      0.000      0.000      0.023      0.000)'
+(            END        END  NEW SURGE  NEW SURGE                                                 BOTTOM    AVERAGE)'
+(        STATION  ELEVATION    10-YEAR   100-YEAR                                                  SLOPE    A-ZONES)'
+(  OF     69.000     -5.843      0.000      9.112      0.000      0.000      0.000      0.000      0.023      0.000)'
+(            END        END  NEW SURGE  NEW SURGE                                                 BOTTOM    AVERAGE)'
+(        STATION  ELEVATION    10-YEAR   100-YEAR                                                  SLOPE    A-ZONES)'
+(  OF     70.000     -5.820      0.000      9.113      0.000      0.000      0.000      0.000      0.023      0.000)'
+(            END        END  NEW SURGE  NEW SURGE                                                 BOTTOM    AVERAGE)'
+(        STATION  ELEVATION    10-YEAR   100-YEAR                                                  SLOPE    A-ZONES)'
+(  OF     71.000     -5.797      0.000      9.113      0.000      0.000      0.000      0.000      0.023      0.000)'
+(            END        END  NEW SURGE  NEW SURGE                                                 BOTTOM    AVERAGE)'
+(        STATION  ELEVATION    10-YEAR   100-YEAR                                                  SLOPE    A-ZONES)'
+(  OF     72.000     -5.774      0.000      9.114      0.000      0.000      0.000      0.000      0.023      0.000)'
+(            END        END  NEW SURGE  NEW SURGE                                                 BOTTOM    AVERAGE)'
+(        STATION  ELEVATION    10-YEAR   100-YEAR                                                  SLOPE    A-ZONES)'
+(  OF     73.000     -5.751      0.000      9.115      0.000      0.000      0.000      0.000      0.023      0.000)'
+(            END        END  NEW SURGE  NEW SURGE                                                 BOTTOM    AVERAGE)'
+(        STATION  ELEVATION    10-YEAR   100-YEAR                                                  SLOPE    A-ZONES)'
+(  OF     74.000     -5.727      0.000      9.115      0.000      0.000      0.000      0.000      0.023      0.000)'
+(            END        END  NEW SURGE  NEW SURGE                                                 BOTTOM    AVERAGE)'
+(        STATION  ELEVATION    10-YEAR   100-YEAR                                                  SLOPE    A-ZONES)'
+(  OF     75.000     -5.704      0.000      9.116      0.000      0.000      0.000      0.000      0.025      0.000)'
+(            END        END  NEW SURGE  NEW SURGE                                                 BOTTOM    AVERAGE)'
+(        STATION  ELEVATION    10-YEAR   100-YEAR                                                  SLOPE    A-ZONES)'
+(  OF     76.000     -5.677      0.000      9.116      0.000      0.000      0.000      0.000      0.032      0.000)'
+(            END        END  NEW SURGE  NEW SURGE                                                 BOTTOM    AVERAGE)'
+(        STATION  ELEVATION    10-YEAR   100-YEAR                                                  SLOPE    A-ZONES)'
+(  OF     77.000     -5.640      0.000      9.117      0.000      0.000      0.000      0.000      0.037      0.000)'
+(            END        END  NEW SURGE  NEW SURGE                                                 BOTTOM    AVERAGE)'
+(        STATION  ELEVATION    10-YEAR   100-YEAR                                                  SLOPE    A-ZONES)'
+(  OF     78.000     -5.603      0.000      9.117      0.000      0.000      0.000      0.000      0.037      0.000)'
+(            END        END  NEW SURGE  NEW SURGE                                                 BOTTOM    AVERAGE)'
+(        STATION  ELEVATION    10-YEAR   100-YEAR                                                  SLOPE    A-ZONES)'
+(  OF     79.000     -5.566      0.000      9.117      0.000      0.000      0.000      0.000      0.037      0.000)'
+(            END        END  NEW SURGE  NEW SURGE                                                 BOTTOM    AVERAGE)'
+(        STATION  ELEVATION    10-YEAR   100-YEAR                                                  SLOPE    A-ZONES)'
+(  OF     80.000     -5.529      0.000      9.118      0.000      0.000      0.000      0.000      0.037      0.000)'
+(            END        END  NEW SURGE  NEW SURGE                                                 BOTTOM    AVERAGE)'
+(        STATION  ELEVATION    10-YEAR   100-YEAR                                                  SLOPE    A-ZONES)'
+(  OF     81.000     -5.492      0.000      9.118      0.000      0.000      0.000      0.000      0.037      0.000)'
+(            END        END  NEW SURGE  NEW SURGE                                                 BOTTOM    AVERAGE)'
+(        STATION  ELEVATION    10-YEAR   100-YEAR                                                  SLOPE    A-ZONES)'
+(  OF     82.000     -5.456      0.000      9.118      0.000      0.000      0.000      0.000      0.037      0.000)'
+(            END        END  NEW SURGE  NEW SURGE                                                 BOTTOM    AVERAGE)'
+(        STATION  ELEVATION    10-YEAR   100-YEAR                                                  SLOPE    A-ZONES)'
+(  OF     83.000     -5.419      0.000      9.119      0.000      0.000      0.000      0.000      0.037      0.000)'
+(            END        END  NEW SURGE  NEW SURGE                                                 BOTTOM    AVERAGE)'
+(        STATION  ELEVATION    10-YEAR   100-YEAR                                                  SLOPE    A-ZONES)'
+(  OF     84.000     -5.382      0.000      9.119      0.000      0.000      0.000      0.000      0.037      0.000)'
+(            END        END  NEW SURGE  NEW SURGE                                                 BOTTOM    AVERAGE)'
+(        STATION  ELEVATION    10-YEAR   100-YEAR                                                  SLOPE    A-ZONES)'
+(  OF     85.000     -5.345      0.000      9.120      0.000      0.000      0.000      0.000      0.037      0.000)'
+(            END        END  NEW SURGE  NEW SURGE                                                 BOTTOM    AVERAGE)'
+(        STATION  ELEVATION    10-YEAR   100-YEAR                                                  SLOPE    A-ZONES)'
+(  OF     86.000     -5.308      0.000      9.120      0.000      0.000      0.000      0.000      0.037      0.000)'
+(            END        END  NEW SURGE  NEW SURGE                                                 BOTTOM    AVERAGE)'
+(        STATION  ELEVATION    10-YEAR   100-YEAR                                                  SLOPE    A-ZONES)'
+(  OF     87.000     -5.272      0.000      9.120      0.000      0.000      0.000      0.000      0.037      0.000)'
+(            END        END  NEW SURGE  NEW SURGE                                                 BOTTOM    AVERAGE)'
+(        STATION  ELEVATION    10-YEAR   100-YEAR                                                  SLOPE    A-ZONES)'
+(  OF     88.000     -5.235      0.000      9.121      0.000      0.000      0.000      0.000      0.037      0.000)'
+ET
+endstream
+endobj
+17 0 obj
+12181
+endobj
+18 0 obj
+<<
+/Type /Page
+/Parent 3 0 R
+/Resources 5 0 R
+/Contents 19 0 R
+>>
+endobj
+19 0 obj
+<<
+/Length 20 0 R
+>>
+stream
+BT
+/F1 7 Tf
+1 0 0 1 50 752 Tm
+7 TL
+(            END        END  NEW SURGE  NEW SURGE                                                 BOTTOM    AVERAGE)'
+(        STATION  ELEVATION    10-YEAR   100-YEAR                                                  SLOPE    A-ZONES)'
+(  OF     89.000     -5.198      0.000      9.121      0.000      0.000      0.000      0.000      0.037      0.000)'
+(            END        END  NEW SURGE  NEW SURGE                                                 BOTTOM    AVERAGE)'
+(        STATION  ELEVATION    10-YEAR   100-YEAR                                                  SLOPE    A-ZONES)'
+(  OF     90.000     -5.161      0.000      9.122      0.000      0.000      0.000      0.000      0.037      0.000)'
+(            END        END  NEW SURGE  NEW SURGE                                                 BOTTOM    AVERAGE)'
+(        STATION  ELEVATION    10-YEAR   100-YEAR                                                  SLOPE    A-ZONES)'
+(  OF     91.000     -5.124      0.000      9.122      0.000      0.000      0.000      0.000      0.037      0.000)'
+(            END        END  NEW SURGE  NEW SURGE                                                 BOTTOM    AVERAGE)'
+(        STATION  ELEVATION    10-YEAR   100-YEAR                                                  SLOPE    A-ZONES)'
+(  OF     92.000     -5.087      0.000      9.122      0.000      0.000      0.000      0.000      0.037      0.000)'
+(            END        END  NEW SURGE  NEW SURGE                                                 BOTTOM    AVERAGE)'
+(        STATION  ELEVATION    10-YEAR   100-YEAR                                                  SLOPE    A-ZONES)'
+(  OF     93.000     -5.050      0.000      9.123      0.000      0.000      0.000      0.000      0.037      0.000)'
+(            END        END  NEW SURGE  NEW SURGE                                                 BOTTOM    AVERAGE)'
+(        STATION  ELEVATION    10-YEAR   100-YEAR                                                  SLOPE    A-ZONES)'
+(  OF     94.000     -5.014      0.000      9.123      0.000      0.000      0.000      0.000      0.037      0.000)'
+(            END        END  NEW SURGE  NEW SURGE                                                 BOTTOM    AVERAGE)'
+(        STATION  ELEVATION    10-YEAR   100-YEAR                                                  SLOPE    A-ZONES)'
+(  OF     95.000     -4.977      0.000      9.123      0.000      0.000      0.000      0.000      0.037      0.000)'
+(            END        END  NEW SURGE  NEW SURGE                                                 BOTTOM    AVERAGE)'
+(        STATION  ELEVATION    10-YEAR   100-YEAR                                                  SLOPE    A-ZONES)'
+(  OF     96.000     -4.940      0.000      9.124      0.000      0.000      0.000      0.000      0.037      0.000)'
+(            END        END  NEW SURGE  NEW SURGE                                                 BOTTOM    AVERAGE)'
+(        STATION  ELEVATION    10-YEAR   100-YEAR                                                  SLOPE    A-ZONES)'
+(  OF     97.000     -4.903      0.000      9.124      0.000      0.000      0.000      0.000      0.037      0.000)'
+(            END        END  NEW SURGE  NEW SURGE                                                 BOTTOM    AVERAGE)'
+(        STATION  ELEVATION    10-YEAR   100-YEAR                                                  SLOPE    A-ZONES)'
+(  OF     98.000     -4.866      0.000      9.125      0.000      0.000      0.000      0.000      0.037      0.000)'
+(            END        END  NEW SURGE  NEW SURGE                                                 BOTTOM    AVERAGE)'
+(        STATION  ELEVATION    10-YEAR   100-YEAR                                                  SLOPE    A-ZONES)'
+(  OF     99.000     -4.829      0.000      9.125      0.000      0.000      0.000      0.000      0.037      0.000)'
+(            END        END  NEW SURGE  NEW SURGE                                                 BOTTOM    AVERAGE)'
+(        STATION  ELEVATION    10-YEAR   100-YEAR                                                  SLOPE    A-ZONES)'
+(  OF    100.000     -4.792      0.000      9.125      0.000      0.000      0.000      0.000      0.037      0.000)'
+(            END        END  NEW SURGE  NEW SURGE                                                 BOTTOM    AVERAGE)'
+(        STATION  ELEVATION    10-YEAR   100-YEAR                                                  SLOPE    A-ZONES)'
+(  OF    101.000     -4.756      0.000      9.126      0.000      0.000      0.000      0.000      0.037      0.000)'
+(            END        END  NEW SURGE  NEW SURGE                                                 BOTTOM    AVERAGE)'
+(        STATION  ELEVATION    10-YEAR   100-YEAR                                                  SLOPE    A-ZONES)'
+(  OF    102.000     -4.719      0.000      9.126      0.000      0.000      0.000      0.000      0.037      0.000)'
+(            END        END  NEW SURGE  NEW SURGE                                                 BOTTOM    AVERAGE)'
+(        STATION  ELEVATION    10-YEAR   100-YEAR                                                  SLOPE    A-ZONES)'
+(  OF    103.000     -4.682      0.000      9.126      0.000      0.000      0.000      0.000      0.037      0.000)'
+(            END        END  NEW SURGE  NEW SURGE                                                 BOTTOM    AVERAGE)'
+(        STATION  ELEVATION    10-YEAR   100-YEAR                                                  SLOPE    A-ZONES)'
+(  OF    104.000     -4.645      0.000      9.127      0.000      0.000      0.000      0.000      0.037      0.000)'
+(            END        END  NEW SURGE  NEW SURGE                                                 BOTTOM    AVERAGE)'
+(        STATION  ELEVATION    10-YEAR   100-YEAR                                                  SLOPE    A-ZONES)'
+(  OF    105.000     -4.608      0.000      9.127      0.000      0.000      0.000      0.000      0.037      0.000)'
+(            END        END  NEW SURGE  NEW SURGE                                                 BOTTOM    AVERAGE)'
+(        STATION  ELEVATION    10-YEAR   100-YEAR                                                  SLOPE    A-ZONES)'
+(  OF    106.000     -4.571      0.000      9.128      0.000      0.000      0.000      0.000      0.037      0.000)'
+(            END        END  NEW SURGE  NEW SURGE                                                 BOTTOM    AVERAGE)'
+(        STATION  ELEVATION    10-YEAR   100-YEAR                                                  SLOPE    A-ZONES)'
+(  OF    107.000     -4.535      0.000      9.128      0.000      0.000      0.000      0.000      0.052      0.000)'
+(            END        END  NEW SURGE  NEW SURGE                                                 BOTTOM    AVERAGE)'
+(        STATION  ELEVATION    10-YEAR   100-YEAR                                                  SLOPE    A-ZONES)'
+(  OF    108.000     -4.467      0.000      9.128      0.000      0.000      0.000      0.000      0.132      0.000)'
+(            END        END  NEW SURGE  NEW SURGE                                                 BOTTOM    AVERAGE)'
+(        STATION  ELEVATION    10-YEAR   100-YEAR                                                  SLOPE    A-ZONES)'
+(  OF    109.000     -4.270      0.000      9.128      0.000      0.000      0.000      0.000      0.198      0.000)'
+(            END        END  NEW SURGE  NEW SURGE                                                 BOTTOM    AVERAGE)'
+(        STATION  ELEVATION    10-YEAR   100-YEAR                                                  SLOPE    A-ZONES)'
+(  OF    110.000     -4.072      0.000      9.128      0.000      0.000      0.000      0.000      0.198      0.000)'
+(            END        END  NEW SURGE  NEW SURGE                                                 BOTTOM    AVERAGE)'
+(        STATION  ELEVATION    10-YEAR   100-YEAR                                                  SLOPE    A-ZONES)'
+(  OF    111.000     -3.874      0.000      9.128      0.000      0.000      0.000      0.000      0.198      0.000)'
+(            END        END  NEW SURGE  NEW SURGE                                                 BOTTOM    AVERAGE)'
+(        STATION  ELEVATION    10-YEAR   100-YEAR                                                  SLOPE    A-ZONES)'
+(  OF    112.000     -3.677      0.000      9.128      0.000      0.000      0.000      0.000      0.198      0.000)'
+(            END        END  NEW SURGE  NEW SURGE                                                 BOTTOM    AVERAGE)'
+(        STATION  ELEVATION    10-YEAR   100-YEAR                                                  SLOPE    A-ZONES)'
+(  OF    113.000     -3.478      0.000      9.128      0.000      0.000      0.000      0.000      0.198      0.000)'
+(            END        END  NEW SURGE  NEW SURGE                                                 BOTTOM    AVERAGE)'
+(        STATION  ELEVATION    10-YEAR   100-YEAR                                                  SLOPE    A-ZONES)'
+(  OF    114.000     -3.281      0.000      9.128      0.000      0.000      0.000      0.000      0.198      0.000)'
+(            END        END  NEW SURGE  NEW SURGE                                                 BOTTOM    AVERAGE)'
+(        STATION  ELEVATION    10-YEAR   100-YEAR                                                  SLOPE    A-ZONES)'
+(  OF    115.000     -3.083      0.000      9.128      0.000      0.000      0.000      0.000      0.198      0.000)'
+(            END        END  NEW SURGE  NEW SURGE                                                 BOTTOM    AVERAGE)'
+(        STATION  ELEVATION    10-YEAR   100-YEAR                                                  SLOPE    A-ZONES)'
+(  OF    116.000     -2.885      0.000      9.128      0.000      0.000      0.000      0.000      0.198      0.000)'
+(            END        END  NEW SURGE  NEW SURGE                                                 BOTTOM    AVERAGE)'
+(        STATION  ELEVATION    10-YEAR   100-YEAR                                                  SLOPE    A-ZONES)'
+(  OF    117.000     -2.688      0.000      9.128      0.000      0.000      0.000      0.000      0.198      0.000)'
+(            END        END  NEW SURGE  NEW SURGE                                                 BOTTOM    AVERAGE)'
+(        STATION  ELEVATION    10-YEAR   100-YEAR                                                  SLOPE    A-ZONES)'
+(  OF    118.000     -2.490      0.000      9.128      0.000      0.000      0.000      0.000      0.198      0.000)'
+(            END        END  NEW SURGE  NEW SURGE                                                 BOTTOM    AVERAGE)'
+(        STATION  ELEVATION    10-YEAR   100-YEAR                                                  SLOPE    A-ZONES)'
+(  OF    119.000     -2.293      0.000      9.128      0.000      0.000      0.000      0.000      0.198      0.000)'
+(            END        END  NEW SURGE  NEW SURGE                                                 BOTTOM    AVERAGE)'
+(        STATION  ELEVATION    10-YEAR   100-YEAR                                                  SLOPE    A-ZONES)'
+(  OF    120.000     -2.095      0.000      9.128      0.000      0.000      0.000      0.000      0.055      0.000)'
+(            END        END  NEW SURGE  NEW SURGE                                                 BOTTOM    AVERAGE)'
+(        STATION  ELEVATION    10-YEAR   100-YEAR                                                  SLOPE    A-ZONES)'
+(  OF    129.000     -1.742      0.000      9.128      0.000      0.000      0.000      0.000      0.037      0.000)'
+(            END        END  NEW SURGE  NEW SURGE                                                 BOTTOM    AVERAGE)'
+(        STATION  ELEVATION    10-YEAR   100-YEAR                                                  SLOPE    A-ZONES)'
+(  OF    144.500     -1.181      0.000      9.128      0.000      0.000      0.000      0.000      0.070      0.000)'
+ET
+endstream
+endobj
+20 0 obj
+12181
+endobj
+21 0 obj
+<<
+/Type /Page
+/Parent 3 0 R
+/Resources 5 0 R
+/Contents 22 0 R
+>>
+endobj
+22 0 obj
+<<
+/Length 23 0 R
+>>
+stream
+BT
+/F1 7 Tf
+1 0 0 1 50 752 Tm
+7 TL
+(            END        END  NEW SURGE  NEW SURGE                                                 BOTTOM    AVERAGE)'
+(        STATION  ELEVATION    10-YEAR   100-YEAR                                                  SLOPE    A-ZONES)'
+(  IF    157.000      0.220      0.000      9.128      0.000      0.000      0.000      0.000      0.104      0.000)'
+(            END        END  NEW SURGE  NEW SURGE                                                 BOTTOM    AVERAGE)'
+(        STATION  ELEVATION    10-YEAR   100-YEAR                                                  SLOPE    A-ZONES)'
+(  IF    172.500      1.732      0.000      9.128      0.000      0.000      0.000      0.000      0.084      0.000)'
+(            END        END  NEW SURGE  NEW SURGE                                                 BOTTOM    AVERAGE)'
+(        STATION  ELEVATION    10-YEAR   100-YEAR                                                  SLOPE    A-ZONES)'
+(  IF    189.000      2.910      0.000      9.128      0.000      0.000      0.000      0.000      0.170      0.000)'
+(            END        END  NEW SURGE  NEW SURGE                                                 BOTTOM    AVERAGE)'
+(        STATION  ELEVATION    10-YEAR   100-YEAR                                                  SLOPE    A-ZONES)'
+(  IF    205.500      7.343      0.000      9.128      0.000      0.000      0.000      0.000      0.257      0.000)'
+(            END        END  NEW SURGE  NEW SURGE                                                 BOTTOM    AVERAGE)'
+(        STATION  ELEVATION    10-YEAR   100-YEAR                                                  SLOPE    A-ZONES)'
+(  IF    210.000      8.317      0.000      9.222      0.000      0.000      0.000      0.000      0.217      0.000)'
+(            END        END  NEW SURGE  NEW SURGE                                                 BOTTOM    AVERAGE)'
+(        STATION  ELEVATION    10-YEAR   100-YEAR                                                  SLOPE    A-ZONES)'
+(  IF    213.300      9.033      0.000      9.420      0.000      0.000      0.000      0.000      0.220      0.000)'
+(            END        END  NEW SURGE  NEW SURGE                                                 BOTTOM    AVERAGE)'
+(        STATION  ELEVATION    10-YEAR   100-YEAR                                                  SLOPE    A-ZONES)'
+(  IF    215.000      9.420      0.000      9.420      0.000      0.000      0.000      0.000      0.228      0.000)'
+(  ------------------------------------------------END OF TRANSECT-------------------------------------------------)'
+(  NOTE:)'
+(  SURGE ELEVATION INCLUDES CONTRIBUTIONS FROM ASTRONOMICAL AND STORM TIDES.)'
+(1)'
+(                                                PART2: CONTROLLING WAVE HEIGHTS, SPECTRAL )'
+(                                                       PEAK WAVE PERIOD, AND WAVE CREST ELEVATIONS)'
+(                                          LOCATION        CONTROLLING  SPECTRAL PEAK   WAVE CREST)'
+(                                                          WAVE HEIGHT  WAVE PERIOD     ELEVATION )'
+(                                        IE       0.00         2.69         8.30        10.96)'
+(                                        OF       1.00         2.69         8.30        10.96)'
+(                                        OF       2.00         2.69         8.30        10.96)'
+(                                        OF       3.00         2.70         8.30        10.96)'
+(                                        OF       4.00         2.70         8.30        10.96)'
+(                                        OF       5.00         2.70         8.30        10.96)'
+(                                        OF       6.00         2.70         8.30        10.97)'
+(                                        OF       7.00         2.70         8.30        10.97)'
+(                                        OF       8.00         2.70         8.30        10.97)'
+(                                        OF       9.00         2.71         8.30        10.97)'
+(                                        OF      10.00         2.71         8.30        10.97)'
+(                                        OF      11.00         2.71         8.30        10.98)'
+(                                        OF      12.00         2.71         8.30        10.98)'
+(                                        OF      13.00         2.71         8.30        10.98)'
+(                                        OF      14.00         2.71         8.30        10.98)'
+(                                        OF      15.00         2.72         8.30        10.98)'
+(                                        OF      16.00         2.72         8.30        10.98)'
+(                                        OF      17.00         2.72         8.30        10.99)'
+(                                        OF      18.00         2.72         8.30        10.99)'
+(                                        OF      19.00         2.72         8.30        10.99)'
+(                                        OF      20.00         2.72         8.30        10.99)'
+(                                        OF      21.00         2.73         8.30        10.99)'
+(                                        OF      22.00         2.73         8.30        10.99)'
+(                                        OF      23.00         2.73         8.30        11.00)'
+(                                        OF      24.00         2.73         8.30        11.00)'
+(                                        OF      25.00         2.73         8.30        11.00)'
+(                                        OF      26.00         2.73         8.30        11.00)'
+(                                        OF      27.00         2.74         8.30        11.00)'
+(                                        OF      28.00         2.74         8.30        11.01)'
+(                                        OF      29.00         2.74         8.30        11.01)'
+(                                        OF      30.00         2.74         8.30        11.01)'
+(                                        OF      31.00         2.74         8.30        11.01)'
+(                                        OF      32.00         2.74         8.30        11.01)'
+(                                        OF      33.00         2.75         8.30        11.01)'
+(                                        OF      34.00         2.75         8.30        11.02)'
+(                                        OF      35.00         2.75         8.30        11.02)'
+(                                        OF      36.00         2.75         8.30        11.02)'
+(                                        OF      37.00         2.75         8.30        11.02)'
+(                                        OF      38.00         2.76         8.30        11.02)'
+(                                        OF      39.00         2.76         8.30        11.02)'
+(                                        OF      40.00         2.76         8.30        11.03)'
+(                                        OF      41.00         2.76         8.30        11.03)'
+(                                        OF      42.00         2.76         8.30        11.03)'
+(                                        OF      43.00         2.76         8.30        11.03)'
+(                                        OF      44.00         2.77         8.30        11.03)'
+(                                        OF      45.00         2.77         8.30        11.04)'
+(                                        OF      46.00         2.77         8.30        11.04)'
+(                                        OF      47.00         2.77         8.30        11.04)'
+(                                        OF      48.00         2.77         8.30        11.04)'
+(                                        OF      49.00         2.77         8.30        11.04)'
+(                                        OF      50.00         2.78         8.30        11.04)'
+(                                        OF      51.00         2.78         8.30        11.05)'
+(                                        OF      52.00         2.78         8.30        11.05)'
+(                                        OF      53.00         2.78         8.30        11.05)'
+(                                        OF      54.00         2.78         8.30        11.05)'
+(                                        OF      55.00         2.79         8.30        11.05)'
+(                                        OF      56.00         2.79         8.30        11.06)'
+(                                        OF      57.00         2.79         8.30        11.06)'
+(                                        OF      58.00         2.79         8.30        11.06)'
+(                                        OF      59.00         2.79         8.30        11.06)'
+(                                        OF      60.00         2.79         8.30        11.06)'
+(                                        OF      61.00         2.80         8.30        11.07)'
+(                                        OF      62.00         2.80         8.30        11.07)'
+(                                        OF      63.00         2.80         8.30        11.07)'
+(                                        OF      64.00         2.80         8.30        11.07)'
+(                                        OF      65.00         2.80         8.30        11.07)'
+(                                        OF      66.00         2.81         8.30        11.08)'
+(                                        OF      67.00         2.81         8.30        11.08)'
+(                                        OF      68.00         2.81         8.30        11.08)'
+(                                        OF      69.00         2.81         8.30        11.08)'
+(                                        OF      70.00         2.81         8.30        11.08)'
+(                                        OF      71.00         2.82         8.30        11.08)'
+(                                        OF      72.00         2.82         8.30        11.09)'
+ET
+endstream
+endobj
+23 0 obj
+10242
+endobj
+24 0 obj
+<<
+/Type /Page
+/Parent 3 0 R
+/Resources 5 0 R
+/Contents 25 0 R
+>>
+endobj
+25 0 obj
+<<
+/Length 26 0 R
+>>
+stream
+BT
+/F1 7 Tf
+1 0 0 1 50 752 Tm
+7 TL
+(                                        OF      73.00         2.82         8.30        11.09)'
+(                                        OF      74.00         2.82         8.30        11.09)'
+(                                        OF      75.00         2.82         8.30        11.09)'
+(                                        OF      76.00         2.82         8.30        11.09)'
+(                                        OF      77.00         2.83         8.30        11.10)'
+(                                        OF      78.00         2.83         8.30        11.10)'
+(                                        OF      79.00         2.83         8.30        11.10)'
+(                                        OF      80.00         2.84         8.30        11.10)'
+(                                        OF      81.00         2.84         8.30        11.10)'
+(                                        OF      82.00         2.84         8.30        11.11)'
+(                                        OF      83.00         2.84         8.30        11.11)'
+(                                        OF      84.00         2.85         8.30        11.11)'
+(                                        OF      85.00         2.85         8.30        11.11)'
+(                                        OF      86.00         2.85         8.30        11.12)'
+(                                        OF      87.00         2.85         8.30        11.12)'
+(                                        OF      88.00         2.86         8.30        11.12)'
+(                                        OF      89.00         2.86         8.30        11.12)'
+(                                        OF      90.00         2.86         8.30        11.13)'
+(                                        OF      91.00         2.87         8.30        11.13)'
+(                                        OF      92.00         2.87         8.30        11.13)'
+(                                        OF      93.00         2.87         8.30        11.13)'
+(                                        OF      94.00         2.87         8.30        11.13)'
+(                                        OF      95.00         2.88         8.30        11.14)'
+(                                        OF      96.00         2.88         8.30        11.14)'
+(                                        OF      97.00         2.88         8.30        11.14)'
+(                                        OF      98.00         2.89         8.30        11.14)'
+(                                        OF      99.00         2.89         8.30        11.15)'
+(                                        OF     100.00         2.89         8.30        11.15)'
+(                                        OF     101.00         2.89         8.30        11.15)'
+(                                        OF     102.00         2.90         8.30        11.15)'
+(                                        OF     103.00         2.90         8.30        11.16)'
+(                                        OF     104.00         2.90         8.30        11.16)'
+(                                        OF     105.00         2.91         8.30        11.16)'
+(                                        OF     106.00         2.91         8.30        11.16)'
+(                                        OF     107.00         2.91         8.30        11.17)'
+(                                        OF     108.00         2.92         8.30        11.17)'
+(                                        OF     109.00         2.93         8.30        11.18)'
+(                                        OF     110.00         2.94         8.30        11.19)'
+(                                        OF     111.00         2.96         8.30        11.20)'
+(                                        OF     112.00         2.97         8.30        11.21)'
+(                                        OF     113.00         2.99         8.30        11.22)'
+(                                        OF     114.00         3.00         8.30        11.23)'
+(                                        OF     115.00         3.02         8.30        11.24)'
+(                                        OF     116.00         3.04         8.30        11.25)'
+(                                        OF     117.00         3.05         8.30        11.26)'
+(                                        OF     118.00         3.07         8.30        11.28)'
+(                                        OF     119.00         3.09         8.30        11.29)'
+(                                        OF     120.00         3.11         8.30        11.30)'
+(                                        OF     129.00         3.14         8.30        11.33)'
+(                                        OF     144.50         3.21         8.30        11.37)'
+(                                        IF     157.00         3.38         8.30        11.49)'
+(                                        IF     172.50         3.63         8.30        11.67)'
+(                                        IF     189.00         3.68         8.30        11.70)'
+(                                        IF     205.50         1.38         8.30        10.09)'
+(                                        IF     210.00         0.70         8.30         9.71)'
+(                                        IF     213.30         0.30         8.30         9.63)'
+(                                        IF     215.00         0.01         8.30         9.43)'
+(                                        PART3 LOCATION OF AREAS ABOVE 100-YEAR SURGE)'
+(                                        NO AREAS ABOVE 100-YEAR SURGE IN THIS TRANSECT)'
+(                                                  PART4 LOCATION OF SURGE CHANGES)'
+(                                        STATION          10-YEAR SURGE          100-YEAR SURGE)'
+(                                          2.00                 1.00                 9.07)'
+(                                          4.00                 1.00                 9.07)'
+(                                          5.00                 1.00                 9.08)'
+(                                          7.00                 1.00                 9.08)'
+(                                          9.00                 1.00                 9.08)'
+(                                         11.00                 1.00                 9.08)'
+(                                         12.00                 1.00                 9.08)'
+(                                         14.00                 1.00                 9.08)'
+(                                         16.00                 1.00                 9.08)'
+(                                         18.00                 1.00                 9.08)'
+(                                         19.00                 1.00                 9.08)'
+(                                         21.00                 1.00                 9.09)'
+(                                         23.00                 1.00                 9.09)'
+(                                         25.00                 1.00                 9.09)'
+(                                         26.00                 1.00                 9.09)'
+(                                         28.00                 1.00                 9.09)'
+(                                         30.00                 1.00                 9.09)'
+(                                         32.00                 1.00                 9.09)'
+(                                         33.00                 1.00                 9.09)'
+(                                         35.00                 1.00                 9.09)'
+(                                         37.00                 1.00                 9.09)'
+(                                         39.00                 1.00                 9.10)'
+(                                         40.00                 1.00                 9.10)'
+(                                         42.00                 1.00                 9.10)'
+(                                         44.00                 1.00                 9.10)'
+(                                         45.00                 1.00                 9.10)'
+(                                         47.00                 1.00                 9.10)'
+(                                         49.00                 1.00                 9.10)'
+(                                         51.00                 1.00                 9.10)'
+(                                         53.00                 1.00                 9.10)'
+(                                         54.00                 1.00                 9.10)'
+(                                         56.00                 1.00                 9.10)'
+(                                         58.00                 1.00                 9.11)'
+(                                         60.00                 1.00                 9.11)'
+(                                         61.00                 1.00                 9.11)'
+(                                         63.00                 1.00                 9.11)'
+(                                         65.00                 1.00                 9.11)'
+(                                         66.00                 1.00                 9.11)'
+(                                         68.00                 1.00                 9.11)'
+(                                         70.00                 1.00                 9.11)'
+(                                         72.00                 1.00                 9.11)'
+ET
+endstream
+endobj
+26 0 obj
+9750
+endobj
+27 0 obj
+<<
+/Type /Page
+/Parent 3 0 R
+/Resources 5 0 R
+/Contents 28 0 R
+>>
+endobj
+28 0 obj
+<<
+/Length 29 0 R
+>>
+stream
+BT
+/F1 7 Tf
+1 0 0 1 50 752 Tm
+7 TL
+(                                         73.00                 1.00                 9.11)'
+(                                         75.00                 1.00                 9.12)'
+(                                         77.00                 1.00                 9.12)'
+(                                         80.00                 1.00                 9.12)'
+(                                         83.00                 1.00                 9.12)'
+(                                         85.00                 1.00                 9.12)'
+(                                         88.00                 1.00                 9.12)'
+(                                         90.00                 1.00                 9.12)'
+(                                         93.00                 1.00                 9.12)'
+(                                         96.00                 1.00                 9.12)'
+(                                         98.00                 1.00                 9.12)'
+(                                        101.00                 1.00                 9.13)'
+(                                        104.00                 1.00                 9.13)'
+(                                        106.00                 1.00                 9.13)'
+(                                        210.00                 1.00                 9.22)'
+(                                        213.30                 1.00                 9.42)'
+(                                                       PART5  LOCATION OF V ZONES)'
+(                                             STATION OF GUTTER          LOCATION OF ZONE)'
+(                                                      113.78                LEEWARD)'
+(                                                      193.88               WINDWARD)'
+(                                                   PART6 NUMBERED A ZONES AND V ZONES)'
+(                                        STATION OF GUTTER  ELEVATION  ZONE DESIGNATION   FHF)'
+(                                               0.00          10.96)'
+(                                                                          A20  EL=11     100)'
+(                                               1.00          10.96)'
+(                                                                          A20  EL=11     100)'
+(                                               2.00          10.96)'
+(                                                                          A20  EL=11     100)'
+(                                               3.00          10.96)'
+(                                                                          A20  EL=11     100)'
+(                                               4.00          10.96)'
+(                                                                          A20  EL=11     100)'
+(                                               5.00          10.96)'
+(                                                                          A20  EL=11     100)'
+(                                               6.00          10.97)'
+(                                                                          A20  EL=11     100)'
+(                                               7.00          10.97)'
+(                                                                          A20  EL=11     100)'
+(                                               8.00          10.97)'
+(                                                                          A20  EL=11     100)'
+(                                               9.00          10.97)'
+(                                                                          A20  EL=11     100)'
+(                                              10.00          10.97)'
+(                                                                          A20  EL=11     100)'
+(                                              11.00          10.98)'
+(                                                                          A20  EL=11     100)'
+(                                              12.00          10.98)'
+(                                                                          A20  EL=11     100)'
+(                                              13.00          10.98)'
+(                                                                          A20  EL=11     100)'
+(                                              14.00          10.98)'
+(                                                                          A20  EL=11     100)'
+(                                              15.00          10.98)'
+(                                                                          A20  EL=11     100)'
+(                                              16.00          10.98)'
+(                                                                          A20  EL=11     100)'
+(                                              17.00          10.99)'
+(                                                                          A20  EL=11     100)'
+(                                              18.00          10.99)'
+(                                                                          A20  EL=11     100)'
+(                                              19.00          10.99)'
+(                                                                          A20  EL=11     100)'
+(                                              20.00          10.99)'
+(                                                                          A20  EL=11     100)'
+(                                              21.00          10.99)'
+(                                                                          A20  EL=11     100)'
+(                                              22.00          10.99)'
+(                                                                          A20  EL=11     100)'
+(                                              23.00          11.00)'
+(                                                                          A20  EL=11     100)'
+(                                              24.00          11.00)'
+(                                                                          A20  EL=11     100)'
+(                                              25.00          11.00)'
+(                                                                          A20  EL=11     100)'
+(                                              26.00          11.00)'
+(                                                                          A20  EL=11     100)'
+(                                              27.00          11.00)'
+(                                                                          A20  EL=11     100)'
+(                                              28.00          11.01)'
+(                                                                          A20  EL=11     100)'
+(                                              29.00          11.01)'
+(                                                                          A20  EL=11     100)'
+(                                              30.00          11.01)'
+(                                                                          A20  EL=11     100)'
+(                                              31.00          11.01)'
+(                                                                          A20  EL=11     100)'
+(                                              32.00          11.01)'
+(                                                                          A20  EL=11     100)'
+(                                              33.00          11.01)'
+(                                                                          A20  EL=11     100)'
+(                                              34.00          11.02)'
+(                                                                          A20  EL=11     100)'
+(                                              35.00          11.02)'
+(                                                                          A20  EL=11     100)'
+(                                              36.00          11.02)'
+(                                                                          A20  EL=11     100)'
+(                                              37.00          11.02)'
+(                                                                          A20  EL=11     100)'
+(                                              38.00          11.02)'
+(                                                                          A20  EL=11     100)'
+(                                              39.00          11.02)'
+(                                                                          A20  EL=11     100)'
+ET
+endstream
+endobj
+29 0 obj
+8793
+endobj
+30 0 obj
+<<
+/Type /Page
+/Parent 3 0 R
+/Resources 5 0 R
+/Contents 31 0 R
+>>
+endobj
+31 0 obj
+<<
+/Length 32 0 R
+>>
+stream
+BT
+/F1 7 Tf
+1 0 0 1 50 752 Tm
+7 TL
+(                                              40.00          11.03)'
+(                                                                          A20  EL=11     100)'
+(                                              41.00          11.03)'
+(                                                                          A20  EL=11     100)'
+(                                              42.00          11.03)'
+(                                                                          A20  EL=11     100)'
+(                                              43.00          11.03)'
+(                                                                          A20  EL=11     100)'
+(                                              44.00          11.03)'
+(                                                                          A20  EL=11     100)'
+(                                              45.00          11.04)'
+(                                                                          A20  EL=11     100)'
+(                                              46.00          11.04)'
+(                                                                          A20  EL=11     100)'
+(                                              47.00          11.04)'
+(                                                                          A20  EL=11     100)'
+(                                              48.00          11.04)'
+(                                                                          A20  EL=11     100)'
+(                                              49.00          11.04)'
+(                                                                          A20  EL=11     100)'
+(                                              50.00          11.04)'
+(                                                                          A20  EL=11     100)'
+(                                              51.00          11.05)'
+(                                                                          A20  EL=11     100)'
+(                                              52.00          11.05)'
+(                                                                          A20  EL=11     100)'
+(                                              53.00          11.05)'
+(                                                                          A20  EL=11     100)'
+(                                              54.00          11.05)'
+(                                                                          A20  EL=11     100)'
+(                                              55.00          11.05)'
+(                                                                          A20  EL=11     100)'
+(                                              56.00          11.06)'
+(                                                                          A20  EL=11     100)'
+(                                              57.00          11.06)'
+(                                                                          A20  EL=11     100)'
+(                                              58.00          11.06)'
+(                                                                          A20  EL=11     100)'
+(                                              59.00          11.06)'
+(                                                                          A20  EL=11     100)'
+(                                              60.00          11.06)'
+(                                                                          A20  EL=11     100)'
+(                                              61.00          11.07)'
+(                                                                          A20  EL=11     100)'
+(                                              62.00          11.07)'
+(                                                                          A20  EL=11     100)'
+(                                              63.00          11.07)'
+(                                                                          A20  EL=11     100)'
+(                                              64.00          11.07)'
+(                                                                          A20  EL=11     100)'
+(                                              65.00          11.07)'
+(                                                                          A20  EL=11     100)'
+(                                              66.00          11.08)'
+(                                                                          A20  EL=11     100)'
+(                                              67.00          11.08)'
+(                                                                          A20  EL=11     100)'
+(                                              68.00          11.08)'
+(                                                                          A20  EL=11     100)'
+(                                              69.00          11.08)'
+(                                                                          A20  EL=11     100)'
+(                                              70.00          11.08)'
+(                                                                          A20  EL=11     100)'
+(                                              71.00          11.08)'
+(                                                                          A20  EL=11     100)'
+(                                              72.00          11.09)'
+(                                                                          A20  EL=11     100)'
+(                                              73.00          11.09)'
+(                                                                          A20  EL=11     100)'
+(                                              74.00          11.09)'
+(                                                                          A20  EL=11     100)'
+(                                              75.00          11.09)'
+(                                                                          A20  EL=11     100)'
+(                                              76.00          11.09)'
+(                                                                          A20  EL=11     100)'
+(                                              77.00          11.10)'
+(                                                                          A20  EL=11     100)'
+(                                              79.00          11.10)'
+(                                                                          A20  EL=11     100)'
+(                                              80.00          11.10)'
+(                                                                          A20  EL=11     100)'
+(                                              82.00          11.11)'
+(                                                                          A20  EL=11     100)'
+(                                              83.00          11.11)'
+(                                                                          A20  EL=11     100)'
+(                                              84.00          11.11)'
+(                                                                          A20  EL=11     100)'
+(                                              85.00          11.11)'
+(                                                                          A20  EL=11     100)'
+(                                              87.00          11.12)'
+(                                                                          A20  EL=11     100)'
+(                                              88.00          11.12)'
+(                                                                          A20  EL=11     100)'
+(                                              89.00          11.12)'
+(                                                                          A20  EL=11     100)'
+(                                              90.00          11.13)'
+(                                                                          A20  EL=11     100)'
+(                                              92.00          11.13)'
+(                                                                          A20  EL=11     100)'
+(                                              93.00          11.13)'
+(                                                                          A20  EL=11     100)'
+(                                              95.00          11.14)'
+(                                                                          A20  EL=11     100)'
+ET
+endstream
+endobj
+32 0 obj
+8611
+endobj
+33 0 obj
+<<
+/Type /Page
+/Parent 3 0 R
+/Resources 5 0 R
+/Contents 34 0 R
+>>
+endobj
+34 0 obj
+<<
+/Length 35 0 R
+>>
+stream
+BT
+/F1 7 Tf
+1 0 0 1 50 752 Tm
+7 TL
+(                                              96.00          11.14)'
+(                                                                          A20  EL=11     100)'
+(                                              97.00          11.14)'
+(                                                                          A20  EL=11     100)'
+(                                              98.00          11.14)'
+(                                                                          A20  EL=11     100)'
+(                                             100.00          11.15)'
+(                                                                          A20  EL=11     100)'
+(                                             101.00          11.15)'
+(                                                                          A20  EL=11     100)'
+(                                             103.00          11.16)'
+(                                                                          A20  EL=11     100)'
+(                                             104.00          11.16)'
+(                                                                          A20  EL=11     100)'
+(                                             105.00          11.16)'
+(                                                                          A20  EL=11     100)'
+(                                             106.00          11.16)'
+(                                                                          A20  EL=11     100)'
+(                                             113.78          11.23)'
+(                                                                          V23  EL=11     130)'
+(                                             157.46          11.50)'
+(                                                                          V23  EL=12     130)'
+(                                             191.08          11.50)'
+(                                                                          V23  EL=11     130)'
+(                                             193.88          11.23)'
+(                                                                          A19  EL=11      95)'
+(                                             201.34          10.50)'
+(                                                                          A19  EL=10      95)'
+(                                             205.50          10.09)'
+(                                                                          A19  EL=10      95)'
+(                                             210.00           9.71)'
+(                                                                          A19  EL=10      95)'
+(                                             213.30           9.63)'
+(                                                                          A19  EL=10      95)'
+(                                             214.38           9.50)'
+(                                                                          A19  EL= 9      95)'
+(                                             215.00           9.43)'
+(                                                  ZONE TERMINATED AT END OF TRANSECT)'
+(                                                  PART 7   POSTSCRIPT NOTES)'
+(                         PS#  1   START\(403525.1288,4833824.8875\)                                              )'
+(                         PS#  2   END\(403567.6267,4833952.7313\)                                                )'
+(-1.000000e+00)'
+()'
+ET
+endstream
+endobj
+35 0 obj
+3566
+endobj
+3 0 obj
+<<
+/Type /Pages
+/Count 10
+/MediaBox [ 0 0 612 792 ]
+/Kids [ 6 0 R 9 0 R 12 0 R 15 0 R 18 0 R 21 0 R 24 0 R 27 0 R 30 0 R 33 0 R ]
+>>
+endobj
+xref
+0 36
+0000000000 65535 f 0000000010 00000 n 0000000169 00000 n 0000104789 00000 n 0000000224 00000 n 0000000310 00000 n 0000000387 00000 n 0000000475 00000 n 0000013309 00000 n 0000013333 00000 n 0000013422 00000 n 0000025855 00000 n 0000025880 00000 n 0000025970 00000 n 0000038212 00000 n 0000038237 00000 n 0000038327 00000 n 0000050569 00000 n 0000050594 00000 n 0000050684 00000 n 0000062926 00000 n 0000062951 00000 n 0000063041 00000 n 0000073344 00000 n 0000073369 00000 n 0000073459 00000 n 0000083270 00000 n 0000083294 00000 n 0000083384 00000 n 0000092238 00000 n 0000092262 00000 n 0000092352 00000 n 0000101024 00000 n 0000101048 00000 n 0000101138 00000 n 0000104765 00000 n trailer
+<<
+/Size 36
+/Root 2 0 R
+/Info 1 0 R
+>>
+startxref
+104945
+%%EOF

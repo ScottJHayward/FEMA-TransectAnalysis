@@ -222,15 +222,23 @@ for i=1:length(filename2)
     fprintf(fid,'\nRUNUP2 Messages:\n');
     fprintf(fid,'%s\n',messagelist{i});
     fprintf(fid,'\n______________END RUNUP2 RESULTS_______________________\n\n\n');
+
+
+
     fprintf(fid,'\n________________ACES BEACH RUNUP_______________________\n');
     fprintf(fid,'\nIncident significant wave height: %.2f feet\n',Hs_toe(i));
-    fprintf(fid,'\nSignificant wave height deshoaled using Hunt equation\n');
-    fprintf(fid,'\nDeepwater significant wave height: %.2f feet\n',Hm_deshoal(i)*1.4); %multiply mean deshoaled by 1.4 to get Hs deshoaled
+    fprintf(fid,'\nSignificant wave height is mean wave height divided by 0.626\n');
+    fprintf(fid,'Reference: D.2.8.1.2.1 Atlanic and Gulf of Mexico G&S Feb. 2007\n');
+    % calculate deepwater Hs
+
+
+    fprintf(fid,'\nDeepwater significant wave height: %.2f feet\n',Hm_deshoal(i)./0.626); %multiply mean deshoaled by 1/0.626 to get Hs deshoaled
     fprintf(fid,'\nPeak wave period: %.2f seconds\n',Tp_toe(i));
     ACES_slope=(ele_fill{i}(indices{i}(1))-ele_fill{i}(indices{i}(end)))/(sta_shift{i}(indices{i}(1))-sta_shift{i}(indices{i}(end))); %this is the rise/run
     fprintf(fid,'\nAverage beach Slope: 1:%.2f (H:V) \n',1/ACES_slope);
     %calculate runup using aces method
-    AR=Aces_Beach_Runup(Hm_deshoal(i)*1.4,Tp_toe(i),ACES_slope); %use Significant Wave height for ACES beach runup
+    [AR,ARlog]=Aces_Beach_Runup(Hm_deshoal(i)./0.626,Tp_toe(i),ACES_slope); %use Significant Wave height for ACES beach runup
+    fprintf(fid,'\n\n%s',ARlog);
     fprintf(fid,'\nACES RUNUP CALCULATED USING ''Aces_Beach_Runup.m''\n');
     fprintf(fid,'\nACES Beach 2-percent runup height above SWEL: %.2f feet\n',AR(2));    
     fprintf(fid,'\nACES Beach 2-percent runup elevation: %.2f feet-NAVD88\n',AR(2)+swel_raw{i}(1));    
